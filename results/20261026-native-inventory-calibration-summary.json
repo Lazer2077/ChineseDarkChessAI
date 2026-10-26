@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "scope": "Two reused baseline-layout sets for approximate search-conditioned private-inventory beliefs. Not playing-strength tests. A small positive pilot was not supported by B. No training/match campaign adopts this filter.",
+  "a": {
+    "schema": 1,
+    "report_sha256": "29680bf9f0ed6ed439b45d7946d976e6eba5d820ab3482a08fc49e60091cab98",
+    "games": 8,
+    "pairs": 4,
+    "per_game_endpoints": [
+      {
+        "game_index": 0,
+        "pair": 0,
+        "red": "baseline",
+        "gain_nats": 0.04722224862335711
+      },
+      {
+        "game_index": 1,
+        "pair": 0,
+        "red": "candidate",
+        "gain_nats": 0.020069372892489223
+      },
+      {
+        "game_index": 2,
+        "pair": 1,
+        "red": "baseline",
+        "gain_nats": 0.605658619827286
+      },
+      {
+        "game_index": 3,
+        "pair": 1,
+        "red": "candidate",
+        "gain_nats": 0.017822783177690482
+      },
+      {
+        "game_index": 4,
+        "pair": 2,
+        "red": "baseline",
+        "gain_nats": -0.022571370031839066
+      },
+      {
+        "game_index": 5,
+        "pair": 2,
+        "red": "candidate",
+        "gain_nats": 0.02630740340761184
+      },
+      {
+        "game_index": 6,
+        "pair": 3,
+        "red": "baseline",
+        "gain_nats": 0.04195558704379443
+      },
+      {
+        "game_index": 7,
+        "pair": 3,
+        "red": "candidate",
+        "gain_nats": 0.0
+      }
+    ],
+    "mean_endpoint_log_gain_nats": 0.09205808061754875,
+    "paired_bootstrap_95": [
+      0.009812465205395582,
+      0.23904997450734047
+    ],
+    "bootstrap_seed": 20261102,
+    "replicates": 20000,
+    "warning": "Belief-label log score on reused sparse trajectories, not win rate, independent calibration assurance, or game-strength evidence."
+  },
+  "b": {
+    "schema": 1,
+    "report_sha256": "70a106db54e2c4cbee77e1c9132dacfa9281f182f3dc93644ac775c3daf9d0cc",
+    "games": 24,
+    "pairs": 12,
+    "per_game_endpoints": [
+      {
+        "game_index": 0,
+        "pair": 0,
+        "red": "baseline",
+        "gain_nats": 0.04153307494597058
+      },
+      {
+        "game_index": 1,
+        "pair": 0,
+        "red": "candidate",
+        "gain_nats": 0.05093273154004185
+      },
+      {
+        "game_index": 2,
+        "pair": 1,
+        "red": "baseline",
+        "gain_nats": -0.04750812995180764
+      },
+      {
+        "game_index": 3,
+        "pair": 1,
+        "red": "candidate",
+        "gain_nats": 0.057921857102883445
+      },
+      {
+        "game_index": 4,
+        "pair": 2,
+        "red": "baseline",
+        "gain_nats": -0.014523819321848208
+      },
+      {
+        "game_index": 5,
+        "pair": 2,
+        "red": "candidate",
+        "gain_nats": 0.0
+      },
+      {
+        "game_index": 6,
+        "pair": 3,
+        "red": "baseline",
+        "gain_nats": -0.00290008330229119
+      },
+      {
+        "game_index": 7,
+        "pair": 3,
+        "red": "candidate",
+        "gain_nats": 0.002325282113629923
+      },
+      {
+        "game_index": 8,
+        "pair": 4,
+        "red": "baseline",
+        "gain_nats": 0.0
+      },
+      {
+        "game_index": 9,
+        "pair": 4,
+        "red": "candidate",
+        "gain_nats": -1.765544489210991
+      },
+      {
+        "game_index": 10,
+        "pair": 5,
+        "red": "baseline",
+        "gain_nats": 0.15895192003186098
+      },
+      {
+        "game_index": 11,
+        "pair": 5,
+        "red": "candidate",
+        "gain_nats": -0.040478260010861966
+      },
+      {
+        "game_index": 12,
+        "pair": 6,
+        "red": "baseline",
+        "gain_nats": 0.007463383034640669
+      },
+      {
+        "game_index": 13,
+        "pair": 6,
+        "red": "candidate",
+        "gain_nats": 0.011468962306966368
+      },
+      {
+        "game_index": 14,
+        "pair": 7,
+        "red": "baseline",
+        "gain_nats": 0.13305403318850484
+      },
+      {
+        "game_index": 15,
+        "pair": 7,
+        "red": "candidate",
+        "gain_nats": -0.09114268668377967
+      },
+      {
+        "game_index": 16,
+        "pair": 8,
+        "red": "baseline",
+        "gain_nats": 0.16701176573919851
+      },
+      {
+        "game_index": 17,
+        "pair": 8,
+        "red": "candidate",
+        "gain_nats": 0.006674218079605776
+      },
+      {
+        "game_index": 18,
+        "pair": 9,
+        "red": "baseline",
+        "gain_nats": 0.08163133149184687
+      },
+      {
+        "game_index": 19,
+        "pair": 9,
+        "red": "candidate",
+        "gain_nats": 0.11977362415494941
+      },
+      {
+        "game_index": 20,
+        "pair": 10,
+        "red": "baseline",
+        "gain_nats": 0.03836631999687601
+      },
+      {
+        "game_index": 21,
+        "pair": 10,
+        "red": "candidate",
+        "gain_nats": -0.041113212645200736
+      },
+      {
+        "game_index": 22,
+        "pair": 11,
+        "red": "baseline",
+        "gain_nats": 0.13557721256378952
+      },
+      {
+        "game_index": 23,
+        "pair": 11,
+        "red": "candidate",
+        "gain_nats": 0.110616211286374
+      }
+    ],
+    "mean_endpoint_log_gain_nats": -0.03666286473123507,
+    "paired_bootstrap_95": [
+      -0.19990351096336798,
+      0.05928670580564748
+    ],
+    "bootstrap_seed": 20261102,
+    "replicates": 20000,
+    "warning": "Belief-label log score on reused sparse trajectories, not win rate, independent calibration assurance, or game-strength evidence."
+  },
+  "teacher_identity_verified": {
+    "a": {
+      "candidate_binary_sha256": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+      "network_sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+    },
+    "b": {
+      "candidate_binary_sha256": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+      "network_sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+    }
+  },
+  "evidence_sha256": {
+    "results/native-inventory-calibration-plan.json": "ec5464add2dddbe44f6753650564b36b7feb1cbeaf35fb8f9584b6f1c69b5ef0",
+    "results/native-inventory-calibration-b-plan.json": "29f0ee7dd06cf3282a437ec7cb8fe1d44c999302aa4c3bc2de862bc6199661a9",
+    "results/20261026-native-inventory-calibration-a.json": "29680bf9f0ed6ed439b45d7946d976e6eba5d820ab3482a08fc49e60091cab98",
+    "results/20261026-native-inventory-calibration-b.json": "70a106db54e2c4cbee77e1c9132dacfa9281f182f3dc93644ac775c3daf9d0cc",
+    "results/20261026-native-inventory-calibration-a-endpoints.json": "8b83497eefd1c957cff532832c0d6966bb1f8dc7f93995d9ddcfee2c594ef6e9",
+    "results/20261026-native-inventory-calibration-b-endpoints.json": "812d725cce34059d212bac5d23c34d37099de907716b1749a837ad067aa07b12"
+  }
+}

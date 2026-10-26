@@ -167,11 +167,16 @@ GPU epochs /596updates. Epoch4 is selected on its existing selection split,
 network SHA256 `40d1fde029ea18180f06098baf1f55e367a226f1601cd6185c18eda8c31c388d`.
 Its fresh previous-actor screen is19W/13D/32L,39.84375%score, paired bootstrap95%
 [28.125%,51.5625%], all3,893moves and clocks clean. This gives no improvement
-evidence. The teacher screen is still live. Complete curves and provenance:
+evidence. The teacher screen completed0W/0D/64L, all2,024moves/clocks clean.
+The fixed three-iteration controller is now terminal/completed. Complete curves and provenance:
 `results/20261026-neural-rl-series-third-training.json`; previous-match report
 and audit: `results/20261026-neural-rl-iteration003-vs-previous{,-audit}.json`.
+The teacher report/audit uses the matching`-vs-teacher` name, and the completed
+iteration summary is `results/20261026-neural-rl-iteration003.json`.
 
 The separate [2048-simulation search-effort control](HIGH_SEARCH_RL.md) is running
-from the original warm checkpoint, and a [teacher-static-value
+from the original warm checkpoint. A separate [LeafBatch8 training
+control](NEURAL_SEARCH_COST.md) now changes only self-play batch size while
+retaining32during evaluation to isolate learning effects. A [teacher-static-value
 ablation](TEACHER_LEAF_ABLATION.md) is queued to diagnose the weak neural search.
 Neither changes the original series or promotes a research model.

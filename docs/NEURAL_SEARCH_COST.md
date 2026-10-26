@@ -156,10 +156,10 @@ not promotion or a demonstrated gain against the native teacher. Evidence:
 `results/20261026-neural-leaf-batch-screen.json` and its `-audit.json`.
 Existing frozen self-play/width experiments remain unchanged.
 
-A separate [virtual-mean adaptation](VIRTUAL_MEAN.md) now has correctness tests
-and one fixed screen running after the completed leaf-batch experiment. It changes pending
-value accounting, not model size or the observation contract; its strength
-remains unmeasured.
+A separate [virtual-mean adaptation](VIRTUAL_MEAN.md) completed38W/0D/26L in its
+fixed64-game development screen, bootstrap95% [50%,68.75%]. This changes pending
+value accounting, not model size or the observation contract; the result is
+inconclusive and does not support adoption over scalar virtual loss.
 
 The positive LeafBatch8 development result now has a fixed follow-up:
 `results/neural-leaf-batch-confirmation-plan.json` schedules one fresh200-game
@@ -167,3 +167,25 @@ confirmation against32 (seed8780001), then a separate64-game unchanged-teacher
 diagnostic (seed8790001), both actual10+0.1. It starts after virtual mean finishes
 regardless of that result, on the same GPU, with the same original checkpoint.
 Neither screen is selected or retuned from virtual-mean outcomes.
+
+The200-game independent LeafBatch8 confirmation completed131W/7D/62L,
+67.25%score, bootstrap95% [61.5%,73%] and conservative Hoeffding95%
+[53.66898%,80.83102%]. All11,024moves and actual-clock checks replay cleanly,
+no technical results/voids/rounding ambiguities, minimum lower clock581.5ms.
+This independently supports a fixed-clock search-configuration gain for this
+specific unchanged warm network. It is not a newly learned-model gain or an
+advantage over the teacher. The fixed64-game teacher diagnostic is still live.
+Evidence: `results/20261026-leaf-batch8-confirmation{,-audit}.json`.
+
+The original three low-simulation RL updates are now closed and negative; a
+new one-iteration training control uses the same warm model, first-iteration
+environment/training seeds,256+32episode split,256simulations,4epochs/batch128/
+lr1e-5 and original normalization, changing only generation LeafBatch32to8.
+Evaluation deliberately stays LeafBatch32 for both neural actors, so a training
+effect is not confused with the already established inference configuration
+effect. Trajectories, targets, terminal outcomes and optimizer step count may
+change despite matching seeds. Recipe: `results/neural-small-batch-rl-plan.json`.
+It runs on a GPU released by the completed original RL series, separately from
+the2048-simulation/LeafBatch32 search-effort control. Both fixed warm/teacher
+development screens complete regardless of outcomes, followed by independent
+native audits before any strength interpretation. No promotion is implied.

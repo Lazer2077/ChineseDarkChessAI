@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Real first-iteration TRAINING episodes only, no selection-validation or strength-test data. Position means and equal-game means; correlated samples, not strength evidence. Targets include exploration noise, so coverage alone cannot establish policy improvement or its absence.",
+  "training_plan": "runs/neural-selfplay-series-01/iter-001/training-plan.json",
+  "training_plan_sha256": "d9ade7828f12cf509aa9a3d37c537614c548b1dd41da1dd303134ae5f9dd8e29",
+  "generation_manifest_sha256": "f0243231049670bf346e203e8669a17d20133a801ef765d84205b93766bfb989",
+  "games": 256,
+  "by_phase": {
+    "dark-6-plus": {
+      "count": 11073,
+      "means": {
+        "legal_actions": 33.99747132665041,
+        "visited_actions": 31.437008940666487,
+        "fraction_legal_visited": 0.9435579923798663,
+        "any_unvisited_legal_action": 0.2244197597760318,
+        "visit_entropy_nats": 3.101943065289264,
+        "effective_visit_actions": 25.256968885219916,
+        "maximum_visit_mass": 0.17810002370631264,
+        "actions_visited_once": 3.0646617899394926
+      }
+    },
+    "dark-1-to-5": {
+      "count": 2584,
+      "means": {
+        "legal_actions": 26.598297213622292,
+        "visited_actions": 23.818498452012385,
+        "fraction_legal_visited": 0.9314863634552397,
+        "any_unvisited_legal_action": 0.22213622291021673,
+        "visit_entropy_nats": 2.660167560271391,
+        "effective_visit_actions": 19.701201902602755,
+        "maximum_visit_mass": 0.26064694998065013,
+        "actions_visited_once": 0.7937306501547987
+      }
+    },
+    "fully-public": {
+      "count": 267,
+      "means": {
+        "legal_actions": 20.52059925093633,
+        "visited_actions": 18.674157303370787,
+        "fraction_legal_visited": 0.9397418670653659,
+        "any_unvisited_legal_action": 0.16104868913857678,
+        "visit_entropy_nats": 2.2459696116071117,
+        "effective_visit_actions": 14.317303133874349,
+        "maximum_visit_mass": 0.3568586142322097,
+        "actions_visited_once": 0.2958801498127341
+      }
+    }
+  },
+  "all_positions": {
+    "count": 13924,
+    "means": {
+      "legal_actions": 32.365914966963516,
+      "visited_actions": 29.778440103418557,
+      "fraction_legal_visited": 0.941244577082516,
+      "any_unvisited_legal_action": 0.22278081011203676,
+      "visit_entropy_nats": 3.0035451324323934,
+      "effective_visit_actions": 24.01616217459837,
+      "maximum_visit_mass": 0.19684677759623673,
+      "actions_visited_once": 2.590132145935076
+    }
+  },
+  "equal_game": {
+    "count": 256,
+    "means": {
+      "legal_actions": 33.21999246444381,
+      "visited_actions": 30.43070230795488,
+      "fraction_legal_visited": 0.9365529905886114,
+      "any_unvisited_legal_action": 0.2291651982809631,
+      "visit_entropy_nats": 3.0237193549998267,
+      "effective_visit_actions": 24.36410765719695,
+      "maximum_visit_mass": 0.19577987977396072,
+      "actions_visited_once": 2.910333022617031
+    }
+  },
+  "script_sha256": "25ace33c7ee4baa353d79f3fdeedad5b2110e0fd6766cfa99d76a7643092a338",
+  "interpretation_reference": "https://openreview.net/pdf?id=bERaNdoegnO",
+  "theory_limit": "Gumbel policy-improvement results assume correct action-value evaluation; no direct guarantee for our approximate private-information search."
+}

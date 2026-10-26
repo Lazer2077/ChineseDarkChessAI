@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/Yuan-Bai/jieqi-lab",
+  "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+  "license": "MIT; original LICENSE copied",
+  "scope": "Original optional Cython PUCT expand method only; Python constructor and original search unchanged. Build is outside original checkout. Not an algorithmic innovation or strength result.",
+  "python_version": "3.11.16",
+  "source_sha256": {
+    "run_records.py": "d81739d6fdfe4b610022c39ac1e6b6dd889fdeea964e0968adb7f715d05828ec",
+    "evaluation_runtime.py": "e3362601af98e471664c89cd7ba4bdd23fa01ad229e8c8c92f488d7d2d17ca40",
+    "azero.py": "4a184dd7ea1d93a8fe2328ace3439ddbe3f78c200cd8dd50ccd610558f1223f2",
+    "position_editor.py": "0bf53b60c7d59f9c04fe43d5905eabc850bd5d50ffc50799b6404cb3a7242fce",
+    "web_server.py": "5b341209c352de505f5e803aa22b3ba381553f7ee7846f8bc42b8035234f8465",
+    "merge_selfplay.py": "8320e4252b31f31b1d79e3fe87423b5c968894764e60857eae57e43d6c034df1",
+    "analysis_longcheck.py": "e88186f7ef9860d239ff6695970a683d8ef6caffd200594871eac32289c364a8",
+    "jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+    "training_diagnostics.py": "862abe86998f8e127f154db294a19018b0902b9f469e28a3c8144d9c3012b856",
+    "pika_engine.py": "ece2a5738d92b0f7666fc08470db3d66497fa4fa380027afb25aa4f1117a4f41",
+    "gui_tasks.py": "d25e137cf980b232576d9f0f8154007b30ad6f0e01983714aa2ea82250ec54df",
+    "training_runtime.py": "9ac2a187a7f9944457e2fdc17996a7436c16e9ccba7e638e66d926cdf9c2a4ea",
+    "game_record.py": "11eabc484e65755474df00dac63ea59c3bf778215bce1b689eccdf0bab1b8d20",
+    "analysis_move81.py": "4bdf42594bb476962efbd64abaf825efe7e9bea569a73c246a171c6a7134ac41",
+    "search_engine.py": "148fa0fca31dd1f263f352c650acb0a84404fa03517d557ba7e9cdce6bf96184",
+    "web_runtime.py": "e354281c7b404dacbcdc8ac83281d2af25d865df6223846353a958d949e108b4",
+    "ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+    "gui.py": "54cbb567be0925c8fc2ee0c73a1ff2f2a93d9b5ba8ee0dcd459a291be8727a94",
+    "LICENSE": "93afb7a6f6f883814cd7d82f0d972bae1d90ac8f6a012b5ae2e01545b276e18a",
+    "native/jieqi_search.pyx": "34e798edc880670ad5db910943448699176668b8bb278ef3200f84a543f66583",
+    "tools/build_search.py": "2e6b6ed79ba0509280a7656b931f60f9963ed4281998b8b8c3581d378932ec05"
+  },
+  "binary_sha256": {
+    "_jieqi_search.cpython-311-x86_64-linux-gnu.so": "8c01f65cb04536d838e8e91568661180302236e1dc88516556941344a0929cdc"
+  }
+}

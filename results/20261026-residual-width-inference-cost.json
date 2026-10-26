@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Forward-only timing, excludes encoder, belief construction, tree search and game-clock overhead. Sequential model order, not a randomized speedup estimate.",
+  "precision": "FP32, no autocast (matching search actor)",
+  "warmups": 10,
+  "repeats": 50,
+  "torch_version": "2.7.0+cu126",
+  "cuda_version": "12.6",
+  "gpu_model": "NVIDIA RTX A5000",
+  "matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "records_sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+  "measurements": [
+    {
+      "model": "runs/residual-width-01/small",
+      "model_sha256": "834c2b92345ebf99166fb1fd9b11c07ddaa5cbf0d44e4f3bc2536afe3f3e74ef",
+      "channels": 64,
+      "blocks": 15,
+      "batch": 1,
+      "wall_median_ms": 6.6601792350411415,
+      "wall_p95_ms": 7.023296970874071,
+      "device_median_ms": 6.61299204826355,
+      "device_p95_ms": 6.956339240074158,
+      "peak_allocated_bytes": 49766912
+    },
+    {
+      "model": "runs/residual-width-01/small",
+      "model_sha256": "834c2b92345ebf99166fb1fd9b11c07ddaa5cbf0d44e4f3bc2536afe3f3e74ef",
+      "channels": 64,
+      "blocks": 15,
+      "batch": 32,
+      "wall_median_ms": 4.7836145386099815,
+      "wall_p95_ms": 6.7632878199219695,
+      "device_median_ms": 4.746752023696899,
+      "device_p95_ms": 6.71452167034149,
+      "peak_allocated_bytes": 53702656
+    },
+    {
+      "model": "runs/residual-width-01/wide",
+      "model_sha256": "64040c09059c171b76e2222f2b219eb13deb9e7460da40329367155439c0b2ea",
+      "channels": 128,
+      "blocks": 15,
+      "batch": 1,
+      "wall_median_ms": 4.941788502037525,
+      "wall_p95_ms": 5.235723778605461,
+      "device_median_ms": 4.906496047973633,
+      "device_p95_ms": 5.19767050743103,
+      "peak_allocated_bytes": 64406528
+    },
+    {
+      "model": "runs/residual-width-01/wide",
+      "model_sha256": "64040c09059c171b76e2222f2b219eb13deb9e7460da40329367155439c0b2ea",
+      "channels": 128,
+      "blocks": 15,
+      "batch": 32,
+      "wall_median_ms": 5.059562623500824,
+      "wall_p95_ms": 10.042249504476786,
+      "device_median_ms": 5.022719860076904,
+      "device_p95_ms": 9.968896436691285,
+      "peak_allocated_bytes": 73825792
+    }
+  ]
+}

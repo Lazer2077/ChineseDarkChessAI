@@ -45,3 +45,61 @@ and rule histories, and use representative partial and fully public roots.
 Changes to allocation alone need fixed-simulation equivalence before actual-clock
 strength screens; alternate priors or information sharing require separate
 algorithmic ablations rather than being labeled equivalent optimizations.
+
+## Original optional compiled expansion: measured against the actual default
+
+The existing actor uses Python node expansion (`JIEQI_SEARCH_BACKEND` defaults
+to `python`), independently of its enabled lazy-allocation default. Upstream
+also supplies an optional Cython expansion method. It was built without edits
+in a separate copy; original sources and all frozen running campaigns remain
+unchanged. Build provenance: `results/20261026-yuan-search-build.json` and
+`scripts/build_yuan_search.py`. This is inherited implementation work, not a
+new search algorithm.
+
+The fixed `results/search-backend-control-plan.json` selects an opening root,
+one uncertain-last-own-dark root and one fully public root from certified pilot
+TRAINING episodes. Both backends use the actual lazy default, identical warm-start
+weights, private/rule histories, seeds, 32-leaf batches and 1,024 complete
+simulations. Three alternating-order repetitions in separate processes yield
+18 searches / 18,432 measured simulations. All nine Python/Cython pairs match
+exactly in root action, full policy, visits, value sum, child visits/value sums
+and priors. Existing fixed-simulation/deadline/private-observer tests also pass
+with the compiled backend (3 tests).
+
+Median Python/Cython wall ratios by root are 1.0298 opening, 1.0621 last-dark,
+and 0.9929 fully public. These small exploratory differences across three
+correlated states do not establish a broad runtime or strength improvement.
+The Python node constructor remains unchanged by upstream's optional backend.
+We have not enabled it in existing training, promoted it, or started a redundant
+large strength campaign from these timings alone. Raw root fingerprints and
+samples: `results/20261026-search-backend-control.json`.
+
+## Root coverage: testing a low-simulation explanation
+
+[Policy Improvement by Planning with Gumbel, Danihelka et al., ICLR 2022](https://openreview.net/pdf?id=bERaNdoegnO)
+identifies policy-improvement problems when root actions receive no visits and
+studies without-replacement sampling and sequential halving. This is relevant
+literature, but its correct-action-value assumption is not established for our
+approximate private-information search. We have not implemented or claimed its
+policy-improvement guarantee in Jieqi.
+
+Before launching another search variant, `scripts/diagnose_root_coverage.py`
+replayed only the first iteration's 256 TRAINING games (13,924 positions),
+excluding its 32 checkpoint-selection games and all strength-test layouts.
+Every episode digest, observer/visit/terminal audit and legal-action support is
+checked. The actual targets contain 256 complete root visits per position.
+Position-weighted means: 32.366 legal actions, 29.778 visited actions, 94.124%
+legal-action coverage; 22.278% of positions leave at least one legal action
+unvisited. Equal-game means are 93.655% coverage and 22.917% with an unvisited
+action. Effective visit actions average 24.016, and maximum visit mass 19.685%.
+Counts and partial/full phase breakdowns:
+`results/20261026-neural-root-coverage.json`.
+
+These observations weaken an explanation based on most legal actions being
+unvisited during this fixed-simulation training generation. They do not measure
+short-clock test roots, chance-conditioned Q accuracy or actual policy
+improvement. Visit entropy includes root Dirichlet exploration noise; a diffuse
+label is not itself an error. The next search-target study should assess value
+estimation and chance-sampling reliability, and distinguish these from action
+coverage, before attributing losses to root allocation or adopting Gumbel
+planning. This is a diagnosis, not a newly validated algorithm.

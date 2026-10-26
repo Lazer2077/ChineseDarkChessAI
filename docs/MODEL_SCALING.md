@@ -106,3 +106,20 @@ versus 2.3653944 wide, value MSE 0.0844391 versus 0.0844800. Different channel
 reductions and BF16 rounding produce small initial numerical differences, which
 are recorded rather than retuned away. This single-seed, short continuation does
 not settle training larger models from scratch or their eventual on-policy RL.
+
+## Both adaptation arms completed
+
+Both models completed 2 epochs / 9,442 GPU updates and selected epoch 1.
+Selected validation CE/value MSE: small 2.3588523/0.0842577, wide
+2.3597666/0.0843452. This short single-seed adaptation has not established a
+predictive benefit for the wider model. The entire curves, initial metrics,
+selection metadata and model digests are in
+`results/20261026-residual-width-training.json`. The three fixed strength
+screens remain pending, with wide-versus-small now running.
+
+Forward-only FP32 timings are archived in
+`results/20261026-residual-width-inference-cost.json`. Wall medians at batch32
+were 4.784ms small and 5.060ms wide. The batch1 measurements were 6.660ms and
+4.942ms respectively. Sequential model order, CUDA algorithm choices and shared
+load preclude a general speed ranking; these measurements exclude encoding,
+belief construction and search. Actual-clock games remain the strength measure.

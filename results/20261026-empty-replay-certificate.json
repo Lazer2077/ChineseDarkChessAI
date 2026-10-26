@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "scope": "Exact native actor seeded random-prefix replay, escaping immediately before first search. Certifies zero-row games, not new generated data, new labels or playing strength.",
+  "actor_source_sha256": "a20d23616d153d164a024b2de1bddc279dbf02a9aec590ae129635632068956b",
+  "native_core_sha256": "bc87caccaae46b4a0cbfa6b19a2fe05fd5ac0b13e2ab363c273acb940bce409c",
+  "probe_source_sha256": "5fd72a4599115b64d5b151ff84ca030d25e12f72c7f954b0176096424c63eb21",
+  "probe_binary_sha256": "00d0d42e92bfdad63cf043818d5ac9f8c98e52793e212c4d36ca69212a0649a5",
+  "controller_sha256": "a1c4add8dfb1898eb356a97b8c55568f17d1497a6a84696cd09aef7b64ec8a30",
+  "random_opening_max_plies": 8,
+  "datasets": {
+    "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d": {
+      "generated_games": 8192,
+      "seed": 2034102601,
+      "zero_search_record_games": [],
+      "nonempty_games": 8192
+    },
+    "cb837f6e401b20a85ab34419086404a881577b517ede74370153593f47e6a11d": {
+      "generated_games": 8192,
+      "seed": 2034102602,
+      "zero_search_record_games": [],
+      "nonempty_games": 8192
+    },
+    "83b51de7572c5c93df80d03a9be8ca7bf71145cee109c95d384a89f95d2e21da": {
+      "generated_games": 8192,
+      "seed": 2034102701,
+      "zero_search_record_games": [],
+      "nonempty_games": 8192
+    },
+    "74bcb2a9c8ea3da3f8b140f8ca7ebcdf45920c33801d81abd7aa52d2a695101f": {
+      "generated_games": 8192,
+      "seed": 2034102702,
+      "zero_search_record_games": [
+        {
+          "game_index": 1492,
+          "red_result": 0
+        }
+      ],
+      "nonempty_games": 8191
+    },
+    "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c": {
+      "generated_games": 512,
+      "seed": 2035102600,
+      "zero_search_record_games": [],
+      "nonempty_games": 512
+    }
+  }
+}

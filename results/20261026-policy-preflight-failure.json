@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "attempt": "neural-policy-phase-01",
+  "status": "failed_preflight",
+  "optimization_updates": 0,
+  "plan_sha256": "53c36a789e113394d290ae9ced151b20cb4a25c183b581841821c866c5f38bc7",
+  "cause": "Record segments8191 vs8192 generated games in seed20261027 iteration2. Exact original seeded random-prefix replay certifies game1492 ends with no searched record. Data not corrupted or changed; no forced segment merge.",
+  "certificate": "results/20261026-empty-replay-certificate.json",
+  "next_action": "Use certified nonempty-game count for segmentation while preserving every recorded row and reporting generated versus contributing games separately."
+}

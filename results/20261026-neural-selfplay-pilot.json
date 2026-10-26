@@ -1,0 +1,562 @@
+{
+  "schema": 1,
+  "scope": "Completed 16-game development pilot of neural-search self-play and terminal/visit training, not strength evidence or promotion. A separate two-game GPU smoke lost both games; this is retained as integration evidence only.",
+  "generation_plan": "results/neural-selfplay-pilot-generation-plan.json",
+  "generation_plan_sha256": "8b0ab13e5069f0af58f734c3ae181f91f2152fc325d28dd38a7cb2bc19ea77ea",
+  "training_plan": "results/neural-selfplay-pilot-training-plan.json",
+  "training_plan_sha256": "c187acd6be8bcd76f7d721cd477ef96eb435211628decc69d1a81901b90a0559",
+  "generation": {
+    "schema": 1,
+    "status": "completed",
+    "plan_sha256": "8b0ab13e5069f0af58f734c3ae181f91f2152fc325d28dd38a7cb2bc19ea77ea",
+    "completed": 16,
+    "episodes": [
+      {
+        "index": 0,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260001,
+        "simulations": 256,
+        "positions": 61,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 13.881669387221336,
+        "npz_sha256": "7f7387e0c75ec0fec47ca95b623783357a01f8a80ecd5b2c09350fa81867237e",
+        "audit": {
+          "positions_replayed": 61,
+          "fully_public_positions": 0,
+          "private_dark_captures": 0,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 1,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260002,
+        "simulations": 256,
+        "positions": 144,
+        "outcome": -1,
+        "reason": "stalemate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 24.769006676971912,
+        "npz_sha256": "682453214dd85e74b00939f48bccff74a6d9558f55e81524c23d795338600822",
+        "audit": {
+          "positions_replayed": 144,
+          "fully_public_positions": 79,
+          "private_dark_captures": 2,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 2,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260003,
+        "simulations": 256,
+        "positions": 44,
+        "outcome": -1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 8.662039410322905,
+        "npz_sha256": "e031399ff5958240444c76ab0eb8173313aa53df6a0899371abd54dc36482967",
+        "audit": {
+          "positions_replayed": 44,
+          "fully_public_positions": 0,
+          "private_dark_captures": 3,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 3,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260004,
+        "simulations": 256,
+        "positions": 40,
+        "outcome": -1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 8.87250273115933,
+        "npz_sha256": "b94ea641b50baca46f24e57d365114c6033e074d09495a771611332151040d0b",
+        "audit": {
+          "positions_replayed": 40,
+          "fully_public_positions": 0,
+          "private_dark_captures": 0,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 4,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260005,
+        "simulations": 256,
+        "positions": 108,
+        "outcome": -1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 20.606889640912414,
+        "npz_sha256": "c779118ab56c9345b065a3b6c48e7003e2190277d18cbb6bf97e8d844b1d8ef0",
+        "audit": {
+          "positions_replayed": 108,
+          "fully_public_positions": 20,
+          "private_dark_captures": 2,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 5,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260006,
+        "simulations": 256,
+        "positions": 28,
+        "outcome": -1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 5.34035306610167,
+        "npz_sha256": "785917655c03322079d867bc5e9fc34c5dc566720a5a9f3e1448598656691c09",
+        "audit": {
+          "positions_replayed": 28,
+          "fully_public_positions": 0,
+          "private_dark_captures": 4,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 6,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260007,
+        "simulations": 256,
+        "positions": 91,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 17.68662778288126,
+        "npz_sha256": "246a2b33f8c961a959d5f2bee01e31c1201897674c923bfd2bd8ca216012a9c9",
+        "audit": {
+          "positions_replayed": 91,
+          "fully_public_positions": 0,
+          "private_dark_captures": 2,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 7,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260008,
+        "simulations": 256,
+        "positions": 33,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 6.667561657726765,
+        "npz_sha256": "8eb509e4b9038b6a40adf099a1621dce5c7c00d4491c0d51823f8b593e35bc3e",
+        "audit": {
+          "positions_replayed": 33,
+          "fully_public_positions": 0,
+          "private_dark_captures": 3,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 8,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260009,
+        "simulations": 256,
+        "positions": 45,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 8.461763467639685,
+        "npz_sha256": "c58b8235b9d7cbac44e338dde0ebaf3ccb88bf999274de9afe028ae2d4788778",
+        "audit": {
+          "positions_replayed": 45,
+          "fully_public_positions": 0,
+          "private_dark_captures": 5,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 9,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260010,
+        "simulations": 256,
+        "positions": 55,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 9.630863323807716,
+        "npz_sha256": "fc18b80f8396bebad36742e11938dd23ff07a8b24ec1c98bfac6c0caacd7dbc4",
+        "audit": {
+          "positions_replayed": 55,
+          "fully_public_positions": 0,
+          "private_dark_captures": 2,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 10,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260011,
+        "simulations": 256,
+        "positions": 23,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 4.4602610524743795,
+        "npz_sha256": "b8963f8a227604f098b14e7b3b96a437331b9a350083c5a0949a2750fd663f68",
+        "audit": {
+          "positions_replayed": 23,
+          "fully_public_positions": 0,
+          "private_dark_captures": 1,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 11,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260012,
+        "simulations": 256,
+        "positions": 55,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 11.005734214559197,
+        "npz_sha256": "c590b83e068fa77625c8c1332bbd0d50247bfbd071072e615f19f426267cd8d3",
+        "audit": {
+          "positions_replayed": 55,
+          "fully_public_positions": 0,
+          "private_dark_captures": 1,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 12,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260013,
+        "simulations": 256,
+        "positions": 62,
+        "outcome": -1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 11.200026385486126,
+        "npz_sha256": "df142cc5107d8c6b23205d194b9086f2ad816f873946d373dbfbf5491838ec4b",
+        "audit": {
+          "positions_replayed": 62,
+          "fully_public_positions": 0,
+          "private_dark_captures": 5,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 13,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260014,
+        "simulations": 256,
+        "positions": 46,
+        "outcome": -1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 9.167886575683951,
+        "npz_sha256": "a518842a98bbcc1af5061a6eff5873a511a195fe53a44145b72e2da60c4aaaa0",
+        "audit": {
+          "positions_replayed": 46,
+          "fully_public_positions": 0,
+          "private_dark_captures": 3,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 14,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260015,
+        "simulations": 256,
+        "positions": 55,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 10.065020348876715,
+        "npz_sha256": "96b9cf3aee987f661932716aa14b003bcaa969f2ec2c5303d64393056f4c0aa0",
+        "audit": {
+          "positions_replayed": 55,
+          "fully_public_positions": 0,
+          "private_dark_captures": 9,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      },
+      {
+        "index": 15,
+        "schema": "cdca-neural-search-replay-v1",
+        "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+        "seed": 8260016,
+        "simulations": 256,
+        "positions": 55,
+        "outcome": 1,
+        "reason": "checkmate",
+        "rules": "Original pinned Yuan tiantian-v5; full history and captor-private belief updates retained. External native-jqe benchmark profile differs.",
+        "environment_rng": "Independent random.Random(seed), lazy uniform without-replacement reveals/captures; never shared with search RNG.",
+        "scope": "Current neural model searches both sides. Raw normalized completed root visits and terminal actor-relative values; no teacher one-hot policy or teacher bootstrap value.",
+        "generation_seconds": 9.354272048920393,
+        "npz_sha256": "d6934a4bbae3d80465f24ad31423ba3ab41495ca51c3a0182027a418bb1deeec",
+        "audit": {
+          "positions_replayed": 55,
+          "fully_public_positions": 0,
+          "private_dark_captures": 3,
+          "legal_policy_support": true,
+          "root_visit_counts_match": true,
+          "observer_records_match": true,
+          "terminal_values_match": true
+        }
+      }
+    ]
+  },
+  "training": {
+    "schema": 1,
+    "status": "completed",
+    "plan_sha256": "c187acd6be8bcd76f7d721cd477ef96eb435211628decc69d1a81901b90a0559",
+    "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+    "initial_network_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "generation_plan_sha256": "8b0ab13e5069f0af58f734c3ae181f91f2152fc325d28dd38a7cb2bc19ea77ea",
+    "training": [
+      {
+        "index": 0,
+        "seed": 8260001,
+        "positions": 61,
+        "sha256": "7f7387e0c75ec0fec47ca95b623783357a01f8a80ecd5b2c09350fa81867237e"
+      },
+      {
+        "index": 1,
+        "seed": 8260002,
+        "positions": 144,
+        "sha256": "682453214dd85e74b00939f48bccff74a6d9558f55e81524c23d795338600822"
+      },
+      {
+        "index": 2,
+        "seed": 8260003,
+        "positions": 44,
+        "sha256": "e031399ff5958240444c76ab0eb8173313aa53df6a0899371abd54dc36482967"
+      },
+      {
+        "index": 3,
+        "seed": 8260004,
+        "positions": 40,
+        "sha256": "b94ea641b50baca46f24e57d365114c6033e074d09495a771611332151040d0b"
+      },
+      {
+        "index": 4,
+        "seed": 8260005,
+        "positions": 108,
+        "sha256": "c779118ab56c9345b065a3b6c48e7003e2190277d18cbb6bf97e8d844b1d8ef0"
+      },
+      {
+        "index": 5,
+        "seed": 8260006,
+        "positions": 28,
+        "sha256": "785917655c03322079d867bc5e9fc34c5dc566720a5a9f3e1448598656691c09"
+      },
+      {
+        "index": 6,
+        "seed": 8260007,
+        "positions": 91,
+        "sha256": "246a2b33f8c961a959d5f2bee01e31c1201897674c923bfd2bd8ca216012a9c9"
+      },
+      {
+        "index": 7,
+        "seed": 8260008,
+        "positions": 33,
+        "sha256": "8eb509e4b9038b6a40adf099a1621dce5c7c00d4491c0d51823f8b593e35bc3e"
+      },
+      {
+        "index": 8,
+        "seed": 8260009,
+        "positions": 45,
+        "sha256": "c58b8235b9d7cbac44e338dde0ebaf3ccb88bf999274de9afe028ae2d4788778"
+      },
+      {
+        "index": 9,
+        "seed": 8260010,
+        "positions": 55,
+        "sha256": "fc18b80f8396bebad36742e11938dd23ff07a8b24ec1c98bfac6c0caacd7dbc4"
+      },
+      {
+        "index": 10,
+        "seed": 8260011,
+        "positions": 23,
+        "sha256": "b8963f8a227604f098b14e7b3b96a437331b9a350083c5a0949a2750fd663f68"
+      },
+      {
+        "index": 11,
+        "seed": 8260012,
+        "positions": 55,
+        "sha256": "c590b83e068fa77625c8c1332bbd0d50247bfbd071072e615f19f426267cd8d3"
+      }
+    ],
+    "selection_validation": [
+      {
+        "index": 12,
+        "seed": 8260013,
+        "positions": 62,
+        "sha256": "df142cc5107d8c6b23205d194b9086f2ad816f873946d373dbfbf5491838ec4b"
+      },
+      {
+        "index": 13,
+        "seed": 8260014,
+        "positions": 46,
+        "sha256": "a518842a98bbcc1af5061a6eff5873a511a195fe53a44145b72e2da60c4aaaa0"
+      },
+      {
+        "index": 14,
+        "seed": 8260015,
+        "positions": 55,
+        "sha256": "96b9cf3aee987f661932716aa14b003bcaa969f2ec2c5303d64393056f4c0aa0"
+      },
+      {
+        "index": 15,
+        "seed": 8260016,
+        "positions": 55,
+        "sha256": "d6934a4bbae3d80465f24ad31423ba3ab41495ca51c3a0182027a418bb1deeec"
+      }
+    ],
+    "epochs_completed": 2,
+    "updates": 12,
+    "scope": "Search-guided neural self-play RL update using actual root visits and terminal values. Tiny development pilot; no teacher-strength gain, equilibrium guarantee or model promotion.",
+    "best_npz_sha256": "ac0930ff4e7b4a8bbd0dee02d9b6b26083a85e611c79d8aee71153e78617d5d7"
+  },
+  "selected": {
+    "epoch": 2,
+    "validation": {
+      "loss": 5.877334102793995,
+      "search_policy_ce": 5.032397066997156,
+      "terminal_value_mse": 0.8449370357968392
+    },
+    "npz_sha256": "ac0930ff4e7b4a8bbd0dee02d9b6b26083a85e611c79d8aee71153e78617d5d7",
+    "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+    "phase_experts": false,
+    "channels": 64,
+    "blocks": 15
+  },
+  "training_curves": [
+    {
+      "epoch": 1,
+      "updates": 6,
+      "train_policy_ce": 4.900138564641384,
+      "train_terminal_mse": 0.7404033210451371,
+      "validation": {
+        "loss": 6.078048237025967,
+        "search_policy_ce": 5.207544610193792,
+        "terminal_value_mse": 0.8705036268321746
+      },
+      "seconds": 0.47317645885050297
+    },
+    {
+      "epoch": 2,
+      "updates": 12,
+      "train_policy_ce": 4.819024836097167,
+      "train_terminal_mse": 0.6564723704589283,
+      "validation": {
+        "loss": 5.877334102793995,
+        "search_policy_ce": 5.032397066997156,
+        "terminal_value_mse": 0.8449370357968392
+      },
+      "seconds": 2.571533016860485
+    }
+  ],
+  "initial_validation": {
+    "loss": 6.456999558578366,
+    "search_policy_ce": 5.517119747440178,
+    "terminal_value_mse": 0.9398798111381881
+  },
+  "positions": 945,
+  "fully_public_positions": 99,
+  "private_dark_captures": 45,
+  "raw_episode_archive": "results/raw/neural-selfplay-pilot-01-ffef63178e65.tar.gz",
+  "raw_episode_archive_sha256": "ffef63178e65b4ca17f87f438a71758f894eb5fe0ca597805c319a49cc601eff",
+  "precision_note": "Model and gradients FP32; NumPy uint32 normalization promotes the soft target distribution/cross entropy to float64 in this implementation. Exact code and plans are retained."
+}

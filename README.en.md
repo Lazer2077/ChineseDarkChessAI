@@ -81,6 +81,14 @@ When learning stalls, we will first investigate data coverage, target bias, beli
 
 ## Evaluation standards
 
+Final report gate: establish stable win rates above **70%** (wins/all games,
+reported separately from draw-adjusted score) against all current verified
+open-source/research strong baselines, on independent color-swapped test sets
+and across training seeds. Then write an arXiv-style technical report with
+training curves, core innovations, ablations and meaningful implementation
+details. Current version-specific confirmations do not meet this goal; see the
+[full acceptance requirements](docs/GOAL.md).
+
 Models, versions, layout seeds, rules, clocks, threads, and sample sizes are fixed in advance; training and evaluation layouts are separated. Formal superiority requires at least 100 color-swapped layout pairs, reporting W/D/L, score rate, a 95% bootstrap interval resampled by layout pair, and all timeouts, illegal moves, voids, and truncated games. Internal promotion additionally requires a conservative bounded-mean lower confidence limit above 50% and no technical errors. Broader superiority also requires confirmation on independent layouts and validation across multiple training seeds.
 
 Equal actual-time and equal-node budgets are studied separately. A larger network's advantage at equal nodes does not establish greater strength at equal time. Opponents must not be weakened, their official networks replaced, or their JS versions used to represent their C++ engines. Rule differences are handled through an independent referee and separate profiles; see the [native Mist profile](docs/MIST_NATIVE.md).

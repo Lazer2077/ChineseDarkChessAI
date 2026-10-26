@@ -22,7 +22,9 @@ Q values or against adversarial hidden-information strategies.
 variant. It explicitly requires a Gumbel seed, rejects time deadlines, Dirichlet
 mixing and visit-temperature sampling, and returns a root-score recommendation
 plus the actual normalized root visits. Those visits are not a completed-Q
-training target. There is no new self-play training or live-game actor yet.
+training target. There is no new self-play training. A separate fixed-work actor
+and its queued development matches are described below; no anytime profile is
+claimed.
 
 At256simulations and16candidates, rounds allocate64simulations each to16,8,4,2
 actions. Other budgets use explicit rounding and may finish an incomplete
@@ -71,10 +73,65 @@ comparison. Three roots cannot establish either strength or an observation-
 phase interaction. Full scores, visits, rounds and timing:
 `results/20261026-root-halving-diagnostic.json`.
 
-A possible next test is a fixed-work match of original PUCT versus root halving,
-including a separately declared fully-public-only switch. Both actors would
-need the same256simulation budget, generous identical fail-safe clocks and
-independent completed-simulation witnesses. No match is launched or promotion
-claimed from this three-root proxy. A timed algorithm would require a separately
-defined anytime allocation/recommendation rule; the fixed-work prototype must
-not silently treat a million-simulation timed call as a completed halving.
+A timed algorithm would require a separately defined anytime allocation and
+recommendation rule; the fixed-work prototype must not silently treat a
+million-simulation timed call as a completed halving.
+
+## Fixed-work full-game contrasts
+
+`research/fixed_work_profile.py` and the research-only UCI wrapper now expose
+original PUCT, all-phase root halving, and fully-public-only root halving. The
+last variant uses original PUCT until **both colors have zero on-board dark
+pieces**, then switches root allocation. Private certainty does not trigger
+the switch. Before that public transition, a targeted test reproduces original
+PUCT outputs/visits/value sums exactly with the same seed. A real replay fixture
+checks the fully public branch with actual rule history. The same CNN policy,
+value function, chance model and interior PUCT apply to all profiles.
+
+The wrapper explicitly converts each go request into a declared finite node
+budget. It preserves the original go arguments as evidence; external actual
+wall time is still charged by the referee. This is equal completed simulation
+work, not equal FLOPs, neural evaluations or an anytime clock-controlled method.
+Each fresh process records every root-edge visit/value sum, returned move,
+public board/actor/history-coordinate key, method/phase and completed count.
+An independent witness audit joins these to every actual timed go request and
+every public native replay move. It verifies exact work and the public phase
+gate alongside the separate native seeded-identity/legal/terminal/clock audit.
+
+A two-game CPU integration smoke uses8simulations,LeafBatch8 and generous
+actual300+2clocks, with the real frozen warm CNN. It completed2W/0D/0L but one
+layout has no statistical strength meaning. All131moves, four fresh processes,
+four warmups and actual simulation witnesses match; no fully-public positions
+occurred, so this smoke does not exercise the phase switch. The separate real
+full-root fixture covers that branch. Five corruption checks reject wrong
+budgets, duplicate calls, false public flags, wrong boards and wrong selected
+actions. The final audit binds the board and actor themselves to native replay,
+in addition to the position key. See
+`results/20261026-root-halving-cpu-smoke-provenance.json` and the referenced
+native/work-v2 audits, raw games and compressed witnesses. This is integration
+evidence, not improvement evidence.
+
+`results/root-halving-matches-plan.json` fixes two fresh64-game development
+contrasts before either outcome:
+
+| Candidate | Control | Paired layout seed |
+| --- | --- | --- |
+| All-phase root halving | Original PUCT | 9460001 |
+| Fully-public-only root halving | Original PUCT | 9470001 |
+
+Both use the identical warm network,256completed simulations,LeafBatch8,
+zero Gumbel noise, one CPU thread each, one shared dedicated GPU and two games
+concurrent. Actual60+0.5clocks are identical generous fail-safes, defining a
+different stratum from10+0.1teacher studies. Both fixed contrasts complete
+regardless of results, with source/model checks and both audits. Sources also
+pin the source-root diagnostic used to motivate the phase ablation. No tuning
+or early stopping is allowed between these screens. If the public candidate
+never reaches a fully revealed turn, that mechanism is unexercised rather than
+positive or negative evidence for the switch. Every exercised phase count is
+reported by the witness audit.
+
+The study is queued behind the teacher-leaf campaign to use its released GPU;
+it is not running concurrently on that GPU. No game-strength conclusion or
+promotion follows from the prototype or the smoke. Future advantages would
+initially be search changes of the unchanged warm network, not newly learned
+weights, full Gumbel AlphaZero, or superiority over the native teacher.

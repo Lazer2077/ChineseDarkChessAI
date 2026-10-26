@@ -194,6 +194,15 @@ the2048-simulation/LeafBatch32 search-effort control. Both fixed warm/teacher
 development screens complete regardless of outcomes, followed by independent
 native audits before any strength interpretation. No promotion is implied.
 
+This small-batch generation/training arm completed288games /17,358positions,
+four GPU epochs /480updates. Selected epoch4 checkpoint SHA256 is
+`7ece25a72f60ffb2195e0cee7e1995d6b38499621e4993323131802d2c9769f5`.
+Selection CE/terminal MSE is2.6140428/0.6713939 on its new trajectory split;
+different target entropies/positions can change those losses without stronger
+play. Fresh fixed warm/teacher matches are now running/pending, still at
+LeafBatch32 for both actors. Curves, actual episode digests and source checks:
+`results/20261026-neural-small-batch-rl-training.json`.
+
 A separate [fixed-work root sequential-halving prototype](ROOT_HALVING.md)
 keeps interior information-set PUCT and tests allocation on three existing
 training roots. It is neither a full Gumbel AlphaZero implementation nor a

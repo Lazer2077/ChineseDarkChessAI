@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "scope": "Completed CPU integration smoke, not a predeclared strength experiment. Post-match source/provenance snapshot; original match manifest independently pins actor shell hashes. No training or promotion.",
+  "recipe": {
+    "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "candidate": "halving",
+    "baseline": "puct",
+    "simulations_each": 8,
+    "leaf_batch": 8,
+    "device": "cpu",
+    "threads_each": 1,
+    "games": 2,
+    "concurrency": 2,
+    "seed": 9450001,
+    "actual_clock": "300+2"
+  },
+  "outcome": [
+    2,
+    0,
+    0
+  ],
+  "interpretation": "One paired layout is not statistical strength evidence. No fully-public decisions occurred; real fully-public switch is covered separately by the fixed-work profile test fixture.",
+  "evidence_sha256": {
+    "adapters/neural_policy_fixed_halving_gpu_uci.sh": "4ce2e66f054f7772898a34298fa292aa1446b180adde8c48a3b0b332e4031277",
+    "adapters/neural_policy_fixed_puct_gpu_uci.sh": "2badcaa3ac048adef0a6bd0e1239a0f5cde15a8b4647afcc569515e35e349d6a",
+    "adapters/neural_policy_fixed_work_uci.py": "af124b1c3f2e928e03bddd81c7e6f48e99e2bf5aa556c2e127980fd9d1b435e8",
+    "research/fixed_work_profile.py": "9665b1f3044ad55f6800a366bc8e6140074e13163a5a0dc16b0b391c26ac6cd9",
+    "research/fixed_work_contract.py": "e380ca0b2e9a923860e5bd22d607ebfc1708318be6a0ed824702663ef6222469",
+    "research/sequential_halving.py": "09dacee3f4da88fde9ca8d7d7e5e62ccdff1888809d195a1bf88f31ea8dab001",
+    "scripts/audit_fixed_work.py": "f453e3bfed73aefd036b3e71d065454a1ae47c8a1345aaa40494735c4e089564",
+    "results/20261026-root-halving-cpu-smoke.json": "b7418b65f1becd07160af09b574ff9b9fece4f38039ffd5c942df6c7a7b05ea3",
+    "results/20261026-root-halving-cpu-smoke-native-audit.json": "1a7f5cf9127269c6249bb69186d9975c47d04c64e30982aea1e0ca655ccb7c1e",
+    "results/20261026-root-halving-cpu-smoke-work-audit-v2.json": "01eaf6e21268aa78c20233ee1c6abcb8cab117c7a2f31f8dbfa6092086af0fa4",
+    "results/20261026-fixed-work-witness-negative-checks.json": "6d215419ba9c89da3eb0003fba3ec283f02e6228b2d795c63053552c6907e887"
+  }
+}

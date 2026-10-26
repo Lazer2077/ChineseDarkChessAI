@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "scope": "Negative checks of simulation/public-phase witness, not strength. V2 binds public board and actor directly into native replay multiset, in addition to the position key.",
+  "auditor_sha256": "f453e3bfed73aefd036b3e71d065454a1ae47c8a1345aaa40494735c4e089564",
+  "checks": [
+    {
+      "mutation": "wrong_budget",
+      "rejected": true,
+      "reason": "Incorrect completed simulation budget"
+    },
+    {
+      "mutation": "duplicate_call",
+      "rejected": true,
+      "reason": "Every actual go, including exactly one initial warmup, must have a witness"
+    },
+    {
+      "mutation": "false_full_public",
+      "rejected": true,
+      "reason": "Incorrect public phase gate"
+    },
+    {
+      "mutation": "wrong_public_board",
+      "rejected": true,
+      "reason": "Missing, duplicated, or wrong-observation/action simulation witness"
+    },
+    {
+      "mutation": "wrong_selected_action",
+      "rejected": true,
+      "reason": "Missing, duplicated, or wrong-observation/action simulation witness"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ w=torch.nn.Parameter(torch.zeros(15,device=a.device));v=torch.nn.Parameter(torch
 for epoch in range(a.epochs):
     random.shuffle(rows);total=0.
     for r in rows:
-        x=torch.tensor(r['features'],device=a.device);pi=torch.tensor(r['pi'],device=a.device)
+        x=torch.tensor(r['features'],device=a.device,dtype=torch.float32);pi=torch.tensor(r['pi'],device=a.device,dtype=torch.float32)
         loss=-(pi*torch.log_softmax(x@w,dim=0)).sum()
         if r['value'] is not None:
             state=(pi[:,None]*x).sum(0);loss=loss+(torch.tanh(state@v)-r['value'])**2

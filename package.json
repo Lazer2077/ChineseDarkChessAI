@@ -7,7 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node --test",
+    "test": "node --test tests/*.test.js",
     "selfplay": "node src/run.js"
   }
 }

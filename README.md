@@ -51,3 +51,15 @@ node src/run.js --games=20 --seed=100001 --model=runs/model0.json --opponent=ups
 CS01 已由用户确认为本机 csci-cscidl01。首轮实验使用独立目录和有限预算。
 运行 `scripts/cs01-pilot.sh` 可复跑闭环；通过 TRAIN_PYTHON 指定已有 PyTorch 环境，TRAIN_DEVICE 指定 cpu/cuda。
 自我博弈按访问分布采样探索；对外评测选择访问数最多的动作。
+
+## 持续目标与对手清单
+见 [持续目标](docs/GOAL.md) 和 [固定版本候选清单](docs/opponents.json)。
+尚无任何对手被认定为已击败。清单持续扩充，不代表穷尽所有开源项目。
+
+UCI 对手接入示例（仅传入当前行动方的观察，不传真实暗子身份）：
+```sh
+node src/run.js --games=2 --seed=400001 --opponent=uci --engine=/absolute/path/to/engine --timeMs=100 --out=runs/uci-pilot
+```
+可用 `--net=/absolute/path/to/network`、`--threads=1`。当前适配器每步重建 FEN，
+未向对手发送完整历史；重复裁决由外部裁判处理。正式对赛前必须解决规则与历史兼容性，
+这些试跑不能作为完整棋力证明。

@@ -16,6 +16,7 @@ int main(int argc, char** argv) {
   Position p;if(!p.set_fen(fen,&error))throw std::runtime_error(error);
   for(bool quantized : {false,true}) {
    nnue::set_quantized(quantized);
+   if(nnue::quantized()!=quantized)throw std::runtime_error("requested inference mode unavailable");
    if(p.darkCount[RED]+p.darkCount[BLACK]==0) {
     Position canonical=p;std::memset(canonical.urn,0,sizeof canonical.urn);canonical.urnTotal[0]=canonical.urnTotal[1]=0;
     if(nnue::evaluate(p)!=nnue::evaluate(canonical))throw std::runtime_error("dead inventory affects canonical value");

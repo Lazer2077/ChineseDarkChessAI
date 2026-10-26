@@ -26,8 +26,9 @@
       "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
       "kind": "engine variant",
       "license": "GPL-3.0-or-later",
-      "status": "source fetched; compatibility pending",
-      "defeated": false
+      "status": "native build and UCI smoke passed; upstream array-bound warning unresolved; formal match pending",
+      "defeated": false,
+      "repository_url": "https://github.com/official-pikafish/Pikafish"
     },
     {
       "id": "AB-JChess",
@@ -35,7 +36,7 @@
       "commit": "135844bb1c7da753149a71a661c5b4738a00561f",
       "kind": "NNUE engine",
       "license": "GPL-3.0",
-      "status": "source fetched; compatibility pending",
+      "status": "latest source pinned; build fails constexpr SquareBB under local GCC; matching v11 network not yet located; not runnable yet",
       "defeated": false
     },
     {
@@ -44,7 +45,7 @@
       "commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
       "kind": "independent NNUE engine",
       "license": "MIT",
-      "status": "source fetched; compatibility pending",
+      "status": "native build and observer-only UCI passed; independent referee tests passed; baseline for native search research",
       "defeated": false
     },
     {
@@ -62,31 +63,34 @@
       "commit": "7d5ca267f23c9c5cb57315607a18a55de17808b1",
       "kind": "engine variant",
       "license": "GPL lineage; file audit pending",
-      "status": "source fetched; compatibility pending",
+      "status": "native build passed; licence/source audit and full-history matches pending",
       "defeated": false
     },
     {
       "id": "pikafish-jieqi-old",
       "url": "https://github.com/official-pikafish/Pikafish/tree/jieqi_old",
-      "commit": null,
+      "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc",
       "kind": "original engine",
-      "status": "fetch pending",
-      "defeated": false
+      "status": "source pinned; native build passed; full-history match pending",
+      "defeated": false,
+      "license": "GPL-3.0",
+      "repository_url": "https://github.com/official-pikafish/Pikafish"
     },
     {
       "id": "pikafish-jieqi",
       "url": "https://github.com/official-pikafish/Pikafish/tree/jieqi",
       "commit": null,
       "kind": "NNUE engine branch",
-      "status": "weight availability and runtime pending",
-      "defeated": false
+      "status": "upstream branch no longer advertised by git ls-remote; archived commit/mirror and weights audit pending",
+      "defeated": false,
+      "repository_url": "https://github.com/official-pikafish/Pikafish"
     },
     {
       "id": "justlxy-jieqi",
       "url": "https://github.com/justLxy/Jieqi",
-      "commit": null,
+      "commit": "9d826d7ff07efea3871417233c2f730997862d13",
       "kind": "musesfish wrapper",
-      "status": "deduplication/source comparison pending",
+      "status": "musesfish-derived; seven identical files and four modified/new engines found; not deduplicated without comparison of active implementation",
       "defeated": false
     },
     {
@@ -108,9 +112,9 @@
     {
       "id": "btsunamib-xiangqi",
       "url": "https://github.com/btsunamib/xiangqi",
-      "commit": null,
+      "commit": "49a03640aa4e2e9172fa4f22768b629559b32c1b",
       "kind": "candidate game with AI",
-      "status": "rule and source audit pending",
+      "status": "source pinned; custom king mobility, public dark captures and hidden-colour variant differ; incompatible pending profile adapter",
       "defeated": false
     }
   ]

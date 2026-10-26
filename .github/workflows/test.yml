@@ -10,3 +10,4 @@ jobs:
           node-version: '22'
       - run: npm test
       - run: python3 -m unittest discover -s tests -p "test_*.py"
+      - run: g++ -std=c++20 -O2 tests/chance_allocation.cpp -o /tmp/chance-test && /tmp/chance-test

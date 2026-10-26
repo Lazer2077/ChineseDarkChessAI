@@ -8,7 +8,7 @@
       "commit": "da1ab8ce11659110f19422213c5811cbfab77cb6",
       "kind": "engine",
       "license": "GPL-3.0",
-      "status": "original C++ built unmodified; private-history bridge and own-rule four-thread smoke 2 candidate wins/0 losses; 16-game development screen running; not defeated",
+      "status": "original unmodified C++ own-rule four-thread development screen: 15 candidate wins/1 loss across 16 games, no voids; only eight pairs and integration timing tolerance, no superiority claim",
       "defeated": false
     },
     {
@@ -89,9 +89,10 @@
       "id": "justlxy-jieqi",
       "url": "https://github.com/justLxy/Jieqi",
       "commit": "9d826d7ff07efea3871417233c2f730997862d13",
-      "kind": "musesfish wrapper",
-      "status": "musesfish-derived; seven identical files and four modified/new engines found; not deduplicated without comparison of active implementation",
-      "defeated": false
+      "kind": "musesfish-derived C++ AIBoard5 engine with Python/web bindings",
+      "status": "active web backend uses distinct C++ AIBoard5, not deduplicated; unmodified Python 3.11 module built and opening smoke i3i4 passed; private-inventory input absent, depth argument ignored and internal 15s threshold not interruptible; fair adapter pending, not defeated",
+      "defeated": false,
+      "license": "GPL-3.0; nonstandard date in LICENSE.md header recorded"
     },
     {
       "id": "jieqibox",

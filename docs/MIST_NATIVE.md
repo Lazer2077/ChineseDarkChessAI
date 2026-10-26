@@ -59,3 +59,10 @@ results/20261026-mist-native-smoke.json. The unpromoted warm checkpoint is now
 available under models/experimental with upstream attribution and its negative
 confirmation result. An expanded 16-game development screen uses a fresh seed
 7400101, the same 1000-ms/four-thread profile, and does not pool with other rules.
+
+The expanded screen completed 15 candidate wins, no draws, and one loss, without
+void games. Its eight layout pairs are insufficient for formal confirmation.
+The paired bounded-mean 95% interval still includes 50%; the integration timing
+tolerance also prevents treating this as a strict-clock tournament. Evidence:
+results/20261026-mist-native-development.json and checksummed raw games. No
+opponent is promoted to defeated.

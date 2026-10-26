@@ -11,7 +11,8 @@ Fine-tuning recipe: 512 teacher selfplay games, 5,882 held-out validation rows,
 lr 1e-5, lambda 0.9, K 430, 10 epochs, batch 1024, seed 20261026. The data and
 training method are documented in docs/ADAPTIVE_SEARCH.md. Development score
 18-1-13 did not establish superiority. Confirmation A finished 95-10-95 and
-included one time forfeit; it does not pass promotion. Confirmation B continues.
+included one time forfeit; it does not pass promotion. Confirmation B finished 77-17-106 (42.75%) with one time forfeit. Neither
+confirmation supports promotion; do not pool them with development results.
 
 Do not advertise this checkpoint as the best Jieqi AI or as an improved upstream
 release. It is published so completed research matches can be independently run.

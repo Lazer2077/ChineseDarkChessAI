@@ -1,0 +1,33 @@
+{
+  "build": {
+    "repository": "https://github.com/justLxy/Jieqi",
+    "revision": "9d826d7ff07efea3871417233c2f730997862d13",
+    "license": "GPL-3.0; upstream LICENSE.md header has a nonstandard date",
+    "python": "3.11.16",
+    "compiler": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "cmake": "cmake version 4.4.3",
+    "module": "cppjieqi.cpython-311-x86_64-linux-gnu.so",
+    "module_sha256": "3d8e835d1b4295a4ce9caad61254d35aec2db6ae8b0a7ca541ce86175737153d",
+    "bindings_sha256": "6429bd364cf9ac5e5f4ecf00e3180bd53b3e7829a3e120373bf47027a515125b",
+    "score_sha256": "c03c1bf1f1e096b92528ed1838c3613ad1242851ebda2a10c915e275e7ec7216",
+    "opening_book_sha256": "0733e6701ff9446d364f874851d22af63a129873ec0fddf63cac29a759ca72b9",
+    "source_modifications": [],
+    "scope": "Build provenance only; private-inventory and timed-match interfaces are not verified."
+  },
+  "probe": {
+    "module": "cppjieqi.cpython-311-x86_64-linux-gnu.so",
+    "opening_move": "i3i4",
+    "elapsed_seconds": 0.06866276264190674,
+    "api": [
+      "create_game",
+      "delete_game",
+      "get_ai_move",
+      "get_board_evaluation",
+      "initialize",
+      "set_board"
+    ],
+    "scope": "Unmodified module opening smoke only; no private-inventory or timed-match compatibility claim."
+  },
+  "compatible_match_verified": false,
+  "defeated": false
+}

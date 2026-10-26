@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "schema": 1,
+    "profile": "mist-da1ab8c",
+    "games": 16,
+    "budget": 1000,
+    "seed": 7400101,
+    "threads": 4,
+    "candidateNetSha256": "114a1dd460b66b52cd8089bf6f5fbd2273ed90fc4aa9f7d8ef35ea068cecae1f",
+    "candidateBinarySha256": "8697397d86ffb00daf9d7b6b580b258b7a6e33fcdd8130d8ba02d38365997247",
+    "opponentBinarySha256": "19c706afa1bf2c43a80305c936fb268abf3bb63484117797d635c0138a43ff43",
+    "adapterSha256": "49ab8e9705396ffa31e5bb96825718b77b7a1bdd8a16a41590807e156d438bc5",
+    "candidateProfile": {
+      "backbone": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "license": "MIT backbone, GPL project",
+      "profile": "Mist: third public repetition last mover loses; quiet reset on capture/reveal; 120 quiet or 400 total plies draw; mate/stalemate precedence",
+      "candidate_binary_sha256": "8697397d86ffb00daf9d7b6b580b258b7a6e33fcdd8130d8ba02d38365997247",
+      "opponent_modified": false
+    },
+    "stage": "development",
+    "scope": "Not an all-engine superiority claim. Candidate uses a trained derivative of the attributed jqe net."
+  },
+  "summary": {
+    "games": 16,
+    "expected_games": 16,
+    "wins": 15,
+    "draws": 0,
+    "losses": 1,
+    "voids": 0,
+    "score": 0.9375,
+    "promotion_supported": false,
+    "complete_pairs": 8,
+    "paired_bootstrap_95": null,
+    "paired_hoeffding_95": [
+      0.45733860434003965,
+      1.0
+    ],
+    "single_match_superiority_gate": false
+  },
+  "raw_games": "results/games/mist-native-profile-dev.jsonl.gz",
+  "raw_sha256": "603be4590faf780658c0ed3cab89f7fae52cc98e9dddc0e222eeccbadea4905f",
+  "note": "Development screen with budget+1000ms quarantine tolerance; not a strict-clock confirmation. Fewer than 20 pairs: bootstrap not reported."
+}

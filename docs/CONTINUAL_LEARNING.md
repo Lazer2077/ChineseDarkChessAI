@@ -83,13 +83,13 @@ benchmark moves, scores and node counts. These checks establish initialization
 compatibility, not learned strength. Inference will be more expensive and must
 be compared at the same actual game clock.
 
-The wider models have **not** been trained yet. The first series remains the
-387k-parameter control. Once its first 8,192-game generation is finalized and
-hash-verified, the intended capacity ablation uses that exact generation and
-its fixed validation file for all three sizes, batch 4096, 15 epochs, lr 2e-5,
-lambda 0.7, K 430, same learner seed; independent paired games then test the
-quality-versus-inference-cost tradeoff. Do not train on the .part generation
-file or tune on the separate warm-candidate confirmation layouts.
+All three sizes have now completed 15 GPU training epochs on the first complete,
+hash-verified 8,192-game generation: 607,652 raw records, 405,959 retained for
+training, and 25,031 retained validation records. Paired capacity matches are
+still in progress; no improvement is established. The first continual series
+remains the 387k-parameter control. The capacity comparison uses batch 4096,
+lr 2e-5, lambda 0.7, K 430, and the same learner seed. Do not train on .part data
+or tune on the separate warm-candidate confirmation layouts.
 
 ### Dependent capacity job
 scripts/capacity_ablation.py is queued on the first seed's complete-generation
@@ -105,3 +105,27 @@ The two larger models then face the identically trained small control in
 5+0.05, one thread and 64 MB hash each. These are capacity screens, not promotion.
 The primary three-seed controller remains unchanged on GPU 2. Queued work is
 not reported as completed GPU training.
+
+## First expanded iteration: optimization evidence
+The small network completed 1,485 updates. Its best mixed-target validation
+loss occurred at epoch 1 (0.0141022); by epoch 15, training loss had fallen to
+0.0130829 while validation loss rose to 0.0142058. The 13.45M model likewise
+selected epoch 1 (0.0140739), with epoch-15 training/validation losses
+0.0122834/0.0143746. The selected checkpoint is the minimum-validation-loss
+checkpoint, not the final epoch. Larger capacity reduces training error but
+does not establish generalization or playing-strength improvements. These
+position-level losses are correlated within games and must not be treated as
+independent strength samples.
+
+The earlier, separate warm pilot's two frozen confirmation sets are now
+complete: A 95W/10D/95L (50%), B 77W/17D/106L (42.75%). Both include a time
+forfeit and fail technical validity; neither supports promotion. These are
+not measurements of the new expanded-iteration network. The B paired
+bootstrap interval is [0.365, 0.49], but technical failure prevents a clean
+strength claim in either direction. See results/20261026-confirmation-b.json.
+
+The first capacity screen is complete: the 1.64M model versus the identically
+trained 387k control scored 27W/1D/36L in 64 games, score 42.96875%, paired
+bootstrap 95% interval [0.328125, 0.53125], with no technical failures or voids.
+It does not support a capacity benefit at this clock. The 13.45M comparison
+remains in progress. Evidence: results/20261026-capacity-wide-development.json.

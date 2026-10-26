@@ -1,8 +1,7 @@
 # Initial validation — 2026-10-26
 
-Host: CS01 / csci-cscidl01 (identity confirmed by user).
 Runtime: Node 22.23.4; PyTorch 2.13.0+cu130 from an existing environment.
-CUDA allocation and tensor creation verified on physical GPU index 2 (RTX A5000).
+CUDA allocation and tensor creation verified on an RTX A5000.
 
 - Three research tests pass: hidden-world invariance; captor-only private capture
   visibility and complete inventory sampling; legal seeded selfplay and policy schema.

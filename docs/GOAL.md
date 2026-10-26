@@ -1,6 +1,6 @@
 # Active research goal
 
-Continuously develop and train ChineseDarkChessAI on CS01 until we can attempt
+Continuously develop and train ChineseDarkChessAI until we can attempt
 reproducible matches against every publicly discoverable, runnable full-board
 Jieqi AI, and seek statistically supported advantages against all compatible
 independent baselines. This is an open research objective, not a guaranteed outcome.
@@ -11,12 +11,20 @@ Pin sources, weights, commands, rules and budgets. Never classify an untested
 engine as defeated. Recheck discovery before claiming complete coverage.
 
 ## Current priorities
-1. Recover first pilot training after explicitly fixing integer feature dtype.
-2. Establish safe UCI adapters and independently inspect referee rule differences.
-3. Build/test PikaJieQi, jqe, AB-JChess, musesfish and universe-st baselines.
-4. Measure current agent's deficits before replacing the linear pilot with a
-   native search and observation/history-conditioned neural evaluation.
-5. Search/training ablations, held-out pair matches and promotion gates.
+1. Complete the frozen multi-seed selfplay/value-learning series and paired gates.
+2. Test same-data capacity controls at equal actual clock, retaining negative results.
+3. Extend fair original-engine coverage with complete observer-specific histories.
+4. Investigate belief/history representation and search-target bias when learning stalls.
+5. Verify independent held-out confirmation before any strength or coverage claim.
+
+## Communication and public research record
+Notify and push only for substantial progress, a meaningful method/result change,
+or an issue requiring user action. Do not send unchanged-status notifications.
+When a method stalls, consult primary papers on established chess/game AI and
+form testable hypotheses adapted to Jieqi's partial observability and private
+information. Before the next push, keep README focused on academic methods,
+experimental evidence and limitations. Exclude host identities, usernames and
+local absolute environment paths from public research documentation.
 
 ## Evidence gate
 A single win is an attempted/successful game, not a strength claim. Formal superiority

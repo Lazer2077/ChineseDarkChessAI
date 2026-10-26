@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "source": "Connected GitHub repository search",
+  "scope": "Search leads only; name and size do not establish an independent engine, license, compatible rules, available weights or strength. Not exhaustive; no defeated claims.",
+  "queries": [
+    {
+      "query": "pikafish jieqi fork:true",
+      "repositories": [
+        {
+          "repository": "Velithia/JieqiBox",
+          "url": "https://github.com/Velithia/JieqiBox",
+          "branch": "main",
+          "size_kb": 12782,
+          "archived": false
+        },
+        {
+          "repository": "lichlzh/pikafish-jieqi",
+          "url": "https://github.com/lichlzh/pikafish-jieqi",
+          "branch": "main",
+          "size_kb": 81,
+          "archived": false
+        },
+        {
+          "repository": "lxsgx23/Jieqi-Moonlink",
+          "url": "https://github.com/lxsgx23/Jieqi-Moonlink",
+          "branch": "main",
+          "size_kb": 71,
+          "archived": false
+        },
+        {
+          "repository": "brianhliou/pikafish-jieqi-wasm",
+          "url": "https://github.com/brianhliou/pikafish-jieqi-wasm",
+          "branch": "jieqi_old-mistboard",
+          "size_kb": 16639,
+          "archived": false
+        },
+        {
+          "repository": "lxsgx23/Jieqi-Match-Tools",
+          "url": "https://github.com/lxsgx23/Jieqi-Match-Tools",
+          "branch": "main",
+          "size_kb": 94,
+          "archived": false
+        },
+        {
+          "repository": "hefengfan0615/pikafish-jieqi",
+          "url": "https://github.com/hefengfan0615/pikafish-jieqi",
+          "branch": "main",
+          "size_kb": 23515,
+          "archived": false
+        },
+        {
+          "repository": "swim2sun/Pikafish-jieqi2022",
+          "url": "https://github.com/swim2sun/Pikafish-jieqi2022",
+          "branch": "master",
+          "size_kb": 15296,
+          "archived": false
+        },
+        {
+          "repository": "thanh25896/PikafishJieqi",
+          "url": "https://github.com/thanh25896/PikafishJieqi",
+          "branch": "master",
+          "size_kb": 16855,
+          "archived": false
+        },
+        {
+          "repository": "iwestlin/jieqi-ai",
+          "url": "https://github.com/iwestlin/jieqi-ai",
+          "branch": "main",
+          "size_kb": 29022,
+          "archived": false
+        },
+        {
+          "repository": "CoderYiXin/pikajieqi-enhanced",
+          "url": "https://github.com/CoderYiXin/pikajieqi-enhanced",
+          "branch": "main",
+          "size_kb": 441,
+          "archived": false
+        },
+        {
+          "repository": "KageOutlook/Jieqi-Match-Tools",
+          "url": "https://github.com/KageOutlook/Jieqi-Match-Tools",
+          "branch": "main",
+          "size_kb": 625,
+          "archived": false
+        },
+        {
+          "repository": "mengnanhuangshu/jieqi-copilot",
+          "url": "https://github.com/mengnanhuangshu/jieqi-copilot",
+          "branch": "main",
+          "size_kb": 4828,
+          "archived": false
+        },
+        {
+          "repository": "Wu200008/wilderness-xiangqi",
+          "url": "https://github.com/Wu200008/wilderness-xiangqi",
+          "branch": "main",
+          "size_kb": 10129,
+          "archived": false
+        }
+      ]
+    },
+    {
+      "query": "\"\u63ed\u68cb\" \"NNUE\"",
+      "repositories": []
+    },
+    {
+      "query": "PikaJieQi",
+      "repositories": [
+        {
+          "repository": "CoderYiXin/pikajieqi-enhanced",
+          "url": "https://github.com/CoderYiXin/pikajieqi-enhanced"
+        },
+        {
+          "repository": "nguyen05566/flipchess",
+          "url": "https://github.com/nguyen05566/flipchess"
+        },
+        {
+          "repository": "tgrnf09/AB-JChess-and-pikajieqi",
+          "url": "https://github.com/tgrnf09/AB-JChess-and-pikajieqi"
+        },
+        {
+          "repository": "nguyen05566/ck",
+          "url": "https://github.com/nguyen05566/ck"
+        },
+        {
+          "repository": "brianhliou/pikafish-jieqi-wasm",
+          "url": "https://github.com/brianhliou/pikafish-jieqi-wasm"
+        }
+      ]
+    }
+  ]
+}

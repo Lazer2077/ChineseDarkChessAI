@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "scope": "Four-arm fixed-data replay-objective ablation, not PPO/AlphaZero or a new game-theoretic guarantee; no promotion from validation or development games.",
+  "backbone": "devinokeefe/jieqi 331a6e612a038c4a04cf980f7b9482910fd50078; attributed MIT trainer/search and teacher initialization",
+  "modes": [
+    "position",
+    "game",
+    "phase",
+    "game-phase"
+  ],
+  "weight_manifest": {
+    "schema": 1,
+    "source_sha256": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+    "trainer_sha256": "2f8a1595b7ef125199517a9d7e4c714c06c760e8cf737bb25a2007d3bc21862d",
+    "completed_games": 8192,
+    "games_with_retained_positions": 8187,
+    "retained_positions": 405959,
+    "phase_dark_counts": [
+      "0",
+      "1-4",
+      "5-14",
+      "15-30"
+    ],
+    "scope": "Observable dark-count phase weighting; no hidden truth identity input, relabeling, duplication or phase boundary reset. A game without retained positions cannot contribute. No strength claim.",
+    "modes": {
+      "position": {
+        "sha256": "9328c24f77848047d9e13bee3ed06cb5deaaebf76bf3b50b98e199755bb87a9e",
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "weight_effective_sample_size": 405959.0,
+        "mass_by_phase": [
+          0.10190437734127045,
+          0.25981441140174866,
+          0.38752928376197815,
+          0.25075191259384155
+        ]
+      },
+      "game": {
+        "sha256": "f97b21b22623680accdf362441ea5f437e65c7e314df2551ed41c8284181d5df",
+        "mean": 0.9999999403953552,
+        "min": 0.18502166867256165,
+        "max": 49.58580780029297,
+        "weight_effective_sample_size": 266747.9749100354,
+        "mass_by_phase": [
+          0.05047047883272171,
+          0.1927696317434311,
+          0.4155130386352539,
+          0.34124693274497986
+        ]
+      },
+      "phase": {
+        "sha256": "2a2ce594b9487e5aef35a48226638ab474d887777dac40753f0563135caeafef",
+        "mean": 1.0,
+        "min": 0.6451125144958496,
+        "max": 2.453280210494995,
+        "weight_effective_sample_size": 321067.2580578966,
+        "mass_by_phase": [
+          0.25,
+          0.24999994039535522,
+          0.2500000596046448,
+          0.2500000596046448
+        ]
+      },
+      "game-phase": {
+        "sha256": "850b502154d20129f7fd4daa49c803a758ab314d26ffce159a37ade6d5ffd5bf",
+        "mean": 0.9999999403953552,
+        "min": 0.05931316688656807,
+        "max": 49.58580780029297,
+        "weight_effective_sample_size": 205885.85197632498,
+        "mass_by_phase": [
+          0.043310537934303284,
+          0.19143153727054596,
+          0.3617015480995178,
+          0.4035564363002777
+        ]
+      }
+    }
+  },
+  "phase_boundaries": "Public on-board dark count 0, 1-4, 5-14, 15-30; face-down identities never supplied",
+  "objectives": {
+    "position": "Equal retained position loss",
+    "game": "Equal mass per game with retained rows",
+    "phase": "Equal mass across nonempty global public phases",
+    "game-phase": "Equal game mass, then equal mass across phases present in that game"
+  },
+  "training": {
+    "data": "runs/continual-series-01/seed-20261026/iter-001.bin",
+    "validation": "runs/continual-series-01/seed-20261026/validation.bin",
+    "init": "runs/continual-series-01/seed-20261026/initial-import/warm-start.pt",
+    "trainer": "build/weighted-trainer/train.py",
+    "epochs": 15,
+    "batch": 4096,
+    "updates": 1485,
+    "learning_rate": 2e-05,
+    "lambda": 0.7,
+    "score_scale": 430,
+    "seed": 20261027,
+    "architecture": "387089 parameter, FT256 L1=16 L2=32; raw urn inference",
+    "checkpoint_selection": "Minimum common unweighted validation mixed-target MSE, as original control; initial network not an eligible selected epoch",
+    "normalization": "Positive weights normalized once to global mean 1; no per-batch self-normalization or sampling with replacement",
+    "controls": "Identical record order, mirroring, initialization, labels, update count, optimizer and schedule across arms; weighted trainer with all-one weights is the control"
+  },
+  "matches": [
+    {
+      "mode": "game",
+      "baseline": "position",
+      "games": 64,
+      "seed": 8010001,
+      "tc": "5+0.05",
+      "stage": "development"
+    },
+    {
+      "mode": "phase",
+      "baseline": "position",
+      "games": 64,
+      "seed": 8010001,
+      "tc": "5+0.05",
+      "stage": "development"
+    },
+    {
+      "mode": "game-phase",
+      "baseline": "position",
+      "games": 64,
+      "seed": 8010001,
+      "tc": "5+0.05",
+      "stage": "development"
+    }
+  ],
+  "early_stopping": false,
+  "retune_between_arms": false,
+  "analysis": "Report all arms, no pooling or selection-adjusted significance claim. Independent teacher/other-opponent confirmation needed for any gain.",
+  "sha256": {
+    "scripts/build_replay_weights.py": "68b83e55ca48de894310bb2c1c5bb3599beefd87f5bbb56539aa3c46a4a71a14",
+    "scripts/build_weighted_trainer.py": "62f824f95a916e8213abf86078ff9d3bfb5b178499e7154d7a304fcc4151679c",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828",
+    "build/weighted-trainer/train.py": "8d42c31c1d0b5397149fa12c16b076e4c111901920df0a84ae022cfc71f46a32",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "runs/continual-series-01/seed-20261026/iter-001.bin": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+    "runs/continual-series-01/seed-20261026/validation.bin": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+    "runs/continual-series-01/seed-20261026/initial-import/warm-start.pt": "0725b834769ec38efb7fb24284add1c6aaa565520651f21db0a926a9759b9b83",
+    "runs/replay-weight-ablation-02/weights/position.f32": "9328c24f77848047d9e13bee3ed06cb5deaaebf76bf3b50b98e199755bb87a9e",
+    "runs/replay-weight-ablation-02/weights/game.f32": "f97b21b22623680accdf362441ea5f437e65c7e314df2551ed41c8284181d5df",
+    "runs/replay-weight-ablation-02/weights/phase.f32": "2a2ce594b9487e5aef35a48226638ab474d887777dac40753f0563135caeafef",
+    "runs/replay-weight-ablation-02/weights/game-phase.f32": "850b502154d20129f7fd4daa49c803a758ab314d26ffce159a37ade6d5ffd5bf"
+  }
+}

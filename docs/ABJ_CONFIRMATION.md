@@ -76,3 +76,15 @@ teacher gate failed and this single opponent-specific contrast is not evidence
 of a general learned improvement. Both set-B arms remain fixed and must finish.
 Evidence: results/20261026-abj-teacher-a.json and
 results/20261026-abj-teacher-a-audit.json.
+
+## Second held-out learner set completed
+
+Set B completed 150W/2D/48L in 200 games / 100 pairs, 75.5%, paired bootstrap
+95% [0.6975, 0.8125], conservative Hoeffding [0.619190, 0.890810]. All 13,567
+moves, reveal/capture identities, terminal outcomes and rounded actual clocks
+passed replay; minimum conservative clock margin 6ms with no rounding ambiguity.
+No technical failures or voids occurred. Both frozen learner sets now pass their
+specified version/profile gates. The final unchanged-teacher set is still
+running; the entire four-arm experiment is incomplete, and no general learned
+improvement is established. Keep defeated=false until campaign audit concludes.
+Evidence: results/20261026-abj-confirmation-b.json and its replay audit.

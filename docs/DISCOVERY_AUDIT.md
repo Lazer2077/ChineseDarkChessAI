@@ -45,3 +45,40 @@ source verification before inclusion as compatible independent engines.
 
 No newly discovered entry is marked defeated. No license is inferred from
 public visibility, an ancestor, a dependency notice, or a repository's name.
+
+## Pika archive and hybrid follow-up
+
+The connected GitHub searches `PikaJieQi`, `pikafish jieqi fork:true`, and
+`"揭棋" "NNUE"` found further leads; the latter returned none and is not proof
+that no such engine exists. Results and provenance are preserved in
+`discovery-20261026-pika-archives.json`. Search matches are not automatically
+independent engines or compatible full-board games.
+
+Three unchanged default checkouts were examined. `swim2sun/Pikafish-jieqi2022`
+contains real hidden-piece chance-search code, with GPL source and a distinct
+restrictive NNUE license; its required historical `pikafish.nnue` is not bundled
+and an exact weight/version remains unresolved. `thanh25896/PikafishJieqi` has
+ordinary Xiangqi types and no hidden-piece implementation found in its default
+`src`; other branches/history remain unaudited. Repository names alone cannot
+establish compatibility. `hefengfan0615/pikafish-jieqi` contains a distinct
+Pika-search/ABJ-V11 NNUE hybrid; its own network download script explicitly
+selects the released AB-JChess v0.2d network. It is not silently deduplicated with
+AB-JChess or classical Pika.
+
+The hybrid was built with a declaration-only GCC11 compatibility repair, using
+the identical already verified official network it requests. Two actual-clock
+smoke games completed, and all 57 moves/rounded clock charges replayed cleanly.
+A separate 32-game development comparison is running; neither build nor smoke
+is strength evidence. Source, license, model and binary hashes are in
+`results/20261026-pika-archive-source-audit.json`; reproduction is
+`scripts/build_hefeng_pika.py` after obtaining the pinned checkout and official
+network through the existing source/asset workflows.
+
+The already validated Universe observer adapter passed a new actual-clock smoke
+with 35 replayed moves. Two frozen 200-game sets are running with original hard
+search, complete observer-specific histories, 5+0.05 clocks, separate layout
+seeds and no early stopping. Universe ignores Threads/Hash settings and retains
+its own data structures; no equal hash-memory claim is made. Its internal
+repetition policy differs from the external native referee, as documented in
+the original adapter. Recipe: `results/universe-clock-confirmation-plan.json`.
+Planned sets and partial scores never mark an opponent defeated.

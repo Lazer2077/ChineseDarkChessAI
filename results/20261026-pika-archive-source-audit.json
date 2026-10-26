@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "scope": "Source/lineage leads, not completed strength comparisons; same ancestry or shared weights do not establish identical engines.",
+  "audits": [
+    {
+      "repository": "https://github.com/swim2sun/Pikafish-jieqi2022",
+      "commit": "db8ad4fbdca27ed22b04345a7f8fe5d5f812df95",
+      "status": "Real hidden-piece reveal/chance source present; GPL code plus separate restrictive NNUE license; required pikafish.nnue not bundled, exact official weight/version unresolved. No strength claim.",
+      "files_sha256": {
+        "Copying.txt": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+        "NNUE-License.txt": "b79f13da1b90dc649c14dcf66d344f864e29a83031dc4d2b55b32ed78366839c",
+        "src/types.h": "51d6a312b5c3aa4a90d30f083004eed9001dc03b192d4b192c0e6c3c6e3b5c7c",
+        "src/position.cpp": "ba50eff216e415a7b4a9d81d298847c5be386bfe1dfb881b8e9a5d44bf6755d2",
+        "src/evaluate.h": "792a8fde86c8240a267f89aed4c5109fee806d1ff54e1049636445365e57d978"
+      },
+      "unmodified_checkout": true,
+      "defeated": false
+    },
+    {
+      "repository": "https://github.com/thanh25896/PikafishJieqi",
+      "commit": "d0c87911d8eb4a3a997bba074d9e72c77d8180a8",
+      "status": "Default checkout appears ordinary Xiangqi: no hidden-piece/reveal implementation found in src; branch/repository name alone is not Jieqi compatibility. Branch/history audit remains open.",
+      "files_sha256": {
+        "Copying.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "src/types.h": "306fdd62a45881f7733c9a8fd6c16669126644ee84c56db7168dee149e82a943",
+        "src/position.cpp": "d6c640f9d9c43cc3164ec716e9a0960dc2d6a933068f8697a2ff44251edd43e6",
+        "src/evaluate.h": "f0b7feed1335ba20923c30dd73e95b35b98d0d1eb3d968649b1bda6f46083496"
+      },
+      "unmodified_checkout": true,
+      "defeated": false
+    },
+    {
+      "repository": "https://github.com/hefengfan0615/pikafish-jieqi",
+      "commit": "88bfb82c3063f69e8cc270cad08f24930da0874f",
+      "status": "Distinct Pika-search/ABJ-V11 NNUE hybrid built; declaration-only GCC11 repair; own declared default official network used. Two actual-clock smoke games complete; 57 moves and rounded actual clocks replay-audited, no errors. 32-game development comparison running; no strength claim.",
+      "files_sha256": {
+        "Copying.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "src/types.h": "764f7a76faee405cd87b82dfe171984428e9b8b4eeac35a2d96c38fc5152472d",
+        "src/search.cpp": "f1f3cb3caa08645ce19c5da130328d2b6ba66fc12b8b9d386f2a65a09cb79545",
+        "src/position.cpp": "f790947f61bf600a4759f97b1869d83952c6f2d3bf317f1c4d58ff595e19e14e",
+        "src/evaluate.h": "b11ffde7526d47c2d9621f670c68df92bd4e6a6b664aa352d08b1d4c0b37f9c2",
+        "scripts/net.sh": "7a48af1d74f6cebb5e6be9b4800a547849fb5c4b0115b99bb0df197f1dfdbadf"
+      },
+      "unmodified_checkout": true,
+      "defeated": false,
+      "build": {
+        "repository": "https://github.com/hefengfan0615/pikafish-jieqi",
+        "commit": "88bfb82c3063f69e8cc270cad08f24930da0874f",
+        "license": "GPL-3.0-or-later source headers and root Copying.txt",
+        "repair": "GCC11 declaration-only constexpr-to-inline repair for square_bb and dependent operators, retaining function bodies, search and evaluation.",
+        "header_before_sha256": "4355ad35ca16efe061b7bff75fe4e2e4029e671475d91d521de26cf4d52c8449",
+        "header_after_sha256": "10ecbd140f4d85f99fb871570dba8d0f67ebef4df742e8ac3d72bf079116a540",
+        "network": "abjchess-20261010.nnue",
+        "network_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+        "network_origin": "Its scripts/net.sh explicitly selects the AB-JChess v0.2d release archive; this reuses the already verified identical archive net, not a substituted evaluator.",
+        "scope": "Build audit of distinct Pika-search/ABJ-NNUE hybrid; no observer compatibility, completed-match or strength claim.",
+        "binary_sha256": "8b385c163daf7505a252d779dc921b8e823f751c782b91ddee1787b3d58018c7",
+        "build_date": "20261026",
+        "architecture": "x86-64-avx2"
+      },
+      "smoke_replay": {
+        "schema": 1,
+        "run": "pika-hefeng-clock-smoke",
+        "games": 2,
+        "complete_pairs": 1,
+        "moves_replayed": 57,
+        "wins_draws_losses": [
+          2,
+          0,
+          0
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 57,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 1968.5,
+        "raw_games_sha256": "00fed65b60b2d73736c5f6a9cde3a76f4a75781db2db8aa0ce690464b985d3f3",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      }
+    }
+  ]
+}

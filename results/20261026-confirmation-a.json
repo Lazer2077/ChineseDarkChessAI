@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "scope": "Development/integration screens; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
+  "reports": [
+    {
+      "raw_games": {
+        "path": "results/games/warm-confirmation-a.jsonl.gz",
+        "uncompressed_sha256": "28b1c935ab215a119735786abb2b3aca550552b8daa5ab8648618c3d0245068a"
+      },
+      "run": "warm-confirmation-a",
+      "stage": "confirmation",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 200,
+        "movetime": 100,
+        "seed": 7200001,
+        "concurrency": 2,
+        "tc": "5+0.05"
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/engine/build/jqe",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "114a1dd460b66b52cd8089bf6f5fbd2273ed90fc4aa9f7d8ef35ea068cecae1f"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 8790,
+            "mean_ms": 144.43848858782707,
+            "p95_ms": 396.718136,
+            "max_ms": 1117.020512
+          },
+          "baseline": {
+            "moves": 8789,
+            "mean_ms": 144.67616236727727,
+            "p95_ms": 404.283037,
+            "max_ms": 1110.018603
+          }
+        },
+        "game_clock": "5+0.05",
+        "games": 200,
+        "expected_games": 200,
+        "wins": 95,
+        "draws": 10,
+        "losses": 95,
+        "score": 0.5,
+        "complete_pairs": 100,
+        "paired_bootstrap_95": [
+          0.4375,
+          0.5625
+        ],
+        "paired_hoeffding_95": [
+          0.36418984842593805,
+          0.635810151574062
+        ],
+        "void_attempts": 0,
+        "technical_results": [
+          "TIME_FORFEIT"
+        ],
+        "valid_technical_run": false,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    }
+  ]
+}

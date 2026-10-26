@@ -8,7 +8,7 @@
       "commit": "da1ab8ce11659110f19422213c5811cbfab77cb6",
       "kind": "engine",
       "license": "GPL-3.0",
-      "status": "vendored JS baseline",
+      "status": "JS vendored; original unmodified C++ built; four-thread UCI observer-history bridge passed; original-rule paired smoke running",
       "defeated": false
     },
     {
@@ -28,7 +28,7 @@
       "license": "GPL-3.0-or-later",
       "status": "16-game development screen 15 candidate wins/1 loss; no technical errors; upstream build warning remains; no superiority claim",
       "defeated": false,
-      "repository_url": "https://github.com/official-pikafish/Pikafish"
+      "repository_url": "https://github.com/brianhliou/pikafish-jieqi-wasm"
     },
     {
       "id": "AB-JChess",

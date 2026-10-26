@@ -1,0 +1,35 @@
+# Research progress — 2026-10-26
+
+Active goal is in GOAL.md. No baseline is marked defeated.
+
+## Pilot results
+The integer-feature training failure was fixed with explicit float32 tensors;
+a synthetic all-integer row now trains successfully. Both 20-epoch stages then
+finished on GPU 2, with 997 and 613 search-labelled rows respectively.
+
+Root-sampling trained prototype against pinned mist-jieqi JS: 1 win, 1 draw,
+6 losses over 8 games (4 paired layouts), score 18.75%. No truncation. Against
+PikaJieQi: 0 wins / 0 draws / 2 losses; against jqe with its published it014
+network: 0 / 0 / 2. These are small **unequal-budget integration pilots**, not
+formal strength comparisons. Failures are evidence to improve search/evaluation.
+
+The pinned jqe diagnostic agreed with our inherited legal move generator on
+2,228 positions from 20 seeded random games. No mismatch. This only checks legal
+geometry: adjudication is deliberately NOT considered compatible. jqe has
+perpetual check/chase rules and an 80-ply no-capture clock; our current pilot has
+third-repetition responsibility and a 120-ply no-progress clock.
+
+## Next experiment
+A bounded native-teacher pilot generates 512 training and 128 validation games,
+2,000 search nodes per move, two CPU workers; then trains an NNUE for 10 epochs
+on GPU 2 using the external MIT jqe trainer. Training/validation seeds are
+separate. This is a feasibility experiment for a stronger existing architecture,
+not a claim that jqe is our own contribution. Native data-generation/adjudication
+limitations must be audited before using those labels in formal research.
+
+The PikaJieQi build emitted an upstream array-bound/undefined-behaviour warning
+in Zobrist initialization (position.cpp). It ran the smoke matches; this does not
+resolve the warning. Keep the pinned source unchanged and audit before formal runs.
+
+Local evidence: runs/first-experiment, runs/pika-adapter-smoke,
+runs/jqe-adapter-smoke, runs/rule-oracle, and runs/native-teacher-pilot.

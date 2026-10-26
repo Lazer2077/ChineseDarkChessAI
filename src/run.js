@@ -13,7 +13,7 @@ if(fs.existsSync(`${out}/manifest.json`))throw Error('Output already exists; use
 const model=args.model?JSON.parse(fs.readFileSync(args.model)):null;
 if(model&&(!Array.isArray(model.policy)||model.policy.length!==15||!model.policy.every(Number.isFinite)))throw Error('Invalid policy weights');
 if(model&&model.version!==VERSION)throw Error('Model schema mismatch');
-const manifest={schema:1,version:VERSION,args,seed,games,limit,simulations,horizon,node:process.version,upstream:'da1ab8ce11659110f19422213c5811cbfab77cb6',started:new Date().toISOString(),modelSha256:args.model?createHash('sha256').update(fs.readFileSync(args.model)).digest('hex'):null,commit:(()=>{try{return execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();}catch{return null;}})()};
+const manifest={schema:1,version:VERSION,args,seed,games,limit,simulations,horizon,node:process.version,upstream:'da1ab8ce11659110f19422213c5811cbfab77cb6',started:new Date().toISOString(),modelSha256:args.model?createHash('sha256').update(fs.readFileSync(args.model)).digest('hex'):null,engineSha256:args.engine?createHash('sha256').update(fs.readFileSync(args.engine)).digest('hex'):null,netSha256:args.net?createHash('sha256').update(fs.readFileSync(args.net)).digest('hex'):null,commit:(()=>{try{return execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();}catch{return null;}})()};
 fs.writeFileSync(`${out}/manifest.json`,JSON.stringify(manifest,null,2));
 let results=[];
 if(args.opponent==='uci'&&!args.engine)throw Error('--engine is required');

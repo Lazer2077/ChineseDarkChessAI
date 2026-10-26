@@ -20,7 +20,7 @@ engine as defeated. Recheck discovery before claiming complete coverage.
 1. Complete the fixed current-actor neural self-play policy/value series, recording real visit targets, terminal rewards, curves and held-out paired diagnostics.
 2. Diagnose the neural search deficit against the unchanged teacher, including GPU inference cost and search depth. Retain completed negative NNUE, capacity and phase controls.
 3. Extend fair original-engine coverage with complete observer-specific histories.
-4. Exploit declining future-relevant identity uncertainty: distinguish actor/public certainty, test full-public belief abstraction, entropy-conditioned computation and deterministic-continuation curricula. Investigate belief/history representation and search-target bias when learning stalls.
+4. Exploit declining future-relevant identity uncertainty: distinguish actor/public certainty, test full-public belief abstraction, entropy-conditioned computation and deterministic-continuation curricula. Investigate belief/history representation and search-target bias when learning stalls. Model scaling is also explicitly authorized when win rate stalls: test wider/deeper residual networks on GPUs, with matched data/initialization controls, inference-cost measurements and equal actual-clock strength evaluation; see [capacity protocol](MODEL_SCALING.md).
 5. Verify independent held-out confirmation before any strength or coverage claim.
 
 ## Communication and public research record

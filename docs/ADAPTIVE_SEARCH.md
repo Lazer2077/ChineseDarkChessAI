@@ -93,3 +93,31 @@ classical x-padding; all 32 failed attempts were recorded as void, not wins.
 A serialization-only strict profile repaired this: a fresh two-game smoke
 completed with two wins and no technical errors. Expanded screens are running.
 No opponent is yet marked defeated.
+
+## Additional completed screens
+At 200 ms/move, one thread, same pinned native referee and full private histories:
+- musesfish strict adapter: 16 wins / 0 draws / 0 losses, 8 pairs.
+- universe-st hard: 16 / 0 / 0, 8 pairs.
+- Pikafish jieqi_old: 10 / 0 / 6, 8 pairs.
+- pikajieqi-enhanced: 13 / 0 / 3, 8 pairs.
+- Mistboard PikaJieQi: 15 / 0 / 1, 8 pairs.
+- AB-JChess v0.2d plus official V11 net: 1 / 0 / 3, 2 pairs.
+No void/illegal/timeout results in these completed runs. The failed musesfish
+protocol run is retained separately and is not mixed into the successful run.
+The AB release builds with a documented declaration-only constexpr repair for
+GCC11, no function-body/search/weight changes; release archive and net hashes
+are recorded. Network load may add first-move overhead; these movetime screens
+are not strict wall-clock tournament certification. Equal thread counts and go
+budgets alone do not establish identical actual elapsed time.
+
+Compact completed evidence: results/20261026-native-development.json.
+None reaches the required independent confirmation volume. No superiority claim.
+
+## Warm-start follow-up
+The from-scratch net lost heavily on limited data. The follow-up imports the
+published JQN1 network into a trainable state with byte-identical export, then
+fine-tunes on the same disjoint training/validation sets with lr=1e-5, lambda=0.9,
+K=430, batch=1024, 10 epochs, seed=20261026. Held-out loss moves from 0.004957 to
+about 0.004909; this is not a strength claim. Unchanged native backbone with the
+warm candidate faces the published teacher net for 32 new development games,
+100 ms/move, seed 7000001. No adaptive search change in that comparison.

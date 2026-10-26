@@ -1,0 +1,317 @@
+{
+  "schema": 1,
+  "scope": "Development/integration screens; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
+  "reports": [
+    {
+      "run": "adaptive-v1-dev-py311",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 32,
+        "movetime": 100,
+        "seed": 6100001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/engine/build/jqe",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 32,
+        "expected_games": 32,
+        "wins": 14,
+        "draws": 2,
+        "losses": 16,
+        "score": 0.46875,
+        "complete_pairs": 16,
+        "paired_bootstrap_95": null,
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "native-trained-dev",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 32,
+        "movetime": 100,
+        "seed": 6200001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/engine/build/jqe",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "0dd301e5dcc94d478b3adfe6b1b9c607543afbfc6ec4523d58a7a2421ab2b083"
+      },
+      "result": {
+        "games": 32,
+        "expected_games": 32,
+        "wins": 7,
+        "draws": 0,
+        "losses": 25,
+        "score": 0.21875,
+        "complete_pairs": 16,
+        "paired_bootstrap_95": null,
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "coverage-universe",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 16,
+        "movetime": 200,
+        "seed": 6400001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/adapters/universe/run.sh",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "783ef92f6fdd7c3039bd0f8447f12c8f0cb6df04b45482a59ab5870d7abe2d04",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 16,
+        "expected_games": 16,
+        "wins": 16,
+        "draws": 0,
+        "losses": 0,
+        "score": 1.0,
+        "complete_pairs": 8,
+        "paired_bootstrap_95": null,
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "coverage-musesfish-strict",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 16,
+        "movetime": 200,
+        "seed": 6300001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/adapters/musesfish_uci/run.sh",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "726b8e0856299797fe261a1b2e1f8d802a96ac86aaaf409f5bb151f2e3133147",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 16,
+        "expected_games": 16,
+        "wins": 16,
+        "draws": 0,
+        "losses": 0,
+        "score": 1.0,
+        "complete_pairs": 8,
+        "paired_bootstrap_95": null,
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "coverage-pika-old",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 16,
+        "movetime": 200,
+        "seed": 6500001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/pikafish-jieqi-old/src/PikaJieQi",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "105ee76d3c3a2510c41eca161bfa7dc163f4591e9a063b5738424c79d52f93de",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 16,
+        "expected_games": 16,
+        "wins": 10,
+        "draws": 0,
+        "losses": 6,
+        "score": 0.625,
+        "complete_pairs": 8,
+        "paired_bootstrap_95": null,
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "coverage-pika-enhanced",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 16,
+        "movetime": 200,
+        "seed": 6600001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/pikajieqi-enhanced/src/PikaJieQi",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "51556640f5d5b3beee65c45cd96d1f39ba67e8c8a9ebca56f536684445975b94",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 16,
+        "expected_games": 16,
+        "wins": 13,
+        "draws": 0,
+        "losses": 3,
+        "score": 0.8125,
+        "complete_pairs": 8,
+        "paired_bootstrap_95": null,
+        "paired_hoeffding_95": [
+          0.33233860434003965,
+          1.0
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "coverage-pika-mistboard",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 16,
+        "movetime": 200,
+        "seed": 6700001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/pikafish-jieqi-wasm/src/PikaJieQi",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "97ff874660c9f07b74e3757e70229db8852c05b612230e597e49452afc0edc97",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 16,
+        "expected_games": 16,
+        "wins": 15,
+        "draws": 0,
+        "losses": 1,
+        "score": 0.9375,
+        "complete_pairs": 8,
+        "paired_bootstrap_95": null,
+        "paired_hoeffding_95": [
+          0.45733860434003965,
+          1.0
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "abj-v02d-history-smoke",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 4,
+        "movetime": 200,
+        "seed": 6900001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "build/abj-v02d/source/src/AB-JChess",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "116e9197414c63d85707a588feaea0d14c058aa5c45cbc650266030082d14ed7",
+        "net": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 4,
+        "expected_games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "score": 0.25,
+        "complete_pairs": 2,
+        "paired_bootstrap_95": null,
+        "paired_hoeffding_95": [
+          0.0,
+          1.0
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    }
+  ]
+}

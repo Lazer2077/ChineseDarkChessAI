@@ -19,3 +19,14 @@ project, and is explicitly distinct from our root-sampling implementation.
 The unmodified backbone and teacher are not claimed as original contributions.
 No outcome against the teacher is attributed to our algorithm until substantive
 changes and independently evaluated newly trained weights exist.
+
+## Native research backbone and AB-JChess opponent
+Our native experimental allocation is applied by scripts/build_native.py to an
+unchanged fixed MIT jqe source checkout; the source copy retains LICENSE.jqe.
+The independent referee and adapters are from that same MIT project. The
+protocol entry wrapper only chooses strict versus classical reveal padding.
+AB-JChess v0.2d source is fe35d87c7553fd23e8aab3a1dde7e712f286b416 (GPL-3.0).
+Its official release asset and network hashes are in docs/opponents.json. We
+use those weights locally and do not redistribute them. scripts/build_abj.py
+records a GCC11 declaration-only compatibility repair; search and evaluation
+function bodies remain unchanged. No Windows executable from the asset is run.

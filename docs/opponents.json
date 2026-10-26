@@ -17,7 +17,7 @@
       "commit": "3de6c17ae6dafa035b5eea5ec7d6b7f39118aab6",
       "kind": "engine",
       "license": "GPL-3.0",
-      "status": "source fetched; compatibility pending",
+      "status": "strict full-history protocol verified; 16-game development screen 16 candidate wins, no technical failures; no superiority claim",
       "defeated": false
     },
     {
@@ -26,7 +26,7 @@
       "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
       "kind": "engine variant",
       "license": "GPL-3.0-or-later",
-      "status": "native build and UCI smoke passed; upstream array-bound warning unresolved; formal match pending",
+      "status": "16-game development screen 15 candidate wins/1 loss; no technical errors; upstream build warning remains; no superiority claim",
       "defeated": false,
       "repository_url": "https://github.com/official-pikafish/Pikafish"
     },
@@ -36,7 +36,7 @@
       "commit": "135844bb1c7da753149a71a661c5b4738a00561f",
       "kind": "NNUE engine",
       "license": "GPL-3.0",
-      "status": "latest source pinned; build fails constexpr SquareBB under local GCC; matching v11 network not yet located; not runnable yet",
+      "status": "main source audit pending; released v0.2d now available as separate pinned entry with verified weight and GCC11 build repair",
       "defeated": false
     },
     {
@@ -54,7 +54,7 @@
       "commit": "e00b667c8b30f9c2d7333122e1dc8a013654715d",
       "kind": "independent TS engine",
       "license": "MIT",
-      "status": "source fetched; compatibility pending",
+      "status": "43 observer checks passed; 16-game development screen 16 candidate wins, no technical failures; no superiority claim",
       "defeated": false
     },
     {
@@ -63,7 +63,7 @@
       "commit": "7d5ca267f23c9c5cb57315607a18a55de17808b1",
       "kind": "engine variant",
       "license": "GPL lineage; file audit pending",
-      "status": "native build passed; licence/source audit and full-history matches pending",
+      "status": "16-game development screen 13 candidate wins/3 losses; no technical errors; no superiority claim",
       "defeated": false
     },
     {
@@ -71,7 +71,7 @@
       "url": "https://github.com/official-pikafish/Pikafish/tree/jieqi_old",
       "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc",
       "kind": "original engine",
-      "status": "source pinned; native build passed; full-history match pending",
+      "status": "16-game development screen 10 candidate wins/6 losses; no technical failures; no superiority claim",
       "defeated": false,
       "license": "GPL-3.0",
       "repository_url": "https://github.com/official-pikafish/Pikafish"
@@ -116,6 +116,18 @@
       "kind": "candidate game with AI",
       "status": "source pinned; custom king mobility, public dark captures and hidden-colour variant differ; incompatible pending profile adapter",
       "defeated": false
+    },
+    {
+      "id": "AB-JChess-v0.2d",
+      "url": "https://github.com/lxsgx23/AB-JChess",
+      "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
+      "kind": "released NNUE engine",
+      "license": "GPL-3.0 code; network release used locally without redistribution",
+      "status": "authenticated V11 net and complete private-history smoke passed; 4-game screen 1 candidate win/3 losses; no technical errors",
+      "defeated": false,
+      "network_url": "https://github.com/lxsgx23/AB-JChess/releases/download/v0.2d/0.2d_bmi2.zip",
+      "archive_sha256": "01d3d539b1d3c50371132401d70c441364ae1c2e9d6e4121f83143f2fe1b3a4e",
+      "network_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761"
     }
   ]
 }

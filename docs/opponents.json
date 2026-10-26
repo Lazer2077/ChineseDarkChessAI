@@ -8,7 +8,7 @@
       "commit": "da1ab8ce11659110f19422213c5811cbfab77cb6",
       "kind": "engine",
       "license": "GPL-3.0",
-      "status": "JS vendored; original unmodified C++ built; four-thread UCI observer-history bridge passed; original-rule paired smoke running",
+      "status": "original C++ built unmodified; private-history bridge and own-rule four-thread smoke 2 candidate wins/0 losses; 16-game development screen running; not defeated",
       "defeated": false
     },
     {

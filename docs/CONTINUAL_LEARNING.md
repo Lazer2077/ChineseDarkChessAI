@@ -90,3 +90,18 @@ its fixed validation file for all three sizes, batch 4096, 15 epochs, lr 2e-5,
 lambda 0.7, K 430, same learner seed; independent paired games then test the
 quality-versus-inference-cost tradeoff. Do not train on the .part generation
 file or tune on the separate warm-candidate confirmation layouts.
+
+### Dependent capacity job
+scripts/capacity_ablation.py is queued on the first seed's complete-generation
+marker. While it waits, it verifies the actual source controller process is
+still live; a state/lock file alone is not considered liveness. It never reads
+the .part dataset. After both dataset hashes validate, it checks at least 4 GiB
+free on GPU 4 and trains the small, wide and wide-king models sequentially on
+that GPU (not DDP). All use 15 epochs, batch 4096, seed 20261027, lr 2e-5,
+lambda 0.7 and K 430, with the same fixed data and validation set.
+
+The two larger models then face the identically trained small control in
+64-game paired development matches, seeds 7500001 and 7600001, actual clock
+5+0.05, one thread and 64 MB hash each. These are capacity screens, not promotion.
+The primary three-seed controller remains unchanged on GPU 2. Queued work is
+not reported as completed GPU training.

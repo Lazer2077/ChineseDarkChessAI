@@ -51,3 +51,11 @@ MIST_NODE=node node scripts/mist_profile_match.mjs --games=2 --movetime=1000 --s
 Original baseline is GPL-3.0. The copied candidate backbone is MIT and its licence
 is preserved in the build. No inference result from this screen certifies all
 rule variants, all clocks, or the continuous-learning models still in training.
+
+## Completed smoke and expanded screen
+The own-rule smoke completed two games with two candidate wins by mate, 37 and
+34 plies, no voids. Compact evidence and checksummed raw games are published in
+results/20261026-mist-native-smoke.json. The unpromoted warm checkpoint is now
+available under models/experimental with upstream attribution and its negative
+confirmation result. An expanded 16-game development screen uses a fresh seed
+7400101, the same 1000-ms/four-thread profile, and does not pool with other rules.

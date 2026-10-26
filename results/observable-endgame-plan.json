@@ -1,0 +1,77 @@
+{
+  "created_utc": "2026-10-26T17:35:09.707075+00:00",
+  "hypothesis": "After all on-board identities are public, the optimal continuation game graph is independent of unknown off-board capture identities. Canonicalizing their NNUE features may improve invariance and strength. Fixed opponent behavior can still depend on private history; this is not a universal policy-equivalence claim.",
+  "controls": {
+    "A": "original search/features and identically trained raw-data small NNUE",
+    "B": "canonical full-public NNUE features with A weights, without retraining",
+    "C": "canonical full-public features plus matched canonical-data training"
+  },
+  "native_change": {
+    "backbone": "331a6e612a038c4a04cf980f7b9482910fd50078",
+    "license": "MIT backbone; GPL project",
+    "binary_sha256": "73f972e245cbb4b99872887b4df3a8cbfc40616bcf1fd709dc24a09c8aaab20f",
+    "verify_incremental_accumulators": false,
+    "change": "Omit NNUE urn features only when both on-board dark counts are zero; force accumulator refresh on last-dark reveal/capture. Rules, actual position inventories, histories and chance search remain intact. This does not reveal or move a still-dark piece.",
+    "nnue_source_sha256": "74009a7473bb70efd9f46bd2d80c4ac2e5a6f2b00f15f1279d0dd86f93b049b6"
+  },
+  "training_data": {
+    "source_sha256": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+    "output_sha256": "0a6bdea6a76238adc281c61413ce2adf676071701a3ce1e924635635d64f07c6",
+    "records": 607652,
+    "full_public_records": 64389,
+    "records_changed": 58163,
+    "change": "Only urn columns 91:103 set to zero when no on-board DARK remains. Original search-score and outcome labels, flags and all other fields unchanged."
+  },
+  "validation_data": {
+    "source_sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+    "output_sha256": "7a01fa46919cee4d5893ea71e1bfc23847d264d1dda726fe70807d477bdbe53c",
+    "records": 37471,
+    "full_public_records": 4570,
+    "records_changed": 4312,
+    "change": "Only urn columns 91:103 set to zero when no on-board DARK remains. Original search-score and outcome labels, flags and all other fields unchanged."
+  },
+  "native_verification": {
+    "full_public_checks": 32,
+    "last_dark_transitions": 76,
+    "ordinary_updates": 5218,
+    "float_and_quantized": true
+  },
+  "training_recipe": {
+    "epochs": 15,
+    "batch": 4096,
+    "lr": 2e-05,
+    "lambda": 0.7,
+    "K": 430,
+    "seed": 20261027,
+    "initial_model": "published MIT jqe it014.jqn",
+    "architecture": "387k NNUE"
+  },
+  "matches": [
+    {
+      "arm": "B-vs-A",
+      "games": 64,
+      "seed": 7960001
+    },
+    {
+      "arm": "C-vs-A",
+      "games": 64,
+      "seed": 7960001
+    }
+  ],
+  "clock": "5+0.05 actual game time",
+  "threads": 1,
+  "hash_mb": 64,
+  "concurrency": 2,
+  "early_stop_or_retune": false,
+  "scope": "Single-seed development ablation, shared held-out initial layouts across arms; no promotion or pooled superiority claim. All original rule histories and inventory dynamics retained. No still-dark piece is replaced by its inferred revealed type.",
+  "sha256": {
+    "build/observable-endgame/bin/jqe": "73f972e245cbb4b99872887b4df3a8cbfc40616bcf1fd709dc24a09c8aaab20f",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "runs/capacity-series-01/small/best.jqn": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833",
+    "runs/observable-endgame-ablation-01/model/best.jqn": "64dffb546af4e851bacf013703f93cbe64fcff943c66c042648a4daa2aac4d74",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828",
+    "scripts/build_observable_endgame.py": "654405face9e645d7a2ad2e75039d9231ff0fc232f24f6e4942ad2c46499099b",
+    "scripts/canonicalize_endgame_data.py": "9845c221469e21a3c15dc9a288bfd16c50e2c3349435ffed24250ff53a8576e9"
+  }
+}

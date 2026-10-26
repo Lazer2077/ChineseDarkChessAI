@@ -53,6 +53,8 @@ Compressed raw games, checksums, and reports are in [results](results). A [new d
 
 **Can temporal targets improve learning?** A [same-observer two-ply target ablation](docs/TEMPORAL_TARGETS.md) is running, partially replacing high-variance terminal labels with the same player's future search value. Data, initialization, and the validation objective are controlled across arms. The method does not directly mix values computed with the opponent's private observations. Its first 64-game development screen scored 34 wins, 2 draws, and 28 losses (54.69%; paired 95% interval [42.19%, 66.41%], still including 50%). Independent comparisons with the original teacher are frozen and running; no improvement is confirmed.
 
+**Can the transition to full observability be exploited?** The [information-phase study](docs/PARTIAL_TO_FULL.md) measures joint without-replacement identity entropy, distinguishing public certainty from actor-private certainty. A native NNUE/training ablation now ignores irrelevant off-board inventory only after all on-board dark pieces disappear. Semantic and incremental-update checks have passed; controlled matches are running, without a strength conclusion.
+
 ## Literature and methodological boundaries
 
 - [Silver et al., AlphaZero, Science 2018](https://doi.org/10.1126/science.aar6404): motivates the cycle of self-play, search improvement, and learning. Jieqi's private information creates problems for directly applying perfect-information state search.

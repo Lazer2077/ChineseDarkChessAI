@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "initial_joint_entropy_bits": 56.68649974854821,
+  "checkpoint_sha256": "0725b834769ec38efb7fb24284add1c6aaa565520651f21db0a926a9759b9b83",
+  "trainer_sha256": "2f8a1595b7ef125199517a9d7e4c714c06c760e8cf737bb25a2007d3bc21862d",
+  "scope": "Uniform without-replacement urn prior, not a strategy-conditioned posterior. Entropy refers to future-relevant on-board identities. Position descriptions on training/selection-validation data, not strength evidence.",
+  "datasets": {
+    "train": {
+      "sha256": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+      "games": 8192,
+      "raw_positions": 607652,
+      "retained_positions": 405959,
+      "public_prior_unavailable_positions": 3,
+      "actor_entropy_bits": {
+        "mean": 12.787190320006644,
+        "p10_p50_p90": [
+          0.0,
+          7.55851976299634,
+          34.871628846628894
+        ],
+        "min": 0.0,
+        "max": 56.68649974854821
+      },
+      "public_entropy_bits": {
+        "mean": 13.945715445831592,
+        "p10_p50_p90": [
+          0.0,
+          9.32881869049588,
+          35.9807197557198
+        ],
+        "min": 0.0,
+        "max": 56.68649974854821
+      },
+      "stages": {
+        "full_public": {
+          "raw_positions": 64389,
+          "retained_positions": 41369
+        },
+        "public_entropy_zero_with_dark": {
+          "raw_positions": 13215,
+          "retained_positions": 8182
+        },
+        "actor_entropy_zero_with_dark": {
+          "raw_positions": 35393,
+          "retained_positions": 21539
+        },
+        "private_certainty_only": {
+          "raw_positions": 22178,
+          "retained_positions": 13357
+        },
+        "low_public_0_8_bits": {
+          "raw_positions": 205838,
+          "retained_positions": 127827
+        },
+        "medium_public_8_32_bits": {
+          "raw_positions": 240920,
+          "retained_positions": 166097
+        },
+        "high_public_over_32_bits": {
+          "raw_positions": 83287,
+          "retained_positions": 62484
+        }
+      },
+      "fully_revealed_with_residual_dead_inventory_raw": 58163,
+      "same_observer_entropy_increases": 0,
+      "same_observer_transitions": 591271,
+      "dead_inventory_value_sensitivity": {
+        "positions": 37510,
+        "absolute_cp_difference": {
+          "mean": 102.14031219482422,
+          "p10_p50_p90": [
+            15.8142822265625,
+            78.77828979492188,
+            219.1400634765625
+          ],
+          "min": 0.002197265625,
+          "max": 831.1085205078125
+        },
+        "positions_over_10_cp": 35241,
+        "interpretation": "Only off-board inventory features change; board and public rule history are unchanged. Sensitivity is not evidence that canonicalization improves playing strength."
+      }
+    },
+    "validation": {
+      "sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+      "games": 512,
+      "raw_positions": 37471,
+      "retained_positions": 25031,
+      "public_prior_unavailable_positions": 0,
+      "actor_entropy_bits": {
+        "mean": 13.173546125977987,
+        "p10_p50_p90": [
+          0.0,
+          8.169925001442312,
+          35.45659134735004
+        ],
+        "min": 0.0,
+        "max": 56.68649974854821
+      },
+      "public_entropy_bits": {
+        "mean": 14.370699497412625,
+        "p10_p50_p90": [
+          0.0,
+          9.808066815531937,
+          36.45659134735004
+        ],
+        "min": 0.0,
+        "max": 56.68649974854821
+      },
+      "stages": {
+        "full_public": {
+          "raw_positions": 4570,
+          "retained_positions": 3061
+        },
+        "public_entropy_zero_with_dark": {
+          "raw_positions": 522,
+          "retained_positions": 269
+        },
+        "actor_entropy_zero_with_dark": {
+          "raw_positions": 1661,
+          "retained_positions": 948
+        },
+        "private_certainty_only": {
+          "raw_positions": 1139,
+          "retained_positions": 679
+        },
+        "low_public_0_8_bits": {
+          "raw_positions": 11816,
+          "retained_positions": 7345
+        },
+        "medium_public_8_32_bits": {
+          "raw_positions": 15184,
+          "retained_positions": 10366
+        },
+        "high_public_over_32_bits": {
+          "raw_positions": 5379,
+          "retained_positions": 3990
+        }
+      },
+      "fully_revealed_with_residual_dead_inventory_raw": 4312,
+      "same_observer_entropy_increases": 0,
+      "same_observer_transitions": 36447,
+      "dead_inventory_value_sensitivity": {
+        "positions": 2893,
+        "absolute_cp_difference": {
+          "mean": 98.63790130615234,
+          "p10_p50_p90": [
+            11.355908203124999,
+            78.90391540527344,
+            224.98237304687507
+          ],
+          "min": 0.0247802734375,
+          "max": 463.6829833984375
+        },
+        "positions_over_10_cp": 2639,
+        "interpretation": "Only off-board inventory features change; board and public rule history are unchanged. Sensitivity is not evidence that canonicalization improves playing strength."
+      }
+    }
+  }
+}

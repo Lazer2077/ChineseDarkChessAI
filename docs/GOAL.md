@@ -14,7 +14,7 @@ engine as defeated. Recheck discovery before claiming complete coverage.
 1. Complete the frozen multi-seed selfplay/value-learning series and paired gates.
 2. Test same-data capacity controls at equal actual clock, retaining negative results.
 3. Extend fair original-engine coverage with complete observer-specific histories.
-4. Investigate belief/history representation and search-target bias when learning stalls.
+4. Exploit declining future-relevant identity uncertainty: distinguish actor/public certainty, test full-public belief abstraction, entropy-conditioned computation and deterministic-continuation curricula. Investigate belief/history representation and search-target bias when learning stalls.
 5. Verify independent held-out confirmation before any strength or coverage claim.
 
 ## Communication and public research record

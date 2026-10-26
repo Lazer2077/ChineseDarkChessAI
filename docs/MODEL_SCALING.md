@@ -3,8 +3,9 @@
 The user explicitly added model scaling as an available response to a win-rate
 plateau on 2026-10-26. This extends the active research goal; it does not establish
 that the current bottleneck is capacity. Complete frozen experiments unchanged.
-The following is a candidate protocol, not a launched or completed training run.
-Freeze concrete data, seeds, initialization, budgets and comparisons before launch.
+The first fixed two-arm continued-pretraining experiment is running. Its recipes
+and follow-up comparisons were frozen before optimizer outcomes; neither training
+completion nor a playing-strength benefit is claimed.
 
 ## Architecture audit
 
@@ -55,3 +56,40 @@ Current neural self-play already uses GPU search and GPU optimization; adding
 parameters and increasing self-play data or search effort remain distinct
 experimental interventions. No scaling-law or strength claim follows from the
 architecture audit.
+
+## First fixed width experiment
+
+The completed initialization audit is
+`results/20261026-residual-width-initialization.json`: 128 partial and 128 fully
+public inputs from existing selection replay, CPU FP32. The maximum policy-logit
+difference was 2.29e-5 and value difference 9.54e-7. Width doubling duplicates
+residual channels and batch-normalization state, splitting subsequent input
+weights. Opposite seeded perturbations sum to zero across each duplicated input
+pair, preserving the initial function while allowing gradients to diverge.
+This adapts [Net2Wider](https://arxiv.org/abs/1511.05641), not a claimed original
+algorithm. Initialization tests also cover training-mode batch normalization,
+source/RNG preservation, unequal gradients and safe numeric checkpoint export.
+
+Both arms continue from the previously selected shared residual warm start,
+with fresh optimizer states, identical existing 2,417,541-row teacher replay,
+512-game selection data, two epochs, batch 512, 9,442 updates, AdamW peak learning
+rate 1e-5, and shared augmentation seed 20261030. The wider model has 128 channels
+and 15 residual blocks. This is supervised capacity adaptation, separate from
+the concurrently running on-policy neural self-play series. Two epochs and one
+seed can screen a method but cannot exclude benefits with longer or independent
+training. The unchanged trainer uses BF16 GPU autocast here.
+
+Recipes: `results/residual-width-{small,wide}-training-plan.json` and
+`results/residual-width-series-plan.json`. Arms run sequentially on one GPU with
+matched examples/updates; this is not a matched-FLOP or randomized timing study.
+
+The fixed follow-up `results/residual-width-evaluation-plan.json` first measures
+FP32 forward-only latency at batch 1/32 (10 warmups, 50 repetitions), then runs
+64-game paired actual 10+0.1 development screens: wide versus small, small versus
+unchanged teacher, and wide versus unchanged teacher, with disjoint seeds
+8470001/8480001/8490001. Neural actors use leaf batches 32 and the same GPU;
+each actor has one CPU thread, with two games concurrent. Teacher NNUE is CPU-only;
+no equal-total-compute claim is made. Full native legal/identity/terminal and clock
+replays follow each match. Model hashes are recorded after checkpoint selection
+and before play; no replacement checkpoint is allowed after outcomes. A waiting
+evaluator verifies the training controller remains live and never restarts it.

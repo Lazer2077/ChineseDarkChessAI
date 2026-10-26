@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Initialization equivalence only; no training or strength result",
+  "method": "Net2Wider residual channel duplication, split downstream weights, antisymmetric seeded perturbation",
+  "reference": "https://arxiv.org/abs/1511.05641",
+  "seed": 20261030,
+  "noise_fraction": 0.001,
+  "precision": "CPU FP32",
+  "positions": 256,
+  "partial_positions": 128,
+  "full_public_positions": 128,
+  "max_policy_logit_difference": 2.288818359375e-05,
+  "max_value_difference": 9.5367431640625e-07,
+  "assert_close": {
+    "rtol": 0.0002,
+    "atol": 0.0002
+  },
+  "optimizer_state": "fresh for both arms; no optimizer transfer",
+  "small_parameters": 9335543,
+  "wide_parameters": 12798455,
+  "sha256": {
+    "runs/neural-policy-phase-02/shared/best.npz": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "runs/continual-series-01/seed-20261026/validation.bin": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+    "research/residual_scaling.py": "8a1067c90331c829044cb568adecf19ae7a9939dc0f7657192747c3a9571b8cf",
+    "scripts/prepare_residual_scaling.py": "52a12b0b16488f16410cf7410aab3e313281d3a7ae8170d2d5b197adc678d3f7",
+    "runs/residual-width-01/small-initial.npz": "a4a68c0bdf8e56e8dc5cc648d9530d8085fcfa3f401f1a899e70e8d79537efdc",
+    "runs/residual-width-01/wide-initial.npz": "8d6aa7b41080ea999ebc6b6241fd8d1a057ac59c78e3cceaec3076f4fcd0fd9e"
+  }
+}

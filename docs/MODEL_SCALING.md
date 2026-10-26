@@ -123,3 +123,10 @@ were 4.784ms small and 5.060ms wide. The batch1 measurements were 6.660ms and
 4.942ms respectively. Sequential model order, CUDA algorithm choices and shared
 load preclude a general speed ranking; these measurements exclude encoding,
 belief construction and search. Actual-clock games remain the strength measure.
+
+The wide-versus-small 64-game screen completed at 35W/3D/26L, 57.03125% score,
+paired bootstrap 95% [50.0%,64.84375%] and conservative Hoeffding 95%
+[33.02318%,81.03932%]. All 3,036 moves/clocks replayed cleanly, no technical games,
+voids or rounding ambiguities. This does not establish promotion or a reliable
+capacity benefit. The two teacher screens remain pending. Evidence:
+`results/20261026-residual-width-wide-vs-small.json` and its `-audit.json`.

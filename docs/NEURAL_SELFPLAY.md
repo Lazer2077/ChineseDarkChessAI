@@ -143,3 +143,9 @@ scales.
 [Search-cost diagnostics](NEURAL_SEARCH_COST.md) separate the existing default
 lazy allocation from an eager counterfactual; they are not a new optimization
 or playing-strength result.
+
+Iteration 2 generation/training has also completed: 288 games, 19,590 positions,
+four GPU epochs / 548 updates. Its two paired screens remain pending. Exact
+curves and episode/checkpoint provenance are archived in
+`results/20261026-neural-rl-series-second-training.json`. New-trajectory selection
+losses are not comparable to iteration 1 as matched quality estimates.

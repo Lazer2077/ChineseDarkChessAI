@@ -47,7 +47,7 @@ and conservative Hoeffding intervals, voids and technical outcomes, followed by
 seeded identity/legal/terminal/actual-clock replay. Engine identities are mapped
 to the referee's generic candidate/baseline labels only for serialization;
 neither is our learned model. Unclean/ambiguous screens remain unverified and
-cannot count as evidence of weakness. The four screens are currently pending.
+cannot count as evidence of weakness. All four screens have completed; see the provisional suite below.
 
 ## Selection and claims
 
@@ -69,3 +69,52 @@ Screened-out projects remain in `docs/opponents.json`; exclusion never becomes a
 claim that our model beat them. New relevant strong runnable versions trigger
 selection review. The eventual report must state its shortlisted-suite scope
 and inventory cutoff, rather than claiming victory over every discovered project.
+
+## First completed anchor results
+
+AB versus Pika completed 23W/0D/17L in 40 games; paired bootstrap 95% [42.5%,72.5%]
+cannot rank them confidently. All2,605 moves/terminals replayed correctly, with
+no technical games or voids. The original rounded-clock audit marks 22 ambiguous
+checks, so the frozen controller records this screen ineligible. A separate
+[high-resolution outer-clock witness](PRECISE_CLOCK_WITNESS.md) certifies wall
+safety using the existing timing log, minimum remaining lower bound 2.02679ms.
+The original eligibility flag is preserved; no engine is eliminated from this
+inconclusive comparison.
+
+AB versus Universe completed 39W/0D/1L, all1,477 moves/clocks cleanly replayed
+(the exact count remains in the independent audit). It is eligible for screening,
+not a transitive win by our model. The complete four-screen selection is below. Results:
+`results/20261026-baseline-screen-abj-vs-{pika-wasm-native,universe-hard}.json`
+and matching `-audit.json` files.
+
+## Provisional three-profile routine suite
+
+All four fixed anchor screens completed (160 new games): AB versus Pika23/0/17,
+Universe39/0/1, Musesfish37/0/3, Yuan pure40/0/0. The latter three screens are
+cleanly eligible under their original audits. All 7,259 played moves were legally
+replayed; Pika's supplemental timing certificate and original ineligibility are
+reported separately above. These are opponent-only results, not new wins by our
+learner. The remaining anchor screens are no longer pending.
+
+The provisional routine suite is now:
+
+| Profile | Why retain it |
+| --- | --- |
+| Original jqe+it014 teacher | Strong direct anchor evidence and mandatory attribution control |
+| AB-JChess v0.2d + matching official V11 | Strong independent implementation relative to jqe, verified released weights |
+| Native classical Pika WASM branch | Uncertain ordering against AB; keep the distinct classical-evaluation variant |
+
+AB and classical Pika share broader Stockfish/Pikafish ancestry; three profiles
+are not three wholly independent algorithm families. Universe hard, the timed
+Musesfish profile and Yuan pure are removed from routine candidate evaluation
+by direct anchor evidence, while staying in the inventory and diagnostic record.
+This does not prove dominance at other clocks, rule profiles or versions.
+Newer neural Pika candidates, unresolved weights/runtime failures and separate
+rule profiles are not classified as weak. Refresh discovery and resolve relevant
+new runnable contenders before fixing the final report suite.
+
+Exact selection reasons, artifact hashes and all direct evidence are retained in
+`results/20261026-baseline-preselection.json`. This is a provisional resource
+allocation decision, independent of the outcome of our candidate's final tests.
+The >70%-win gate still requires the same frozen learned model to pass fresh,
+independent test-layout sets against every final declared strong baseline.

@@ -433,5 +433,16 @@
       "defeated": false,
       "repository_full_name": "nguyen05566/ck"
     }
-  ]
+  ],
+  "routine_baseline_preselection": {
+    "status": "provisional",
+    "report": "results/20261026-baseline-preselection.json",
+    "selected_inventory_ids": [
+      "devinokeefe-jieqi",
+      "AB-JChess-v0.2d",
+      "pikafish-jieqi-wasm"
+    ],
+    "selected_profiles": 3,
+    "scope": "Small routine suite after160 opponent-only games plus400 reused teacher-anchor games. Three profiles include two related Stockfish/Pikafish variants; not3 wholly independent lineages. Other entries remain visible and unverified strong candidates require review. Exclusion is not defeat by our model."
+  }
 }

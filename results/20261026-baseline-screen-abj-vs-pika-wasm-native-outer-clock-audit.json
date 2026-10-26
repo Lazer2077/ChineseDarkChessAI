@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "run": "abj-vs-pika-wasm-native",
+  "scope": "Supplemental conservative outer-wall witness; original rounded audit and preregistered eligibility remain unchanged. No statistical superiority or retroactive original-gate pass.",
+  "plan": "results/baseline-anchor-screen-plan.json",
+  "plan_sha256": "589bb684743f7c7ef2c2eb0fecb8f5e7467b2b03e7574ff76e5b5b58f9c1cf2a",
+  "games_sha256": "abc4e3cc17dc318ef8fc5ece75b0e6457ffe258816c5f820b68594bcdd589453",
+  "timing_sha256": "ece63f5942b8c2ab139f6884a29c3b864973d6077b94f6aed5a77dcd0c5e8768",
+  "raw_timing": "results/raw/outer-clocks-abj-vs-pika-wasm-native-ece63f5942b8.jsonl.gz",
+  "wrapper_sha256": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828",
+  "script_sha256": "d4735f933a6587e17eee3735fbfebecfa17b9f90de620a0caaef36ca47c78d35",
+  "calls_checked": 2605,
+  "engine_processes": 80,
+  "move_call_counts_match": true,
+  "single_game_pid_lifetimes_match": true,
+  "guard_ms_per_call": 0.001,
+  "minimum_outer_bank_lower_ms": 2.026790000000453,
+  "ambiguous_calls": [],
+  "certified_outer_wall_clock_safe": true
+}

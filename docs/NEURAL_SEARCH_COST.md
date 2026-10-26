@@ -103,3 +103,60 @@ label is not itself an error. The next search-target study should assess value
 estimation and chance-sampling reliability, and distinguish these from action
 coverage, before attributing losses to root allocation or adopting Gumbel
 planning. This is a diagnosis, not a newly validated algorithm.
+
+## Search RNG stability across information phases
+
+The fixed `results/neural-search-stability-plan.json` repeats the same three
+certified TRAINING roots, with eight search RNG seeds and budgets 256/1,024,
+no Dirichlet noise and temperature0. All 48 searches / 30,720 simulations
+completed. Root action choice was identical across seeds within each root/budget.
+The fully public root's entire policy, child Q/visits and root value were exactly
+seed-invariant, consistent with declining future reveal uncertainty. This is
+one observed control, not a theorem about all games or opponent private policies.
+
+| Root | Budget | Root-value sample SD | Mean pairwise policy total variation |
+| --- | --- | --- | --- |
+| Opening | 256 | 0.005864 | 0.135324 |
+| Opening | 1,024 | 0.002706 | 0.128104 |
+| Last uncertain own dark | 256 | 0.000401 | 0 |
+| Last uncertain own dark | 1,024 | 0.000154 | 0.011440 |
+| Fully public | 256 | 0 | 0 |
+| Fully public | 1,024 | 0 | 0 |
+
+The last-dark root has near-saturated positive values and is not a representative
+hard decision. Last-dark and public roots choose different actions between the
+two budgets despite stability within each budget: absence of RNG variance does
+not imply sufficient search depth or correctness. Adaptive Q variation is not
+an unbiased expected-return estimate or an independent confidence interval.
+Three correlated roots cannot isolate the cause of poor match strength.
+Full samples and action statistics: `results/20261026-neural-search-stability.json`.
+
+## Fixed leaf-batch ablation
+
+[Cazenave, Batch Monte Carlo Tree Search](https://arxiv.org/abs/2104.04278)
+studies the tradeoff between batched inference and pending tree evaluations,
+including virtual-loss/virtual-mean mechanisms. Our inherited default virtual
+loss is 3 and GPU actor batches are 32. With 256 simulations and about 30 visited
+root actions, there may be a meaningful cost to pending, not-yet-backed-up leaf
+values. This is a hypothesis, not an established failure or a transferred Go result.
+
+A fixed 64-game actual 10+0.1 development screen now compares LeafBatch8 against32
+using the identical warm-start checkpoint, original Python/lazy search, one CPU
+thread each and the same GPU with two concurrent games. Smaller batches provide
+more frequent feedback but may complete fewer simulations under the clock.
+Only leaf batch differs; no new training or architecture is involved. Seed8750001
+is separate from prior screens; legal/private-history/actual-clock replay and
+source/model checks follow completion. Recipe:
+`results/neural-leaf-batch-screen-plan.json`. The screen completed at
+38W/7D/19L (64.84375% score), paired bootstrap95% [54.6875%,74.21875%],
+conservative Hoeffding95% [40.83568%,88.85182%]. All3,472 moves/clocks replayed
+cleanly, with no technical games, voids or rounding ambiguities; minimum
+conservative remaining clock553.5ms. This is a positive development screen,
+not promotion or a demonstrated gain against the native teacher. Evidence:
+`results/20261026-neural-leaf-batch-screen.json` and its `-audit.json`.
+Existing frozen self-play/width experiments remain unchanged.
+
+A separate [virtual-mean adaptation](VIRTUAL_MEAN.md) now has correctness tests
+and one fixed screen running after the completed leaf-batch experiment. It changes pending
+value accounting, not model size or the observation contract; its strength
+remains unmeasured.

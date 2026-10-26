@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "scope": "Completed experimental matches with explicit per-report stages; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
+  "reports": [
+    {
+      "raw_games": {
+        "path": "results/raw/abj-vs-musesfish-timed-7189483645cf.jsonl.gz",
+        "uncompressed_sha256": "7189483645cfa0be102301d56a42b1dac87a391b176ec67c1ceba9cf8c17767c"
+      },
+      "run": "abj-vs-musesfish-timed",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "Pinned jqe native external referee,80 no-capture plies and public repetition/check/chase responsibility. Full actor-private histories; internal rule approximations retained and disclosed separately.",
+      "budget": {
+        "games": 40,
+        "movetime": 100,
+        "seed": 8630001,
+        "concurrency": 2,
+        "tc": "5+0.05"
+      },
+      "candidate": "AB-JChess",
+      "baseline": "adapters/musesfish_clock.sh",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "116e9197414c63d85707a588feaea0d14c058aa5c45cbc650266030082d14ed7",
+        "baseline": "5712415bc9f8b7b4c9afe92f5b58b82521a5f2a5519753ede2fb91579803aa38",
+        "candidate_net": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+        "net": null
+      },
+      "result": {
+        "games": 40,
+        "expected_games": 40,
+        "wins": 37,
+        "draws": 0,
+        "losses": 3,
+        "score": 0.925,
+        "complete_pairs": 20,
+        "paired_bootstrap_95": [
+          0.85,
+          1.0
+        ],
+        "paired_hoeffding_95": [
+          0.6213192690458474,
+          1
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "single_match_superiority_gate": false,
+        "warning": "Opponent-only shortlist screening, not our-model strength or a transitive victory."
+      },
+      "attribution": "Opponent-only screening: neither actor is our trained candidate. Left is recorded as candidate solely for referee/archiver compatibility."
+    }
+  ]
+}

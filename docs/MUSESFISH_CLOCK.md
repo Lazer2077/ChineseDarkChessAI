@@ -64,7 +64,13 @@ The 32-game development set also completed at 32W/0D/0L; all 1,282 moves/clocks
 replayed cleanly, with no technical games, voids or rounding ambiguities
 (minimum conservative remaining clock 760.5ms). Development evidence uses the
 same `results/20261026-musesfish-clock-development{,-audit}.json` naming.
-The two confirmation sets remain pending; this development screen does not
-replace them. Any later
+Confirmation A is complete and B remains pending, as recorded below; this
+development screen does not replace them. Any later
 acceptance is scoped to this exact profile. It neither establishes >70% wins
 against all strong baselines nor removes other configurations from the inventory.
+
+Confirmation A completed at 199W/1D/0L, with all 7,711 moves/clocks independently
+replayed, no technical games, voids or rounding ambiguity (minimum conservative
+remaining clock 524.5ms). Confirmation B is still running; no two-set acceptance
+is claimed. Evidence: `results/20261026-musesfish-clock-confirmation-a.json`
+and its `-audit.json`.

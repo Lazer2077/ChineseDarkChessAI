@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "status": "initial_screen_complete_provisional_three_profile_suite",
+  "scope": "User-authorized small-suite preselection from verified runnable same-rule/time profiles. Neither actor was our learned candidate. Not an exhaustive rank,three independent lineages,transitive victory or final70%-win result.",
+  "rules": "Pinned jqe native external referee,80 no-capture plies and public repetition/check/chase responsibility. Full actor-private histories; internal rule approximations retained and disclosed separately.",
+  "clock": "5+0.05",
+  "new_games": 160,
+  "reused_teacher_anchor_games": 400,
+  "final_candidate_test_seeds_must_be_fresh": true,
+  "provisional_suite": [
+    {
+      "id": "jqe-teacher",
+      "family": "Original jqe alpha-beta/PVS,NNUE; mandatory attribution control",
+      "binary": "external/devinokeefe-jieqi/engine/build/jqe",
+      "net": "external/devinokeefe-jieqi/engine/nets/it014.jqn",
+      "reason": "Clean two-set direct evidence beats AB anchor; unchanged teacher strength remains unexceeded by learned model.",
+      "binary_sha256": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+      "net_sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+    },
+    {
+      "id": "abj-v02d",
+      "family": "Stockfish/Pikafish-derived hidden-chess search with official neural evaluation",
+      "binary": "build/abj-v02d/source/src/AB-JChess",
+      "net": "external/AB-JChess-v0.2d-net/abjchess-20261010.nnue",
+      "reason": "Independent implementation relative to jqe,official release/weights; strong anchor against other runnable profiles.",
+      "binary_sha256": "116e9197414c63d85707a588feaea0d14c058aa5c45cbc650266030082d14ed7",
+      "net_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761"
+    },
+    {
+      "id": "pika-wasm-native",
+      "family": "Related Stockfish/Pikafish lineage,classical evaluation; not independent of AB family in broad ancestry",
+      "binary": "external/pikafish-jieqi-wasm/src/PikaJieQi",
+      "net": null,
+      "reason": "Cannot confidently order against AB from23/17; retain as distinct evaluation/search variant rather than dropping an uncertain challenger.",
+      "binary_sha256": "97ff874660c9f07b74e3757e70229db8852c05b612230e597e49452afc0edc97",
+      "net_sha256": null
+    }
+  ],
+  "anchor_screens": [
+    {
+      "id": "abj-vs-pika-wasm-native",
+      "left": "abj-v02d",
+      "right": "pika-wasm-native",
+      "result": {
+        "games": 40,
+        "expected_games": 40,
+        "wins": 23,
+        "draws": 0,
+        "losses": 17,
+        "score": 0.575,
+        "complete_pairs": 20,
+        "paired_bootstrap_95": [
+          0.425,
+          0.725
+        ],
+        "paired_hoeffding_95": [
+          0.27131926904584736,
+          0.8786807309541526
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "single_match_superiority_gate": false,
+        "warning": "Opponent-only shortlist screening, not our-model strength or a transitive victory."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "abj-vs-pika-wasm-native",
+        "games": 40,
+        "complete_pairs": 20,
+        "moves_replayed": 2605,
+        "wins_draws_losses": [
+          23,
+          0,
+          17
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 2605,
+        "clock_ambiguous_moves_from_rounding": 22,
+        "minimum_clock_lower_margin_ms": -24.5,
+        "raw_games_sha256": "abc4e3cc17dc318ef8fc5ece75b0e6457ffe258816c5f820b68594bcdd589453",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      },
+      "eligible_for_screening": false
+    },
+    {
+      "id": "abj-vs-universe-hard",
+      "left": "abj-v02d",
+      "right": "universe-hard",
+      "result": {
+        "games": 40,
+        "expected_games": 40,
+        "wins": 39,
+        "draws": 0,
+        "losses": 1,
+        "score": 0.975,
+        "complete_pairs": 20,
+        "paired_bootstrap_95": [
+          0.925,
+          1.0
+        ],
+        "paired_hoeffding_95": [
+          0.6713192690458474,
+          1
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "single_match_superiority_gate": false,
+        "warning": "Opponent-only shortlist screening, not our-model strength or a transitive victory."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "abj-vs-universe-hard",
+        "games": 40,
+        "complete_pairs": 20,
+        "moves_replayed": 1477,
+        "wins_draws_losses": [
+          39,
+          0,
+          1
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 1477,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 57.0,
+        "raw_games_sha256": "beeaa22b3628501b1a875bf06e43c3371ee7eb5147f614098c7a9293c5728b66",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      },
+      "eligible_for_screening": true
+    },
+    {
+      "id": "abj-vs-musesfish-timed",
+      "left": "abj-v02d",
+      "right": "musesfish-timed",
+      "result": {
+        "games": 40,
+        "expected_games": 40,
+        "wins": 37,
+        "draws": 0,
+        "losses": 3,
+        "score": 0.925,
+        "complete_pairs": 20,
+        "paired_bootstrap_95": [
+          0.85,
+          1.0
+        ],
+        "paired_hoeffding_95": [
+          0.6213192690458474,
+          1
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "single_match_superiority_gate": false,
+        "warning": "Opponent-only shortlist screening, not our-model strength or a transitive victory."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "abj-vs-musesfish-timed",
+        "games": 40,
+        "complete_pairs": 20,
+        "moves_replayed": 1795,
+        "wins_draws_losses": [
+          37,
+          0,
+          3
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 1795,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 20.5,
+        "raw_games_sha256": "7189483645cfa0be102301d56a42b1dac87a391b176ec67c1ceba9cf8c17767c",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      },
+      "eligible_for_screening": true
+    },
+    {
+      "id": "abj-vs-yuan-pure",
+      "left": "abj-v02d",
+      "right": "yuan-pure",
+      "result": {
+        "games": 40,
+        "expected_games": 40,
+        "wins": 40,
+        "draws": 0,
+        "losses": 0,
+        "score": 1.0,
+        "complete_pairs": 20,
+        "paired_bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "paired_hoeffding_95": [
+          0.6963192690458474,
+          1
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "promotion_supported": false,
+        "single_match_superiority_gate": false,
+        "warning": "Opponent-only shortlist screening, not our-model strength or a transitive victory."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "abj-vs-yuan-pure",
+        "games": 40,
+        "complete_pairs": 20,
+        "moves_replayed": 1382,
+        "wins_draws_losses": [
+          40,
+          0,
+          0
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 1382,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 193.0,
+        "raw_games_sha256": "2b1a6d03d8e8ff2bc513e2740868f0e710dad77b0228a3115c1c38ec96c26f4c",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      },
+      "eligible_for_screening": true
+    }
+  ],
+  "routine_screened_out": [
+    "universe-hard",
+    "musesfish-timed",
+    "yuan-pure"
+  ],
+  "exclusion_scope": "Routine suite only,based on clean direct AB anchor screens. Existing standalone results stay version-specific; no claim our model defeated excluded projects by transitivity.",
+  "unresolved_candidates": "Newer/intended neural Pika weights,technically failing variants and other rule profiles remain in inventory; not ranked as weak. Refresh before final suite declaration and when relevant runnable versions become available.",
+  "pika_clock_scope": "Original frozen screening eligibility remainsfalse due22rounded ambiguities; supplemental high-resolution containing-interval audit certifies wall safety. Retaining an uncertain opponent does not depend on retroactively passing the original screen.",
+  "evidence_sha256": {
+    "results/baseline-anchor-screen-plan.json": "589bb684743f7c7ef2c2eb0fecb8f5e7467b2b03e7574ff76e5b5b58f9c1cf2a",
+    "results/20261026-baseline-screen-abj-vs-pika-wasm-native-outer-clock-audit.json": "b598a14ba34f970902272f5ce6ce5be56cbacf82094d5dd769b6362e6fc1ad52",
+    "results/20261026-abj-teacher-a.json": "2b837f66a5d1f6d8379a3ae9882fc82a8e146ad17c387e462ee4921d3811f647",
+    "results/20261026-abj-teacher-a-audit.json": "b2ce022654a226b37b5fbe220705bc6622045949e9ffee1deb462a72769ef170",
+    "results/20261026-abj-teacher-b.json": "a98d30176113ab6ad3924a6e5c310f062849a07a60dc1d7a8d270bf21cd4fad9",
+    "results/20261026-abj-teacher-b-audit.json": "587a4519641a6b179cfaf79b15b283f8f61c343c2c412b6f202c7dc97296b717",
+    "results/20261026-baseline-screen-abj-vs-pika-wasm-native.json": "3bc444388a3d2d6a5821dbe4fdd13e917775d264ad6a021462108153dccb465c",
+    "results/20261026-baseline-screen-abj-vs-pika-wasm-native-audit.json": "17c74aabde2dbd545e388d235d8b40e36ba222bffa5286888343a5700db767ee",
+    "results/20261026-baseline-screen-abj-vs-universe-hard.json": "4437352f02b426d0202770f100672f01767e5788782fb3b1cb813c755a0342da",
+    "results/20261026-baseline-screen-abj-vs-universe-hard-audit.json": "79a892a7fa1c2b76fc04b7bb963617750432d803cf5d5ac3471ea8040d513031",
+    "results/20261026-baseline-screen-abj-vs-musesfish-timed.json": "3cf2c1023b8588a703fe0a9906335ec2cd719cf204fdcde780aabdbf20d5cb54",
+    "results/20261026-baseline-screen-abj-vs-musesfish-timed-audit.json": "735e02077325b2624b7d44a5c56552c2cb268f7a219a538a8db4ff9001815641",
+    "results/20261026-baseline-screen-abj-vs-yuan-pure.json": "229bc9022e9f5083acbb916a2849385a24bec0d5b30af811f38541b161ab16b3",
+    "results/20261026-baseline-screen-abj-vs-yuan-pure-audit.json": "3752a99d6ab71d8ce5c98e0bcfa400299befbf5b42707e3f521fbba778f77fa6"
+  },
+  "frozen_inputs_verified_after_screening": true
+}

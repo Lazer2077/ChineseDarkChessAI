@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "scope": "Completed experimental matches with explicit per-report stages; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
+  "reports": [
+    {
+      "raw_games": {
+        "path": "results/raw/match-e1741ae72f47.jsonl.gz",
+        "uncompressed_sha256": "e1741ae72f477c628ae695cf7897f06e7946e0b46c18a2a0c5d7a58089662990"
+      },
+      "run": "match",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 64,
+        "movetime": 100,
+        "seed": 8750001,
+        "concurrency": 2,
+        "tc": "10+0.1"
+      },
+      "candidate": "neural_policy_gpu_uci.sh",
+      "baseline": "adapters/neural_policy_gpu_uci.sh",
+      "candidate_options": "LeafBatch=8",
+      "hashes": {
+        "candidate": "44dc337b287f868605c9bdf02ca542487c3aaaed848e648721eb6a01c15f6f9a",
+        "baseline": "44dc337b287f868605c9bdf02ca542487c3aaaed848e648721eb6a01c15f6f9a",
+        "net": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+        "candidate_net": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1740,
+            "mean_ms": 321.89329317471265,
+            "p95_ms": 475.349651,
+            "max_ms": 679.440991
+          },
+          "baseline": {
+            "moves": 1732,
+            "mean_ms": 336.7713245259815,
+            "p95_ms": 524.836444,
+            "max_ms": 791.236921
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 38,
+        "draws": 7,
+        "losses": 19,
+        "score": 0.6484375,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.546875,
+          0.7421875
+        ],
+        "paired_hoeffding_95": [
+          0.4083568021700198,
+          0.8885181978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    }
+  ]
+}

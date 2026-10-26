@@ -39,6 +39,36 @@ Nash-equilibrium guarantees. The target still depends on the behavior policy
 and an approximate teacher; reduced variance or improved strength is a
 hypothesis, not an established result.
 
+## Ideal variance argument and its limits
+
+Let F_t contain the complete history available to the same player at decision
+t, and let Z in [0,1] be that player's final score under a fixed joint behavior
+policy. Because that player's future information retains their earlier history,
+F_t is contained in F_{t+2}. For an exact outcome predictor
+m=E[Z | F_{t+2}], define T=(Z+m)/2. The tower property gives:
+
+```math
+\mathbb E[T\mid F_t]=\mathbb E[Z\mid F_t],\qquad
+\operatorname{Var}(T\mid F_t)=\tfrac14\operatorname{Var}(Z\mid F_t)
++\tfrac34\operatorname{Var}(m\mid F_t)
+\leq\operatorname{Var}(Z\mid F_t).
+```
+
+The covariance identity uses E[Zm | F_t]=E[m² | F_t]. This is a standard
+conditional-expectation variance argument, not a claimed new general RL theorem.
+It motivates reducing outcome noise while retaining the same observer. The
+opponent's private-information sigma-algebra is not generally nested with F_t,
+so the same argument does not follow merely by negating their private value.
+
+In the actual implementation, q_{t+2} is a calibrated search-score transform,
+not the exact conditional outcome expectation under the generating joint policy.
+The NNUE input compresses history, search approximates adversarial values,
+and actor updates change the behavior distribution. These break the exact
+predictor assumptions; bias can offset any variance reduction. The frozen
+ablation measures that practical tradeoff and does not inherit this ideal bound
+as a performance guarantee. No claim is made that future observations are
+available to the acting network at time t.
+
 ## Frozen target and controls
 
 Let q_t=σ(s_t/430) be the teacher's search value from the acting player's own
@@ -92,3 +122,20 @@ explicit game IDs and terminal reasons to avoid reconstruction entirely.
 Frozen recipes and artifact hashes: results/temporal-target-plan.json. Local
 training outputs are under runs/temporal-ablation-01; queued or running jobs
 are not strength evidence.
+
+## Completed first development screen
+
+The frozen temporal candidate scored 34W/2D/28L against the identically trained
+synthetic-target control in all 64 games, score 54.6875%, 32 complete pairs.
+Paired bootstrap 95%: [0.421875, 0.6640625]; no technical failures or voids.
+The interval includes 50%, so this is not confirmed improvement. Training
+losses from the two different target objectives are not directly comparable.
+Evidence: results/20261026-temporal-development.json.
+
+Two new 200-game confirmation sets now compare this frozen temporal candidate
+**directly with the unchanged original teacher**, seeds 7940001 and 7950001,
+actual clock 5+0.05, one thread/64 MB. A development gain over a trained control
+that itself failed to beat the teacher cannot establish a gain over the teacher.
+The candidate, code and budgets remain frozen between sets, with no interim
+stopping. See results/temporal-teacher-confirmation-plan.json. This is still one
+training seed, so even successful results would need independent training runs.

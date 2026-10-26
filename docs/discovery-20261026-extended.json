@@ -1,0 +1,639 @@
+{
+  "as_of": "2026-10-26",
+  "source": "Connected GitHub repository search; additional language/query variants. Raw leads include irrelevant homonyms, not verified engine coverage.",
+  "queries": [
+    {
+      "query": "揭棋 AI",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "miaosiSari/Jieqi",
+          "url": "https://github.com/miaosiSari/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "arthuryangcs/mist-jieqi",
+          "url": "https://github.com/arthuryangcs/mist-jieqi",
+          "branch": "main",
+          "size": 24355
+        },
+        {
+          "name": "rexfang0829/jieqi-ai-v0.1",
+          "url": "https://github.com/rexfang0829/jieqi-ai-v0.1",
+          "branch": "main",
+          "size": 28254
+        },
+        {
+          "name": "wangyiming1628/jieqi_ai",
+          "url": "https://github.com/wangyiming1628/jieqi_ai",
+          "branch": "main",
+          "size": 85072
+        },
+        {
+          "name": "rexfang0829/jieqi-ai",
+          "url": "https://github.com/rexfang0829/jieqi-ai",
+          "branch": "main",
+          "size": 3
+        },
+        {
+          "name": "iwestlin/jieqi-ai",
+          "url": "https://github.com/iwestlin/jieqi-ai",
+          "branch": "main",
+          "size": 29022
+        },
+        {
+          "name": "zhyjie2008/Jieqi",
+          "url": "https://github.com/zhyjie2008/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "gybing/Jieqi",
+          "url": "https://github.com/gybing/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "esweffsfeg/Jieqi",
+          "url": "https://github.com/esweffsfeg/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "husker01/Jieqi",
+          "url": "https://github.com/husker01/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "tobeinged/Jieqi",
+          "url": "https://github.com/tobeinged/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "chenshangjin/jieqi-ai-sys",
+          "url": "https://github.com/chenshangjin/jieqi-ai-sys",
+          "branch": "main",
+          "size": 28984
+        },
+        {
+          "name": "Ynkcc/Jieqi",
+          "url": "https://github.com/Ynkcc/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "RunchGlaceon/Jieqi",
+          "url": "https://github.com/RunchGlaceon/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "jiayu1011/Jieqi",
+          "url": "https://github.com/jiayu1011/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "yeye43/Jieqi",
+          "url": "https://github.com/yeye43/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "0Jvang/Jieqi",
+          "url": "https://github.com/0Jvang/Jieqi",
+          "branch": "main",
+          "size": 28915
+        },
+        {
+          "name": "zball-bz/Jieqi",
+          "url": "https://github.com/zball-bz/Jieqi",
+          "branch": "main",
+          "size": 28925
+        },
+        {
+          "name": "Xyfcw/Jieqi",
+          "url": "https://github.com/Xyfcw/Jieqi",
+          "branch": "main",
+          "size": 28917
+        },
+        {
+          "name": "counterstriker/Jieqi",
+          "url": "https://github.com/counterstriker/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "JarvanDing/Jieqiai",
+          "url": "https://github.com/JarvanDing/Jieqiai",
+          "branch": "main",
+          "size": 28927
+        },
+        {
+          "name": "zyjopensource/Jieqi",
+          "url": "https://github.com/zyjopensource/Jieqi",
+          "branch": "main",
+          "size": 29293
+        },
+        {
+          "name": "svajra/JieqiAI",
+          "url": "https://github.com/svajra/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "yeye43/JieqiAI",
+          "url": "https://github.com/yeye43/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "counterstriker/JieqiAI",
+          "url": "https://github.com/counterstriker/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "nghiatruong/JieqiAI",
+          "url": "https://github.com/nghiatruong/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "iwestlin/mistboard-jieqi",
+          "url": "https://github.com/iwestlin/mistboard-jieqi",
+          "branch": "main",
+          "size": 81913
+        },
+        {
+          "name": "universe-st/Jieqi",
+          "url": "https://github.com/universe-st/Jieqi",
+          "branch": "main",
+          "size": 15720
+        },
+        {
+          "name": "RemiliaScarlet-57/masked-chinese-chess",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess",
+          "branch": "main",
+          "size": 120
+        },
+        {
+          "name": "zhiduoming/Unveil",
+          "url": "https://github.com/zhiduoming/Unveil",
+          "branch": "main",
+          "size": 5361
+        },
+        {
+          "name": "Wu200008/wilderness-xiangqi",
+          "url": "https://github.com/Wu200008/wilderness-xiangqi",
+          "branch": "main",
+          "size": 10129
+        },
+        {
+          "name": "Yuan-Bai/jieqi-lab",
+          "url": "https://github.com/Yuan-Bai/jieqi-lab",
+          "branch": "main",
+          "size": 2178
+        },
+        {
+          "name": "Huamucuo/doodle-xiangqi",
+          "url": "https://github.com/Huamucuo/doodle-xiangqi",
+          "branch": "main",
+          "size": 10916
+        },
+        {
+          "name": "mengnanhuangshu/jieqi-copilot",
+          "url": "https://github.com/mengnanhuangshu/jieqi-copilot",
+          "branch": "main",
+          "size": 4828
+        },
+        {
+          "name": "mazijun123/board-games",
+          "url": "https://github.com/mazijun123/board-games",
+          "branch": "main",
+          "size": 53711
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "暗象棋 AI",
+      "status": "fulfilled",
+      "data": [],
+      "error": false
+    },
+    {
+      "query": "\"cờ úp\"",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "co-up/co-up.de",
+          "url": "https://github.com/co-up/co-up.de",
+          "branch": "main",
+          "size": 28948
+        },
+        {
+          "name": "Winter-Cha/coup-spring-backend",
+          "url": "https://github.com/Winter-Cha/coup-spring-backend",
+          "branch": "develop",
+          "size": 102
+        },
+        {
+          "name": "xMartin/coup-door-app",
+          "url": "https://github.com/xMartin/coup-door-app",
+          "branch": "master",
+          "size": 7
+        },
+        {
+          "name": "derhuerst/coup-letmein",
+          "url": "https://github.com/derhuerst/coup-letmein",
+          "branch": "master",
+          "size": 6
+        },
+        {
+          "name": "Winter-Cha/coup-reactjs-frontend",
+          "url": "https://github.com/Winter-Cha/coup-reactjs-frontend",
+          "branch": "develop",
+          "size": 106
+        },
+        {
+          "name": "sparta-team6/CO-UP-TEAM-BE",
+          "url": "https://github.com/sparta-team6/CO-UP-TEAM-BE",
+          "branch": "dev",
+          "size": 97909
+        },
+        {
+          "name": "NorbertBM-School/test-repo",
+          "url": "https://github.com/NorbertBM-School/test-repo",
+          "branch": "main",
+          "size": 4
+        },
+        {
+          "name": "derhuerst/play-music-at-coup",
+          "url": "https://github.com/derhuerst/play-music-at-coup",
+          "branch": "master",
+          "size": 21
+        },
+        {
+          "name": "gracieDZ/Pandas_tutorial",
+          "url": "https://github.com/gracieDZ/Pandas_tutorial",
+          "branch": "master",
+          "size": 521
+        },
+        {
+          "name": "tungpham42/coup",
+          "url": "https://github.com/tungpham42/coup",
+          "branch": "master",
+          "size": 193
+        },
+        {
+          "name": "DOMOSV/conf-upr",
+          "url": "https://github.com/DOMOSV/conf-upr",
+          "branch": "main",
+          "size": 41
+        },
+        {
+          "name": "tungpham42/co-up",
+          "url": "https://github.com/tungpham42/co-up",
+          "branch": "master",
+          "size": 186
+        },
+        {
+          "name": "tungpham42/cotuongup",
+          "url": "https://github.com/tungpham42/cotuongup",
+          "branch": "master",
+          "size": 1056
+        },
+        {
+          "name": "thomasnka/Co-up-web",
+          "url": "https://github.com/thomasnka/Co-up-web",
+          "branch": "main",
+          "size": 358
+        },
+        {
+          "name": "channel18plus/viahe_coup",
+          "url": "https://github.com/channel18plus/viahe_coup",
+          "branch": "master",
+          "size": 56
+        },
+        {
+          "name": "danhtuot1987/co-up-ha-",
+          "url": "https://github.com/danhtuot1987/co-up-ha-",
+          "branch": "main",
+          "size": 4
+        },
+        {
+          "name": "jacobdam/coup-vn",
+          "url": "https://github.com/jacobdam/coup-vn",
+          "branch": "master",
+          "size": 224
+        },
+        {
+          "name": "Kriesse/plants",
+          "url": "https://github.com/Kriesse/plants",
+          "branch": "master",
+          "size": 589
+        },
+        {
+          "name": "Jura-Z/Jam23",
+          "url": "https://github.com/Jura-Z/Jam23",
+          "branch": "master",
+          "size": 182556
+        },
+        {
+          "name": "tungpham42/coupapi",
+          "url": "https://github.com/tungpham42/coupapi",
+          "branch": "master",
+          "size": 379
+        },
+        {
+          "name": "Aspyn25/to-do-list-application",
+          "url": "https://github.com/Aspyn25/to-do-list-application",
+          "branch": "main",
+          "size": 21
+        },
+        {
+          "name": "Ehsan-aghapour/CO-UP-Profiling",
+          "url": "https://github.com/Ehsan-aghapour/CO-UP-Profiling",
+          "branch": "main",
+          "size": 44145
+        },
+        {
+          "name": "derhuerst/coup-lights",
+          "url": "https://github.com/derhuerst/coup-lights",
+          "branch": "master",
+          "size": 9
+        },
+        {
+          "name": "thilo/memberships-co-up",
+          "url": "https://github.com/thilo/memberships-co-up",
+          "branch": "master",
+          "size": 0
+        },
+        {
+          "name": "coalalala/plants",
+          "url": "https://github.com/coalalala/plants",
+          "branch": "master",
+          "size": 552
+        },
+        {
+          "name": "tungpham42/coup-vn",
+          "url": "https://github.com/tungpham42/coup-vn",
+          "branch": "master",
+          "size": 224
+        },
+        {
+          "name": "mikez/co-up.de",
+          "url": "https://github.com/mikez/co-up.de",
+          "branch": "master",
+          "size": 11910
+        },
+        {
+          "name": "nguyen05566/flipchess",
+          "url": "https://github.com/nguyen05566/flipchess",
+          "branch": "main",
+          "size": 55486
+        },
+        {
+          "name": "awaisaslampro/test-repo",
+          "url": "https://github.com/awaisaslampro/test-repo",
+          "branch": "main",
+          "size": 0
+        },
+        {
+          "name": "SamAdeyem/test-repo",
+          "url": "https://github.com/SamAdeyem/test-repo",
+          "branch": "main",
+          "size": 4
+        },
+        {
+          "name": "jayeshMERNStack/test-repo",
+          "url": "https://github.com/jayeshMERNStack/test-repo",
+          "branch": "main",
+          "size": 2
+        },
+        {
+          "name": "payam-ranjbar/GGJ25",
+          "url": "https://github.com/payam-ranjbar/GGJ25",
+          "branch": "main",
+          "size": 4084
+        },
+        {
+          "name": "dbxodnsms/coup-spring-backend",
+          "url": "https://github.com/dbxodnsms/coup-spring-backend",
+          "branch": "main",
+          "size": 100
+        },
+        {
+          "name": "Mayonezooo/coup-spring-backend",
+          "url": "https://github.com/Mayonezooo/coup-spring-backend",
+          "branch": "develop",
+          "size": 94
+        },
+        {
+          "name": "Tacsson/CoApp",
+          "url": "https://github.com/Tacsson/CoApp",
+          "branch": "master",
+          "size": 8784
+        },
+        {
+          "name": "eunzkwon/coup-spring-backend",
+          "url": "https://github.com/eunzkwon/coup-spring-backend",
+          "branch": "develop",
+          "size": 100
+        },
+        {
+          "name": "OpenTechSchool/co-up.opentechschool.org",
+          "url": "https://github.com/OpenTechSchool/co-up.opentechschool.org",
+          "branch": "gh-pages",
+          "size": 2
+        },
+        {
+          "name": "eunzkwon/coup-reactjs-frontend",
+          "url": "https://github.com/eunzkwon/coup-reactjs-frontend",
+          "branch": "develop",
+          "size": 116
+        },
+        {
+          "name": "dbxodnsms/coup-reactjs-frontend",
+          "url": "https://github.com/dbxodnsms/coup-reactjs-frontend",
+          "branch": "main",
+          "size": 106
+        },
+        {
+          "name": "Hong-Seungmin/CO-UP-TEAM-BE",
+          "url": "https://github.com/Hong-Seungmin/CO-UP-TEAM-BE",
+          "branch": "dev",
+          "size": 97907
+        },
+        {
+          "name": "co-up/coup-colorcloud",
+          "url": "https://github.com/co-up/coup-colorcloud",
+          "branch": "master",
+          "size": 2
+        },
+        {
+          "name": "24pb9chvm5-pixel/DarkChess-JS",
+          "url": "https://github.com/24pb9chvm5-pixel/DarkChess-JS",
+          "branch": "main",
+          "size": 5
+        },
+        {
+          "name": "thai-nghi/coup",
+          "url": "https://github.com/thai-nghi/coup",
+          "branch": "main",
+          "size": 510
+        },
+        {
+          "name": "Samco2/test-repo",
+          "url": "https://github.com/Samco2/test-repo",
+          "branch": "main",
+          "size": 4
+        },
+        {
+          "name": "jayeshsabale/test-repo",
+          "url": "https://github.com/jayeshsabale/test-repo",
+          "branch": "main",
+          "size": 2
+        },
+        {
+          "name": "Samco2/test-repo-1",
+          "url": "https://github.com/Samco2/test-repo-1",
+          "branch": "main",
+          "size": 3
+        },
+        {
+          "name": "NorbertBM/test-repo",
+          "url": "https://github.com/NorbertBM/test-repo",
+          "branch": "main",
+          "size": 3
+        },
+        {
+          "name": "Tidu84/Covua",
+          "url": "https://github.com/Tidu84/Covua",
+          "branch": "main",
+          "size": 9907
+        },
+        {
+          "name": "bastianalbers/co-up.de",
+          "url": "https://github.com/bastianalbers/co-up.de",
+          "branch": "master",
+          "size": 12008
+        },
+        {
+          "name": "Clairbot/co-up.de",
+          "url": "https://github.com/Clairbot/co-up.de",
+          "branch": "master",
+          "size": 15120
+        },
+        {
+          "name": "CoUpCommunity/co-up.de",
+          "url": "https://github.com/CoUpCommunity/co-up.de",
+          "branch": "main",
+          "size": 28943
+        },
+        {
+          "name": "autarc/coup-door-app",
+          "url": "https://github.com/autarc/coup-door-app",
+          "branch": "master",
+          "size": 160
+        },
+        {
+          "name": "t3thinhaa/project-Artclear",
+          "url": "https://github.com/t3thinhaa/project-Artclear",
+          "branch": "main",
+          "size": 0
+        },
+        {
+          "name": "bastianalbers/coup-door-app",
+          "url": "https://github.com/bastianalbers/coup-door-app",
+          "branch": "master",
+          "size": 2
+        },
+        {
+          "name": "rachael1216/co-up",
+          "url": "https://github.com/rachael1216/co-up",
+          "branch": "main",
+          "size": 37
+        },
+        {
+          "name": "jayjayjpg/coup-door-app",
+          "url": "https://github.com/jayjayjpg/coup-door-app",
+          "branch": "master",
+          "size": 82
+        },
+        {
+          "name": "leadley-cc/pokemon-encounters",
+          "url": "https://github.com/leadley-cc/pokemon-encounters",
+          "branch": "master",
+          "size": 5
+        },
+        {
+          "name": "haianhhadang-collab/ky-dao-co-tuong",
+          "url": "https://github.com/haianhhadang-collab/ky-dao-co-tuong",
+          "branch": "main",
+          "size": 83
+        },
+        {
+          "name": "dollysapra/ARM-CO-UP",
+          "url": "https://github.com/dollysapra/ARM-CO-UP",
+          "branch": "CO-UP-v2",
+          "size": 272986
+        },
+        {
+          "name": "transfluxus/MinimBasher",
+          "url": "https://github.com/transfluxus/MinimBasher",
+          "branch": "master",
+          "size": 128
+        },
+        {
+          "name": "thegitter12345/MinimBasher",
+          "url": "https://github.com/thegitter12345/MinimBasher",
+          "branch": "master",
+          "size": 128
+        },
+        {
+          "name": "sup933/Game",
+          "url": "https://github.com/sup933/Game",
+          "branch": "master",
+          "size": 0
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "\"co up\" chess",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "24pb9chvm5-pixel/DarkChess-JS",
+          "url": "https://github.com/24pb9chvm5-pixel/DarkChess-JS",
+          "branch": "main",
+          "size": 5
+        },
+        {
+          "name": "COINFORCHESS/ChessCoin.Update",
+          "url": "https://github.com/COINFORCHESS/ChessCoin.Update",
+          "branch": "master",
+          "size": 0
+        },
+        {
+          "name": "thai-nghi/coup",
+          "url": "https://github.com/thai-nghi/coup",
+          "branch": "main",
+          "size": 510
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "jieqi reinforcement",
+      "status": "fulfilled",
+      "data": [],
+      "error": false
+    }
+  ]
+}

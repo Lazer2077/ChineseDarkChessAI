@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-26T17:13:47.315219+00:00",
+  "candidate": "Frozen same-observer temporal-target small NNUE; selected on common control validation objective",
+  "baseline": "Original published jqe it014.jqn, unchanged native search both sides",
+  "reason": "64-game temporal-vs-trained-control development screen is not proof of improvement over the original teacher",
+  "development_result": {
+    "wins": 34,
+    "draws": 2,
+    "losses": 28,
+    "score": 0.546875,
+    "paired_bootstrap_95": [
+      0.421875,
+      0.6640625
+    ]
+  },
+  "sets": [
+    {
+      "name": "a",
+      "games": 200,
+      "seed": 7940001
+    },
+    {
+      "name": "b",
+      "games": 200,
+      "seed": 7950001
+    }
+  ],
+  "tc": "5+0.05",
+  "threads": 1,
+  "hash_mb": 64,
+  "concurrency": 2,
+  "early_stop_or_retune": false,
+  "gate": "No voids/technical failures, 100 complete pairs per set, bootstrap and Hoeffding lower bounds above .5, repeat on the second set. Single training seed; no global promotion.",
+  "sha256": {
+    "runs/temporal-ablation-01/temporal-model/best.jqn": "93f05729d749060fb57c8f46d14e96f287c2ea3ce8ce3a54b34d67e70d568deb",
+    "external/devinokeefe-jieqi/engine/nets/it014.jqn": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828"
+  }
+}

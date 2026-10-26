@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-10-26T17:04:57.741059+00:00",
+  "comparison": "Expanded trained NNUE derivative vs released AB-JChess v0.2d; upstream teacher control vs same AB release on same layouts",
+  "referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+  "rules": "Pinned independent jqe native referee: 80 quiet plies, third public repetition, explicit check/chase responsibility. AB default ChasingRule=skyrule_Jieqi retained; no claim all internal search adjudication heuristics equal referee. Full actor-private histories, strict suffix serialization for AB.",
+  "time_control": "5+0.05 seconds actual clock; preload before clock",
+  "threads": 1,
+  "hash_mb": 64,
+  "concurrency": 2,
+  "sets": [
+    {
+      "id": "a",
+      "games_per_arm": 200,
+      "seed": 7920001
+    },
+    {
+      "id": "b",
+      "games_per_arm": 200,
+      "seed": 7930001
+    }
+  ],
+  "arms": [
+    "expanded learner",
+    "unchanged published teacher control"
+  ],
+  "scope": "Single trained policy, two fixed layout sets, one referee/clock. Teacher-control results separate algorithmic attribution from inherited playing strength. No all-engine or multi-training-seed promotion.",
+  "early_stop_or_retune": false,
+  "gate": "For each trained-arm confirmation: 100 complete pairs; no technical failures or voids; bootstrap and Hoeffding 95% lower score limits above .5; independent confirmation required. No claim of learned gain over teacher without a separate comparison.",
+  "source_and_artifact_hashes": {
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "runs/continual-series-01/seed-20261026/iter-001-model/best.jqn": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833",
+    "external/devinokeefe-jieqi/engine/nets/it014.jqn": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "build/abj-v02d/source/src/AB-JChess": "116e9197414c63d85707a588feaea0d14c058aa5c45cbc650266030082d14ed7",
+    "external/AB-JChess-v0.2d-net/abjchess-20261010.nnue": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828"
+  }
+}

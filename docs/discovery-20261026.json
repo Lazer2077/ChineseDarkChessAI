@@ -1,0 +1,1061 @@
+{
+  "as_of": "2026-10-26",
+  "source": "Connected GitHub repository search, page 1, per_page 100 per query; search results are leads, not verified engine coverage.",
+  "queries": [
+    {
+      "query": "jieqi chess",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "Velithia/JieqiBox",
+          "url": "https://github.com/Velithia/JieqiBox",
+          "branch": "main",
+          "size": 12782
+        },
+        {
+          "name": "arthuryangcs/mist-jieqi",
+          "url": "https://github.com/arthuryangcs/mist-jieqi",
+          "branch": "main",
+          "size": 24355
+        },
+        {
+          "name": "liuxiaotong15/chiness_chess_jieqi",
+          "url": "https://github.com/liuxiaotong15/chiness_chess_jieqi",
+          "branch": "master",
+          "size": 10
+        },
+        {
+          "name": "lxsgx23/Jieqi-Moonlink",
+          "url": "https://github.com/lxsgx23/Jieqi-Moonlink",
+          "branch": "main",
+          "size": 71
+        },
+        {
+          "name": "devinokeefe/jieqi",
+          "url": "https://github.com/devinokeefe/jieqi",
+          "branch": "main",
+          "size": 12072
+        },
+        {
+          "name": "brianhliou/mistboard",
+          "url": "https://github.com/brianhliou/mistboard",
+          "branch": "main",
+          "size": 130966
+        },
+        {
+          "name": "lxsgx23/Jieqi-Match-Tools",
+          "url": "https://github.com/lxsgx23/Jieqi-Match-Tools",
+          "branch": "main",
+          "size": 94
+        },
+        {
+          "name": "zengsheng-git/jieqiChessboard",
+          "url": "https://github.com/zengsheng-git/jieqiChessboard",
+          "branch": "main",
+          "size": 21614
+        },
+        {
+          "name": "lqq2006/Chess-Jieqi",
+          "url": "https://github.com/lqq2006/Chess-Jieqi",
+          "branch": "main",
+          "size": 0
+        },
+        {
+          "name": "justLxy/Jieqi",
+          "url": "https://github.com/justLxy/Jieqi",
+          "branch": "main",
+          "size": 30461
+        },
+        {
+          "name": "oceanKing12/Chinese-Chess_JieQi",
+          "url": "https://github.com/oceanKing12/Chinese-Chess_JieQi",
+          "branch": "main",
+          "size": 1664
+        },
+        {
+          "name": "KhangNguyen69/chiness_chess_jieqi",
+          "url": "https://github.com/KhangNguyen69/chiness_chess_jieqi",
+          "branch": "master",
+          "size": 12
+        },
+        {
+          "name": "flyarong/chiness_chess_jieqi",
+          "url": "https://github.com/flyarong/chiness_chess_jieqi",
+          "branch": "master",
+          "size": 10
+        },
+        {
+          "name": "btsunamib/xiangqi",
+          "url": "https://github.com/btsunamib/xiangqi",
+          "branch": "main",
+          "size": 112
+        },
+        {
+          "name": "hanyuzuru/chiness_chess_jieqi",
+          "url": "https://github.com/hanyuzuru/chiness_chess_jieqi",
+          "branch": "master",
+          "size": 10
+        },
+        {
+          "name": "miaosiSari/chiness_chess_jieqi",
+          "url": "https://github.com/miaosiSari/chiness_chess_jieqi",
+          "branch": "master",
+          "size": 10
+        },
+        {
+          "name": "softwareshare9999/jieqi",
+          "url": "https://github.com/softwareshare9999/jieqi",
+          "branch": "main",
+          "size": 12084
+        },
+        {
+          "name": "KageOutlook/Jieqi-Match-Tools",
+          "url": "https://github.com/KageOutlook/Jieqi-Match-Tools",
+          "branch": "main",
+          "size": 625
+        },
+        {
+          "name": "vohoangkhang238/Jieqi-Moonlink",
+          "url": "https://github.com/vohoangkhang238/Jieqi-Moonlink",
+          "branch": "main",
+          "size": 76
+        },
+        {
+          "name": "KhoaKool/Jieqi-Moonlink",
+          "url": "https://github.com/KhoaKool/Jieqi-Moonlink",
+          "branch": "main",
+          "size": 82
+        },
+        {
+          "name": "GodGun968/public-Xiangqi-jieqi",
+          "url": "https://github.com/GodGun968/public-Xiangqi-jieqi",
+          "branch": "master",
+          "size": 80526
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "揭棋",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "miaosiSari/Jieqi",
+          "url": "https://github.com/miaosiSari/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "Velithia/JieqiBox",
+          "url": "https://github.com/Velithia/JieqiBox",
+          "branch": "main",
+          "size": 12782
+        },
+        {
+          "name": "igofreely/flipchess",
+          "url": "https://github.com/igofreely/flipchess",
+          "branch": "main",
+          "size": 53469
+        },
+        {
+          "name": "tippingabke-gif/pengfeijieqi-cracker",
+          "url": "https://github.com/tippingabke-gif/pengfeijieqi-cracker",
+          "branch": "main",
+          "size": 858
+        },
+        {
+          "name": "arthuryangcs/mist-jieqi",
+          "url": "https://github.com/arthuryangcs/mist-jieqi",
+          "branch": "main",
+          "size": 24355
+        },
+        {
+          "name": "lichlzh/pikafish-jieqi",
+          "url": "https://github.com/lichlzh/pikafish-jieqi",
+          "branch": "main",
+          "size": 81
+        },
+        {
+          "name": "aSun-King-W/chess",
+          "url": "https://github.com/aSun-King-W/chess",
+          "branch": "main",
+          "size": 41616
+        },
+        {
+          "name": "dayd57087-lgtm/JieqiBox-LineConnect",
+          "url": "https://github.com/dayd57087-lgtm/JieqiBox-LineConnect",
+          "branch": "main",
+          "size": 13045
+        },
+        {
+          "name": "ZJQJZ/chess_z",
+          "url": "https://github.com/ZJQJZ/chess_z",
+          "branch": "master",
+          "size": 13690
+        },
+        {
+          "name": "lqq2006/Chess-Jieqi",
+          "url": "https://github.com/lqq2006/Chess-Jieqi",
+          "branch": "main",
+          "size": 0
+        },
+        {
+          "name": "oceanKing12/Chinese-Chess_JieQi",
+          "url": "https://github.com/oceanKing12/Chinese-Chess_JieQi",
+          "branch": "main",
+          "size": 1664
+        },
+        {
+          "name": "rexfang0829/jieqi-ai-v0.1",
+          "url": "https://github.com/rexfang0829/jieqi-ai-v0.1",
+          "branch": "main",
+          "size": 28254
+        },
+        {
+          "name": "wangyiming1628/jieqi_ai",
+          "url": "https://github.com/wangyiming1628/jieqi_ai",
+          "branch": "main",
+          "size": 85072
+        },
+        {
+          "name": "lichlzh/chinese-chess-revealed",
+          "url": "https://github.com/lichlzh/chinese-chess-revealed",
+          "branch": "main",
+          "size": 242
+        },
+        {
+          "name": "mingge123-s/xiangqi-sanguo",
+          "url": "https://github.com/mingge123-s/xiangqi-sanguo",
+          "branch": "main",
+          "size": 55922
+        },
+        {
+          "name": "iwestlin/flipchess",
+          "url": "https://github.com/iwestlin/flipchess",
+          "branch": "main",
+          "size": 52960
+        },
+        {
+          "name": "lee642564645-lgtm/jieqi-",
+          "url": "https://github.com/lee642564645-lgtm/jieqi-",
+          "branch": "master",
+          "size": 48149
+        },
+        {
+          "name": "Xyfcw/MyChess",
+          "url": "https://github.com/Xyfcw/MyChess",
+          "branch": "master",
+          "size": 955
+        },
+        {
+          "name": "calm232/revealchess",
+          "url": "https://github.com/calm232/revealchess",
+          "branch": "main",
+          "size": 49
+        },
+        {
+          "name": "rexfang0829/jieqi-ai",
+          "url": "https://github.com/rexfang0829/jieqi-ai",
+          "branch": "main",
+          "size": 3
+        },
+        {
+          "name": "iwestlin/jieqi-ai",
+          "url": "https://github.com/iwestlin/jieqi-ai",
+          "branch": "main",
+          "size": 29022
+        },
+        {
+          "name": "hpc-pcwl/game_chinese-chess",
+          "url": "https://github.com/hpc-pcwl/game_chinese-chess",
+          "branch": "main",
+          "size": 50
+        },
+        {
+          "name": "zhyjie2008/Jieqi",
+          "url": "https://github.com/zhyjie2008/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "gybing/Jieqi",
+          "url": "https://github.com/gybing/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "esweffsfeg/Jieqi",
+          "url": "https://github.com/esweffsfeg/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "husker01/Jieqi",
+          "url": "https://github.com/husker01/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "chenshangjin/jieqi-ai-sys",
+          "url": "https://github.com/chenshangjin/jieqi-ai-sys",
+          "branch": "main",
+          "size": 28984
+        },
+        {
+          "name": "Ynkcc/Jieqi",
+          "url": "https://github.com/Ynkcc/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "tobeinged/Jieqi",
+          "url": "https://github.com/tobeinged/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "0Jvang/Jieqi",
+          "url": "https://github.com/0Jvang/Jieqi",
+          "branch": "main",
+          "size": 28915
+        },
+        {
+          "name": "RunchGlaceon/Jieqi",
+          "url": "https://github.com/RunchGlaceon/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "jiayu1011/Jieqi",
+          "url": "https://github.com/jiayu1011/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "yeye43/Jieqi",
+          "url": "https://github.com/yeye43/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "zball-bz/Jieqi",
+          "url": "https://github.com/zball-bz/Jieqi",
+          "branch": "main",
+          "size": 28925
+        },
+        {
+          "name": "Xyfcw/Jieqi",
+          "url": "https://github.com/Xyfcw/Jieqi",
+          "branch": "main",
+          "size": 28917
+        },
+        {
+          "name": "counterstriker/Jieqi",
+          "url": "https://github.com/counterstriker/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "JarvanDing/Jieqiai",
+          "url": "https://github.com/JarvanDing/Jieqiai",
+          "branch": "main",
+          "size": 28927
+        },
+        {
+          "name": "dudu555-djiao/DuDu",
+          "url": "https://github.com/dudu555-djiao/DuDu",
+          "branch": "main",
+          "size": 99
+        },
+        {
+          "name": "YOLOW92/moyi-jieqi",
+          "url": "https://github.com/YOLOW92/moyi-jieqi",
+          "branch": "main",
+          "size": 1087
+        },
+        {
+          "name": "zyjopensource/Jieqi",
+          "url": "https://github.com/zyjopensource/Jieqi",
+          "branch": "main",
+          "size": 29293
+        },
+        {
+          "name": "yoya9933/chess-online",
+          "url": "https://github.com/yoya9933/chess-online",
+          "branch": "main",
+          "size": 3262
+        },
+        {
+          "name": "universe-st/Jieqi",
+          "url": "https://github.com/universe-st/Jieqi",
+          "branch": "main",
+          "size": 15720
+        },
+        {
+          "name": "Vincentzyx/JieqiBox",
+          "url": "https://github.com/Vincentzyx/JieqiBox",
+          "branch": "main",
+          "size": 7214
+        },
+        {
+          "name": "yeye43/JieqiAI",
+          "url": "https://github.com/yeye43/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "svajra/JieqiAI",
+          "url": "https://github.com/svajra/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "counterstriker/JieqiAI",
+          "url": "https://github.com/counterstriker/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "GodGun968/JieqiBox",
+          "url": "https://github.com/GodGun968/JieqiBox",
+          "branch": "main",
+          "size": 12958
+        },
+        {
+          "name": "tranhoi199/JieqiBox",
+          "url": "https://github.com/tranhoi199/JieqiBox",
+          "branch": "main",
+          "size": 12782
+        },
+        {
+          "name": "justLxy/JieqiBox",
+          "url": "https://github.com/justLxy/JieqiBox",
+          "branch": "main",
+          "size": 13425
+        },
+        {
+          "name": "nghiatruong/JieqiAI",
+          "url": "https://github.com/nghiatruong/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "leonone694/JieqiBox",
+          "url": "https://github.com/leonone694/JieqiBox",
+          "branch": "main",
+          "size": 66745
+        },
+        {
+          "name": "He-Wenhao/JieqiBox",
+          "url": "https://github.com/He-Wenhao/JieqiBox",
+          "branch": "main",
+          "size": 13024
+        },
+        {
+          "name": "yzpop/chess",
+          "url": "https://github.com/yzpop/chess",
+          "branch": "main",
+          "size": 41616
+        },
+        {
+          "name": "15963360/JieqiBox",
+          "url": "https://github.com/15963360/JieqiBox",
+          "branch": "main",
+          "size": 12551
+        },
+        {
+          "name": "haihaimx/JieqiBox",
+          "url": "https://github.com/haihaimx/JieqiBox",
+          "branch": "main",
+          "size": 12782
+        },
+        {
+          "name": "dayd57087-lgtm/JieqiBox",
+          "url": "https://github.com/dayd57087-lgtm/JieqiBox",
+          "branch": "main",
+          "size": 13095
+        },
+        {
+          "name": "Simlym/JieqiBox",
+          "url": "https://github.com/Simlym/JieqiBox",
+          "branch": "main",
+          "size": 15173
+        },
+        {
+          "name": "liushunshun/JieqiBox",
+          "url": "https://github.com/liushunshun/JieqiBox",
+          "branch": "main",
+          "size": 12782
+        },
+        {
+          "name": "Wu200008/wilderness-xiangqi",
+          "url": "https://github.com/Wu200008/wilderness-xiangqi",
+          "branch": "main",
+          "size": 10129
+        },
+        {
+          "name": "RemiliaScarlet-57/masked-chinese-chess",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess",
+          "branch": "main",
+          "size": 120
+        },
+        {
+          "name": "hjfkj/dsh-xiangqi",
+          "url": "https://github.com/hjfkj/dsh-xiangqi",
+          "branch": "main",
+          "size": 1152
+        },
+        {
+          "name": "brianhliou/pikafish-jieqi-wasm",
+          "url": "https://github.com/brianhliou/pikafish-jieqi-wasm",
+          "branch": "jieqi_old-mistboard",
+          "size": 16639
+        },
+        {
+          "name": "Sco-ohhG/pengfeijieqi-cracker",
+          "url": "https://github.com/Sco-ohhG/pengfeijieqi-cracker",
+          "branch": "main",
+          "size": 858
+        },
+        {
+          "name": "SaiGonChess/pengfeijieqi-cracker",
+          "url": "https://github.com/SaiGonChess/pengfeijieqi-cracker",
+          "branch": "main",
+          "size": 858
+        },
+        {
+          "name": "High-cla/pengfeijieqi-cracker",
+          "url": "https://github.com/High-cla/pengfeijieqi-cracker",
+          "branch": "main",
+          "size": 858
+        },
+        {
+          "name": "lasting0001/pengfeijieqi-cracker",
+          "url": "https://github.com/lasting0001/pengfeijieqi-cracker",
+          "branch": "main",
+          "size": 858
+        },
+        {
+          "name": "softwareshare9999/pengfeijieqi-cracker",
+          "url": "https://github.com/softwareshare9999/pengfeijieqi-cracker",
+          "branch": "main",
+          "size": 879
+        },
+        {
+          "name": "softwareshare9999/moyi-jieqi",
+          "url": "https://github.com/softwareshare9999/moyi-jieqi",
+          "branch": "main",
+          "size": 1109
+        },
+        {
+          "name": "iwestlin/mistboard-jieqi",
+          "url": "https://github.com/iwestlin/mistboard-jieqi",
+          "branch": "main",
+          "size": 81913
+        },
+        {
+          "name": "wenpinglaoyao/jieqiGame",
+          "url": "https://github.com/wenpinglaoyao/jieqiGame",
+          "branch": "main",
+          "size": 677
+        },
+        {
+          "name": "wcaune/chChess",
+          "url": "https://github.com/wcaune/chChess",
+          "branch": "main",
+          "size": 51
+        },
+        {
+          "name": "erenaykara/chChess",
+          "url": "https://github.com/erenaykara/chChess",
+          "branch": "main",
+          "size": 36
+        },
+        {
+          "name": "duanap/jq",
+          "url": "https://github.com/duanap/jq",
+          "branch": "main",
+          "size": 105
+        },
+        {
+          "name": "mazijun123/board-games",
+          "url": "https://github.com/mazijun123/board-games",
+          "branch": "main",
+          "size": 53711
+        },
+        {
+          "name": "Yuan-Bai/jieqi-lab",
+          "url": "https://github.com/Yuan-Bai/jieqi-lab",
+          "branch": "main",
+          "size": 2178
+        },
+        {
+          "name": "zhiduoming/Unveil",
+          "url": "https://github.com/zhiduoming/Unveil",
+          "branch": "main",
+          "size": 5361
+        },
+        {
+          "name": "flyarong/jieqiGame",
+          "url": "https://github.com/flyarong/jieqiGame",
+          "branch": "main",
+          "size": 677
+        },
+        {
+          "name": "Huamucuo/doodle-xiangqi",
+          "url": "https://github.com/Huamucuo/doodle-xiangqi",
+          "branch": "main",
+          "size": 10916
+        },
+        {
+          "name": "mengnanhuangshu/jieqi-copilot",
+          "url": "https://github.com/mengnanhuangshu/jieqi-copilot",
+          "branch": "main",
+          "size": 4828
+        },
+        {
+          "name": "Dujltqzv/Some-Many-Books",
+          "url": "https://github.com/Dujltqzv/Some-Many-Books",
+          "branch": "main",
+          "size": 2710343
+        },
+        {
+          "name": "songguangqi/Books-Free-Books__lTbgykio",
+          "url": "https://github.com/songguangqi/Books-Free-Books__lTbgykio",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "Lrgtalent/Books-Free-Books",
+          "url": "https://github.com/Lrgtalent/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "628014/some-many-books",
+          "url": "https://github.com/628014/some-many-books",
+          "branch": "main",
+          "size": 10
+        },
+        {
+          "name": "acuriouscat-lab/some-many-books",
+          "url": "https://github.com/acuriouscat-lab/some-many-books",
+          "branch": "main",
+          "size": 10
+        },
+        {
+          "name": "nusqx/Books-Free-Books",
+          "url": "https://github.com/nusqx/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "YogeLiu/Book",
+          "url": "https://github.com/YogeLiu/Book",
+          "branch": "main",
+          "size": 2710343
+        },
+        {
+          "name": "Jadynjin/Books-Free-Books",
+          "url": "https://github.com/Jadynjin/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "mj5219054/Books-Free-Books",
+          "url": "https://github.com/mj5219054/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "Jeromeyoung/Books-Free-Books",
+          "url": "https://github.com/Jeromeyoung/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "baolijin/Books-Free-Books",
+          "url": "https://github.com/baolijin/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "fengjliu/Books-Free-Books",
+          "url": "https://github.com/fengjliu/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "deamonHub/Books-Free-Books",
+          "url": "https://github.com/deamonHub/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "bupabupala/Books-Free-Books",
+          "url": "https://github.com/bupabupala/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "netforfreedom/Books-Free-Books",
+          "url": "https://github.com/netforfreedom/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "Mrdogithub/Books-Free-Books",
+          "url": "https://github.com/Mrdogithub/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "wikison/Books-Free-Books",
+          "url": "https://github.com/wikison/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "StevenGrow/Books-Free-Books",
+          "url": "https://github.com/StevenGrow/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "mmpp406/Books-Free-Books",
+          "url": "https://github.com/mmpp406/Books-Free-Books",
+          "branch": "main",
+          "size": 158
+        },
+        {
+          "name": "dpc525/Books-Free-Books",
+          "url": "https://github.com/dpc525/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        },
+        {
+          "name": "liujinwhu/Books-Free-Books",
+          "url": "https://github.com/liujinwhu/Books-Free-Books",
+          "branch": "main",
+          "size": 59
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "jieqi AI",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "miaosiSari/Jieqi",
+          "url": "https://github.com/miaosiSari/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "arthuryangcs/mist-jieqi",
+          "url": "https://github.com/arthuryangcs/mist-jieqi",
+          "branch": "main",
+          "size": 24355
+        },
+        {
+          "name": "universe-st/Jieqi",
+          "url": "https://github.com/universe-st/Jieqi",
+          "branch": "main",
+          "size": 15720
+        },
+        {
+          "name": "wangyiming1628/jieqi_ai",
+          "url": "https://github.com/wangyiming1628/jieqi_ai",
+          "branch": "main",
+          "size": 85072
+        },
+        {
+          "name": "Makinuohara/2026-jieqi-AI",
+          "url": "https://github.com/Makinuohara/2026-jieqi-AI",
+          "branch": "main",
+          "size": 2392
+        },
+        {
+          "name": "rexfang0829/jieqi-ai",
+          "url": "https://github.com/rexfang0829/jieqi-ai",
+          "branch": "main",
+          "size": 3
+        },
+        {
+          "name": "justLxy/Jieqi",
+          "url": "https://github.com/justLxy/Jieqi",
+          "branch": "main",
+          "size": 30461
+        },
+        {
+          "name": "jhon353/ai-jieqian",
+          "url": "https://github.com/jhon353/ai-jieqian",
+          "branch": "main",
+          "size": 4506
+        },
+        {
+          "name": "zhzjzz/AI-Jieqi",
+          "url": "https://github.com/zhzjzz/AI-Jieqi",
+          "branch": "main",
+          "size": 127
+        },
+        {
+          "name": "EtheXReal/jieqi-ai",
+          "url": "https://github.com/EtheXReal/jieqi-ai",
+          "branch": "master",
+          "size": 1340
+        },
+        {
+          "name": "zball-bz/Jieqi-hybrid",
+          "url": "https://github.com/zball-bz/Jieqi-hybrid",
+          "branch": "main",
+          "size": 253
+        },
+        {
+          "name": "RunchGlaceon/Jieqi",
+          "url": "https://github.com/RunchGlaceon/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "jiayu1011/Jieqi",
+          "url": "https://github.com/jiayu1011/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "yeye43/Jieqi",
+          "url": "https://github.com/yeye43/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "gybing/Jieqi",
+          "url": "https://github.com/gybing/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "0Jvang/Jieqi",
+          "url": "https://github.com/0Jvang/Jieqi",
+          "branch": "main",
+          "size": 28915
+        },
+        {
+          "name": "Ynkcc/Jieqi",
+          "url": "https://github.com/Ynkcc/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "counterstriker/JieqiAI",
+          "url": "https://github.com/counterstriker/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "zyjopensource/Jieqi",
+          "url": "https://github.com/zyjopensource/Jieqi",
+          "branch": "main",
+          "size": 29293
+        },
+        {
+          "name": "rexfang0829/jieqi-ai-v0.1",
+          "url": "https://github.com/rexfang0829/jieqi-ai-v0.1",
+          "branch": "main",
+          "size": 28254
+        },
+        {
+          "name": "nghiatruong/JieqiAI",
+          "url": "https://github.com/nghiatruong/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "zball-bz/Jieqi",
+          "url": "https://github.com/zball-bz/Jieqi",
+          "branch": "main",
+          "size": 28925
+        },
+        {
+          "name": "esweffsfeg/Jieqi",
+          "url": "https://github.com/esweffsfeg/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "JieQin-AI/JieQin-AI.github.io",
+          "url": "https://github.com/JieQin-AI/JieQin-AI.github.io",
+          "branch": "main",
+          "size": 15430
+        },
+        {
+          "name": "tobeinged/Jieqi",
+          "url": "https://github.com/tobeinged/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "yeye43/JieqiAI",
+          "url": "https://github.com/yeye43/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "husker01/Jieqi",
+          "url": "https://github.com/husker01/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "Xyfcw/Jieqi",
+          "url": "https://github.com/Xyfcw/Jieqi",
+          "branch": "main",
+          "size": 28917
+        },
+        {
+          "name": "svajra/JieqiAI",
+          "url": "https://github.com/svajra/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "counterstriker/Jieqi",
+          "url": "https://github.com/counterstriker/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "zhyjie2008/Jieqi",
+          "url": "https://github.com/zhyjie2008/Jieqi",
+          "branch": "main",
+          "size": 28916
+        },
+        {
+          "name": "JarvanDing/Jieqiai",
+          "url": "https://github.com/JarvanDing/Jieqiai",
+          "branch": "main",
+          "size": 28927
+        },
+        {
+          "name": "Yuan-Bai/jieqi-lab",
+          "url": "https://github.com/Yuan-Bai/jieqi-lab",
+          "branch": "main",
+          "size": 2178
+        },
+        {
+          "name": "chenshangjin/jieqi-ai-sys",
+          "url": "https://github.com/chenshangjin/jieqi-ai-sys",
+          "branch": "main",
+          "size": 28984
+        },
+        {
+          "name": "Lazyy-star/AI-Jieqi",
+          "url": "https://github.com/Lazyy-star/AI-Jieqi",
+          "branch": "main",
+          "size": 1671
+        },
+        {
+          "name": "iwestlin/jieqi-ai",
+          "url": "https://github.com/iwestlin/jieqi-ai",
+          "branch": "main",
+          "size": 29022
+        },
+        {
+          "name": "btsunamib/xiangqi",
+          "url": "https://github.com/btsunamib/xiangqi",
+          "branch": "main",
+          "size": 112
+        },
+        {
+          "name": "mengnanhuangshu/jieqi-copilot",
+          "url": "https://github.com/mengnanhuangshu/jieqi-copilot",
+          "branch": "main",
+          "size": 4828
+        },
+        {
+          "name": "Fantasy-Hv/2026-jieqi-AI",
+          "url": "https://github.com/Fantasy-Hv/2026-jieqi-AI",
+          "branch": "main",
+          "size": 2388
+        },
+        {
+          "name": "iwestlin/mistboard-jieqi",
+          "url": "https://github.com/iwestlin/mistboard-jieqi",
+          "branch": "main",
+          "size": 81913
+        },
+        {
+          "name": "Wu200008/wilderness-xiangqi",
+          "url": "https://github.com/Wu200008/wilderness-xiangqi",
+          "branch": "main",
+          "size": 10129
+        },
+        {
+          "name": "hoonsikim/saju",
+          "url": "https://github.com/hoonsikim/saju",
+          "branch": "main",
+          "size": 5831
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "JieqiAI",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "JarvanDing/Jieqiai",
+          "url": "https://github.com/JarvanDing/Jieqiai",
+          "branch": "main",
+          "size": 28927
+        },
+        {
+          "name": "yeye43/JieqiAI",
+          "url": "https://github.com/yeye43/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "counterstriker/JieqiAI",
+          "url": "https://github.com/counterstriker/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "nghiatruong/JieqiAI",
+          "url": "https://github.com/nghiatruong/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        },
+        {
+          "name": "svajra/JieqiAI",
+          "url": "https://github.com/svajra/JieqiAI",
+          "branch": "main",
+          "size": 6526
+        }
+      ],
+      "error": false
+    },
+    {
+      "query": "dark chess xiangqi",
+      "status": "fulfilled",
+      "data": [
+        {
+          "name": "haimingio/XiangQi-Master",
+          "url": "https://github.com/haimingio/XiangQi-Master",
+          "branch": "main",
+          "size": 57
+        },
+        {
+          "name": "Huamucuo/doodle-xiangqi",
+          "url": "https://github.com/Huamucuo/doodle-xiangqi",
+          "branch": "main",
+          "size": 10916
+        }
+      ],
+      "error": false
+    }
+  ]
+}

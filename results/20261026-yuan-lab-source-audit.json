@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "repository": "https://github.com/Yuan-Bai/jieqi-lab.git",
+      "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+      "files_sha256": {
+        "LICENSE": "93afb7a6f6f883814cd7d82f0d972bae1d90ac8f6a012b5ae2e01545b276e18a",
+        "jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+        "ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+        "azero.py": "4a184dd7ea1d93a8fe2328ace3439ddbe3f78c200cd8dd50ccd610558f1223f2"
+      },
+      "unmodified_checkout": true
+    },
+    {
+      "repository": "https://github.com/EtheXReal/jieqi-ai.git",
+      "commit": "6009bcf2d66a6ca33c59510faa82d1eb8d71db6e",
+      "files_sha256": {
+        "engine_py/main.py": "d8f1190a0be52ca1757efb3cf58b11aaee8596e4640cfa81c4da4f1dc289a348",
+        "engine_py/jieqi/search.py": "3b32d1cd570ee0dbd62924b070a8a1f31fd126ff688c8727165a1b48a8912198"
+      },
+      "unmodified_checkout": true
+    },
+    {
+      "repository": "https://github.com/zball-bz/Jieqi-hybrid.git",
+      "commit": "a556210806706c0aab554fc482b52cacf3b38593",
+      "files_sha256": {
+        "game/LICENSE": "48136208c50f3a437be02aca68610993508d5f33de999efa42c9b5d3a9302351",
+        "test/selfplay_loop.py": "9a4c384fb17c5db83b24e4a204b74827d6f0158588f29358e0b954802aa6426b"
+      },
+      "unmodified_checkout": true
+    },
+    {
+      "repository": "https://github.com/YOLOW92/moyi-jieqi.git",
+      "commit": "5b82525f38ed125f9fc5cd25ccc10e143576b16d",
+      "files_sha256": {
+        "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "README.md": "efa393f674437c64748d2f3a0a51dc9c8e89be4e808d4155cc04fc1ced5a0948"
+      },
+      "unmodified_checkout": true
+    }
+  ],
+  "probe": {
+    "repository": "https://github.com/Yuan-Bai/jieqi-lab",
+    "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+    "ruleset_version": 5,
+    "opening_move": [
+      64,
+      37
+    ],
+    "simulations": 32,
+    "elapsed_seconds": 0.19171944446861744,
+    "legal_opening_move": true,
+    "scope": "Unmodified pure-search opening probe only; no rule-compatibility, strength or neural-model availability claim."
+  },
+  "defeated": false
+}

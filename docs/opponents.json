@@ -124,11 +124,161 @@
       "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
       "kind": "released NNUE engine",
       "license": "GPL-3.0 code; network release used locally without redistribution",
-      "status": "authenticated V11 net and complete private-history smoke passed; 4-game screen 1 candidate win/3 losses; no technical errors",
+      "status": "official V11 net verified; GCC11 declaration-only build repair; expanded trained candidate 27W/1D/4L in 32 actual-clock development games, no technical failures; two 200-game confirmation sets plus same-layout unchanged-teacher controls running; not defeated",
       "defeated": false,
       "network_url": "https://github.com/lxsgx23/AB-JChess/releases/download/v0.2d/0.2d_bmi2.zip",
       "archive_sha256": "01d3d539b1d3c50371132401d70c441364ae1c2e9d6e4121f83143f2fe1b3a4e",
       "network_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761"
+    },
+    {
+      "id": "yuan-bai-jieqi-lab",
+      "url": "https://github.com/Yuan-Bai/jieqi-lab",
+      "repository_url": "https://github.com/Yuan-Bai/jieqi-lab",
+      "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+      "kind": "independent Python information-set search and neural selfplay",
+      "license": "MIT",
+      "status": "original pure-search opening probe passed at 32 simulations; rules v5 long-check/chase and repetition differ; no neural weights distributed; fair adapter pending",
+      "defeated": false
+    },
+    {
+      "id": "ethexreal-jieqi-ai",
+      "url": "https://github.com/EtheXReal/jieqi-ai",
+      "repository_url": "https://github.com/EtheXReal/jieqi-ai",
+      "commit": "6009bcf2d66a6ca33c59510faa82d1eb8d71db6e",
+      "kind": "independent Python alpha-beta and neural research candidate",
+      "license": "no root license found; audit pending",
+      "status": "source pinned; README specifies neither player sees hidden captures; UCI history parser ignores identity suffixes; private-capture profile incompatible without explicit adapter",
+      "defeated": false
+    },
+    {
+      "id": "zball-jieqi-hybrid",
+      "url": "https://github.com/zball-bz/Jieqi-hybrid",
+      "repository_url": "https://github.com/zball-bz/Jieqi-hybrid",
+      "commit": "a556210806706c0aab554fc482b52cacf3b38593",
+      "kind": "C++/Python hybrid neural search candidate",
+      "license": "root license absent; game/LICENSE is pybind vendor license only",
+      "status": "source pinned; own search/training code found; scope and model/license audit pending; not deduplicated",
+      "defeated": false
+    },
+    {
+      "id": "moyi-jieqi",
+      "url": "https://github.com/YOLOW92/moyi-jieqi",
+      "repository_url": "https://github.com/YOLOW92/moyi-jieqi",
+      "commit": "5b82525f38ed125f9fc5cd25ccc10e143576b16d",
+      "kind": "independent full-board mixed-colour variant AI",
+      "license": "GPL-3.0",
+      "status": "source pinned; all 30 pieces shuffled across colours, reveals can change controller; incompatible with standard Jieqi; not defeated",
+      "defeated": false
+    },
+    {
+      "id": "bupt-2026-jieqi",
+      "url": "https://github.com/Makinuohara/2026-jieqi-AI",
+      "repository_url": "https://github.com/Makinuohara/2026-jieqi-AI",
+      "commit": "ea945de10bb58ed29b237fcfc85fe0f3e070ea47",
+      "kind": "Java expectiminimax engine candidate",
+      "license": "audit pending",
+      "status": "README: JDK21, allows ignoring check and king capture, six-round check/chase profile; source and license verification pending",
+      "defeated": false
+    },
+    {
+      "id": "zhzjzz-jieqi",
+      "url": "https://github.com/zhzjzz/AI-Jieqi",
+      "repository_url": "https://github.com/zhzjzz/AI-Jieqi",
+      "commit": "a6388c8820592239dc9b567aff9704dab0bd9b6f",
+      "kind": "Java AI client candidate",
+      "license": "audit pending",
+      "status": "README describes AI client; independent search, source rules and license unverified",
+      "defeated": false
+    },
+    {
+      "id": "lazyy-jieqi",
+      "url": "https://github.com/Lazyy-star/AI-Jieqi",
+      "repository_url": "https://github.com/Lazyy-star/AI-Jieqi",
+      "commit": "2d6fd0734a2c06e1af9068ff66ed4abcff7ad6d7",
+      "kind": "candidate AI project",
+      "license": "audit pending",
+      "status": "minimal README; source, rules and run conditions unverified",
+      "defeated": false
+    },
+    {
+      "id": "wangyiming-jieqi",
+      "url": "https://github.com/wangyiming1628/jieqi_ai",
+      "repository_url": "https://github.com/wangyiming1628/jieqi_ai",
+      "commit": "39d63a884e4eb39b34e711f2347e12b5f789bd11",
+      "kind": "C++ engine with JSON subprocess interface",
+      "license": "audit pending",
+      "status": "README identifies standalone single-thread C++ algorithmic engine; screen recognition and mouse actions are not needed or authorized for benchmark; source/observer audit pending",
+      "defeated": false
+    },
+    {
+      "id": "rexfang-jieqi-v01",
+      "url": "https://github.com/rexfang0829/jieqi-ai-v0.1",
+      "repository_url": "https://github.com/rexfang0829/jieqi-ai-v0.1",
+      "commit": "04d5324f0b339a8eee345c64cec3aa21768a5368",
+      "kind": "candidate engine variant",
+      "license": "audit pending",
+      "status": "README.md fetch returned 404; repository remains a discovered lead, source unverified",
+      "defeated": false
+    },
+    {
+      "id": "iwestlin-jieqi",
+      "url": "https://github.com/iwestlin/jieqi-ai",
+      "repository_url": "https://github.com/iwestlin/jieqi-ai",
+      "commit": "68e55af7036793c9a96dfdbcc34e88e852c18634",
+      "kind": "candidate engine variant",
+      "license": "audit pending",
+      "status": "README.md fetch returned 404; no deduplication or availability conclusion without source audit",
+      "defeated": false
+    },
+    {
+      "id": "unveil-java",
+      "url": "https://github.com/zhiduoming/Unveil",
+      "repository_url": "https://github.com/zhiduoming/Unveil",
+      "commit": "2c011e98b0e4232fea5e81c72ebdc007e4327bf8",
+      "kind": "Java alpha-beta engine candidate",
+      "license": "audit pending",
+      "status": "README identifies separate search module and JDK21; source/license/profile verification pending",
+      "defeated": false
+    },
+    {
+      "id": "wilderness-xiangqi",
+      "url": "https://github.com/Wu200008/wilderness-xiangqi",
+      "repository_url": "https://github.com/Wu200008/wilderness-xiangqi",
+      "commit": "6927400061b23e9c6f459d1a42ba02f44285fb3e",
+      "kind": "full-board mixed-colour variant AI",
+      "license": "audit pending",
+      "status": "README specifies cross-colour hidden shuffle and public hidden captures; incompatible with standard private-capture Jieqi; source audit pending",
+      "defeated": false
+    },
+    {
+      "id": "calm-revealchess",
+      "url": "https://github.com/calm232/revealchess",
+      "repository_url": "https://github.com/calm232/revealchess",
+      "commit": "7d22a83dcf808495b83176f240e4fe13b0468351",
+      "kind": "candidate full-board game/AI",
+      "license": "audit pending",
+      "status": "discovered lead; engine independence, source, rules and run conditions unverified",
+      "defeated": false
+    },
+    {
+      "id": "flipchess-igofreely",
+      "url": "https://github.com/igofreely/flipchess",
+      "repository_url": "https://github.com/igofreely/flipchess",
+      "commit": "ac8bf2bda415792fff97a10a822af1b423ff9af2",
+      "kind": "candidate dark-chess game/AI",
+      "license": "audit pending",
+      "status": "discovered lead; must verify full-board Jieqi versus Banqi before adding to compatible engine coverage",
+      "defeated": false
+    },
+    {
+      "id": "dudu",
+      "url": "https://github.com/dudu555-djiao/DuDu",
+      "repository_url": "https://github.com/dudu555-djiao/DuDu",
+      "commit": "e22ceb618bb4deaad32242951f304e7e6b3abc52",
+      "kind": "candidate Jieqi game/AI",
+      "license": "audit pending",
+      "status": "discovered lead; source, license, independent engine and rule profile unverified",
+      "defeated": false
     }
   ]
 }

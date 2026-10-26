@@ -39,7 +39,9 @@ The following is an evidence snapshot dated 2026-10-26. Running jobs are not com
 - The initial warm-start candidate scored 18 wins, 1 draw, and 13 losses in a 32-game development match. Independent confirmation A produced **95 wins, 10 draws, and 95 losses (50% score)**, including one time forfeit, failing the technical-validity requirement. That confirmation set did not support the development-set advantage; confirmation B has finished at 77 wins, 17 draws, and 106 losses (42.75%), also with one time forfeit. Neither confirmation supports promotion.
 - The original C++ Mist engine is now connected under its original rule profile, preserving complete player-private histories. The subsequent 16-game development screen produced **15 wins, 0 draws, and 1 loss (93.75%)**, with no void games. With only eight layout pairs and an integration timing tolerance, it does not support a formal superiority claim. Results are reported separately from matches against its JS engine.
 
-Compressed raw games, checksums, and reports are in [results](results). The [opponent inventory](docs/opponents.json) also retains untested, unavailable, and rule-incompatible projects. Results from different rules, time controls, or engine versions are not pooled.
+- Against released AB-JChess v0.2d with its official network, the expanded model scored **27 wins, 1 draw, and 4 losses (85.94%)** in 32 development games without technical errors. This is not pooled with the earlier four-game smoke under a different configuration. [Independent confirmation and unchanged-teacher controls](docs/ABJ_CONFIRMATION.md) are running to distinguish baseline strength from the contribution of training.
+
+Compressed raw games, checksums, and reports are in [results](results). A [new discovery audit](docs/DISCOVERY_AUDIT.md) adds previously omitted sources. The [opponent inventory](docs/opponents.json) also retains untested, unavailable, and rule-incompatible projects. Results from different rules, time controls, or engine versions are not pooled.
 
 ## Hypotheses under investigation
 
@@ -49,7 +51,7 @@ Compressed raw games, checksums, and reports are in [results](results). The [opp
 
 **Do inventory and the current board omit important information?** Future experiments will compare inventory encoding with history/private-information encoding and test policy-conditioned belief updates. Actions must remain consistent within an information set, preventing decisions from using identities unavailable to the actor in sampled worlds. This remains a research direction without completed strength results.
 
-**Can temporal targets improve learning?** A [same-observer two-ply target ablation](docs/TEMPORAL_TARGETS.md) is running, partially replacing high-variance terminal labels with the same player's future search value. Data, initialization, and the validation objective are controlled across arms. The method does not directly mix values computed with the opponent's private observations. No strength results are complete yet.
+**Can temporal targets improve learning?** A [same-observer two-ply target ablation](docs/TEMPORAL_TARGETS.md) is running, partially replacing high-variance terminal labels with the same player's future search value. Data, initialization, and the validation objective are controlled across arms. The method does not directly mix values computed with the opponent's private observations. Its first 64-game development screen scored 34 wins, 2 draws, and 28 losses (54.69%; paired 95% interval [42.19%, 66.41%], still including 50%). Independent comparisons with the original teacher are frozen and running; no improvement is confirmed.
 
 ## Literature and methodological boundaries
 

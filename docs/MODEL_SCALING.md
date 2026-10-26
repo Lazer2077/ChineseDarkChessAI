@@ -39,8 +39,10 @@ not trained checkpoints.
   value agreement and compare a small model continued from the same checkpoint.
   Otherwise distinguish random-initialization training from warm-start effects.
 - Train on GPUs and record actual optimization steps, games, elapsed training
-  time, memory, batch size and numerical precision. Replicate promising results
-  across training seeds before attributing gains to capacity.
+  time, memory, batch size and numerical precision. One training seed is sufficient
+  under the amended goal. Confirm promising checkpoints across independent test
+  seeds; report capacity findings as conditional on the tested training run.
+  Additional training-seed replication is optional, not a promotion prerequisite.
 - Measure inference latency/throughput at batch 1 and search leaf-batch sizes,
   plus completed search simulations under actual game clocks. Fixed-simulation
   diagnostics isolate search quality; paired equal-clock games establish whether

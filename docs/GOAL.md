@@ -11,7 +11,7 @@ write an arXiv-style technical report with training curves, the development
 process, our core innovations and meaningful implementation details. This
 requirement is part of the active goal and all subsequent completion audits.
 
-Inventory: `opponents.json`. Include distinct engine variants, deduplicate GUIs
+Inventory: `docs/opponents.json`. Include distinct engine variants, deduplicate GUIs
 and identical wrappers, and keep incompatible/unavailable entries visible.
 Pin sources, weights, commands, rules and budgets. Never classify an untested
 engine as defeated. Recheck discovery before claiming complete coverage.
@@ -32,10 +32,29 @@ information. Before the next push, keep README focused on academic methods,
 experimental evidence and limitations. Exclude host identities, usernames and
 local absolute environment paths from public research documentation.
 
+## Training and test seeds: user amendment, 2026-10-26
+
+A single training seed is sufficient; successful replication across training seeds
+is not an acceptance or report prerequisite. Prioritize one training run and use
+multiple independent, predeclared held-out test/layout seeds for confirmation.
+Freeze the selected checkpoint before these tests and use the same checkpoint
+across the required sets. Select checkpoints on separate validation data; do not
+select among checkpoints or retune using confirmation outcomes. If a model is
+changed after testing, confirm the new model on fresh held-out test seeds.
+
+Retain training seeds and completed multi-seed experiments for reproducibility.
+Additional training-seed replications are optional when a concrete diagnostic
+requires them, not automatic work to satisfy the goal. Single-training-seed
+results support the tested checkpoint under the stated conditions; they do not
+establish robustness across training initialization. Report that scope honestly.
+This amendment supersedes older prose requiring multiple successful training
+seeds. Archived experiments/plans keep their original criteria and meaning;
+removing the training-seed prerequisite does not turn failed tests into passes.
+
 ## Evidence gate
 A single win is an attempted/successful game, not a strength claim. Formal superiority
 requires a predeclared held-out match, at least 100 paired layouts, equal clock and
-threads, multiple training seeds, full technical failure counts, and a paired 95%
+threads, multiple independent test/layout seeds, full technical failure counts, and a paired 95%
 confidence interval whose lower bound exceeds 50% score. Confirm on another layout
 set before promotion. Report results separately for each rule/clock configuration.
 
@@ -60,7 +79,8 @@ not measured victories. Record the final coverage cutoff and unresolved entries.
 strong baseline, require more than 70% wins on each of at least two disjoint,
 predeclared held-out color-swapped layout sets. A stable-above-70% claim also
 requires a paired, layout-level 95% lower confidence bound above 70%, clean
-technical audits and replication across training seeds. Choose sample sizes
+technical audits and confirmation across independent test/layout seeds using the
+same frozen checkpoint. Multiple successful training seeds are not required. Choose sample sizes
 before outcomes for adequate precision/power; 100 pairs is only a minimum.
 Pin budgets, source/model hashes and rule profiles. Disclose GPU/CPU resource
 asymmetry and compare learned variants with matched resources. Do not pool weak
@@ -73,8 +93,8 @@ LaTeX, bibliography, PDF and reproducible figures, including:
 - Abstract, related work, precise Jieqi/private-information rules and assumptions.
 - Observation/belief model, declining uncertainty, search/training objectives and
   pseudocode; distinguish inherited methods from measured original contributions.
-- Actual training/self-play curves, steps/games/compute, multiple seeds, uncertainty
-  intervals and checkpoint selection. Preserve negative trials and corrected-data
+- Actual training/self-play curves, steps/games/compute, the actual training seed
+  and multiple independent test seeds, uncertainty intervals and checkpoint selection. Preserve negative trials and corrected-data
   provenance; do not invent smooth curves or missing measurements.
 - Fixed-version strong-baseline W/D/L tables, paired intervals, rule/time/resource
   profiles, coverage accounting and technical audits.

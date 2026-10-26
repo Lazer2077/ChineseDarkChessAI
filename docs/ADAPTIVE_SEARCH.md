@@ -81,7 +81,9 @@ New reports therefore also include a distribution-free Hoeffding interval over
 independent bounded pair scores: mean ± sqrt(log(40)/(2*n_pairs)). A superiority
 screen requires both lower bounds above 0.5, complete pairs and no technical
 failures. A single report never grants overall promotion: independent confirmation
-sets and the training-seed requirement remain separate checks.
+sets remain required. Under the subsequent user amendment in `GOAL.md`, a
+single training seed is sufficient; multiple independent test/layout seeds,
+using the same frozen checkpoint, replace the former training-seed prerequisite.
 
 ## Opponent coverage screen
 The adaptive-v1 derived engine uses the published jqe net in this screen (its

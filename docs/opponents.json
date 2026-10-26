@@ -124,7 +124,7 @@
       "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
       "kind": "released NNUE engine",
       "license": "GPL-3.0 code; network release used locally without redistribution",
-      "status": "official V11 net verified; GCC11 declaration-only build repair; expanded trained candidate 27W/1D/4L in 32 actual-clock development games, no technical failures; two 200-game confirmation sets plus same-layout unchanged-teacher controls running; not defeated",
+      "status": "expanded candidate first held-out 200-game set 162W/7D/31L, score .8275, paired bootstrap [.78,.875], no technical failures; all 14201 moves and rounded actual clocks replay-audited; single-match gate passed for 5+0.05/jqe referee only; same-layout teacher A 149W/4D/47L (75.5%) fully replay-audited; independent set B arms running; not globally defeated",
       "defeated": false,
       "network_url": "https://github.com/lxsgx23/AB-JChess/releases/download/v0.2d/0.2d_bmi2.zip",
       "archive_sha256": "01d3d539b1d3c50371132401d70c441364ae1c2e9d6e4121f83143f2fe1b3a4e",

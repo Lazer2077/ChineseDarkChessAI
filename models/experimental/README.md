@@ -35,3 +35,10 @@ actual clock 5+0.05 finished 27W/1D/4L; 16 pairs do not establish confirmed
 superiority or a training gain. Frozen confirmation and unchanged-teacher
 control matches are separate. It is published for reproducibility, not as a
 confirmed improvement over the teacher.
+
+The expanded candidate's first frozen AB-JChess confirmation set has completed
+162W/7D/31L (82.75%, paired bootstrap 95% [0.78,0.875]), without technical
+failures, under the stated 5+0.05 clock and independent referee profile. All
+moves and rounded actual clock charges were replay-audited. This single set
+does not reverse the failed teacher gate or establish all-engine superiority;
+independent set B and unchanged-teacher controls continue.

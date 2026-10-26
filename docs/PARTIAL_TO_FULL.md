@@ -118,3 +118,17 @@ continuation targets to bootstrap earlier partial-observation states, retaining 
 same observer's history and measuring teacher bias. Endgame curricula must be
 compared with equal-data/equal-compute controls; lower endgame prediction error
 alone does not establish stronger whole-game play.
+
+## First inference-only screen completed
+
+B versus A completed all 64 games at 29W/6D/29L, exactly 50% score, paired
+bootstrap 95% [0.40625, 0.6015625], without technical failures or voids.
+Canonicalization establishes the intended full-public input invariance but
+this screen does not establish a strength improvement. The separately frozen retrained C-versus-A arm also completed: 30W/7D/27L,
+52.34375%, paired bootstrap 95% [0.421875, 0.625], without technical failures
+or voids. No tuning occurred between arms. Neither arm establishes a strength
+benefit; these small whole-game screens also do not rule out phase-specific
+benefits. A future held-out full-public start-position study should preserve
+rule-relevant history and use matched data and compute. Evidence:
+results/20261026-observable-endgame-B.json and
+results/20261026-observable-endgame-C.json.

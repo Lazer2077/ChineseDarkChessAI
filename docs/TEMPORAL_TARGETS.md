@@ -139,3 +139,9 @@ that itself failed to beat the teacher cannot establish a gain over the teacher.
 The candidate, code and budgets remain frozen between sets, with no interim
 stopping. See results/temporal-teacher-confirmation-plan.json. This is still one
 training seed, so even successful results would need independent training runs.
+
+The first direct-teacher confirmation set completed 98W/11D/91L in 200 games,
+51.75% score, paired bootstrap 95% [0.4575, 0.5775], no voids or technical
+failures. It does not support improvement over the teacher. The second frozen
+set continues; no parameters or candidate selection change in response to A.
+Evidence: results/20261026-temporal-teacher-a.json.

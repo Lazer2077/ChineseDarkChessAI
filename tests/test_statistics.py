@@ -12,4 +12,13 @@ class StatisticsTests(unittest.TestCase):
     def test_paired_win_loss_scores_half(self):
         a=m.summarize([{'layoutSeed':1,'candidate':'r','result':{'winner':'r'}},{'layoutSeed':1,'candidate':'b','result':{'winner':'r'}}],samples=10)
         self.assertIsNone(a['paired_bootstrap_95']);self.assertEqual(a['completed_score'],.5)
+    def test_perfect_pairs_have_non_degenerate_finite_sample_bound(self):
+        games=[]
+        for seed in range(100):
+            for side in ['r','b']:games.append({'layoutSeed':seed,'candidate':side,'result':{'winner':side}})
+        a=m.summarize(games,samples=20)
+        self.assertEqual(a['paired_bootstrap_95'],[1.,1.])
+        self.assertGreater(a['paired_hoeffding_95'][0],.5)
+        self.assertLess(a['paired_hoeffding_95'][0],1.)
+        self.assertTrue(a['superiority_gate'])
 if __name__=='__main__':unittest.main()

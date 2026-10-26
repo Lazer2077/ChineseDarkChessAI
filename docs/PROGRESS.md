@@ -33,3 +33,11 @@ resolve the warning. Keep the pinned source unchanged and audit before formal ru
 
 Local evidence: runs/first-experiment, runs/pika-adapter-smoke,
 runs/jqe-adapter-smoke, runs/rule-oracle, and runs/native-teacher-pilot.
+
+## Native algorithm and coverage update
+512 native teacher games yielded 34,964 records (23,676 training rows after
+filtering); 128 held-out games yielded 5,882 retained validation rows.
+The trained pilot scored 7-0-25 against its teacher at equal 100 ms/move, so it
+was not promoted. New probe-variance search scored 14-2-16 against unchanged jqe
+with the same published net; also not promoted. See ADAPTIVE_SEARCH.md for
+methods, build reproducibility, provenance and completed opponent screens.

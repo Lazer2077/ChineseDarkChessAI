@@ -74,3 +74,22 @@ inheriting a strong backbone is evidence of improving on the teacher.
 
 The standalone header and experiment scripts are ours. Native geometry, neural
 architecture, baseline weights, trainer and referee are reused with attribution.
+
+## Statistical guard
+Paired bootstrap intervals can collapse to [1,1] when every observed pair wins.
+New reports therefore also include a distribution-free Hoeffding interval over
+independent bounded pair scores: mean ± sqrt(log(40)/(2*n_pairs)). A superiority
+screen requires both lower bounds above 0.5, complete pairs and no technical
+failures. A single report never grants overall promotion: independent confirmation
+sets and the training-seed requirement remain separate checks.
+
+## Opponent coverage screen
+The adaptive-v1 derived engine uses the published jqe net in this screen (its
+hash is explicit). It is not the weak newly trained pilot. At 200 ms/move,
+16 games against universe-st hard completed 16 wins; against original Pikafish
+jieqi_old, 10 wins and 6 losses. These are eight pairs per opponent, insufficient
+for superiority claims. The full-history musesfish adapter initially rejected
+classical x-padding; all 32 failed attempts were recorded as void, not wins.
+A serialization-only strict profile repaired this: a fresh two-game smoke
+completed with two wins and no technical errors. Expanded screens are running.
+No opponent is yet marked defeated.

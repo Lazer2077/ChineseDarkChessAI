@@ -1,5 +1,5 @@
 """Frozen paired match over the independent jqe referee and full private histories."""
-import argparse, collections, hashlib, json, os, platform, random, statistics, subprocess, sys
+import argparse, collections, hashlib, json, math, os, platform, random, statistics, subprocess, sys
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--baseline',required=True);p.add_argument('--net',required=True);p.add_argument('--candidate-net');p.add_argument('--candidate-options',default='');p.add_argument('--baseline-strict',action='store_true');p.add_argument('--baseline-options',default='');p.add_argument('--baseline-classical',action='store_true');p.add_argument('--out',required=True);p.add_argument('--games',type=int,default=32);p.add_argument('--movetime',type=int,default=100);p.add_argument('--seed',type=int,required=True);p.add_argument('--concurrency',type=int,default=2);p.add_argument('--stage',choices=['development','confirmation'],default='development');a=p.parse_args()
 if a.games<2 or a.games%2 or a.movetime<1:raise SystemExit('Require even games and positive clock')
@@ -32,8 +32,12 @@ try:
     ci=None
     if len(complete)>=20:
         rng=random.Random(20261026);boot=sorted(statistics.mean(rng.choices(complete,k=len(complete))) for _ in range(10000));ci=[boot[249],boot[9749]]
+    bounded=None
+    if complete:
+        mean=statistics.mean(complete);radius=math.sqrt(math.log(40)/(2*len(complete)))
+        bounded=[max(0.,mean-radius),min(1.,mean+radius)]
     valid=len(games)==a.games and len(complete)==a.games//2 and not technical and not voids
-    report={'games':len(games),'expected_games':a.games,'wins':wins,'draws':draws,'losses':losses,'score':(wins+.5*draws)/len(games) if games else None,'complete_pairs':len(complete),'paired_bootstrap_95':ci,'void_attempts':len(voids),'technical_results':technical,'valid_technical_run':valid,'promotion_supported':a.stage=='confirmation' and valid and len(complete)>=100 and ci is not None and ci[0]>.5,'warning':'A single development match is not a promotion or an all-engine superiority claim.'}
+    report={'games':len(games),'expected_games':a.games,'wins':wins,'draws':draws,'losses':losses,'score':(wins+.5*draws)/len(games) if games else None,'complete_pairs':len(complete),'paired_bootstrap_95':ci,'paired_hoeffding_95':bounded,'void_attempts':len(voids),'technical_results':technical,'valid_technical_run':valid,'single_match_superiority_gate':a.stage=='confirmation' and valid and len(complete)>=100 and ci is not None and ci[0]>.5 and bounded[0]>.5,'promotion_supported':False,'warning':'A single development match is not a promotion or an all-engine superiority claim.'}
     (out/'cdca-summary.json').write_text(json.dumps(report,indent=2)+'\n');manifest['status']='completed';print(json.dumps(report),flush=True)
 except BaseException as error:
     manifest['status']='failed';manifest['error']=str(error);raise

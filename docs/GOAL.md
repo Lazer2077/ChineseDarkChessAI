@@ -1,12 +1,12 @@
 # Active research goal
 
 Continuously develop and train ChineseDarkChessAI until we can attempt
-reproducible matches against every publicly discoverable, runnable full-board
-Jieqi AI, and seek statistically supported advantages against all compatible
-independent baselines. This is an open research objective, not a guaranteed outcome.
+reproducible coverage of publicly discoverable full-board Jieqi AI projects,
+use opponent-versus-opponent screening to select a small strong baseline suite,
+and seek statistically supported advantages against every selected baseline. This is an open research objective, not a guaranteed outcome.
 
 The user extended the objective on 2026-10-26: after stable win rates above 70%
-against all current open-source/research strong baselines are established,
+against every selected open-source/research strong baseline are established,
 write an arXiv-style technical report with training curves, the development
 process, our core innovations and meaningful implementation details. This
 requirement is part of the active goal and all subsequent completion audits.
@@ -31,6 +31,34 @@ form testable hypotheses adapted to Jieqi's partial observability and private
 information. Before the next push, keep README focused on academic methods,
 experimental evidence and limitations. Exclude host identities, usernames and
 local absolute environment paths from public research documentation.
+
+## Baseline preselection: user amendment, 2026-10-26
+
+Opponent-versus-opponent matches may select a small final benchmark suite,
+ordinarily about 3–5 strong/independent profiles, reducing repeated candidate
+matches against weak engines. Full candidate-versus-every-project testing is no
+longer a completion prerequisite. Maintain discovery/license/rule/version/runtime
+records for the wider pool and date the final selection. The report's >70% gate
+applies to every member of the selected strong suite, with the same independent
+multi-test-seed requirements; it does not require individual victories over all
+screened-out projects. Describe the selected-suite scope explicitly.
+
+Select opponents from their own reproducible paired head-to-head evidence,
+without using our candidate's weaknesses or confirmation outcomes to choose easy
+opponents. Retain the unchanged teacher as an attribution control, strong
+independent engines, and relevant distinct styles/nontransitive contenders.
+Use common rule/clock strata, disclose uncertainty, and spend extra screening
+only on disputed shortlist places. Different profiles cannot be pooled into one
+ranking. Reuse compatible clean completed head-to-head evidence when pinned
+artifacts match. Screening seeds remain separate from final confirmation seeds.
+
+A screened-out engine is not thereby defeated by our model: strength is not
+transitive, and one short loss does not prove dominance. Missing weights,
+incompatible rules and technical failures remain unverified, not weak. Preserve
+all candidates and exclusion reasons. Revisit selection when relevant runnable
+strong versions appear. This amendment supersedes older prose requiring direct
+matches or >70% wins against every discovered compatible engine; no universal
+all-project superiority claim follows from the shortlisted goal.
 
 ## Training and test seeds: user amendment, 2026-10-26
 
@@ -75,7 +103,7 @@ weights cannot be recorded as wins or silently removed to declare universal
 coverage. Paper claims without a runnable implementation are literature context,
 not measured victories. Record the final coverage cutoff and unresolved entries.
 
-"Win rate" means W/(W+D+L), separately from score (W+0.5D)/N. For each eligible
+"Win rate" means W/(W+D+L), separately from score (W+0.5D)/N. For each selected eligible
 strong baseline, require more than 70% wins on each of at least two disjoint,
 predeclared held-out color-swapped layout sets. A stable-above-70% claim also
 requires a paired, layout-level 95% lower confidence bound above 70%, clean
@@ -84,7 +112,8 @@ same frozen checkpoint. Multiple successful training seeds are not required. Cho
 before outcomes for adequate precision/power; 100 pairs is only a minimum.
 Pin budgets, source/model hashes and rule profiles. Disclose GPU/CPU resource
 asymmetry and compare learned variants with matched resources. Do not pool weak
-opponents, forks or clocks into a universal 70% statement. Existing 50%-score
+opponents, forks or clocks into a universal 70% statement. Selection supports
+claims about the declared final suite, not every discovered project. Existing 50%-score
 acceptance artifacts keep their original meaning and do not satisfy this gate.
 
 Once the full gate is met, deliver an English arXiv-style report with compilable

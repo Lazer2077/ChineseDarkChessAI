@@ -87,13 +87,16 @@ When learning stalls, we will first investigate data coverage, target bias, beli
 ## Evaluation standards
 
 Final report gate: establish stable win rates above **70%** (wins/all games,
-reported separately from draw-adjusted score) against all current verified
-open-source/research strong baselines, on independent color-swapped test sets
+reported separately from draw-adjusted score) against every baseline in a small
+strong suite, ordinarily about 3–5 profiles selected by
+[opponent-versus-opponent screening](docs/BASELINE_SELECTION.md), on independent color-swapped test sets
 with multiple independent test/layout seeds. One training seed is sufficient;
 multiple successful training seeds are not required. Then write an arXiv-style technical report with
 training curves, core innovations, ablations and meaningful implementation
 details. Current version-specific confirmations do not meet this goal; see the
-[full acceptance requirements](docs/GOAL.md).
+[full acceptance requirements](docs/GOAL.md). Screening exclusion does not mean
+defeat by our model; missing weights, incompatible rules and technical failures
+remain explicitly unverified.
 
 Models, versions, layout seeds, rules, clocks, threads, and sample sizes are fixed in advance; training and evaluation layouts are separated. Formal superiority requires at least 100 color-swapped layout pairs, reporting W/D/L, score rate, a 95% bootstrap interval resampled by layout pair, and all timeouts, illegal moves, voids, and truncated games. Internal promotion additionally requires a conservative bounded-mean lower confidence limit above 50% and no technical errors. Broader superiority also requires confirmation of the same frozen checkpoint on layout sets from multiple independent test seeds. Multiple successful training seeds are not required; single-seed training results describe the tested checkpoint, not robustness across training initializations.
 

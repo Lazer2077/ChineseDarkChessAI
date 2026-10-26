@@ -47,3 +47,14 @@ been defeated.
 The report gate requires both current strong runnable opponents and an honest
 account of missing/incompatible candidates. Inventory size is not a strength
 rating, and many forks or GUI clients do not imply algorithmic diversity.
+
+## Small-suite preselection amendment
+
+The user permits a final suite of a few strong profiles selected by external
+opponent head-to-head matches, avoiding repeated tests of every discovered
+project. The [fixed anchor-screen campaign](BASELINE_SELECTION.md) reuses the
+400-game teacher/AB control and adds four 40-game opponent-only screens.
+Selection is independent of our candidate confirmation outcomes. Missing models
+and technical failures remain unverified; exclusion is not defeat by our model.
+The >70%-win report trigger applies to the final declared strong suite under
+the updated `GOAL.md`, with independent test seeds and frozen checkpoints.

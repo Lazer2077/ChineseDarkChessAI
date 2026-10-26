@@ -55,7 +55,9 @@ regardless of that campaign's results, to avoid sharing its match GPU. Sources,
 library and models are checked before/after every stage. Independent seeded
 native identity/legal/terminal/clock replay and raw-result archiving follow
 both screens. There is no adaptive early stopping or result-selected checkpoint.
-The initial state is queued, without a strength conclusion or promotion.
+The dependency campaign has completed and this experiment is now running its
+warm-model comparison on the released GPU, without a strength conclusion or
+promotion.
 Any future gain is attributable in part to the unchanged upstream teacher
 value function, not a newly learned research contribution. A fully public-only
 value substitution would be a separate future ablation if evidence warrants it.

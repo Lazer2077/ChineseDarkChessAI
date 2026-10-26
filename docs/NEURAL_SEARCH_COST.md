@@ -174,8 +174,12 @@ The200-game independent LeafBatch8 confirmation completed131W/7D/62L,
 no technical results/voids/rounding ambiguities, minimum lower clock581.5ms.
 This independently supports a fixed-clock search-configuration gain for this
 specific unchanged warm network. It is not a newly learned-model gain or an
-advantage over the teacher. The fixed64-game teacher diagnostic is still live.
+advantage over the teacher. The fixed64-game teacher diagnostic completed
+0W/0D/64L, all3,018moves/clocks clean, no rounding ambiguity. Smaller batches
+improve this weak neural actor against itself but do not bridge the native
+teacher gap. The campaign is now terminal/completed.
 Evidence: `results/20261026-leaf-batch8-confirmation{,-audit}.json`.
+Teacher evidence: `results/20261026-leaf-batch8-teacher{,-audit}.json`.
 
 The original three low-simulation RL updates are now closed and negative; a
 new one-iteration training control uses the same warm model, first-iteration
@@ -189,3 +193,8 @@ It runs on a GPU released by the completed original RL series, separately from
 the2048-simulation/LeafBatch32 search-effort control. Both fixed warm/teacher
 development screens complete regardless of outcomes, followed by independent
 native audits before any strength interpretation. No promotion is implied.
+
+A separate [fixed-work root sequential-halving prototype](ROOT_HALVING.md)
+keeps interior information-set PUCT and tests allocation on three existing
+training roots. It is neither a full Gumbel AlphaZero implementation nor a
+demonstrated game-strength improvement.

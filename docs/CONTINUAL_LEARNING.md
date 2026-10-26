@@ -85,8 +85,8 @@ be compared at the same actual game clock.
 
 All three sizes have now completed 15 GPU training epochs on the first complete,
 hash-verified 8,192-game generation: 607,652 raw records, 405,959 retained for
-training, and 25,031 retained validation records. Paired capacity matches are
-still in progress; no improvement is established. The first continual series
+training, and 25,031 retained validation records. Both paired capacity matches are
+complete; neither establishes an improvement. The first continual series
 remains the 387k-parameter control. The capacity comparison uses batch 4096,
 lr 2e-5, lambda 0.7, K 430, and the same learner seed. Do not train on .part data
 or tune on the separate warm-candidate confirmation layouts.
@@ -128,4 +128,11 @@ The first capacity screen is complete: the 1.64M model versus the identically
 trained 387k control scored 27W/1D/36L in 64 games, score 42.96875%, paired
 bootstrap 95% interval [0.328125, 0.53125], with no technical failures or voids.
 It does not support a capacity benefit at this clock. The 13.45M comparison
-remains in progress. Evidence: results/20261026-capacity-wide-development.json.
+completed at 26W/2D/36L, score 42.1875%, paired bootstrap interval
+[0.296875, 0.546875], with no technical errors. Evidence: results/20261026-capacity-wide-development.json.
+
+The first expanded learner's 200-game gate finished 87W/13D/100L (46.75%),
+paired bootstrap 95% [0.400, 0.535], without technical failures. It was not
+accepted, and the second generation retains the teacher. This result belongs
+to the expanded learner, separate from the earlier warm-pilot confirmations.
+A new same-observer temporal-target ablation is documented in TEMPORAL_TARGETS.md.

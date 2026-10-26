@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-26T16:46:00.496359+00:00",
+  "candidate": "fixed unpromoted warm-20261026 derivative of attributed jqe teacher",
+  "opponent": "original unmodified mist-jieqi C++ da1ab8ce11659110f19422213c5811cbfab77cb6",
+  "profile": "original Mist 120 capture-or-reveal quiet plies, 400 ply cap, third public repetition last mover loses",
+  "time_control": "15+0.1 seconds",
+  "time_manager": "shared external bank/20+0.8*increment; full position-to-bestmove wall time charged, zero grace",
+  "threads_per_engine": 4,
+  "confirmation_sets": [
+    {
+      "name": "a",
+      "games": 200,
+      "layout_seed_base": 7701001
+    },
+    {
+      "name": "b",
+      "games": 200,
+      "layout_seed_base": 7702001
+    }
+  ],
+  "early_stopping": false,
+  "retune_between_sets": false,
+  "technical_failures": "all logged and included in WDL; any prevent acceptance; startup/infrastructure voids prevent acceptance",
+  "gate": "each complete 100-pair set, no technical errors or voids, paired bootstrap and Hoeffding 95% lower bounds above .5; this is not independent multi-seed learning or all-engine promotion",
+  "sha256": {
+    "models/experimental/warm-20261026.jqn": "114a1dd460b66b52cd8089bf6f5fbd2273ed90fc4aa9f7d8ef35ea068cecae1f",
+    "build/mist-profile/bin/jqe": "8697397d86ffb00daf9d7b6b580b258b7a6e33fcdd8130d8ba02d38365997247",
+    "external/mist-jieqi/.cache/native/mist-core": "19c706afa1bf2c43a80305c936fb268abf3bb63484117797d635c0138a43ff43",
+    "scripts/mist_clock_match.mjs": "33efe03e626c379f4744fb822c64ff82346274b64c90b80d5ea28cfd4b716fc4",
+    "src/match_clock.js": "31bafafc245029209d55d34a05f4d3096e9179fe0ec26b0e7265ff9e18bbf0e1",
+    "src/paired_evidence.js": "083b6ca014783828f8466d3e9f56d2a3c180bda2653bdfddb8277f01c8de7d65",
+    "src/history.js": "1002e95c3fd4ffe165243ee565b4689afdc4dac039556ea59ed5f19871d73eec",
+    "src/uci.js": "3f9c60c10b612d0a4ac933d0e9cb75da0aea82d5c460fe13d5ebc31cf6d5b651",
+    "adapters/mist_native.mjs": "49ab8e9705396ffa31e5bb96825718b77b7a1bdd8a16a41590807e156d438bc5",
+    "adapters/mist_native.sh": "3dd2125c9a032c4d063ea537f5fb347c59732b933c6f9c5ee88a7a71674aea0b",
+    "vendor/mist-jieqi/engine.js": "9250d5440b8572c3473a84c0dec0284c99098387bb16a14a5dc259ac27ce510b",
+    "vendor/mist-jieqi/ai.js": "223a1027a4c19c6d01628b2e37e82d2ba3ad9ee588c1bf29e0c2710adc554726",
+    "external/mist-jieqi/native/bridge.mjs": "1ba71013573be4b3bd89753def3b778d5a171e9f0de49a111594222d8b4bfb5d"
+  }
+}

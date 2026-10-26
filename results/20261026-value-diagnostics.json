@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "dataset_sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+  "raw_records": 37471,
+  "retained_records": 25031,
+  "score_scale": 430,
+  "lambda": 0.7,
+  "trainer_sha256": "2f8a1595b7ef125199517a9d7e4c714c06c760e8cf737bb25a2007d3bc21862d",
+  "models": {
+    "teacher": {
+      "checkpoint_sha256": "0725b834769ec38efb7fb24284add1c6aaa565520651f21db0a926a9759b9b83",
+      "parameters": 387089,
+      "king_buckets": 1,
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "mixed_target_mse": 0.014183086343109608,
+          "search_target_mse": 0.0038741126190871,
+          "outcome_brier": 0.11822177469730377,
+          "outcome_logloss": 0.39382049441337585,
+          "mean_prediction": 0.49375516176223755,
+          "mean_outcome": 0.4826814532279968
+        },
+        "hidden_0": {
+          "positions": 3061,
+          "mixed_target_mse": 0.007532310672104359,
+          "search_target_mse": 0.003988971002399921,
+          "outcome_brier": 0.04363152012228966,
+          "outcome_logloss": 0.2704843580722809,
+          "mean_prediction": 0.5023171901702881,
+          "mean_outcome": 0.4859522879123688
+        },
+        "hidden_1_4": {
+          "positions": 5910,
+          "mixed_target_mse": 0.011096356436610222,
+          "search_target_mse": 0.005199672654271126,
+          "outcome_brier": 0.06747470796108246,
+          "outcome_logloss": 0.24071767926216125,
+          "mean_prediction": 0.4912354350090027,
+          "mean_outcome": 0.480541467666626
+        },
+        "hidden_5_14": {
+          "positions": 9660,
+          "mixed_target_mse": 0.015040449798107147,
+          "search_target_mse": 0.004522169474512339,
+          "outcome_brier": 0.1207830160856247,
+          "outcome_logloss": 0.39290937781333923,
+          "mean_prediction": 0.48981013894081116,
+          "mean_outcome": 0.4789855182170868
+        },
+        "hidden_15_30": {
+          "positions": 6400,
+          "mixed_target_mse": 0.018920352682471275,
+          "search_target_mse": 0.0016169464215636253,
+          "outcome_brier": 0.19689276814460754,
+          "outcome_logloss": 0.5955658555030823,
+          "mean_prediction": 0.4979414939880371,
+          "mean_outcome": 0.4886718690395355
+        }
+      }
+    },
+    "small": {
+      "checkpoint_sha256": "71014145cd17482f37026a629576f82941954c48ed9db2c251d73fc81e0d7140",
+      "parameters": 387089,
+      "king_buckets": 1,
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "mixed_target_mse": 0.01410217396914959,
+          "search_target_mse": 0.003907481208443642,
+          "outcome_brier": 0.11787420511245728,
+          "outcome_logloss": 0.39279690384864807,
+          "mean_prediction": 0.4903353750705719,
+          "mean_outcome": 0.4826814532279968
+        },
+        "hidden_0": {
+          "positions": 3061,
+          "mixed_target_mse": 0.0074310568161308765,
+          "search_target_mse": 0.004114289302378893,
+          "outcome_brier": 0.04300159960985184,
+          "outcome_logloss": 0.2683585286140442,
+          "mean_prediction": 0.49890732765197754,
+          "mean_outcome": 0.4859522879123688
+        },
+        "hidden_1_4": {
+          "positions": 5910,
+          "mixed_target_mse": 0.010912693105638027,
+          "search_target_mse": 0.005206608679145575,
+          "outcome_brier": 0.06684631109237671,
+          "outcome_logloss": 0.23901934921741486,
+          "mean_prediction": 0.48885875940322876,
+          "mean_outcome": 0.480541467666626
+        },
+        "hidden_5_14": {
+          "positions": 9660,
+          "mixed_target_mse": 0.015020485036075115,
+          "search_target_mse": 0.0045704892836511135,
+          "outcome_brier": 0.12060372531414032,
+          "outcome_logloss": 0.39233165979385376,
+          "mean_prediction": 0.486296683549881,
+          "mean_outcome": 0.4789855182170868
+        },
+        "hidden_15_30": {
+          "positions": 6400,
+          "mixed_target_mse": 0.018852049484848976,
+          "search_target_mse": 0.0016081791836768389,
+          "outcome_brier": 0.1966855525970459,
+          "outcome_logloss": 0.5950198173522949,
+          "mean_prediction": 0.49369505047798157,
+          "mean_outcome": 0.4886718690395355
+        }
+      }
+    },
+    "wide": {
+      "checkpoint_sha256": "122aed864f378be73d8a38576112a0e8ea89353b1b8f10bc45a8d6a183447721",
+      "parameters": 1644161,
+      "king_buckets": 1,
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "mixed_target_mse": 0.014097784645855427,
+          "search_target_mse": 0.003907432314008474,
+          "outcome_brier": 0.11785969138145447,
+          "outcome_logloss": 0.39271387457847595,
+          "mean_prediction": 0.49101927876472473,
+          "mean_outcome": 0.4826814532279968
+        },
+        "hidden_0": {
+          "positions": 3061,
+          "mixed_target_mse": 0.00741034559905529,
+          "search_target_mse": 0.004135708790272474,
+          "outcome_brier": 0.04288258031010628,
+          "outcome_logloss": 0.2677639424800873,
+          "mean_prediction": 0.4992423951625824,
+          "mean_outcome": 0.4859522879123688
+        },
+        "hidden_1_4": {
+          "positions": 5910,
+          "mixed_target_mse": 0.010897651314735413,
+          "search_target_mse": 0.005192267242819071,
+          "outcome_brier": 0.0668296366930008,
+          "outcome_logloss": 0.23895062506198883,
+          "mean_prediction": 0.4891740381717682,
+          "mean_outcome": 0.480541467666626
+        },
+        "hidden_5_14": {
+          "positions": 9660,
+          "mixed_target_mse": 0.015026292763650417,
+          "search_target_mse": 0.004575712140649557,
+          "outcome_brier": 0.12061089277267456,
+          "outcome_logloss": 0.39233890175819397,
+          "mean_prediction": 0.48666396737098694,
+          "mean_outcome": 0.4789855182170868
+        },
+        "hidden_15_30": {
+          "positions": 6400,
+          "mixed_target_mse": 0.018849918618798256,
+          "search_target_mse": 0.0016031035920605063,
+          "outcome_brier": 0.19669029116630554,
+          "outcome_logloss": 0.59503173828125,
+          "mean_prediction": 0.49536412954330444,
+          "mean_outcome": 0.4886718690395355
+        }
+      }
+    },
+    "wide-king": {
+      "checkpoint_sha256": "f351ec3857013f00963bd7c8e5bf24ee3c9b5dc171ed11091d47b03889ab8963",
+      "parameters": 13452161,
+      "king_buckets": 9,
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "mixed_target_mse": 0.014073881320655346,
+          "search_target_mse": 0.0038935868069529533,
+          "outcome_brier": 0.11781230568885803,
+          "outcome_logloss": 0.3925589323043823,
+          "mean_prediction": 0.4908754527568817,
+          "mean_outcome": 0.4826814532279968
+        },
+        "hidden_0": {
+          "positions": 3061,
+          "mixed_target_mse": 0.007367908488959074,
+          "search_target_mse": 0.004100847523659468,
+          "outcome_brier": 0.042822472751140594,
+          "outcome_logloss": 0.2675933539867401,
+          "mean_prediction": 0.4991065263748169,
+          "mean_outcome": 0.4859522879123688
+        },
+        "hidden_1_4": {
+          "positions": 5910,
+          "mixed_target_mse": 0.01090039499104023,
+          "search_target_mse": 0.005185085814446211,
+          "outcome_brier": 0.0668555349111557,
+          "outcome_logloss": 0.23893681168556213,
+          "mean_prediction": 0.48907068371772766,
+          "mean_outcome": 0.480541467666626
+        },
+        "hidden_5_14": {
+          "positions": 9660,
+          "mixed_target_mse": 0.014977885410189629,
+          "search_target_mse": 0.004554274491965771,
+          "outcome_brier": 0.12049955129623413,
+          "outcome_logloss": 0.3920135796070099,
+          "mean_prediction": 0.48647207021713257,
+          "mean_outcome": 0.4789855182170868
+        },
+        "hidden_15_30": {
+          "positions": 6400,
+          "mixed_target_mse": 0.018847255036234856,
+          "search_target_mse": 0.0016046141972765326,
+          "outcome_brier": 0.19667789340019226,
+          "outcome_logloss": 0.5950111150741577,
+          "mean_prediction": 0.49525144696235657,
+          "mean_outcome": 0.4886718690395355
+        }
+      }
+    }
+  },
+  "scope": "Descriptive diagnostics on checkpoint-selection validation data; positions within games are correlated. No independent test or strength confidence interval. Hidden-count strata use actor-visible information only."
+}

@@ -66,3 +66,26 @@ The paired bounded-mean 95% interval still includes 50%; the integration timing
 tolerance also prevents treating this as a strict-clock tournament. Evidence:
 results/20261026-mist-native-development.json and checksummed raw games. No
 opponent is promoted to defeated.
+
+## Actual-clock confirmation protocol
+scripts/mist_clock_match.mjs removes the integration-screen grace period.
+Both engines receive the same 15+0.1 second game bank, four-thread allowance,
+and external per-move allocation: floor(min(60000, max(1, bank-20),
+bank/20 + 0.8*increment)), at least 1 ms. This common external time manager is
+part of the comparison condition; it is not a claim about each engine's best
+native time-management policy. Full wall time from position submission to
+bestmove is charged, including observer reconstruction and transport. Startup
+and public-start warmup are excluded symmetrically. Increment is credited only
+after an on-time legal move; it cannot rescue a flag fall. No extra time is
+granted above the bank. All technical results remain in WDL and prevent gate
+acceptance; infrastructure voids also prevent acceptance.
+
+Two complete smoke games at 3+0.05 ended by mate with no technical errors.
+Every move's actual bank charge and terminal result was replay-verified.
+Frozen confirmation sets each contain 200 games / 100 layout pairs, seeds
+7701001 and 7702001. The same unpromoted warm candidate is used throughout,
+with no stopping on interim results or tuning between sets. Each set must pass
+paired bootstrap and Hoeffding lower limits above 50%, with no technical
+failures; one policy and one time manager cannot establish multi-training-seed
+or all-engine superiority. Frozen source/artifact hashes are checked before
+every game and at completion. See results/mist-clock-confirmation-plan.json.

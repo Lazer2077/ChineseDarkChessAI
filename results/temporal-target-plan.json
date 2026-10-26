@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-26T16:54:02.100544+00:00",
+  "hypothesis": "Same-observer two-ply search bootstrap can reduce realized-outcome target noise without using opponent-private observations. Bias and strength must be measured, not assumed.",
+  "control_target": "0.7*sigmoid(search_now/430)+0.3*outcome",
+  "temporal_target": "0.7*sigmoid(search_now/430)+0.15*outcome+0.15*sigmoid(search_next_same_player/430); final two recorded positions use outcome for the unavailable future value",
+  "training": {
+    "schema": 1,
+    "source_sha256": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+    "games": 8192,
+    "raw_records": 607652,
+    "retained_records": 405959,
+    "scale": 430,
+    "control_lambda": 0.7,
+    "interpretation": "Synthetic score encodes target probability; use trainer --lam=1.0. Same-observer two-ply bootstrap, not opponent-observation negamax. Validation selection must use the control target for BOTH variants.",
+    "variants": {
+      "control": {
+        "tau": 0.0,
+        "sha256": "7a44dd3d4821c9749819ee640460a41a6d26a52750e585cbbfe1b4a11ba671a1",
+        "same_observer_bootstrap_rows": 403722,
+        "maximum_target_encoding_error": 0.0002906818217922602
+      },
+      "temporal": {
+        "tau": 0.5,
+        "sha256": "74ca0b396885eb33c9d1195691fba14d124413a974fef55605258fadde0bf15a",
+        "same_observer_bootstrap_rows": 403722,
+        "maximum_target_encoding_error": 0.0002906818217922602
+      }
+    }
+  },
+  "validation": {
+    "schema": 1,
+    "source_sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+    "games": 512,
+    "raw_records": 37471,
+    "retained_records": 25031,
+    "scale": 430,
+    "control_lambda": 0.7,
+    "interpretation": "Synthetic score encodes target probability; use trainer --lam=1.0. Same-observer two-ply bootstrap, not opponent-observation negamax. Validation selection must use the control target for BOTH variants.",
+    "variants": {
+      "control": {
+        "tau": 0.0,
+        "sha256": "5f6f98f53d81cf0ad6f34680486e1a7d4ce12c3edba6bbf7ab3e9e4be98add25",
+        "same_observer_bootstrap_rows": 24872,
+        "maximum_target_encoding_error": 0.0002906818217922602
+      },
+      "temporal": {
+        "tau": 0.5,
+        "sha256": "ab56a52da86857ba39daf706493c4275b2c8fdf194bd561b0c0b912e6a289c17",
+        "same_observer_bootstrap_rows": 24872,
+        "maximum_target_encoding_error": 0.0002906818217922602
+      }
+    }
+  },
+  "initial_teacher_sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "optimizer": {
+    "epochs": 15,
+    "batch": 4096,
+    "lr": 2e-05,
+    "seed": 20261027,
+    "K": 430,
+    "trainer_lambda": 1.0,
+    "model": "387k NNUE"
+  },
+  "selection": "Both variants select minimum loss on the SAME relabeled control validation file, not separate validation objectives.",
+  "comparison": {
+    "games": 64,
+    "layout_seed": 7801001,
+    "tc": "5+0.05",
+    "threads": 1,
+    "hash_mb": 64,
+    "stage": "development",
+    "opponent": "identically trained synthetic-target control"
+  },
+  "limitations": [
+    "Single training seed, development only.",
+    "Off-policy observed trajectories from fixed teacher; neither Bayesian optimality nor Nash convergence follows.",
+    "Target score fields are synthetic logits with max probability error <=0.0003; not actual search evaluations.",
+    "No gradients through search or eligibility traces: this is not full TDLeaf(lambda)."
+  ],
+  "references": [
+    "https://arxiv.org/abs/cs/9901001",
+    "https://arxiv.org/abs/1705.08439",
+    "https://papers.nips.cc/paper_files/paper/2010/file/edfbe1afcf9246bb0d40eb4d8027d90f-Paper.pdf"
+  ],
+  "source_hashes": {
+    "scripts/build_temporal_targets.py": "2552e311fe1acecbc85941376cde2f76be15484c16d9c2cef13eb539a2a44df1",
+    "external/devinokeefe-jieqi/engine/train/train.py": "2f8a1595b7ef125199517a9d7e4c714c06c760e8cf737bb25a2007d3bc21862d"
+  }
+}

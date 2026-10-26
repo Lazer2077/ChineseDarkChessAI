@@ -89,3 +89,16 @@ paired bootstrap and Hoeffding lower limits above 50%, with no technical
 failures; one policy and one time manager cannot establish multi-training-seed
 or all-engine superiority. Frozen source/artifact hashes are checked before
 every game and at completion. See results/mist-clock-confirmation-plan.json.
+
+## First actual-clock confirmation set completed
+
+Set A completed 200 games / 100 pairs at 192W/0D/8L (96%; paired bootstrap
+95% [0.93, 0.985]). Four wins were opponent time forfeits. Under the frozen
+zero-technical-failure rule, valid_technical_run=false and the confirmation
+gate fails despite the high score. The four failing Mist attempts occurred
+after 121, 127, 127, and 136 completed plies; observed remaining banks were
+about 118–166ms. This locates an interface/time-management issue for further
+diagnosis; it does not establish its cause or justify discarding the games.
+Set B continues unchanged. No clean 188-win subset or retrospectively relaxed
+time allowance is presented as a confirmation. Evidence:
+results/20261026-mist-clock-a.json.

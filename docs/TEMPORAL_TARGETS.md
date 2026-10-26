@@ -145,3 +145,13 @@ The first direct-teacher confirmation set completed 98W/11D/91L in 200 games,
 failures. It does not support improvement over the teacher. The second frozen
 set continues; no parameters or candidate selection change in response to A.
 Evidence: results/20261026-temporal-teacher-a.json.
+
+## Second direct-teacher confirmation completed
+
+Set B finished 93W/13D/94L over all 200 games / 100 pairs, 49.75%,
+paired bootstrap 95% [0.435, 0.56], with no technical failures or voids.
+Together with set A (98W/11D/91L), neither frozen set supports superiority.
+The two sets were not used to retune this arm. This particular two-ply label
+mixture is not promoted; its failure does not refute TDLeaf or other search/TD
+methods, whose algorithms and assumptions differ. Evidence:
+results/20261026-temporal-teacher-b.json.

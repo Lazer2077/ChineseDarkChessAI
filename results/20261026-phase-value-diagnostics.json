@@ -1,0 +1,596 @@
+{
+  "schema": 1,
+  "data_sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+  "games": 512,
+  "retained_positions": 25031,
+  "trainer_sha256": "2f8a1595b7ef125199517a9d7e4c714c06c760e8cf737bb25a2007d3bc21862d",
+  "bootstrap_seed": 20261026,
+  "bootstrap_samples": 10000,
+  "scope": "Checkpoint-selection validation data only; descriptive diagnostics, not an independent test or strength result. Intervals resample whole games and compare equal-weight per-game conditional phase errors. First listed model is the reference. No use of hidden truth identities.",
+  "models": {
+    "teacher": {
+      "checkpoint_sha256": "0725b834769ec38efb7fb24284add1c6aaa565520651f21db0a926a9759b9b83",
+      "input_policy": "raw",
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.014183088205754757,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.11822178214788437,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0038741126190871,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "full_public": {
+          "positions": 3061,
+          "games_with_phase": 88,
+          "mixed_target_mse": {
+            "position_mean": 0.007532311137765646,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.043631523847579956,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.003988971002399921,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "dark_1_4": {
+          "positions": 5910,
+          "games_with_phase": 287,
+          "mixed_target_mse": {
+            "position_mean": 0.011096358299255371,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.06747470796108246,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.005199672654271126,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "dark_5_14": {
+          "positions": 9660,
+          "games_with_phase": 491,
+          "mixed_target_mse": {
+            "position_mean": 0.015040449798107147,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.1207830160856247,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.004522169474512339,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "dark_15_30": {
+          "positions": 6400,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.018920352682471275,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.19689278304576874,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0016169464215636253,
+            "game_mean_delta_vs_reference": 0.0,
+            "paired_game_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "expanded": {
+      "checkpoint_sha256": "71014145cd17482f37026a629576f82941954c48ed9db2c251d73fc81e0d7140",
+      "input_policy": "raw",
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.01410217396914959,
+            "game_mean_delta_vs_reference": -9.045451885705802e-05,
+            "paired_game_bootstrap_95": [
+              -0.00016266568295484672,
+              -1.4727259395386067e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.11787420511245728,
+            "game_mean_delta_vs_reference": -0.0003367115310278358,
+            "paired_game_bootstrap_95": [
+              -0.00055306101671344,
+              -0.00011172551971852614
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.003907481674104929,
+            "game_mean_delta_vs_reference": 1.5084198357212105e-05,
+            "paired_game_bootstrap_95": [
+              -9.552993567261804e-06,
+              4.0020679846227755e-05
+            ]
+          }
+        },
+        "full_public": {
+          "positions": 3061,
+          "games_with_phase": 88,
+          "mixed_target_mse": {
+            "position_mean": 0.007431057281792164,
+            "game_mean_delta_vs_reference": -0.000324905526261982,
+            "paired_game_bootstrap_95": [
+              -0.0007189603490762821,
+              -5.5258317115730526e-06
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.04300159588456154,
+            "game_mean_delta_vs_reference": -0.0007851587228519238,
+            "paired_game_bootstrap_95": [
+              -0.0015129442575295483,
+              -0.00014645632872712605
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.004114289302378893,
+            "game_mean_delta_vs_reference": -0.0001276539589823609,
+            "paired_game_bootstrap_95": [
+              -0.00039724202412809537,
+              8.05698943583971e-05
+            ]
+          }
+        },
+        "dark_1_4": {
+          "positions": 5910,
+          "games_with_phase": 287,
+          "mixed_target_mse": {
+            "position_mean": 0.010912693105638027,
+            "game_mean_delta_vs_reference": -0.0001299152293554552,
+            "paired_game_bootstrap_95": [
+              -0.00029189915668068707,
+              3.075244726205076e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.06684631109237671,
+            "game_mean_delta_vs_reference": -0.00039264399783900915,
+            "paired_game_bootstrap_95": [
+              -0.0008334708766207742,
+              3.261905384770477e-05
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.005206609144806862,
+            "game_mean_delta_vs_reference": -1.7317265189333895e-05,
+            "paired_game_bootstrap_95": [
+              -0.00010048124821778639,
+              6.043086334845049e-05
+            ]
+          }
+        },
+        "dark_5_14": {
+          "positions": 9660,
+          "games_with_phase": 491,
+          "mixed_target_mse": {
+            "position_mean": 0.015020486898720264,
+            "game_mean_delta_vs_reference": -2.6533457450031432e-05,
+            "paired_game_bootstrap_95": [
+              -0.00014046221328783563,
+              9.220163280065246e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.12060372531414032,
+            "game_mean_delta_vs_reference": -0.00018796107063625314,
+            "paired_game_bootstrap_95": [
+              -0.0005135781451668465,
+              0.00015004976107845747
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0045704892836511135,
+            "game_mean_delta_vs_reference": 4.2649802917538904e-05,
+            "paired_game_bootstrap_95": [
+              -7.371528791202875e-06,
+              9.331981967483364e-05
+            ]
+          }
+        },
+        "dark_15_30": {
+          "positions": 6400,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.018852051347494125,
+            "game_mean_delta_vs_reference": -7.571219456135059e-05,
+            "paired_game_bootstrap_95": [
+              -0.00015440157394197858,
+              3.4565789861868663e-06
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.1966855674982071,
+            "game_mean_delta_vs_reference": -0.0002284295512122076,
+            "paired_game_bootstrap_95": [
+              -0.0004858065735160648,
+              3.379685864743438e-05
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0016081791836768389,
+            "game_mean_delta_vs_reference": -1.0261951458533355e-05,
+            "paired_game_bootstrap_95": [
+              -2.6251291306692544e-05,
+              5.014118579459343e-06
+            ]
+          }
+        }
+      }
+    },
+    "canonical": {
+      "checkpoint_sha256": "2367c529de348a299db68745ed699d25a95e8d697b1688ed826569e1eee1b0ef",
+      "input_policy": "canonical",
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.014239693060517311,
+            "game_mean_delta_vs_reference": -6.260669012789633e-05,
+            "paired_game_bootstrap_95": [
+              -0.00019294437318187783,
+              7.275300870741184e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.11777979135513306,
+            "game_mean_delta_vs_reference": -0.00047898137105379605,
+            "paired_game_bootstrap_95": [
+              -0.0008744836050493728,
+              -7.539815473741822e-05
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.004144392441958189,
+            "game_mean_delta_vs_reference": 0.00011583957830417245,
+            "paired_game_bootstrap_95": [
+              5.5803888054057605e-05,
+              0.0001794936843432195
+            ]
+          }
+        },
+        "full_public": {
+          "positions": 3061,
+          "games_with_phase": 88,
+          "mixed_target_mse": {
+            "position_mean": 0.00833900086581707,
+            "game_mean_delta_vs_reference": -0.00019484420021375652,
+            "paired_game_bootstrap_95": [
+              -0.0014844397229065974,
+              0.0010311036480127552
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.04225630685687065,
+            "game_mean_delta_vs_reference": -0.0018889829171822787,
+            "paired_game_bootstrap_95": [
+              -0.0045225858426158816,
+              0.000485619621803725
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.005730762146413326,
+            "game_mean_delta_vs_reference": 0.0005312153051301605,
+            "paired_game_bootstrap_95": [
+              -0.0004818382566400758,
+              0.0015780816933233437
+            ]
+          }
+        },
+        "dark_1_4": {
+          "positions": 5910,
+          "games_with_phase": 287,
+          "mixed_target_mse": {
+            "position_mean": 0.010942306369543076,
+            "game_mean_delta_vs_reference": -0.0001456101167789088,
+            "paired_game_bootstrap_95": [
+              -0.00040374576740496217,
+              0.00011379877573816816
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.06677190214395523,
+            "game_mean_delta_vs_reference": -0.000533024102765165,
+            "paired_game_bootstrap_95": [
+              -0.0012681644446362465,
+              0.00014453938552014414
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.005280803423374891,
+            "game_mean_delta_vs_reference": 2.042444829645855e-05,
+            "paired_game_bootstrap_95": [
+              -0.00011815311136494604,
+              0.00015282620285690483
+            ]
+          }
+        },
+        "dark_5_14": {
+          "positions": 9660,
+          "games_with_phase": 491,
+          "mixed_target_mse": {
+            "position_mean": 0.015084508806467056,
+            "game_mean_delta_vs_reference": 4.0471826934948644e-05,
+            "paired_game_bootstrap_95": [
+              -0.00014424802885979455,
+              0.0002294219345736112
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.12068794667720795,
+            "game_mean_delta_vs_reference": -0.00010286905194189766,
+            "paired_game_bootstrap_95": [
+              -0.0006255648046468858,
+              0.000438201575193502
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0046258531510829926,
+            "game_mean_delta_vs_reference": 0.00010190366974333191,
+            "paired_game_bootstrap_95": [
+              3.0574554550310724e-05,
+              0.0001737412700375489
+            ]
+          }
+        },
+        "dark_15_30": {
+          "positions": 6400,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.018831660971045494,
+            "game_mean_delta_vs_reference": -0.00011287345094433327,
+            "paired_game_bootstrap_95": [
+              -0.00024542791413090134,
+              2.3212051380594116e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.19661439955234528,
+            "game_mean_delta_vs_reference": -0.00035719507405386844,
+            "paired_game_bootstrap_95": [
+              -0.0007887104341212458,
+              8.579288813605226e-05
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0016095525352284312,
+            "game_mean_delta_vs_reference": -8.164316110911934e-06,
+            "paired_game_bootstrap_95": [
+              -3.228460909300487e-05,
+              1.5316171322294212e-05
+            ]
+          }
+        }
+      }
+    },
+    "temporal": {
+      "checkpoint_sha256": "6b7fc23811127c2f8c8ed0535e3a41d33b72bbb0adf247f29c7448f6bd231dca",
+      "input_policy": "raw",
+      "strata": {
+        "all": {
+          "positions": 25031,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.014118981547653675,
+            "game_mean_delta_vs_reference": -8.108666739196498e-05,
+            "paired_game_bootstrap_95": [
+              -0.00019571787929127576,
+              4.1106220328649825e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.11798987537622452,
+            "game_mean_delta_vs_reference": -0.0002931353576643709,
+            "paired_game_bootstrap_95": [
+              -0.0006382012432944281,
+              7.148437884010034e-05
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.003881917567923665,
+            "game_mean_delta_vs_reference": 9.79134798989811e-06,
+            "paired_game_bootstrap_95": [
+              -2.6473888714590033e-05,
+              4.7137120006518956e-05
+            ]
+          }
+        },
+        "full_public": {
+          "positions": 3061,
+          "games_with_phase": 88,
+          "mixed_target_mse": {
+            "position_mean": 0.007465943228453398,
+            "game_mean_delta_vs_reference": -0.00038027671184862977,
+            "paired_game_bootstrap_95": [
+              -0.0010177948746552322,
+              0.00016975608586567025
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.04343016445636749,
+            "game_mean_delta_vs_reference": -0.0006305759173320561,
+            "paired_game_bootstrap_95": [
+              -0.0017558084240530331,
+              0.00041218421974106184
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.003980455920100212,
+            "game_mean_delta_vs_reference": -0.00027300548604939403,
+            "paired_game_bootstrap_95": [
+              -0.0007140548059180547,
+              8.865768184436802e-05
+            ]
+          }
+        },
+        "dark_1_4": {
+          "positions": 5910,
+          "games_with_phase": 287,
+          "mixed_target_mse": {
+            "position_mean": 0.010926984250545502,
+            "game_mean_delta_vs_reference": -9.542846682563712e-05,
+            "paired_game_bootstrap_95": [
+              -0.0003451276688295488,
+              0.00016282559304517155
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.06699700653553009,
+            "game_mean_delta_vs_reference": -0.00021506801819036616,
+            "paired_game_bootstrap_95": [
+              -0.0009286944075427563,
+              0.00046038092106974915
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.00516244163736701,
+            "game_mean_delta_vs_reference": -4.415424149729907e-05,
+            "paired_game_bootstrap_95": [
+              -0.00017585493969022857,
+              8.601483964946318e-05
+            ]
+          }
+        },
+        "dark_5_14": {
+          "positions": 9660,
+          "games_with_phase": 491,
+          "mixed_target_mse": {
+            "position_mean": 0.015066168271005154,
+            "game_mean_delta_vs_reference": 4.599239175300777e-05,
+            "paired_game_bootstrap_95": [
+              -0.0001293691773614912,
+              0.00022617851447974407
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.1207299530506134,
+            "game_mean_delta_vs_reference": 1.6975153164449303e-05,
+            "paired_game_bootstrap_95": [
+              -0.0004818965412466681,
+              0.0005279483030195769
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.004581654444336891,
+            "game_mean_delta_vs_reference": 5.84282745472846e-05,
+            "paired_game_bootstrap_95": [
+              -1.5553559493114126e-05,
+              0.00012812975874848222
+            ]
+          }
+        },
+        "dark_15_30": {
+          "positions": 6400,
+          "games_with_phase": 512,
+          "mixed_target_mse": {
+            "position_mean": 0.01881895214319229,
+            "game_mean_delta_vs_reference": -0.00011803159986869479,
+            "paired_game_bootstrap_95": [
+              -0.00024253647379888458,
+              1.2125439778834409e-05
+            ]
+          },
+          "outcome_brier": {
+            "position_mean": 0.19660331308841705,
+            "game_mean_delta_vs_reference": -0.0003460826797080163,
+            "paired_game_bootstrap_95": [
+              -0.0007528117711960724,
+              7.53008119972231e-05
+            ]
+          },
+          "search_target_mse": {
+            "position_mean": 0.0015961406752467155,
+            "game_mean_delta_vs_reference": -2.0295444689017226e-05,
+            "paired_game_bootstrap_95": [
+              -4.44809152280109e-05,
+              3.2496696052208407e-06
+            ]
+          }
+        }
+      }
+    }
+  }
+}

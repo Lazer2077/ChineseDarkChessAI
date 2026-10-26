@@ -132,3 +132,8 @@ benefits. A future held-out full-public start-position study should preserve
 rule-relevant history and use matched data and compute. Evidence:
 results/20261026-observable-endgame-B.json and
 results/20261026-observable-endgame-C.json.
+
+Stage-specific follow-up diagnostics and their game-level sampling limits are
+in [PHASE_DIAGNOSTICS.md](PHASE_DIAGNOSTICS.md). Only 88 of 512 validation games
+contribute retained fully public positions; counts of positions are not counts
+of independent games.

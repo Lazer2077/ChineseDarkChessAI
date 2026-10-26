@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "candidate": "Unpromoted expanded seed20261026 iteration1 model; original attributed jqe search, no adaptive search patch",
+  "candidate_binary": "external/devinokeefe-jieqi/engine/build/jqe",
+  "candidate_net": "models/experimental/expanded-seed20261026-it1.jqn",
+  "teacher_placeholder": "external/devinokeefe-jieqi/engine/nets/it014.jqn",
+  "placeholder_disclosure": "Required --net argument is not sent to classical opponents; they use their original classical evaluation.",
+  "clock": "5+0.05",
+  "threads": 1,
+  "hash_mb": 64,
+  "concurrency": 2,
+  "rules": "Pinned jqe external referee: 80 no-capture plies, third repetition/check/chase adjudication; opponents retain their own internal approximations. Full observer-specific private histories.",
+  "scope": "Version-specific external-referee benchmark; no claim of matching every internal repetition heuristic. Distinct variants remain separate.",
+  "early_stopping": false,
+  "retune_between_arms": false,
+  "acceptance": "Each complete set must pass paired bootstrap and Hoeffding lower>0.5, no voids or technical failures. No all-engine promotion from a single opponent.",
+  "opponents": [
+    {
+      "id": "pikafish-jieqi-old",
+      "source": "external/pikafish-jieqi-old",
+      "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc",
+      "binary": "external/pikafish-jieqi-old/src/PikaJieQi",
+      "baseline_classical": true,
+      "sets": [
+        {
+          "id": "a",
+          "seed": 7980001,
+          "games": 200
+        },
+        {
+          "id": "b",
+          "seed": 7990001,
+          "games": 200
+        }
+      ]
+    },
+    {
+      "id": "pikajieqi-enhanced",
+      "source": "external/pikajieqi-enhanced",
+      "commit": "7d5ca267f23c9c5cb57315607a18a55de17808b1",
+      "binary": "external/pikajieqi-enhanced/src/PikaJieQi",
+      "baseline_classical": true,
+      "sets": [
+        {
+          "id": "a",
+          "seed": 7990001,
+          "games": 200
+        },
+        {
+          "id": "b",
+          "seed": 8000001,
+          "games": 200
+        }
+      ]
+    },
+    {
+      "id": "pikafish-jieqi-wasm",
+      "source": "external/pikafish-jieqi-wasm",
+      "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+      "binary": "external/pikafish-jieqi-wasm/src/PikaJieQi",
+      "baseline_classical": true,
+      "sets": [
+        {
+          "id": "a",
+          "seed": 8000001,
+          "games": 200
+        },
+        {
+          "id": "b",
+          "seed": 8010001,
+          "games": 200
+        }
+      ]
+    }
+  ],
+  "artifact_sha256": {
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "models/experimental/expanded-seed20261026-it1.jqn": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833",
+    "external/devinokeefe-jieqi/engine/nets/it014.jqn": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "external/pikafish-jieqi-old/src/PikaJieQi": "105ee76d3c3a2510c41eca161bfa7dc163f4591e9a063b5738424c79d52f93de",
+    "external/pikajieqi-enhanced/src/PikaJieQi": "51556640f5d5b3beee65c45cd96d1f39ba67e8c8a9ebca56f536684445975b94",
+    "external/pikafish-jieqi-wasm/src/PikaJieQi": "97ff874660c9f07b74e3757e70229db8852c05b612230e597e49452afc0edc97"
+  }
+}

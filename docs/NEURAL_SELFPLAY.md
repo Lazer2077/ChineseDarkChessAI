@@ -145,7 +145,7 @@ lazy allocation from an eager counterfactual; they are not a new optimization
 or playing-strength result.
 
 Iteration 2 generation/training has also completed: 288 games, 19,590 positions,
-four GPU epochs / 548 updates. Its two paired screens remain pending. Exact
+four GPU epochs / 548 updates. Exact
 curves and episode/checkpoint provenance are archived in
 `results/20261026-neural-rl-series-second-training.json`. New-trajectory selection
 losses are not comparable to iteration 1 as matched quality estimates.
@@ -153,11 +153,25 @@ losses are not comparable to iteration 1 as matched quality estimates.
 Iteration 2 is now fully closed:17W/6D/41L against its previous actor and
 0W/0D/64L against the native teacher, both technically clean;5,551moves/clocks
 were independently replayed. Evidence: `results/20261026-neural-rl-iteration002.json`.
-The frozen series has advanced to iteration3 generation without public model
+The frozen series has advanced to iteration3 without public model
 promotion. A separate [normalization-state diagnosis](NORMALIZATION_DRIFT.md)
 uses completed data; it does not alter that series.
 
 A [fixed-statistics RL control](NORMALIZATION_DRIFT.md) bitwise reproduces the
 original joint-update checkpoint in its ordinary-mode arm and tests a separate
-frozen-BN update against fresh warm-model/teacher layouts. It does not alter the
-three-iteration series, whose third generation continues.
+frozen-BN update against fresh warm-model/teacher layouts. That update also
+regressed; it does not alter the three-iteration series.
+
+Iteration3 generation/training completed288games /21,068positions and four
+GPU epochs /596updates. Epoch4 is selected on its existing selection split,
+network SHA256 `40d1fde029ea18180f06098baf1f55e367a226f1601cd6185c18eda8c31c388d`.
+Its fresh previous-actor screen is19W/13D/32L,39.84375%score, paired bootstrap95%
+[28.125%,51.5625%], all3,893moves and clocks clean. This gives no improvement
+evidence. The teacher screen is still live. Complete curves and provenance:
+`results/20261026-neural-rl-series-third-training.json`; previous-match report
+and audit: `results/20261026-neural-rl-iteration003-vs-previous{,-audit}.json`.
+
+The separate [2048-simulation search-effort control](HIGH_SEARCH_RL.md) is running
+from the original warm checkpoint, and a [teacher-static-value
+ablation](TEACHER_LEAF_ABLATION.md) is queued to diagnose the weak neural search.
+Neither changes the original series or promotes a research model.

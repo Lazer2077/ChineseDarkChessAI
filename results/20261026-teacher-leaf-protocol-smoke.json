@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "scope": "CPU UCI smoke with actual warm CNN and original static NNUE; no match or strength claim.",
+  "nodes": 8,
+  "observer_tokens": [
+    "b2b9R"
+  ],
+  "stdout": "id name CDCA residual policy/value information-set PUCT (research)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string batch deadline sha256 1705d40021eab28ca2c7c5b2536cfb09df65d81716572095fa1c93eca3e15eb6\nuciok\nreadyok\ninfo string {\"simulations\": 8, \"elapsed_ms\": 77.21817679703236, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 1.0}\nbestmove a9b9\n",
+  "exit_code": 0
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "upstream": "devinokeefe/jieqi",
+  "commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+  "license": "MIT",
+  "flags": [
+    "-std=c++20",
+    "-O3",
+    "-DNDEBUG",
+    "-march=native",
+    "-fPIC",
+    "-shared"
+  ],
+  "source_sha256": {
+    "research/nnue_observer_bridge.cpp": "532f2920961b154ad31b9906efd2288d69cc68088d4e0ef8dbd2f3e04acf10c9",
+    "scripts/build_nnue_observer.py": "8f1e7b32524052c00b63f6f7064c7af779bc662966285680f1502b52148760c7",
+    "external/devinokeefe-jieqi/engine/src/eval.h": "e4ed940f273a539c2ca65344db791fea550f289d026da15c68d288d0547057a5",
+    "external/devinokeefe-jieqi/engine/src/mem.h": "a5e3eaecc582c37d57fee5a23694c0bd66c1e4b0f9cc5a7a8a5aa3fcb924536d",
+    "external/devinokeefe-jieqi/engine/src/nnue.h": "ee01e6036a4829b01e229f4730d24043cc1106df68cf7f4e932831d501986761",
+    "external/devinokeefe-jieqi/engine/src/position.h": "042c78925fe7aa33ddb28155683d5225ea4049eb081081d1f9f6fa3270a04d96",
+    "external/devinokeefe-jieqi/engine/src/search.h": "f01eccae84614635f72f834664272dc9859af2d1a0e18100180fe9d9580cf5eb",
+    "external/devinokeefe-jieqi/engine/src/tables.h": "4d7130f29cf79e2157c00635d8fa44bc8a8b752992e18b091416a97a0fa2251e",
+    "external/devinokeefe-jieqi/engine/src/tt.h": "ba08062289b08aa8866fb44d684167163468e2aec2dce1cd98dd4ab8e82edbb3",
+    "external/devinokeefe-jieqi/engine/src/types.h": "bef3ef3e9c2db8949510d476cd835d302a87f434fdbc3ad8ebdbabed80d15132",
+    "external/devinokeefe-jieqi/engine/src/nnue.cpp": "b57999acaeb921fdc97f9efe571a676faf995dcad542eaef340bbe07c886f845",
+    "external/devinokeefe-jieqi/engine/src/position.cpp": "49475c6aa49d0ec1c0b10e810d271ce0df99b2b1aab29292f93635af25c43f3d",
+    "external/devinokeefe-jieqi/engine/src/tables.cpp": "34a4199cee6e1ab88c6d9f663c25e1f6212525e0d258315155cd821f026fee74"
+  },
+  "library_sha256": "1cd24dee22ef542069df34e6fac104aeb0a83882a5d540821d82c9eb8f485e48"
+}

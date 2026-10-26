@@ -36,3 +36,11 @@ set before promotion. Report results separately for each rule/clock configuratio
 Do not weaken an opponent, remove its network, silently patch its search, or
 substitute its GUI for its actual engine. Record build patches and hashes explicitly.
 No external challenge submissions or messages are authorized by this goal.
+
+## Confirmed scope so far
+
+Two fixed opponent versions meet their two-set criteria under the documented
+external referee/clock profiles; see [confirmed results](CONFIRMED_RESULTS.md).
+This is partial coverage, not completion. Direct improvement over the upstream
+jqe teacher remains unconfirmed. Inventory entries with missing weights,
+incompatible rules, unresolved licenses or technical failures stay unverified.

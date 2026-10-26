@@ -42,3 +42,10 @@ failures, under the stated 5+0.05 clock and independent referee profile. All
 moves and rounded actual clock charges were replay-audited. This single set
 does not reverse the failed teacher gate or establish all-engine superiority;
 independent set B and unchanged-teacher controls continue.
+
+The expanded model now passes both fixed confirmation sets against released
+AB-JChess v0.2d and the pinned Universe hard-search profile. This is version-
+specific opponent evidence, not actor promotion or learned superiority over the
+upstream teacher. Both AB teacher controls completed: common-layout learner
+minus teacher is +1.625 points with exploratory 95% interval [-3.125, +6.25].
+See docs/CONFIRMED_RESULTS.md and its linked acceptance/raw replay evidence.

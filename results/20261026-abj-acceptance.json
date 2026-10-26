@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "opponent": "AB-JChess-v0.2d",
+  "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
+  "plan_path": "results/abj-confirmation-plan.json",
+  "plan_sha256": "54ebcd4216aac284cc2a83cda5f0a2a45eff1930b0e8ba08ba31e307073deed3",
+  "clock": "5+0.05",
+  "candidate_binary": "external/devinokeefe-jieqi/engine/build/jqe",
+  "candidate_net": "runs/continual-series-01/seed-20261026/iter-001-model/best.jqn",
+  "baseline": "build/abj-v02d/source/src/AB-JChess",
+  "accepted": true,
+  "scope": "Statistical advantage over this pinned opponent and adapter under the documented external referee and clock. Both fixed sets pass separately, without technical failures, voids or ambiguous clock replays. This is not a universal rules/time-control claim, a general learned improvement over the teacher, or completion of the all-engine goal.",
+  "all_frozen_hashes_match_after_completion": true,
+  "unchanged_opponent_source": true,
+  "sets": [
+    {
+      "id": "a",
+      "games": 200,
+      "pairs": 100,
+      "wins_draws_losses": [
+        162,
+        7,
+        31
+      ],
+      "score": 0.8275,
+      "paired_bootstrap_95": [
+        0.78,
+        0.875
+      ],
+      "paired_hoeffding_lower_95": 0.6916898484259381,
+      "moves_replayed": 14201,
+      "result_path": "results/20261026-abj-confirmation-a.json",
+      "result_sha256": "09484dc60dee97916f9f747689010dd3efdfa176880c72fe9a350f1c2539551f",
+      "audit_path": "results/20261026-abj-confirmation-a-audit.json",
+      "audit_sha256": "6cd7f6b862d39e9eb2cfc2064c3ebc91f02cb4b911290c049d1b05cf7ec33583",
+      "raw_sha256": "a543f9769341e9b64fa5cec969c395f3df5ba3357d51a4d92b6279f27a678ed9"
+    },
+    {
+      "id": "b",
+      "games": 200,
+      "pairs": 100,
+      "wins_draws_losses": [
+        150,
+        2,
+        48
+      ],
+      "score": 0.755,
+      "paired_bootstrap_95": [
+        0.6975,
+        0.8125
+      ],
+      "paired_hoeffding_lower_95": 0.619189848425938,
+      "moves_replayed": 13567,
+      "result_path": "results/20261026-abj-confirmation-b.json",
+      "result_sha256": "f23c09e8c5e0eafd24c284d1cc401789e2e1200df1137503328face52e30b600",
+      "audit_path": "results/20261026-abj-confirmation-b-audit.json",
+      "audit_sha256": "92bcc295b947d5d177f41bd4499b4033f652c3d56b5d1a37d1e3c541dada86fa",
+      "raw_sha256": "598dbca1b02d04d8e127a43cc05edbcb72fb0e1b6e7b1c163c3be80d476398e4"
+    }
+  ],
+  "total_games": 400,
+  "distinct_deal_seeds": 200,
+  "acceptance_script_sha256": "8d0ce3470f342e4d89435ce92a43dc2f5c1cf124bd23fe5bc738eea2038b8783"
+}

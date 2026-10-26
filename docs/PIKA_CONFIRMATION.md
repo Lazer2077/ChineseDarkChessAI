@@ -32,3 +32,13 @@ and its layouts are excluded from confirmation. A clean 100-pair set must meet
 both paired bootstrap and Hoeffding lower bounds above 50%; any technical error
 or infrastructure void prevents acceptance. All fixed sets must finish, including
 negative outcomes. No opponent is marked defeated based on the launch or smoke.
+
+## Original classical variant completed both sets
+
+Set A:175W/1D/24L,87.75%, paired bootstrap95%[0.835,0.9175], clean, with all
+13,689 moves and actual clocks replay-audited. Set B:172W/2D/26L,86.5%, but
+one opponent time forfeit violates the frozen clean-run criterion. It is not
+marked defeated, and the flag is neither removed nor replaced by a replay win.
+The other fixed Pika-variant arms continue without retuning. Evidence:
+results/20261026-pika-old-confirmation-a.json, its replay audit, and
+results/20261026-pika-old-confirmation-b.json.

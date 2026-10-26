@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "opponent": "Yuan-Bai/jieqi-lab pure root-consistent ISMCTS with original Cython rule/legal acceleration",
+  "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+  "baseline_mode": "Heuristic rollout, 60-ply cutoff, default exploration1.4/evalscale10; no neural checkpoint ships upstream, so no claim against its neural mode.",
+  "candidate": "Unpromoted expanded seed20261026 iteration1 net and unchanged attributed jqe search",
+  "candidate_binary": "external/devinokeefe-jieqi/engine/build/jqe",
+  "candidate_net": "models/experimental/expanded-seed20261026-it1.jqn",
+  "required_unused_baseline_net": "external/devinokeefe-jieqi/engine/nets/it014.jqn",
+  "baseline": "adapters/yuan_uci.sh",
+  "time_control": "5+0.05",
+  "threads": 1,
+  "concurrency": 2,
+  "resource_disclosure": "Both single-threaded. Candidate uses64MB hash; Python opponent ignores Hash option and retains original structures. Full observer reconstruction/search wall time charged.",
+  "adapter": "Strict observer suffixes; source remains unchanged. Imported search adds only an iteration-boundary deadline. With no deadline, fixed-iteration actions/root statistics match original. At least one real simulation completes; no random timeout fallback. Incomplete iterations are never backed up.",
+  "time_manager": "Use bank/25+0.75*increment capped at bank/4, minus20ms overhead; deadline checked between original simulations. A long individual simulation can overrun its allowance; the full game bank is charged.",
+  "rules": "Original tiantian v5 rule state preserved in search, including 6-round check/chase bans, third repetition draw and80 no-capture plies. External jqe referee adjudicates played game. Sampled legal sets agree but full profile equivalence is not claimed.",
+  "native_build": {
+    "schema": 1,
+    "repository": "https://github.com/Yuan-Bai/jieqi-lab",
+    "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+    "license": "MIT; original LICENSE copied",
+    "scope": "Original optional Cython rules and legal-move acceleration; original Python search and all source files unchanged. Does not supply a neural model.",
+    "python_version": "3.11.16",
+    "binary_sha256": {
+      "_jieqi_legal.cpython-311-x86_64-linux-gnu.so": "1401b316a901b02a50a31d7592bb3f675101964230dee5b3e7c4377dcf67c4af",
+      "_jieqi_rules.cpython-311-x86_64-linux-gnu.so": "22dac537f95f1b2e301b132b33dfca1391597b3ade1ea8052bcf9fa3d232619a"
+    },
+    "source_sha256": {
+      "jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+      "ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+      "native/experimental_encoder.pyx": "bfe3391e3b92990a7da6c476a97cd06eb1e4f95de6f24a2adad601cc2cc4878e",
+      "native/experimental_repetition.pyx": "803e0f000f290228e32b9757f2b2ffe68301f20d468897f769b7b32cddae1b96",
+      "native/experimental_selector.pyx": "1c965f55da2d546da380de49acbe78eac485aadb157b33915d0d1a89e7f586b1",
+      "native/jieqi_legal.pyx": "a83261a6052b79ce5e4a774d43a591338ad1557046b26673efed98c5825b538d",
+      "native/jieqi_rules.pyx": "e64065d6d8ec7470db32e0eebd829c097a7fcd2669a723577d018da81f30f278",
+      "native/jieqi_search.pyx": "34e798edc880670ad5db910943448699176668b8bb278ef3200f84a543f66583"
+    }
+  },
+  "sets": [
+    {
+      "id": "a",
+      "games": 200,
+      "seed": 8120001
+    },
+    {
+      "id": "b",
+      "games": 200,
+      "seed": 8130001
+    }
+  ],
+  "development": "32 games at distinct seed8110001, 32W/0D/0L without technical errors; excluded from confirmation.",
+  "early_stopping": false,
+  "retune_between_sets": false,
+  "gate": "Each complete100-pair set, no technical failures/voids, paired bootstrap and Hoeffding95% lower>.5. Limited to pure-search adapter profile; no neural-mode or all-engine claim.",
+  "sha256": {
+    "adapters/yuan_observer.py": "44e0636f4547c0bef5499ae9e780580f071e0fdf95263e1e242ca6d58fecb887",
+    "adapters/yuan_uci.py": "802132ad3a664b1edd940081d84f2509d46ed97e12dfb2e5c4f51bbc7ea2ad69",
+    "adapters/yuan_uci.sh": "fd641e94583fa97cee6631182e37d14cac7ff6840af2f7b44f008fa03f7e92ac",
+    "build/yuan-native/source/_jieqi_legal.cpython-311-x86_64-linux-gnu.so": "1401b316a901b02a50a31d7592bb3f675101964230dee5b3e7c4377dcf67c4af",
+    "build/yuan-native/source/_jieqi_rules.cpython-311-x86_64-linux-gnu.so": "22dac537f95f1b2e301b132b33dfca1391597b3ade1ea8052bcf9fa3d232619a",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "external/devinokeefe-jieqi/engine/nets/it014.jqn": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "external/yuan-bai-jieqi-lab/ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+    "external/yuan-bai-jieqi-lab/jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+    "models/experimental/expanded-seed20261026-it1.jqn": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "games": 8,
+  "max_plies": 120,
+  "seed": 20261026,
+  "positions_checked": 960,
+  "private_captures": 27,
+  "unknown_capture_events": 27,
+  "placeholder_invariance_checks": 96,
+  "private_suffix_faults_refused": 54,
+  "public_board_and_actor_inventory_match": true,
+  "public_inventory_has_no_private_capture_deductions": true,
+  "rules_backend": "python",
+  "legal_backend": "python",
+  "legal_set_differences": [],
+  "observer_sha256": "44e0636f4547c0bef5499ae9e780580f071e0fdf95263e1e242ca6d58fecb887",
+  "scope": "Observer-only cross-check on sampled games. Legal differences remain explicit; no full rule compatibility, timed search, neural-model availability or strength claim."
+}

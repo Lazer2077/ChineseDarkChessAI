@@ -1,6 +1,6 @@
 # Research progress — 2026-10-26
 
-Active goal is in GOAL.md. No baseline is marked defeated.
+Active goal is in GOAL.md. Two pinned versions now meet both confirmation gates; see [current confirmed results](CONFIRMED_RESULTS.md). All earlier pilot sections below are historical snapshots. No general learned gain or all-engine completion is established.
 
 ## Pilot results
 The integer-feature training failure was fixed with explicit float32 tensors;

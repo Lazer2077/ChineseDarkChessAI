@@ -82,3 +82,32 @@ its own data structures; no equal hash-memory claim is made. Its internal
 repetition policy differs from the external native referee, as documented in
 the original adapter. Recipe: `results/universe-clock-confirmation-plan.json`.
 Planned sets and partial scores never mark an opponent defeated.
+
+## Completed confirmations and new information-set adapter
+
+AB-JChess v0.2d and the pinned Universe hard-search profile now pass both fixed
+confirmation sets, including full move/clock replay and post-campaign frozen
+hashes. Acceptance is version/profile-specific; details and teacher attribution
+are in [CONFIRMED_RESULTS.md](CONFIRMED_RESULTS.md). No general learned gain
+or all-engine coverage is inferred. The classical Pika original fails its
+two-set clean-run criterion because B includes an opponent time forfeit.
+
+The independent Yuan-Bai root-consistent ISMCTS now has an observer-only clock
+adapter with original optional native acceleration. Both backends passed
+960-position checks, and native-backed development completed32/0/0. Frozen
+pure-search confirmations are running. No pretrained weights ship upstream,
+so its neural mode remains unavailable/unverified. Interface, algorithm and
+rule-profile limits are in [YUAN_NATIVE.md](YUAN_NATIVE.md).
+
+The Pika/ABJ-NNUE hybrid has multiple process-exit voids in its frozen campaign.
+Fresh-process replays of three failed observation prefixes, including recovered
+original clock commands, did not reproduce the exits. Earlier search/transposition
+history and host scheduling were not reproduced. Cause remains unresolved; all
+voids continue to invalidate clean confirmation. Diagnostic evidence:
+results/20261026-hefeng-fault-replay.json. No opponent source is patched to
+turn this into a pass.
+
+Pinned archive catalog IDs match their checkout directories: `pika-hefeng-archive`,
+`pika-jieqi2022-archive`, and `pika-thanh-archive`. They can be verified/fetched
+through `scripts/fetch_sources.py` without overwriting existing sources. Their
+GitHub full names remain explicit metadata; no lineage deduplication is implied.

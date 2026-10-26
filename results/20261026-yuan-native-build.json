@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/Yuan-Bai/jieqi-lab",
+  "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+  "license": "MIT; original LICENSE copied",
+  "scope": "Original optional Cython rules and legal-move acceleration; original Python search and all source files unchanged. Does not supply a neural model.",
+  "python_version": "3.11.16",
+  "binary_sha256": {
+    "_jieqi_legal.cpython-311-x86_64-linux-gnu.so": "1401b316a901b02a50a31d7592bb3f675101964230dee5b3e7c4377dcf67c4af",
+    "_jieqi_rules.cpython-311-x86_64-linux-gnu.so": "22dac537f95f1b2e301b132b33dfca1391597b3ade1ea8052bcf9fa3d232619a"
+  },
+  "source_sha256": {
+    "jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+    "ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+    "native/experimental_encoder.pyx": "bfe3391e3b92990a7da6c476a97cd06eb1e4f95de6f24a2adad601cc2cc4878e",
+    "native/experimental_repetition.pyx": "803e0f000f290228e32b9757f2b2ffe68301f20d468897f769b7b32cddae1b96",
+    "native/experimental_selector.pyx": "1c965f55da2d546da380de49acbe78eac485aadb157b33915d0d1a89e7f586b1",
+    "native/jieqi_legal.pyx": "a83261a6052b79ce5e4a774d43a591338ad1557046b26673efed98c5825b538d",
+    "native/jieqi_rules.pyx": "e64065d6d8ec7470db32e0eebd829c097a7fcd2669a723577d018da81f30f278",
+    "native/jieqi_search.pyx": "34e798edc880670ad5db910943448699176668b8bb278ef3200f84a543f66583"
+  }
+}

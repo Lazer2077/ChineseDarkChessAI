@@ -1,0 +1,286 @@
+{
+  "schema": 1,
+  "binary_sha256": "8b385c163daf7505a252d779dc921b8e823f751c782b91ddee1787b3d58018c7",
+  "net_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+  "input_void_sha256": "ba41fd250ffee3472e3ce122452304afc123550105e603b03afcbbb8f2a59844",
+  "scope": "Independent diagnostic replay using the original failed go command, matched uniquely by prior measured moves. Search history/transposition tables and operating-system scheduling are not reproduced. Frozen match outcomes remain unchanged.",
+  "cases": [
+    {
+      "pair": 19,
+      "seed": "7860042357574727939",
+      "viewer": "black",
+      "verified_prefix_plies": 15,
+      "observation_tokens": [
+        "a3a4P",
+        "i6i5n",
+        "i3i4A",
+        "h7h0pB",
+        "i0h0P",
+        "b7b0bN",
+        "c3c4B",
+        "i5g4",
+        "g3g4A",
+        "a6a5p",
+        "c4e6",
+        "a5a4",
+        "e3e4C",
+        "d9e8a",
+        "h2h8R"
+      ],
+      "go_command": "wtime 2878 btime 4441 winc 50 binc 50",
+      "attempts": [
+        {
+          "go_command": "wtime 2878 btime 4441 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove b9c7",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 2878 btime 4441 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove b9c7",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 2878 btime 4441 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove b9c7",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "pair": 21,
+      "seed": "6457255738833983397",
+      "viewer": "red",
+      "verified_prefix_plies": 38,
+      "observation_tokens": [
+        "h2h9Pp",
+        "a6a5c",
+        "c0a2B",
+        "i6i5a",
+        "h9i9p",
+        "g6g5c",
+        "b2h2P",
+        "g5g0",
+        "f0e1A",
+        "g0i0",
+        "h0i2P",
+        "g9e7r",
+        "a0a1C",
+        "e7g7",
+        "a3a4A",
+        "g7g3",
+        "b0c2N",
+        "g3g0",
+        "e1f0",
+        "a5e5",
+        "d0e1P",
+        "c6c5b",
+        "c3c4R",
+        "c5e3",
+        "i3i4B",
+        "e3c1",
+        "c2e3",
+        "c1e3",
+        "e1e2",
+        "e3c1",
+        "e0d0",
+        "g0g4",
+        "f0g1",
+        "g4i4",
+        "g1f2",
+        "i4c4",
+        "a2c4",
+        "a9a4a"
+      ],
+      "go_command": "wtime 3010 btime 2509 winc 50 binc 50",
+      "attempts": [
+        {
+          "go_command": "wtime 3010 btime 2509 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove c4e6 ponder i5h4",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 3010 btime 2509 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove c4e6 ponder i5h4",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 3010 btime 2509 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove c4e6 ponder i5h4",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "pair": 35,
+      "seed": "4722274859645731821",
+      "viewer": "red",
+      "verified_prefix_plies": 10,
+      "observation_tokens": [
+        "a3a4R",
+        "i6i5p",
+        "a4e4",
+        "g9e7a",
+        "e4e6n",
+        "c6c5b",
+        "e6g6a",
+        "c5e3",
+        "h2h9Ar",
+        "b9c7b"
+      ],
+      "go_command": "wtime 4188 btime 4009 winc 50 binc 50",
+      "attempts": [
+        {
+          "go_command": "wtime 4188 btime 4009 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove h9g8 ponder c7e5",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 4188 btime 4009 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove h9g8 ponder c7e5",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 4188 btime 4009 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove h9g8 ponder c7e5",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "pair": 45,
+      "seed": "5169527644640114624",
+      "viewer": "black",
+      "verified_prefix_plies": 45,
+      "observation_tokens": [
+        "a3a4P",
+        "i6i5r",
+        "h0g2A",
+        "i5c5",
+        "b0c2C",
+        "c5c3R",
+        "f0e1N",
+        "c3e3N",
+        "c2c9",
+        "d9e8p",
+        "c9a9",
+        "b9d8p",
+        "g3g4A",
+        "e3b3",
+        "b2b7P",
+        "e8e7",
+        "e1f3",
+        "h7b7p",
+        "h2h8B",
+        "a6a5c",
+        "a4a5",
+        "b3e3",
+        "c0e2C",
+        "g6g5a",
+        "f3g5",
+        "f9e8p",
+        "g5f7",
+        "e9d9",
+        "a9g9",
+        "e6e5n",
+        "g9i9",
+        "h9f8p",
+        "f7e5",
+        "e3e5",
+        "g2f3",
+        "e5i5",
+        "e2i2",
+        "c6c5a",
+        "i2i5",
+        "e7e6",
+        "a5b5",
+        "c5b4",
+        "i3i4P",
+        "d9e9",
+        "g0e2P"
+      ],
+      "go_command": "wtime 1515 btime 1935 winc 50 binc 50",
+      "attempts": [
+        {
+          "go_command": "wtime 1515 btime 1935 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove e8e7 ponder i9i8",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 1515 btime 1935 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove e8e7 ponder i9i8",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 1515 btime 1935 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove e8e7 ponder i9i8",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "pair": 47,
+      "seed": "8971883319076682898",
+      "viewer": "red",
+      "verified_prefix_plies": 6,
+      "observation_tokens": [
+        "a3a4P",
+        "i6i5c",
+        "i0i2P",
+        "h7h0b",
+        "e3e4B",
+        "i5e5"
+      ],
+      "go_command": "wtime 4206 btime 4295 winc 50 binc 50",
+      "attempts": [
+        {
+          "go_command": "wtime 4206 btime 4295 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove e4g6 ponder h0f2",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 4206 btime 4295 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove e4g6 ponder h0f2",
+          "stderr": ""
+        },
+        {
+          "go_command": "wtime 4206 btime 4295 winc 50 binc 50",
+          "returncode": 0,
+          "failure": null,
+          "bestmove": "bestmove e4g6 ponder h0f2",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "timing_input_sha256": "31525e4cec6aad5fd33515baeb8183b261202deea3f275b44aecf011b508afee",
+  "diagnostic_source": "scripts/replay_engine_failure.py",
+  "interpretation": "Nine fresh-process repetitions of three failed prefixes returned moves without reproducing the exits, including recovered original go commands. Original game transposition/search history and scheduling were not reproduced. Cause unresolved; match voids remain disqualifying."
+}

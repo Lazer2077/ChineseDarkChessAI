@@ -100,3 +100,13 @@ completed: 24W/1D/39L over 64 games / 32 pairs, score 38.28125%, paired bootstra
 support a benefit from equal-game loss weighting. The global-phase and
 within-game phase arms continue unchanged; no retuning follows this outcome.
 Evidence: results/20261026-replay-game-development.json.
+
+Both remaining fixed development arms completed without technical failures or
+voids. Global-phase weighting scored 30W/3D/31L (49.21875%; paired bootstrap
+95% [0.375, 0.609375]); within-game phase weighting scored 28W/3D/33L
+(46.09375%; [0.359375, 0.5625]). All three weighted arms failed to establish
+a benefit over the position control. No weighted arm is promoted. Evidence:
+results/20261026-replay-phase-development.json and
+results/20261026-replay-game-phase-development.json. The fully public transition
+remains a research property; this particular reweighting does not yet exploit it
+with demonstrated strength gains.

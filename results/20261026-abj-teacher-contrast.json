@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "scope": "Exploratory opponent-specific common-layout contrast, not direct head-to-head strength or a general learned-improvement/causal claim. Sequential arm time order and shared-host scheduling are not randomized. Checkpoint and other model selection are not corrected by these intervals.",
+  "method": "Subtract control score from learner score after averaging each color-swapped layout pair; bootstrap whole matched layouts independently within each fixed set, preserving stratum size. Difference range [-1,1], so conservative Hoeffding radius has range width 2.",
+  "bootstrap_seed": 20261026,
+  "bootstrap_samples": 10000,
+  "sets": [
+    {
+      "learner_report": "results/20261026-abj-confirmation-a.json",
+      "control_report": "results/20261026-abj-teacher-a.json",
+      "learner_raw_sha256": "a543f9769341e9b64fa5cec969c395f3df5ba3357d51a4d92b6279f27a678ed9",
+      "control_raw_sha256": "6a1addf2665a639bc978cfcc18c34b1061e851d983fd7d10915604f51a13e6d1",
+      "layout_pairs": 100,
+      "score_difference": 0.0725,
+      "stratified_layout_bootstrap_95": [
+        0.01,
+        0.1375
+      ],
+      "range_two_hoeffding_95": [
+        -0.1991203031481239,
+        0.3441203031481239
+      ]
+    },
+    {
+      "learner_report": "results/20261026-abj-confirmation-b.json",
+      "control_report": "results/20261026-abj-teacher-b.json",
+      "learner_raw_sha256": "598dbca1b02d04d8e127a43cc05edbcb72fb0e1b6e7b1c163c3be80d476398e4",
+      "control_raw_sha256": "a02b6da9466b6ac30a7f7e3dd7a85773f605e97c30b542cae0beda388afee9f8",
+      "layout_pairs": 100,
+      "score_difference": -0.04,
+      "stratified_layout_bootstrap_95": [
+        -0.11,
+        0.03
+      ],
+      "range_two_hoeffding_95": [
+        -0.3116203031481239,
+        0.2316203031481239
+      ]
+    }
+  ],
+  "combined": {
+    "layout_pairs": 200,
+    "score_difference": 0.01625,
+    "stratified_layout_bootstrap_95": [
+      -0.03125,
+      0.0625
+    ],
+    "range_two_hoeffding_95": [
+      -0.17581455826398418,
+      0.20831455826398415
+    ]
+  },
+  "promotion_supported": false,
+  "script_sha256": "c08b997639999c5d013ff10a68342ea079309f9aa7d5e9e2aaf8a1aaa62684a8"
+}

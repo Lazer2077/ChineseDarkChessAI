@@ -54,8 +54,18 @@
       "commit": "e00b667c8b30f9c2d7333122e1dc8a013654715d",
       "kind": "independent TS engine",
       "license": "MIT",
-      "status": "43 observer checks passed; 16-game development screen 16 candidate wins, no technical failures; no superiority claim",
-      "defeated": false
+      "status": "Two fixed200-game sets passed separately with no technical failures/voids; all moves and actual clocks replay-audited; post-campaign source/artifact hashes match. Accepted only for pinned version/referee/clock profile; no general learned gain.",
+      "defeated": true,
+      "defeated_scope": {
+        "acceptance_evidence": "results/20261026-universe-acceptance.json",
+        "commit": "e00b667c8b30f9c2d7333122e1dc8a013654715d",
+        "clock": "5+0.05",
+        "profile": "Pinned jqe external referee and recorded observer adapter; version-specific only",
+        "sets": 2,
+        "games": 400,
+        "all_engine_goal_complete": false,
+        "learned_improvement_over_teacher_established": false
+      }
     },
     {
       "id": "pikajieqi-enhanced",
@@ -71,7 +81,7 @@
       "url": "https://github.com/official-pikafish/Pikafish/tree/jieqi_old",
       "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc",
       "kind": "original engine",
-      "status": "16-game development screen 10 candidate wins/6 losses; no technical failures; no superiority claim",
+      "status": "A completed175W/1D/24L clean and replay-audited; B172W/2D/26L includes one opponent time forfeit. Frozen two-set clean-run criterion not met; not defeated.",
       "defeated": false,
       "license": "GPL-3.0",
       "repository_url": "https://github.com/official-pikafish/Pikafish"
@@ -124,11 +134,21 @@
       "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
       "kind": "released NNUE engine",
       "license": "GPL-3.0 code; network release used locally without redistribution",
-      "status": "Expanded learner held-out A 162W/7D/31L and B 150W/2D/48L; both 200-game sets pass version/profile-specific single-match gate, all moves and actual clocks replay-audited cleanly. Teacher A 149W/4D/47L; teacher B still running. Entire frozen four-arm comparison incomplete; no general trained-improvement claim.",
-      "defeated": false,
+      "status": "Two fixed200-game sets passed separately with no technical failures/voids; all moves and actual clocks replay-audited; post-campaign source/artifact hashes match. Accepted only for pinned version/referee/clock profile; no general learned gain.",
+      "defeated": true,
       "network_url": "https://github.com/lxsgx23/AB-JChess/releases/download/v0.2d/0.2d_bmi2.zip",
       "archive_sha256": "01d3d539b1d3c50371132401d70c441364ae1c2e9d6e4121f83143f2fe1b3a4e",
-      "network_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761"
+      "network_sha256": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+      "defeated_scope": {
+        "acceptance_evidence": "results/20261026-abj-acceptance.json",
+        "commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
+        "clock": "5+0.05",
+        "profile": "Pinned jqe external referee and recorded observer adapter; version-specific only",
+        "sets": 2,
+        "games": 400,
+        "all_engine_goal_complete": false,
+        "learned_improvement_over_teacher_established": false
+      }
     },
     {
       "id": "yuan-bai-jieqi-lab",
@@ -137,7 +157,7 @@
       "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
       "kind": "independent Python information-set search and neural selfplay",
       "license": "MIT",
-      "status": "original pure-search opening probe passed at 32 simulations; rules v5 long-check/chase and repetition differ; no neural weights distributed; fair adapter pending",
+      "status": "Pinned MIT pure root-consistent ISMCTS now observer/clock-adapted with original Cython rule/legal acceleration;960-position observer checks pass in both backends;32-game development screen32W/0D/0L clean. Two frozen200-game pure-search confirmations running. Upstream ships no pretrained neural model; neural mode remains unverified.",
       "defeated": false
     },
     {
@@ -281,103 +301,114 @@
       "defeated": false
     },
     {
-      "id": "lichlzh/pikafish-jieqi",
+      "id": "lichlzh-pikafish-jieqi",
       "url": "https://github.com/lichlzh/pikafish-jieqi",
       "commit": null,
       "kind": "repository lead; engine independence unverified",
       "license": "unverified",
       "status": "new Pika/archive-focused discovery lead; source, rule profile, license, model availability and independent lineage unverified",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "lichlzh/pikafish-jieqi"
     },
     {
-      "id": "lxsgx23/Jieqi-Moonlink",
+      "id": "lxsgx23-Jieqi-Moonlink",
       "url": "https://github.com/lxsgx23/Jieqi-Moonlink",
       "commit": null,
       "kind": "repository lead; engine independence unverified",
       "license": "unverified",
       "status": "new Pika/archive-focused discovery lead; source, rule profile, license, model availability and independent lineage unverified",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "lxsgx23/Jieqi-Moonlink"
     },
     {
-      "id": "lxsgx23/Jieqi-Match-Tools",
+      "id": "lxsgx23-Jieqi-Match-Tools",
       "url": "https://github.com/lxsgx23/Jieqi-Match-Tools",
       "commit": null,
       "kind": "repository lead; engine independence unverified",
       "license": "unverified",
       "status": "new Pika/archive-focused discovery lead; source, rule profile, license, model availability and independent lineage unverified",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "lxsgx23/Jieqi-Match-Tools"
     },
     {
-      "id": "hefengfan0615/pikafish-jieqi",
+      "id": "pika-hefeng-archive",
       "url": "https://github.com/hefengfan0615/pikafish-jieqi",
       "commit": "88bfb82c3063f69e8cc270cad08f24930da0874f",
       "kind": "repository lead; engine independence unverified",
       "license": "GPL-3.0 source (Copying.txt)",
-      "status": "Distinct Pika-search/ABJ-V11 NNUE hybrid built with own declared default network; two actual-clock smoke games/57 moves replay-audited cleanly; 32-game development comparison running; not deduplicated with AB or classical Pika.",
-      "defeated": false
+      "status": "Distinct Pika-search/ABJ-V11 NNUE hybrid built with own declared official default net; development30W/0D/2L. Frozen confirmation has opponent process-exit voids, so cannot pass clean-run criterion. Fresh-process failure-prefix replays did not reproduce; cause unresolved; not defeated.",
+      "defeated": false,
+      "repository_full_name": "hefengfan0615/pikafish-jieqi"
     },
     {
-      "id": "swim2sun/Pikafish-jieqi2022",
+      "id": "pika-jieqi2022-archive",
       "url": "https://github.com/swim2sun/Pikafish-jieqi2022",
       "commit": "db8ad4fbdca27ed22b04345a7f8fe5d5f812df95",
       "kind": "repository lead; engine independence unverified",
       "license": "GPL-3.0 source; distinct NNUE terms recorded",
       "status": "Real hidden-piece reveal/chance source present; GPL code plus separate restrictive NNUE license; required pikafish.nnue not bundled, exact official weight/version unresolved. No strength claim.",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "swim2sun/Pikafish-jieqi2022"
     },
     {
-      "id": "thanh25896/PikafishJieqi",
+      "id": "pika-thanh-archive",
       "url": "https://github.com/thanh25896/PikafishJieqi",
       "commit": "d0c87911d8eb4a3a997bba074d9e72c77d8180a8",
       "kind": "repository lead; engine independence unverified",
       "license": "GPL-3.0 source (Copying.txt)",
       "status": "Default checkout appears ordinary Xiangqi: no hidden-piece/reveal implementation found in src; branch/repository name alone is not Jieqi compatibility. Branch/history audit remains open.",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "thanh25896/PikafishJieqi"
     },
     {
-      "id": "KageOutlook/Jieqi-Match-Tools",
+      "id": "KageOutlook-Jieqi-Match-Tools",
       "url": "https://github.com/KageOutlook/Jieqi-Match-Tools",
       "commit": null,
       "kind": "repository lead; engine independence unverified",
       "license": "unverified",
       "status": "new Pika/archive-focused discovery lead; source, rule profile, license, model availability and independent lineage unverified",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "KageOutlook/Jieqi-Match-Tools"
     },
     {
-      "id": "mengnanhuangshu/jieqi-copilot",
+      "id": "mengnanhuangshu-jieqi-copilot",
       "url": "https://github.com/mengnanhuangshu/jieqi-copilot",
       "commit": null,
       "kind": "repository lead; engine independence unverified",
       "license": "unverified",
       "status": "new Pika/archive-focused discovery lead; source, rule profile, license, model availability and independent lineage unverified",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "mengnanhuangshu/jieqi-copilot"
     },
     {
-      "id": "nguyen05566/flipchess",
+      "id": "nguyen05566-flipchess",
       "url": "https://github.com/nguyen05566/flipchess",
       "commit": null,
       "kind": "Pika-related repository lead; engine versus wrapper unverified",
       "license": "unverified",
       "status": "discovered via PikaJieQi repository search; pinned source, license, rule profile, independent lineage and model availability audit pending",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "nguyen05566/flipchess"
     },
     {
-      "id": "tgrnf09/AB-JChess-and-pikajieqi",
+      "id": "tgrnf09-AB-JChess-and-pikajieqi",
       "url": "https://github.com/tgrnf09/AB-JChess-and-pikajieqi",
       "commit": null,
       "kind": "Pika-related repository lead; engine versus wrapper unverified",
       "license": "unverified",
       "status": "discovered via PikaJieQi repository search; pinned source, license, rule profile, independent lineage and model availability audit pending",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "tgrnf09/AB-JChess-and-pikajieqi"
     },
     {
-      "id": "nguyen05566/ck",
+      "id": "nguyen05566-ck",
       "url": "https://github.com/nguyen05566/ck",
       "commit": null,
       "kind": "Pika-related repository lead; engine versus wrapper unverified",
       "license": "unverified",
       "status": "discovered via PikaJieQi repository search; pinned source, license, rule profile, independent lineage and model availability audit pending",
-      "defeated": false
+      "defeated": false,
+      "repository_full_name": "nguyen05566/ck"
     }
   ]
 }

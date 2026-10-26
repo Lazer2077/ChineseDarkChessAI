@@ -88,3 +88,22 @@ specified version/profile gates. The final unchanged-teacher set is still
 running; the entire four-arm experiment is incomplete, and no general learned
 improvement is established. Keep defeated=false until campaign audit concludes.
 Evidence: results/20261026-abj-confirmation-b.json and its replay audit.
+
+## Completed four-arm campaign and attribution
+
+The final teacher set completed 157W/4D/39L (79.5%; paired bootstrap 95%
+[0.74, 0.8475]), without technical failures or voids. All 13,355 moves, terminal
+outcomes and actual clock charges passed replay, with no rounding ambiguity.
+All four arms are now complete. Both learner sets pass separately, and the
+version-specific acceptance is recorded in results/20261026-abj-acceptance.json.
+AB-JChess-v0.2d is marked defeated only within this fixed profile; the main/latest
+AB entry remains unverified.
+
+The teacher scored 75.5%/79.5% versus the learner 82.75%/75.5%. The common-layout
+learner-minus-teacher contrast is +7.25 points in A and -4.00 in B. Its combined
++1.625 points has exploratory stratified layout-bootstrap 95% [-3.125, +6.25]
+points and conservative range-two Hoeffding [-17.5815, +20.8315] points. This is
+not a confirmed learned gain or a direct teacher head-to-head victory. Sequential
+arm order and host scheduling are not randomized. Checkpoint/model selection is
+not corrected by those exploratory intervals. Full contrast recipe and raw input
+hashes: results/20261026-abj-teacher-contrast.json.

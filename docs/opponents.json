@@ -18,8 +18,15 @@
       "commit": "3de6c17ae6dafa035b5eea5ec7d6b7f39118aab6",
       "kind": "engine",
       "license": "GPL-3.0",
-      "status": "strict full-history protocol verified; 16-game development screen 16 candidate wins, no technical failures; no superiority claim",
-      "defeated": false
+      "status": "Original GPL source unchanged. Actual10+0.1 native-public-root/timed compatibility profile completed smoke2/0/0 and development32/0/0, all1397moves/clocks cleanly replayed. Two fixed200-game confirmations pending/running; no confirmed superiority.",
+      "defeated": false,
+      "clock_campaign": {
+        "plan": "results/musesfish-clock-campaign-plan.json",
+        "documentation": "docs/MUSESFISH_CLOCK.md",
+        "profile": "musesfish-native-public-root-timed-v1 plus game-clock conversion",
+        "confirmed": false,
+        "limitations": "Root legality mask, interrupted-iteration/static fallback and depth1..7 differ from original UI invocation. Fixed table ignoresHash/Threads. Do not infer all-configuration defeat."
+      }
     },
     {
       "id": "pikafish-jieqi-wasm",

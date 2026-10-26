@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "scope": "Actual-clock Musesfish native-public-root/timed compatibility profile only. No all-project, unchanged-original-search or universal70% claim.",
+  "out": "runs/musesfish-clock-campaign-01",
+  "opponent_commit": "3de6c17ae6dafa035b5eea5ec7d6b7f39118aab6",
+  "candidate": "external/devinokeefe-jieqi/engine/build/jqe",
+  "candidate_net": "models/experimental/expanded-seed20261026-it1.jqn",
+  "clock": "10+0.1",
+  "threads_each": 1,
+  "concurrency": 2,
+  "hash_mb_candidate": 64,
+  "baseline_hash_threads_options": "Ignored; single-thread Python search with fixed table.",
+  "baseline_profile": "Unchanged pinned jqe musesfish-native-public-root-timed-v1 worker, max-depth7, Linux timer interrupted iterations discarded, static legal fallback if no iteration completes, inherited heuristic exclusions retained. Strict complete observer history. GPL original source unchanged.",
+  "clock_translation": "bank/25 + .75 increment, capped bank/4 and worker limit60s; original shim subtracts30ms preparation reserve; all observer/proxy/search overhead charged by external actual game clock, zero timing grace.",
+  "coverage_limits": "Native root legality masking is an explicit compatibility modification; sub-node search/rule differences remain. Record completed-depth distribution before characterizing this as a strong baseline.",
+  "matches": [
+    {
+      "id": "smoke",
+      "games": 2,
+      "seed": 8510001,
+      "stage": "development"
+    },
+    {
+      "id": "development",
+      "games": 32,
+      "seed": 8520001,
+      "stage": "development"
+    },
+    {
+      "id": "confirmation-a",
+      "games": 200,
+      "seed": 8530001,
+      "stage": "confirmation"
+    },
+    {
+      "id": "confirmation-b",
+      "games": 200,
+      "seed": 8540001,
+      "stage": "confirmation"
+    }
+  ],
+  "continuation_gate": "Stop on any technical/void/incomplete or ambiguous-clock audit. Continue beyond development only with score>.5. Both confirmation sets remain required; no favorable subset selection.",
+  "sha256": {
+    "adapters/musesfish_clock.py": "5501ba58301d73a8c7d295ebc995077765f3be9a505b665a49525fcc594bb4d5",
+    "adapters/musesfish_clock.sh": "5712415bc9f8b7b4c9afe92f5b58b82521a5f2a5519753ede2fb91579803aa38",
+    "scripts/run_musesfish_campaign.py": "704d4a9c3ad2262165195d48d46f660b3af7f5bbcadc8c18f9c71ec7cbae5795",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/audit_native_games.py": "bbab817dcd47d51b50e741bcff8b5439a4996254ebe78f67682ba2b713d9cff7",
+    "scripts/archive_native_results.py": "6a334572d151817d5455dd255d94f8364b7393ec1682a4bdac135946c5523375",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "models/experimental/expanded-seed20261026-it1.jqn": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833",
+    "external/devinokeefe-jieqi/adapters/musesfish_uci/shim.py": "2cf8aa0b36cf825dac22790e5301899f76cde62d625602e1171dc28cfc494e23",
+    "external/devinokeefe-jieqi/build/actors/musesfish-timed-v1.pyz": "1d221456132552ba0db3f2b887fb0403f72ed6d0918840829ff05d104728169b",
+    "external/devinokeefe-jieqi/build/release/lib/libjieqi_rules.so": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+    "external/musesfish/musesfish_pvs_20210528_fixed.py": "2222aeb814d3190a23aceeba27fac270ec936ab8f4973d0d001316b34902c63f",
+    "external/musesfish/board/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "external/musesfish/board/common.py": "8d8c323ea8676ba9e579fa8d4393b1de494a60b332f48e8fec710dd19ff38f1d",
+    "external/musesfish/board/board.py": "1e890187d3c09ae84f47b21ce0c81b7feb9b783dd998e249870054b6b0e0ef87",
+    "external/musesfish/board/common_20210528_fixed.py": "3774d3bf53c3040c8c715f2de91eeb39ba9cd4657509dc89ee8f3ae099619248",
+    "external/musesfish/board/library.py": "75ccc3b536101c2e830e30815da187d2dae649b97134a080d7ca82ea58610ffc"
+  }
+}

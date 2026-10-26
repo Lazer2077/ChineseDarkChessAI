@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Inherited upstream lazy_chance_allocation configuration; no new algorithm. One initial fully hidden root, three alternating-order repeats, 1024 completed simulations per variant; no playing-strength or broad phase claim.",
+  "seed": 20261031,
+  "leaf_batch": 32,
+  "simulations_per_search": 1024,
+  "total_measured_simulations": 6144,
+  "precision": "FP32 CUDA",
+  "device": "cuda",
+  "cpu_threads": 1,
+  "rows": [
+    {
+      "repeat": 0,
+      "lazy": false,
+      "wall_seconds": 2.9098146073520184,
+      "reachable_nodes": 359148,
+      "root_visits": 1024,
+      "root_value_sum": 42.234120293025626,
+      "move": [
+        54,
+        45
+      ]
+    },
+    {
+      "repeat": 0,
+      "lazy": true,
+      "wall_seconds": 2.1045983396470547,
+      "reachable_nodes": 48700,
+      "root_visits": 1024,
+      "root_value_sum": 42.234120293025626,
+      "move": [
+        54,
+        45
+      ]
+    },
+    {
+      "repeat": 1,
+      "lazy": true,
+      "wall_seconds": 1.926877660676837,
+      "reachable_nodes": 48700,
+      "root_visits": 1024,
+      "root_value_sum": 42.234120293025626,
+      "move": [
+        54,
+        45
+      ]
+    },
+    {
+      "repeat": 1,
+      "lazy": false,
+      "wall_seconds": 2.929807338863611,
+      "reachable_nodes": 359148,
+      "root_visits": 1024,
+      "root_value_sum": 42.234120293025626,
+      "move": [
+        54,
+        45
+      ]
+    },
+    {
+      "repeat": 2,
+      "lazy": false,
+      "wall_seconds": 3.470631241798401,
+      "reachable_nodes": 359148,
+      "root_visits": 1024,
+      "root_value_sum": 42.234120293025626,
+      "move": [
+        54,
+        45
+      ]
+    },
+    {
+      "repeat": 2,
+      "lazy": true,
+      "wall_seconds": 1.7566585298627615,
+      "reachable_nodes": 48700,
+      "root_visits": 1024,
+      "root_value_sum": 42.234120293025626,
+      "move": [
+        54,
+        45
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "repeat": 0,
+      "exact_root_action_policy_and_child_statistics_match": true,
+      "control_over_lazy_wall_ratio": 1.3825985474454
+    },
+    {
+      "repeat": 1,
+      "exact_root_action_policy_and_child_statistics_match": true,
+      "control_over_lazy_wall_ratio": 1.520494735423153
+    },
+    {
+      "repeat": 2,
+      "exact_root_action_policy_and_child_statistics_match": true,
+      "control_over_lazy_wall_ratio": 1.9757005603528097
+    }
+  ],
+  "median_control_over_lazy_wall_ratio": 1.520494735423153,
+  "sha256": {
+    "scripts/compare_lazy_chance.py": "8d5bee493e099d4b64349641586853d49b89d6df0d9609bedd8adbe1209dc7f7",
+    "research/neural_search.py": "db3d2aadc4c4f9d22c0d40f148df2f4740992df1a6ff4b1a79ad7ba223dc7eb7",
+    "research/neural_replay.py": "0314126b96fe2bf3e059c22b3d9af7c51aef2bf31a4cc5db2382de40ea2c432c",
+    "external/yuan-bai-jieqi-lab/azero.py": "4a184dd7ea1d93a8fe2328ace3439ddbe3f78c200cd8dd50ccd610558f1223f2",
+    "runs/neural-policy-phase-02/shared/best.npz": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb"
+  }
+}

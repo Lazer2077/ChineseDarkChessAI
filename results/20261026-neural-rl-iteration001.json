@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "status": "first_iteration_completed",
+  "scope": "First of three fixed on-policy neural self-play iterations. No strength improvement or benchmark promotion. Later iterations remain pending; sequential iterations are not independent training-seed replicas.",
+  "iteration": {
+    "iteration": 1,
+    "previous_actor": "runs/neural-policy-phase-02/shared",
+    "research_actor": "runs/neural-selfplay-series-01/iter-001/trained",
+    "network_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+    "training_manifest_sha256": "aa766e8938f0ce05ed1516c28a2480c842e8e9e39da20b26dffc70a99f0300b8",
+    "generation_plan_sha256": "a6fa22320807e74d6f056a869322f27a21d36de5234bf322d91a874e40295cdd",
+    "training_plan_sha256": "d9ade7828f12cf509aa9a3d37c537614c548b1dd41da1dd303134ae5f9dd8e29",
+    "actor_update": "Fixed validation-selected research actor advances, independent of match outcomes. No benchmark promotion.",
+    "matches": {
+      "previous": {
+        "timing": {
+          "candidate": {
+            "moves": 1576,
+            "mean_ms": 343.4373712011421,
+            "p95_ms": 499.733105,
+            "max_ms": 673.090628
+          },
+          "baseline": {
+            "moves": 1584,
+            "mean_ms": 341.53882563573234,
+            "p95_ms": 498.488003,
+            "max_ms": 654.745193
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 24,
+        "draws": 1,
+        "losses": 39,
+        "score": 0.3828125,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.28125,
+          0.484375
+        ],
+        "paired_hoeffding_95": [
+          0.14273180217001982,
+          0.6228931978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "teacher": {
+        "timing": {
+          "candidate": {
+            "moves": 1373,
+            "mean_ms": 359.8983570815732,
+            "p95_ms": 522.456517,
+            "max_ms": 662.342711
+          },
+          "baseline": {
+            "moves": 1404,
+            "mean_ms": 355.2969403169516,
+            "p95_ms": 854.574783,
+            "max_ms": 2046.782362
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 1,
+        "draws": 0,
+        "losses": 63,
+        "score": 0.015625,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.046875
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.2557056978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      }
+    }
+  },
+  "series_plan": "results/neural-selfplay-series-plan.json",
+  "source_pins_verified_after_iteration": true,
+  "moves_independently_replayed": 5937,
+  "evidence_sha256": {
+    "results/20261026-neural-rl-series-first-training.json": "6d470cba0f103530d427c32ff32b9075758a9aed461e9baf41559e7681d69a46",
+    "results/20261026-neural-rl-iter001-vs-previous.json": "c83252591f2837ce1415f6173c4d3d6f4fa2b3d2a9b5c1edb4adf55a6bdc198d",
+    "results/20261026-neural-rl-iter001-vs-previous-audit.json": "e0f58644995931b62475cba8b443f777ed052e1923e3abc2d89e01b7d89b113a",
+    "results/20261026-neural-rl-iter001-vs-teacher.json": "bcfdbae6be34170d3210b0bce33839d83f4b180aede866f435035c7bdc633b8a",
+    "results/20261026-neural-rl-iter001-vs-teacher-audit.json": "5f6ca3d840a5137796b26acfc4a65e44b09d684f2cdf8f255ae49ec2c21fe3f7"
+  }
+}

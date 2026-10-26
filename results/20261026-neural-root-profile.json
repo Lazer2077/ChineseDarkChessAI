@@ -1,0 +1,749 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "One fresh initial fully hidden root, no Dirichlet, warm-start shared model. cProfile adds overhead; cumulative times overlap and must not be summed. No match, general throughput or strength claim.",
+  "seed": 20261031,
+  "simulations": 1024,
+  "leaf_batch": 32,
+  "warmup_simulations": 32,
+  "wall_seconds": 3.1089567001909018,
+  "simulations_per_second_with_profiler": 329.37094297168,
+  "device": "cuda",
+  "cpu_threads": 1,
+  "move": [
+    54,
+    45
+  ],
+  "visit_mass": 1.0,
+  "top_cumulative": [
+    {
+      "file": "<cdca-neural-batch-deadline>",
+      "line": 1,
+      "name": "search",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_seconds": 0.091875197,
+      "cumulative_seconds": 3.1079059410000003
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1625,
+      "name": "_expand_node",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.296855531,
+      "cumulative_seconds": 1.24424927
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1224,
+      "name": "expand",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.144437316,
+      "cumulative_seconds": 0.799549558
+    },
+    {
+      "file": "research/neural_search.py",
+      "line": 19,
+      "name": "_evaluate_batch",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.00620988,
+      "cumulative_seconds": 0.630684243
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1150,
+      "name": "__init__",
+      "primitive_calls": 48700,
+      "calls": 48700,
+      "self_seconds": 0.544493918,
+      "cumulative_seconds": 0.544493918
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 1747,
+      "name": "_wrapped_call_impl",
+      "primitive_calls": 33,
+      "calls": 2838,
+      "self_seconds": 0.007558282,
+      "cumulative_seconds": 0.29664042500000004
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 1755,
+      "name": "_call_impl",
+      "primitive_calls": 33,
+      "calls": 2838,
+      "self_seconds": 0.012875134000000002,
+      "cumulative_seconds": 0.296381703
+    },
+    {
+      "file": "research/policy_value.py",
+      "line": 99,
+      "name": "forward",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.0037366730000000003,
+      "cumulative_seconds": 0.29572634400000003
+    },
+    {
+      "file": "runtime/container.py",
+      "line": 238,
+      "name": "forward",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.002085739,
+      "cumulative_seconds": 0.23782006000000003
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1183,
+      "name": "select_child",
+      "primitive_calls": 2495,
+      "calls": 2495,
+      "self_seconds": 0.137930318,
+      "cumulative_seconds": 0.23698831
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 942,
+      "name": "forward",
+      "primitive_calls": 495,
+      "calls": 495,
+      "self_seconds": 0.025335879000000002,
+      "cumulative_seconds": 0.23045742300000002
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1609,
+      "name": "_chance_specs",
+      "primitive_calls": 1025,
+      "calls": 1025,
+      "self_seconds": 0.038617805000000005,
+      "cumulative_seconds": 0.22364217300000003
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1068,
+      "name": "chance_spec_for_move",
+      "primitive_calls": 46804,
+      "calls": 46804,
+      "self_seconds": 0.143492284,
+      "cumulative_seconds": 0.18502436800000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.sum>",
+      "primitive_calls": 56193,
+      "calls": 56193,
+      "self_seconds": 0.07609566200000001,
+      "cumulative_seconds": 0.17452047
+    },
+    {
+      "file": "research/neural_search.py",
+      "line": 22,
+      "name": "<listcomp>",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.001229468,
+      "cumulative_seconds": 0.159060042
+    },
+    {
+      "file": "research/policy_value.py",
+      "line": 77,
+      "name": "records_from_info",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.125351467,
+      "cumulative_seconds": 0.157830574
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 1028,
+      "name": "legal_moves",
+      "primitive_calls": 1025,
+      "calls": 1025,
+      "self_seconds": 0.013690931000000002,
+      "cumulative_seconds": 0.143945653
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 976,
+      "name": "_iter_legal_moves",
+      "primitive_calls": 47829,
+      "calls": 47829,
+      "self_seconds": 0.128427509,
+      "cumulative_seconds": 0.13025472200000002
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1687,
+      "name": "_navigate_chance",
+      "primitive_calls": 2422,
+      "calls": 2422,
+      "self_seconds": 0.034472184,
+      "cumulative_seconds": 0.11335244800000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1644,
+      "name": "_apply_chance_move",
+      "primitive_calls": 2422,
+      "calls": 2422,
+      "self_seconds": 0.006707342000000001,
+      "cumulative_seconds": 0.108946845
+    },
+    {
+      "file": "runtime/conv.py",
+      "line": 553,
+      "name": "forward",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.004911830000000001,
+      "cumulative_seconds": 0.108569894
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 474,
+      "name": "apply_move",
+      "primitive_calls": 2495,
+      "calls": 2495,
+      "self_seconds": 0.041212575,
+      "cumulative_seconds": 0.10606799500000001
+    },
+    {
+      "file": "<cdca-neural-batch-deadline>",
+      "line": 127,
+      "name": "<listcomp>",
+      "primitive_calls": 32,
+      "calls": 32,
+      "self_seconds": 0.00129433,
+      "cumulative_seconds": 0.104782122
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 222,
+      "name": "_repetition_entries",
+      "primitive_calls": 1024,
+      "calls": 1024,
+      "self_seconds": 0.019345283,
+      "cumulative_seconds": 0.10348779200000001
+    },
+    {
+      "file": "runtime/conv.py",
+      "line": 536,
+      "name": "_conv_forward",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.0030851520000000003,
+      "cumulative_seconds": 0.101556012
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.conv2d>",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.09847086000000001,
+      "cumulative_seconds": 0.09847086000000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1356,
+      "name": "_full_chance_outcomes",
+      "primitive_calls": 44144,
+      "calls": 44144,
+      "self_seconds": 0.08758916300000001,
+      "cumulative_seconds": 0.097804263
+    },
+    {
+      "file": "research/policy_value.py",
+      "line": 47,
+      "name": "encode_records",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.046972167,
+      "cumulative_seconds": 0.09463921900000001
+    },
+    {
+      "file": "runtime/batchnorm.py",
+      "line": 159,
+      "name": "forward",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.013594231,
+      "cumulative_seconds": 0.08840747700000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1240,
+      "name": "<dictcomp>",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.056426556,
+      "cumulative_seconds": 0.084563251
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 217,
+      "name": "_public_material_signature",
+      "primitive_calls": 972,
+      "calls": 972,
+      "self_seconds": 0.0024624810000000003,
+      "cumulative_seconds": 0.08341212
+    },
+    {
+      "file": "runtime/functional.py",
+      "line": 2791,
+      "name": "batch_norm",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.004719331,
+      "cumulative_seconds": 0.06545297400000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.batch_norm>",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.058658856,
+      "cumulative_seconds": 0.058658856
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 102,
+      "name": "move_to_index",
+      "primitive_calls": 93296,
+      "calls": 93296,
+      "self_seconds": 0.058222418000000005,
+      "cumulative_seconds": 0.058222418000000005
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 2858,
+      "name": "eval",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.000140712,
+      "cumulative_seconds": 0.053730261
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 2836,
+      "name": "train",
+      "primitive_calls": 33,
+      "calls": 2838,
+      "self_seconds": 0.00974612,
+      "cumulative_seconds": 0.053589549
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/ismcts.py",
+      "line": 93,
+      "name": "determinize",
+      "primitive_calls": 1024,
+      "calls": 1024,
+      "self_seconds": 0.020508926,
+      "cumulative_seconds": 0.052030937000000006
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1635,
+      "name": "<genexpr>",
+      "primitive_calls": 125166,
+      "calls": 125166,
+      "self_seconds": 0.047039018,
+      "cumulative_seconds": 0.047039018
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1178,
+      "name": "q_value",
+      "primitive_calls": 110845,
+      "calls": 110845,
+      "self_seconds": 0.037415677,
+      "cumulative_seconds": 0.037415677
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1675,
+      "name": "_sample_weighted",
+      "primitive_calls": 2511,
+      "calls": 2511,
+      "self_seconds": 0.010722421000000001,
+      "cumulative_seconds": 0.037068778000000004
+    }
+  ],
+  "top_self": [
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1150,
+      "name": "__init__",
+      "primitive_calls": 48700,
+      "calls": 48700,
+      "self_seconds": 0.544493918,
+      "cumulative_seconds": 0.544493918
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1625,
+      "name": "_expand_node",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.296855531,
+      "cumulative_seconds": 1.24424927
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1224,
+      "name": "expand",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.144437316,
+      "cumulative_seconds": 0.799549558
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1068,
+      "name": "chance_spec_for_move",
+      "primitive_calls": 46804,
+      "calls": 46804,
+      "self_seconds": 0.143492284,
+      "cumulative_seconds": 0.18502436800000002
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1183,
+      "name": "select_child",
+      "primitive_calls": 2495,
+      "calls": 2495,
+      "self_seconds": 0.137930318,
+      "cumulative_seconds": 0.23698831
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 976,
+      "name": "_iter_legal_moves",
+      "primitive_calls": 47829,
+      "calls": 47829,
+      "self_seconds": 0.128427509,
+      "cumulative_seconds": 0.13025472200000002
+    },
+    {
+      "file": "research/policy_value.py",
+      "line": 77,
+      "name": "records_from_info",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.125351467,
+      "cumulative_seconds": 0.157830574
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.conv2d>",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.09847086000000001,
+      "cumulative_seconds": 0.09847086000000001
+    },
+    {
+      "file": "<cdca-neural-batch-deadline>",
+      "line": 1,
+      "name": "search",
+      "primitive_calls": 1,
+      "calls": 1,
+      "self_seconds": 0.091875197,
+      "cumulative_seconds": 3.1079059410000003
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1356,
+      "name": "_full_chance_outcomes",
+      "primitive_calls": 44144,
+      "calls": 44144,
+      "self_seconds": 0.08758916300000001,
+      "cumulative_seconds": 0.097804263
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.sum>",
+      "primitive_calls": 56193,
+      "calls": 56193,
+      "self_seconds": 0.07609566200000001,
+      "cumulative_seconds": 0.17452047
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.batch_norm>",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.058658856,
+      "cumulative_seconds": 0.058658856
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 102,
+      "name": "move_to_index",
+      "primitive_calls": 93296,
+      "calls": 93296,
+      "self_seconds": 0.058222418000000005,
+      "cumulative_seconds": 0.058222418000000005
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1240,
+      "name": "<dictcomp>",
+      "primitive_calls": 1021,
+      "calls": 1021,
+      "self_seconds": 0.056426556,
+      "cumulative_seconds": 0.084563251
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1635,
+      "name": "<genexpr>",
+      "primitive_calls": 125166,
+      "calls": 125166,
+      "self_seconds": 0.047039018,
+      "cumulative_seconds": 0.047039018
+    },
+    {
+      "file": "research/policy_value.py",
+      "line": 47,
+      "name": "encode_records",
+      "primitive_calls": 33,
+      "calls": 33,
+      "self_seconds": 0.046972167,
+      "cumulative_seconds": 0.09463921900000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 474,
+      "name": "apply_move",
+      "primitive_calls": 2495,
+      "calls": 2495,
+      "self_seconds": 0.041212575,
+      "cumulative_seconds": 0.10606799500000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1609,
+      "name": "_chance_specs",
+      "primitive_calls": 1025,
+      "calls": 1025,
+      "self_seconds": 0.038617805000000005,
+      "cumulative_seconds": 0.22364217300000003
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1178,
+      "name": "q_value",
+      "primitive_calls": 110845,
+      "calls": 110845,
+      "self_seconds": 0.037415677,
+      "cumulative_seconds": 0.037415677
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1687,
+      "name": "_navigate_chance",
+      "primitive_calls": 2422,
+      "calls": 2422,
+      "self_seconds": 0.034472184,
+      "cumulative_seconds": 0.11335244800000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1184,
+      "name": "<genexpr>",
+      "primitive_calls": 113340,
+      "calls": 113340,
+      "self_seconds": 0.034267804,
+      "cumulative_seconds": 0.034267804
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'get' of 'dict' objects>",
+      "primitive_calls": 67798,
+      "calls": 67798,
+      "self_seconds": 0.032843986,
+      "cumulative_seconds": 0.032843986
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 129,
+      "name": "is_dark",
+      "primitive_calls": 118035,
+      "calls": 118035,
+      "self_seconds": 0.032222546000000005,
+      "cumulative_seconds": 0.032222546000000005
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 942,
+      "name": "forward",
+      "primitive_calls": 495,
+      "calls": 495,
+      "self_seconds": 0.025335879000000002,
+      "cumulative_seconds": 0.23045742300000002
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 125,
+      "name": "piece_color",
+      "primitive_calls": 89327,
+      "calls": 89327,
+      "self_seconds": 0.024934421000000002,
+      "cumulative_seconds": 0.024934421000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.relu>",
+      "primitive_calls": 1122,
+      "calls": 1122,
+      "self_seconds": 0.023873375000000002,
+      "cumulative_seconds": 0.023873375000000002
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 219,
+      "name": "<genexpr>",
+      "primitive_calls": 88452,
+      "calls": 88452,
+      "self_seconds": 0.021022182,
+      "cumulative_seconds": 0.021022182
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/ismcts.py",
+      "line": 93,
+      "name": "determinize",
+      "primitive_calls": 1024,
+      "calls": 1024,
+      "self_seconds": 0.020508926,
+      "cumulative_seconds": 0.052030937000000006
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 222,
+      "name": "_repetition_entries",
+      "primitive_calls": 1024,
+      "calls": 1024,
+      "self_seconds": 0.019345283,
+      "cumulative_seconds": 0.10348779200000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/ismcts.py",
+      "line": 297,
+      "name": "_information_set_key",
+      "primitive_calls": 2496,
+      "calls": 2496,
+      "self_seconds": 0.015954764,
+      "cumulative_seconds": 0.015954764
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1091,
+      "name": "leaf_input_signature",
+      "primitive_calls": 1024,
+      "calls": 1024,
+      "self_seconds": 0.01456577,
+      "cumulative_seconds": 0.016208327
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 1927,
+      "name": "__getattr__",
+      "primitive_calls": 10131,
+      "calls": 10131,
+      "self_seconds": 0.013889111,
+      "cumulative_seconds": 0.013889111
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 1028,
+      "name": "legal_moves",
+      "primitive_calls": 1025,
+      "calls": 1025,
+      "self_seconds": 0.013690931000000002,
+      "cumulative_seconds": 0.143945653
+    },
+    {
+      "file": "runtime/batchnorm.py",
+      "line": 159,
+      "name": "forward",
+      "primitive_calls": 1089,
+      "calls": 1089,
+      "self_seconds": 0.013594231,
+      "cumulative_seconds": 0.08840747700000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 707,
+      "name": "_update_chase",
+      "primitive_calls": 2495,
+      "calls": 2495,
+      "self_seconds": 0.013509546,
+      "cumulative_seconds": 0.029974161000000003
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/ismcts.py",
+      "line": 201,
+      "name": "info_state",
+      "primitive_calls": 1025,
+      "calls": 1025,
+      "self_seconds": 0.013260672000000001,
+      "cumulative_seconds": 0.022255780000000003
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 1755,
+      "name": "_call_impl",
+      "primitive_calls": 33,
+      "calls": 2838,
+      "self_seconds": 0.012875134000000002,
+      "cumulative_seconds": 0.296381703
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/azero.py",
+      "line": 1591,
+      "name": "_backup",
+      "primitive_calls": 1024,
+      "calls": 1024,
+      "self_seconds": 0.012756390000000001,
+      "cumulative_seconds": 0.013182978000000001
+    },
+    {
+      "file": "external/yuan-bai-jieqi-lab/jieqi.py",
+      "line": 595,
+      "name": "_piece_threat_targets",
+      "primitive_calls": 5439,
+      "calls": 5439,
+      "self_seconds": 0.012717396,
+      "cumulative_seconds": 0.014336393000000001
+    },
+    {
+      "file": "runtime/module.py",
+      "line": 1944,
+      "name": "__setattr__",
+      "primitive_calls": 2838,
+      "calls": 2838,
+      "self_seconds": 0.01236308,
+      "cumulative_seconds": 0.030804641
+    }
+  ],
+  "sha256": {
+    "scripts/profile_neural_root.py": "ce5b5c6a443c76c44fb1241705f7e208a9fcf33f528a93a4870bc1820bbbffa1",
+    "research/neural_search.py": "db3d2aadc4c4f9d22c0d40f148df2f4740992df1a6ff4b1a79ad7ba223dc7eb7",
+    "research/neural_replay.py": "0314126b96fe2bf3e059c22b3d9af7c51aef2bf31a4cc5db2382de40ea2c432c",
+    "research/policy_value.py": "e49ea26e059981e6de9cd7cdc5991748f8ee45ef159804412382e5f509de2183",
+    "runs/neural-policy-phase-02/shared/best.npz": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb"
+  }
+}

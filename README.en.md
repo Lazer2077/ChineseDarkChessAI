@@ -14,6 +14,7 @@ A player's information history consists of the public board, reveals and move hi
 
 The current prototype and adapters separate true state from player observations, with tests for invariance to unobserved identities, private capture visibility, and reconstruction from complete histories. The inventory-based belief does not fully model how the opponent's actions reveal their private information. This remains a research gap, and the belief should not be described as an exact posterior.
 
+
 ## Current method: search-guided value learning
 
 The main experiments use a pinned MIT-licensed version of [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi): alpha-beta/PVS search, approximations to reveal chance branches, and an NNUE value network. The native search architecture, trainer, and initial teacher weights are upstream contributions; see [provenance](docs/PROVENANCE.md). The current control model has 387,089 parameters.
@@ -27,7 +28,7 @@ y = \lambda\,\sigma(s/K) + (1-\lambda)\,(z+1)/2,\qquad
 \mathcal L = \mathbb E[(\sigma(V_\theta(o)/K)-y)^2].
 ```
 
-The current series uses λ=0.7 and K=430. This is value-based expert iteration combining search-target distillation with terminal-outcome learning. A separate [residual policy/value plus information-set PUCT self-play RL loop](docs/NEURAL_SELFPLAY.md) now updates its current actor from real search visits and terminal rewards: a 16-game pilot completed, and three successive learning iterations are running. No learned strength gain is established, and full POMCP, CFR and ReBeL are not implemented. The early 15-dimensional linear-policy prototype checks observation isolation and the search/training pipeline; it does not represent the strength of the current main experiment.
+The current series uses λ=0.7 and K=430. This is value-based expert iteration combining search-target distillation with terminal-outcome learning. A separate [residual policy/value plus information-set PUCT self-play RL loop](docs/NEURAL_SELFPLAY.md) now updates its current actor from real search visits and terminal rewards: a 16-game pilot completed, and three successive learning iterations are running. Iteration 1 scored 24W/1D/39L versus its previous actor and 1W/0D/63L versus the original teacher, both technically clean. No learned strength gain is established, and full POMCP, CFR and ReBeL are not implemented. The early 15-dimensional linear-policy prototype checks observation isolation and the search/training pipeline; it does not represent the strength of the current main experiment.
 
 ## Experimental scale and observed results
 
@@ -54,6 +55,8 @@ All six sets have no technical failures or void attempts, with both paired boots
 - All [four AB-JChess comparison arms](docs/ABJ_CONFIRMATION.md) completed. The unchanged teacher scored 75.5% and 79.5% on the same A/B layouts. The learner-minus-teacher difference is +1.625 percentage points overall, with exploratory paired 95% interval [-3.125, +6.25], including zero: **a learned gain is not established**. Development and confirmation games are not pooled.
 
 Compressed raw games, checksums, and reports are in [results](results). A [new discovery audit](docs/DISCOVERY_AUDIT.md) adds previously omitted sources. The [opponent inventory](docs/opponents.json) also retains untested, unavailable, and rule-incompatible projects. Results from different rules, time controls, or engine versions are not pooled.
+
+The [Musesfish actual-clock compatibility profile](docs/MUSESFISH_CLOCK.md) completed a two-game integration check and 32-game development screen, all candidate wins, with all 1,397 moves/clocks replayed cleanly. Two-set confirmation matches remain pending; this establishes no strength advantage.
 
 ## Hypotheses under investigation
 

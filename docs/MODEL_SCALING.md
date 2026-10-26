@@ -93,3 +93,14 @@ no equal-total-compute claim is made. Full native legal/identity/terminal and cl
 replays follow each match. Model hashes are recorded after checkpoint selection
 and before play; no replacement checkpoint is allowed after outcomes. A waiting
 evaluator verifies the training controller remains live and never restarts it.
+
+The small continuation arm has completed both epochs / 9,442 updates; epoch 1 was
+selected (selection policy CE 2.3588523, value MSE 0.0842577). Its full curves and
+checkpoint digest are archived in
+`results/20261026-residual-width-small-training.json`. Wider-arm training and all
+three matched screens remain incomplete. The CPU FP32 equivalence certificate
+is not a bitwise BF16 guarantee: initial GPU-BF16 policy CE is 2.3650940 small
+versus 2.3653944 wide, value MSE 0.0844391 versus 0.0844800. Different channel
+reductions and BF16 rounding produce small initial numerical differences, which
+are recorded rather than retuned away. This single-seed, short continuation does
+not settle training larger models from scratch or their eventual on-policy RL.

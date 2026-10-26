@@ -125,10 +125,21 @@ The first larger generation/training stage has now completed 288 games and 15,68
 positions, with four GPU epochs / 436 updates. Its previous-actor screen has completed at 24W/1D/39L (38.28% score; paired
 95% bootstrap [28.125%,48.4375%]), providing no improvement evidence. All 3,160
 moves and clocks replayed cleanly, without technical games or ambiguous margins.
-The teacher screen remains pending, so neither the first full iteration nor
-the three-iteration series is reported complete. Exact episode/model hashes
+The teacher screen has also completed at 1W/0D/63L, with 2,777 moves/clocks
+cleanly replayed. The first full iteration is therefore complete, with no
+improvement; the remaining two iterations are pending. The research actor
+advances under the frozen recipe, and iteration 2 generation has begun. Exact episode/model hashes
 and training curves: `results/20261026-neural-rl-series-first-training.json`.
 
 First previous-actor evidence: `results/20261026-neural-rl-iter001-vs-previous.json`
 and its independent `-audit.json`. The bounded series continues regardless of
 these diagnostics; it does not promote a benchmark model.
+
+Completed iteration 1 evidence: `results/20261026-neural-rl-iteration001.json`.
+Both development screens share the stated GPU/CPU resource profiles; their
+negative results do not establish behavior at longer clocks or larger training
+scales.
+
+[Search-cost diagnostics](NEURAL_SEARCH_COST.md) separate the existing default
+lazy allocation from an eager counterfactual; they are not a new optimization
+or playing-strength result.

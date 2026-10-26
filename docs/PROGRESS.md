@@ -41,3 +41,14 @@ The trained pilot scored 7-0-25 against its teacher at equal 100 ms/move, so it
 was not promoted. New probe-variance search scored 14-2-16 against unchanged jqe
 with the same published net; also not promoted. See ADAPTIVE_SEARCH.md for
 methods, build reproducibility, provenance and completed opponent screens.
+
+## Continual learning series started
+A two-iteration functional smoke verified replay, GPU value learning, technical
+failure rejection and idempotent recovery. Three forced truncated games wrote
+zero records. The three-seed expanded series is live under
+runs/continual-series-01 (49,152 training games planned; not completed).
+The first seed's 512 validation games finished: 37,471 raw records, zero rejected
+games. Its first 8,192-game training generation is now running on four CPU actors;
+GPU 2 will perform the subsequent batch learning. Separate 1.64M/13.45M capacity
+initializations passed function-preservation and native benchmark checks but
+have not yet been trained. No opponent or new candidate is promoted.

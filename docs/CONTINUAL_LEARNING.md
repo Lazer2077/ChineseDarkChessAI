@@ -68,3 +68,25 @@ CUDA_VISIBLE_DEVICES=2 OMP_NUM_THREADS=2 python scripts/continual_learning.py \
 
 Rerun with the identical command to recover. Use a new directory for changed
 configurations. Keep a background launcher's script immutable while it runs.
+
+## Capacity control prepared for the expanded data
+The initial network has 387,089 parameters. `scripts/widen_jqn.py` prepares
+larger models while preserving the teacher's initial value function:
+- 1,644,161 parameters: FT 1024, hidden layers 64/64.
+- 13,452,161 parameters: same widths plus nine own-king-square feature buckets.
+The original features, PSQT columns and hidden paths are copied; added paths
+start with zero outgoing connections while retaining a nonzero learning signal.
+
+For 256 paired feature inputs (including bucket remapping), maximum output
+change was 9.54e-7. The larger models also reproduce all six depth-5 native
+benchmark moves, scores and node counts. These checks establish initialization
+compatibility, not learned strength. Inference will be more expensive and must
+be compared at the same actual game clock.
+
+The wider models have **not** been trained yet. The first series remains the
+387k-parameter control. Once its first 8,192-game generation is finalized and
+hash-verified, the intended capacity ablation uses that exact generation and
+its fixed validation file for all three sizes, batch 4096, 15 epochs, lr 2e-5,
+lambda 0.7, K 430, same learner seed; independent paired games then test the
+quality-versus-inference-cost tradeoff. Do not train on the .part generation
+file or tune on the separate warm-candidate confirmation layouts.

@@ -3,6 +3,10 @@
   "scope": "Development/integration screens; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
   "reports": [
     {
+      "raw_games": {
+        "path": "results/games/adaptive-v1-dev-py311.jsonl.gz",
+        "uncompressed_sha256": "ce5a1c23bc1dfc0092419dfcba407fdc7901ffc69d47f81f8328d8e7d922cffd"
+      },
       "run": "adaptive-v1-dev-py311",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -40,6 +44,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/native-trained-dev.jsonl.gz",
+        "uncompressed_sha256": "04409ec5b5fa170b6ec2c159b17b15b8ac1cf8ae153c5e8cf8792e6ce52c1b7a"
+      },
       "run": "native-trained-dev",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -77,6 +85,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/coverage-universe.jsonl.gz",
+        "uncompressed_sha256": "b5a0a0508f323988c600fbb058cc34ec5ee15934c386bc75eb5d34609a37f66a"
+      },
       "run": "coverage-universe",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -114,6 +126,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/coverage-musesfish-strict.jsonl.gz",
+        "uncompressed_sha256": "f1dd0a0ed79d7bef3ed2dcc6decccb3ec1bbc0a64f5009d2a557abb8eb5c8aeb"
+      },
       "run": "coverage-musesfish-strict",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -151,6 +167,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/coverage-pika-old.jsonl.gz",
+        "uncompressed_sha256": "16282c56ed2c9a1db24eef8a75feab830aaa06b036247e9c351cc49b2eadafb6"
+      },
       "run": "coverage-pika-old",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -188,6 +208,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/coverage-pika-enhanced.jsonl.gz",
+        "uncompressed_sha256": "7c2676d9fd3483bc5009951b680804dead4ac795c646dad75a3086dbc46cb9e0"
+      },
       "run": "coverage-pika-enhanced",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -230,6 +254,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/coverage-pika-mistboard.jsonl.gz",
+        "uncompressed_sha256": "ca26e740c86c64b8c109a43b32db54c5519956556f937676d19eb0c0ca9b45aa"
+      },
       "run": "coverage-pika-mistboard",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -272,6 +300,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/abj-v02d-history-smoke.jsonl.gz",
+        "uncompressed_sha256": "3f5d6df08ded790f49c2a06cc40c44d54d69799ca013c70b8cb5d3d8a82fa3c9"
+      },
       "run": "abj-v02d-history-smoke",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -314,6 +346,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/adaptive-v1-extra-dev.jsonl.gz",
+        "uncompressed_sha256": "19a006dc96993521bfde3b227b06010b2013cf5d03fac3f40bc246e9ae0d1a9d"
+      },
       "run": "adaptive-v1-extra-dev",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -356,6 +392,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/native-warm-dev.jsonl.gz",
+        "uncompressed_sha256": "9ef3a36a943990cdb8953e2f3fd946813bd29207fc153cf293d6a2d3c8c6fa8f"
+      },
       "run": "native-warm-dev",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -398,6 +438,10 @@
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     },
     {
+      "raw_games": {
+        "path": "results/games/warm-clock-smoke.jsonl.gz",
+        "uncompressed_sha256": "48aa96ef9cb32e096622393e476b98833f630da3dbd37a636b2c521c566d0d5e"
+      },
       "run": "warm-clock-smoke",
       "stage": "development",
       "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
@@ -406,7 +450,8 @@
         "games": 2,
         "movetime": 100,
         "seed": 7100001,
-        "concurrency": 2
+        "concurrency": 2,
+        "tc": "5+0.05"
       },
       "candidate": "jqe",
       "baseline": "external/devinokeefe-jieqi/engine/build/jqe",

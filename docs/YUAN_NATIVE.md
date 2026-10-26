@@ -79,3 +79,14 @@ uses the original tools and writes outside the source checkout. Set
 and legal backends for the recorded native-backed profile. Missing native
 modules are an error in that profile, not a silent fallback. Use a separate
 process from the unrelated native referee package, which also imports as jieqi.
+
+## Pure-search confirmations completed
+
+Both frozen200-game sets completed200W/0D/0L, with no technical failures or
+voids. All11,624 moves and actual-clock charges replayed cleanly; both separate
+conservative Hoeffding95% lower bounds are86.42%. Post-campaign source/native
+binary hashes still match. Evidence: results/20261026-yuan-pure-acceptance.json.
+This accepts only the stated accelerated pure-search observer/clock profile.
+Its unavailable pretrained neural mode remains unverified, and the project-wide
+`defeated` flag is not set. Our separately trained policy/value derivatives are
+new research candidates and do not stand in for an author-released model.

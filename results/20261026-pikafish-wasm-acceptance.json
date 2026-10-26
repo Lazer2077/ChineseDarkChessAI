@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "opponent": "pikafish-jieqi-wasm",
+  "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+  "plan_path": "results/pikafish-wasm-acceptance-projection.json",
+  "plan_sha256": "54da31d2d3f7133ac1e28fbe0684a368032f9b2f66a0dc1a7e1541c77bc53f67",
+  "clock": "5+0.05",
+  "candidate_binary": "external/devinokeefe-jieqi/engine/build/jqe",
+  "candidate_net": "models/experimental/expanded-seed20261026-it1.jqn",
+  "baseline": "external/pikafish-jieqi-wasm/src/PikaJieQi",
+  "accepted": true,
+  "scope": "Statistical advantage over this pinned opponent and adapter under the documented external referee and clock. Both fixed sets pass separately, without technical failures, voids or ambiguous clock replays. This is not a universal rules/time-control claim, a general learned improvement over the teacher, or completion of the all-engine goal.",
+  "all_frozen_hashes_match_after_completion": true,
+  "unchanged_opponent_source": true,
+  "sets": [
+    {
+      "id": "a",
+      "games": 200,
+      "pairs": 100,
+      "wins_draws_losses": [
+        181,
+        1,
+        18
+      ],
+      "score": 0.9075,
+      "paired_bootstrap_95": [
+        0.87,
+        0.945
+      ],
+      "paired_hoeffding_lower_95": 0.771689848425938,
+      "moves_replayed": 12996,
+      "result_path": "results/20261026-pikafish-wasm-confirmation-a.json",
+      "result_sha256": "8a43ec3535278e9e26cbc11c2ecf5fecb2be0255ddc22796bd686eb937e477ed",
+      "audit_path": "results/20261026-pikafish-jieqi-wasm-a-audit.json",
+      "audit_sha256": "ff1bc8547ce373776d3b6122a07091309c537d1239eb299a92fd41b350c4ec5f",
+      "raw_sha256": "6ef5f25b14fece25275986bd096a8132c1e523f7657b81f1317675754f87eb8d"
+    },
+    {
+      "id": "b",
+      "games": 200,
+      "pairs": 100,
+      "wins_draws_losses": [
+        179,
+        3,
+        18
+      ],
+      "score": 0.9025,
+      "paired_bootstrap_95": [
+        0.8625,
+        0.94
+      ],
+      "paired_hoeffding_lower_95": 0.766689848425938,
+      "moves_replayed": 12678,
+      "result_path": "results/20261026-pikafish-wasm-confirmation-b.json",
+      "result_sha256": "15dda299d9e22a547894bfa43be775129a41319bf02e78c7981518662ceb1cf8",
+      "audit_path": "results/20261026-pikafish-jieqi-wasm-b-audit.json",
+      "audit_sha256": "ac150238fd9ce8b74cd52e532e29903a8c59b96e278a56fac4bb21af3d858fe5",
+      "raw_sha256": "9c37c71e405eabc23be5d1c29aeefc4fa4a5935b3454f8de9300139c42c0b408"
+    }
+  ],
+  "total_games": 400,
+  "distinct_deal_seeds": 200,
+  "acceptance_script_sha256": "8d0ce3470f342e4d89435ce92a43dc2f5c1cf124bd23fe5bc738eea2038b8783"
+}

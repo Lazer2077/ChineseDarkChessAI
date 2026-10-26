@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "run": "pikafish-jieqi-wasm-b",
+  "games": 200,
+  "complete_pairs": 100,
+  "moves_replayed": 12678,
+  "wins_draws_losses": [
+    179,
+    3,
+    18
+  ],
+  "seeded_identities_match": true,
+  "all_recorded_moves_legal": true,
+  "nontechnical_terminal_results_match": true,
+  "technical_games": 0,
+  "actual_clock_moves_checked": 12678,
+  "clock_ambiguous_moves_from_rounding": 0,
+  "minimum_clock_lower_margin_ms": 4.5,
+  "raw_games_sha256": "9c37c71e405eabc23be5d1c29aeefc4fa4a5935b3454f8de9300139c42c0b408",
+  "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+  "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+}

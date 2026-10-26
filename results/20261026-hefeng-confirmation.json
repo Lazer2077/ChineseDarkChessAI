@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "scope": "Completed experimental matches with explicit per-report stages; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
+  "reports": [
+    {
+      "raw_games": {
+        "path": "results/raw/a-265f2e3f3b7b.jsonl.gz",
+        "uncompressed_sha256": "265f2e3f3b7b8aa95e6b3de7152f5a51a0c11a8b2a0fa7f9dec669816f2b7313"
+      },
+      "run": "a",
+      "stage": "confirmation",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 200,
+        "movetime": 100,
+        "seed": 8080001,
+        "concurrency": 2,
+        "tc": "5+0.05"
+      },
+      "candidate": "jqe",
+      "baseline": "build/pika-hefeng/source/src/pikafish",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "8b385c163daf7505a252d779dc921b8e823f751c782b91ddee1787b3d58018c7",
+        "net": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+        "candidate_net": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 4760,
+            "mean_ms": 173.36076324894958,
+            "p95_ms": 519.055161,
+            "max_ms": 1101.14555
+          },
+          "baseline": {
+            "moves": 4680,
+            "mean_ms": 152.82177949722222,
+            "p95_ms": 592.491277,
+            "max_ms": 1073.690736
+          }
+        },
+        "game_clock": "5+0.05",
+        "games": 199,
+        "expected_games": 200,
+        "wins": 183,
+        "draws": 3,
+        "losses": 13,
+        "score": 0.9271356783919598,
+        "complete_pairs": 99,
+        "paired_bootstrap_95": [
+          0.8914141414141414,
+          0.9570707070707071
+        ],
+        "paired_hoeffding_95": [
+          0.7902733387396591,
+          1.0
+        ],
+        "void_attempts": 8,
+        "technical_results": [],
+        "valid_technical_run": false,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "raw_games": {
+        "path": "results/raw/b-c7c8ec98146e.jsonl.gz",
+        "uncompressed_sha256": "c7c8ec98146e863810076a89f1a96cedbfa027d1e79569b19cba2d10bc292152"
+      },
+      "run": "b",
+      "stage": "confirmation",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 200,
+        "movetime": 100,
+        "seed": 8090001,
+        "concurrency": 2,
+        "tc": "5+0.05"
+      },
+      "candidate": "jqe",
+      "baseline": "build/pika-hefeng/source/src/pikafish",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "8b385c163daf7505a252d779dc921b8e823f751c782b91ddee1787b3d58018c7",
+        "net": "05c13ac64f5b8ede77cfdc408d399d1f235564ba0999e2c768bebaeedb1db761",
+        "candidate_net": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 4643,
+            "mean_ms": 175.7551762679302,
+            "p95_ms": 547.987231,
+            "max_ms": 1076.648719
+          },
+          "baseline": {
+            "moves": 4558,
+            "mean_ms": 152.02111190368583,
+            "p95_ms": 590.192404,
+            "max_ms": 1072.977203
+          }
+        },
+        "game_clock": "5+0.05",
+        "games": 198,
+        "expected_games": 200,
+        "wins": 187,
+        "draws": 0,
+        "losses": 11,
+        "score": 0.9444444444444444,
+        "complete_pairs": 98,
+        "paired_bootstrap_95": [
+          0.9132653061224489,
+          0.9744897959183674
+        ],
+        "paired_hoeffding_95": [
+          0.806688580831848,
+          1.0
+        ],
+        "void_attempts": 9,
+        "technical_results": [],
+        "valid_technical_run": false,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    }
+  ]
+}

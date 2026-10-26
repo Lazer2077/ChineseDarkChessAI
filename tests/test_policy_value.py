@@ -40,6 +40,8 @@ def test_phase_heads_preserve_initial_function_and_receive_only_their_phase_grad
     raw=torch.from_numpy(np.concatenate([m.records_from_info(partial),m.records_from_info(full_public_info())]))
     x=m.encode_records(raw)
     base.eval();expert.eval()
+    original=m.AZ.PolicyValueNet(8,1);original.load_state_dict(base.state_dict());original.eval()
+    for a,b in zip(base(x),original(x)):torch.testing.assert_close(a,b,rtol=0,atol=0)
     for a,b in zip(base(x),expert(x)):torch.testing.assert_close(a,b,rtol=0,atol=0)
     expert.zero_grad();expert(x)[1][1].backward()
     assert expert.value_fc1.weight.grad.abs().sum()==0

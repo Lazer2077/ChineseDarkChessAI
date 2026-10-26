@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "scope": "Completed fixed campaigns that are not accepted, even with high scores. Raw technical outcomes remain in WDL. Millisecond rounding ambiguity is a measurement limitation, not proof of time-forfeit or engine fault.",
+  "campaigns": [
+    {
+      "opponent": "pikafish-jieqi-old",
+      "report": "results/20261026-pikafish-jieqi-old-confirmation.json",
+      "sha256": "2dac0afbd120f144c44d9bfd6fa7210f468154a78e4c19dff3afdf4e78a00167",
+      "accepted": false,
+      "sets": [
+        {
+          "set": "a",
+          "wins_draws_losses": [
+            175,
+            1,
+            24
+          ],
+          "technical_results": [],
+          "void_attempts": 0
+        },
+        {
+          "set": "b",
+          "wins_draws_losses": [
+            172,
+            2,
+            26
+          ],
+          "technical_results": [
+            "TIME_FORFEIT"
+          ],
+          "void_attempts": 0
+        }
+      ],
+      "reason": "One opponent time forfeit in B violates the original clean-run criterion."
+    },
+    {
+      "opponent": "pikajieqi-enhanced",
+      "report": "results/20261026-pikajieqi-enhanced-confirmation.json",
+      "sha256": "d90bfe0999e353ae38d9d23f878bc377523103ccfb75acfa1f2f572cabd5bfed",
+      "accepted": false,
+      "sets": [
+        {
+          "set": "a",
+          "wins_draws_losses": [
+            177,
+            3,
+            20
+          ],
+          "technical_results": [],
+          "void_attempts": 0,
+          "audit": "results/20261026-pikajieqi-enhanced-a-audit.json",
+          "audit_sha256": "50df370b93e954f16a2ee70e6a9e57a3dc409bc08ae09260c278567b960e4230",
+          "ambiguous_clock_checks": 5,
+          "minimum_clock_lower_margin_ms": -5.0
+        },
+        {
+          "set": "b",
+          "wins_draws_losses": [
+            176,
+            1,
+            23
+          ],
+          "technical_results": [],
+          "void_attempts": 0,
+          "audit": "results/20261026-pikajieqi-enhanced-b-audit.json",
+          "audit_sha256": "b9344e8d701f962bae6d4f9d0640d87f8e0756b4119f70848dd9935adf4ccd06",
+          "ambiguous_clock_checks": 13,
+          "minimum_clock_lower_margin_ms": -12.5
+        }
+      ],
+      "reason": "5/13 accumulated rounded-clock lower bounds are ambiguous; independent strict clock audit cannot certify the played time bank. No relaxation or retrospective acceptance."
+    }
+  ]
+}

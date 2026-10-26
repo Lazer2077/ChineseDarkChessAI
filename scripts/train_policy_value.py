@@ -16,13 +16,20 @@ def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def atomic_json(path,data):
     temporary=path.with_suffix(path.suffix+'.tmp');temporary.write_text(json.dumps(data,indent=2)+'\n');temporary.replace(path)
 
-def load_data(paths):
+def load_data(paths,empty_certificate=None):
     arrays=[];actions=[];metadata=[]
     for filename in paths:
         path=Path(filename);meta=json.loads(path.with_suffix('.complete.json').read_text())
         if path.suffix!='.bin' or path.stat().st_size%112 or sha(path)!=meta['sha256'] or meta['rejected_games']:
             raise ValueError('Require finalized valid full trajectories')
-        rec=np.fromfile(path,dtype=REC);segment_games(rec,meta['recipe']['games'])
+        expected=meta['recipe']['games']
+        if empty_certificate is not None:
+            certified=empty_certificate['datasets'][meta['sha256']]
+            empty=certified['zero_search_record_games'];indices=[row['game_index'] for row in empty]
+            if certified['generated_games']!=expected or certified['seed']!=meta['recipe']['seed'] or certified['nonempty_games']+len(empty)!=expected or len(set(indices))!=len(indices) or any(i<0 or i>=expected for i in indices):
+                raise ValueError('Zero-record certificate differs from generation recipe')
+            expected=certified['nonempty_games']
+        rec=np.fromfile(path,dtype=REC);segment_games(rec,expected)
         if not np.isin(rec['result'],[-1,0,1]).all():raise ValueError('Invalid outcome')
         if ((rec['board']&15)>8).any() or ((rec['board']>>4)>1).any() or (rec['stm']>1).any():raise ValueError('Invalid board')
         if (rec['urn']<0).any() or (rec['urn']>np.array([2,2,2,2,2,5])).any():raise ValueError('Invalid inventory')
@@ -30,7 +37,7 @@ def load_data(paths):
         mover=rec['board'][rows,src];victim=rec['board'][rows,dst]
         if (mover==0).any() or ((mover>>4)!=rec['stm']).any() or ((victim>0)&((victim>>4)==rec['stm'])).any():raise ValueError('Invalid recorded action ownership')
         arrays.append(rec.view(np.uint8).reshape(-1,112));actions.append(action)
-        metadata.append({'sha256':meta['sha256'],'games':meta['recipe']['games'],'positions':len(rec)})
+        metadata.append({'sha256':meta['sha256'],'games':meta['recipe']['games'],'games_with_search_records':expected,'positions':len(rec)})
     if len({x['sha256'] for x in metadata})!=len(metadata):raise ValueError('Duplicate replay input')
     return np.concatenate(arrays),np.concatenate(actions),metadata
 
@@ -58,7 +65,12 @@ def main():
     verify();out.mkdir(parents=True);torch.set_num_threads(2)
     torch.manual_seed(a.seed);dev=torch.device('cuda');torch.cuda.set_device(0)
     torch.backends.cuda.matmul.allow_tf32=True;torch.backends.cudnn.allow_tf32=True
-    raw,labels,metadata=load_data(a.data);vraw,vlabels,vmetadata=load_data([a.val])
+    certificate=None
+    if plan.get('empty_games_certificate'):
+        certificate=json.loads((ROOT/plan['empty_games_certificate']).read_text())
+        for key,file in [('actor_source_sha256','build/data-actor/source/engine/src/selfplay.cpp'),('native_core_sha256','build/data-actor/bin/libjqe_core.a'),('controller_sha256','scripts/continual_learning.py')]:
+            if certificate[key]!=sha(ROOT/file):raise ValueError('Zero-record proof provenance changed')
+    raw,labels,metadata=load_data(a.data,certificate);vraw,vlabels,vmetadata=load_data([a.val],certificate)
     if 'training_positions' in plan and (len(raw)!=plan['training_positions'] or sum(row['games'] for row in metadata)!=plan['unique_training_games']):
         raise ValueError('Loaded data volume differs from frozen recipe')
     if {x['sha256'] for x in metadata}&{x['sha256'] for x in vmetadata}:raise ValueError('Training/validation overlap')

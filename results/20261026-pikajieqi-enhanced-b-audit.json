@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "run": "pikajieqi-enhanced-b",
+  "games": 200,
+  "complete_pairs": 100,
+  "moves_replayed": 13459,
+  "wins_draws_losses": [
+    176,
+    1,
+    23
+  ],
+  "seeded_identities_match": true,
+  "all_recorded_moves_legal": true,
+  "nontechnical_terminal_results_match": true,
+  "technical_games": 0,
+  "actual_clock_moves_checked": 13459,
+  "clock_ambiguous_moves_from_rounding": 13,
+  "minimum_clock_lower_margin_ms": -12.5,
+  "raw_games_sha256": "9ce5e3808f0994d8cb3723c4840ac84265ccd289d65d36a3a4b5d44c3a87c34e",
+  "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+  "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+}

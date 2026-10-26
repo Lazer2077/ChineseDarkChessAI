@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "out": "runs/neural-policy-phase-evaluation-01",
+  "scope": "Three fixed CPU-only development screens after both12-epoch pretraining arms complete. Not confirmation, model promotion or an equal-hash/FLOP claim. No model substituted after outcomes.",
+  "models": {
+    "shared": "runs/neural-policy-phase-02/shared",
+    "phase": "runs/neural-policy-phase-02/phase"
+  },
+  "required_epochs": 12,
+  "training_plan_sha256": "d262eb0f9578a325de321b4f570a27c0b0818ebf66fc6ee36d60eabb51dfa4bf",
+  "teacher_binary": "external/devinokeefe-jieqi/engine/build/jqe",
+  "teacher_net": "external/devinokeefe-jieqi/engine/nets/it014.jqn",
+  "clock": "10+0.1",
+  "resources": "One CPU thread per engine, no GPU during matches. Native teacher receivesHash64MB; neural tree uses its own structures and ignores Hash. All position-to-bestmove wall time charged; common public warmup excluded.",
+  "clock_rationale": "CPU convolution and full-history reconstruction have coarser batch latency than native NNUE. A common10+0.1 profile is frozen before any trained-model game outcome, with no grace or retuning between arms.",
+  "matches": [
+    {
+      "id": "shared-vs-teacher",
+      "candidate": "shared",
+      "baseline": "teacher",
+      "games": 64,
+      "seed": 8150001
+    },
+    {
+      "id": "phase-vs-teacher",
+      "candidate": "phase",
+      "baseline": "teacher",
+      "games": 64,
+      "seed": 8150001
+    },
+    {
+      "id": "phase-vs-shared",
+      "candidate": "phase",
+      "baseline": "shared",
+      "games": 64,
+      "seed": 8160001
+    }
+  ],
+  "candidate_selection": "Each arm minimum common selection-validation CE+MSE across all12epochs, as already frozen. No selection by game results. Played array/metadata hashes recorded before the first match and checked between arms.",
+  "early_stopping": false,
+  "retune_between_arms": false,
+  "limitations": "Root-information PUCT retains Yuan internal rule approximations, compressed network omits unavailable history features; external jqe adjudicates games. Any technical failure or void invalidates strength interpretation.64-game multiple screens cannot establish promotion; fresh larger tests required.",
+  "sha256": {
+    "adapters/neural_policy_uci.py": "18ee5e451f97c8150c5f00ec8ff13d4b8cc168d5355d32660bd3fa138c27a4ac",
+    "adapters/neural_policy_uci.sh": "677d4d3b9b5fbbf6429312940113cc193767dbf039754cce3756a7aa7d14e775",
+    "adapters/yuan_observer.py": "44e0636f4547c0bef5499ae9e780580f071e0fdf95263e1e242ca6d58fecb887",
+    "adapters/yuan_uci.py": "802132ad3a664b1edd940081d84f2509d46ed97e12dfb2e5c4f51bbc7ea2ad69",
+    "build/yuan-native/source/_jieqi_legal.cpython-311-x86_64-linux-gnu.so": "1401b316a901b02a50a31d7592bb3f675101964230dee5b3e7c4377dcf67c4af",
+    "build/yuan-native/source/_jieqi_rules.cpython-311-x86_64-linux-gnu.so": "22dac537f95f1b2e301b132b33dfca1391597b3ade1ea8052bcf9fa3d232619a",
+    "external/devinokeefe-jieqi/engine/build/jqe": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+    "external/devinokeefe-jieqi/engine/nets/it014.jqn": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+    "external/yuan-bai-jieqi-lab/azero.py": "4a184dd7ea1d93a8fe2328ace3439ddbe3f78c200cd8dd50ccd610558f1223f2",
+    "external/yuan-bai-jieqi-lab/ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+    "external/yuan-bai-jieqi-lab/jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+    "research/neural_search.py": "db3d2aadc4c4f9d22c0d40f148df2f4740992df1a6ff4b1a79ad7ba223dc7eb7",
+    "research/policy_value.py": "e49ea26e059981e6de9cd7cdc5991748f8ee45ef159804412382e5f509de2183",
+    "runs/neural-policy-phase-02/plan.json": "d262eb0f9578a325de321b4f570a27c0b0818ebf66fc6ee36d60eabb51dfa4bf",
+    "scripts/evaluate_policy_value.py": "42eceaf5e33d7940c5e97ba835993a9896eaefe758e925767b25b3c9e21aac64",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828"
+  }
+}

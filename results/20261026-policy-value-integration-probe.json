@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "scope": "CPU-only end-to-end compatibility probe with a five-update pipeline-test network, not either full training arm or a strength evaluation.",
+  "architecture_parameters": 9335543,
+  "pipeline_optimization_steps": 5,
+  "wins_draws_losses": [
+    0,
+    0,
+    2
+  ],
+  "clock": "5+0.05",
+  "technical_failures": 0,
+  "voids": 0,
+  "inference_profile": "one CPU thread, no GPU; original Cython rules/legal backend; named numeric NPZ arrays loaded with allow_pickle=False",
+  "array_sha256": "28dd66cb2d41596cec6b90bc1f83af58248eba082ceb2f032e55ba268d4dbd6f",
+  "replay": {
+    "schema": 1,
+    "run": "policy-value-probe-native-smoke",
+    "games": 2,
+    "complete_pairs": 1,
+    "moves_replayed": 39,
+    "wins_draws_losses": [
+      0,
+      0,
+      2
+    ],
+    "seeded_identities_match": true,
+    "all_recorded_moves_legal": true,
+    "nontechnical_terminal_results_match": true,
+    "technical_games": 0,
+    "actual_clock_moves_checked": 39,
+    "clock_ambiguous_moves_from_rounding": 0,
+    "minimum_clock_lower_margin_ms": 2205.5,
+    "raw_games_sha256": "cdd264374d42687c4c4cb5f3ebcef44a49106e2e1648af7bdb2c20f1c555e99a",
+    "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+    "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+  },
+  "raw_games": {
+    "path": "results/raw/policy-probe-cdd264374d42.jsonl.gz",
+    "uncompressed_sha256": "cdd264374d42687c4c4cb5f3ebcef44a49106e2e1648af7bdb2c20f1c555e99a"
+  }
+}

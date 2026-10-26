@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "scope": "Completed experimental matches with explicit per-report stages; no promoted or defeated opponent. Some candidates use the unchanged published teacher net.",
+  "reports": [
+    {
+      "raw_games": {
+        "path": "results/raw/pikafish-jieqi-wasm-a-6ef5f25b14fe.jsonl.gz",
+        "uncompressed_sha256": "6ef5f25b14fece25275986bd096a8132c1e523f7657b81f1317675754f87eb8d"
+      },
+      "run": "pikafish-jieqi-wasm-a",
+      "stage": "confirmation",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 200,
+        "movetime": 100,
+        "seed": 8000001,
+        "concurrency": 2,
+        "tc": "5+0.05"
+      },
+      "candidate": "jqe",
+      "baseline": "external/pikafish-jieqi-wasm/src/PikaJieQi",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "97ff874660c9f07b74e3757e70229db8852c05b612230e597e49452afc0edc97",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 6539,
+            "mean_ms": 155.2427710593363,
+            "p95_ms": 470.784209,
+            "max_ms": 1149.421615
+          },
+          "baseline": {
+            "moves": 6457,
+            "mean_ms": 196.63989163589903,
+            "p95_ms": 618.483581,
+            "max_ms": 856.730603
+          }
+        },
+        "game_clock": "5+0.05",
+        "games": 200,
+        "expected_games": 200,
+        "wins": 181,
+        "draws": 1,
+        "losses": 18,
+        "score": 0.9075,
+        "complete_pairs": 100,
+        "paired_bootstrap_95": [
+          0.87,
+          0.945
+        ],
+        "paired_hoeffding_95": [
+          0.771689848425938,
+          1.0
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "raw_games": {
+        "path": "results/raw/pikafish-jieqi-wasm-b-9c37c71e405e.jsonl.gz",
+        "uncompressed_sha256": "9c37c71e405eabc23be5d1c29aeefc4fa4a5935b3454f8de9300139c42c0b408"
+      },
+      "run": "pikafish-jieqi-wasm-b",
+      "stage": "confirmation",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 200,
+        "movetime": 100,
+        "seed": 8010001,
+        "concurrency": 2,
+        "tc": "5+0.05"
+      },
+      "candidate": "jqe",
+      "baseline": "external/pikafish-jieqi-wasm/src/PikaJieQi",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "97ff874660c9f07b74e3757e70229db8852c05b612230e597e49452afc0edc97",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 6379,
+            "mean_ms": 157.989571542248,
+            "p95_ms": 478.185892,
+            "max_ms": 1149.615411
+          },
+          "baseline": {
+            "moves": 6299,
+            "mean_ms": 200.44659005953326,
+            "p95_ms": 618.837405,
+            "max_ms": 795.613219
+          }
+        },
+        "game_clock": "5+0.05",
+        "games": 200,
+        "expected_games": 200,
+        "wins": 179,
+        "draws": 3,
+        "losses": 18,
+        "score": 0.9025,
+        "complete_pairs": 100,
+        "paired_bootstrap_95": [
+          0.8625,
+          0.94
+        ],
+        "paired_hoeffding_95": [
+          0.766689848425938,
+          1.0
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": true,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    }
+  ]
+}

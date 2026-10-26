@@ -8,8 +8,9 @@
       "commit": "da1ab8ce11659110f19422213c5811cbfab77cb6",
       "kind": "engine",
       "license": "GPL-3.0",
-      "status": "original unmodified C++ own-rule four-thread development screen: 15 candidate wins/1 loss across 16 games, no voids; only eight pairs and integration timing tolerance, no superiority claim",
-      "defeated": false
+      "status": "Original C++ under original own-rule profile: strict15+0.1 confirmation A192W0D8L/B191W0D9L,200/set, includes4/3 opponent time forfeits. Both fail frozen technical-integrity gate; older timing-tolerance development is separate. Not defeated.",
+      "defeated": false,
+      "evidence": "results/20261026-mist-clock-confirmation-b.json"
     },
     {
       "id": "musesfish",
@@ -26,9 +27,10 @@
       "commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
       "kind": "engine variant",
       "license": "GPL-3.0-or-later",
-      "status": "16-game development screen 15 candidate wins/1 loss; no technical errors; upstream build warning remains; no superiority claim",
-      "defeated": false,
-      "repository_url": "https://github.com/brianhliou/pikafish-jieqi-wasm"
+      "status": "Both fixed actual-clock5+0.05 confirmation sets passed:181W1D18L and179W3D18L,100 color-swapped pairs/set, no technical failures/voids;25,674 moves/clocks independently replayed without ambiguity. Scoped to pinned original classical source under external jqe referee, not universal rules or learned gain.",
+      "defeated": true,
+      "repository_url": "https://github.com/brianhliou/pikafish-jieqi-wasm",
+      "acceptance": "results/20261026-pikafish-wasm-acceptance.json"
     },
     {
       "id": "AB-JChess",
@@ -73,18 +75,20 @@
       "commit": "7d5ca267f23c9c5cb57315607a18a55de17808b1",
       "kind": "engine variant",
       "license": "GPL lineage; file audit pending",
-      "status": "16-game development screen 13 candidate wins/3 losses; no technical errors; no superiority claim",
-      "defeated": false
+      "status": "Completed fixed confirmation A177W3D20L/B176W1D23L,200/set and no technical results/voids. Replay found5/13 ambiguous clock margins from accumulated millisecond rounding; strict confirmation not accepted. No defeated claim.",
+      "defeated": false,
+      "evidence": "results/20261026-pikajieqi-enhanced-confirmation.json"
     },
     {
       "id": "pikafish-jieqi-old",
       "url": "https://github.com/official-pikafish/Pikafish/tree/jieqi_old",
       "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc",
       "kind": "original engine",
-      "status": "A completed175W/1D/24L clean and replay-audited; B172W/2D/26L includes one opponent time forfeit. Frozen two-set clean-run criterion not met; not defeated.",
+      "status": "Completed fixed confirmation A175W1D24L/B172W2D26L. B includes one opponent time forfeit; frozen clean two-set gate failed. Not defeated.",
       "defeated": false,
       "license": "GPL-3.0",
-      "repository_url": "https://github.com/official-pikafish/Pikafish"
+      "repository_url": "https://github.com/official-pikafish/Pikafish",
+      "evidence": "results/20261026-pikafish-jieqi-old-confirmation.json"
     },
     {
       "id": "pikafish-jieqi",
@@ -157,8 +161,16 @@
       "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
       "kind": "independent Python information-set search and neural selfplay",
       "license": "MIT",
-      "status": "Pinned MIT pure root-consistent ISMCTS now observer/clock-adapted with original Cython rule/legal acceleration;960-position observer checks pass in both backends;32-game development screen32W/0D/0L clean. Two frozen200-game pure-search confirmations running. Upstream ships no pretrained neural model; neural mode remains unverified.",
-      "defeated": false
+      "status": "Original accelerated pure-search adapter completed two200-game confirmation sets at200W/0D/0L each, clean; all11624 moves/clocks replay-audited and fixed hashes rechecked. Only this pure-search profile is accepted. No pretrained neural mode ships upstream; project-wide neural strength remains unverified.",
+      "defeated": false,
+      "verified_profiles": [
+        {
+          "id": "pure-root-ismcts-native",
+          "acceptance_evidence": "results/20261026-yuan-pure-acceptance.json",
+          "accepted": true,
+          "scope": "Fixed original Cython-accelerated pure ISMCTS clock/observer adapter only,5+0.05/native jqe referee. No neural-mode claim."
+        }
+      ]
     },
     {
       "id": "ethexreal-jieqi-ai",
@@ -336,9 +348,10 @@
       "commit": "88bfb82c3063f69e8cc270cad08f24930da0874f",
       "kind": "repository lead; engine independence unverified",
       "license": "GPL-3.0 source (Copying.txt)",
-      "status": "Distinct Pika-search/ABJ-V11 NNUE hybrid built with own declared official default net; development30W/0D/2L. Frozen confirmation has opponent process-exit voids, so cannot pass clean-run criterion. Fresh-process failure-prefix replays did not reproduce; cause unresolved; not defeated.",
+      "status": "Original Pika search with its requested official ABJ V11 NNUE. Confirmation A199 counted games183W3D13L/8 void attempts; B198 games187W0D11L/9 void attempts. Missing pairs/engine-exit voids invalidate clean gate; exact-prefix probes did not establish cause. Not defeated.",
       "defeated": false,
-      "repository_full_name": "hefengfan0615/pikafish-jieqi"
+      "repository_full_name": "hefengfan0615/pikafish-jieqi",
+      "evidence": "results/20261026-hefeng-confirmation.json"
     },
     {
       "id": "pika-jieqi2022-archive",

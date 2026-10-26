@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "scope": "Completed frozen three-seed, two-iteration NNUE series. Internal selection only, no independent final promotion. No gate passed; all six generated datasets therefore used the original upstream teacher, not an improved learner actor.",
+  "unique_training_games": 49152,
+  "actor_promotions": 0,
+  "target": ".7*sigmoid(search_score/430)+.3*terminal_score_probability",
+  "seeds": [
+    {
+      "seed": 20261026,
+      "iterations": [
+        {
+          "iteration": 1,
+          "generated_games": 8192,
+          "raw_records": 607652,
+          "rejected_games": 0,
+          "dataset_sha256": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+          "retained_replay_records": 405959,
+          "selected_epoch": 1,
+          "selected_validation_mse": 0.01410217396914959,
+          "updates": 1485,
+          "network_sha256": "9cd00a5f4fb7ccceb5c1374660a623acb60cd18eafa79f4c6aa9848b0e278833",
+          "actor_accepted": false,
+          "internal_gate": {
+            "timing": {
+              "candidate": {
+                "moves": 9324,
+                "mean_ms": 136.17002817942944,
+                "p95_ms": 408.295736,
+                "max_ms": 1101.319524
+              },
+              "baseline": {
+                "moves": 9332,
+                "mean_ms": 135.5367200432919,
+                "p95_ms": 375.071055,
+                "max_ms": 1021.740721
+              }
+            },
+            "game_clock": "5+0.05",
+            "games": 200,
+            "expected_games": 200,
+            "wins": 87,
+            "draws": 13,
+            "losses": 100,
+            "score": 0.4675,
+            "complete_pairs": 100,
+            "paired_bootstrap_95": [
+              0.4,
+              0.535
+            ],
+            "paired_hoeffding_95": [
+              0.33168984842593807,
+              0.603310151574062
+            ],
+            "void_attempts": 0,
+            "technical_results": [],
+            "valid_technical_run": true,
+            "single_match_superiority_gate": false,
+            "promotion_supported": false,
+            "warning": "A single development match is not a promotion or an all-engine superiority claim."
+          }
+        },
+        {
+          "iteration": 2,
+          "generated_games": 8192,
+          "raw_records": 601102,
+          "rejected_games": 0,
+          "dataset_sha256": "cb837f6e401b20a85ab34419086404a881577b517ede74370153593f47e6a11d",
+          "retained_replay_records": 807586,
+          "selected_epoch": 1,
+          "selected_validation_mse": 0.014126256108283997,
+          "updates": 2955,
+          "network_sha256": "13d53b5d092c7a3a0906c83bdd6390818a8bd16cadc9bda0c590a08a4414e373",
+          "actor_accepted": false,
+          "internal_gate": {
+            "timing": {
+              "candidate": {
+                "moves": 8268,
+                "mean_ms": 144.88683253277696,
+                "p95_ms": 413.228534,
+                "max_ms": 1114.082288
+              },
+              "baseline": {
+                "moves": 8272,
+                "mean_ms": 143.9915036438588,
+                "p95_ms": 394.791493,
+                "max_ms": 1129.345961
+              }
+            },
+            "game_clock": "5+0.05",
+            "games": 200,
+            "expected_games": 200,
+            "wins": 93,
+            "draws": 5,
+            "losses": 102,
+            "score": 0.4775,
+            "complete_pairs": 100,
+            "paired_bootstrap_95": [
+              0.4175,
+              0.5375
+            ],
+            "paired_hoeffding_95": [
+              0.341689848425938,
+              0.613310151574062
+            ],
+            "void_attempts": 0,
+            "technical_results": [],
+            "valid_technical_run": true,
+            "single_match_superiority_gate": false,
+            "promotion_supported": false,
+            "warning": "A single development match is not a promotion or an all-engine superiority claim."
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20261027,
+      "iterations": [
+        {
+          "iteration": 1,
+          "generated_games": 8192,
+          "raw_records": 607907,
+          "rejected_games": 0,
+          "dataset_sha256": "83b51de7572c5c93df80d03a9be8ca7bf71145cee109c95d384a89f95d2e21da",
+          "retained_replay_records": 406333,
+          "selected_epoch": 1,
+          "selected_validation_mse": 0.0127675486728549,
+          "updates": 1485,
+          "network_sha256": "9a4f3231353b2c47b9a9bb16c1da619ce6a987f878d6fb6ace5fafbb6a9ed053",
+          "actor_accepted": false,
+          "internal_gate": {
+            "timing": {
+              "candidate": {
+                "moves": 8719,
+                "mean_ms": 139.62221995721987,
+                "p95_ms": 401.409201,
+                "max_ms": 1077.643971
+              },
+              "baseline": {
+                "moves": 8717,
+                "mean_ms": 140.8827829137318,
+                "p95_ms": 389.310101,
+                "max_ms": 1129.147526
+              }
+            },
+            "game_clock": "5+0.05",
+            "games": 200,
+            "expected_games": 200,
+            "wins": 96,
+            "draws": 8,
+            "losses": 96,
+            "score": 0.5,
+            "complete_pairs": 100,
+            "paired_bootstrap_95": [
+              0.4475,
+              0.5525
+            ],
+            "paired_hoeffding_95": [
+              0.36418984842593805,
+              0.635810151574062
+            ],
+            "void_attempts": 0,
+            "technical_results": [],
+            "valid_technical_run": true,
+            "single_match_superiority_gate": false,
+            "promotion_supported": false,
+            "warning": "A single development match is not a promotion or an all-engine superiority claim."
+          }
+        },
+        {
+          "iteration": 2,
+          "generated_games": 8192,
+          "raw_records": 600880,
+          "rejected_games": 0,
+          "dataset_sha256": "74bcb2a9c8ea3da3f8b140f8ca7ebcdf45920c33801d81abd7aa52d2a695101f",
+          "retained_replay_records": 807617,
+          "selected_epoch": 2,
+          "selected_validation_mse": 0.012752432376146317,
+          "updates": 2955,
+          "network_sha256": "43cb3d492529f81848558c81613ce38777e678132b3bf1471923bafbdb791975",
+          "actor_accepted": false,
+          "internal_gate": {
+            "timing": {
+              "candidate": {
+                "moves": 8374,
+                "mean_ms": 142.5826918552663,
+                "p95_ms": 390.743329,
+                "max_ms": 1114.41057
+              },
+              "baseline": {
+                "moves": 8362,
+                "mean_ms": 143.0668439294427,
+                "p95_ms": 388.499311,
+                "max_ms": 931.87341
+              }
+            },
+            "game_clock": "5+0.05",
+            "games": 200,
+            "expected_games": 200,
+            "wins": 109,
+            "draws": 5,
+            "losses": 86,
+            "score": 0.5575,
+            "complete_pairs": 100,
+            "paired_bootstrap_95": [
+              0.4875,
+              0.6275
+            ],
+            "paired_hoeffding_95": [
+              0.42168984842593804,
+              0.693310151574062
+            ],
+            "void_attempts": 0,
+            "technical_results": [],
+            "valid_technical_run": true,
+            "single_match_superiority_gate": false,
+            "promotion_supported": false,
+            "warning": "A single development match is not a promotion or an all-engine superiority claim."
+          }
+        }
+      ]
+    },
+    {
+      "seed": 20261028,
+      "iterations": [
+        {
+          "iteration": 1,
+          "generated_games": 8192,
+          "raw_records": 600760,
+          "rejected_games": 0,
+          "dataset_sha256": "03f2f0e4521ed8b3795e7f28be27aa0cc228850fd6cb549ad619ff132e92fbc3",
+          "retained_replay_records": 400997,
+          "selected_epoch": 1,
+          "selected_validation_mse": 0.014724096283316612,
+          "updates": 1455,
+          "network_sha256": "0525a76baee57cb2b01dd3f63a177f1f225310124058a095cf36563fb29e43f2",
+          "actor_accepted": false,
+          "internal_gate": {
+            "timing": {
+              "candidate": {
+                "moves": 8284,
+                "mean_ms": 142.50036512433607,
+                "p95_ms": 384.136519,
+                "max_ms": 1103.528634
+              },
+              "baseline": {
+                "moves": 8282,
+                "mean_ms": 142.29827944904613,
+                "p95_ms": 396.373657,
+                "max_ms": 1025.843703
+              }
+            },
+            "game_clock": "5+0.05",
+            "games": 200,
+            "expected_games": 200,
+            "wins": 99,
+            "draws": 5,
+            "losses": 96,
+            "score": 0.5075,
+            "complete_pairs": 100,
+            "paired_bootstrap_95": [
+              0.445,
+              0.5725
+            ],
+            "paired_hoeffding_95": [
+              0.371689848425938,
+              0.6433101515740619
+            ],
+            "void_attempts": 0,
+            "technical_results": [],
+            "valid_technical_run": true,
+            "single_match_superiority_gate": false,
+            "promotion_supported": false,
+            "warning": "A single development match is not a promotion or an all-engine superiority claim."
+          }
+        },
+        {
+          "iteration": 2,
+          "generated_games": 8192,
+          "raw_records": 600088,
+          "rejected_games": 0,
+          "dataset_sha256": "a467e2a66a48ad179e9086f3b6d2cd23a28143ddefd198893bc3cb1d428a1984",
+          "retained_replay_records": 801583,
+          "selected_epoch": 2,
+          "selected_validation_mse": 0.014712459407746792,
+          "updates": 2925,
+          "network_sha256": "f6465c7fbb57e6704bb08b2b10e688c193bd0f45a5a4cf695e72a5bbaf980e4c",
+          "actor_accepted": false,
+          "internal_gate": {
+            "timing": {
+              "candidate": {
+                "moves": 8894,
+                "mean_ms": 138.0507873445019,
+                "p95_ms": 405.461504,
+                "max_ms": 1081.640344
+              },
+              "baseline": {
+                "moves": 8900,
+                "mean_ms": 136.68686577786517,
+                "p95_ms": 370.424086,
+                "max_ms": 1048.767621
+              }
+            },
+            "game_clock": "5+0.05",
+            "games": 200,
+            "expected_games": 200,
+            "wins": 87,
+            "draws": 12,
+            "losses": 101,
+            "score": 0.465,
+            "complete_pairs": 100,
+            "paired_bootstrap_95": [
+              0.4075,
+              0.5225
+            ],
+            "paired_hoeffding_95": [
+              0.32918984842593807,
+              0.600810151574062
+            ],
+            "void_attempts": 0,
+            "technical_results": [],
+            "valid_technical_run": true,
+            "single_match_superiority_gate": false,
+            "promotion_supported": false,
+            "warning": "A single development match is not a promotion or an all-engine superiority claim."
+          }
+        }
+      ]
+    }
+  ],
+  "raw_training_positions": 3618389
+}

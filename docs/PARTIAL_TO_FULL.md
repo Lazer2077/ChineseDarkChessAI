@@ -137,3 +137,22 @@ Stage-specific follow-up diagnostics and their game-level sampling limits are
 in [PHASE_DIAGNOSTICS.md](PHASE_DIAGNOSTICS.md). Only 88 of 512 validation games
 contribute retained fully public positions; counts of positions are not counts
 of independent games.
+
+## Policy/value phase experts: completed pretraining
+
+The [residual policy/value comparison](NEURAL_POLICY_PHASE.md) implements a
+second use of decreasing uncertainty: a separate value MLP after shared neural
+features, selected only by the public disappearance of all on-board dark pieces.
+Both ordinary and phase models canonicalize irrelevant off-board inventory,
+retain dark movement roles until actual reveal, and keep full real rule history
+in search. The gate is a conservative sufficient condition for a public
+continuation, not a claim to detect every publicly inferable identity.
+
+Matched initialization/data/augmentation and 12 GPU epochs are complete. On
+reused checkpoint-selection data the phase model's fully public value MSE is
+0.07975 versus 0.06782 for the ordinary model, so that diagnostic does not support
+the hypothesis. Fixed actual-clock whole-game screens are running. Neither
+removing uncertainty from an input nor adding an expert is automatically useful:
+the learned boundary, teacher target bias and search inference cost must be
+tested. Search already avoids impossible reveal branches in fully public states;
+that inherited optimization is not a new contribution.

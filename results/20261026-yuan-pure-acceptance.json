@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "opponent": "Yuan-Bai/jieqi-lab pure root-consistent ISMCTS with original Cython rule/legal acceleration",
+  "commit": "4173aa3ddc72e19227a619ffc4ea80a88b3ba2b4",
+  "plan_path": "results/yuan-native-confirmation-plan.json",
+  "plan_sha256": "5164b155c347ea9b33191939ae78adb5896257578a1243c7f0b2bbd761182126",
+  "clock": "5+0.05",
+  "candidate_binary": "external/devinokeefe-jieqi/engine/build/jqe",
+  "candidate_net": "models/experimental/expanded-seed20261026-it1.jqn",
+  "baseline": "adapters/yuan_uci.sh",
+  "accepted": true,
+  "scope": "Statistical advantage over this pinned opponent and adapter under the documented external referee and clock. Both fixed sets pass separately, without technical failures, voids or ambiguous clock replays. This is not a universal rules/time-control claim, a general learned improvement over the teacher, or completion of the all-engine goal.",
+  "all_frozen_hashes_match_after_completion": true,
+  "unchanged_opponent_source": true,
+  "sets": [
+    {
+      "id": "a",
+      "games": 200,
+      "pairs": 100,
+      "wins_draws_losses": [
+        200,
+        0,
+        0
+      ],
+      "score": 1.0,
+      "paired_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "paired_hoeffding_lower_95": 0.864189848425938,
+      "moves_replayed": 5790,
+      "result_path": "results/20261026-yuan-pure-confirmation-a.json",
+      "result_sha256": "b3b3b42d73841c99f2281f4d08d5e62eb93b5707dc8dede8fa3ea765f6a3ca16",
+      "audit_path": "results/20261026-yuan-pure-confirmation-a-audit.json",
+      "audit_sha256": "55547b4cb65b4a8dac845949d2ac6c9e686e24f8c69d2c50d66405ab53f0a899",
+      "raw_sha256": "8cd7570848d61cb480207bb989ca16a47463a7b651b5a1f5c0bc7a9e859ce309"
+    },
+    {
+      "id": "b",
+      "games": 200,
+      "pairs": 100,
+      "wins_draws_losses": [
+        200,
+        0,
+        0
+      ],
+      "score": 1.0,
+      "paired_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "paired_hoeffding_lower_95": 0.864189848425938,
+      "moves_replayed": 5834,
+      "result_path": "results/20261026-yuan-pure-confirmation-b.json",
+      "result_sha256": "7c830fcfbade9da38172fccaa85a03315c1aa209cc1af5765c245feaa5f175fc",
+      "audit_path": "results/20261026-yuan-pure-confirmation-b-audit.json",
+      "audit_sha256": "836d8f6a9744e85b7d9e78d347d0ed10203f801e469f098ae3c1eac8e4d43364",
+      "raw_sha256": "e6da9409995cd9b806324420394d265f0d8bfa0c33e9bcaa363b76194fb6f933"
+    }
+  ],
+  "total_games": 400,
+  "distinct_deal_seeds": 200,
+  "acceptance_script_sha256": "8d0ce3470f342e4d89435ce92a43dc2f5c1cf124bd23fe5bc738eea2038b8783"
+}

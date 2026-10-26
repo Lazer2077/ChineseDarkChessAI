@@ -1,0 +1,18 @@
+{
+  "candidate_net_sha256": "114a1dd460b66b52cd8089bf6f5fbd2273ed90fc4aa9f7d8ef35ea068cecae1f",
+  "baseline_net_sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+  "backbone": "jqe unmodified 331a6e612a038c4a04cf980f7b9482910fd50078",
+  "adaptive_search": false,
+  "clock": "5+0.05 seconds, actual elapsed charged",
+  "threads_per_engine": 1,
+  "hash_mb": 64,
+  "concurrency": 2,
+  "warmup": "one dummy public-start search outside game clock, cleared with ucinewgame",
+  "games_per_set": 200,
+  "layout_seeds": [
+    7200001,
+    7300001
+  ],
+  "training_seed": 20261026,
+  "decision": "Both sets complete, all technical events reported, paired intervals examined; no overall promotion without additional independent training seeds."
+}

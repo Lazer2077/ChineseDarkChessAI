@@ -312,6 +312,147 @@
         "warning": "A single development match is not a promotion or an all-engine superiority claim."
       },
       "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "adaptive-v1-extra-dev",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 32,
+        "movetime": 100,
+        "seed": 6800001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/engine/build/jqe",
+      "candidate_options": "CDCAExtra=1",
+      "hashes": {
+        "candidate": "892c83d450a4fbffa396d98ee70a50204b97e12d5cfccc407924f6457f5c5eae",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160"
+      },
+      "result": {
+        "games": 32,
+        "expected_games": 32,
+        "wins": 14,
+        "draws": 3,
+        "losses": 15,
+        "score": 0.484375,
+        "complete_pairs": 16,
+        "paired_bootstrap_95": null,
+        "paired_hoeffding_95": [
+          0.1448496210648451,
+          0.8239003789351549
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "native-warm-dev",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 32,
+        "movetime": 100,
+        "seed": 7000001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/engine/build/jqe",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "114a1dd460b66b52cd8089bf6f5fbd2273ed90fc4aa9f7d8ef35ea068cecae1f"
+      },
+      "result": {
+        "games": 32,
+        "expected_games": 32,
+        "wins": 18,
+        "draws": 1,
+        "losses": 13,
+        "score": 0.578125,
+        "complete_pairs": 16,
+        "paired_bootstrap_95": null,
+        "paired_hoeffding_95": [
+          0.2385996210648451,
+          0.9176503789351549
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
+    },
+    {
+      "run": "warm-clock-smoke",
+      "stage": "development",
+      "source_referee_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "rules": "jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history",
+      "budget": {
+        "games": 2,
+        "movetime": 100,
+        "seed": 7100001,
+        "concurrency": 2
+      },
+      "candidate": "jqe",
+      "baseline": "external/devinokeefe-jieqi/engine/build/jqe",
+      "candidate_options": "",
+      "hashes": {
+        "candidate": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "114a1dd460b66b52cd8089bf6f5fbd2273ed90fc4aa9f7d8ef35ea068cecae1f"
+      },
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 83,
+            "mean_ms": 136.9683988072289,
+            "p95_ms": 299.292707,
+            "max_ms": 875.259578
+          },
+          "baseline": {
+            "moves": 83,
+            "mean_ms": 139.67607481927712,
+            "p95_ms": 314.680846,
+            "max_ms": 663.052534
+          }
+        },
+        "game_clock": "5+0.05",
+        "games": 2,
+        "expected_games": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "score": 0.5,
+        "complete_pairs": 1,
+        "paired_bootstrap_95": null,
+        "paired_hoeffding_95": [
+          0.0,
+          1.0
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "attribution": "Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution."
     }
   ]
 }

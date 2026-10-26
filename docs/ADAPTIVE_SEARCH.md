@@ -121,3 +121,23 @@ K=430, batch=1024, 10 epochs, seed=20261026. Held-out loss moves from 0.004957 t
 about 0.004909; this is not a strength claim. Unchanged native backbone with the
 warm candidate faces the published teacher net for 32 new development games,
 100 ms/move, seed 7000001. No adaptive search change in that comparison.
+
+## Warm candidate independent confirmation plan
+The warm candidate finished its 32-game development run 18 wins / 1 draw /
+13 losses (57.8125%), no technical failures. It is not promoted. The following
+confirmation was frozen before games; see results/warm-confirmation-plan.json
+for candidate and baseline hashes.
+
+Two new independent sets of 200 games (100 layout pairs each), seed 7200001 then
+7300001, unchanged native search on both sides, one thread and 64 MB hash each,
+actual game clock 5 seconds + 0.05 seconds per move, concurrency 2. Both sets
+run to their declared size without tuning/stopping based on intermediate score.
+The first set is not used to select another candidate for the second set.
+A public-start dummy search loads networks outside the game clock, followed by
+ucinewgame to clear game state. Every actual search records elapsed time; the
+referee charges its measured time to the game clock. A two-game clock smoke
+finished 1 win / 1 loss, no technical errors, mean move times about 137 ms
+(candidate) and 140 ms (baseline). This smoke is not a confirmation result.
+
+One training seed does not meet the separate multi-seed training requirement;
+these runs assess whether this frozen candidate warrants that larger test.

@@ -1,7 +1,7 @@
 """Frozen paired match over the independent jqe referee and full private histories."""
 import argparse, collections, hashlib, json, math, os, platform, random, statistics, subprocess, sys
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--baseline',required=True);p.add_argument('--net',required=True);p.add_argument('--candidate-net');p.add_argument('--candidate-options',default='');p.add_argument('--baseline-strict',action='store_true');p.add_argument('--baseline-options',default='');p.add_argument('--baseline-classical',action='store_true');p.add_argument('--out',required=True);p.add_argument('--games',type=int,default=32);p.add_argument('--movetime',type=int,default=100);p.add_argument('--seed',type=int,required=True);p.add_argument('--concurrency',type=int,default=2);p.add_argument('--stage',choices=['development','confirmation'],default='development');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--baseline',required=True);p.add_argument('--net',required=True);p.add_argument('--candidate-net');p.add_argument('--candidate-options',default='');p.add_argument('--baseline-strict',action='store_true');p.add_argument('--baseline-options',default='');p.add_argument('--baseline-classical',action='store_true');p.add_argument('--out',required=True);p.add_argument('--games',type=int,default=32);p.add_argument('--movetime',type=int,default=100);p.add_argument('--tc',default='');p.add_argument('--seed',type=int,required=True);p.add_argument('--concurrency',type=int,default=2);p.add_argument('--stage',choices=['development','confirmation'],default='development');a=p.parse_args()
 if a.games<2 or a.games%2 or a.movetime<1:raise SystemExit('Require even games and positive clock')
 if sys.version_info<(3,11):raise SystemExit('Native referee requires Python 3.11+; choose a compatible interpreter')
 root=Path(__file__).resolve().parents[1];src=root/'external/devinokeefe-jieqi';out=Path(a.out).resolve()
@@ -18,7 +18,7 @@ B=f"baseline={paths['baseline']}"
 opts=[] if a.baseline_classical else [f"EvalFile={paths['net']}"]
 if a.baseline_options:opts.append(a.baseline_options)
 if opts:B+=':'+','.join(opts)
-cmd=[sys.executable,root/'scripts/referee_entry.py',*(['--strict-name','baseline'] if a.baseline_strict else []),'--engine',A,'--engine',B,'--games',str(a.games),'--movetime',str(a.movetime),'--seed',str(a.seed),'--concurrency',str(a.concurrency),'--threads','1','--hash','64','--scores','--out',out]
+cmd=[sys.executable,root/'scripts/referee_entry.py','--warmup','--timing-log',out/'timing.jsonl',*(['--strict-name','baseline'] if a.baseline_strict else []),'--engine',A,'--engine',B,'--games',str(a.games),*(['--tc',a.tc] if a.tc else ['--movetime',str(a.movetime)]),'--seed',str(a.seed),'--concurrency',str(a.concurrency),'--threads','1','--hash','64','--scores','--out',out]
 manifest={'args':vars(a),'command':list(map(str,cmd)),'host':platform.node(),'referee_commit':sha,'rules':'jqe pinned native: 80-ply no-capture, repetition/check/chase; complete observer-specific history','hashes':{k:hashlib.sha256(v.read_bytes()).hexdigest() for k,v in paths.items()},'status':'running','stage':a.stage,'referee_entry_sha256':hashlib.sha256((root/'scripts/referee_entry.py').read_bytes()).hexdigest(),'backbone_disclosure':'Candidate may reuse jqe; teacher network belongs to upstream. Only identified changes are our contribution.'}
 (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 try:
@@ -37,7 +37,12 @@ try:
         mean=statistics.mean(complete);radius=math.sqrt(math.log(40)/(2*len(complete)))
         bounded=[max(0.,mean-radius),min(1.,mean+radius)]
     valid=len(games)==a.games and len(complete)==a.games//2 and not technical and not voids
-    report={'games':len(games),'expected_games':a.games,'wins':wins,'draws':draws,'losses':losses,'score':(wins+.5*draws)/len(games) if games else None,'complete_pairs':len(complete),'paired_bootstrap_95':ci,'paired_hoeffding_95':bounded,'void_attempts':len(voids),'technical_results':technical,'valid_technical_run':valid,'single_match_superiority_gate':a.stage=='confirmation' and valid and len(complete)>=100 and ci is not None and ci[0]>.5 and bounded[0]>.5,'promotion_supported':False,'warning':'A single development match is not a promotion or an all-engine superiority claim.'}
+    timings=[json.loads(line) for line in (out/'timing.jsonl').read_text().splitlines()] if (out/'timing.jsonl').exists() else []
+    audit={}
+    for name in ['candidate','baseline']:
+        elapsed=sorted(t['elapsed_ms'] for t in timings if t['engine']==name and not t['warmup'])
+        if elapsed:audit[name]={'moves':len(elapsed),'mean_ms':statistics.mean(elapsed),'p95_ms':elapsed[int(.95*(len(elapsed)-1))],'max_ms':max(elapsed)}
+    report={'timing':audit,'game_clock':a.tc or None,'games':len(games),'expected_games':a.games,'wins':wins,'draws':draws,'losses':losses,'score':(wins+.5*draws)/len(games) if games else None,'complete_pairs':len(complete),'paired_bootstrap_95':ci,'paired_hoeffding_95':bounded,'void_attempts':len(voids),'technical_results':technical,'valid_technical_run':valid,'single_match_superiority_gate':a.stage=='confirmation' and valid and len(complete)>=100 and ci is not None and ci[0]>.5 and bounded[0]>.5,'promotion_supported':False,'warning':'A single development match is not a promotion or an all-engine superiority claim.'}
     (out/'cdca-summary.json').write_text(json.dumps(report,indent=2)+'\n');manifest['status']='completed';print(json.dumps(report),flush=True)
 except BaseException as error:
     manifest['status']='failed';manifest['error']=str(error);raise

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Attribution ablation only: unchanged warm CNN policy/PUCT plus original teacher static NNUE leaves, not a newly learned evaluator. Positive warm-model point estimate is inconclusive; large native-teacher gap remains. No promotion or claim of our training improvement.",
+  "matches": {
+    "warm": {
+      "timing": {
+        "candidate": {
+          "moves": 1467,
+          "mean_ms": 330.07818492297207,
+          "p95_ms": 458.620112,
+          "max_ms": 583.400482
+        },
+        "baseline": {
+          "moves": 1463,
+          "mean_ms": 330.0929181428571,
+          "p95_ms": 460.208162,
+          "max_ms": 555.151975
+        }
+      },
+      "game_clock": "10+0.1",
+      "games": 64,
+      "expected_games": 64,
+      "wins": 37,
+      "draws": 1,
+      "losses": 26,
+      "score": 0.5859375,
+      "complete_pairs": 32,
+      "paired_bootstrap_95": [
+        0.4765625,
+        0.6953125
+      ],
+      "paired_hoeffding_95": [
+        0.3458568021700198,
+        0.8260181978299802
+      ],
+      "void_attempts": 0,
+      "technical_results": [],
+      "valid_technical_run": true,
+      "single_match_superiority_gate": false,
+      "promotion_supported": false,
+      "warning": "A single development match is not a promotion or an all-engine superiority claim."
+    },
+    "teacher": {
+      "timing": {
+        "candidate": {
+          "moves": 1484,
+          "mean_ms": 333.7562299602426,
+          "p95_ms": 459.048678,
+          "max_ms": 537.627596
+        },
+        "baseline": {
+          "moves": 1514,
+          "mean_ms": 344.2803498989432,
+          "p95_ms": 850.327509,
+          "max_ms": 1993.612037
+        }
+      },
+      "game_clock": "10+0.1",
+      "games": 64,
+      "expected_games": 64,
+      "wins": 1,
+      "draws": 0,
+      "losses": 63,
+      "score": 0.015625,
+      "complete_pairs": 32,
+      "paired_bootstrap_95": [
+        0.0,
+        0.046875
+      ],
+      "paired_hoeffding_95": [
+        0.0,
+        0.2557056978299802
+      ],
+      "void_attempts": 0,
+      "technical_results": [],
+      "valid_technical_run": true,
+      "single_match_superiority_gate": false,
+      "promotion_supported": false,
+      "warning": "A single development match is not a promotion or an all-engine superiority claim."
+    }
+  },
+  "all_native_moves_audited": 5928,
+  "evidence_sha256": {
+    "results/teacher-leaf-screen-plan.json": "fa6bdbf31139a9d96aef828a94fee4505b54d06085df4bd974250c760b24ae96",
+    "results/20261026-teacher-leaf-vs-warm.json": "e42f3fc6db421e5f1f5185d9ae0c3767bea4272c7de4da3129d0ce4be228876a",
+    "results/20261026-teacher-leaf-vs-warm-audit.json": "ca1c0eada1568b8780bd0ad61e538053a7f7f43e48c58ba753980b6d640fbd2b",
+    "results/20261026-teacher-leaf-vs-teacher.json": "95addc99e1c9f4cd51e19d4b9b5e936436ac3fdce388eb74872ae293eb39ddff",
+    "results/20261026-teacher-leaf-vs-teacher-audit.json": "ae305901779f8e0708493e2443862f7a2cced3958ce295efe71f24dcff8853f1"
+  }
+}

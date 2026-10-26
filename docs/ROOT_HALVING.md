@@ -23,7 +23,7 @@ variant. It explicitly requires a Gumbel seed, rejects time deadlines, Dirichlet
 mixing and visit-temperature sampling, and returns a root-score recommendation
 plus the actual normalized root visits. Those visits are not a completed-Q
 training target. There is no new self-play training. A separate fixed-work actor
-and its queued development matches are described below; no anytime profile is
+and its development study are described below; no anytime profile is
 claimed.
 
 At256simulations and16candidates, rounds allocate64simulations each to16,8,4,2
@@ -130,8 +130,9 @@ never reaches a fully revealed turn, that mechanism is unexercised rather than
 positive or negative evidence for the switch. Every exercised phase count is
 reported by the witness audit.
 
-The study is queued behind the teacher-leaf campaign to use its released GPU;
-it is not running concurrently on that GPU. No game-strength conclusion or
+The teacher-leaf campaign completed and this study has started its all-phase
+contrast on the released GPU; the public-only contrast follows. It does not
+run concurrently with the preceding campaign on that GPU. No game-strength conclusion or
 promotion follows from the prototype or the smoke. Future advantages would
 initially be search changes of the unchanged warm network, not newly learned
 weights, full Gumbel AlphaZero, or superiority over the native teacher.

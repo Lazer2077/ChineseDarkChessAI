@@ -60,7 +60,11 @@ warm-model comparison on the released GPU. That first64-game comparison has
 now completed37W/1D/26L,58.59375%score, paired bootstrap95%
 [47.65625%,69.53125%]. All2,930moves/clocks replay cleanly. The interval includes
 50%, so the positive point estimate is not established superiority. The fixed
-teacher comparison is still running; no promotion or learned-model gain.
+teacher comparison completed1W/0D/63L, all2,998moves/clocks clean. All5,928moves
+across both screens are clean; the campaign is terminal/completed. Static
+teacher values do not bridge the native-teacher gap under this budget. No
+promotion or learned-model gain. Summary:
+`results/20261026-teacher-leaf-summary.json`.
 First report/audit: `results/20261026-teacher-leaf-vs-warm{,-audit}.json`.
 Any future gain is attributable in part to the unchanged upstream teacher
 value function, not a newly learned research contribution. A fully public-only

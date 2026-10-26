@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "failed_preflight",
+  "plan": "results/public-continuation-profile-plan.json",
+  "plan_sha256": "b76b75b462f7049172c5b2fc3cb30607f5944c7b63bfb97ef6c98821e71e7a7d",
+  "script_snapshot": "results/source_snapshots/profile_public_continuation-attempt01.py",
+  "script_sha256": "22103386d447842e10c0d2175526b70f059668a077866c67296f3c2b49556a74",
+  "measured_searches_completed": 0,
+  "cause": "Raw112-byte row reshaped(1,112).view(REC)[0] retained an extra singleton record dimension, so own-urn indexing selected the wrong axis. Failed during corpus selection before selected-cases.json or any measured search.",
+  "handling": "Failed output/plan/source are retained; do not fabricate profile results. The corrected run must use a fresh plan and output directory."
+}

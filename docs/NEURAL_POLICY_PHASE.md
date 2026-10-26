@@ -118,7 +118,7 @@ The phase expert does not improve fully public value error in this comparison.
 The tiny difference in the combined selection objective is not a strength gain.
 These reused selection data are correlated within games; no position-wise
 independent confidence claim is made. Three predeclared 64-game CPU-only
-development matches are running at a common actual 10+0.1 clock: shared versus
+development matches completed at a common actual 10+0.1 clock: shared versus
 teacher, phase versus teacher on the same layouts, and phase versus shared on
 a separate layout set. All arms finish without outcome-based retuning. Recipe:
 `results/neural-policy-phase-evaluation-plan.json`. Matches use one CPU thread
@@ -157,8 +157,23 @@ full training arm or a strength evaluation. Evidence:
 separates search improvement from network generalization, then closes the loop
 by guiding subsequent search with the learned network.
 [AlphaZero, Silver et al. 2017](https://arxiv.org/abs/1712.01815) uses self-play
-search policies and terminal values in perfect-information games. Our current
-CNN stage supplies only a supervised initialization; actual search visit targets,
-new-model self-play and measured policy improvement are still required to close
-that loop. Root determinization and an information-keyed tree do not by
+search policies and terminal values in perfect-information games. This
+CNN pretraining stage supplies a supervised initialization. The later
+[self-play pilot](NEURAL_SELFPLAY.md) implements actual visit/terminal updates;
+measured policy improvement remains unconfirmed. Root determinization and an information-keyed tree do not by
 themselves solve strategic signaling or justify perfect-information guarantees.
+
+
+## Completed development screens
+
+All three fixed CPU-only screens completed without technical failures, voids or
+ambiguous clocks. Shared and phase models each scored 0W/2D/62L against the
+unchanged teacher. Phase versus shared scored 32W/10D/22L: 57.8125% score,
+paired bootstrap 95% [46.09375%,69.53125%], including 50%. This does not establish
+an expert benefit. The teacher scores are near a floor and cannot separate
+endgame strengths. All 10,050 moves and actual clock charges replayed; played
+model metadata/arrays and every frozen source hash still match.
+
+Evidence: `results/20261026-neural-policy-phase-evaluation.json`. Both models
+remain unpromoted. The later self-play/terminal-value update is a separate
+experiment, rather than a retrospective replacement for these negative screens.

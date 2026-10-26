@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "plan": "results/neural-policy-phase-evaluation-plan.json",
+  "plan_sha256": "da7c1150a2fcb103164b21627f16922157bb3cdaef23ce0ba3c11d95961323cc",
+  "status": "completed",
+  "all_frozen_hashes_match_after_completion": true,
+  "played_models": {
+    "shared": {
+      "network": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "metadata": "e07790ae821426c3454e0c048cecbb69dc0c843ff11e7b75d9745f0d95851eb3"
+    },
+    "phase": {
+      "network": "f87bcd433bd456feb4feeac2f1b29880aa45826a4fb64dde4611515ac861188d",
+      "metadata": "9faf1f42c6cabaf1807920f5a73c2c62e9af6ded692830f3914fac204786ce9e"
+    }
+  },
+  "screens": [
+    {
+      "id": "shared-vs-teacher",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1454,
+            "mean_ms": 345.45710293672624,
+            "p95_ms": 468.746388,
+            "max_ms": 525.875606
+          },
+          "baseline": {
+            "moves": 1486,
+            "mean_ms": 344.4746308109018,
+            "p95_ms": 807.338858,
+            "max_ms": 1868.184539
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 0,
+        "draws": 2,
+        "losses": 62,
+        "score": 0.015625,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.0390625
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.2557056978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "result_path": "results/20261026-neural-shared-vs-teacher.json",
+      "result_sha256": "883a1b92c410d8f7d0dac8541d92f599a1b22b69215d830737e14f204ba318e4",
+      "audit_path": "results/20261026-neural-shared-vs-teacher-audit.json",
+      "audit_sha256": "6325616e0afe9d1bfd5a96a9cae23a3b363d8749ae94a1a5f75e7fb444c8900a",
+      "moves_replayed": 2940
+    },
+    {
+      "id": "phase-vs-teacher",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1503,
+            "mean_ms": 337.5196721749834,
+            "p95_ms": 469.683122,
+            "max_ms": 500.822041
+          },
+          "baseline": {
+            "moves": 1535,
+            "mean_ms": 338.3518062508143,
+            "p95_ms": 869.539383,
+            "max_ms": 1863.457424
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 0,
+        "draws": 2,
+        "losses": 62,
+        "score": 0.015625,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.0390625
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.2557056978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "result_path": "results/20261026-neural-phase-vs-teacher.json",
+      "result_sha256": "4e483460a7012f1f71f1d99db842b558da61b798858e6cd8c1b7cae04a26b5b3",
+      "audit_path": "results/20261026-neural-phase-vs-teacher-audit.json",
+      "audit_sha256": "9229e447a7a454d78769099d2c7fed0397559ac47d701df2a26d49efc002a78e",
+      "moves_replayed": 3038
+    },
+    {
+      "id": "phase-vs-shared",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 2037,
+            "mean_ms": 308.95983712714775,
+            "p95_ms": 471.247828,
+            "max_ms": 739.544258
+          },
+          "baseline": {
+            "moves": 2035,
+            "mean_ms": 308.4415572756757,
+            "p95_ms": 472.293079,
+            "max_ms": 729.933539
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 32,
+        "draws": 10,
+        "losses": 22,
+        "score": 0.578125,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.4609375,
+          0.6953125
+        ],
+        "paired_hoeffding_95": [
+          0.3380443021700198,
+          0.8182056978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "result_path": "results/20261026-neural-phase-vs-shared.json",
+      "result_sha256": "05e0ea608cb37cff8543706ca16e14f8e1795b2281f89da0a08b6bd913b64e63",
+      "audit_path": "results/20261026-neural-phase-vs-shared-audit.json",
+      "audit_sha256": "b30749ee26a9328780b437538585fc8165fa2e5f686fc8bfbbb211413c8a5325",
+      "moves_replayed": 4072
+    }
+  ],
+  "moves_replayed": 10050,
+  "promotion_supported": false,
+  "scope": "All three fixed CPU-only64-game development screens complete, no technical outcomes/voids/ambiguous clocks. Both neural arms scored0W2D62L against teacher; phase scored32W10D22L against shared, paired95% interval includes50%. No established phase benefit, learned strength improvement or strong-baseline70%-win gate. Models have differing parameter counts; no equal-capacity/FLOP claim."
+}

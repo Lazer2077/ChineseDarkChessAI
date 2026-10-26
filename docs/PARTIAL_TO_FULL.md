@@ -1,5 +1,10 @@
 # Exploiting the transition from hidden to public state
 
+Related work and current strong-model availability are tracked in
+[RESEARCH_BASELINES.md](RESEARCH_BASELINES.md). Wang and Lu2021 already discuss
+ignoring off-board hidden status once that color has no dark piece on board;
+the observation itself is not claimed as a new contribution here.
+
 Research direction added from the user's observation: Jieqi progressively loses
 future-relevant hidden identities and eventually has a fully public continuation.
 This should influence computation and learning, rather than using move number
@@ -156,3 +161,8 @@ removing uncertainty from an input nor adding an expert is automatically useful:
 the learned boundary, teacher target bias and search inference cost must be
 tested. Search already avoids impossible reveal branches in fully public states;
 that inherited optimization is not a new contribution.
+
+A separate [public-continuation decision-sharing experiment](PUBLIC_CONTINUATION_SEARCH.md)
+now tests whether sampled private capture paths can share future public search
+statistics while preserving all public rule memory. Mechanism/cost diagnostics
+precede any playing-strength claim; it is not part of the frozen value-head match.

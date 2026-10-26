@@ -1,0 +1,1052 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "024129c0a43ad7733c500bd204461a8b9258bff749df429207cb2d6fc1a8bfbc",
+  "timed_search_sha256": "22a42fd6a3189642388c93194d241db2dfc12654d703ae9eedbcd07b198e83b6",
+  "cases": [
+    {
+      "game": 0,
+      "ply": 0,
+      "kind": "opening",
+      "dark_count": 30
+    },
+    {
+      "game": 1,
+      "ply": 0,
+      "kind": "opening",
+      "dark_count": 30
+    },
+    {
+      "game": 1,
+      "ply": 65,
+      "kind": "full",
+      "dark_count": 0
+    },
+    {
+      "game": 1,
+      "ply": 66,
+      "kind": "full",
+      "dark_count": 0
+    },
+    {
+      "game": 4,
+      "ply": 75,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    },
+    {
+      "game": 4,
+      "ply": 77,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    },
+    {
+      "game": 4,
+      "ply": 79,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    },
+    {
+      "game": 4,
+      "ply": 81,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    },
+    {
+      "game": 4,
+      "ply": 83,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    },
+    {
+      "game": 4,
+      "ply": 85,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    },
+    {
+      "game": 4,
+      "ply": 87,
+      "kind": "uncertain-last-own-dark",
+      "dark_count": 1
+    }
+  ],
+  "samples": [
+    {
+      "case": 0,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.357983248308301,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.054749255030486665,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 3080,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 0,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.519183250144124,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.054749255030486665,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 3080,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 0,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.2435086015611887,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.054749255030486665,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 3080,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 0,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.388499727472663,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.054749255030486665,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 3080,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 1,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.3926391117274761,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1022,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.04563888149044715,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 3119,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 1,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.4222892131656408,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1022,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.04563888149044715,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 3119,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 1,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.5704302564263344,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1022,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.04563888149044715,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 3119,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 1,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.4851220715790987,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1022,
+      "action": [
+        54,
+        45
+      ],
+      "root_value": 0.04563888149044715,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 3119,
+        "full_key_requests": 0,
+        "distinct_original_full_keys": 0,
+        "public_continuation_classes": 0,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 2,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.566989317536354,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        9,
+        18
+      ],
+      "root_value": -0.2719206971753465,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 0,
+        "full_key_requests": 4667,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 2,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.9771722350269556,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        9,
+        18
+      ],
+      "root_value": -0.2719206971753465,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 0,
+        "full_key_requests": 4667,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 2,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 2.0540264043956995,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        9,
+        18
+      ],
+      "root_value": -0.2719206971753465,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 0,
+        "full_key_requests": 4667,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 2,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 2.2732358761131763,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        9,
+        18
+      ],
+      "root_value": -0.2719206971753465,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 0,
+        "full_key_requests": 4667,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 3,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 3.159709529951215,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        49,
+        39
+      ],
+      "root_value": 0.45990944626282726,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 0,
+        "full_key_requests": 3579,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 3,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 2.6743295174092054,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        49,
+        39
+      ],
+      "root_value": 0.45990944626282726,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 0,
+        "full_key_requests": 3579,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 3,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 2.6493127271533012,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        49,
+        39
+      ],
+      "root_value": 0.45990944626282726,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 0,
+        "full_key_requests": 3579,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 3,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 3.3042153026908636,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        49,
+        39
+      ],
+      "root_value": 0.45990944626282726,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 0,
+        "full_key_requests": 3579,
+        "distinct_original_full_keys": 1025,
+        "public_continuation_classes": 1025,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 4,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 2.0870231688022614,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9956748103140853,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2261,
+        "full_key_requests": 733,
+        "distinct_original_full_keys": 294,
+        "public_continuation_classes": 294,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 4,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 2.0325353611260653,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9956748103140853,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2261,
+        "full_key_requests": 733,
+        "distinct_original_full_keys": 294,
+        "public_continuation_classes": 294,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 4,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 2.191036367788911,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9956748103140853,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2261,
+        "full_key_requests": 733,
+        "distinct_original_full_keys": 294,
+        "public_continuation_classes": 294,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 4,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 2.053437441587448,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9956748103140853,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2261,
+        "full_key_requests": 733,
+        "distinct_original_full_keys": 294,
+        "public_continuation_classes": 294,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 5,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 2.3600424993783236,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.9961179956444539,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2427,
+        "full_key_requests": 802,
+        "distinct_original_full_keys": 293,
+        "public_continuation_classes": 293,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 5,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 2.2087419740855694,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.9961179956444539,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2427,
+        "full_key_requests": 802,
+        "distinct_original_full_keys": 293,
+        "public_continuation_classes": 293,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 5,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 2.134044624865055,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.9961179956444539,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2427,
+        "full_key_requests": 802,
+        "distinct_original_full_keys": 293,
+        "public_continuation_classes": 293,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 5,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 2.172717774286866,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.9961179956444539,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2427,
+        "full_key_requests": 802,
+        "distinct_original_full_keys": 293,
+        "public_continuation_classes": 293,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 6,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.2353551294654608,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.994279527803883,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2239,
+        "full_key_requests": 989,
+        "distinct_original_full_keys": 350,
+        "public_continuation_classes": 350,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 6,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.253384368494153,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.994279527803883,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2239,
+        "full_key_requests": 989,
+        "distinct_original_full_keys": 350,
+        "public_continuation_classes": 350,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 6,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.3472520615905523,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.994279527803883,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2239,
+        "full_key_requests": 989,
+        "distinct_original_full_keys": 350,
+        "public_continuation_classes": 350,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 6,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.2275712192058563,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1023,
+      "action": [
+        38,
+        47
+      ],
+      "root_value": 0.994279527803883,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2239,
+        "full_key_requests": 989,
+        "distinct_original_full_keys": 350,
+        "public_continuation_classes": 350,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 7,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.288226081058383,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9934027562849224,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2204,
+        "full_key_requests": 747,
+        "distinct_original_full_keys": 319,
+        "public_continuation_classes": 319,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 7,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.218180263414979,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9934027562849224,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2204,
+        "full_key_requests": 747,
+        "distinct_original_full_keys": 319,
+        "public_continuation_classes": 319,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 7,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.256791127845645,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9934027562849224,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2204,
+        "full_key_requests": 747,
+        "distinct_original_full_keys": 319,
+        "public_continuation_classes": 319,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 7,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.5395196471363306,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        51,
+        52
+      ],
+      "root_value": 0.9934027562849224,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2204,
+        "full_key_requests": 747,
+        "distinct_original_full_keys": 319,
+        "public_continuation_classes": 319,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 8,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.3388521671295166,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        48,
+        57
+      ],
+      "root_value": 0.9945542958448641,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1026,
+        "distinct_original_full_keys": 409,
+        "public_continuation_classes": 409,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 8,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.3501310218125582,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        48,
+        57
+      ],
+      "root_value": 0.9945542958448641,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1026,
+        "distinct_original_full_keys": 409,
+        "public_continuation_classes": 409,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 8,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.4667857997119427,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        48,
+        57
+      ],
+      "root_value": 0.9945542958448641,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1026,
+        "distinct_original_full_keys": 409,
+        "public_continuation_classes": 409,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 8,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.4027211088687181,
+      "root_visits": 1024,
+      "leaf_evaluations": 1024,
+      "unique_leaf_evaluations": 1024,
+      "action": [
+        48,
+        57
+      ],
+      "root_value": 0.9945542958448641,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1026,
+        "distinct_original_full_keys": 409,
+        "public_continuation_classes": 409,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 9,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.2824348229914904,
+      "root_visits": 1024,
+      "leaf_evaluations": 1021,
+      "unique_leaf_evaluations": 1021,
+      "action": [
+        69,
+        58
+      ],
+      "root_value": 0.9954375783563592,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2501,
+        "full_key_requests": 692,
+        "distinct_original_full_keys": 312,
+        "public_continuation_classes": 312,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 9,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.2956840675324202,
+      "root_visits": 1024,
+      "leaf_evaluations": 1021,
+      "unique_leaf_evaluations": 1021,
+      "action": [
+        69,
+        58
+      ],
+      "root_value": 0.9954375783563592,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2501,
+        "full_key_requests": 692,
+        "distinct_original_full_keys": 312,
+        "public_continuation_classes": 312,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 9,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.2803274411708117,
+      "root_visits": 1024,
+      "leaf_evaluations": 1021,
+      "unique_leaf_evaluations": 1021,
+      "action": [
+        69,
+        58
+      ],
+      "root_value": 0.9954375783563592,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 2501,
+        "full_key_requests": 692,
+        "distinct_original_full_keys": 312,
+        "public_continuation_classes": 312,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 9,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.2838511262089014,
+      "root_visits": 1024,
+      "leaf_evaluations": 1021,
+      "unique_leaf_evaluations": 1021,
+      "action": [
+        69,
+        58
+      ],
+      "root_value": 0.9954375783563592,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 2501,
+        "full_key_requests": 692,
+        "distinct_original_full_keys": 312,
+        "public_continuation_classes": 312,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 10,
+      "repeat": 0,
+      "share_public": false,
+      "elapsed_seconds": 1.3579722344875336,
+      "root_visits": 1024,
+      "leaf_evaluations": 1014,
+      "unique_leaf_evaluations": 1014,
+      "action": [
+        19,
+        28
+      ],
+      "root_value": 0.9968426286941394,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1223,
+        "distinct_original_full_keys": 458,
+        "public_continuation_classes": 458,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 10,
+      "repeat": 0,
+      "share_public": true,
+      "elapsed_seconds": 1.3838639948517084,
+      "root_visits": 1024,
+      "leaf_evaluations": 1014,
+      "unique_leaf_evaluations": 1014,
+      "action": [
+        19,
+        28
+      ],
+      "root_value": 0.9968426286941394,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1223,
+        "distinct_original_full_keys": 458,
+        "public_continuation_classes": 458,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 10,
+      "repeat": 1,
+      "share_public": true,
+      "elapsed_seconds": 1.9085483569651842,
+      "root_visits": 1024,
+      "leaf_evaluations": 1014,
+      "unique_leaf_evaluations": 1014,
+      "action": [
+        19,
+        28
+      ],
+      "root_value": 0.9968426286941394,
+      "graph": {
+        "share_public": true,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1223,
+        "distinct_original_full_keys": 458,
+        "public_continuation_classes": 458,
+        "removable_private_context_duplicates": 0
+      }
+    },
+    {
+      "case": 10,
+      "repeat": 1,
+      "share_public": false,
+      "elapsed_seconds": 1.3185100760310888,
+      "root_visits": 1024,
+      "leaf_evaluations": 1014,
+      "unique_leaf_evaluations": 1014,
+      "action": [
+        19,
+        28
+      ],
+      "root_value": 0.9968426286941394,
+      "graph": {
+        "share_public": false,
+        "partial_key_requests": 1827,
+        "full_key_requests": 1223,
+        "distinct_original_full_keys": 458,
+        "public_continuation_classes": 458,
+        "removable_private_context_duplicates": 0
+      }
+    }
+  ],
+  "scope": "Correlated replay-state graph diagnostics, not games, strength evidence or independent timing confidence. Original key control reproduces the pinned search; public sharing changes decision abstraction only after all on-board dark pieces disappear.",
+  "plan": "results/public-continuation-profile-v2-plan.json",
+  "all_frozen_hashes_match_after_completion": true,
+  "all_paired_actions_values_unique_leaf_counts_identical": true,
+  "total_measured_completed_simulations": 45056,
+  "maximum_removable_private_context_duplicates": 0,
+  "interpretation": "No removable duplicate was encountered in this fixed11-state corpus at1024simulations. Both variants have identical actions/root values/unique leaf counts for every paired sample. This does not rule out aliases elsewhere; a legal two-hidden-capture permutation fixture demonstrates semantic equivalence. Added rule-memory hashing has cost, so no strength match or deployment follows these diagnostics.",
+  "timing_limit": "Both modes compute diagnostic public-equivalence classes. Original-key mode reproduces search behavior, not the production baseline timing; elapsed samples are exploratory, not independent speed confidence or an uninstrumented speedup."
+}

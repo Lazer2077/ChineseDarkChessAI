@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "as_of": "2026-10-26",
+  "scope": "Availability/lineage audit of specific pinned sources and release endpoints. No completeness guarantee over every historical branch or external weight host; no new strength claim.",
+  "entries": [
+    {
+      "id": "lichlzh-pikafish-jieqi",
+      "repository": "https://github.com/lichlzh/pikafish-jieqi",
+      "commit": "c64d99705b8937bc38e21d148bd39441204e2988",
+      "tree_entries": 45,
+      "tree_truncated": false,
+      "kind": "Qt6 GUI and UCI client, not a new independent engine",
+      "license": "MIT application; referenced external engine and weights have separate terms",
+      "source": "https://github.com/lichlzh/pikafish-jieqi/blob/c64d99705b8937bc38e21d148bd39441204e2988/README.md",
+      "finding": "README explicitly delegates Xiangqi/Jieqi play to official Pikafish branches. Recursive tree has no network/model; releases endpoint returned an empty list. Its weight-compatibility/download investigations are author-reported leads, not independently reproduced here.",
+      "coverage": "Deduplicate GUI against its actual engine; do not count it as another defeated AI."
+    },
+    {
+      "id": "pika-jieqi2022-archive",
+      "repository": "https://github.com/swim2sun/Pikafish-jieqi2022",
+      "commit": "db8ad4fbdca27ed22b04345a7f8fe5d5f812df95",
+      "additional_branches": [
+        {
+          "name": "jieqi",
+          "commit": "2c16170b927141b46a338edd065e0fc05f3eeb9a",
+          "tree_truncated": false
+        },
+        {
+          "name": "ablation",
+          "commit": "32950ee7df47ef45ea654629f17e76c7317a1e8f",
+          "tree_truncated": false
+        }
+      ],
+      "required_network": "pikafish.nnue",
+      "finding": "Release endpoint returned no releases; full recursive trees of jieqi/ablation contain no .nnue model or packaged engine archive. The pinned jieqi evaluate.h also requires pikafish.nnue; README links generic Xiangqi network sites, which does not establish a compatible trained Jieqi weight. Exact model remains unresolved.",
+      "license": "GPL source; separate restrictive personal/noncommercial NNUE terms in the pinned master. No weights redistributed or license-equivalence claim.",
+      "source_hashes": {
+        "README.md": "4e7b3f28fa24fdfb17619b4124ac937dd43d564cf4a4112512b8938a2f08c2aa",
+        "NNUE-License.txt": "b79f13da1b90dc649c14dcf66d344f864e29a83031dc4d2b55b32ed78366839c",
+        "src/evaluate.h": "792a8fde86c8240a267f89aed4c5109fee806d1ff54e1049636445365e57d978"
+      },
+      "coverage": "Unverified neural baseline; do not substitute an arbitrary Xiangqi/ABJ weight or random network."
+    },
+    {
+      "id": "zball-jieqi-hybrid",
+      "repository": "https://github.com/zball-bz/Jieqi-hybrid",
+      "commit": "a556210806706c0aab554fc482b52cacf3b38593",
+      "tree_entries": 90,
+      "tree_truncated": false,
+      "expected_model": "eval_small.safetensors",
+      "finding": "Pinned Python self-play and loader reference a safetensors network. JSON files are architecture configurations, not numerical weights. Full pinned tree contains no .safetensors/.pt/.pth/.nnue/.onnx archive; release endpoint returned none. C++ PIMCTS and actor/judge viewpoint bookkeeping exist; neural runtime strength cannot be measured without the original model.",
+      "license": "Inherited C++ chess files carry LCZero GPL-3.0-or-later headers with CUDA additional permission. game/LICENSE contains pybind BSD terms. Root project license absent and newly authored Python/search licensing remains unresolved; neither all-unlicensed nor all-BSD is established.",
+      "source_hashes": {
+        "game/LICENSE": "48136208c50f3a437be02aca68610993508d5f33de999efa42c9b5d3a9302351",
+        "game/src/chess/position.cc": "85c72dbc71fcf0d1c9f9275251af7d7724c6b4d986911d0848ef2c62b7c2c09f",
+        "game/src/chess/position.h": "01c43c3aa28d11dfb95e030e694b0f3a3629019815a23d6c5b6e03192aaa2266",
+        "game/src/search/PIMCTS.cpp": "24318a74636f53f345f091b7f60e61af54d7b2cab3959f8fc0a1de4f99992a7a",
+        "test/selfplay_loop.py": "9a4c384fb17c5db83b24e4a204b74827d6f0158588f29358e0b954802aa6426b",
+        "test/factory.py": "7d53de44b1a491d52610db2c2567a267e53a9cd720a85fad779042fad4eb9aaa",
+        "test/eval_small.json": "a96d63ab7efb475f0c53a35257b0ed5b9cff69ce4ac0370d662f06c95f8eb9ca"
+      },
+      "coverage": "Distinct neural search candidate stays visible and unverified; an untrained replacement would not represent its strength."
+    }
+  ],
+  "research_context": {
+    "title": "On the complexity of Dark Chinese Chess",
+    "authors": [
+      "Cong Wang",
+      "Tongwei Lu"
+    ],
+    "url": "https://arxiv.org/abs/2112.02989",
+    "finding": "The primary paper studies full-board Jieqi and private hidden captures, uses random-move self-play for complexity estimation with40 no-capture plies, and notes that off-board hidden status need not be considered when that color has no dark piece on board. This is prior context for abstraction, not a supplied trained strong baseline or evidence of a new fundamental observation by this project."
+  }
+}

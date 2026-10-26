@@ -188,9 +188,10 @@
       "repository_url": "https://github.com/zball-bz/Jieqi-hybrid",
       "commit": "a556210806706c0aab554fc482b52cacf3b38593",
       "kind": "C++/Python hybrid neural search candidate",
-      "license": "root license absent; game/LICENSE is pybind vendor license only",
-      "status": "source pinned; own search/training code found; scope and model/license audit pending; not deduplicated",
-      "defeated": false
+      "license": "Inherited LCZero C++ GPL-3.0-or-later headers; game/LICENSE is pybind BSD; root/new Python/search project terms unresolved",
+      "status": "Pinned90-entry tree has C++ PIMCTS, actor/judge viewpoint bookkeeping and Python neural selfplay; expected eval_small.safetensors absent, JSON files are configurations, no released model found. Original neural strength unavailable/unverified; not defeated.",
+      "defeated": false,
+      "evidence": "results/20261026-neural-baseline-availability.json"
     },
     {
       "id": "moyi-jieqi",
@@ -315,12 +316,13 @@
     {
       "id": "lichlzh-pikafish-jieqi",
       "url": "https://github.com/lichlzh/pikafish-jieqi",
-      "commit": null,
-      "kind": "repository lead; engine independence unverified",
-      "license": "unverified",
-      "status": "new Pika/archive-focused discovery lead; source, rule profile, license, model availability and independent lineage unverified",
+      "commit": "c64d99705b8937bc38e21d148bd39441204e2988",
+      "kind": "GUI/UCI client",
+      "license": "MIT application; external engines/weights separate",
+      "status": "Pinned45-entry source tree and README delegate AI to official Pikafish branches; no independent search or bundled neural weights found. Deduplicate GUI against actual engine, not another AI victory.",
       "defeated": false,
-      "repository_full_name": "lichlzh/pikafish-jieqi"
+      "repository_full_name": "lichlzh/pikafish-jieqi",
+      "evidence": "results/20261026-neural-baseline-availability.json"
     },
     {
       "id": "lxsgx23-Jieqi-Moonlink",
@@ -359,9 +361,10 @@
       "commit": "db8ad4fbdca27ed22b04345a7f8fe5d5f812df95",
       "kind": "repository lead; engine independence unverified",
       "license": "GPL-3.0 source; distinct NNUE terms recorded",
-      "status": "Real hidden-piece reveal/chance source present; GPL code plus separate restrictive NNUE license; required pikafish.nnue not bundled, exact official weight/version unresolved. No strength claim.",
+      "status": "Master plus pinned jieqi2c16170b/ablation32950ee7 branches audited; release list empty and recursive branch trees contain no required NNUE model. Generic Xiangqi network links do not establish a compatible trained Jieqi weight. Exact model/version remains unresolved; not defeated.",
       "defeated": false,
-      "repository_full_name": "swim2sun/Pikafish-jieqi2022"
+      "repository_full_name": "swim2sun/Pikafish-jieqi2022",
+      "evidence": "results/20261026-neural-baseline-availability.json"
     },
     {
       "id": "pika-thanh-archive",

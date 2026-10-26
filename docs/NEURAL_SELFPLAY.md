@@ -119,3 +119,10 @@ the same GPU profile/leaf batch 32; the teacher is CPU NNUE. The teacher compari
 therefore measures the stated actual-clock resource profile, not equal total
 compute. Match outcomes never select the next research actor or stop the series.
 No 70%-win strong-baseline/report gate is claimed from these small screens.
+
+
+The first larger generation/training stage has now completed 288 games and 15,682
+positions, with four GPU epochs / 436 updates. Its previous-actor and teacher
+matches are separate pending diagnostics, so neither the first full iteration
+nor the three-iteration series is reported complete. Exact episode/model hashes
+and training curves: `results/20261026-neural-rl-series-first-training.json`.

@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "pid": 3380799,
+  "plan_sha256": "cc69317e16e57ea4e9e8e8aae1560cafb79930f67e6f3ad327062605078acd6d",
+  "scope": "Inference-only weight/BN-buffer factorial on existing checkpoint-selection trajectories. No optimizer update or fresh strength test. RL buffers were estimated jointly with changing weights, so transplantation is not fixed-weight BN-only retraining.",
+  "positions": 1758,
+  "episodes": [
+    {
+      "index": 256,
+      "seed": 8320257,
+      "positions": 63,
+      "sha256": "2d3916f645416b9d192c7f3edf5f39335caaf83d5788ddbde5e74847267f7ee7"
+    },
+    {
+      "index": 257,
+      "seed": 8320258,
+      "positions": 81,
+      "sha256": "d105cc15cff0b64f0b35c00b52c831e841de638aa94b96eae51f57a415c3b382"
+    },
+    {
+      "index": 258,
+      "seed": 8320259,
+      "positions": 62,
+      "sha256": "c3743d2d8dcc4cc9eac82236081a728008ca77a25aa0be5a91376a3134b9dc1f"
+    },
+    {
+      "index": 259,
+      "seed": 8320260,
+      "positions": 43,
+      "sha256": "496a2ad19e9fedd030618afec846011e93aa5c84b09872e6dfee10db469c1f4f"
+    },
+    {
+      "index": 260,
+      "seed": 8320261,
+      "positions": 93,
+      "sha256": "da9d35b3af738235788b13cb441d3f762713dd46598eab3daa134cd50835fcd6"
+    },
+    {
+      "index": 261,
+      "seed": 8320262,
+      "positions": 41,
+      "sha256": "4e4fb8cfe7fd67974704d30429402496f06f76a4eb4d9b47e04f9076f62fd744"
+    },
+    {
+      "index": 262,
+      "seed": 8320263,
+      "positions": 27,
+      "sha256": "2b7ea9dcbdec0a700de7bafe62e5079b3b9a9fdfba6f52e8d9a2c2700d587260"
+    },
+    {
+      "index": 263,
+      "seed": 8320264,
+      "positions": 23,
+      "sha256": "c62b07ce9b4566b2e38c1eab687824d25d37ac7659089c52dddb1858d4799aa8"
+    },
+    {
+      "index": 264,
+      "seed": 8320265,
+      "positions": 26,
+      "sha256": "9108e875641a732880ab13c26c9f96eaa870edad84c17c09037cc724b26a89ec"
+    },
+    {
+      "index": 265,
+      "seed": 8320266,
+      "positions": 38,
+      "sha256": "ec56c315c3f458c33e6ce097d1de03dd3fcc77bf6c98d8895f857dff2c665242"
+    },
+    {
+      "index": 266,
+      "seed": 8320267,
+      "positions": 78,
+      "sha256": "b74e5e4e26a873ae1981bbc897902239889ebb182427aa23ab7acb1cfb5e3034"
+    },
+    {
+      "index": 267,
+      "seed": 8320268,
+      "positions": 58,
+      "sha256": "629dc46535d3e129c0f2b420a5fdabaee82a8cb5ec867d61a28dfb1fc139497b"
+    },
+    {
+      "index": 268,
+      "seed": 8320269,
+      "positions": 47,
+      "sha256": "af3675a88ebbdbde977cda5aa8094fe90d49c2abf97a81a9654487cad6ce003d"
+    },
+    {
+      "index": 269,
+      "seed": 8320270,
+      "positions": 63,
+      "sha256": "b0d0c1857913369e80ff68242a14908509e0d2992aec2e95080deab83e662988"
+    },
+    {
+      "index": 270,
+      "seed": 8320271,
+      "positions": 54,
+      "sha256": "4d1b3ec74c287f0472f08f17908e08cb7a0e1319b1e16760afde08e61b5da323"
+    },
+    {
+      "index": 271,
+      "seed": 8320272,
+      "positions": 27,
+      "sha256": "358cb4ef305e11b28edd185d45113317ce1141c9b2682554aeaea85028c73c99"
+    },
+    {
+      "index": 272,
+      "seed": 8320273,
+      "positions": 48,
+      "sha256": "c2a9b4bafb0dd0a101db800097c6d11169b591731f25a341ea7392a8f5925083"
+    },
+    {
+      "index": 273,
+      "seed": 8320274,
+      "positions": 38,
+      "sha256": "576ed635e7c30f7bd1ce1bb8401506b94edd300418ff45aaf23f1dd6e9968d0c"
+    },
+    {
+      "index": 274,
+      "seed": 8320275,
+      "positions": 67,
+      "sha256": "96319c9ce70c933ae2fe78779aa46e9a320ab7dba64c8e8b4dd5047b7a9830f3"
+    },
+    {
+      "index": 275,
+      "seed": 8320276,
+      "positions": 55,
+      "sha256": "9b0e62d677785126e9cdb357b299bab084613010c728d6f11a4be16c6518c642"
+    },
+    {
+      "index": 276,
+      "seed": 8320277,
+      "positions": 36,
+      "sha256": "54165418e78286a79e1d862c59c406d64a7bba06875474b268de4cf578e6a26a"
+    },
+    {
+      "index": 277,
+      "seed": 8320278,
+      "positions": 19,
+      "sha256": "6f2e117c80c2d75ede6c84da1a1158f75460d58cf8a0ae4bb7ce6cf5fbe5ed50"
+    },
+    {
+      "index": 278,
+      "seed": 8320279,
+      "positions": 76,
+      "sha256": "7d9e34ce02bf4b4546543ae823ad5f2da6ab6f7b65ae0c133bc06db99bf599aa"
+    },
+    {
+      "index": 279,
+      "seed": 8320280,
+      "positions": 81,
+      "sha256": "d9d5461d14d6108bf4ac9df569d1b82a9c88af473d6da1fb13a6238a76d7dc8c"
+    },
+    {
+      "index": 280,
+      "seed": 8320281,
+      "positions": 73,
+      "sha256": "d441852a33db29d0c338ba07f7cade6273a29fe35ae98d1ecd4c5c099b49b14a"
+    },
+    {
+      "index": 281,
+      "seed": 8320282,
+      "positions": 66,
+      "sha256": "798c423b53c0665b9691582d731b93d5e3c8295a2e4b6e3eae8650ff681fd052"
+    },
+    {
+      "index": 282,
+      "seed": 8320283,
+      "positions": 81,
+      "sha256": "b1cc2f2265fcaacc3fdf774270c39a766420aafaec6551606e43ea3217463e7a"
+    },
+    {
+      "index": 283,
+      "seed": 8320284,
+      "positions": 83,
+      "sha256": "4821dfd6164186bf3c6523dbfa95abd670ac4039dddd384afc8ef8cd98bd0488"
+    },
+    {
+      "index": 284,
+      "seed": 8320285,
+      "positions": 48,
+      "sha256": "e407f6a45527d6181acd8af9f5c88eb8e43a3a3597099051a6ae5a8a9f14aa7c"
+    },
+    {
+      "index": 285,
+      "seed": 8320286,
+      "positions": 57,
+      "sha256": "35b2fdf2deaf0f452588db1b972b3c29721bd9bd142d90734bcc7f6fee83d9e1"
+    },
+    {
+      "index": 286,
+      "seed": 8320287,
+      "positions": 54,
+      "sha256": "f93ceab104e568c84c34a75937ea7896e029bf007a54f7bf1657bc3af8fe6bf1"
+    },
+    {
+      "index": 287,
+      "seed": 8320288,
+      "positions": 52,
+      "sha256": "b33226d7d6736d9bc125813be4aedafcb08f9d289d03afbe8b817fdf02fc6537"
+    }
+  ],
+  "results": [
+    {
+      "id": "warm-control",
+      "weights": "warm",
+      "statistics": "warm",
+      "search_policy_ce": 5.574549287211481,
+      "terminal_value_mse": 0.7593727707862854,
+      "warm_policy_kl_to_arm": 0.0,
+      "value_rmse_difference_from_warm": 0.0,
+      "running_buffers": 99,
+      "all_state_sources_verified": true,
+      "npz_sha256": "a4a68c0bdf8e56e8dc5cc648d9530d8085fcfa3f401f1a899e70e8d79537efdc",
+      "seconds": 9.682596553117037
+    },
+    {
+      "id": "trained-control",
+      "weights": "trained",
+      "statistics": "trained",
+      "search_policy_ce": 3.877386031578929,
+      "terminal_value_mse": 0.7606213688850403,
+      "warm_policy_kl_to_arm": 0.7268568277359009,
+      "value_rmse_difference_from_warm": 0.24429450929164886,
+      "running_buffers": 99,
+      "all_state_sources_verified": true,
+      "npz_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+      "seconds": 9.342935906723142
+    },
+    {
+      "id": "trained-weights-warm-buffers",
+      "weights": "trained",
+      "statistics": "warm",
+      "search_policy_ce": 3.8497231636085565,
+      "terminal_value_mse": 1.0406079292297363,
+      "warm_policy_kl_to_arm": 1.2255512475967407,
+      "value_rmse_difference_from_warm": 0.5187963843345642,
+      "running_buffers": 99,
+      "all_state_sources_verified": true,
+      "npz_sha256": "a60bff4d2c008d9ddbf0440560a2f6fd873f331ad13e5fa3fe5b1c536ac8516d",
+      "seconds": 10.002939330413938
+    },
+    {
+      "id": "warm-weights-trained-buffers",
+      "weights": "warm",
+      "statistics": "trained",
+      "search_policy_ce": 6.728529955028781,
+      "terminal_value_mse": 0.9204763770103455,
+      "warm_policy_kl_to_arm": 0.4356604516506195,
+      "value_rmse_difference_from_warm": 0.5076743960380554,
+      "running_buffers": 99,
+      "all_state_sources_verified": true,
+      "npz_sha256": "8c66b84ace9d6d1edc4c88ef21622107f414e3aa5b28a686cf36e21553a1cdb3",
+      "seconds": 9.737220600247383
+    }
+  ]
+}

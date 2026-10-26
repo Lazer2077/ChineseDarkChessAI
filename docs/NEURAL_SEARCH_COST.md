@@ -160,3 +160,10 @@ A separate [virtual-mean adaptation](VIRTUAL_MEAN.md) now has correctness tests
 and one fixed screen running after the completed leaf-batch experiment. It changes pending
 value accounting, not model size or the observation contract; its strength
 remains unmeasured.
+
+The positive LeafBatch8 development result now has a fixed follow-up:
+`results/neural-leaf-batch-confirmation-plan.json` schedules one fresh200-game
+confirmation against32 (seed8780001), then a separate64-game unchanged-teacher
+diagnostic (seed8790001), both actual10+0.1. It starts after virtual mean finishes
+regardless of that result, on the same GPU, with the same original checkpoint.
+Neither screen is selected or retuned from virtual-mean outcomes.

@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Fixed two-epoch,single-seed residual-width adaptation and three64-game development screens. No promoted model,capacity benefit or advantage over unchanged teacher.",
+  "plan": "results/residual-width-evaluation-plan.json",
+  "plan_sha256": "653dffbe66f91c542aff285935ea61906005eba2ea9557e7a4269e62091d1f7f",
+  "matches": [
+    {
+      "id": "wide-vs-small",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1520,
+            "mean_ms": 348.4976656848684,
+            "p95_ms": 526.277486,
+            "max_ms": 642.322422
+          },
+          "baseline": {
+            "moves": 1516,
+            "mean_ms": 349.19579374472295,
+            "p95_ms": 542.719163,
+            "max_ms": 624.947764
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 35,
+        "draws": 3,
+        "losses": 26,
+        "score": 0.5703125,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.5,
+          0.6484375
+        ],
+        "paired_hoeffding_95": [
+          0.3302318021700198,
+          0.8103931978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "wide-vs-small",
+        "games": 64,
+        "complete_pairs": 32,
+        "moves_replayed": 3036,
+        "wins_draws_losses": [
+          35,
+          3,
+          26
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 3036,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 1406.0,
+        "raw_games_sha256": "ad4f097a6470b287fb124c149d0f94d59ac98c4e7b8d6b9e2df07a54e48f6c06",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      }
+    },
+    {
+      "id": "small-vs-teacher",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1394,
+            "mean_ms": 372.6611382482066,
+            "p95_ms": 558.09612,
+            "max_ms": 810.081997
+          },
+          "baseline": {
+            "moves": 1426,
+            "mean_ms": 370.0334857117812,
+            "p95_ms": 928.630262,
+            "max_ms": 2175.606314
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "score": 0.0,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.24008069782998018
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "small-vs-teacher",
+        "games": 64,
+        "complete_pairs": 32,
+        "moves_replayed": 2820,
+        "wins_draws_losses": [
+          0,
+          0,
+          64
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 2820,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 1316.0,
+        "raw_games_sha256": "4fb188db733ce67186d49ffaf90801bb36e924a2db7ed745db624759914c1e23",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      }
+    },
+    {
+      "id": "wide-vs-teacher",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1322,
+            "mean_ms": 365.6913968018154,
+            "p95_ms": 531.011322,
+            "max_ms": 724.573721
+          },
+          "baseline": {
+            "moves": 1353,
+            "mean_ms": 370.5773987738359,
+            "p95_ms": 954.994595,
+            "max_ms": 2009.617629
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 1,
+        "draws": 0,
+        "losses": 63,
+        "score": 0.015625,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.046875
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.2557056978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "audit": {
+        "schema": 1,
+        "run": "wide-vs-teacher",
+        "games": 64,
+        "complete_pairs": 32,
+        "moves_replayed": 2675,
+        "wins_draws_losses": [
+          1,
+          0,
+          63
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 2675,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 1060.5,
+        "raw_games_sha256": "6a8a3408aceaf6fb370394c97fe5c6051a53c5bea62f881da6a9fcfc3efb1928",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      }
+    }
+  ],
+  "total_games": 192,
+  "moves_replayed": 8531,
+  "training_evidence": "results/20261026-residual-width-training.json",
+  "all_sources_verified": true
+}

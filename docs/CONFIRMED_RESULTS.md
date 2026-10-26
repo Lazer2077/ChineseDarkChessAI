@@ -114,3 +114,10 @@ its neural mode has no supplied pretrained checkpoint and remains unverified.
 The wider inventory includes unresolved licenses, unavailable weights,
 incompatible variants and unverified repository leads. See
 [the inventory](opponents.json); the three accepted versions do not exhaust it.
+
+The Musesfish native-public-root/timed compatibility profile passed two200-game
+actual10+0.1 sets at199/1/0 and194/5/1, with15,579moves/clocks cleanly replayed.
+[Profile acceptance](../results/20261026-musesfish-clock-acceptance.json) is recorded
+under `verified_profiles`; original invocations are not declared defeated. This
+is separate from the three5+0.05 version rows and does not satisfy the final
+selected strong-suite >70%-win/report goal or establish a learned teacher gain.

@@ -149,3 +149,15 @@ four GPU epochs / 548 updates. Its two paired screens remain pending. Exact
 curves and episode/checkpoint provenance are archived in
 `results/20261026-neural-rl-series-second-training.json`. New-trajectory selection
 losses are not comparable to iteration 1 as matched quality estimates.
+
+Iteration 2 is now fully closed:17W/6D/41L against its previous actor and
+0W/0D/64L against the native teacher, both technically clean;5,551moves/clocks
+were independently replayed. Evidence: `results/20261026-neural-rl-iteration002.json`.
+The frozen series has advanced to iteration3 generation without public model
+promotion. A separate [normalization-state diagnosis](NORMALIZATION_DRIFT.md)
+uses completed data; it does not alter that series.
+
+A [fixed-statistics RL control](NORMALIZATION_DRIFT.md) bitwise reproduces the
+original joint-update checkpoint in its ordinary-mode arm and tests a separate
+frozen-BN update against fresh warm-model/teacher layouts. It does not alter the
+three-iteration series, whose third generation continues.

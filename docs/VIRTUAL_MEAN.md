@@ -53,3 +53,11 @@ audit are required. A failed/missing dependency stops the queue instead of
 restarting it. The dependency completed, and the virtual-mean screen is now running, with no
 strength or promotion claim. Its
 result must precede any use of virtual mean in a future self-play training run.
+
+The fixed screen completed38W/0D/26L (59.375%score), paired bootstrap95%
+[50.0%,68.75%], conservative Hoeffding95% [35.36693%,83.38307%]. All3,602moves
+and clocks replayed cleanly, with no technical games, voids or rounding ambiguity.
+This does not establish promotion or a teacher gain. Evidence:
+`results/20261026-neural-virtual-mean-screen.json` and its `-audit.json`.
+The next queued LeafBatch8 confirmation has started as planned regardless of
+this result, using the original checkpoint rather than this variant.

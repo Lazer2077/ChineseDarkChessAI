@@ -130,3 +130,13 @@ paired bootstrap 95% [50.0%,64.84375%] and conservative Hoeffding 95%
 voids or rounding ambiguities. This does not establish promotion or a reliable
 capacity benefit. The two teacher screens remain pending. Evidence:
 `results/20261026-residual-width-wide-vs-small.json` and its `-audit.json`.
+
+## Closed first capacity campaign
+
+All three fixed screens completed: wide/small35W/3D/26L, small/teacher0W/0D/64L,
+wide/teacher1W/0D/63L. All8,531 moves and actual clocks replayed cleanly, with no
+technical games, voids or rounding ambiguities. No model is promoted. Two epochs
+of this single-seed adaptation do not establish a capacity benefit; these results
+do not settle larger-data or longer RL training. Completed campaign/audits:
+`results/20261026-residual-width-evaluation.json` and
+`results/20261026-residual-width-teacher-screens.json`.

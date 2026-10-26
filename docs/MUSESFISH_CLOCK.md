@@ -71,6 +71,23 @@ against all strong baselines nor removes other configurations from the inventory
 
 Confirmation A completed at 199W/1D/0L, with all 7,711 moves/clocks independently
 replayed, no technical games, voids or rounding ambiguity (minimum conservative
-remaining clock 524.5ms). Confirmation B is still running; no two-set acceptance
-is claimed. Evidence: `results/20261026-musesfish-clock-confirmation-a.json`
+remaining clock 524.5ms). Both sets have now completed; profile-scoped acceptance is recorded below. Evidence: `results/20261026-musesfish-clock-confirmation-a.json`
 and its `-audit.json`.
+
+## Two-set compatibility-profile acceptance
+
+Confirmation B completed194W/5D/1L; all7,868moves/clocks replayed cleanly,
+minimum conservative remaining clock154ms. Together A/B replay15,579moves,
+with zero technical games, voids or ambiguous margins. Both independent100-pair
+sets pass the repository's existing above50%-score version/profile criterion.
+The unchanged acceptance checker records
+`results/20261026-musesfish-clock-acceptance.json`.
+
+Its input is an explicitly post-match schema projection of the original frozen
+campaign, `results/musesfish-clock-acceptance-projection.json`; the two test sets,
+settings and raw outcomes remain unchanged. It applies the longstanding checker
+criterion, rather than pretending the projection was preregistered. Parent-level
+Musesfish remains unverified for other invocations. This older profile criterion
+is separate from the selected strong-suite >70%-win/report goal, and gives no
+learned improvement over the original teacher. Routine preselection has already
+excluded this profile relative to AB, without treating exclusion as a model win.

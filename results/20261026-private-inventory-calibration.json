@@ -1,0 +1,840 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "c257dfe9a12357709095870fb8c549f722f9aa80b25dc4a6c86f5cf9681ad82b",
+  "scope": "Fixed first eight original RL TRAIN episodes; CPU inference only, no fit or test-set selection. Frozen warm raw count-based policy approximates a search/noise actor. Skip long-check/chase ban decisions whose original legality probe may depend on sampled pools. Hidden labels never enter likelihoods. Exploratory model-mismatch diagnostic, not strength or calibration confirmation.",
+  "games": [
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000000",
+      "positions": 31,
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "positions": 57,
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "positions": 57,
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "positions": 41,
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "positions": 72,
+      "audit": {
+        "positions_replayed": 72,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000005",
+      "positions": 18,
+      "audit": {
+        "positions_replayed": 18,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "positions": 45,
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000007",
+      "positions": 47,
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    }
+  ],
+  "samples": [
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000000",
+      "ply": 24,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": -0.006543857594459412,
+      "private_ledger_nats": 1.329070791671691,
+      "live_assignment_nats": 5.192925229955803
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000000",
+      "ply": 26,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": 0.03420070737122827,
+      "private_ledger_nats": 1.3213351274930325,
+      "live_assignment_nats": 5.192522269060915
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000000",
+      "ply": 28,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": 0.07485767075724215,
+      "private_ledger_nats": 1.3216043687103047,
+      "live_assignment_nats": 5.191207426457907
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000000",
+      "ply": 30,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": 0.1568330217336864,
+      "private_ledger_nats": 1.3104290818901947,
+      "live_assignment_nats": 5.184288365702859
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 39,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": 0.003093425044184972,
+      "private_ledger_nats": 1.3208505522596852,
+      "live_assignment_nats": 7.426455550798253
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 41,
+      "root": 1,
+      "support": 9,
+      "log_score_gain_nats": -0.010566070890881019,
+      "private_ledger_nats": 2.0335508988661815,
+      "live_assignment_nats": 6.85604677545002
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 43,
+      "root": 1,
+      "support": 9,
+      "log_score_gain_nats": -0.006360068109707573,
+      "private_ledger_nats": 2.035610950691397,
+      "live_assignment_nats": 6.85633978944793
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 45,
+      "root": 1,
+      "support": 13,
+      "log_score_gain_nats": 0.05680067538997324,
+      "private_ledger_nats": 2.3583655158015473,
+      "live_assignment_nats": 4.946435238653319
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 47,
+      "root": 1,
+      "support": 13,
+      "log_score_gain_nats": 0.16067791742922388,
+      "private_ledger_nats": 2.3562131531089707,
+      "live_assignment_nats": 4.938982570019434
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 49,
+      "root": 1,
+      "support": 13,
+      "log_score_gain_nats": 0.23437496896586207,
+      "private_ledger_nats": 2.350981010391145,
+      "live_assignment_nats": 4.933201303112058
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 50,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": 0.008085782237934547,
+      "private_ledger_nats": 1.5556556758123197,
+      "live_assignment_nats": 5.885760430743023
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 51,
+      "root": 1,
+      "support": 13,
+      "log_score_gain_nats": 0.3219588594809224,
+      "private_ledger_nats": 2.3472829309482903,
+      "live_assignment_nats": 4.924441641884547
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 52,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": -0.033852682079885676,
+      "private_ledger_nats": 1.6072388465123486,
+      "live_assignment_nats": 4.785292676860293
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 53,
+      "root": 1,
+      "support": 13,
+      "log_score_gain_nats": 0.3219588594809224,
+      "private_ledger_nats": 2.3472829309482903,
+      "live_assignment_nats": 4.924441641884547
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 54,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": -0.012155732976742106,
+      "private_ledger_nats": 1.605464227243799,
+      "live_assignment_nats": 4.783518057591744
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 55,
+      "root": 1,
+      "support": 13,
+      "log_score_gain_nats": 0.3089185420606766,
+      "private_ledger_nats": 2.344423658238617,
+      "live_assignment_nats": 4.91754202303906
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000001",
+      "ply": 56,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": -0.0021565587654917007,
+      "private_ledger_nats": 1.6047758666908696,
+      "live_assignment_nats": 4.782829697038815
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 31,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.06751456745777906,
+      "private_ledger_nats": 1.4386863169522444,
+      "live_assignment_nats": 6.729897684730893
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 33,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.023308410243971345,
+      "private_ledger_nats": 1.2544751120505533,
+      "live_assignment_nats": 4.786858138453855
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 35,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": 0.023213846715057773,
+      "private_ledger_nats": 1.2274372153540332,
+      "live_assignment_nats": 4.785376299598346
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 37,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.003616401535899705,
+      "private_ledger_nats": 1.2412616689999552,
+      "live_assignment_nats": 4.784317162989584
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 39,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.01715598553995612,
+      "private_ledger_nats": 1.2490056306250799,
+      "live_assignment_nats": 4.784700537979872
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 41,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.09614214168058155,
+      "private_ledger_nats": 1.3546885502857258,
+      "live_assignment_nats": 4.091439108564323
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 43,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.09568053944497434,
+      "private_ledger_nats": 1.3544950811787149,
+      "live_assignment_nats": 4.091361918003649
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 45,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.15975950558537833,
+      "private_ledger_nats": 1.3612705026254568,
+      "live_assignment_nats": 4.082498405422727
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 47,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.16100980496669115,
+      "private_ledger_nats": 1.3614912248622613,
+      "live_assignment_nats": 4.08242383998057
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 49,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.11587139890801024,
+      "private_ledger_nats": 1.0714507812614311,
+      "live_assignment_nats": 2.478717955926299
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 51,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": -0.0704587486824313,
+      "private_ledger_nats": 0.6634187841188633,
+      "live_assignment_nats": 1.0940786057961234
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 53,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": -0.07407734486801765,
+      "private_ledger_nats": 0.6645192326457903,
+      "live_assignment_nats": 1.0936234865183203
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000002",
+      "ply": 55,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": -0.07531939592189962,
+      "private_ledger_nats": 0.6648911239577773,
+      "live_assignment_nats": 1.0934627392901644
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 30,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": 0.009912744872602075,
+      "private_ledger_nats": 1.2758459012584284,
+      "live_assignment_nats": 6.0401597799626465
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 32,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": -0.002372390025347393,
+      "private_ledger_nats": 1.2807277270483879,
+      "live_assignment_nats": 6.040102478584011
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 34,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": 0.06200322854955065,
+      "private_ledger_nats": 1.2427571132467774,
+      "live_assignment_nats": 6.035973469823652
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 35,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.03141984248797902,
+      "private_ledger_nats": 1.0090219041576978,
+      "live_assignment_nats": 4.093574311163612
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 36,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": 0.043518100361494394,
+      "private_ledger_nats": 1.456073210707792,
+      "live_assignment_nats": 3.5881675039436103
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 37,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.0294024977757823,
+      "private_ledger_nats": 0.9263701534218416,
+      "live_assignment_nats": 2.994710720148311
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 38,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": 0.05555601013136524,
+      "private_ledger_nats": 1.4559268947511246,
+      "live_assignment_nats": 3.589095803533043
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 39,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.02497921345777132,
+      "private_ledger_nats": 0.8735946250115549,
+      "live_assignment_nats": 2.984538864720146
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000003",
+      "ply": 40,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": 0.10604538471549052,
+      "private_ledger_nats": 1.440635907489174,
+      "live_assignment_nats": 3.5935028758425736
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 21,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.012489321343490456,
+      "private_ledger_nats": 1.4223039512294726,
+      "live_assignment_nats": 8.930454546281204
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 23,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.015170991308586235,
+      "private_ledger_nats": 1.4191144910875988,
+      "live_assignment_nats": 8.930205773291718
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 25,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.034314777669711916,
+      "private_ledger_nats": 1.4064405241705251,
+      "live_assignment_nats": 8.929086643454447
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 27,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.029154090409357902,
+      "private_ledger_nats": 1.4055835678331923,
+      "live_assignment_nats": 8.929297662833415
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 29,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.020908837263139635,
+      "private_ledger_nats": 1.4136077607917086,
+      "live_assignment_nats": 8.930062175456634
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 31,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": 0.022055869833198294,
+      "private_ledger_nats": 1.478802806813423,
+      "live_assignment_nats": 8.118974717150955
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 33,
+      "root": 1,
+      "support": 5,
+      "log_score_gain_nats": -0.03560186565993528,
+      "private_ledger_nats": 1.4765977744268586,
+      "live_assignment_nats": 8.115405241524801
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 35,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.021999318319780414,
+      "private_ledger_nats": 1.2662620128984927,
+      "live_assignment_nats": 6.038254872209087
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 37,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": 0.060132033794585205,
+      "private_ledger_nats": 1.2605496206429652,
+      "live_assignment_nats": 6.038606918684998
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 39,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": 0.02615587665942143,
+      "private_ledger_nats": 1.2274033266131825,
+      "live_assignment_nats": 4.786998875619138
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 41,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": 0.01871598723394796,
+      "private_ledger_nats": 1.2316397076977477,
+      "live_assignment_nats": 4.787055743121377
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 43,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.014628844417046816,
+      "private_ledger_nats": 1.2477572888196966,
+      "live_assignment_nats": 4.784818483624658
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 45,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": 0.010682828344894757,
+      "private_ledger_nats": 1.3285388469055626,
+      "live_assignment_nats": 4.093682155126674
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 47,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.01962033460387591,
+      "private_ledger_nats": 1.0320328214966932,
+      "live_assignment_nats": 2.484085736734106
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 49,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.007522444291178765,
+      "private_ledger_nats": 1.041535932407633,
+      "live_assignment_nats": 2.4841245120973365
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 51,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.00814641174867703,
+      "private_ledger_nats": 1.0417033909497158,
+      "live_assignment_nats": 2.484077407574817
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 53,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.019321152285751708,
+      "private_ledger_nats": 1.0323248113958603,
+      "live_assignment_nats": 2.4842719992639646
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 55,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.041574679072262644,
+      "private_ledger_nats": 1.0233894207927037,
+      "live_assignment_nats": 2.4832876980702028
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 57,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.05695275171799241,
+      "private_ledger_nats": 1.0164592401984232,
+      "live_assignment_nats": 2.4819563388595656
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 59,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.05355511845935723,
+      "private_ledger_nats": 1.01740947663745,
+      "live_assignment_nats": 2.4816621505127197
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 61,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": 0.00023061220119702242,
+      "private_ledger_nats": 0.6364075373431672,
+      "live_assignment_nats": 1.0986122354697652
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 63,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": 0.007441112755019574,
+      "private_ledger_nats": 0.633006894645523,
+      "live_assignment_nats": 1.098556364250664
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 65,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": 0.0023374368678114044,
+      "private_ledger_nats": 0.6354272990790328,
+      "live_assignment_nats": 1.098606807981788
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 67,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": 0.011301994141276195,
+      "private_ledger_nats": 0.6311322272832631,
+      "live_assignment_nats": 1.0984826024743266
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 69,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": 0.014085478620685876,
+      "private_ledger_nats": 0.629757048462064,
+      "live_assignment_nats": 1.0984100983151996
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000004",
+      "ply": 71,
+      "root": 1,
+      "support": 2,
+      "log_score_gain_nats": 0.014009162265978592,
+      "private_ledger_nats": 0.6297950186804764,
+      "live_assignment_nats": 1.0984123040059515
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 21,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.031095445458038107,
+      "private_ledger_nats": 1.280382018415669,
+      "live_assignment_nats": 6.039576873277124
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 23,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.08224299868778218,
+      "private_ledger_nats": 1.286180221793595,
+      "live_assignment_nats": 6.036455394473534
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 25,
+      "root": 1,
+      "support": 4,
+      "log_score_gain_nats": -0.14880236616428055,
+      "private_ledger_nats": 1.3156049001615961,
+      "live_assignment_nats": 5.184240883465803
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 27,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.21209379182575128,
+      "private_ledger_nats": 1.0139340626275484,
+      "live_assignment_nats": 3.379048176600317
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 29,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.27001164631305064,
+      "private_ledger_nats": 0.9990020107676854,
+      "live_assignment_nats": 3.3678279101609596
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 31,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.26331537736554433,
+      "private_ledger_nats": 0.9922714891956703,
+      "live_assignment_nats": 3.365744077688232
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 33,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.244020301676785,
+      "private_ledger_nats": 0.9978176172370586,
+      "live_assignment_nats": 3.369903320234244
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 35,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.20230965865997408,
+      "private_ledger_nats": 1.0673579847494883,
+      "live_assignment_nats": 2.4490661195395234
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 37,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.08152269031159143,
+      "private_ledger_nats": 1.059961174459917,
+      "live_assignment_nats": 2.4780144293632853
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 39,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.0815226903115912,
+      "private_ledger_nats": 1.059961174459917,
+      "live_assignment_nats": 2.4780144293632858
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 40,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": 0.04205440320898046,
+      "private_ledger_nats": 1.5487345171747267,
+      "live_assignment_nats": 5.8840519779283955
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 41,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": -0.0815226903115912,
+      "private_ledger_nats": 1.059961174459917,
+      "live_assignment_nats": 2.4780144293632858
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 42,
+      "root": 0,
+      "support": 5,
+      "log_score_gain_nats": 0.03829374567078658,
+      "private_ledger_nats": 1.550827369756098,
+      "live_assignment_nats": 5.885240315813421
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 43,
+      "root": 1,
+      "support": 3,
+      "log_score_gain_nats": 0.02099857818652373,
+      "private_ledger_nats": 1.0318522255795837,
+      "live_assignment_nats": 2.4843926039367066
+    },
+    {
+      "episode": "runs/neural-selfplay-series-01/iter-001/episodes/game-000006",
+      "ply": 44,
+      "root": 0,
+      "support": 4,
+      "log_score_gain_nats": 0.1071835052107668,
+      "private_ledger_nats": 1.291757335983225,
+      "live_assignment_nats": 4.085291511590702
+    }
+  ],
+  "skipped_rule_ban_decisions": 0,
+  "summary": {
+    "scored_decisions": 80,
+    "mean_log_score_gain_nats": -0.00034328070255878194,
+    "warning": "Correlated reused TRAIN trajectories; count-policy approximation to a search/noise actor. No independent calibration or strength claim."
+  }
+}

@@ -74,4 +74,9 @@ NNUE, so no equal-total-compute claim is made. Complete private-history/native
 legal/terminal and clock audits follow each screen. The already negative joint-
 update control is not substituted for the stronger original warm model in this
 strength test. All checkpoints were selected on the old validation split before
-these fresh tests. Both screens are currently running/pending; no promotion.
+these fresh tests. Both screens completed: frozen statistics versus warm is
+16W/2D/46L (26.5625% score; paired bootstrap95% [17.1875%,35.9375%]), and versus
+teacher0W/0D/64L. Both independent native replays and clock audits are clean.
+The lower selection CE did not prevent strength regression. Frozen BatchNorm
+statistics are not adopted. Exact reports, audits and archived raw games are
+`results/20261026-frozen-bn-vs-{warm,teacher}{,-audit}.json`.

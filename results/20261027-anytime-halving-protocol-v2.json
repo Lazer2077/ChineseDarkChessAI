@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "scope": "Corrected-prefix CPU warm-network protocol test; not playing-strength evidence.",
+  "stdout": "id name CDCA timed root halving then survivor PUCT (research)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string batch deadline sha256 20388add7ec5c399522b029c86479010934372a444002597165eece1f655d130\nuciok\nreadyok\ninfo string root-anytime {\"prefix_simulations\": 256, \"completed_simulations\": 384, \"survivor_tail_started_after\": 256, \"remaining_root_candidates\": 2, \"deadline_enabled\": false}\ninfo string {\"simulations\": 384, \"elapsed_ms\": 2583.036320284009, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 0.9999999999999997}\nbestmove a9b9\ninfo string root-anytime {\"prefix_simulations\": 256, \"completed_simulations\": 8, \"survivor_tail_started_after\": null, \"remaining_root_candidates\": 16, \"deadline_enabled\": true}\ninfo string {\"simulations\": 8, \"elapsed_ms\": 73.21097515523434, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 1.0}\nbestmove a9b9\n",
+  "exit_code": 0
+}

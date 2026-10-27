@@ -18,13 +18,19 @@ class SurvivorHalving(RootHalving):
     def __init__(self, budget=256, candidates=16, c_puct=1.5):
         if budget < 2*candidates: raise ValueError('Prefix must support all minimum halving rounds')
         super().__init__(budget, candidates, seed=0, noise_scale=0.)
-        self.tail_started = None; self.c_puct = c_puct
+        self.tail_started = None; self.c_puct = c_puct; self.final_two = None
 
     def _advance_completed_round(self, root):
         if self.tail_started is not None: return
         if self.round_assigned == self.round_cost:
             if root.visits != self.assigned: raise ValueError('Outstanding virtual credits at halving boundary')
-            if len(self.active) <= 2:
+            if len(self.active) == 2: self.final_two = list(self.active)
+            if self.assigned >= self.budget:
+                # Fixed halving can spend a rounding remainder on its final
+                # single winner. Preserve that exact prefix before restoring
+                # the last two candidates for timed continuation.
+                if len(self.active) == 1 and self.final_two is not None:
+                    self.active = list(self.final_two)
                 self.tail_started = self.assigned
             else:
                 super()._advance_completed_round(root)

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Same selected LeafBatch8-trained checkpoint, nowLeafBatch8inference; no retraining.31W0D33Lversuswarm8,2W0D62Lversusteacher. No established learned-weight improvement or teacher superiority; no promotion. Prior32inference tests remain separate, not pooled as one configuration.",
+  "matches": {
+    "warm": {
+      "timing": {
+        "candidate": {
+          "moves": 1777,
+          "mean_ms": 312.4074686854249,
+          "p95_ms": 458.355498,
+          "max_ms": 544.861106
+        },
+        "baseline": {
+          "moves": 1778,
+          "mean_ms": 312.07768147019124,
+          "p95_ms": 457.371765,
+          "max_ms": 570.443195
+        }
+      },
+      "game_clock": "10+0.1",
+      "games": 64,
+      "expected_games": 64,
+      "wins": 31,
+      "draws": 0,
+      "losses": 33,
+      "score": 0.484375,
+      "complete_pairs": 32,
+      "paired_bootstrap_95": [
+        0.359375,
+        0.609375
+      ],
+      "paired_hoeffding_95": [
+        0.24429430217001982,
+        0.7244556978299802
+      ],
+      "void_attempts": 0,
+      "technical_results": [],
+      "valid_technical_run": true,
+      "single_match_superiority_gate": false,
+      "promotion_supported": false,
+      "warning": "A single development match is not a promotion or an all-engine superiority claim."
+    },
+    "teacher": {
+      "timing": {
+        "candidate": {
+          "moves": 1441,
+          "mean_ms": 339.1797505038168,
+          "p95_ms": 460.492603,
+          "max_ms": 572.605061
+        },
+        "baseline": {
+          "moves": 1471,
+          "mean_ms": 353.3019398116927,
+          "p95_ms": 845.019461,
+          "max_ms": 1987.682462
+        }
+      },
+      "game_clock": "10+0.1",
+      "games": 64,
+      "expected_games": 64,
+      "wins": 2,
+      "draws": 0,
+      "losses": 62,
+      "score": 0.03125,
+      "complete_pairs": 32,
+      "paired_bootstrap_95": [
+        0.0,
+        0.078125
+      ],
+      "paired_hoeffding_95": [
+        0.0,
+        0.2713306978299802
+      ],
+      "void_attempts": 0,
+      "technical_results": [],
+      "valid_technical_run": true,
+      "single_match_superiority_gate": false,
+      "promotion_supported": false,
+      "warning": "A single development match is not a promotion or an all-engine superiority claim."
+    }
+  },
+  "evidence_sha256": {
+    "results/neural-small-batch-aligned-plan.json": "50c0d65dba5fb4e144922e49c7609cdab37a859bd57fe68568595d3fe22a1fe9",
+    "results/20261027-neural-small-batch-aligned-vs-warm.json": "695059f1ea996903e27a3cf59e0a301b2e16201dc7891f3c079816bd3135d167",
+    "results/20261027-neural-small-batch-aligned-vs-warm-audit.json": "4cbda44ac53d12f445388af438c9934e974231634ac45bc2749ef1b183309ece",
+    "results/20261027-neural-small-batch-aligned-vs-teacher.json": "ab247a4cc4e4bd201cb85f1775c90586c6dc01ee19a0e71c709c5383c9baec5b",
+    "results/20261027-neural-small-batch-aligned-vs-teacher-audit.json": "1bd845abcbb194aa37123681b2989b9b8c56948e49ec0908e9c0a173b5ebed85"
+  }
+}

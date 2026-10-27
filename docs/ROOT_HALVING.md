@@ -178,3 +178,8 @@ paired prefix/coverage analysis:
 contrasts are now closed,7,197audited moves in total; all-phase confirmation
 is running on the released GPU. Completed development summary:
 `results/20261027-root-halving-development-summary.json`.
+
+A separately defined [timed hybrid](ANYTIME_HALVING.md) now preserves the exact
+fixed prefix and continues within two survivors when time remains. It does not
+change this fixed-work confirmation, and its future timed results must not be
+pooled with the60+0.5fixed-work stratum.

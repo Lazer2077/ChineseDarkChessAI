@@ -69,9 +69,13 @@ configuration. `results/neural-small-batch-aligned-plan.json` therefore fixes
 two fresh64-game tests of the same selected checkpoint atLeafBatch8 against
 warm-at8and the native teacher, seeds9540001/9541001, actual10+0.1. No new
 training, training seed, checkpoint selection or tuning occurs; both matches
-complete regardless of the first result. These development tests are running
-on the GPU released by the completed greedy-policy contrast. Old32results
-remain intact and no weights are promoted before evidence supports it.
+complete regardless of the first result. These development tests completed:
+31W/0D/33Lversuswarm8 (48.4375%,bootstrap95% [35.9375%,60.9375%]) and
+2W/0D/62Lversusthe native teacher (3.125%,[0%,7.8125%]). All6,467moves/clocks
+are independently clean. Matching the inference batch does not establish an
+improvement of these selected weights under this training regime. Old32results
+remain intact and separate; no weights are promoted. Summary:
+`results/20261027-neural-small-batch-aligned-summary.json`.
 
 Full matrix and dataset statistics:
 `results/20261027-visit-target-diagnostic.json`;

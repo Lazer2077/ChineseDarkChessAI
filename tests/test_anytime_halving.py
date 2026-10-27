@@ -2,7 +2,7 @@ from types import SimpleNamespace
 import torch
 import pytest
 from research.anytime_halving import AnytimeHalvingPUCT, SurvivorHalving
-from research.sequential_halving import HalvingPUCT
+from research.sequential_halving import HalvingPUCT, RootHalving
 from research.policy_value import PhasePolicyValueNet
 from adapters.yuan_observer import reconstruct
 
@@ -69,3 +69,27 @@ def test_tail_uses_conditioned_survivor_priors_and_refuses_pending_boundary():
     allocator = SurvivorHalving(32,candidates=2); allocator.capacity(root)
     for _ in range(32): allocator.choose(root)
     with pytest.raises(ValueError,match='virtual credits'): allocator.capacity(root)
+
+
+@pytest.mark.parametrize('actions', range(1,17))
+def test_prefix_rounding_matches_fixed_allocator_for_every_candidate_count(actions):
+    class Edge:
+        def __init__(self,p): self.prior=p; self.visits=0; self.value_sum=0.
+        def q_value(self): return self.value_sum/self.visits if self.visits else 0.
+    mass=sum(range(1,actions+1))
+    roots=[SimpleNamespace(visits=0,children={i:Edge((i+1)/mass) for i in range(actions)}) for _ in range(2)]
+    fixed=RootHalving(256); timed=SurvivorHalving(256)
+    while roots[0].visits < 256:
+        capacities=[a.capacity(r) for a,r in zip([fixed,timed],roots)]
+        assert capacities[0]==capacities[1]
+        batch=min(8,capacities[0],256-roots[0].visits)
+        selected=[[] for _ in roots]
+        for _ in range(batch):
+            choices=[a.choose(r) for a,r in zip([fixed,timed],roots)]
+            assert choices[0][0]==choices[1][0]
+            for row,(move,edge) in zip(selected,choices): edge.visits+=1;row.append((move,edge))
+        for root,row in zip(roots,selected):
+            for move,edge in row: edge.value_sum-=(move-actions/2)/actions;root.visits+=1
+    assert fixed.recommend(roots[0])==timed.recommend(roots[1])
+    assert timed.tail_started==256
+    assert [(c.visits,c.value_sum) for c in roots[0].children.values()]==[(c.visits,c.value_sum) for c in roots[1].children.values()]

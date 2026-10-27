@@ -86,3 +86,27 @@ benefit, teacher superiority or promotion is established while matches run.
 
 Evidence: `results/legal-anchor-{research-protocol,training-plan,evaluation-plan,retention-plan}.json`;
 training curve/checkpoint metadata: `results/20261027-legal-anchor-training.json`.
+
+## Completed first contrast and retention diagnostic
+
+Against original unanchored RL1, the first frozen64-game screen completed
+43W/1D/20L:67.1875%wins,67.96875%score, paired bootstrap95% score interval
+[55.46875%,79.6875%]. The conservative paired Hoeffding interval
+[43.96068%,91.97682%] still includes50%. All3,243moves pass independent native
+identity/legal/full-history terminal/clock replay, with no technical games or
+ambiguous margins. This is a positive single development contrast against the
+degraded RL1checkpoint, not evidence against the warm model or native teacher,
+not final70%confirmation and not a promotion. Both other frozen screens continue.
+
+On the reused teacher-selection data, anchored teacher-action CE is2.499138,
+top1is31.3069%and warm-to-model full-action KL0.233183. The original unanchored
+RL1has2.759078/25.1928%/0.547188, so the anchor retains more of the warm policy
+on this diagnostic, while still trailing the original warm35.1258%top1.
+Old mixed-value supervision MSE is0.162651versus0.179038for unanchored and
+0.084464for warm. These reused-selection means do not establish independent
+generalization or explain the match difference causally by themselves.
+
+Evidence: `results/20261027-legal-anchor-vs-unanchored{,-audit}.json` and
+`results/20261027-legal-anchor-retention.json`. A separate
+[uncertainty diagnostic](OBSERVATION_UNCERTAINTY.md) prepares observable stage
+features only; no change to this running recipe is made.

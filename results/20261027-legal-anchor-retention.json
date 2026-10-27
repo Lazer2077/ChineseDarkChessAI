@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Descriptive post-selection retention on the same512teacher selection games reused by the warm model. New anchored actor already selected solely by original neural-selfplay validation before any retention result or matches. No fitting, reselection, independent generalization or strength claim.",
+  "plan_sha256": "53b3b0b043b1915555d079d0f7f9c70c2ce68a26dda24810d79b5976a1b199d7",
+  "dataset": [
+    {
+      "sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+      "games": 512,
+      "games_with_search_records": 512,
+      "positions": 37471
+    }
+  ],
+  "fully_public_positions": 4570,
+  "models": [
+    {
+      "label": "warm",
+      "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.3648354665119133,
+          "teacher_action_top1": 0.35125830642363426,
+          "teacher_action_top5": 0.7116703584105041,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08446411096145352,
+          "terminal_value_mse": 0.4616102558510996,
+          "teacher_static_value_mse": 0.04710825710182755
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.3715064128836167,
+          "teacher_action_top1": 0.35336311966201633,
+          "teacher_action_top5": 0.7118932555241482,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08673561486006266,
+          "terminal_value_mse": 0.5013027038306944,
+          "teacher_static_value_mse": 0.04503690030397967
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.3168090318127006,
+          "teacher_action_top1": 0.3361050328227571,
+          "teacher_action_top5": 0.7100656455142232,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.06811077403188263,
+          "terminal_value_mse": 0.17585068670960222,
+          "teacher_static_value_mse": 0.0620206662935109
+        }
+      }
+    },
+    {
+      "label": "legal-anchor-unit",
+      "model_sha256": "c09575bbee3d4d9f2c4dd6e6818b569f156b20973bd09b402e5f7b51eaf7cffb",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.4991384464673105,
+          "teacher_action_top1": 0.3130687731845961,
+          "teacher_action_top5": 0.6675829307998186,
+          "warm_to_model_policy_kl_nats": 0.23318284526595207,
+          "mixed_value_mse": 0.1626514534394614,
+          "terminal_value_mse": 0.5467251941800243,
+          "teacher_static_value_mse": 0.12232662992944254
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.5180177035677724,
+          "teacher_action_top1": 0.31245250904227834,
+          "teacher_action_top5": 0.6645694659736786,
+          "warm_to_model_policy_kl_nats": 0.25198393255156365,
+          "mixed_value_mse": 0.15900693644755867,
+          "terminal_value_mse": 0.5797017295930177,
+          "teacher_static_value_mse": 0.11468206295940678
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.363220188729389,
+          "teacher_action_top1": 0.3175054704595186,
+          "teacher_action_top5": 0.6892778993435449,
+          "warm_to_model_policy_kl_nats": 0.09782735887997655,
+          "mixed_value_mse": 0.18888958331924088,
+          "terminal_value_mse": 0.309315786822716,
+          "teacher_static_value_mse": 0.17736249379840255
+        }
+      }
+    }
+  ]
+}

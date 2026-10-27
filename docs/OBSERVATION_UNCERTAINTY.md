@@ -78,3 +78,41 @@ campaign before selecting a new controlled ablation.
 Evidence: `results/observation-uncertainty-diagnostic-plan.json` and
 `results/20261027-observation-uncertainty-diagnostic.json`, with safe per-record
 entropy/weight arrays and source/data digests.
+
+## Controlled implementation prepared, no new campaign selected
+
+`research/entropy_policy_anchor.py` computes the per-record legal teacher KL
+before applying the frozen observable weights. Loss is the **batch mean of
+weighted KL**, without dividing by each minibatch's weight sum. Otherwise a
+second normalization would change the specified whole-corpus objective. Weight
+gradients are stopped; zero-weight records receive zero auxiliary gradient.
+All-ones mode delegates to the established constant loss exactly.
+
+The loader binds episode ordering and hashes, safely loads arrays, then
+independently recomputes entropy from permitted observer-record bytes. It
+rejects a mismatched coefficient vector even if its global mean and file hash
+are internally valid. Mirroring changes spatial inputs/masks but leaves these
+count-entropy weights invariant. It introduces no new inference input or actor.
+
+`scripts/train_entropy_anchored_selfplay.py` extends the existing guarded
+training loop without modifying any file pinned by running experiments.
+Teacher queries, original CE/terminal MSE, normalization, augmentation, optimizer
+and checkpoint-selection criterion remain as in the constant-anchor wrapper.
+The loop records its weighting mode/range/mean and explicitly labels the logged
+auxiliary loss as **weighted** KL. This has no adaptive critic, population-based
+schedule or new policy-gradient guarantee.
+
+Three tests verify exact constant-loss/gradient reproduction, analytic weighted
+gradients including a zero-weight row, detached teacher/weights, rejection of
+negative coefficients and observer-only recomputation/row-order checks. Poisoned
+score/outcome/move bytes cannot change the loaded coefficients.
+
+CPU integration uses the same four old TRAIN games/186positions plus two other
+TRAIN games for smoke selection, one epoch/three updates. Constant mode exactly
+reproduces the prior unit-anchor selected arrays
+`0dca3bd68d70e9720bd362c56495001d7651ecd0dd04b69b63509aed7667c74a`.
+The variable-weight mode stays finite, has mean1and range[0.1421473,2.2476754]
+on **this smoke subset**, and changes weights as intended. This is not the
+full-cohort coefficient range, a new selected research recipe or playing-strength
+evidence. Finish the existing constant-anchor campaign before any larger fit.
+Evidence: `results/20261027-entropy-anchor-integration.json`.

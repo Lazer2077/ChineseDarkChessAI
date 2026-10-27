@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "scope": "CPU integration only: same four old TRAIN games, two other TRAIN games for smoke selection, one epoch/three updates. No new entropy-weighted research campaign or test set selected; no strength evidence.",
+  "constant_mode_exactly_reproduces_existing_unit_anchor": true,
+  "profiles": [
+    {
+      "mode": "constant-unit",
+      "npz_sha256": "0dca3bd68d70e9720bd362c56495001d7651ecd0dd04b69b63509aed7667c74a",
+      "coefficient_mean": 1.0,
+      "coefficient_min": 1.0,
+      "coefficient_max": 1.0,
+      "updates": 3,
+      "weighted_legal_kl": 0.11676719360133653
+    },
+    {
+      "mode": "mean-matched-observer-entropy",
+      "npz_sha256": "f6d2f8ddcf8e3bb268e727bef54afe9716474088eeecda2808881aa242c785ab",
+      "coefficient_mean": 1.0,
+      "coefficient_min": 0.14214728772640228,
+      "coefficient_max": 2.2476754188537598,
+      "updates": 3,
+      "weighted_legal_kl": 0.11682589400199152
+    }
+  ],
+  "positions": 186,
+  "prior_constant_anchor_sha256": "0dca3bd68d70e9720bd362c56495001d7651ecd0dd04b69b63509aed7667c74a",
+  "new_wrapper_sha256": "57c4d3c1eea24ea281f66acd56c7c12c7b7bcb5967d54b031a591c023cf9d6bf"
+}

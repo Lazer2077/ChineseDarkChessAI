@@ -110,3 +110,10 @@ Evidence: `results/20261027-legal-anchor-vs-unanchored{,-audit}.json` and
 `results/20261027-legal-anchor-retention.json`. A separate
 [uncertainty diagnostic](OBSERVATION_UNCERTAINTY.md) prepares observable stage
 features only; no change to this running recipe is made.
+
+The warm-control contrast has also completed30W/1D/33L:47.65625%score,
+paired bootstrap95%[35.9375%,59.375%]. All2,999moves pass the native audit
+with no technical games or ambiguous clock margins. Thus improvement over the
+unanchored RL1does not establish improvement over the original warm model;
+this screen shows none. The native-teacher contrast continues unchanged.
+Evidence: `results/20261027-legal-anchor-vs-warm{,-audit}.json`.

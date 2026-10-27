@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Curves from two completed one-seed supervised decoder fits. Common TRAIN/selection data; initialization excluded from curves and checkpoint selection. Top1 uses all2550geometric logits without actual legal masking. No independent-game, RL or strength evidence.",
+  "sources": {
+    "results/20261027-spatial-policy-dense2550-training.json": "c4341104c44b460ba91938bc803b79a42c36813105c50bdaf936e5b6c1610977",
+    "results/20261027-spatial-policy-relative50-training.json": "d3a0cc22eb17c0f216524ae9513c1979ec18b790cf2b19ca585721f0f05200ad"
+  },
+  "script_sha256": "60eb28c49514ff2383fe91fa83ce63d778c78d0190be4a0e884536a8a1471755",
+  "selected": [
+    {
+      "head": "dense2550",
+      "epoch": 8,
+      "model_sha256": "7e09e0b7e5c74c7aa3f37db518489df4cc36669a830ac54a904bf395dd174795"
+    },
+    {
+      "head": "relative50",
+      "epoch": 10,
+      "model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f"
+    }
+  ],
+  "figures": {
+    "results/figures/spatial_policy_pretraining_20261027.png": "61dff42fc915147c5f84d9b541e226386e0885afbc3f9de0e0dcc8348cdb06d4",
+    "results/figures/spatial_policy_pretraining_20261027.pdf": "71189f6678dc4658158bbed545753f4b3513b7b52d300c41cb6cf7580385301a"
+  }
+}

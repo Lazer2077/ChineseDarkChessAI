@@ -61,3 +61,33 @@ reloads as `relative50`, digest
 All episode replays pass the listed source-rule/observer/visit/terminal audits.
 Evidence, training curves and raw episode archive:
 `results/20261027-spatial-selfplay-integration.json`.
+
+## One separate full-size RL iteration started
+
+The completed relative parent `e43ff2aa` now starts one prespecified research
+iteration:288new self-play games at256completed simulations/LeafBatch32,
+256TRAIN and32selection games, four epochs/batch128/lr1e-5and one training
+seed20261031. Actual generation seeds begin9700001. Use the same original
+search-visit and actor-relative source-rule terminal targets, normalization,
+augmentation and optimizer arithmetic; eager FP32 inference stays unchanged.
+This is new current-policy self-play RL, unlike the preceding teacher-replay
+pretraining. It is not a privileged teacher or an unbiased policy-gradient
+algorithm. Different model, generation/training seeds and resulting trajectories
+prevent a clean architecture-only comparison with old small-model RL runs.
+
+Every completed episode NPZ/JSON and the generation manifest are hashed into
+the training plan before its first optimizer step. No truncations or invented
+returns are accepted. Choose a checkpoint only from the declared32selection
+games, then complete both64-game actual10+0.1screens at9720001versus the parent
+and9721001versus the unchanged native teacher, LeafBatch32and2concurrent games.
+Raw archives and independent native identity/legal/terminal/clock audits follow.
+Neither screen selects another checkpoint or changes the other screen.
+
+The relative branch and parent checkpoint are chosen from the specified
+architecture/selection recipe; pretraining match scores have not been inspected
+to choose this RL parent. All five original pretraining matches continue with
+their already frozen parent models. This RL research actor is separate and has
+no promotion or final-suite status. The known source/native rule-profile
+difference remains explicit. Protocol and immutable runtime inputs:
+`results/spatial-relative-rl-plan.json` and
+`results/spatial-relative-rl-pipeline-plan.json`.

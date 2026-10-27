@@ -118,3 +118,31 @@ targeted tests also reject incomplete fits, checkpoint reselection and nonfinite
 selection losses. This verifies scheduling boundaries, not playing strength.
 Evidence: `results/spatial-policy-evaluation-queue-recipe.json` and
 `results/20261027-spatial-policy-evaluation-queue-integration.json`.
+
+## Completed full-budget fitting; all five contrasts dispatched
+
+Both128x15arms finish all12epochs and56,652updates. The prescribed common
+selection CE+MSE rule chooses dense epoch8and relative epoch10, before the
+queued matches start. The selected artifacts are:
+
+| Decoder | Parameters | Selection policy CE | Mixed value MSE | Unmasked teacher top1 |
+| --- | ---: | ---: | ---: | ---: |
+| Dense2550 | 12,798,455 | 2.133630 | 0.078767 | 39.2037% |
+| Relative50 | 5,453,555 | 1.784469 | 0.077051 | 44.8507% |
+
+Dense NPZ: `7e09e0b7e5c74c7aa3f37db518489df4cc36669a830ac54a904bf395dd174795`.
+Relative NPZ: `e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f`.
+These metrics reuse the declared checkpoint-selection set; top1uses all2550
+geometric logits before a real legal mask. They do not establish independent
+generalization, a playing-strength gain, a pure parameter-count effect or
+novelty of the shared convolution/gather principle. In particular, the decoder
+intervention changes both parameter count and structure.
+
+![Supervised decoder learning curves](../results/figures/spatial_policy_pretraining_20261027.png)
+
+The five prespecified64-game contrasts retain their original seeds, clocks,
+model-selection rule and eager inference. Both candidate artifacts are frozen
+in both generated evaluation plans before the first game. Reports and vector
+curves: `results/20261027-spatial-policy-{dense2550,relative50}-training.json`,
+`results/spatial-policy-{dense2550,relative50}-evaluation-plan.json` and
+`results/figures/spatial_policy_pretraining_20261027.{pdf,json}`.

@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Matched128x15cold-backbone supervised decoder comparison on the original2417541observer-only expert replay positions. Original mixed value targets, common initialization outside the decoder, same data/seed/updates. Not current-model self-play RL or chess-strength evidence.",
+  "training_plan_sha256": "41002d909d07370bee04ac4626dc829028a838c22d9733820aeaa6b0c11de383",
+  "research_stage": "development-pretraining",
+  "policy_head": "dense2550",
+  "policy_mapping_sha256": "a7f7b785376998a1825553ebe64d245603b8334c88b832fb30fe29a5757a156e",
+  "model_sha256": "7e09e0b7e5c74c7aa3f37db518489df4cc36669a830ac54a904bf395dd174795",
+  "initial_sha256": "d33fae80c5ba70d33efdb89ac50673a1d906dde0c7919b7bfd8b2deb27b596ba",
+  "parameters": 12798455,
+  "channels": 128,
+  "blocks": 15,
+  "training": [
+    {
+      "sha256": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+      "games": 8192,
+      "games_with_search_records": 8192,
+      "positions": 607652
+    },
+    {
+      "sha256": "cb837f6e401b20a85ab34419086404a881577b517ede74370153593f47e6a11d",
+      "games": 8192,
+      "games_with_search_records": 8192,
+      "positions": 601102
+    },
+    {
+      "sha256": "83b51de7572c5c93df80d03a9be8ca7bf71145cee109c95d384a89f95d2e21da",
+      "games": 8192,
+      "games_with_search_records": 8192,
+      "positions": 607907
+    },
+    {
+      "sha256": "74bcb2a9c8ea3da3f8b140f8ca7ebcdf45920c33801d81abd7aa52d2a695101f",
+      "games": 8192,
+      "games_with_search_records": 8191,
+      "positions": 600880
+    }
+  ],
+  "selection_validation": [
+    {
+      "sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+      "games": 512,
+      "games_with_search_records": 512,
+      "positions": 37471
+    }
+  ],
+  "epochs": 12,
+  "updates": 56652,
+  "selected_epoch": 8,
+  "initial_validation": {
+    "loss": 8.411795507601399,
+    "policy_ce": 7.846735225240853,
+    "value_mse": 0.5650602823605463,
+    "teacher_action_top1": 0.00016012382909449976,
+    "teacher_action_top5": 0.001094179498812415,
+    "full_public_positions": 4570,
+    "full_public_policy_ce": 7.844836117454379,
+    "full_public_value_mse": 0.6892951406098299
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 4721,
+      "train_policy_ce": 4.269759104732133,
+      "train_value_mse": 0.16600279272820984,
+      "validation": {
+        "loss": 3.041674647878816,
+        "policy_ce": 2.927437123641241,
+        "value_mse": 0.1142375242375751,
+        "teacher_action_top1": 0.2473913159510021,
+        "teacher_action_top5": 0.5695871473939846,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.741655390825392,
+        "full_public_value_mse": 0.13674574933667152
+      },
+      "seconds": 258.68620901554823
+    },
+    {
+      "epoch": 2,
+      "updates": 9442,
+      "train_policy_ce": 2.6513019170177308,
+      "train_value_mse": 0.09453112993281262,
+      "validation": {
+        "loss": 2.6407055897682294,
+        "policy_ce": 2.5411046741706818,
+        "value_mse": 0.09960091559754779,
+        "teacher_action_top1": 0.3063435723626271,
+        "teacher_action_top5": 0.6593365536014518,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.4157160026174145,
+        "full_public_value_mse": 0.1114977590854406
+      },
+      "seconds": 518.9455796759576
+    },
+    {
+      "epoch": 3,
+      "updates": 14163,
+      "train_policy_ce": 2.310312762550317,
+      "train_value_mse": 0.08228930169698723,
+      "validation": {
+        "loss": 2.4814707541376047,
+        "policy_ce": 2.3625455414850243,
+        "value_mse": 0.11892521265257999,
+        "teacher_action_top1": 0.33978276533852847,
+        "teacher_action_top5": 0.706199460916442,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.265252323875803,
+        "full_public_value_mse": 0.08786766875036241
+      },
+      "seconds": 780.1180361229926
+    },
+    {
+      "epoch": 4,
+      "updates": 18884,
+      "train_policy_ce": 2.094744893207158,
+      "train_value_mse": 0.07518278941862463,
+      "validation": {
+        "loss": 2.3759389758564984,
+        "policy_ce": 2.2577660456182467,
+        "value_mse": 0.11817293023825144,
+        "teacher_action_top1": 0.3581703183795468,
+        "teacher_action_top5": 0.7274158682714633,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.2012845967185055,
+        "full_public_value_mse": 0.07757610775737799
+      },
+      "seconds": 1044.037369478494
+    },
+    {
+      "epoch": 5,
+      "updates": 23605,
+      "train_policy_ce": 1.9353871671761074,
+      "train_value_mse": 0.06934505348421083,
+      "validation": {
+        "loss": 2.2587967696218767,
+        "policy_ce": 2.179472407717958,
+        "value_mse": 0.07932436190391859,
+        "teacher_action_top1": 0.37573056497024365,
+        "teacher_action_top5": 0.7458301086173308,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.144073385399658,
+        "full_public_value_mse": 0.06244341103749463
+      },
+      "seconds": 1306.757534649223
+    },
+    {
+      "epoch": 6,
+      "updates": 28326,
+      "train_policy_ce": 1.8037274543119421,
+      "train_value_mse": 0.0646136943617821,
+      "validation": {
+        "loss": 2.2620367931309873,
+        "policy_ce": 2.155322419471188,
+        "value_mse": 0.10671437365979936,
+        "teacher_action_top1": 0.38435056443649757,
+        "teacher_action_top5": 0.7531157428411305,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.106652864861084,
+        "full_public_value_mse": 0.08170013442051285
+      },
+      "seconds": 1570.3860453534871
+    },
+    {
+      "epoch": 7,
+      "updates": 33047,
+      "train_policy_ce": 1.6894839079141162,
+      "train_value_mse": 0.06069066700914406,
+      "validation": {
+        "loss": 2.21664292919687,
+        "policy_ce": 2.133214506848838,
+        "value_mse": 0.08342842234803183,
+        "teacher_action_top1": 0.3876331029329348,
+        "teacher_action_top5": 0.760641562808572,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.0965612340954904,
+        "full_public_value_mse": 0.06574232114205858
+      },
+      "seconds": 1835.3479738011956
+    },
+    {
+      "epoch": 8,
+      "updates": 37768,
+      "train_policy_ce": 1.5867763316068224,
+      "train_value_mse": 0.05729899284392564,
+      "validation": {
+        "loss": 2.2123963298320657,
+        "policy_ce": 2.133629517731994,
+        "value_mse": 0.07876681210007158,
+        "teacher_action_top1": 0.39203650823303354,
+        "teacher_action_top5": 0.7636839155613675,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.1110213671148608,
+        "full_public_value_mse": 0.06164977108872912
+      },
+      "seconds": 2101.6466211788356
+    },
+    {
+      "epoch": 9,
+      "updates": 42489,
+      "train_policy_ce": 1.4956020922813342,
+      "train_value_mse": 0.05450466864112448,
+      "validation": {
+        "loss": 2.229337352197243,
+        "policy_ce": 2.1461030429124306,
+        "value_mse": 0.08323430928481258,
+        "teacher_action_top1": 0.39377118304822395,
+        "teacher_action_top5": 0.7651784046329161,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.1296371594853944,
+        "full_public_value_mse": 0.06526896655376836
+      },
+      "seconds": 2370.471608337015
+    },
+    {
+      "epoch": 10,
+      "updates": 47210,
+      "train_policy_ce": 1.419203635268079,
+      "train_value_mse": 0.05233250282984168,
+      "validation": {
+        "loss": 2.2380981070546566,
+        "policy_ce": 2.161427683274284,
+        "value_mse": 0.07667042378037241,
+        "teacher_action_top1": 0.39737396920285023,
+        "teacher_action_top5": 0.7661658349123323,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.143899117723205,
+        "full_public_value_mse": 0.06039877486470222
+      },
+      "seconds": 2631.574371431023
+    },
+    {
+      "epoch": 11,
+      "updates": 51931,
+      "train_policy_ce": 1.359246927660114,
+      "train_value_mse": 0.05074249283015867,
+      "validation": {
+        "loss": 2.2583630064694287,
+        "policy_ce": 2.180225709591068,
+        "value_mse": 0.07813729687836035,
+        "teacher_action_top1": 0.3968935977155667,
+        "teacher_action_top5": 0.7674201382402391,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.162709381429711,
+        "full_public_value_mse": 0.062272259707947704
+      },
+      "seconds": 2896.795364111662
+    },
+    {
+      "epoch": 12,
+      "updates": 56652,
+      "train_policy_ce": 1.3178310459686826,
+      "train_value_mse": 0.04995620630727282,
+      "validation": {
+        "loss": 2.2789757798363293,
+        "policy_ce": 2.2026604993473597,
+        "value_mse": 0.07631528048896957,
+        "teacher_action_top1": 0.39486536254703636,
+        "teacher_action_top5": 0.7653118411571616,
+        "full_public_positions": 4570,
+        "full_public_policy_ce": 2.18690439116707,
+        "full_public_value_mse": 0.06219932925999442
+      },
+      "seconds": 3158.900485539809
+    }
+  ],
+  "checkpoint_selection": "Minimum common selection policy CE + original0.7score/0.3outcome MSE; no match-based choice.",
+  "limitations": "Supervised search-action imitation, not current-model self-play RL, an information-state sufficiency proof or a playing-strength/promotion result."
+}

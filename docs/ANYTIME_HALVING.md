@@ -89,3 +89,11 @@ clock replay; there are no technical games or ambiguous clock margins.
 The unchanged native-teacher contrast continues with its original frozen
 settings. No tuning follows the warm-control result. Evidence:
 `results/20261027-anytime-halving-vs-warm{,-audit}.json`.
+
+The second contrast is now complete:0W/0D/64L against the unchanged native
+teacher. All3,275moves pass the same native checks, with no technical games or
+ambiguous clock margins. Thus this timed campaign closes with6,889audited
+moves. It establishes neither a warm-control advantage nor progress against the
+teacher, despite the separate fixed-work halving signal. Do not pool their
+different computation/clock strata. No model or actor is promoted. Evidence:
+`results/20261027-anytime-halving-vs-teacher{,-audit}.json`.

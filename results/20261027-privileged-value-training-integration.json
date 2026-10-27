@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "scope": "End-to-end CPU integration only: six preflight training games, one selection game and one test game. No estimate of predictive benefit or playing strength.",
+  "status": "completed",
+  "training_games": 6,
+  "selection_games": 1,
+  "test_games": 1,
+  "epochs_each": 1,
+  "updates_each": 6,
+  "profiles": {
+    "symmetric": {
+      "parameters": 9342455,
+      "trainable_parameters": 1993793,
+      "selected_model_sha256": "4199d854e24c5a4f27781064ed59bb05b26921378459163a40e3166b3c31e732"
+    },
+    "privileged": {
+      "parameters": 9342455,
+      "trainable_parameters": 1993793,
+      "selected_model_sha256": "267a5e2f8bc95f4752a27754558df08dc914f14cf827940344eb66936a7979f0"
+    }
+  },
+  "test_prediction_arrays_sha256": "60b784f54c6e7ef1aa94a010d1fa466690f0c5189f3187521b2ab3ff9d0c268b",
+  "original_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb"
+}

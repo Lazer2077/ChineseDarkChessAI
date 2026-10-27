@@ -140,3 +140,50 @@ Even lower critic error is insufficient: any later value distillation or actor
 update must be tested using a frozen observer-only checkpoint in fresh paired
 matches, with the existing native teacher attribution control. Only that can
 support playing-strength progress. No public push is warranted by this preflight.
+
+## Frozen paired value study has started
+
+The four-worker corpus now generates352new complete fixed-deal games from the
+same original warm observer-limited actor,128simulations andLeafBatch8.
+Indices0–255are training,256–287selection and288–351final test, each with a
+distinct seed beginning9601001. No preflight game is reused. Any failed or
+resource-truncated game fails the corpus; no fabricated terminal labels or
+silent replacement seeds are allowed. The corpus runner merges only completed
+shards after checking all game counts, seeds and hashes.
+
+Two250-channel value models retain the same original64-channel,15-block trunk
+and value head. Twelve extra channels encode six live-dark types for each
+color; the control sees zeros in those channels. Both retain exactly the same
+capacity and original warm parameters, with all extra input weights initialized
+to zero. Thus initial value functions agree exactly, while privileged channels
+receive nonzero gradients after fitting. Unused policy parameters stay frozen;
+all value/trunk parameters and their normalization statistics train normally.
+No history planes are invented, so these remain conditional predictors rather
+than full history-state critics.
+
+Both profiles use one training seed20261027, eight epochs, batch128,
+AdamWlr1e-5/weight decay0.0001, gradient clipping1 and the same game data,
+minibatch permutations and horizontal-mirror draws. Each selects its minimum
+whole-game mean selection MSE. **Both checkpoints are selected before test
+arrays load.** The primary endpoint is symmetric-minus-privileged game-mean
+terminal-return MSE on64test games, with10,000paired game-bootstrap resamples.
+A positive95%lower bound is evidence for conditional predictive benefit only.
+Position-weighted error, phase strata and calibration bins are descriptive
+secondary outputs, without phase-specific superiority claims.
+
+Three value-specific tests cover plane orientation, preserved observer inputs,
+truth validation, mirror alignment, equal-capacity/exact initial functions,
+zero-control versus nonzero privileged gradients, whole-game weighting and
+suppression of tiny-sample positive claims. A real full-checkpoint CPU end-to-end
+integration run fits six preflight games, selects on one and tests on one,
+then safely reloads both selected critics; it is not a benefit estimate.
+
+The frozen training controller waits for the verified live corpus process to
+complete, then uses its released GPU. All source hashes are rechecked before
+and after each stage. Completion will archive the two training curves, selected
+checkpoint digests, held-out predictions and per-game uncertainty. The critic
+contract and first-layer shape differ from ordinary playing actors; neither
+artifact is deployable through the existing actor loader.
+
+Plans: `results/privileged-value-{corpus,training,study}-plan.json`.
+Integration: `results/20261027-privileged-value-training-integration.json`.

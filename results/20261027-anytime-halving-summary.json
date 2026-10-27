@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Two fixed timed development screens of unchanged warm weights; warm-control interval includes parity and teacher contrast is0/0/64. No established timed-search or learned-strength gain; no promotion. Keep separate from equal256simulation60+0.5halving results.",
+  "plan_sha256": "553aed11f154bcc8c697049ca60e0149f2e7c224fae50c9220d71d5cbaa35187",
+  "contrasts": [
+    {
+      "opponent": "warm",
+      "report": "results/20261027-anytime-halving-vs-warm.json",
+      "audit": "results/20261027-anytime-halving-vs-warm-audit.json",
+      "wdl": [
+        36,
+        2,
+        26
+      ],
+      "score": 0.578125,
+      "paired_bootstrap_95": [
+        0.4609375,
+        0.6953125
+      ],
+      "audited_moves": 3614
+    },
+    {
+      "opponent": "teacher",
+      "report": "results/20261027-anytime-halving-vs-teacher.json",
+      "audit": "results/20261027-anytime-halving-vs-teacher-audit.json",
+      "wdl": [
+        0,
+        0,
+        64
+      ],
+      "score": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "audited_moves": 3275
+    }
+  ],
+  "total_audited_moves": 6889
+}

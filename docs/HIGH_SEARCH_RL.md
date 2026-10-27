@@ -28,3 +28,14 @@ failed during import before creating any run state because a native-library
 environment variable was misspelled. The corrected launch uses the pinned
 native rules/legality libraries. No live job was restarted and no data were
 overwritten.
+
+Generation and training are now complete:288games,18,140positions,
+16,112training positions and2,028selection positions. Four epochs produced
+504optimizer updates; the selected epoch4checkpoint has SHA256
+`fb598f165f10a9a2a8e170986844122d01476187ba8cb315efe210d4cdd8a367`.
+Its own selection policy CE is2.8241329and terminal-value MSE0.6448982.
+Those losses concern newly generated trajectories, so they do not establish
+improvement over the256simulation dataset or its trained model. Both fixed
+warm/teacher screens remain required; the warm comparison is running.
+Training curve, episode seeds/digests and counts are archived in
+`results/20261027-neural-high-search-training.json`.

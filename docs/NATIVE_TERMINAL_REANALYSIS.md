@@ -66,7 +66,7 @@ and56selection returns differ. Search policies still come from the original
 source-model PUCT. Native reanalysis fixes realized episode termination and
 returns, not counterfactual search dynamics or posterior estimation.
 
-## Fits complete; independent strength screens running
+## Fits and all four independent strength screens complete
 
 All three fits use the same pretrained relative128x15parent, one seed20261031,
 four epochs, batch128, AdamWlr1e-5, the original FP32 arithmetic and horizontal
@@ -111,8 +111,19 @@ and actual-clock audits, with zero technical games or rounding ambiguities.
 This label-only screen is inconclusive. Native prefix versus the full-source
 control also finishes at30wins/0draws/34losses,46.875%score with paired95%
 [35.9375%,57.8125%], again technically clean. That second contrast changes
-data/update count as declared and is not label-only. The remaining parent and
-teacher screens continue unchanged. Neither finished comparison establishes
-that correcting native returns alone
-recovers the pretrained parent's strength. Evidence:
-`results/20261027-native-terminal-native-prefix-vs-{source-prefix-control,source-full-control}{,-audit}.json`.
+data/update count as declared and is not label-only.
+
+The final two screens also complete: versus parent32/2/30,51.5625%score,
+paired95%[40.625%,62.5%]; versus teacher0/2/62,1.5625%score,
+paired95%[0%,3.90625%]. All256games/13,160moves across the four contrasts pass
+native identity/legal/terminal/clock audits, without technical games or clock
+ambiguities. No neural-control interval excludes50%, and teacher strength
+remains far out of reach.
+
+The previous source-full update's20/2/42parent result uses different layouts
+from this native-prefix32/2/30parent screen. Their point-estimate difference
+cannot establish a causal return-label benefit; the direct native-versus-full
+contrast30/0/34remains inconclusive. Close the unchanged label-only branch while
+retaining correct native objective labels in subsequent policy-target controls.
+Full four-contrast evidence and raw digests:
+`results/20261027-native-terminal-completed-study.json`.

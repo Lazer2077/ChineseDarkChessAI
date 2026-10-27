@@ -121,7 +121,7 @@ complete428updates and retain epoch4. The pruned model's NPZ digest is
 Reanalysis and the raw-control gate could fail; the dispatcher never restarts a
 failed dependency.
 
-The frozen research protocol's three64-game actual10+0.1screens are running
+The frozen research protocol prescribes three64-game actual10+0.1screens
 against raw control, pretrained parent and unchanged native teacher,
 at9760001/9761001/9762001. Keep LeafBatch32for neural actors, one CPU thread
 each, two concurrent games and a shared inference device. Freeze both model
@@ -150,3 +150,29 @@ array/sidecar payloads byte for byte. Its member hashes and archive digest are i
 `results/20261027-pruned-native-prefix-public-archive.json`; the downloadable copy
 is `results/raw/pruned-native-prefix-targets-public.tar.gz`. Packaging changes
 neither training data nor the frozen runtime provenance.
+
+## First screen incomplete; remaining fixed contrasts continue
+
+The first raw-control screen finishes only63of64games:31wins/1draw/31losses,
+31complete pairs and one unpaired completed game. One candidate exits before
+any move in the missing color slot. The harness then raisesOSError28while
+flushing that void record, before its planned retry. Engine stderr is discarded
+by upstream transport, so the exact cause of its exit is unknown; storage
+exhaustion observed in the harness does not prove that cause.
+
+The original strict64-game audit correctly rejects this incomplete screen. A
+separate explicitly partial audit retains all original per-move identity/legal/
+terminal/clock checks on the63complete games/3417moves and verifies that the one
+zero-ply void accounts for the missing planned slot. There are no clock-rounding
+ambiguities on the recorded complete moves. This is not technical-clean or
+complete-match certification, and no strength gain is claimed.
+
+Preserve the original controller's failed state,63game records and the void.
+Do not rerun or refill that failed slot as a clean confirmation. A separately
+frozen continuation completes only the original parent and teacher contrasts,
+with unchanged models,seeds,clocks,threads,leaf batching and output paths.
+
+Evidence: `results/20261027-pruned-native-policy-first-screen-failure.json`,
+`results/20261027-pruned-native-policy-pruned-vs-native-prefix-raw-control-partial-audit.json`,
+`results/20261027-pruned-native-policy-pruned-vs-native-prefix-raw-control.json`
+and `results/pruned-native-policy-evaluation-continuation-plan.json`.

@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "run": "pruned-vs-native-prefix-raw-control",
+  "games": 63,
+  "complete_pairs": 31,
+  "expected_games": 64,
+  "void_attempts": 1,
+  "partial_match": true,
+  "all_planned_attempt_slots_accounted": true,
+  "missing_color_slots": [
+    [
+      30,
+      "candidate"
+    ]
+  ],
+  "void_raw_sha256": "f27d277478bce84c0560d1aedf8123247cf8cab844be2a9ea22b094d28d148fe",
+  "source_audit_sha256": "bbab817dcd47d51b50e741bcff8b5439a4996254ebe78f67682ba2b713d9cff7",
+  "moves_replayed": 3417,
+  "wins_draws_losses": [
+    31,
+    1,
+    31
+  ],
+  "seeded_identities_match": true,
+  "all_recorded_moves_legal": true,
+  "nontechnical_terminal_results_match": true,
+  "technical_games": 0,
+  "actual_clock_moves_checked": 3417,
+  "clock_ambiguous_moves_from_rounding": 0,
+  "minimum_clock_lower_margin_ms": 1058.5,
+  "raw_games_sha256": "92e55ee6769bef2fb9fae5ed9c1fd17f674eda7b07c8e5a945c277920875c46c",
+  "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+  "scope": "PARTIAL MATCH:63completed games plus one zero-ply void,31complete pairs. No full64-game or technical-clean certification. Original strict per-move replay remains intact. Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+}

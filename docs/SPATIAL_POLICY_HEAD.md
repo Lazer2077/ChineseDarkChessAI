@@ -165,12 +165,24 @@ so this study cannot isolate a playing-strength benefit of the decoder alone.
 Neither model approaches the unchanged native teacher. These score intervals
 include half a point per draw and are not the final gate's strict win fractions.
 
-A fixed200-game/100-pair fresh-layout confirmation at seed9740001now tests
-the unchanged relative checkpoint against old warm, with the same actual
-10+0.1/LeafBatch32settings. No retraining, checkpoint choice or early stopping
-is permitted. This is an internal reference comparison; even a successful
-confirmation cannot satisfy the strong-suite/report gate. Recipe:
-`results/spatial-relative-warm-confirmation-plan.json`.
+A fixed200-game/100-pair fresh-layout confirmation at seed9740001is complete:
+158wins/6draws/36losses,80.5%score with paired score95%[75.25%,85.5%].
+Strict W/N is79%, paired win-fraction95%[73.5%,84.5%]. All9407moves pass native
+identity/legal/terminal/clock replay, zero technical games and rounding ambiguities.
+The same frozen relative and old-warm artifacts retain actual10+0.1/LeafBatch32;
+there is no refitting or checkpoint choice. Development and confirmation layout
+seed sets are disjoint and remain separately reported.
+
+This confirms a gain against the internal old neural reference. It does not
+establish decoder-only attribution, superiority to the unchanged native teacher
+or the strong-suite/report gate. Recipe and full separate-set evidence:
+`results/spatial-relative-warm-confirmation-plan.json` and
+`results/20261027-spatial-relative-confirmed-reference-gain.json`.
+
+The [larger relative-backbone study](SPATIAL_CAPACITY.md) now fits256channels/
+20blocks,24,918,259parameters, on the same replay/selection data and56,652updates.
+This separate cold capacity fit does not change either completed comparison or
+the currently frozen self-play target experiments.
 
 Full five-contrast evidence, audit and raw-data digests:
 `results/20261027-spatial-policy-completed-study.json`.

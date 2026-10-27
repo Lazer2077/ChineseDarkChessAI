@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "All four frozen native-terminal target-control contrasts completed. Correct realized-prefix labeling is supported; no strength advantage, policy-gradient theorem or promotion established.",
+  "protocol_sha256": "0a7b1cfff01e885e9f9745cff371efd6cc02c942543fcae21592eae763594f2c",
+  "evaluation_plan_sha256": "5794a7fd37943f50437f4c9d5bad64c4217a9438e42e38677281423943f5ce9d",
+  "games": 256,
+  "moves": 13160,
+  "contrasts": [
+    {
+      "opponent": "source-prefix-control",
+      "wins": 32,
+      "draws": 3,
+      "losses": 29,
+      "score": 0.5234375,
+      "paired_score_bootstrap_95": [
+        0.4140625,
+        0.6328125
+      ],
+      "moves": 3339,
+      "report": "results/20261027-native-terminal-native-prefix-vs-source-prefix-control.json",
+      "report_sha256": "efc7b2942d2cd46d05bfc62af41d07365bb12f0d96b0847c9f63c9fe3a384ade",
+      "audit": "results/20261027-native-terminal-native-prefix-vs-source-prefix-control-audit.json",
+      "audit_sha256": "94ca868afb2e4486307262bcefbd9639ea1f276e937a89a7458784b6e5ff1411",
+      "raw_games": {
+        "path": "results/raw/native-prefix-vs-source-prefix-control-4b897bd4ded5.jsonl.gz",
+        "uncompressed_sha256": "4b897bd4ded5308372175227acbfc51f612708242d130a250c230a5fd326bdac"
+      }
+    },
+    {
+      "opponent": "source-full-control",
+      "wins": 30,
+      "draws": 0,
+      "losses": 34,
+      "score": 0.46875,
+      "paired_score_bootstrap_95": [
+        0.359375,
+        0.578125
+      ],
+      "moves": 3507,
+      "report": "results/20261027-native-terminal-native-prefix-vs-source-full-control.json",
+      "report_sha256": "02ed8b6dd42875c1d5b4383f7bd17ccbb1f975275d055f0a9c3fb3dbf49410e6",
+      "audit": "results/20261027-native-terminal-native-prefix-vs-source-full-control-audit.json",
+      "audit_sha256": "ca474015099a0b2bf9e9de5fedfc4c1b4749f85a0ad06e1f913a9f25a6dbe7ab",
+      "raw_games": {
+        "path": "results/raw/native-prefix-vs-source-full-control-648e057bbf37.jsonl.gz",
+        "uncompressed_sha256": "648e057bbf374d1d1098560175bc44484924fb4b9d554b3eb48ddca09bb6daea"
+      }
+    },
+    {
+      "opponent": "parent",
+      "wins": 32,
+      "draws": 2,
+      "losses": 30,
+      "score": 0.515625,
+      "paired_score_bootstrap_95": [
+        0.40625,
+        0.625
+      ],
+      "moves": 3355,
+      "report": "results/20261027-native-terminal-native-prefix-vs-parent.json",
+      "report_sha256": "21e9044e27ca3139be6c63c7324d7bdba676437fd513052a58ced64ed9f464b2",
+      "audit": "results/20261027-native-terminal-native-prefix-vs-parent-audit.json",
+      "audit_sha256": "3da83df31ed9760c8f6a70a116d4884ebd3825aefb5dc58000d7bbc4d7f1f06c",
+      "raw_games": {
+        "path": "results/raw/native-prefix-vs-parent-921d712af786.jsonl.gz",
+        "uncompressed_sha256": "921d712af78649dc3ad5f4afdee58bf65696b082455492649768bdbc6cc31920"
+      }
+    },
+    {
+      "opponent": "teacher",
+      "wins": 0,
+      "draws": 2,
+      "losses": 62,
+      "score": 0.015625,
+      "paired_score_bootstrap_95": [
+        0.0,
+        0.0390625
+      ],
+      "moves": 2959,
+      "report": "results/20261027-native-terminal-native-prefix-vs-teacher.json",
+      "report_sha256": "7bda486c84ab0d0e4012b0c1171d5ebf25d3dc2f24f4166ce794dbd1d6b997e8",
+      "audit": "results/20261027-native-terminal-native-prefix-vs-teacher-audit.json",
+      "audit_sha256": "577c260e4aa005467df8be3ab6a13746a987a3f45f1e8478e7f2f12a0a1d9fa8",
+      "raw_games": {
+        "path": "results/raw/native-prefix-vs-teacher-1253d65ea18c.jsonl.gz",
+        "uncompressed_sha256": "1253d65ea18c7394eaf95f5bc11f218d4d9a283373db8385dcc2ce2beded0c33"
+      }
+    }
+  ],
+  "decision": "Do not expand unchanged return-label-only training based on these inconclusive neural-control matches and0/2/62teacher result. Keep native objective alignment for subsequent policy-target controls.",
+  "attribution_limits": [
+    "Only native versus source-prefix uses identical x/pi/steps and isolates return labels. Full-source contrast changes data and update count.",
+    "Earlier source-full versus parent20/2/42and current native versus parent32/2/30use different layouts. Their point-estimate difference is not a causal label-effect estimate; the direct native versus source-full30/0/34is inconclusive.",
+    "Underlying source-model PUCT future dynamics remain approximate despite correct terminal prefixes on actual trajectories."
+  ],
+  "promotion_supported": false,
+  "final_report_gate_met": false
+}

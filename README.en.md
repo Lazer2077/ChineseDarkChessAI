@@ -2,114 +2,102 @@
 
 [简体中文](README.md) | **English**
 
-Research on imperfect-information search and self-play learning for **full-board Jieqi**. We aim to outperform publicly available, runnable, independent Jieqi engines in reproducible experiments with compatible rules. The project is licensed under GPL-3.0; external engines, models, and rules are attributed separately.
+Research on partial-observation search, policy/value learning and self-play in **full-board Jieqi**. The goal is reproducible superiority over publicly runnable independent Jieqi engines under compatible rules. Half-board Banqi is outside scope.
 
-**Three pinned opponent versions have completed both confirmation sets under fixed rules and actual clocks. This does not establish an improvement over the upstream teacher; broader coverage remains incomplete.** The project focuses on algorithms and experimental evidence. Half-board dark chess (Banqi) is outside its scope.
+**The confirmed learning gain is against an internal neural reference; superiority over the original strong teacher remains unproven.** The new pretrained model records **158 wins, 6 draws and 36 losses** in a fresh 200-game confirmation against the old neural model. Its development result against the original jqe teacher remains **0 wins, 2 draws and 62 losses**. Both results matter.
 
-## Problem: hidden pieces and private information
+## Problem and information boundary
 
-Jieqi is more precisely a two-player zero-sum partially observable stochastic game. Fixing the opponent's policy allows one player's decision problem to be modeled as a POMDP; optimal single-agent planning does not directly imply an equilibrium guarantee for the two-player game.
+Jieqi is a two-player zero-sum partially observable stochastic game. With a fixed opponent policy and appropriate state augmentation, one player's planning problem can be viewed as a POMDP; this does not directly give an equilibrium guarantee for changing self-play policies.
 
-A player's information history consists of the public board, reveals and move history, and the identities of hidden pieces they have captured. A hidden capture reveals the identity only to the capturing player. Pieces captured by the opponent whose identities remain unknown to the player must stay in that player's unknown inventory; the simulator's true state must not be used to exclude them. Hidden identities are assigned **without replacement**, so piece identities are correlated.
+A player observes the public board, actions, reveals and identities of dark pieces that player captures. Identities captured by the opponent may remain unknown. Hidden types are allocated without replacement and are correlated. Opponent actions can also reveal information about private observations; the current inventory approximation does not fully solve this policy-conditioned inference problem.
 
-The current prototype and adapters separate true state from player observations, with tests for invariance to unobserved identities, private capture visibility, and reconstruction from complete histories. The inventory-based belief does not fully model how the opponent's actions reveal their private information. This remains a research gap, and the belief should not be described as an exact posterior.
+The physical count of live dark pieces decreases during play. Once both players have no live dark pieces, moves and terminal rules no longer depend on unknown off-board identities. We clear irrelevant inventory inputs at that exact boundary while preserving complete referee history. Entropy over unknown captured inventories and uncertainty about the opponent's private information need not decrease monotonically.
 
+## Current neural research
 
-## Current method: search-guided value learning
+A residual policy/value network guides actor-information PUCT: sample hidden worlds from the legal observation, share decision statistics by the simulated actor's information, and represent reveal chance branches separately. Search, rules and the initial architecture derive from pinned [Yuan-Bai/jieqi-lab](https://github.com/Yuan-Bai/jieqi-lab). Teacher search and published it014 weights come from [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi). See [provenance](docs/PROVENANCE.md) for attribution and licensing boundaries.
 
-The main experiments use a pinned MIT-licensed version of [devinokeefe/jieqi](https://github.com/devinokeefe/jieqi): alpha-beta/PVS search, approximations to reveal chance branches, and an NNUE value network. The native search architecture, trainer, and initial teacher weights are upstream contributions; see [provenance](docs/PROVENANCE.md). The current control model has 387,089 parameters.
+Network inputs contain the current public board, actor-known inventories and counters. Historical features absent from old replay remain empty in both training and inference; search still retains complete real history. This encoder is not a sufficient belief state, and the implementation does not claim full POMCP, CFR or ReBeL.
 
-The learning loop is: self-play guided by the current model → collect search scores and terminal outcomes → replay the latest two generations → update the value network on a GPU → run an independent paired match → update the next generation's actor only if the acceptance gate passes. Resource-truncated or erroneous games do not enter this training set. Rejected candidates are recorded, and the previous actor is retained.
+### Spatial policy decoder and wider shared backbone
 
-For a search score s and terminal outcome z∈{−1,0,1}, both from the acting player's perspective, the training target is:
+The [relative-action decoder study](docs/SPATIAL_POLICY_HEAD.md) follows the established [Lc0 convolution-and-gather principle](https://lczero.org/dev/backend/nn/), mapping the existing 2,550 geometric actions to 50 displacement planes. Actual movement rules stay intact, including fake movement geometry before revelation. Sharing weights does not assume that arbitrary translations preserve palaces, rivers or legal game symmetries.
+
+| Model | Shared backbone | Total parameters | Final policy classifier |
+| --- | --- | ---: | ---: |
+| Old neural reference | 64 channels × 15 blocks, dense decoder | 9,335,543 | 7,346,550 |
+| Matched dense control | 128 channels × 15 blocks | 12,798,455 | 7,346,550 |
+| New relative model | 128 channels × 15 blocks | 5,453,555 | 1,650 |
+| Capacity study, training | 256 channels × 20 blocks | 24,918,259 | 1,650 |
+
+The two 128-channel arms share identical common initialization, data order and optimization recipe; their policy classifiers differ. Relative to the old 64-channel model, backbone width, initialization and fitting also change, so the full playing-strength difference cannot be attributed to the decoder alone.
+
+### Supervised pretraining and self-play RL are separate
+
+Pretraining uses **2,417,541 actual teacher-search positions** from 32,768 generated games, of which 32,767 contain searched records. No labels are invented for unsearched random opening moves. Policy supervision is the actual selected teacher action; value supervision mixes the actor-relative search score and terminal return:
 
 ```math
-y = \lambda\,\sigma(s/K) + (1-\lambda)\,(z+1)/2,\qquad
-\mathcal L = \mathbb E[(\sigma(V_\theta(o)/K)-y)^2].
+y=0.7\tanh(s/860)+0.3z,\qquad
+\mathcal L_{pre}=\mathrm{CE}(a_{teacher},p_\theta(o))+(v_\theta(o)-y)^2.
 ```
 
-The current series uses λ=0.7 and K=430. This is value-based expert iteration combining search-target distillation with terminal-outcome learning. A separate [residual policy/value plus information-set PUCT self-play RL loop](docs/NEURAL_SELFPLAY.md) now updates its current actor from real search visits and terminal rewards: a 16-game pilot completed, and three successive learning iterations are running. Iteration 1 scored 24W/1D/39L versus its previous actor and 1W/0D/63L versus the original teacher, both technically clean. No learned strength gain is established, and full POMCP, CFR and ReBeL are not implemented. The early 15-dimensional linear-policy prototype checks observation isolation and the search/training pipeline; it does not represent the strength of the current main experiment.
+Each new model uses one training seed, 12 epochs, batch 512 and 56,652 updates, with the same optimizer, augmentation and learning-rate schedule. The common selection CE+MSE rule chooses epochs 8/10 for the two 128-channel arms. Selection-set teacher-action top1 is 44.85% for relative and 39.20% for dense. These checkpoint-selection metrics are neither independent generalization nor playing-strength evidence.
 
-## Experimental scale and observed results
+Current-model self-play is a separate stage, fitting actual completed root-visit distributions and terminal returns:
 
-The following is an evidence snapshot dated 2026-10-26. Running jobs are not completed experiments.
+```math
+\mathcal L_{RL}=\mathrm{CE}(\pi_{search},p_\theta(o))+(v_\theta(o)-z)^2.
+```
 
-[Completed version-specific confirmations](docs/CONFIRMED_RESULTS.md), each set with 200 games / 100 color-swapped layouts and actual clocks of 5+0.05:
+This is AlphaZero-style search-policy/return fitting, not a claim of unbiased asymmetric policy gradients. Full curves, data roles and frozen artifact digests are retained in [results](results).
 
-| Pinned opponent | Set A (W/D/L) | Set B (W/D/L) |
+## Completed neural matches
+
+Evidence as of 2026-10-27. Use actual **10+0.1** clocks, neural leaf batch 32, one CPU thread per engine and two concurrent games sharing an inference device. Intervals resample complete color-swapped layout pairs; score means `(wins+0.5 draws)/games`.
+
+| Frozen comparison | Stage | W/D/L | Score | Paired score 95% interval |
+| --- | --- | --- | ---: | --- |
+| New relative versus old neural reference | Development, 64 games | 52/1/11 | 82.03% | [71.88%, 90.63%] |
+| Same frozen model versus old neural reference | Fresh confirmation, 200 games | 158/6/36 | 80.50% | [75.25%, 85.50%] |
+| Relative versus matched dense 128 | Development, 64 games | 38/1/25 | 60.16% | [48.44%, 71.88%] |
+| Relative versus original jqe teacher | Development, 64 games | 0/2/62 | 1.56% | [0%, 3.91%] |
+| Dense 128 versus original jqe teacher | Development, 64 games | 1/0/63 | 1.56% | [0%, 4.69%] |
+
+The 200-game confirmation has a strict **79% win fraction**, paired win-fraction 95% interval **[73.5%, 84.5%]**. Development and confirmation layout seeds are disjoint. All 12,631 moves across those two campaigns pass identity, legality, terminal and clock replay, with zero technical games or clock-rounding ambiguities. The sets remain separate rather than being pooled into one confirmation.
+
+The supported conclusion is superiority of this frozen model over the old internal neural reference. The matched dense interval still includes 50%, so a decoder-only playing-strength effect is unconfirmed. There is no strong-teacher or final-suite victory. See [complete evidence and raw-record digests](results/20261027-spatial-relative-confirmed-reference-gain.json).
+
+## Active controls and negative evidence
+
+- **Why does self-play regress?** One ordinary 288-game/448-update iteration of the relative model records 20/2/42 against its pretrained parent and 0/0/64 against the teacher. Lower selection losses do not imply stronger play. [Study](docs/SPATIAL_SELFPLAY.md)
+- **Are rules and terminal targets aligned?** Public-history replay finds earlier native terminals in 19 of 256 training games and different terminal returns in 12. [Native-terminal prefix controls](docs/NATIVE_TERMINAL_REANALYSIS.md) admit only legal prefixes that genuinely reach native terminal states and compare return labels on matched observations/visits. This aligns realized trajectories, not all counterfactual search dynamics.
+- **Should exploratory visits become policy targets directly?** [Policy-target pruning](docs/POLICY_TARGET_PRUNING.md) follows [KataGo §5.3](https://arxiv.org/html/1902.10565v1). A fixed 32-TRAIN-root teacher-score proxy gives a positive signal. Exact reproduction then covers all 288 games/15,331 native-prefix roots, retaining actual counts and archiving separate targets. The raw-control model reproduces bitwise; both fits complete 428 updates. The first raw-control screen completes only 63 games plus one startup void and is not a valid 64-game screen; all records are retained while the original parent/teacher contrasts continue. Proxy benefit is not strength; KataGo forced playouts are not implemented.
+- **Does capacity limit progress against the teacher?** The [fixed capacity study](docs/SPATIAL_CAPACITY.md) trains 256 channels × 20 blocks on the same teacher data and 56,652 updates. Full-size GPU update, numeric interchange and search integration pass. Prediction quality must offset inference cost under actual clocks before claiming stronger play.
+- **May a teacher know hidden identities?** [Training-time privileged information](docs/PRIVILEGED_TRAINING.md) is conditionally defensible, but clairvoyant action imitation can mismatch the student's information-gathering needs. A completed equal-capacity value study has 64-game held-out MSE 0.8954 symmetric versus 0.8979 privileged, with no benefit; that specific branch is not expanded. Deployed models receive no true dark identities.
+
+Other closed or inconclusive directions retain their evidence and limits: [normalization drift](docs/NORMALIZATION_DRIFT.md), [virtual mean](docs/VIRTUAL_MEAN.md), [observer-history expert relabeling](docs/OBSERVER_EXPERT_RELABEL.md), [GPU inference execution](docs/INFERENCE_EXECUTION.md) and [public-phase search](docs/PARTIAL_TO_FULL.md). Pipeline checks, lower proxy losses and wins over regressed controls are not strong-baseline breakthroughs.
+
+## Open-source coverage and earlier native results
+
+The [opponent inventory](docs/opponents.json) and [discovery audit](docs/DISCOVERY_AUDIT.md) track versions, licenses, rules, weights and runnability, deduplicating shared engine cores. Unrunnable, incompatible or insufficiently licensed projects remain unverified; exclusion is not a victory.
+
+[Opponent-only preselection](docs/BASELINE_SELECTION.md) currently retains original jqe, AB-JChess v0.2d and the native classic Pika WASM branch as routine baselines. AB and Pika share engine-family ancestry, so these are not three independent algorithm families. Newly found strong candidates still require review.
+
+An earlier native NNUE candidate completed two 200-game confirmations per fixed version below, at actual 5+0.05:
+
+| Fixed version | Confirmation A, W/D/L | Confirmation B, W/D/L |
 | --- | --- | --- |
-| AB-JChess v0.2d | 162/7/31, 82.75% | 150/2/48, 75.5% |
-| universe-st/Jieqi `e00b667c` | 200/0/0, 100% | 198/2/0, 99.5% |
-| brianhliou/Pika WASM branch `bcc83f88`, native build | 181/1/18, 90.75% | 179/3/18, 90.25% |
+| AB-JChess v0.2d | 162/7/31 | 150/2/48 |
+| universe-st/Jieqi `e00b667c` | 200/0/0 | 198/2/0 |
+| brianhliou/Pika WASM native build `bcc83f88` | 181/1/18 | 179/3/18 |
 
-All six sets have no technical failures or void attempts, with both paired bootstrap and conservative Hoeffding 95% score lower bounds above 50%. All 65,826 moves and clock records were replay-audited. Results apply only to these versions and the documented referee/adapter profiles.
+Those results belong to that earlier native candidate, **not to the new GPU policy/value model**, and do not establish a learning gain over its original teacher. Other configurations, technical failures and clock ambiguities remain separately reported in [confirmed results](docs/CONFIRMED_RESULTS.md), [teacher attribution controls](docs/ABJ_CONFIRMATION.md) and [baseline selection](docs/BASELINE_SELECTION.md).
 
-- The [three-seed NNUE series](results/20261026-continual-three-seeds.json) completed two iterations per seed, 8,192 games per iteration: **49,152 games and 3,618,389 raw searched positions**, with zero rejected generation games. Each iteration trained for 15 GPU epochs. The six 200-game internal gate scores were 46.75%, 47.75%, 50.0%, 55.75%, 50.75% and 46.5%; none passed. All generation therefore remained guided by the original teacher, without a successfully improved behavior policy.
-- NNUE training uses a GPU and self-play search mainly uses CPUs. Two separate GPUs also completed independent 9.34M/10.07M policy/value pretraining arms, 12 epochs and 56,652 updates each. This is supervised teacher pretraining, not distributed multi-GPU training or an AlphaZero-scale reinforcement-learning strength result.
-- The small-data model trained from scratch scored 7 wins, 0 draws, and 25 losses against the teacher. The reveal-variance search modification scored 14 wins, 2 draws, and 16 losses against the original engine. Neither was promoted.
-- The initial warm-start candidate scored 18 wins, 1 draw, and 13 losses in a 32-game development match. Independent confirmation A produced **95 wins, 10 draws, and 95 losses (50% score)**, including one time forfeit, failing the technical-validity requirement. That confirmation set did not support the development-set advantage; confirmation B has finished at 77 wins, 17 draws, and 106 losses (42.75%), also with one time forfeit. Neither confirmation supports promotion.
-- The original C++ Mist engine is now connected under its original rule profile, preserving complete player-private histories. The subsequent 16-game development screen produced **15 wins, 0 draws, and 1 loss (93.75%)**, with no void games. With only eight layout pairs and an integration timing tolerance, it does not support a formal superiority claim. Results are reported separately from matches against its JS engine. The subsequent first actual-clock 200-game set scored 192 wins and 8 losses, but four opponent time forfeits fail the predefined technical-integrity requirement. Set B completed 191 wins and 9 losses, including three opponent time forfeits. Neither set supports a formal superiority claim.
+## Evaluation and final-report gate
 
-- The pure ISMCTS configuration of Yuan-Bai/jieqi-lab separately completed two 200-game sets, both 200 wins without technical failures; all 11,624 moves passed replay. Its neural model configuration remains unverified, so the whole project is not marked defeated. Enhanced Pika has ambiguous rounded-clock margins, and the Hefeng hybrid has engine-exit voids; neither confirmation is accepted.
+Freeze versions, model, observation permissions, referee, clock, threads, layout seeds and sample size before evaluation. Retain W/D/L, strict win fraction, draw-adjusted score, paired intervals and all technical outcomes. Separate training, checkpoint selection and strength-test roles. One training seed per experiment is permitted; fresh test layouts provide independent evaluation.
 
-- All [four AB-JChess comparison arms](docs/ABJ_CONFIRMATION.md) completed. The unchanged teacher scored 75.5% and 79.5% on the same A/B layouts. The learner-minus-teacher difference is +1.625 percentage points overall, with exploratory paired 95% interval [-3.125, +6.25], including zero: **a learned gain is not established**. Development and confirmation games are not pooled.
+The final goal requires the **same frozen model** to exceed **70% wins** against **each final strong baseline** on at least two independent test-layout sets, with each paired 95% win-fraction lower bound above 70%, at least 100 color-swapped layout pairs per set, and clean rule/identity/actual-clock audits. Only then write an arXiv-style technical report with training curves, core innovations, ablations and relevant implementation details. **This gate is not met.** See the full [persistent goal](docs/GOAL.md).
 
-Compressed raw games, checksums, and reports are in [results](results). A [new discovery audit](docs/DISCOVERY_AUDIT.md) adds previously omitted sources. The [opponent inventory](docs/opponents.json) also retains untested, unavailable, and rule-incompatible projects. Results from different rules, time controls, or engine versions are not pooled.
-
-[Opponent preselection](docs/BASELINE_SELECTION.md) completed 160 new head-to-head games and reused 400 teacher-control games. The provisional routine suite contains the original jqe teacher, AB-JChess v0.2d and native classical Pika. Exclusion is not defeat by our model; unresolved strong candidates remain visible.
-
-The [Musesfish actual-clock compatibility profile](docs/MUSESFISH_CLOCK.md) completed two 200-game confirmations at 199W/1D/0L and 194W/5D/1L, with all 15,579 moves/clocks cleanly replayed. The advantage is profile-specific; it neither covers every original invocation nor establishes learned improvement over the teacher.
-
-## Hypotheses under investigation
-
-**Does capacity limit value learning?** We expand the same teacher function to approximately 1.64 million and 13.45 million parameters by increasing network width and adding own-king-square feature buckets, respectively. At initialization, the maximum output difference across 256 paired inputs was 9.54×10⁻⁷; moves, scores, and node counts matched on six fixed-depth native benchmarks. All three sizes use the same complete training dataset, fixed validation dataset, and learning recipe. Equal actual-clock matches then test whether improvements outweigh inference cost. Equivalent initialization does not imply greater strength after training. The first 1.64M-versus-small screen finished at 27 wins, 1 draw, and 36 losses across 64 games (42.97% score; paired bootstrap 95% interval [32.81%, 53.13%]), with no technical errors. It does not establish a capacity benefit; the 13.45M model scored 26 wins, 2 draws, and 36 losses against the same small control, also without evidence of a benefit.
-
-**Does leaf batch size affect low-budget search?** A [same-model batch comparison](docs/NEURAL_SEARCH_COST.md), batch 8 versus 32, completed at 38W/7D/19L over 64 actual 10+0.1 games (64.84% score; paired 95% [54.69%,74.22%]), with all 3,472 moves/clocks cleanly replayed. This is a positive development signal, not promotion or superiority over the original teacher. The [virtual-mean screen](docs/VIRTUAL_MEAN.md) completed at 38W/0D/26L, with its interval still touching 50% and no promotion. Independent confirmation of batch 8 has started.
-
-**Why do small-data self-play updates regress?** A [normalization intervention](docs/NORMALIZATION_DRIFT.md) found that restoring old running buffers after training did not improve terminal-value error. A separate same-data/same-seed frozen-statistics training control exactly reproduces the old checkpoint in ordinary mode; its frozen arm lowers selection policy CE, with independent playing-strength screens still running.
-
-**Can a larger residual network overcome a plateau?** The [capacity protocol](docs/MODEL_SCALING.md) adds wider/deeper GPU-trained models as controlled follow-up experiments. The current 9.34M model has 7.35M policy-head parameters; total size alone obscures trunk capacity. Compare validation quality, inference cost and paired equal-clock strength. A fixed 64/128-channel GPU adaptation comparison has started, with equivalent initial functions and matched data/updates; both arms completed two epochs / 9,442 updates with similar validation errors, and all three screens completed: wide/small 35W/3D/26L, small/teacher 0W/0D/64L and wide/teacher 1W/0D/63L. No capacity benefit is established.
-
-**Should uncertainty determine chance-branch budgets?** We tested a variant allocating additional deep search according to pᵢ(vᵢ−E[v])², without evidence of improvement over the original engine. Further work should distinguish variance across identity outcomes, value-estimation error, and decision uncertainty that can actually change the root action, rather than allocating more computation simply because reveal outcomes differ substantially.
-
-**How should training weight different information phases?** [Four replay-loss objectives](docs/REPLAY_WEIGHTING.md) have completed GPU training, each with the same 8,192-game source, 405,959 retained positions and 1,485 updates: equal position, equal game, equal global phase, and equal present phase within each game. The uniform control exports the exact same network bytes as the earlier experiment. The three fixed 64-game development matches scored 38.28%, 49.22% and 46.09%; none established a strength benefit.
-
-**Can a policy head and phase-specific value experts help?** A new [residual policy/value comparison](docs/NEURAL_POLICY_PHASE.md) uses 15 residual blocks and 64 channels: a 9.34M-parameter shared-value model and a 10.07M-parameter model that switches value MLPs only when the public on-board dark count reaches zero. Both completed 12 GPU pretraining epochs on about 2.42M teacher-search positions. Policy labels are actual selected moves, not invented visit distributions. This stage is supervised warm start. All three fixed 64-game actual-clock screens completed: both models scored 0W/2D/62L against the teacher; phase versus shared scored 32W/10D/22L (57.81%; paired 95% [46.09%,69.53%]), without establishing a benefit. Subsequent self-play RL is reported separately; selection-validation error is not strength evidence.
-
-**Do inventory and the current board omit important information?** Future experiments will compare inventory encoding with history/private-information encoding and test policy-conditioned belief updates. Actions must remain consistent within an information set, preventing decisions from using identities unavailable to the actor in sampled worlds. This remains a research direction without completed strength results.
-
-**Can temporal targets improve learning?** A completed [same-observer two-ply target ablation](docs/TEMPORAL_TARGETS.md) partially replaces high-variance terminal labels with the same player's future search value. Data, initialization, and the validation objective are controlled across arms. The method does not directly mix values computed with the opponent's private observations. Its first 64-game development screen scored 34 wins, 2 draws, and 28 losses (54.69%; paired 95% interval [42.19%, 66.41%], still including 50%). The first direct-teacher confirmation set finished at 98 wins, 11 draws, and 91 losses (51.75%; interval [45.75%, 57.75%]), without confirming an improvement. The second set scored 93 wins, 13 draws, and 94 losses (49.75%; interval [43.5%, 56.0%]), also without supporting promotion.
-
-**Can the transition to full observability be exploited?** The [information-phase study](docs/PARTIAL_TO_FULL.md) measures joint without-replacement identity entropy, distinguishing public certainty from actor-private certainty. A native NNUE/training ablation now ignores irrelevant off-board inventory only after all on-board dark pieces disappear. Semantic and incremental-update checks passed. The inference-only 64-game screen finished at 29 wins, 6 draws, and 29 losses, without a strength benefit; matched retraining scored 30 wins, 7 draws, and 27 losses (52.34%; paired 95% interval [42.19%, 62.5%]), also without confirming a benefit.
-
-## Literature and methodological boundaries
-
-- [Silver et al., AlphaZero, Science 2018](https://doi.org/10.1126/science.aar6404): motivates the cycle of self-play, search improvement, and learning. Jieqi's private information creates problems for directly applying perfect-information state search.
-- [Silver & Veness, POMCP, NeurIPS 2010](https://papers.nips.cc/paper_files/paper/2010/file/edfbe1afcf9246bb0d40eb4d8027d90f-Paper.pdf): motivates history trees, root-belief sampling, and simulator-based planning. Assumptions must be examined separately for a fixed opponent and two-player self-play.
-- [Brown et al., ReBeL, NeurIPS 2020](https://arxiv.org/abs/2007.13544): studies public beliefs with search and learning, motivating explicit treatment of both players' private information and policy dependence. Its convergence guarantees do not automatically apply to this project's approximate search and function approximation.
-
-When learning stalls, we will first investigate data coverage, target bias, belief representation, and search cost, using these papers to formulate falsifiable ablations. More training time or a larger model is not itself considered an algorithmic innovation.
-
-## Evaluation standards
-
-Final report gate: establish stable win rates above **70%** (wins/all games,
-reported separately from draw-adjusted score) against every baseline in a small
-strong suite, ordinarily about 3–5 profiles selected by
-[opponent-versus-opponent screening](docs/BASELINE_SELECTION.md), on independent color-swapped test sets
-with multiple independent test/layout seeds. One training seed is sufficient;
-multiple successful training seeds are not required. Then write an arXiv-style technical report with
-training curves, core innovations, ablations and meaningful implementation
-details. Current version-specific confirmations do not meet this goal; see the
-[full acceptance requirements](docs/GOAL.md). Screening exclusion does not mean
-defeat by our model; missing weights, incompatible rules and technical failures
-remain explicitly unverified.
-
-Models, versions, layout seeds, rules, clocks, threads, and sample sizes are fixed in advance; training and evaluation layouts are separated. Formal superiority requires at least 100 color-swapped layout pairs, reporting W/D/L, score rate, a 95% bootstrap interval resampled by layout pair, and all timeouts, illegal moves, voids, and truncated games. Internal promotion additionally requires a conservative bounded-mean lower confidence limit above 50% and no technical errors. Broader superiority also requires confirmation of the same frozen checkpoint on layout sets from multiple independent test seeds. Multiple successful training seeds are not required; single-seed training results describe the tested checkpoint, not robustness across training initializations.
-
-Equal actual-time and equal-node budgets are studied separately. A larger network's advantage at equal nodes does not establish greater strength at equal time. Opponents must not be weakened, their official networks replaced, or their JS versions used to represent their C++ engines. Rule differences are handled through an independent referee and separate profiles; see the [native Mist profile](docs/MIST_NATIVE.md).
-
-## Reproduction and attribution
-
-[Continual-learning recipe and recovery](docs/CONTINUAL_LEARNING.md) · [Search ablations](docs/ADAPTIVE_SEARCH.md) · [Provenance and licenses](docs/PROVENANCE.md) · [Research goal and acceptance criteria](docs/GOAL.md)
-
-Public records focus on algorithms, budgets, seeds, versions, and artifact checksums. Machine identifiers, usernames, absolute environment paths, and local operational details are excluded from research descriptions. Experimental weights remain candidates and should not be released as models with confirmed superiority over upstream.
+The project uses GPL-3.0; imported engines, models, data and rules retain their separate attribution. Method references include [AlphaZero](https://doi.org/10.1126/science.aar6404), [POMCP](https://papers.nips.cc/paper_files/paper/2010/file/edfbe1afcf9246bb0d40eb4d8027d90f-Paper.pdf), [ReBeL](https://arxiv.org/abs/2007.13544) and [KataGo](https://arxiv.org/abs/1902.10565). Their guarantees do not automatically apply to the current approximate Jieqi implementation.

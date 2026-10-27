@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Frozen relative128x15supervised pretrained actor versus old dense64x15warm internal neural reference. Complete64-game development and200-game fresh confirmation kept separate. Independent paired-layout seeds and no technical/clock failures; not a final strong-suite victory or decoder-only attribution.",
+  "contrasts": [
+    {
+      "stage": "development",
+      "report": "results/20261027-spatial-policy-relative50-vs-old-warm64x15.json",
+      "report_sha256": "06e811e0813530c0b5aa476455e4a67822d601aa81b120a7b8bed497050ae67a",
+      "audit": "results/20261027-spatial-policy-relative50-vs-old-warm64x15-audit.json",
+      "audit_sha256": "596130783397526f799561c9c1286becadff6aeefbd5e8306b67fbb5d5b01a7c",
+      "games": 64,
+      "pairs": 32,
+      "wins": 52,
+      "draws": 1,
+      "losses": 11,
+      "win_fraction": 0.8125,
+      "paired_win_fraction_bootstrap_95": [
+        0.71875,
+        0.90625
+      ],
+      "score": 0.8203125,
+      "paired_score_bootstrap_95": [
+        0.71875,
+        0.90625
+      ],
+      "audited_moves": 3224,
+      "candidate_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+      "baseline_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "raw_games": {
+        "path": "results/raw/relative50-vs-old-warm64x15-d2b223e1700e.jsonl.gz",
+        "uncompressed_sha256": "d2b223e1700eec24b3dc6b0309b28677e1ccfd20d2d2e712266d65063f5ae72b"
+      }
+    },
+    {
+      "stage": "confirmation",
+      "report": "results/20261027-spatial-relative-warm-confirmation.json",
+      "report_sha256": "3610fa0d02081df212cdad4243c417e617d2ec759b2db1ec2be553da3f5d1f07",
+      "audit": "results/20261027-spatial-relative-warm-confirmation-audit.json",
+      "audit_sha256": "a067cc896d5ddd19c08dcafe690eb5f28d5edb7dc4b9e988186adfc28dee7b1f",
+      "games": 200,
+      "pairs": 100,
+      "wins": 158,
+      "draws": 6,
+      "losses": 36,
+      "win_fraction": 0.79,
+      "paired_win_fraction_bootstrap_95": [
+        0.735,
+        0.845
+      ],
+      "score": 0.805,
+      "paired_score_bootstrap_95": [
+        0.7525,
+        0.855
+      ],
+      "audited_moves": 9407,
+      "candidate_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+      "baseline_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "raw_games": {
+        "path": "results/raw/vs-old-warm-7c70b1b6c729.jsonl.gz",
+        "uncompressed_sha256": "7c70b1b6c7292a498b665cfed27409f2b9f398af172ebee4a71f46e7da4cc7a3"
+      }
+    }
+  ],
+  "development_confirmation_pair_seed_sets_disjoint": true,
+  "win_interval_method": {
+    "statistic": "W/N; each draw counts0,bootstrap resamples complete2-game layout pairs",
+    "bootstrap_seed": 9790101,
+    "resamples": 10000
+  },
+  "teacher_limit": {
+    "report": "results/20261027-spatial-policy-relative50-vs-unchanged-native-teacher.json",
+    "wins_draws_losses": [
+      0,
+      2,
+      62
+    ]
+  },
+  "attribution_limits": "Compared with old warm, body width, decoder, cold initialization and fit all change. Direct matched128dense contrast38/1/25has paired score interval including50%. No decoder-only strength effect, cross-training-seed robustness or teacher gain established.",
+  "promotion_supported": false,
+  "final_report_gate_met": false
+}

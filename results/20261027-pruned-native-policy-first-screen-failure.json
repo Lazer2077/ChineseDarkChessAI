@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "archived-incomplete",
+  "match_report": "results/20261027-pruned-native-policy-pruned-vs-native-prefix-raw-control.json",
+  "match_report_sha256": "766d599176763000afc88ffe5fc5ef08ce288f41cbcab7eb4a23aa0bfd4b1686",
+  "partial_audit": "results/20261027-pruned-native-policy-pruned-vs-native-prefix-raw-control-partial-audit.json",
+  "partial_audit_sha256": "17bbb437636717a0b5c972765cb99373f1a14447dd918768b5595b00fd51fd27",
+  "void_archive": {
+    "path": "results/raw/pruned-vs-native-prefix-raw-control-void-f27d277478bc.jsonl.gz",
+    "uncompressed_sha256": "f27d277478bce84c0560d1aedf8123247cf8cab844be2a9ea22b094d28d148fe"
+  },
+  "observed_failures": [
+    "One zero-ply candidate process exit; upstream discards engine stderr.",
+    "Harness worker raises OSError28 while flushing the void record; planned retry is not reached."
+  ],
+  "scope": "63complete games/31complete pairs plus one retained startup void,not a valid64-game screen. Do not refill or rerun the missing slot as clean confirmation. The two remaining original protocol contrasts continue unchanged in a separate controller.",
+  "causality_limit": "Storage exhaustion is observed in the harness. The unrecorded engine exception cannot be attributed conclusively to that exhaustion.",
+  "promotion_supported": false
+}

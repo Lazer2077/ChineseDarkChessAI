@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "791720439491c20069f653336aef263b49b336d16adb87e1dab229041c2c2f41",
+  "channels": 256,
+  "blocks": 20,
+  "parameters": 24918259,
+  "batch": 512,
+  "precision": "torch.bfloat16",
+  "updates": 1,
+  "finite_loss": 8.632246971130371,
+  "finite_preclip_gradient_norm": 20.58163833618164,
+  "peak_allocated_bytes": 2224753152,
+  "safe_numeric_roundtrip_exact": true,
+  "planned_initial_unchanged": true,
+  "completed_opening_simulations": 8,
+  "opening_move_legal": true,
+  "encode_forward_cpu_return_mean_ms": {
+    "parent128x15": {
+      "1": 5.449503101408482,
+      "8": 5.656190030276775,
+      "32": 5.60663715004921
+    },
+    "scale256x20": {
+      "1": 6.504583731293678,
+      "8": 6.425655260682106,
+      "32": 7.341170869767666
+    }
+  },
+  "scope": "One full-size GPU update on first512TRAIN rows, numeric interchange and bounded opening search. Timing uses10local repeats with eagerFP32 inference; parent trained versus scale one-update weights is cost only. No checkpoint selection, generalization, whole-game timing guarantee or playing-strength evidence."
+}

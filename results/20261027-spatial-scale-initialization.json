@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "85069439b1412d057c6b6887e7203d3d89606682f2ee344b45c4fb72715dfd34",
+  "channels": 256,
+  "blocks": 20,
+  "seed": 20261029,
+  "policy_mapping_sha256": "a7f7b785376998a1825553ebe64d245603b8334c88b832fb30fe29a5757a156e",
+  "common_state_arrays_exact": true,
+  "common_state_array_count": 262,
+  "initial_value_functions_equal_on64training_rows": true,
+  "initial_policy_functions_equal": false,
+  "models": [
+    {
+      "policy_head": "dense2550",
+      "parameters": 32263159,
+      "final_classifier_parameters": 7346550,
+      "initial_npz": "runs/spatial-scale-initialization-01/dense2550.npz",
+      "initial_sha256": "8032b390931a1b6c058cc5997b1c2f05b561a96fc57428e3e27967364f31f8f5"
+    },
+    {
+      "policy_head": "relative50",
+      "parameters": 24918259,
+      "final_classifier_parameters": 1650,
+      "initial_npz": "runs/spatial-scale-initialization-01/relative50.npz",
+      "initial_sha256": "257b3d684223f02828ca79e72abeb36b220ac0b1dd53ce4af9df4b5a527c725e"
+    }
+  ],
+  "scope": "Matched common trunk/value/policy-conv initialization only; classifier functions differ by design. Sampled TRAIN rows are an implementation check, not selection or strength evidence."
+}

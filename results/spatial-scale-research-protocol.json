@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "scope": "Cold relative50capacity study256channels/20blocks versus the completed128x15relative parent on exactly the same certified teacher replay, targets, seed, examples and optimizer updates. Joint width/depth and compute change; not equal FLOPs, preserved initial functions or new self-play RL. Actual-clock teacher strength remains to be tested.",
+  "trigger": "Completed relative128x15pretraining improved over old warm in64development and200fresh confirmation games, but scored0/2/62against unchanged native teacher. Existing source-rule RL regressed; native-return and policy-pruning controls remain separate. A bounded capacity study is authorized; no current match outcomes tune it.",
+  "literature": "KataGo2019section4.6progressive neural sizing motivates fitting a larger model on the same replay; it does not guarantee improvement in this partially observed game.",
+  "reference": {
+    "model": "runs/spatial-policy-pretraining-01/relative50/best.npz",
+    "sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+    "parameters": 5453555,
+    "channels": 128,
+    "blocks": 15
+  },
+  "candidate": {
+    "initial": "runs/spatial-scale-initialization-01/relative50.npz",
+    "sha256": "257b3d684223f02828ca79e72abeb36b220ac0b1dd53ce4af9df4b5a527c725e",
+    "parameters": 24918259,
+    "channels": 256,
+    "blocks": 20
+  },
+  "training_plan": "results/spatial-scale-training-plan.json",
+  "training_seed": 20261029,
+  "selection": "Complete all12epochs/56652updates. Choose minimum common CE+original mixed-value MSE excluding initialization. No match checkpoint selection or early stopping.",
+  "observability": "Observer encoder, private-capture inventory boundary, relative50action mapping and complete source search histories unchanged. Phase experts disabled. This does not add a true-state critic or solve posterior inference.",
+  "matches": [
+    {
+      "opponent": "relative128x15parent",
+      "seed": 9770001,
+      "games": 64
+    },
+    {
+      "opponent": "unchanged-native-teacher",
+      "seed": 9771001,
+      "games": 64
+    }
+  ],
+  "limitations": "One training seed, reused teacher data/selection split; joint width/depth/compute change is not an isolated width effect or a scaling law. Cold initialization is not function-preserving transfer. Data-generation coverage/history omissions may remain the bottleneck. Equal-time tests must establish whether quality offsets inference cost; no teacher/suite victory from fitting."
+}

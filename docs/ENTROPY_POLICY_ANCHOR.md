@@ -110,3 +110,19 @@ the original warm actor. The prespecified unchanged-teacher contrast remains
 in progress; no further entropy-weight tuning or model expansion follows this
 negative warm-control result. Evidence:
 `results/20261027-entropy-anchor-vs-warm.json` and its `-audit.json`.
+
+The unchanged-teacher comparison is now complete:1W1D62L/64,2.34375%score,
+paired bootstrap95%[0,0.0625]. All2577moves pass the native replay and clock
+audits without technical games or ambiguous margins. The full192-game campaign
+therefore closes without warm/teacher improvement. All9009recorded moves
+replay legally; only the warm/teacher contrasts, containing5740moves, are
+technically clean and unambiguous. The first contrast retains its time-forfeit
+and rounded-clock flags. Do not summarize the whole campaign as clean.
+
+No further tuning or larger fit of this coefficient recipe is undertaken.
+This negative result concerns the specified count-prior weighting, not every
+way of using declining partial observability. The subsequent observer-expert
+policy-target experiment changes the supervision source with matched data,
+without reusing the entropy coefficient. Evidence:
+`results/20261027-entropy-anchor-summary.json` and
+`results/20261027-entropy-anchor-vs-teacher{,-audit}.json`.

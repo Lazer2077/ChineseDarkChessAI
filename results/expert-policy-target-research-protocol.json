@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "scope": "Single policy-target substitution on identical compatible learner trajectories. One training seed, fixed final4epochs; development only.",
+  "control": "Original completed search visit distribution; original learner terminal-return target.",
+  "intervention": "Observer-only native expert selected action as a full-action one-hot CE target; identical original learner terminal-return target. No CP/mate value targets, privileged critic, auxiliary anchor or new rollouts.",
+  "data": "249TRAIN games/13304positions and31selection games/1677positions;8whole source episodes excluded solely for native/source legal-set mismatch, identically in both arms. Selection losses logged, never used to select duration/checkpoint. No independent generalization claim from this reused corpus.",
+  "recipe": {
+    "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "seed": 20261027,
+    "epochs": 4,
+    "batch": 128,
+    "lr": 1e-05,
+    "updates_each": 416,
+    "optimizer": "AdamW weight_decay0.0001, clip1; original mirror draws and original BN updates"
+  },
+  "matches": [
+    {
+      "opponent": "matched-original-search-control",
+      "games": 64,
+      "seed": 9640001
+    },
+    {
+      "opponent": "original-warm",
+      "games": 64,
+      "seed": 9641001
+    },
+    {
+      "opponent": "unchanged-native-teacher",
+      "games": 64,
+      "seed": 9642001
+    }
+  ],
+  "match_conditions": "Actual10+0.1, LeafBatch32for neural actors, one CPU thread each,2concurrent games, one shared dedicated inference GPU per match campaign. No equal FLOP/Hash/simulation claim.",
+  "outcome_dependence": "Finish all3prespecified comparisons irrespective of earlier results. Do not tune labels or checkpoints on matches. Require raw archives and native replay/clock audits; technical/ambiguous results remain flagged. Improvement over a degraded control alone is not progress over warm/teacher and does not authorize promotion or final70%claim.",
+  "limitations": "Supervised expert-action imitation is not a new DAgger algorithm or policy-gradient update. One expert node budget, one training seed, aliased history-omitting encoder, imperfect expert and different native/source continuation rules limit inference. Retained terminal values still describe the weaker source learner."
+}

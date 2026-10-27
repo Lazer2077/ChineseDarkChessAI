@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Fixed-final-epoch policy-target comparison; same observer input and learner terminal-return values. Profile-specific losses are descriptive, not comparable chess-strength estimates. No native terminal equivalence, privileged actor, DAgger convergence or promotion claim.",
+  "research_stage": "development",
+  "training_plan_sha256": "2683e227d139c3c03d4d22c5e6e7fd20cb71fea31bd7dd93882c0ccaf1aa0c70",
+  "policy_target": "original-search-visits",
+  "checkpoint_selection": "fixed-final-epoch",
+  "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "model_sha256": "eff3901fa82f2b71ef1f17b9f1bfbeee00a4a06700e404f546b0bc0a51058c12",
+  "training_games": 249,
+  "training_positions": 13304,
+  "selection_games": 31,
+  "selection_positions": 1677,
+  "epochs": 4,
+  "updates": 416,
+  "selected_epoch": 4,
+  "initial_validation": {
+    "loss": 6.402734570229178,
+    "search_policy_ce": 5.612485745442551,
+    "terminal_value_mse": 0.7902488247866281
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 104,
+      "train_policy_ce": 4.617943782059588,
+      "train_terminal_mse": 0.8358431753091474,
+      "validation": {
+        "loss": 5.034873688140913,
+        "search_policy_ce": 4.260183741650676,
+        "terminal_value_mse": 0.7746899464902383
+      },
+      "seconds": 3.6487025655806065
+    },
+    {
+      "epoch": 2,
+      "updates": 208,
+      "train_policy_ce": 4.099366525507445,
+      "train_terminal_mse": 0.7756493078321846,
+      "validation": {
+        "loss": 4.830462548242338,
+        "search_policy_ce": 4.044757401236689,
+        "terminal_value_mse": 0.7857051470056488
+      },
+      "seconds": 6.3896337151527405
+    },
+    {
+      "epoch": 3,
+      "updates": 312,
+      "train_policy_ce": 3.941022011825849,
+      "train_terminal_mse": 0.738697798332391,
+      "validation": {
+        "loss": 4.750123326412372,
+        "search_policy_ce": 3.9610089171288667,
+        "terminal_value_mse": 0.7891144092835055
+      },
+      "seconds": 9.398514667525887
+    },
+    {
+      "epoch": 4,
+      "updates": 416,
+      "train_policy_ce": 3.8533638645649138,
+      "train_terminal_mse": 0.7183580687801593,
+      "validation": {
+        "loss": 4.706802654320529,
+        "search_policy_ce": 3.9091798053275473,
+        "terminal_value_mse": 0.7976228489929817
+      },
+      "seconds": 12.863739874213934
+    }
+  ],
+  "original_control_reproduced_bitwise": false,
+  "value_target": "Unchanged source learner self-play terminal return; no expert cp/mate input."
+}

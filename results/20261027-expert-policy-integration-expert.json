@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Fixed-final-epoch policy-target comparison; same observer input and learner terminal-return values. Profile-specific losses are descriptive, not comparable chess-strength estimates. No native terminal equivalence, privileged actor, DAgger convergence or promotion claim.",
+  "research_stage": "integration",
+  "training_plan_sha256": "0fa505ab9c1a997b47f773404a4bf7f62c28a2db918db1b159c0f057ec2cc662",
+  "policy_target": "observer-expert-onehot",
+  "checkpoint_selection": "fixed-final-epoch",
+  "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "model_sha256": "3be130a8f43f0deb22b8fbd604807b403777ea1e048b0ae8fb4c3a37fd4aefc5",
+  "training_games": 4,
+  "training_positions": 186,
+  "selection_games": 2,
+  "selection_positions": 90,
+  "epochs": 1,
+  "updates": 3,
+  "selected_epoch": 1,
+  "initial_validation": {
+    "loss": 2.9058122731059686,
+    "search_policy_ce": 2.42479913401702,
+    "terminal_value_mse": 0.48101313908894855
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 3,
+      "train_policy_ce": 2.0581639459912453,
+      "train_terminal_mse": 1.28824378982667,
+      "validation": {
+        "loss": 2.7948764317798327,
+        "search_policy_ce": 2.3609621200529443,
+        "terminal_value_mse": 0.43391431172688805
+      },
+      "seconds": 6.777411779388785
+    }
+  ],
+  "original_control_reproduced_bitwise": false,
+  "value_target": "Unchanged source learner self-play terminal return; no expert cp/mate input."
+}

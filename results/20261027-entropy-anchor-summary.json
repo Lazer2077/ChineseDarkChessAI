@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Mean-matched observer-entropy anchoring has no established constant-anchor advantage, loses the original warm development contrast and scores1W1D62Lagainst unchanged native teacher. First contrast contains a time forfeit and one rounded-clock ambiguity; no clean full-campaign or promotion claim. Stop expansion of this weighting recipe.",
+  "plan_sha256": "f35d381b407456612b2587d2cb6ef11a646d58738a392c73c83612b5a5166816",
+  "selected_actor_sha256": "567043dc673a055bd7ea064435dbdc3571d894aba4506ca8aa763c269810064e",
+  "contrasts": [
+    {
+      "opponent": "constant",
+      "wdl": [
+        30,
+        4,
+        30
+      ],
+      "score": 0.5,
+      "paired_bootstrap_95": [
+        0.3828125,
+        0.6171875
+      ],
+      "valid_technical_run": false,
+      "technical_games": 1,
+      "ambiguous_clock_moves": 1,
+      "moves_replayed_legally": 3269,
+      "report": "results/20261027-entropy-anchor-vs-constant.json",
+      "audit": "results/20261027-entropy-anchor-vs-constant-audit.json",
+      "report_sha256": "e366edc2a57977dcb4e3108e69ef5b260cb793081d7b6827be6123c61ba88ada",
+      "audit_sha256": "2250fdabf325954032e20369f937361201fcb162506275338920b4e408f3f429"
+    },
+    {
+      "opponent": "warm",
+      "wdl": [
+        21,
+        3,
+        40
+      ],
+      "score": 0.3515625,
+      "paired_bootstrap_95": [
+        0.21875,
+        0.4921875
+      ],
+      "valid_technical_run": true,
+      "technical_games": 0,
+      "ambiguous_clock_moves": 0,
+      "moves_replayed_legally": 3163,
+      "report": "results/20261027-entropy-anchor-vs-warm.json",
+      "audit": "results/20261027-entropy-anchor-vs-warm-audit.json",
+      "report_sha256": "e7f541abbfbe907872451797d5959f2a90831446e068b9ffc13e899a334fcd00",
+      "audit_sha256": "a82f18e1e0bdfcb5ba267bb8d9c9b67bfcb14b62f0c1f9fef6ef0bd8957c7113"
+    },
+    {
+      "opponent": "teacher",
+      "wdl": [
+        1,
+        1,
+        62
+      ],
+      "score": 0.0234375,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0625
+      ],
+      "valid_technical_run": true,
+      "technical_games": 0,
+      "ambiguous_clock_moves": 0,
+      "moves_replayed_legally": 2577,
+      "report": "results/20261027-entropy-anchor-vs-teacher.json",
+      "audit": "results/20261027-entropy-anchor-vs-teacher-audit.json",
+      "report_sha256": "8b8e192a1465a6f2af3f1076f25d50120e4a61c35e99c216bb773dda44606966",
+      "audit_sha256": "b65c997ad5a4d031ce501baaffb53d32a6a8f3573e759a4b65973412919db479"
+    }
+  ],
+  "total_moves_replayed_legally": 9009,
+  "total_moves_in_technically_clean_unambiguous_contrasts": 5740
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Training-only bounded audit on all256fixed-deal training games. Compare actual assignment-bearing and assignment-stripped root legal masks at every position; at ban roots enumerate all compatible own remaining inventories after unknown private captures. No test labels inspected, no source/rules changes, no universal no-leak proof or internal counterfactual-node guarantee.",
+  "plan_sha256": "fd18820a6b4f9f3e71d5777631c0f063922255db97366a9a56dc547260859cb0",
+  "games": 256,
+  "positions": 14778,
+  "ban_positions": 6,
+  "eligible_unknown_inventory_roots": 5,
+  "compatible_inventory_worlds": 39,
+  "actual_vs_projected_mask_differences": 0,
+  "inventory_sensitive_roots": 0,
+  "selected_not_universally_legal": 0,
+  "counterexamples": []
+}

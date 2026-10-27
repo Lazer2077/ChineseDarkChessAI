@@ -1,0 +1,4955 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "352complete fixed-deal observer-limited warm-model self-play games for the paired conditional-prediction diagnostic. Original Yuan tiantian-v5,128simulations/LeafBatch8; not an external strength evaluation.",
+  "plan_sha256": "c087180e8d6e6f9ab4aad08f2fb51b9fe0626ac3104c328554a5deadbd87fd15",
+  "totals": {
+    "positions_replayed": 20389,
+    "fully_public_positions": 903,
+    "private_dark_captures": 1260
+  },
+  "splits": {
+    "training": {
+      "games": 256,
+      "positions": 14778
+    },
+    "selection": {
+      "games": 32,
+      "positions": 1897
+    },
+    "test": {
+      "games": 64,
+      "positions": 3714
+    }
+  },
+  "episodes": [
+    {
+      "index": 0,
+      "seed": 9601001,
+      "npz_sha256": "9ce6f78f27bbfbd830da832035c55e7fb50902e8c8372635e67baa347d42731c",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 1,
+      "seed": 9601002,
+      "npz_sha256": "2d007064fd71dc1c0e6e51262a3697432cf74a941ed25b4c73403066ff4d09b8",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 2,
+      "seed": 9601003,
+      "npz_sha256": "815b9cab83c45173f8712d5b1c6bb79eae07906e1d771ede8d82f6914eb35b95",
+      "audit": {
+        "positions_replayed": 61,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 3,
+      "seed": 9601004,
+      "npz_sha256": "a5865daf1217f78cb9cc6b57a8aea8fdef6b24822f153a7dd9beec3e7326b220",
+      "audit": {
+        "positions_replayed": 122,
+        "fully_public_positions": 56,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 4,
+      "seed": 9601005,
+      "npz_sha256": "05a7fd7399f1730d62433ddd1bc458b1bc3092484bdcdf17df2c3fd1fdd0864f",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 5,
+      "seed": 9601006,
+      "npz_sha256": "315785e320754f350d521da8ffc55cee7c99763903eaa4f7b997aec4635e6808",
+      "audit": {
+        "positions_replayed": 70,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 6,
+      "seed": 9601007,
+      "npz_sha256": "0391657d56e32f06447cbb0cdb951bc63bcf53713dafb77e12f9984f42cc1c72",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 7,
+      "seed": 9601008,
+      "npz_sha256": "67208d819df9f7bd2424b261202db4f3f7bede84a5c8954eab66ef42186773d1",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 8,
+      "seed": 9601009,
+      "npz_sha256": "99f6ee181e42288d609d9d0eddb66df1f874c5a84c44e170dacd7428482e0765",
+      "audit": {
+        "positions_replayed": 39,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 9,
+      "seed": 9601010,
+      "npz_sha256": "f5a5312af70fa3834a398cb9e0164510d7e681a4a55f987c65cd2cd5c059fdbb",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 10,
+      "seed": 9601011,
+      "npz_sha256": "d1cdc42495828e576881253b14d96ce93e1fa5d3d12b6e69072bc6b3b1756901",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 11,
+      "seed": 9601012,
+      "npz_sha256": "0a8baf294675a74fc77cc15ce7aa82a468861410e87af4c871d0117e3fc4af50",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 12,
+      "seed": 9601013,
+      "npz_sha256": "33e64b059038f0051d20be1b56105dd1a88ea97d6937ab7151bcaa494177800d",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 13,
+      "seed": 9601014,
+      "npz_sha256": "c8e6566c5b476ced53b1aef868579fc78c1a9994854f1764fb819aa2d3c4fa6f",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 14,
+      "seed": 9601015,
+      "npz_sha256": "c58774e45be3b2bba5df1b0cae8525351bfa97c0fc39d688f73817298a549029",
+      "audit": {
+        "positions_replayed": 39,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 15,
+      "seed": 9601016,
+      "npz_sha256": "1c17679526e933809cf62319cf5c4775f0369dd8fc9136969d9ae68d9a4d2592",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 16,
+      "seed": 9601017,
+      "npz_sha256": "1989dcfcc0ef2f0521a11516e3e339cae943e037dc7af7ae8a3c98324cf1ed0e",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 17,
+      "seed": 9601018,
+      "npz_sha256": "08995b4bb7d6f30c9e954d03e59ea855ff13e09f49a4a3fd84963a630d3a565a",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 18,
+      "seed": 9601019,
+      "npz_sha256": "25fe1f9d1cf69e7ba2bd71df2994ec6aaacb32e53f5c0083d0359b86bf368389",
+      "audit": {
+        "positions_replayed": 68,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 19,
+      "seed": 9601020,
+      "npz_sha256": "58a141ab05b7c8b2fcb298828f03a5ef0aa19b39b130efd9ead3572e91af1fb1",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 20,
+      "seed": 9601021,
+      "npz_sha256": "f45cd4bf81f1b9b2a3a3bcea43891dc2489de79ff6cdb2f5206e18288c86f957",
+      "audit": {
+        "positions_replayed": 28,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 21,
+      "seed": 9601022,
+      "npz_sha256": "7d589d531a364c6702a58f29d337e6dbd78cbac4deaca4f79aa271ef16933399",
+      "audit": {
+        "positions_replayed": 95,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 22,
+      "seed": 9601023,
+      "npz_sha256": "c322bc8f1348c5b2f5fafabdfe12a1c6aca291ac3ddb9a126b5026b96707d4e4",
+      "audit": {
+        "positions_replayed": 92,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 23,
+      "seed": 9601024,
+      "npz_sha256": "8ba7d89dce6456a72f4014179fd130706c40ce1a0f07cf75c9a1187f1d5f6e3b",
+      "audit": {
+        "positions_replayed": 23,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 24,
+      "seed": 9601025,
+      "npz_sha256": "e76c906d33943cffb6a55c81cc1aa050802c695f7b7d6bf56137b602355497c7",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 25,
+      "seed": 9601026,
+      "npz_sha256": "6b03d09f56bda94792c24e97f651927c50fe28de7af4f6a3650bbda86f5c68a7",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 26,
+      "seed": 9601027,
+      "npz_sha256": "6693bba2280c836a56a8f52a61320c7ebbce1c8e528aac06552c5890b25e119a",
+      "audit": {
+        "positions_replayed": 63,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 27,
+      "seed": 9601028,
+      "npz_sha256": "3286bcddc643630cfb115b3b25cc48951f68a092d5b569892b3045704f56a347",
+      "audit": {
+        "positions_replayed": 98,
+        "fully_public_positions": 30,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 28,
+      "seed": 9601029,
+      "npz_sha256": "9c3b24a47707e919d07b270ee74c587eab36f92fd1cdd4d120116b4c2748e9d3",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 29,
+      "seed": 9601030,
+      "npz_sha256": "eba9cf9a41b7971690678d995f01210c27aef6c2ff6e1330b43300b66f14f841",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 30,
+      "seed": 9601031,
+      "npz_sha256": "b972286da935686e656456493e0a381318c1ca1474a16b3582878be9c44fa6cf",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 31,
+      "seed": 9601032,
+      "npz_sha256": "61d99a4d537bae630f50e16b32a22930d9b42eb70eea1a72afc70943b0c72879",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 32,
+      "seed": 9601033,
+      "npz_sha256": "67ff4c52e6789a141242170a9823c438414a9d97c9392c73892de11ecfea83f4",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 33,
+      "seed": 9601034,
+      "npz_sha256": "969316fe5a068902b7e05e94a5ec723562c7f958a14ff442d9bea29b55339792",
+      "audit": {
+        "positions_replayed": 67,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 34,
+      "seed": 9601035,
+      "npz_sha256": "b7c6389bdcf0c92fa62f7b6ef775e391dd64f7cd7c41d5bd5f23c6703abb4bd7",
+      "audit": {
+        "positions_replayed": 132,
+        "fully_public_positions": 43,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 35,
+      "seed": 9601036,
+      "npz_sha256": "ee4878d7f5232650d50959325b49bcf79b11d3c8753e702c0c387a7f2ee4ce6d",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 36,
+      "seed": 9601037,
+      "npz_sha256": "b3c1024888f529b16bf934b5a0680ad0b7c407059aceed45d01aee251bb65aaf",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 37,
+      "seed": 9601038,
+      "npz_sha256": "0d4805c4ecb35e17003642a021b7056d45dc39fc539a8eda9e8890f904153faa",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 38,
+      "seed": 9601039,
+      "npz_sha256": "649b842d14270739374e97d87a8de16aa315a8fa363e8a61ab7c13dd71ff938b",
+      "audit": {
+        "positions_replayed": 91,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 39,
+      "seed": 9601040,
+      "npz_sha256": "3a0d3e921df3a57739dfba0eaf6f11948b70fe2532a7bec29b0d43d1eecabde8",
+      "audit": {
+        "positions_replayed": 91,
+        "fully_public_positions": 42,
+        "private_dark_captures": 9,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 40,
+      "seed": 9601041,
+      "npz_sha256": "86f07c46327120d63425db382fa6a2f8cf2a4b64c05c50dcab5a8fc35ac9314a",
+      "audit": {
+        "positions_replayed": 98,
+        "fully_public_positions": 25,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 41,
+      "seed": 9601042,
+      "npz_sha256": "a97ab7f8422cc04e786c24eed0be9dabde347d663abc5b6d34d08dbff7fb3d9e",
+      "audit": {
+        "positions_replayed": 140,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 42,
+      "seed": 9601043,
+      "npz_sha256": "0375c2ead06c5489f083a82d06d4ad21d110422887130ac1e9fd04999f6b2996",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 43,
+      "seed": 9601044,
+      "npz_sha256": "a291a22796b1b1476e16357abc4d13d3db792890536b17011acdae5ad80b379d",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 44,
+      "seed": 9601045,
+      "npz_sha256": "0da098c31d22f1f53c1af7145198b2edab984736b461f22643d885b75afaa5b2",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 45,
+      "seed": 9601046,
+      "npz_sha256": "aa56688a7d4d66a58a5e11f61e650babe3816d163a3d844dbc52638798d05c54",
+      "audit": {
+        "positions_replayed": 88,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 46,
+      "seed": 9601047,
+      "npz_sha256": "99233a55fbd517c01d7b4c481917a5a56febf32e6f5e04b860c37cf0fcd1c1d6",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 47,
+      "seed": 9601048,
+      "npz_sha256": "b837baa7043f128eb94b1210c8be52998396a580ff129eaf231dafdc977c26ca",
+      "audit": {
+        "positions_replayed": 20,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 48,
+      "seed": 9601049,
+      "npz_sha256": "c337839490e1e4addb262f285e05a9e9875e62f52dba0787711378307f390f0c",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 49,
+      "seed": 9601050,
+      "npz_sha256": "6b5f62481bac38c4fbef6b27abe02c5b50ed0debc3397f8b82dee762a1357466",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 50,
+      "seed": 9601051,
+      "npz_sha256": "0c0195cd3a14761b7516357a079eebde9e4fb798f366f20ca40e964bd7142af0",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 51,
+      "seed": 9601052,
+      "npz_sha256": "c5db55fdf189c8c5ec6321fa8fbddd4ae4446ac9e95944acfea53f27546698f0",
+      "audit": {
+        "positions_replayed": 61,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 52,
+      "seed": 9601053,
+      "npz_sha256": "0fc822750b4eb16441ff33b79c7e3924721d8bfd64f3a2f45a194d871f5e1297",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 53,
+      "seed": 9601054,
+      "npz_sha256": "1a591a68cf0b54eb0e6ada8ef79012487aec434cdc377443bf780ecc2b1e1fb7",
+      "audit": {
+        "positions_replayed": 12,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 54,
+      "seed": 9601055,
+      "npz_sha256": "2f3d1f4e6a09c81dcd477763b2a6ab95c34ec9e4f80dc9364c8c8ec350311139",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 55,
+      "seed": 9601056,
+      "npz_sha256": "3fa71ca52999ce7248f7873f0c7e07051f21c2369206afb30359c36fbcdc96c9",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 56,
+      "seed": 9601057,
+      "npz_sha256": "3dce34ee3a48d9f8e14c31f18b17300adc8a69c96df3a553e9ea4203bc7e3ba3",
+      "audit": {
+        "positions_replayed": 86,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 57,
+      "seed": 9601058,
+      "npz_sha256": "353257d95570be1827ba185416e2906d69a85669088b6921902c15e71c61f1dd",
+      "audit": {
+        "positions_replayed": 144,
+        "fully_public_positions": 49,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 58,
+      "seed": 9601059,
+      "npz_sha256": "58e2906212052d99ea930ea867c522762e6b87d982996bfde6f3afcf04a3b178",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 59,
+      "seed": 9601060,
+      "npz_sha256": "c591dca8b42940a3c228a7e5717c6dc36b4888a8e44d12dec386737e2335b6b8",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 60,
+      "seed": 9601061,
+      "npz_sha256": "83087e324f1296e445d01dfd45544b3d43c327b22b6d6a37660f37498187691b",
+      "audit": {
+        "positions_replayed": 97,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 61,
+      "seed": 9601062,
+      "npz_sha256": "1b9fda17164eae776ccf6a5fe7c6dfbd13f0aa1b8ab5a81d686a716022df196b",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 62,
+      "seed": 9601063,
+      "npz_sha256": "51b0394609ddd3f704ac56267e91d93b1f828e18abd3b957ed622028947c0cda",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 63,
+      "seed": 9601064,
+      "npz_sha256": "86b33ae5660c960b6dd8e982a8d5d74e313aa8af9e07fe0296d7a7bf9566acba",
+      "audit": {
+        "positions_replayed": 140,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 64,
+      "seed": 9601065,
+      "npz_sha256": "4f1ed5e1bd6a293f99e50368ad53688e5336fb6af788bd81834c672be6cc9c34",
+      "audit": {
+        "positions_replayed": 6,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 65,
+      "seed": 9601066,
+      "npz_sha256": "727ed151af310444ed6d6195b399823732a6637744e8b8eee0a26d7c74cee0b9",
+      "audit": {
+        "positions_replayed": 22,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 66,
+      "seed": 9601067,
+      "npz_sha256": "29681bfd47cdc625885b12840b0103111e10ab503ec71876d65ed1851bd81811",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 67,
+      "seed": 9601068,
+      "npz_sha256": "1b67894b67daa2d284a5bc06a8b751d3725d7c989fc0547f1ee07d4b4f765bd0",
+      "audit": {
+        "positions_replayed": 109,
+        "fully_public_positions": 35,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 68,
+      "seed": 9601069,
+      "npz_sha256": "b408db989fb30a622fa10617d6ea4e62aeba566bd4c2087e895db4f4d246f5f4",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 69,
+      "seed": 9601070,
+      "npz_sha256": "d7f363c8f5d2ee8d82b2a460d70d7744229bd48dca3c8a3df663492da9ae24e0",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 70,
+      "seed": 9601071,
+      "npz_sha256": "cc6fab1d7ff20eb75b62063fdcbf61cd9b4fe472f78c63c2fd83ddef5a00008b",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 71,
+      "seed": 9601072,
+      "npz_sha256": "c856ad2e609976ee021c78550ec94831da44d9f0f71ec52ba5b7686556cb952c",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 72,
+      "seed": 9601073,
+      "npz_sha256": "1075f7851564ed1ad9fef0e38fe9b458ea3f9b996fac23f8b04fd12aab6a9dd9",
+      "audit": {
+        "positions_replayed": 68,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 73,
+      "seed": 9601074,
+      "npz_sha256": "89044d2fa9ca280218e5c06285773fe15a6f3b875e0e3ae8b2a8f6a61c021e6f",
+      "audit": {
+        "positions_replayed": 73,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 74,
+      "seed": 9601075,
+      "npz_sha256": "09d6d283ffdf50195a35f56c6be447cef2298ff7ae0e477f74a16dd054d3d238",
+      "audit": {
+        "positions_replayed": 107,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 75,
+      "seed": 9601076,
+      "npz_sha256": "228dd8ea775fa4d5b41ad79c70b093b585f2d1b68d395d346897679ffa4d8017",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 76,
+      "seed": 9601077,
+      "npz_sha256": "c7b8fa620550fdb2868a55d9fd246f26b2376bb1de61e9093ad10bf7fdc9c4ba",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 77,
+      "seed": 9601078,
+      "npz_sha256": "17f2ec53df3bd976a132ca541c9e77267a13f499a77505b91c54f9eeea2333c1",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 78,
+      "seed": 9601079,
+      "npz_sha256": "43651974dc7cd9dd55673fc84a5dd2469a1b2e3f8f34dc02b14d0e467dde6e68",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 79,
+      "seed": 9601080,
+      "npz_sha256": "95dfb900973642eaec2e77f8e60b089fb13b697b7629544e78617698df53fd93",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 80,
+      "seed": 9601081,
+      "npz_sha256": "11cfeac30c514a2b3afaef21a691a8f5b7fa000e107db8a3b8522b97780f6be5",
+      "audit": {
+        "positions_replayed": 85,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 81,
+      "seed": 9601082,
+      "npz_sha256": "68d6467c8fd7714ca6a303c104e3f8da9179e35c2abd0ef190580776c6c0086f",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 82,
+      "seed": 9601083,
+      "npz_sha256": "cfd2f2768c48baf1037878547ee2b8965eb51e92b72ab0e139a6bd95e4760c24",
+      "audit": {
+        "positions_replayed": 81,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 83,
+      "seed": 9601084,
+      "npz_sha256": "77d22c30d46bdfd95de4f2d48262adc65da8100d72333b27140a344425523fa4",
+      "audit": {
+        "positions_replayed": 177,
+        "fully_public_positions": 101,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 84,
+      "seed": 9601085,
+      "npz_sha256": "31f65378f8b5487f3890cad3b509e9e55319964ddb877a3f812b363f2226f929",
+      "audit": {
+        "positions_replayed": 86,
+        "fully_public_positions": 5,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 85,
+      "seed": 9601086,
+      "npz_sha256": "e991d82f086885d829b55cb726b6e6f0711a827cb31bd78b1ecbd59db1cb894a",
+      "audit": {
+        "positions_replayed": 24,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 86,
+      "seed": 9601087,
+      "npz_sha256": "fc72fbad2d201e6a5700d78d033eef9e7f01cfe9740813365f16eb11b9129061",
+      "audit": {
+        "positions_replayed": 63,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 87,
+      "seed": 9601088,
+      "npz_sha256": "357641b7c7c9ece4ee826f828d18bbf755163604546b491298e6b06687243ec8",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 88,
+      "seed": 9601089,
+      "npz_sha256": "b0b8c913b0870b17531d7ed34ab996f0c393b4f84941c1d3fe4ba4af283204fc",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 89,
+      "seed": 9601090,
+      "npz_sha256": "77a9538312c253a40b819f5bca060c67534f57c77125f03b743d9c3f19f70a9f",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 90,
+      "seed": 9601091,
+      "npz_sha256": "3ef96b1d7369edab3cac16398986d3da3a82aed157d4786cedaf34c14a2984c6",
+      "audit": {
+        "positions_replayed": 82,
+        "fully_public_positions": 8,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 91,
+      "seed": 9601092,
+      "npz_sha256": "1646ce30ecd7bbe4c4d738fc70589345e1c4a6e97706e0331c61b65c08631ef1",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 92,
+      "seed": 9601093,
+      "npz_sha256": "1b415fbcf415655c4c4d89db1e7b167cb986c11e4c98cbadb6947bd146b8085a",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 93,
+      "seed": 9601094,
+      "npz_sha256": "2448c5f86e6e3532ade728779146a28c5764269a42d9df36d6add674091b8931",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 94,
+      "seed": 9601095,
+      "npz_sha256": "16d912bb0b8a8dc11b64e96be826c7a33a6c0fab225ded83f501731b7937ace0",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 95,
+      "seed": 9601096,
+      "npz_sha256": "0be6e2e929b3eada87190b5b937f8b110d00b168ab29e94282ce41d73fca0918",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 96,
+      "seed": 9601097,
+      "npz_sha256": "137719c9bc03649f19095b8ad4713dfdc11001c01f1aa30804fad3e1d1d56e4a",
+      "audit": {
+        "positions_replayed": 103,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 97,
+      "seed": 9601098,
+      "npz_sha256": "c8d9ac262d158baf7d57935e303d4df55aa67e9a8533a118fa25e5bc7b71baa1",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 98,
+      "seed": 9601099,
+      "npz_sha256": "e1e6de5f11d29429a7d4a4c33fb0ced7ec138bd12060dd32209d5e12fd5949e9",
+      "audit": {
+        "positions_replayed": 15,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 99,
+      "seed": 9601100,
+      "npz_sha256": "7fdaf2cb1052d84366b320c8ea43d05a7972170c42399c7a6125986413d4c40a",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 100,
+      "seed": 9601101,
+      "npz_sha256": "fbe9df7aca9e90090a867c4fda3cf2df3fe1d59e74862f9138d7f5f6afd342f6",
+      "audit": {
+        "positions_replayed": 114,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 101,
+      "seed": 9601102,
+      "npz_sha256": "c7b29bc1b2f1e9d218b5afb33a38e2ccf8026f51e9792ec0ce8cb3aa8c6752b3",
+      "audit": {
+        "positions_replayed": 102,
+        "fully_public_positions": 15,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 102,
+      "seed": 9601103,
+      "npz_sha256": "647c552bb7a46346b9a97fe0a2d4f6e79d819000c32bd558dc4a04f81b35326a",
+      "audit": {
+        "positions_replayed": 63,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 103,
+      "seed": 9601104,
+      "npz_sha256": "997f09b2504e3b55398198314cf3a1b7ff210bf450e5c1abc6963322f9370868",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 104,
+      "seed": 9601105,
+      "npz_sha256": "bb0935926efb468b1b2adccd9786539e935fb583ef6a8a3549c5b349b66e1ba6",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 9,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 105,
+      "seed": 9601106,
+      "npz_sha256": "e25a486be78c425a27356d4812d5b513edfb5f419404383eaca8f3e0788f1304",
+      "audit": {
+        "positions_replayed": 106,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 106,
+      "seed": 9601107,
+      "npz_sha256": "cc1e622fcd8aa89a0927ef026c4c4d057ca1a782a5caae508d5400699ad1d139",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 107,
+      "seed": 9601108,
+      "npz_sha256": "54d510f6c7dd199c68ff667a833ffa84785aa9c98e420c706dae9b84ce338dae",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 108,
+      "seed": 9601109,
+      "npz_sha256": "76ccfc96552bbf01665184b515785c00a066f4a6a5c58d944cba5c31f3f19d5a",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 109,
+      "seed": 9601110,
+      "npz_sha256": "8c26b81f6b6b7606fc5a95b82b936f86571269fd659255c6259c49d78f965bfe",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 110,
+      "seed": 9601111,
+      "npz_sha256": "eb27c3f42bca6e574ee6fe20bb213ead46797d3768942736cbea016eb5df6d48",
+      "audit": {
+        "positions_replayed": 89,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 111,
+      "seed": 9601112,
+      "npz_sha256": "46dbc40252561900f8f6c392027e1de7f25bd384ec5f46d4e49e32c26cab3afd",
+      "audit": {
+        "positions_replayed": 27,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 112,
+      "seed": 9601113,
+      "npz_sha256": "39ad925203863b322c8ddceaa900656f4d81cbadfb60c22b2e9e1be1612b5527",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 113,
+      "seed": 9601114,
+      "npz_sha256": "18018508feeb39dc701a10e6cff538ae1a8507846c2f895523a87151d27affcc",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 114,
+      "seed": 9601115,
+      "npz_sha256": "68cb9ad29cf8c4edadbdc3b69d59315e395c92aa2113b915277939987675ee18",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 115,
+      "seed": 9601116,
+      "npz_sha256": "83a975954509800a01eb5b93e595a610294e1b4e78d29acc163d26178360cead",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 116,
+      "seed": 9601117,
+      "npz_sha256": "e5b19eeb187a22d0a52aff19780e55b8a3596a0c8199e74349b7db23c920d262",
+      "audit": {
+        "positions_replayed": 72,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 117,
+      "seed": 9601118,
+      "npz_sha256": "4068fd4cbd2331595ccf0610128338c9112d07ffee7d5a4f4142eff99f94e707",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 118,
+      "seed": 9601119,
+      "npz_sha256": "569d6f27aa075a754a10f415fcbac42405cea441a6000666774e06cc16aea7e5",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 119,
+      "seed": 9601120,
+      "npz_sha256": "e18f7e12e4fe374de56b2f83a379798b1d5f46c4e1e86f12db7f14777e3c8152",
+      "audit": {
+        "positions_replayed": 75,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 120,
+      "seed": 9601121,
+      "npz_sha256": "cd1f7f53b44f9b0eef10c89901fc39960ecb8fecb5b101f275bdc8eecd16355f",
+      "audit": {
+        "positions_replayed": 25,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 121,
+      "seed": 9601122,
+      "npz_sha256": "4177c8f427bb3aafad8e307f0d28ddf56e562a442be522baf2f533c5accef073",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 122,
+      "seed": 9601123,
+      "npz_sha256": "a69259b504581952162075c5a281984c6f1e9edf2527b72906086dd20f54bba2",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 123,
+      "seed": 9601124,
+      "npz_sha256": "c0786277f0715219eab79b81b223cf115b5061abc5e0a1330b8f76296aa4e6fc",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 124,
+      "seed": 9601125,
+      "npz_sha256": "24e69fd62371108383c266f8138daff1b62a88c6cfa147876f17ae296cfc59a6",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 125,
+      "seed": 9601126,
+      "npz_sha256": "fef09ae0aeec7cfd14910b400bae3f3e9050deaf4719f8e344074d27ed8e16ea",
+      "audit": {
+        "positions_replayed": 112,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 126,
+      "seed": 9601127,
+      "npz_sha256": "e3f72f4f4c501cae0657ffad596d3d868a41b3cb9477f065c8473d28317ed07b",
+      "audit": {
+        "positions_replayed": 101,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 127,
+      "seed": 9601128,
+      "npz_sha256": "02eddf3f4abd39fa75bed25013aff478946c4a8381fc92c9d0d5252aeeed39d6",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 128,
+      "seed": 9601129,
+      "npz_sha256": "798ab7e7103d07b7916c8b029a54f651e137e8772a0ea6da526e7ca27b1d8d6c",
+      "audit": {
+        "positions_replayed": 83,
+        "fully_public_positions": 4,
+        "private_dark_captures": 11,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 129,
+      "seed": 9601130,
+      "npz_sha256": "72210fad0b8ef692e821366b1561385aff7250ef7374ff2ba8d29ada376e0f5a",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 130,
+      "seed": 9601131,
+      "npz_sha256": "014989bb7ce825e49b8111e7e9728d3352b557391eab0c1b269c908d8cead791",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 131,
+      "seed": 9601132,
+      "npz_sha256": "48ef27002480a2c600c1f36ec2b1fac80f84f82d59fb90df88548ab7f75307da",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 132,
+      "seed": 9601133,
+      "npz_sha256": "3933d1a9c2168490aa963e3e6fbb141c4fdfdd2b4f6941f9e25dd031120c5387",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 133,
+      "seed": 9601134,
+      "npz_sha256": "dce336f139d5327b5dc32c04285afea8dab403ed06a9f0db674f59385f7c88e8",
+      "audit": {
+        "positions_replayed": 63,
+        "fully_public_positions": 10,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 134,
+      "seed": 9601135,
+      "npz_sha256": "ccf6316cf8c59e41a6f5cc3a29ac22aa06ca451c9040615c48bc092b3e977cef",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 135,
+      "seed": 9601136,
+      "npz_sha256": "634983088b66b39a20f4d8e8ab173f81b4586c0c766887dc95650f4494822148",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 136,
+      "seed": 9601137,
+      "npz_sha256": "5e5212c9bfba1573c7f46c1f16da4a162fdac03bae76776b9f8574a779dbb4ed",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 137,
+      "seed": 9601138,
+      "npz_sha256": "85b9f560c6956aab3a7f4addc2d8b11927d66dd311f27444efef7e669c05874b",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 138,
+      "seed": 9601139,
+      "npz_sha256": "1a0a0705eb51d3067a0532912cf29e80949f29242dbaf35991e50755e6737db0",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 139,
+      "seed": 9601140,
+      "npz_sha256": "bed6bcec4b583a9d37c696e591a76877554cb4283f3e421debf1c2da68302b07",
+      "audit": {
+        "positions_replayed": 96,
+        "fully_public_positions": 30,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 140,
+      "seed": 9601141,
+      "npz_sha256": "9b40b2fc1d4f016a7d7d0f9bc41ed2ece39881b6cf0387e5e5072a9d0de19126",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 141,
+      "seed": 9601142,
+      "npz_sha256": "f1b097c4f3b1c5c17d8dc6aa70e315270702ec116bdb1c92fadd5b5ebc232a26",
+      "audit": {
+        "positions_replayed": 14,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 142,
+      "seed": 9601143,
+      "npz_sha256": "6828159d2d0ff9355d69e5ac872180ed0c48a8adcc6fac86f52eba1a87246ac5",
+      "audit": {
+        "positions_replayed": 29,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 143,
+      "seed": 9601144,
+      "npz_sha256": "abaefc9775838fe11920f2430dfec0710399ae2e87a907f20614976aa46ca64b",
+      "audit": {
+        "positions_replayed": 75,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 144,
+      "seed": 9601145,
+      "npz_sha256": "2f35066897b1a699bedec8952e0adee5ff5e662b26be9f3dc65986c54d48c6b4",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 145,
+      "seed": 9601146,
+      "npz_sha256": "a68860447a8058013331e9fba6464e6bfa54870afef1d6195f18a2d0f8ab8692",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 146,
+      "seed": 9601147,
+      "npz_sha256": "ba0ccba9982f69731b4c770a0df5e4efbcddc08431fa7cdad169272277094f09",
+      "audit": {
+        "positions_replayed": 25,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 147,
+      "seed": 9601148,
+      "npz_sha256": "207b26fc3191e8755830d820e6b70381d6f56a69f6b03e5b9d51c1773e363a02",
+      "audit": {
+        "positions_replayed": 70,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 148,
+      "seed": 9601149,
+      "npz_sha256": "e9b350a1ad909e9c3f6778f8d2cdde064f56862ce2a22f82be5a5e7229e0f945",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 149,
+      "seed": 9601150,
+      "npz_sha256": "fef589b4fac066508202dce7671bd3c477a4b21602e392f3bc919d50e87d6e23",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 150,
+      "seed": 9601151,
+      "npz_sha256": "653e5bac4b4a0eeb8fea40cf8e16754bed17f96ea54dd873b7f2a020626cd459",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 151,
+      "seed": 9601152,
+      "npz_sha256": "17d713cb34c4c7d92fde3c3eb1ffe6bde1d007174d2b094768417461383b8a74",
+      "audit": {
+        "positions_replayed": 84,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 152,
+      "seed": 9601153,
+      "npz_sha256": "5dec0f3d38fbca01281cf095bc8d6ab26b10c71ce70e6cc5ae31d3c090982368",
+      "audit": {
+        "positions_replayed": 18,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 153,
+      "seed": 9601154,
+      "npz_sha256": "830c4fca2b44e886b9298388c44de8c5a67aeeb9ff16c505b5f9d41cc3477161",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 154,
+      "seed": 9601155,
+      "npz_sha256": "914e1c5c78ccf618c985156bf77ac3c4e999c12d2286bbd739e57241cc14ead1",
+      "audit": {
+        "positions_replayed": 77,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 155,
+      "seed": 9601156,
+      "npz_sha256": "9884adb62cca47c1e97de71964bca6d4fdc9846011d61c82bf6c4aa393d42f36",
+      "audit": {
+        "positions_replayed": 100,
+        "fully_public_positions": 12,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 156,
+      "seed": 9601157,
+      "npz_sha256": "eb3daaf01ac1b8d451ebf5416108d44f40117d92702d912df94917ef120eb95e",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 157,
+      "seed": 9601158,
+      "npz_sha256": "a5fb42bd1e3d13684b6ffb8f8884c9712ead2a6223418ae23b7dc92c2938a880",
+      "audit": {
+        "positions_replayed": 101,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 158,
+      "seed": 9601159,
+      "npz_sha256": "caa9fdda4d61fce0766217db01baa69465a56afa5103ab3d0f0de57013321a82",
+      "audit": {
+        "positions_replayed": 80,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 159,
+      "seed": 9601160,
+      "npz_sha256": "c0da8e95a018cfcaa0a71c5cd2186629e0b23519ba01ac092965b6da4c4df684",
+      "audit": {
+        "positions_replayed": 73,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 160,
+      "seed": 9601161,
+      "npz_sha256": "36b1ee87c923ad4f4de3d40cd1788cc8b7a20a5905e28438b01eb20ab922b3f7",
+      "audit": {
+        "positions_replayed": 81,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 161,
+      "seed": 9601162,
+      "npz_sha256": "7d079029685cabf47fae7c1a27e5c70bf8f4e3ea1a9141f1b4a51eefba104c9d",
+      "audit": {
+        "positions_replayed": 85,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 162,
+      "seed": 9601163,
+      "npz_sha256": "0dc9b7dc7c332ac6018630058c526144cbd688ed565ba93a20409d04c4c1fc98",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 163,
+      "seed": 9601164,
+      "npz_sha256": "ca148bab88f7b066ad5e2ef6f58f2db91ee18e7cd708a29b270d624f03c65b3e",
+      "audit": {
+        "positions_replayed": 83,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 164,
+      "seed": 9601165,
+      "npz_sha256": "6131283c203b58bef1311a4203eccd57556ee7c2eba947726987eb3e0d019491",
+      "audit": {
+        "positions_replayed": 28,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 165,
+      "seed": 9601166,
+      "npz_sha256": "1e3edb195f7b1f29c393ac6d27c8362850395487e8487f68540c5d8c3137fbd6",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 166,
+      "seed": 9601167,
+      "npz_sha256": "12620d8d69fc170126a2061325c6fdbeaa87a61a8668a4822bc78816d17e03cc",
+      "audit": {
+        "positions_replayed": 22,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 167,
+      "seed": 9601168,
+      "npz_sha256": "8dd736bb06007f22c777d254697d94c54a4e18b9d7bde293366bd02ad00e5f69",
+      "audit": {
+        "positions_replayed": 11,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 168,
+      "seed": 9601169,
+      "npz_sha256": "5acdb3f95de34ad7676635d05e104023d67db9618e5b55ea7d3e90c5ed9159b0",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 169,
+      "seed": 9601170,
+      "npz_sha256": "80c231d346f8ca32806e0ac0fcdc8e93a8321907c991e3b54d72311d4ab2f3a0",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 170,
+      "seed": 9601171,
+      "npz_sha256": "77f65d75f83a46ffd9fcaeb5d3c2fada2edc219828b0239b3c8c6d6976266a9f",
+      "audit": {
+        "positions_replayed": 39,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 171,
+      "seed": 9601172,
+      "npz_sha256": "3259cd65721d34e8f1b102feaf3c4c5598e5af2e8089429f61c024cd14ee03a2",
+      "audit": {
+        "positions_replayed": 66,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 172,
+      "seed": 9601173,
+      "npz_sha256": "12e9f168f8129057d3b53b4da619b7c08b61e295943def4b80e48491718f5438",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 173,
+      "seed": 9601174,
+      "npz_sha256": "feb2d82373fe1b96b6703910300ed88a3dfd8f7b02b52cd9c587696b01934d25",
+      "audit": {
+        "positions_replayed": 23,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 174,
+      "seed": 9601175,
+      "npz_sha256": "cf3356d035892c5d3ea7f1c4099f3365699cf364b495ce356fe0786658ec8373",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 175,
+      "seed": 9601176,
+      "npz_sha256": "2a9873e55a29d0ce77c43e77cb4e349f9195e43f17ac2cbc613338f3f9caf10d",
+      "audit": {
+        "positions_replayed": 72,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 176,
+      "seed": 9601177,
+      "npz_sha256": "97f69f42c896acc7645f0216325428614fd6e4ecd0bbe1175285dadad076be15",
+      "audit": {
+        "positions_replayed": 105,
+        "fully_public_positions": 38,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 177,
+      "seed": 9601178,
+      "npz_sha256": "3f861b1a97a3bd6f14b3d805475703f339b45f312745c5626c783f7834b2e96b",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 178,
+      "seed": 9601179,
+      "npz_sha256": "b497f57e9472a150f4aa7760a1a1d36d84ed8aaee3520b24d9f0a84e60fcb3b9",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 179,
+      "seed": 9601180,
+      "npz_sha256": "4800dcbef3d2ed8a93340e3ec4fbbd0181dc940e7020e17efa29da192bda2c9f",
+      "audit": {
+        "positions_replayed": 8,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 180,
+      "seed": 9601181,
+      "npz_sha256": "273894521c9ce5d0ce108ab7b2990e0f42c5e23173b1d9e6ba8fce76b6515d8f",
+      "audit": {
+        "positions_replayed": 72,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 181,
+      "seed": 9601182,
+      "npz_sha256": "d4e33e53eff45eac4496e530efb4c59ddf34aba920a8171e7b6d8b3638ee5a4c",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 182,
+      "seed": 9601183,
+      "npz_sha256": "4b912a2386fbdad5233765650e41bace1d4ce2cacf92739b319aaa8dd720c7bd",
+      "audit": {
+        "positions_replayed": 67,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 183,
+      "seed": 9601184,
+      "npz_sha256": "f31a239ca8ab2f3e9936501baded97052e972ffa4b990ae1efcb2bd94c82a9b5",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 184,
+      "seed": 9601185,
+      "npz_sha256": "de40379df29de01e61f9d3542f86471c5ce0ba3cf63c06f142c0e0774d571c7c",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 185,
+      "seed": 9601186,
+      "npz_sha256": "00edbf81dbd9db896a73d8f23d1a81c162417fbf898f42429a1328eb0ad9a717",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 186,
+      "seed": 9601187,
+      "npz_sha256": "8a200c1218236f6616f01a724f91bbfbba15ed05afb455ad35e7b0e3b4d679a2",
+      "audit": {
+        "positions_replayed": 94,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 187,
+      "seed": 9601188,
+      "npz_sha256": "e49f166cb8524f4c531af78b7dd88573f03a423294511eec2337383e6567debc",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 188,
+      "seed": 9601189,
+      "npz_sha256": "ecaa706c4df60fb6788df91c56fa75de26b16b54dc3d3ac272fb310a3be83866",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 189,
+      "seed": 9601190,
+      "npz_sha256": "081aa0da66b4a4babf6faee3e4ccc56a0f41c304175f49ae0cc953edb2936577",
+      "audit": {
+        "positions_replayed": 94,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 190,
+      "seed": 9601191,
+      "npz_sha256": "3353a89850316af4d1a220a8e047e98bb4e2bfabd3397075da834ae335eec35d",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 191,
+      "seed": 9601192,
+      "npz_sha256": "749f342d2638cd4e745e9d258f900db1909eb05d7469b42da148451be0627f8f",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 192,
+      "seed": 9601193,
+      "npz_sha256": "a003f38dab5685654c03ec7b970c2ad1bfa633193a50ee56e4715514ba1d54e5",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 193,
+      "seed": 9601194,
+      "npz_sha256": "8eba3deed081f0071bf3aab1fed2a0c3e33bcdf2b0efb13f10ed57d7bb180dd1",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 194,
+      "seed": 9601195,
+      "npz_sha256": "19d02cf9ca46d30d0e1ec7000e582c1bc123d3d6c77146407e069ac59665ad73",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 195,
+      "seed": 9601196,
+      "npz_sha256": "c0d570798c3465b6c2c876e8e320c4f0b76bcea114669612784c4903584f20b1",
+      "audit": {
+        "positions_replayed": 111,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 196,
+      "seed": 9601197,
+      "npz_sha256": "417e1f542c6b6f2cbf0168f6e96952c77cfcd4c6290bacfaede95b06a0959994",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 197,
+      "seed": 9601198,
+      "npz_sha256": "1e48eb00a39af5ddea922a57192e0baf1e39815009078955225301bed71ab016",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 198,
+      "seed": 9601199,
+      "npz_sha256": "5a09180bed91caa3447ffe893fba595bb5e9c1e2e4164e5ffd333689372bba83",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 199,
+      "seed": 9601200,
+      "npz_sha256": "3087b97bc470fb15898dc09b176f7786baa6987607a6f3a0fb2b46bca3dbcda4",
+      "audit": {
+        "positions_replayed": 102,
+        "fully_public_positions": 5,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 200,
+      "seed": 9601201,
+      "npz_sha256": "f7499bac86125dbf4288a42efeff40e5fa6eda32f705a50ac05caad4490434c7",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 201,
+      "seed": 9601202,
+      "npz_sha256": "2836314e8020fe41847ef93144b20e30cf56eb7b87eea08978afa036fc2b42d4",
+      "audit": {
+        "positions_replayed": 27,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 202,
+      "seed": 9601203,
+      "npz_sha256": "ee2a74bc2da752d0bedc0e5e4ce924199c03f72c0c50fad137d569f3f52de12f",
+      "audit": {
+        "positions_replayed": 83,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 203,
+      "seed": 9601204,
+      "npz_sha256": "751e52ce69567590fd7fadb1f5d9ccc689cd2f4b72daaf0833c420f335e22f67",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 204,
+      "seed": 9601205,
+      "npz_sha256": "a91a1d25cca1cbd31d690bb927d7157230588da5c094f273dc6cbc4671e25de1",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 205,
+      "seed": 9601206,
+      "npz_sha256": "b957ea5a9943ff7d99242db5ca59ffe69a3fe42311433a48c3bb800aadaba522",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 206,
+      "seed": 9601207,
+      "npz_sha256": "0456de0af9dd486fbd9c5edd4bc87d8d1bf42f36372ceac27893ae0c60642dc4",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 207,
+      "seed": 9601208,
+      "npz_sha256": "776e35f8879cffee9ebb623601a6fcb79a9d666fe87bafd96ef1c954043ce942",
+      "audit": {
+        "positions_replayed": 92,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 208,
+      "seed": 9601209,
+      "npz_sha256": "a279c4cba6d00da32e000e305898221bc855d5f210aaa7f58b2a97afa0e8f4d3",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 209,
+      "seed": 9601210,
+      "npz_sha256": "c6388fb40bc0642a5f277a97188de8dc02d47bd74799ba3fc48d5acca7207865",
+      "audit": {
+        "positions_replayed": 72,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 210,
+      "seed": 9601211,
+      "npz_sha256": "10ebb8fafc9d6d204d8be97e7f03fb64a4def3a209724b06794ff7664e2cda84",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 211,
+      "seed": 9601212,
+      "npz_sha256": "f27b343eff1c42a632b96987d3fffc89551a6aaca9ce7592dc4b66c1c6afcd59",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 212,
+      "seed": 9601213,
+      "npz_sha256": "801a21377653f0813c1d9c79269c0702cadb9fe8e1510a8282c3f62abe71238c",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 213,
+      "seed": 9601214,
+      "npz_sha256": "131c7a3293bd674279f006f79dc80a7534242064aa581cc316c7ac39c6a91474",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 214,
+      "seed": 9601215,
+      "npz_sha256": "4ea7970d32742f78aff62ec597a9529deba3a4e6af9d35e674ca66136fbf897f",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 215,
+      "seed": 9601216,
+      "npz_sha256": "7c20686fb6327b77ae00218429538520d3d23fbf4f879f31b6f839946d6c931e",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 216,
+      "seed": 9601217,
+      "npz_sha256": "38738274a5551b83e318e04e95d08d34f6f570c5b6907fb82ff3e5a871e69a98",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 217,
+      "seed": 9601218,
+      "npz_sha256": "473a0458f246be08f10aa62599a8afe3d26056f21010d9757377300a25e90c70",
+      "audit": {
+        "positions_replayed": 104,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 218,
+      "seed": 9601219,
+      "npz_sha256": "afb7f350cc0d2b611867c19154cf5b69b9b203ecc0143a34936ae55fc496ea4c",
+      "audit": {
+        "positions_replayed": 72,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 219,
+      "seed": 9601220,
+      "npz_sha256": "7d2b284131b7900f220c46c387835db010960e28582ec0cab0e87af2d0e87f51",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 220,
+      "seed": 9601221,
+      "npz_sha256": "f0ae1fc36af50595f5b7f73b73e88b3ce3e5ac68e80c243d40b641e0e6ae9a26",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 221,
+      "seed": 9601222,
+      "npz_sha256": "2694b5a80838fc37989c0f64fc476ee784892c326456467b2a4f6f408081c170",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 222,
+      "seed": 9601223,
+      "npz_sha256": "06fa589cf3784df1201c35af316fac325d33c009534de5a1023a8dc284bf7b7f",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 223,
+      "seed": 9601224,
+      "npz_sha256": "3a374aaf2a20d6f496e40f1491d61ea0283d97c161734a98d7757b562ec2fe74",
+      "audit": {
+        "positions_replayed": 87,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 224,
+      "seed": 9601225,
+      "npz_sha256": "b2c4306fb5f570519c95a7b8ee12b77ba2c9d57fae04ce0a567125cca5ec28d3",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 225,
+      "seed": 9601226,
+      "npz_sha256": "cc23061580f00a8dd0d0527c022415954efebf4524c129912e798b0e00fb525b",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 226,
+      "seed": 9601227,
+      "npz_sha256": "f332ee33da19633ae03e0fa9574e583f8dc3c54d8d55ee57a6d364174d4b83da",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 227,
+      "seed": 9601228,
+      "npz_sha256": "162446f5657ed182de9ccd81aa6be229f84d67f51b5815f787646f9f07504fe1",
+      "audit": {
+        "positions_replayed": 66,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 228,
+      "seed": 9601229,
+      "npz_sha256": "17fd94794b5ed50bf49396035750a02def009854342099bc36fbf787211ab4d1",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 229,
+      "seed": 9601230,
+      "npz_sha256": "274f4fd3607c169dc507d501c2efe21b02b1ad7541da54f14ee8102a3b5091d7",
+      "audit": {
+        "positions_replayed": 105,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 230,
+      "seed": 9601231,
+      "npz_sha256": "d5a5910ce3c3c5386bdb5597541a1f53134fcb92d09c38f00bc0459e94612f17",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 231,
+      "seed": 9601232,
+      "npz_sha256": "c4ce61d37a04384b9f2d91f6f84e957c33c99337ad50c8c34055ee22f7cd7aed",
+      "audit": {
+        "positions_replayed": 76,
+        "fully_public_positions": 11,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 232,
+      "seed": 9601233,
+      "npz_sha256": "bf5d4eef7ab64d628289cd21bf5edcda1f3f2b1b04915af584c2a26593debdd5",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 233,
+      "seed": 9601234,
+      "npz_sha256": "1f622bcdfae040a3531d706bfe2b927c2b5e48236f8d25b44ebb2a0791269aeb",
+      "audit": {
+        "positions_replayed": 104,
+        "fully_public_positions": 28,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 234,
+      "seed": 9601235,
+      "npz_sha256": "3bc5e565ec4ab7cb66ddae899792fa04125c1c2440f0be27501b8f49606d4caf",
+      "audit": {
+        "positions_replayed": 145,
+        "fully_public_positions": 38,
+        "private_dark_captures": 9,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 235,
+      "seed": 9601236,
+      "npz_sha256": "b01381328af543620906ee48f42ae773c4503d1531d4bdcfb09440b46ab792b6",
+      "audit": {
+        "positions_replayed": 67,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 236,
+      "seed": 9601237,
+      "npz_sha256": "4458ba9c27757c0d674761ba7589bebdbdce2a3dbb34a4ce8ed505e94e969304",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 237,
+      "seed": 9601238,
+      "npz_sha256": "1f2d1f2ad5b537a6d98bacd860d6e9545717f315f215a9e2b8491cf18999234f",
+      "audit": {
+        "positions_replayed": 103,
+        "fully_public_positions": 26,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 238,
+      "seed": 9601239,
+      "npz_sha256": "0f4289488241a5da6529fa2efe3b3969f9139c87dd16f60066e7e0183b8966ab",
+      "audit": {
+        "positions_replayed": 92,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 239,
+      "seed": 9601240,
+      "npz_sha256": "c70bf0ab2a4b2a88a6f460343178556248f06ed1a3a7f9cbdc35791e2a4476e5",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 240,
+      "seed": 9601241,
+      "npz_sha256": "a38b689c9a7bee6ea59300b77cab90c93cd920a6228e92fb0d4ca206b22ac805",
+      "audit": {
+        "positions_replayed": 39,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 241,
+      "seed": 9601242,
+      "npz_sha256": "865dbfef6887dcb38c4c3ff7a098e9fe34211d6cd312ac4d2615edc75db19b29",
+      "audit": {
+        "positions_replayed": 84,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 242,
+      "seed": 9601243,
+      "npz_sha256": "9e108ac7c173632e238bfc494df92395d6fe6a2448719ca5c05c269a4ac5015f",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 243,
+      "seed": 9601244,
+      "npz_sha256": "09ac6e0645efca25f0a1d0aefc17d79a025aa7ba2d1e66d4f23b40fe6192c6cf",
+      "audit": {
+        "positions_replayed": 133,
+        "fully_public_positions": 42,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 244,
+      "seed": 9601245,
+      "npz_sha256": "fea32e48e9a8c24ce590597a789b32161c1dcf92050d21ab4b502dca82a5ae84",
+      "audit": {
+        "positions_replayed": 77,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 245,
+      "seed": 9601246,
+      "npz_sha256": "f76697230667a921153044c5001ba539163143718de7d6da3c71053e898b96fb",
+      "audit": {
+        "positions_replayed": 112,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 246,
+      "seed": 9601247,
+      "npz_sha256": "49f19de75161127e528e4a03e2284c449d0280528b031a2cb1294d8367823fe7",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 247,
+      "seed": 9601248,
+      "npz_sha256": "c7a914448c3ffd70ef795598902b15fe830adcae5be12abe9232fb01849994c8",
+      "audit": {
+        "positions_replayed": 80,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 248,
+      "seed": 9601249,
+      "npz_sha256": "5d66900dcf6c61843c55d5659de815756f09a520283239e6d6e0a8e2e24c765f",
+      "audit": {
+        "positions_replayed": 77,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 249,
+      "seed": 9601250,
+      "npz_sha256": "b65e70d1720643da807d19cbc837a414be4f5f70ed826b7efd465a98f6563459",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 9,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 250,
+      "seed": 9601251,
+      "npz_sha256": "528a49d42ce67e80081b2f7f7063b009d9106125c25aec54f64ca435854b7cb9",
+      "audit": {
+        "positions_replayed": 155,
+        "fully_public_positions": 11,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 251,
+      "seed": 9601252,
+      "npz_sha256": "1f07d0db48f3e00c05a8fe57b1508a9fd520dab3cfaee320736c439df9e7de24",
+      "audit": {
+        "positions_replayed": 39,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 252,
+      "seed": 9601253,
+      "npz_sha256": "2f24474520b9c2a1ca3e61e8b2f9b37e5ced3f63a44496b5121ddb034aeabf1c",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 253,
+      "seed": 9601254,
+      "npz_sha256": "41e572ff19aea8457bd41b79ac6fc02a8aaa3bfc41893dc9293b71bb4b50d22f",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 254,
+      "seed": 9601255,
+      "npz_sha256": "2a6e5d699dfb6a971a7dcd766b390482e258390178886ee6df8135ef04bde5ea",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 255,
+      "seed": 9601256,
+      "npz_sha256": "4250911c89a74c7c180c571e7f05fd282135fcb14672b8270c30895a6ad1c7fb",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 256,
+      "seed": 9601257,
+      "npz_sha256": "d2a1979c3b53dde9c0a551cee72c3eee5e2648ad5cbe1dab62b2c3c326e90578",
+      "audit": {
+        "positions_replayed": 112,
+        "fully_public_positions": 22,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 257,
+      "seed": 9601258,
+      "npz_sha256": "e13b8b2ba36319ff7755772650b7bad31e6b5ecf5b72bde859c8cd0d3fbe0b88",
+      "audit": {
+        "positions_replayed": 20,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 258,
+      "seed": 9601259,
+      "npz_sha256": "ca62c32f2de236ab78985ec00afa3df6a500e79887e9c10062bbeae02a3dbcaf",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 259,
+      "seed": 9601260,
+      "npz_sha256": "c7bc59476e6d6bb190c1a72ea9f372cc4975b9db2599373c5933689b138b4f1b",
+      "audit": {
+        "positions_replayed": 10,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 260,
+      "seed": 9601261,
+      "npz_sha256": "2952efc3be8c0c55ac6da4360f298b8e744f600f480a9eea06333b8a129b5db2",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 261,
+      "seed": 9601262,
+      "npz_sha256": "661f3cc9cdbfe194c363744bc5b54976456cdbdabd02fb1a27ddf520fc88a207",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 262,
+      "seed": 9601263,
+      "npz_sha256": "826de06f1727b0508a9db90c850ef3a930032668e3e87b63e85036edb2b11762",
+      "audit": {
+        "positions_replayed": 127,
+        "fully_public_positions": 42,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 263,
+      "seed": 9601264,
+      "npz_sha256": "0f3e02627c62e641deba2a4e9ded57ea6dceb3f24d4a5720b841485ce0daad98",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 264,
+      "seed": 9601265,
+      "npz_sha256": "c5fd089815e9b379d4d26aecdb1969593f6c55a783f748c58ac79cddb8f2fad8",
+      "audit": {
+        "positions_replayed": 71,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 265,
+      "seed": 9601266,
+      "npz_sha256": "b9914fc54fc37411ad725c946578039a36c9b34103d4c0ec3c500edaa5b451a9",
+      "audit": {
+        "positions_replayed": 99,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 266,
+      "seed": 9601267,
+      "npz_sha256": "6b4d06ee3544f89598980ff6e4cbaed9794e7d8f657c56b32c25ed7661154dd1",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 267,
+      "seed": 9601268,
+      "npz_sha256": "dbab04d950f21b99f3ce986709cd601339a3e821d3d394637e59905f036f20d0",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 268,
+      "seed": 9601269,
+      "npz_sha256": "ca99cc8eaadb9cc1e0c54bd982458adda1dd75cd63d541a3204f058f3fa8e1c8",
+      "audit": {
+        "positions_replayed": 29,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 269,
+      "seed": 9601270,
+      "npz_sha256": "68f6e91c5c348f4102ec3188f1fabfd2c821bace272c29c6ffa3c38b62fa57b8",
+      "audit": {
+        "positions_replayed": 25,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 270,
+      "seed": 9601271,
+      "npz_sha256": "a7d0283c9f7b797f71cb7665853d37a942d2df3b8ce0645e9697c2bff587350f",
+      "audit": {
+        "positions_replayed": 26,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 271,
+      "seed": 9601272,
+      "npz_sha256": "6778cf58d5fcdb9f86f1ed2d64decff7bae287a706b104b9673238dbc7c22d9f",
+      "audit": {
+        "positions_replayed": 7,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 272,
+      "seed": 9601273,
+      "npz_sha256": "2feb3236bbee319397dbd160c9c5a485d3651e37331ff65722f273563841c885",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 273,
+      "seed": 9601274,
+      "npz_sha256": "6ce56ddeaaff06ea662ddbc44dae50185693bae19cb6625e55a968d2580e8406",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 274,
+      "seed": 9601275,
+      "npz_sha256": "fe6ea565e8fb0abef851580ce7fc6edef208282d9edb2e26ff3663fdc7acaaa5",
+      "audit": {
+        "positions_replayed": 84,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 275,
+      "seed": 9601276,
+      "npz_sha256": "9d620764d9afc76f834f3d96dc49c46767459c9ab354bc0e39d78508e613301d",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 276,
+      "seed": 9601277,
+      "npz_sha256": "dc471dd6cfd9276fc039c040037e614fefeeb29f4bf3bb12fb6fe9f7417058fc",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 277,
+      "seed": 9601278,
+      "npz_sha256": "9b8980094e48fa5bc5719ebc522492b375f48e6fa4ada5991fb4f82b38d2faee",
+      "audit": {
+        "positions_replayed": 96,
+        "fully_public_positions": 27,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 278,
+      "seed": 9601279,
+      "npz_sha256": "5be8b4de52f1385593037bcd3dab869e224b4676bfcf9136c67e2caa625c41bc",
+      "audit": {
+        "positions_replayed": 120,
+        "fully_public_positions": 17,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 279,
+      "seed": 9601280,
+      "npz_sha256": "32a70d99ca20ca62fae463c8fc8457699395942d06bac2120b74f4261861b082",
+      "audit": {
+        "positions_replayed": 146,
+        "fully_public_positions": 73,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 280,
+      "seed": 9601281,
+      "npz_sha256": "642bf9228a026e44a20b77c0f334fc2ac695958e3c9b960ac26e0ca7351d704e",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 281,
+      "seed": 9601282,
+      "npz_sha256": "c3454352269d548abf55e87de0236ca1808a2c297a14525abc957081531e92b0",
+      "audit": {
+        "positions_replayed": 68,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 282,
+      "seed": 9601283,
+      "npz_sha256": "92627775e9398b921f14fb1d25184c61f7028fbe5499f46336bf3ed935393a71",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 283,
+      "seed": 9601284,
+      "npz_sha256": "14544fabeccde0626010476367403345ac50c43802ed2318d43256c84fb6c17b",
+      "audit": {
+        "positions_replayed": 71,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 284,
+      "seed": 9601285,
+      "npz_sha256": "f74fbf48ee9b97322eec8b0ec8d9a52cd9843dc0f76fd7446587cef1d117f348",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 285,
+      "seed": 9601286,
+      "npz_sha256": "9f8b5de7c8a4f24c9eef4b4af47ae6d79f10959bb1f94fdc05dfffcd770beafc",
+      "audit": {
+        "positions_replayed": 100,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 286,
+      "seed": 9601287,
+      "npz_sha256": "2d42b05cabbeac498a5d465183d609de73b4116da8abcea1d53459d048186035",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 287,
+      "seed": 9601288,
+      "npz_sha256": "7d1978ca8085b14eaa3ae546c4fa16befbec26db95fb7de63443a2e40d4a66c8",
+      "audit": {
+        "positions_replayed": 26,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 288,
+      "seed": 9601289,
+      "npz_sha256": "9245ea80943767c9281221d7951c5bcbe2544b3bfa52f3234a8fefc355dcf68e",
+      "audit": {
+        "positions_replayed": 118,
+        "fully_public_positions": 13,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 289,
+      "seed": 9601290,
+      "npz_sha256": "909f1b724e19b7bd1ea1f9b1ebbbb7fb3303e644477c0fd723529fdfe40d1c14",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 290,
+      "seed": 9601291,
+      "npz_sha256": "3cc1c09df79bf7e52aa477da1a29d5c0c90209da013627f6dffed8b17a0f64fc",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 291,
+      "seed": 9601292,
+      "npz_sha256": "c6eacfd402e498b7ac960878ee8fe286f1df284f8c575ba92ae0128d663e72b7",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 292,
+      "seed": 9601293,
+      "npz_sha256": "9feebbd02b191878a00d5430a061285ee076fe5dafd672ae025aca0e4ea36bd6",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 293,
+      "seed": 9601294,
+      "npz_sha256": "0c596d1832a730bda044381a0cbe491c319d01786c46ea1b382fd321916878ea",
+      "audit": {
+        "positions_replayed": 77,
+        "fully_public_positions": 2,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 294,
+      "seed": 9601295,
+      "npz_sha256": "0e096996903074eff9b8967d9c1088c0b0d96ae081136b70adf55d0acd2d5f7a",
+      "audit": {
+        "positions_replayed": 89,
+        "fully_public_positions": 9,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 295,
+      "seed": 9601296,
+      "npz_sha256": "c8c799c7d7c1e15b0ade20d5091cc95d568626083b2b13480ebc07d66a925e5e",
+      "audit": {
+        "positions_replayed": 99,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 296,
+      "seed": 9601297,
+      "npz_sha256": "de1537e73f97558cc5e25e9f58286c0d4588c040d63b7bfcdf4e5f26257e8ea0",
+      "audit": {
+        "positions_replayed": 92,
+        "fully_public_positions": 19,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 297,
+      "seed": 9601298,
+      "npz_sha256": "6b35c50151d329cd5660dedbc34caaed314153d3cbcf8a15768173ec76f1dff3",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 298,
+      "seed": 9601299,
+      "npz_sha256": "609400acac73fce44b9d890590a00856a3a0e6811f203761a89626bca669072d",
+      "audit": {
+        "positions_replayed": 98,
+        "fully_public_positions": 6,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 299,
+      "seed": 9601300,
+      "npz_sha256": "e8c6e617a29bc2ba33c32280c316f1a178056c7891e3a1e60b4617b6d2070ebc",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 300,
+      "seed": 9601301,
+      "npz_sha256": "71ad57630447542e193f73a4cbe64e01ab8daa968400c97c443ce07dacbaff99",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 301,
+      "seed": 9601302,
+      "npz_sha256": "d00a572d534679aa3a81f80446fb239553e71bab1082a0bc8e4f7097cc5e0a76",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 302,
+      "seed": 9601303,
+      "npz_sha256": "cc956b92be25bf8b0a37ecdb4d36948cd6edcce129a7b0c752cb9c6e59f6fdce",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 303,
+      "seed": 9601304,
+      "npz_sha256": "4e2cbb8ac4fbf339bb741a1e28e9fb24f1f4d20993ea4155df46b812813c644f",
+      "audit": {
+        "positions_replayed": 76,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 304,
+      "seed": 9601305,
+      "npz_sha256": "cc4f38bb84bc44d987639c8cc489afb718f6f1c6b89eb5e2368c3183d8a67f08",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 305,
+      "seed": 9601306,
+      "npz_sha256": "e9b441a924d0c2dfac8ebc00f9d5d17649aecf103ba81bb67070f7f67379a7ad",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 306,
+      "seed": 9601307,
+      "npz_sha256": "f947f1493e4ce43dae1f4818214c65a26de2784d95f358bf96d023334af0f539",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 307,
+      "seed": 9601308,
+      "npz_sha256": "90d489e8c240b1293aff0f175847986f0df107b39babd3e90ec80dde50c5a7d3",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 308,
+      "seed": 9601309,
+      "npz_sha256": "c33ab85ea873832761be46890be64bc4d770ddcd6febaffd3a336ebcb19ab63a",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 309,
+      "seed": 9601310,
+      "npz_sha256": "b5e7707dc20dc6afe1d3ba12cc7f2fbeaf09ebde9cd2ac7c92821cd3ec99b8dc",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 310,
+      "seed": 9601311,
+      "npz_sha256": "b91b49dea28064919f2886386588f98c61996fb387a5d48148fd2cdbc67e5ef9",
+      "audit": {
+        "positions_replayed": 83,
+        "fully_public_positions": 9,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 311,
+      "seed": 9601312,
+      "npz_sha256": "bdf06dda44cd620414b2793821025829afa3423ba2745e21c44a419d02eb513a",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 312,
+      "seed": 9601313,
+      "npz_sha256": "5ba72ef9afe0dcf92547910b1751fd90c65046e6a7a6c08e5178c083c4d08e3b",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 313,
+      "seed": 9601314,
+      "npz_sha256": "5c9b9c2f38aadf5a7071bbc4b25fd80fe1d81e287575e0c0892551db8eabb2ae",
+      "audit": {
+        "positions_replayed": 104,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 314,
+      "seed": 9601315,
+      "npz_sha256": "9bd6122f50d82bb575cf41a5cd313baa02fe9c387474f5f067349aa67b9f2ef4",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 315,
+      "seed": 9601316,
+      "npz_sha256": "28bf06cfc4b5c00c9dee3de25b516b7764e55d6a4842f10dd267b882bf3073da",
+      "audit": {
+        "positions_replayed": 66,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 316,
+      "seed": 9601317,
+      "npz_sha256": "b988426403489fa475c340464e95a96d227e3b0d194fb5315ab292c41e263237",
+      "audit": {
+        "positions_replayed": 95,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 317,
+      "seed": 9601318,
+      "npz_sha256": "96044c9593f5750dd097c6b59599c751f57bd1829f940ebc8cad502e16efb491",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 318,
+      "seed": 9601319,
+      "npz_sha256": "13a57a07a65cf55f2b313029f21c00b81d395c82f058c28c26817610fb0710d7",
+      "audit": {
+        "positions_replayed": 25,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 319,
+      "seed": 9601320,
+      "npz_sha256": "ae9077806cfb93cf0beab54aecf3976e2d81097b50a372ea9576aacf9c1676e9",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 320,
+      "seed": 9601321,
+      "npz_sha256": "9f75771744e3e234f776d6839e8ee4aaab9c411cf8bccec886fc0c1620382b8f",
+      "audit": {
+        "positions_replayed": 22,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 321,
+      "seed": 9601322,
+      "npz_sha256": "36b2c366ea917db6b357f78600c6d2bbd0832ad3f05c8558ef3da838119ed641",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 322,
+      "seed": 9601323,
+      "npz_sha256": "45109a6269a21a883702568feb2be3f00f2599f727cc5849d7dabff3c853b9bf",
+      "audit": {
+        "positions_replayed": 23,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 323,
+      "seed": 9601324,
+      "npz_sha256": "050a893f0df478d526b1a5e5bded3446f7ed467e719baa7e11b66880c1afaf91",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 324,
+      "seed": 9601325,
+      "npz_sha256": "2f8a52710e00a15591f8a4b6edb67bb23dde3edde22e4f31c6e7239b1303a092",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 325,
+      "seed": 9601326,
+      "npz_sha256": "dce1204bd53e106a8c0213ea43e680e710a361621ebd9fb767d5d87c5aa5c216",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 326,
+      "seed": 9601327,
+      "npz_sha256": "870b877f3e80bda1bbc47c30f1de0c1536f1c1754550051be7df351e942ff08a",
+      "audit": {
+        "positions_replayed": 106,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 327,
+      "seed": 9601328,
+      "npz_sha256": "2868f66b84559f46a9e815dbbc51e509dab3ee122dfe385682fa4f3779d82e05",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 328,
+      "seed": 9601329,
+      "npz_sha256": "67f75bd4a1c8df585b8df777163d2ed71bdc70b7256f1425854c2264206a51aa",
+      "audit": {
+        "positions_replayed": 109,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 329,
+      "seed": 9601330,
+      "npz_sha256": "3d8bb5e079dd2492a925956a56e7a74576091b7935ddb90434791b49bf154df3",
+      "audit": {
+        "positions_replayed": 125,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 330,
+      "seed": 9601331,
+      "npz_sha256": "f209c532f1800e76ceecaf0a13838e6201a08e2bca6fcfaceb1ab6e003781b2f",
+      "audit": {
+        "positions_replayed": 20,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 331,
+      "seed": 9601332,
+      "npz_sha256": "70ada1e36cb51d39aeecb5ac1aa5371b331dfb1658ef4c639169afeb74b7292e",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 332,
+      "seed": 9601333,
+      "npz_sha256": "a40759c362aa013e4812fcb7a91b3ae414df990dca096848d84af0ee16e41c2b",
+      "audit": {
+        "positions_replayed": 18,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 333,
+      "seed": 9601334,
+      "npz_sha256": "6a44092de4a91c389a7cbb14638c6a2763645d0dcc9e9ad1f466c63c46e39807",
+      "audit": {
+        "positions_replayed": 73,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 334,
+      "seed": 9601335,
+      "npz_sha256": "c4823baabf4b89ad6c47f81fcfd0d50d4ee39ca9b4810841c3f552c78bc19dbf",
+      "audit": {
+        "positions_replayed": 127,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 335,
+      "seed": 9601336,
+      "npz_sha256": "14295dd6967e9762077d908238f796bc2b15a8b6e947e709eb0c5ab2be98bbbd",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 336,
+      "seed": 9601337,
+      "npz_sha256": "54b37cf056e4801bead7baf451e72e8bad822b45666a1f878e880266acefcceb",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 337,
+      "seed": 9601338,
+      "npz_sha256": "079c66240b765962e07502ae68d626faa222ccbc44eb701b0d5ca7a9fd4e659d",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 338,
+      "seed": 9601339,
+      "npz_sha256": "8ccb37ec7aa6a4cfb79829709a0c33b9e0eabf2099388e0d06fcf680f25b5201",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 339,
+      "seed": 9601340,
+      "npz_sha256": "f13bf32068ba56fa625dbb9cf7f99873c565ebdd3dee53e5bb9e7c17fdcd26a7",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 9,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 340,
+      "seed": 9601341,
+      "npz_sha256": "cf761a798f4f399b18c0b6278a1c20e125ad40530579d5af1a7547cdf2967687",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 341,
+      "seed": 9601342,
+      "npz_sha256": "9a450a35094c9616e4158e0a5fe68e6248d59e3be19af35927a666d7ee42b7bd",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 342,
+      "seed": 9601343,
+      "npz_sha256": "6adb70798575294734585927e509df9063c55e8a574acd38ff91d176375b3023",
+      "audit": {
+        "positions_replayed": 23,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 343,
+      "seed": 9601344,
+      "npz_sha256": "42f197f06249cc36ac1bcdf3a585b490d4637ad38c6eec18eb7d5f6521481e4f",
+      "audit": {
+        "positions_replayed": 98,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 344,
+      "seed": 9601345,
+      "npz_sha256": "eb9764adb525b5e43e4cff77cbebc3c35e9c6ac0d3ae19edc4da9c7373f8b660",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 345,
+      "seed": 9601346,
+      "npz_sha256": "bb3bcc22f11557bc52d87d24d2536e17474124c5ff9054f87ed5de8960bffb42",
+      "audit": {
+        "positions_replayed": 71,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 346,
+      "seed": 9601347,
+      "npz_sha256": "24f42062b418dd1964c25b3d9092bf2afb3f9d4213fec49dc603295e464f1d90",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 347,
+      "seed": 9601348,
+      "npz_sha256": "600deb9eec4913f4140babe4132983249b8b13a610b735dcfca7c581f6620420",
+      "audit": {
+        "positions_replayed": 90,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 348,
+      "seed": 9601349,
+      "npz_sha256": "6aa831b25cccf18581e52fac4c0e034337c51ee7e3f1ed4f35562ab0f057eca6",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 349,
+      "seed": 9601350,
+      "npz_sha256": "93857a4affcb7b86a5e3209bbe36d7820f92d1f7c30dde373ad0c453ebab1c2f",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 350,
+      "seed": 9601351,
+      "npz_sha256": "725035e9f2b9cf654762d42705a44d820a2328128ea692b4bc41211c58634d26",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    },
+    {
+      "index": 351,
+      "seed": 9601352,
+      "npz_sha256": "b1f527967ac7dbd7086dda97680371e76d4f3827210b032d14a09a419925d758",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      }
+    }
+  ]
+}

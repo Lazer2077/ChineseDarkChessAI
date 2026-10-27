@@ -47,3 +47,10 @@ clock margins occur. This shows no established improvement from the higher
 training search budget. The independently frozen teacher screen continues;
 the candidate is not promoted. Evidence:
 `results/20261027-neural-high-search-vs-warm{,-audit}.json`.
+
+The teacher screen also completed:0W/4D/60L,3.125%score with paired bootstrap
+95%[0.78125%,6.25%]. All2,708moves pass the same native checks without
+technical games or ambiguous margins. The full campaign is closed with5,888
+audited match moves and no learned-strength improvement or promotion. More
+training simulations alone did not solve the observed update bottleneck.
+Evidence: `results/20261027-neural-high-search-vs-teacher{,-audit}.json`.

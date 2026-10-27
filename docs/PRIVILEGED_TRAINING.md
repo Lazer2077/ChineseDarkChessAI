@@ -201,3 +201,58 @@ report its actual eligible-root and compatible-world counts.
 
 Plan: `results/privileged-root-mask-audit-plan.json`;
 integration: `results/20261027-privileged-root-mask-integration.json`.
+
+The formal training-only mask audit is now complete:256games,14,778positions,
+six check/chase-ban roots, five eligible unknown-inventory roots and39compatible
+remaining-inventory worlds. No assignment-bearing versus assignment-stripped
+root mask difference, inventory-sensitive mask or non-universally-legal chosen
+action occurs in this sample. This is bounded evidence on these actual training
+roots, not a theorem over reachable games or internal counterfactual nodes.
+Evidence: `results/20261027-privileged-training-root-mask-audit.json`.
+
+## Completed conditional-prediction result: no benefit
+
+Both critics completed928updates over eight epochs, with9,342,455parameters
+and1,993,793trainable parameters each. Both independently selected epoch3on
+the32selection games before loading test arrays. On the64isolated test games:
+
+| Metric | Symmetric | Privileged |
+| --- | ---: | ---: |
+| Whole-game mean terminal-return MSE, primary | 0.8954248652 | 0.8978617700 |
+| Position-weighted MSE, secondary | 0.9173768897 | 0.9198494730 |
+
+The primary symmetric-minus-privileged MSE difference is-0.0024369048,
+paired game-bootstrap95%[-0.0044376899,-0.0004588074],10,000resamples. The
+privileged model is slightly worse in this fixed one-seed pilot; there is no
+predictive-benefit evidence. This is a conditional comparison of these selected
+models, not a universal rejection of privileged information or evidence about
+training-seed robustness. The test contains only58fully public positions from
+six games, so it cannot establish a strong public-phase conclusion.
+
+No student policy was updated, no privileged actor was deployed and no expensive
+student-match campaign or larger teacher fit follows this negative result.
+The result, selected model hashes, both training curves, per-game errors,
+calibration bins and safe held-out prediction arrays are archived in
+`results/20261027-privileged-value-diagnostic.json`.
+
+A separate explicitly post-hoc **training-only** sensitivity diagnostic now
+freezes the selected privileged critic and compares actual, zeroed and within-
+colour-permuted live-dark labels on all256training games. Permutations preserve
+remaining per-colour type counts at each root. It checks whether the learned
+function uses the new channels at all and whether their fitted association is
+useful on the fitted data. It does not revisit test labels, fit weights,
+reselect checkpoints or convert this negative primary result into a success.
+Plan: `results/privileged-signal-diagnostic-plan.json`.
+
+That sensitivity check is complete on14,778training positions. Extra input
+weights have nonzeroL2norm0.0535766; true-versus-zero labels change value
+predictions by0.00384684on average in absolute value, maximum0.0297714.
+All664fully public training positions have exactly zero change. Training MSE
+is0.6013615with true labels,0.6045417with zero extra channels and0.6037054with
+within-colour permutations;12,393positions have a changed assignment in the
+permutation control. Thus the fitted function does use the privileged signal,
+and the observed lack of held-out benefit is not explained by completely
+disconnected/unused extra channels. Its fitted-data improvement does not
+generalize in the primary test. No additional training or student match is
+launched on this evidence; prioritize the independently observed policy-learning
+bottleneck. Evidence: `results/20261027-privileged-signal-diagnostic.json`.

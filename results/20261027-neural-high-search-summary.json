@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Single2048simulation self-play update; no established warm-control or native-teacher advantage, no promotion. No pooling with different generation or inference recipes.",
+  "plan_sha256": "1172f00462197ec218a9410eb850e2d031cf7c1ce29edc55f538a34d59ee171d",
+  "model_sha256": "fb598f165f10a9a2a8e170986844122d01476187ba8cb315efe210d4cdd8a367",
+  "contrasts": [
+    {
+      "opponent": "warm",
+      "wdl": [
+        27,
+        2,
+        35
+      ],
+      "score": 0.4375,
+      "paired_bootstrap_95": [
+        0.3359375,
+        0.5390625
+      ],
+      "report": "results/20261027-neural-high-search-vs-warm.json",
+      "audit": "results/20261027-neural-high-search-vs-warm-audit.json",
+      "moves": 3180
+    },
+    {
+      "opponent": "teacher",
+      "wdl": [
+        0,
+        4,
+        60
+      ],
+      "score": 0.03125,
+      "paired_bootstrap_95": [
+        0.0078125,
+        0.0625
+      ],
+      "report": "results/20261027-neural-high-search-vs-teacher.json",
+      "audit": "results/20261027-neural-high-search-vs-teacher-audit.json",
+      "moves": 2708
+    }
+  ],
+  "total_audited_match_moves": 5888
+}

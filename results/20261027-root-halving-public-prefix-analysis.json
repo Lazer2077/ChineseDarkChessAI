@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "scope": "Post-match phase-exposure and prefix analysis on already audited paired games; not a new hypothesis test or independent strength evidence.",
+  "report_sha256": "4fc8ebf7c4900bd0d3afd8619c084fa8ba34b3d6bed2f14dda1f141da838f015",
+  "raw_sha256": "09fb1e95f291600bd3fdcba14871cd4c8fcd5167c7a55dbf6551180f055e937a",
+  "analyzer_sha256": "6ed0366dc853f17416976c7466a665cfa48b7ffdc265ce6455e0504669d3c955",
+  "pairs": [
+    {
+      "pair": 0,
+      "identical_prefix_plies": 37,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 1,
+      "identical_prefix_plies": 36,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 2,
+      "identical_prefix_plies": 48,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 3,
+      "identical_prefix_plies": 76,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 4,
+      "identical_prefix_plies": 15,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 5,
+      "identical_prefix_plies": 42,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 6,
+      "identical_prefix_plies": 34,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 7,
+      "identical_prefix_plies": 46,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 8,
+      "identical_prefix_plies": 45,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 9,
+      "identical_prefix_plies": 49,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 10,
+      "identical_prefix_plies": 39,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 11,
+      "identical_prefix_plies": 102,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 12,
+      "identical_prefix_plies": 134,
+      "first_full_ply": 134,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 13,
+      "identical_prefix_plies": 55,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 14,
+      "identical_prefix_plies": 23,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 15,
+      "identical_prefix_plies": 29,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 16,
+      "identical_prefix_plies": 63,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 17,
+      "identical_prefix_plies": 67,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 18,
+      "identical_prefix_plies": 66,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 19,
+      "identical_prefix_plies": 45,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 20,
+      "identical_prefix_plies": 73,
+      "first_full_ply": 73,
+      "post_boundary_behavior_diverged": true,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 21,
+      "identical_prefix_plies": 54,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 22,
+      "identical_prefix_plies": 40,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 23,
+      "identical_prefix_plies": 15,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 24,
+      "identical_prefix_plies": 71,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 25,
+      "identical_prefix_plies": 38,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 26,
+      "identical_prefix_plies": 64,
+      "first_full_ply": 64,
+      "post_boundary_behavior_diverged": true,
+      "candidate_pair_score": 1.0
+    },
+    {
+      "pair": 27,
+      "identical_prefix_plies": 23,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 28,
+      "identical_prefix_plies": 41,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 29,
+      "identical_prefix_plies": 29,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 30,
+      "identical_prefix_plies": 53,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    },
+    {
+      "pair": 31,
+      "identical_prefix_plies": 59,
+      "first_full_ply": null,
+      "post_boundary_behavior_diverged": false,
+      "candidate_pair_score": 0.5
+    }
+  ],
+  "summary": {
+    "pairs": 32,
+    "all_pre_boundary_prefixes_identical": true,
+    "pairs_entering_fully_public": 3,
+    "pairs_with_behavior_divergence": 2,
+    "pairs_scoring_above_half": 1,
+    "pairs_scoring_below_half": 0
+  }
+}

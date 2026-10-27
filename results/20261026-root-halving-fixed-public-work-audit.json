@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "games": 64,
+  "processes": 128,
+  "warmup_calls": 128,
+  "public_moves_replayed": 3357,
+  "fully_public_moves": 135,
+  "simulations_each": 256,
+  "complete_simulation_witnesses": true,
+  "public_phase_gate_verified": true,
+  "method_counts": [
+    {
+      "engine": "baseline",
+      "method": "puct",
+      "moves": 1678
+    },
+    {
+      "engine": "candidate",
+      "method": "halving",
+      "moves": 68
+    },
+    {
+      "engine": "candidate",
+      "method": "puct",
+      "moves": 1611
+    }
+  ],
+  "raw_games_sha256": "09fb1e95f291600bd3fdcba14871cd4c8fcd5167c7a55dbf6551180f055e937a",
+  "timing_sha256": "c7a00e37b5f347b99e99d603bb1ba37af60f90b4e0df0d7c71609d8cc3779034",
+  "witness_archive": "results/raw/fixed-work-49ee3b36e9fce618.jsonl.gz",
+  "witness_uncompressed_sha256": "49ee3b36e9fce618b76d79141cf602a799ce32f7d1bf113a3e11609df4a02696",
+  "scope": "Completed root backups, normalized actual visits, selected actions and public-only phase gates match every native move and actual go request. Both players use equal simulation counts, not necessarily equal FLOPs/NN evaluations. Native seeded-identity/legal/terminal/actual-clock audit is separate. This is not playing-strength evidence."
+}

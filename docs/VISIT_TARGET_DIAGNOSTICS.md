@@ -55,8 +55,23 @@ the actual opponent private ledger. An actual warm-model CPU UCI smoke reports
 zero simulations explicitly. The64paired-game development recipe is
 `results/policy-only-screen-plan.json`, seed9530001. No weights change or
 result-selected stopping is allowed. Native identity/legal/terminal/clock
-replay follows completion. The contrast is running, without a conclusion that
-planning improves or harms the original policy.
+replay follows completion. The contrast completed8W/0D/56L from the greedy
+actor's perspective,12.5%wins/score, paired bootstrap95% [6.25%,20.3125%],
+all3,440moves/clocks clean. Planning clearly helps this frozen warm policy in
+this contrast, even though the RL updates have not transferred that advantage
+into stronger weights. It is not evidence that every explored visit target is
+an improvement or that the critic is accurate. Exact report/audit:
+`results/20261027-policy-only-vs-puct{,-audit}.json`.
+
+The earlier LeafBatch8-trained model was evaluated at32for both actors to
+isolate the training intervention. That does not test its matching train/act
+configuration. `results/neural-small-batch-aligned-plan.json` therefore fixes
+two fresh64-game tests of the same selected checkpoint atLeafBatch8 against
+warm-at8and the native teacher, seeds9540001/9541001, actual10+0.1. No new
+training, training seed, checkpoint selection or tuning occurs; both matches
+complete regardless of the first result. These development tests are running
+on the GPU released by the completed greedy-policy contrast. Old32results
+remain intact and no weights are promoted before evidence supports it.
 
 Full matrix and dataset statistics:
 `results/20261027-visit-target-diagnostic.json`;

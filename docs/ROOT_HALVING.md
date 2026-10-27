@@ -130,9 +130,9 @@ never reaches a fully revealed turn, that mechanism is unexercised rather than
 positive or negative evidence for the switch. Every exercised phase count is
 reported by the witness audit.
 
-The teacher-leaf campaign completed and this study has started its all-phase
-contrast on the released GPU; the public-only contrast follows. It does not
-run concurrently with the preceding campaign on that GPU. No game-strength conclusion or
+The teacher-leaf campaign released its GPU for this study; both contrasts have
+now completed and the independent confirmation uses that GPU. The studies did
+not run concurrently on it. No strong-baseline superiority conclusion or
 promotion follows from the prototype or the smoke. Future advantages would
 initially be search changes of the unchanged warm network, not newly learned
 weights, full Gumbel AlphaZero, or superiority over the native teacher.
@@ -145,11 +145,36 @@ were fully public. Every actual decision completed exactly256simulations.
 This is a positive development signal for search on the unchanged warm network,
 not a new trained model or a native-teacher advantage. Evidence:
 `results/20261026-root-halving-fixed-all{,-native-audit,-work-audit}.json`.
-The public-only contrast remains running and is not inferred from this result.
+The public-only contrast is evaluated separately below, not inferred from this
+result or pooled into a combined method score.
 
 Before the public-only result, `results/root-halving-confirmation-plan.json`
 freezes one independent200-game confirmation, seed9480001, with the exact same
 network, actors,256simulation budget,LeafBatch8,zero noise and actual60+0.5.
-It queues after both original contrasts finish, regardless of public-only
+It starts after both original contrasts finish, regardless of public-only
 outcome. No retuning or optional stopping is allowed. Both audits and raw
 witness archives remain required. This is not a final strong-baseline70%gate.
+
+The public-only contrast completed33W/0D/31L,51.5625%wins/score, paired bootstrap
+95% [50%,54.6875%], without established superiority. All3,357moves and budgets
+are clean: candidate1,611PUCT decisions before public collapse and68halving
+decisions after it;135moves across both actors were fully public. This confirms
+that the intended branch actually ran, but it changed few game outcomes.
+
+Post-match paired-event replay checks that **all32layout pairs have identical
+move/reveal/capture-result prefixes before the fully public boundary**, despite
+swapping which color uses the conditional method. Only3/32pairs reach a fully
+public decision. Two pairs show behavior divergence afterward; one pair scores
+above50%for the candidate and none below. On these particular layouts with
+this frozen pre-boundary policy/seed, even winning both games of all three
+exposed pairs caps the overall score at(29*0.5+3)/32=54.6875%. This finite-sample
+ceiling is not a universal bound on late-game methods, and says nothing about
+improving partially observed play before the boundary. It explains why the
+all-game contrast provides little power for the late-only mechanism here.
+
+Evidence: `results/20261026-root-halving-fixed-public{,-native-audit,-work-audit}.json`;
+paired prefix/coverage analysis:
+`results/20261027-root-halving-public-prefix-analysis.json`. Both original
+contrasts are now closed,7,197audited moves in total; all-phase confirmation
+is running on the released GPU. Completed development summary:
+`results/20261027-root-halving-development-summary.json`.

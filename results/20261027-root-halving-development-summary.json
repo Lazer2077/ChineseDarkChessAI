@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Two different fixed-work development contrasts, not pooled wins, a trained-model gain, or native-teacher superiority. All-phase result is positive with bootstrap interval; full-public-only result is inconclusive and has only3/32exposed layouts. Independent200gameall-phase confirmation was frozen before public-only completion and is now running.",
+  "contrasts": {
+    "all": {
+      "timing": {
+        "candidate": {
+          "moves": 1924,
+          "mean_ms": 345.86673871257796,
+          "p95_ms": 451.336701,
+          "max_ms": 634.75802
+        },
+        "baseline": {
+          "moves": 1916,
+          "mean_ms": 347.95587025417535,
+          "p95_ms": 457.042969,
+          "max_ms": 553.843226
+        }
+      },
+      "game_clock": "60+0.5",
+      "games": 64,
+      "expected_games": 64,
+      "wins": 41,
+      "draws": 0,
+      "losses": 23,
+      "score": 0.640625,
+      "complete_pairs": 32,
+      "paired_bootstrap_95": [
+        0.53125,
+        0.75
+      ],
+      "paired_hoeffding_95": [
+        0.4005443021700198,
+        0.8807056978299802
+      ],
+      "void_attempts": 0,
+      "technical_results": [],
+      "valid_technical_run": true,
+      "single_match_superiority_gate": false,
+      "promotion_supported": false,
+      "warning": "A single development match is not a promotion or an all-engine superiority claim."
+    },
+    "public": {
+      "timing": {
+        "candidate": {
+          "moves": 1679,
+          "mean_ms": 334.1598091459202,
+          "p95_ms": 440.098572,
+          "max_ms": 634.771778
+        },
+        "baseline": {
+          "moves": 1678,
+          "mean_ms": 334.7842934255066,
+          "p95_ms": 439.624517,
+          "max_ms": 599.890307
+        }
+      },
+      "game_clock": "60+0.5",
+      "games": 64,
+      "expected_games": 64,
+      "wins": 33,
+      "draws": 0,
+      "losses": 31,
+      "score": 0.515625,
+      "complete_pairs": 32,
+      "paired_bootstrap_95": [
+        0.5,
+        0.546875
+      ],
+      "paired_hoeffding_95": [
+        0.2755443021700198,
+        0.7557056978299802
+      ],
+      "void_attempts": 0,
+      "technical_results": [],
+      "valid_technical_run": true,
+      "single_match_superiority_gate": false,
+      "promotion_supported": false,
+      "warning": "A single development match is not a promotion or an all-engine superiority claim."
+    }
+  },
+  "native_moves_audited": 7197,
+  "public_phase_prefix_summary": {
+    "pairs": 32,
+    "all_pre_boundary_prefixes_identical": true,
+    "pairs_entering_fully_public": 3,
+    "pairs_with_behavior_divergence": 2,
+    "pairs_scoring_above_half": 1,
+    "pairs_scoring_below_half": 0
+  },
+  "evidence_sha256": {
+    "results/root-halving-matches-plan.json": "b4ee1725df7ff8b4fb0fd659edaac937c6d0eb280b8f273ecc8ccd865543a610",
+    "results/20261027-root-halving-public-prefix-analysis.json": "1cb3e71260fca45c7fd7a9536ac11901b6e76cf51a7e1204cf56790f67ecb858",
+    "results/20261026-root-halving-fixed-all.json": "3acaf86b0d8938a16ceb93016fedb22faed45fbcbb927849735c24a2eaf0463a",
+    "results/20261026-root-halving-fixed-all-native-audit.json": "10190450b0a7e179a36946ca332c204e3080f4f3e95f48c7ae326123e8f87ef3",
+    "results/20261026-root-halving-fixed-all-work-audit.json": "8c0972cbcf7db105731b670a40ce4eed0bd711990f69ceb5d835b02c8f757ad6",
+    "results/20261026-root-halving-fixed-public.json": "4fc8ebf7c4900bd0d3afd8619c084fa8ba34b3d6bed2f14dda1f141da838f015",
+    "results/20261026-root-halving-fixed-public-native-audit.json": "1434120d81bfec5786403a9ef69a1f7936088d3fb0c3e38eecdcf19fbabe0697",
+    "results/20261026-root-halving-fixed-public-work-audit.json": "0461ec8ad286b54511b079ac9f5b62159209b2cd2c63fd83751db2477d38f90f"
+  }
+}

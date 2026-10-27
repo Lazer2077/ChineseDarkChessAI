@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Three correlated64-game development contrasts on identical32paired physical layouts, all using two complete forwards, original warm/RL1 functions and actual10+0.1/LeafBatch32. No promotion or equal-simulation/causal additive decomposition.",
+  "plan_sha256": "0afa9e7ec70242af279027142afc67b391d35fe6df75d8182a17c1f0e18dcf8d",
+  "reports": [
+    {
+      "profile": "rl-policy-warm-value",
+      "wdl": [
+        23,
+        0,
+        41
+      ],
+      "score": 0.359375,
+      "paired_bootstrap_95": [
+        0.25,
+        0.484375
+      ],
+      "moves_audited": 3007,
+      "report": "results/20261027-factorial-rl-policy-warm-value.json",
+      "audit": "results/20261027-factorial-rl-policy-warm-value-audit.json"
+    },
+    {
+      "profile": "warm-policy-rl-value",
+      "wdl": [
+        24,
+        2,
+        38
+      ],
+      "score": 0.390625,
+      "paired_bootstrap_95": [
+        0.2734375,
+        0.5078125
+      ],
+      "moves_audited": 2949,
+      "report": "results/20261027-factorial-warm-policy-rl-value.json",
+      "audit": "results/20261027-factorial-warm-policy-rl-value-audit.json"
+    },
+    {
+      "profile": "rl-policy-rl-value",
+      "wdl": [
+        16,
+        1,
+        47
+      ],
+      "score": 0.2578125,
+      "paired_bootstrap_95": [
+        0.140625,
+        0.3828125
+      ],
+      "moves_audited": 3108,
+      "report": "results/20261027-factorial-rl-policy-rl-value.json",
+      "audit": "results/20261027-factorial-rl-policy-rl-value-audit.json"
+    }
+  ],
+  "total_audited_moves": 9064,
+  "same_layout_seeds_verified_across_all_arms": true,
+  "pair_scores": [
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 1.0,
+      "rl-policy-rl-value": 0.25
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 1.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 1.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.75,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 1.0,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 1.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 1.0,
+      "warm-policy-rl-value": 0.75,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 1.0,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 1.0,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 1.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 1.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 1.0,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.5
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.0,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 1.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.5,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    },
+    {
+      "rl-policy-warm-value": 0.0,
+      "warm-policy-rl-value": 0.5,
+      "rl-policy-rl-value": 0.0
+    }
+  ],
+  "descriptive_paired_between_profile_differences": [
+    {
+      "left": "rl-policy-warm-value",
+      "right": "warm-policy-rl-value",
+      "mean_score_difference": -0.03125,
+      "paired_bootstrap_95_unadjusted": [
+        -0.1953125,
+        0.140625
+      ]
+    },
+    {
+      "left": "rl-policy-rl-value",
+      "right": "rl-policy-warm-value",
+      "mean_score_difference": -0.1015625,
+      "paired_bootstrap_95_unadjusted": [
+        -0.265625,
+        0.0546875
+      ]
+    },
+    {
+      "left": "rl-policy-rl-value",
+      "right": "warm-policy-rl-value",
+      "mean_score_difference": -0.1328125,
+      "paired_bootstrap_95_unadjusted": [
+        -0.28125,
+        0.015625
+      ]
+    }
+  ],
+  "bootstrap_seed": 9629001,
+  "bootstrap_replicates": 10000,
+  "limitations": [
+    "Intervals are unadjusted per contrast, not family-wise guarantees.",
+    "Different arms produce different trajectories and completed simulations; same allowed clock does not isolate equal-work effects.",
+    "Teacher-retention selection data are reused and cannot serve as an independent strength test."
+  ]
+}

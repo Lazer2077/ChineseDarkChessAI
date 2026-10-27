@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "scope": "Development only. One constant policy-anchor intervention after all frozen function-level contrasts and teacher-retention diagnostic completed; no sweep, result-selected coefficient or new training seed. No adaptive schedule or privileged teacher.",
+  "training_plan": "results/legal-anchor-training-plan.json",
+  "training_plan_sha256": "1537f5fafa7ecaeb274ebe01a26228dcf57537ee3757aab82b42ddbcff13ca27",
+  "coefficient": 1.0,
+  "checkpoint_selection": "Minimum original held-out search CE+terminal MSE, excluding anchor penalty; fixed before any games.",
+  "matches": [
+    {
+      "opponent": "original-unanchored-RL1",
+      "seed": 9610001,
+      "games": 64
+    },
+    {
+      "opponent": "original-warm",
+      "seed": 9611001,
+      "games": 64
+    },
+    {
+      "opponent": "unchanged-native-teacher",
+      "seed": 9612001,
+      "games": 64
+    }
+  ],
+  "clock": "10+0.1",
+  "leaf_batch_both_neural": 32,
+  "concurrency": 2,
+  "threads_each": 1,
+  "resources": "One dedicated shared GPU for neural actors; native teacher CPU-only. Training anchor has no inference-time teacher call. No equal FLOP/Hash or equal simulations claim.",
+  "outcome_dependence": "Freeze selected actor and evaluation hashes before first match, then finish all three screens regardless of earlier outcomes. Native seed/identity/legal/private-history/terminal/clock replay and raw archives required. No final70%gate or promotion from a development screen."
+}

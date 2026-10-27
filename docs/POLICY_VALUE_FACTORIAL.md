@@ -67,3 +67,25 @@ warm policy, though its interval includes parity. The final RL-policy/RL-value
 contrast continues on the same original layouts and settings; conclusions
 about cross-function effects wait for its completion. Evidence:
 `results/20261027-factorial-warm-policy-rl-value{,-audit}.json`.
+
+## Completed three-profile study
+
+The final RL-policy/RL-value profile completed16W/1D/47L,25.78125%score with
+paired bootstrap95%[14.0625%,38.28125%]. All3,108moves/clocks are clean. The
+study closes with9,064audited moves across192games; no profile is promoted.
+
+The same32physical layout seeds and both candidate colours are verified across
+all three profiles. Paired between-profile bootstrap comparisons preserve that
+correlation. RL/RL minus RL/Warm has mean-10.15625percentage points with
+unadjusted95%[-26.5625,+5.46875]; RL/RL minus Warm/RL is-13.28125points with
+[-28.125,+1.5625]. These intervals include zero, so the smaller combined score
+does not establish an additional interaction penalty beyond either mixed
+profile. Nor does this finite-clock study provide an equal-work gradient
+decomposition or an equilibrium result. It supports reconsidering both learned
+functions, rather than a critic-only explanation.
+
+Evidence: `results/20261027-factorial-rl-policy-rl-value{,-audit}.json` and
+`results/20261027-policy-value-factorial-summary.json`, including pair-level
+scores and the frozen bootstrap seed. The subsequent
+[legal-policy-anchor study](LEGAL_POLICY_ANCHOR.md) was frozen only after all
+three profiles and the retention diagnostic completed.

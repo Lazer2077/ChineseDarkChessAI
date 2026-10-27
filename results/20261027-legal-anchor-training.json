@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Search-visit/terminal-return update with optional legal-action warm-policy KL; no equilibrium, adaptive-Kickstarting or strength guarantee.",
+  "plan_sha256": "1537f5fafa7ecaeb274ebe01a26228dcf57537ee3757aab82b42ddbcff13ca27",
+  "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "observer_masks_sha256": "f53db5efe1c47f1a1acbc560d7b110e74c482d10cf4c2b839970d28705470289",
+  "policy_anchor_lambda": 1.0,
+  "training_games": 256,
+  "training_positions": 13924,
+  "selection_games": 32,
+  "selection_positions": 1758,
+  "epochs": 4,
+  "updates": 436,
+  "selected_checkpoint": {
+    "epoch": 4,
+    "validation": {
+      "loss": 4.810343468066949,
+      "search_policy_ce": 4.054421721247722,
+      "terminal_value_mse": 0.7559217468192282
+    },
+    "npz_sha256": "c09575bbee3d4d9f2c4dd6e6818b569f156b20973bd09b402e5f7b51eaf7cffb",
+    "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+    "phase_experts": false,
+    "channels": 64,
+    "blocks": 15
+  },
+  "initial_validation": {
+    "loss": 6.333571068677123,
+    "search_policy_ce": 5.574250799818301,
+    "terminal_value_mse": 0.7593202688588218
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 109,
+      "train_policy_ce": 4.632676903614996,
+      "train_terminal_mse": 0.8350892108221638,
+      "train_legal_teacher_kl": 0.1388946361957491,
+      "validation": {
+        "loss": 5.110973350187899,
+        "search_policy_ce": 4.361181199111097,
+        "terminal_value_mse": 0.7497921510768019
+      },
+      "seconds": 4.168797371909022
+    },
+    {
+      "epoch": 2,
+      "updates": 218,
+      "train_policy_ce": 4.198662409049246,
+      "train_terminal_mse": 0.7739207520460267,
+      "train_legal_teacher_kl": 0.2331858987319884,
+      "validation": {
+        "loss": 4.9270002262879755,
+        "search_policy_ce": 4.176221372733743,
+        "terminal_value_mse": 0.750778853554232
+      },
+      "seconds": 10.200937984511256
+    },
+    {
+      "epoch": 3,
+      "updates": 327,
+      "train_policy_ce": 4.056842447783176,
+      "train_terminal_mse": 0.7443984189070494,
+      "train_legal_teacher_kl": 0.26187592462300224,
+      "validation": {
+        "loss": 4.8589224478495305,
+        "search_policy_ce": 4.10402414655028,
+        "terminal_value_mse": 0.7548983012992503
+      },
+      "seconds": 16.235449463129044
+    },
+    {
+      "epoch": 4,
+      "updates": 436,
+      "train_policy_ce": 3.9848351703654217,
+      "train_terminal_mse": 0.7176817472862533,
+      "train_legal_teacher_kl": 0.2721109703435736,
+      "validation": {
+        "loss": 4.810343468066949,
+        "search_policy_ce": 4.054421721247722,
+        "terminal_value_mse": 0.7559217468192282
+      },
+      "seconds": 22.23463058285415
+    }
+  ],
+  "limitations": [
+    "Frozen warm-policy legal KL added to search-visit/terminal-return fitting; not full adaptive Kickstarting.",
+    "One training seed; same-data/selection comparison only, not independent generalization or a strength result.",
+    "Actual paired matches against unanchored/warm/teacher controls remain required before any promotion."
+  ]
+}

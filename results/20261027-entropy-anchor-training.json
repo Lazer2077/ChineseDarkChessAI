@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Search-visit/terminal-return update with optional legal-action warm-policy KL; no equilibrium, adaptive-Kickstarting or strength guarantee.",
+  "plan_sha256": "ca26ece6f4f0a1ad96e1d4b4ff345370111bfbbf49e4ff4fe0110fe5fe6b7013",
+  "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "observer_masks_sha256": "f53db5efe1c47f1a1acbc560d7b110e74c482d10cf4c2b839970d28705470289",
+  "policy_anchor_lambda": 1.0,
+  "training_games": 256,
+  "training_positions": 13924,
+  "selection_games": 32,
+  "selection_positions": 1758,
+  "epochs": 4,
+  "updates": 436,
+  "selected_checkpoint": {
+    "epoch": 4,
+    "validation": {
+      "loss": 4.87818631423601,
+      "search_policy_ce": 4.118667464128633,
+      "terminal_value_mse": 0.7595188501073774
+    },
+    "npz_sha256": "567043dc673a055bd7ea064435dbdc3571d894aba4506ca8aa763c269810064e",
+    "input_contract": "cdca-board-private-inventory-nocap-canonical-fullpublic-v1",
+    "phase_experts": false,
+    "channels": 64,
+    "blocks": 15
+  },
+  "initial_validation": {
+    "loss": 6.333571068677123,
+    "search_policy_ce": 5.574250799818301,
+    "terminal_value_mse": 0.7593202688588218
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 109,
+      "train_policy_ce": 4.668929258196221,
+      "train_terminal_mse": 0.8350298404179918,
+      "train_weighted_legal_teacher_kl": 0.16000127492708505,
+      "validation": {
+        "loss": 5.178584134775356,
+        "search_policy_ce": 4.427703161037555,
+        "terminal_value_mse": 0.7508809737378013
+      },
+      "seconds": 9.197739519178867
+    },
+    {
+      "epoch": 2,
+      "updates": 218,
+      "train_policy_ce": 4.254791789954275,
+      "train_terminal_mse": 0.7745712146235759,
+      "train_weighted_legal_teacher_kl": 0.2545953802004589,
+      "validation": {
+        "loss": 4.994674689994061,
+        "search_policy_ce": 4.242225767184715,
+        "terminal_value_mse": 0.7524489228093448
+      },
+      "seconds": 24.100481750443578
+    },
+    {
+      "epoch": 3,
+      "updates": 327,
+      "train_policy_ce": 4.114647498476802,
+      "train_terminal_mse": 0.7450872914984937,
+      "train_weighted_legal_teacher_kl": 0.2786624278874275,
+      "validation": {
+        "loss": 4.929216886655804,
+        "search_policy_ce": 4.170801391079499,
+        "terminal_value_mse": 0.7584154955763052
+      },
+      "seconds": 38.63194018229842
+    },
+    {
+      "epoch": 4,
+      "updates": 436,
+      "train_policy_ce": 4.04224071650142,
+      "train_terminal_mse": 0.7184366931760493,
+      "train_weighted_legal_teacher_kl": 0.2827923423392579,
+      "validation": {
+        "loss": 4.87818631423601,
+        "search_policy_ce": 4.118667464128633,
+        "terminal_value_mse": 0.7595188501073774
+      },
+      "seconds": 54.66516457311809
+    }
+  ],
+  "limitations": [
+    "Frozen warm-policy legal KL added to search-visit/terminal-return fitting; not full adaptive Kickstarting.",
+    "One training seed; same-data/selection comparison only, not independent generalization or a strength result.",
+    "Actual paired matches against unanchored/warm/teacher controls remain required before any promotion."
+  ],
+  "entropy_weight_mode": "mean-matched-observer-entropy",
+  "coefficient_mean": 1.0,
+  "coefficient_min": 0.0,
+  "coefficient_max": 2.706577777862549,
+  "uncertainty_arrays_sha256": "152f694c7339838bd3cebbd4fd250279384fd862e8030637104a4fd6cd448a46",
+  "coefficient_definition": "One global TRAIN-corpus normalization; no per-minibatch renormalization. No test/selection inputs used for coefficients."
+}

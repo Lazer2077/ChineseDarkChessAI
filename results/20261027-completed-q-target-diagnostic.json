@@ -1,0 +1,1032 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Same three repeatedly reused TRAIN roots, unchanged warm observer-only PUCT256/LeafBatch8, unnoised legal priors, root-actor completed Q with Eq33 mixed-value completion and Eq11 target. CPU only, no fitting or altered acting/search. Its own estimated-Q objective increase is algebraic, not playing-strength evidence. Independent original NNUE/PVS depth4 forced-action scores reset history and are only a limited proxy, not truth/equilibrium/full-game regret.",
+  "plan_sha256": "73292b9f922c46ac73dd47950ceee6a583d3914b93cb9f53219504698635e5ad",
+  "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "cases": [
+    {
+      "game": 0,
+      "ply": 0,
+      "phase": "opening",
+      "root_network_value": 0.07754099369049072,
+      "completed_simulations": 256,
+      "visited_actions": 12,
+      "legal_actions": 44,
+      "scale": 88.5,
+      "mixed_completion_value": 0.07108049255577,
+      "own_completed_q_objective_gain": 0.004746263375447696,
+      "target_to_prior_kl": 0.1804809128014948,
+      "policy_entropy": {
+        "prior": 0.6787913908479493,
+        "visits": 1.3845640904514103,
+        "completed_q": 0.37091660498512413
+      },
+      "expected_teacher_history_reset_depth_proxy_cp": {
+        "prior": 78.18316760809553,
+        "visits": 71.42578125,
+        "completed_q": 78.75533522740584
+      },
+      "selected_by_original_search": "a3a4",
+      "actions": [
+        {
+          "move": "a3a4",
+          "prior": 0.6081764039721635,
+          "visits": 127,
+          "root_q": 0.07791258980553069,
+          "completed_q": 0.07791258980553069,
+          "target": 0.87811326465578,
+          "teacher_proxy_cp": 79
+        },
+        {
+          "move": "c3c4",
+          "prior": 0.00012081392642523063,
+          "visits": 7,
+          "root_q": 0.03379316920680659,
+          "completed_q": 0.03379316920680659,
+          "target": 3.5148380533630397e-06,
+          "teacher_proxy_cp": 54
+        },
+        {
+          "move": "e3e4",
+          "prior": 8.515083891449794e-06,
+          "visits": 7,
+          "root_q": 0.031600753643683026,
+          "completed_q": 0.031600753643683026,
+          "target": 2.0403826611819477e-07,
+          "teacher_proxy_cp": 34
+        },
+        {
+          "move": "g3g4",
+          "prior": 0.0002604034433874669,
+          "visits": 16,
+          "root_q": 0.03101556035107933,
+          "completed_q": 0.03101556035107933,
+          "target": 5.9248515824125564e-06,
+          "teacher_proxy_cp": 51
+        },
+        {
+          "move": "i3i4",
+          "prior": 0.39077826907973084,
+          "visits": 79,
+          "root_q": 0.06059580425661104,
+          "completed_q": 0.06059580425661104,
+          "target": 0.1218651860846685,
+          "teacher_proxy_cp": 77
+        },
+        {
+          "move": "b2b3",
+          "prior": 1.921333488727705e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.5154152201054415e-09,
+          "teacher_proxy_cp": -73
+        },
+        {
+          "move": "b2b4",
+          "prior": 4.1786528411779426e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 3.295832895335192e-10,
+          "teacher_proxy_cp": -45
+        },
+        {
+          "move": "b2b5",
+          "prior": 5.3073020979457854e-08,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 4.1860335148014637e-08,
+          "teacher_proxy_cp": -5
+        },
+        {
+          "move": "b2b6",
+          "prior": 4.275465098004109e-07,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 3.3721917202595924e-07,
+          "teacher_proxy_cp": 5
+        },
+        {
+          "move": "b2b9",
+          "prior": 0.00019899557261651685,
+          "visits": 12,
+          "root_q": 0.03440393185398231,
+          "completed_q": 0.03440393185398231,
+          "target": 6.110917697834621e-06,
+          "teacher_proxy_cp": 34
+        },
+        {
+          "move": "b2b1",
+          "prior": 2.1123362751381726e-11,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.66606503249207e-11,
+          "teacher_proxy_cp": -96
+        },
+        {
+          "move": "b2a2",
+          "prior": 2.2192911089551237e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.750423621972226e-10,
+          "teacher_proxy_cp": -82
+        },
+        {
+          "move": "b2c2",
+          "prior": 2.080231322407295e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.6407428620856464e-10,
+          "teacher_proxy_cp": -49
+        },
+        {
+          "move": "b2d2",
+          "prior": 2.5331484768157173e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.997972647161562e-09,
+          "teacher_proxy_cp": -42
+        },
+        {
+          "move": "b2e2",
+          "prior": 5.67258968487453e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 4.474147146399047e-09,
+          "teacher_proxy_cp": -67
+        },
+        {
+          "move": "b2f2",
+          "prior": 3.3697690565510497e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 2.6578412058592685e-09,
+          "teacher_proxy_cp": -49
+        },
+        {
+          "move": "b2g2",
+          "prior": 6.361116830808457e-11,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 5.017209827878148e-11,
+          "teacher_proxy_cp": -42
+        },
+        {
+          "move": "h2h3",
+          "prior": 2.0027238274589923e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.579610300660987e-09,
+          "teacher_proxy_cp": -75
+        },
+        {
+          "move": "h2h4",
+          "prior": 1.2099769621818996e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 9.543462991849526e-11,
+          "teacher_proxy_cp": -49
+        },
+        {
+          "move": "h2h5",
+          "prior": 4.3824868353394144e-08,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 3.456603078616463e-08,
+          "teacher_proxy_cp": -7
+        },
+        {
+          "move": "h2h6",
+          "prior": 2.3010663669741393e-07,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.8149223002897134e-07,
+          "teacher_proxy_cp": -2
+        },
+        {
+          "move": "h2h9",
+          "prior": 8.259688518336234e-05,
+          "visits": 1,
+          "root_q": -0.03800750896334648,
+          "completed_q": -0.03800750896334648,
+          "target": 4.179155189985894e-09,
+          "teacher_proxy_cp": 34
+        },
+        {
+          "move": "h2h1",
+          "prior": 7.023941348907661e-12,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 5.540000050855911e-12,
+          "teacher_proxy_cp": -99
+        },
+        {
+          "move": "h2g2",
+          "prior": 2.567841383758057e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 2.0253360171952347e-10,
+          "teacher_proxy_cp": -51
+        },
+        {
+          "move": "h2f2",
+          "prior": 4.092817440958349e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 3.228131857134514e-09,
+          "teacher_proxy_cp": -48
+        },
+        {
+          "move": "h2e2",
+          "prior": 1.7563807679817775e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.385311901195557e-10,
+          "teacher_proxy_cp": -70
+        },
+        {
+          "move": "h2d2",
+          "prior": 9.789137509167414e-09,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 7.720995891723488e-09,
+          "teacher_proxy_cp": -53
+        },
+        {
+          "move": "h2c2",
+          "prior": 8.232430124487317e-11,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 6.493172571183274e-11,
+          "teacher_proxy_cp": -52
+        },
+        {
+          "move": "h2i2",
+          "prior": 2.5764845511643148e-11,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 2.0321531509797653e-11,
+          "teacher_proxy_cp": -87
+        },
+        {
+          "move": "a0a1",
+          "prior": 1.2235996254127557e-11,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 9.650909155253897e-12,
+          "teacher_proxy_cp": -102
+        },
+        {
+          "move": "a0a2",
+          "prior": 1.8948301045070746e-11,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.4945111802456852e-11,
+          "teacher_proxy_cp": -107
+        },
+        {
+          "move": "b0a2",
+          "prior": 2.1746091135086685e-06,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.7151815485052826e-06,
+          "teacher_proxy_cp": 5
+        },
+        {
+          "move": "b0c2",
+          "prior": 7.665687988525493e-05,
+          "visits": 1,
+          "root_q": -0.014482286758720875,
+          "completed_q": -0.014482286758720875,
+          "target": 3.110780249570617e-08,
+          "teacher_proxy_cp": 50
+        },
+        {
+          "move": "c0a2",
+          "prior": 1.0304877769250252e-06,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 8.12777620567525e-07,
+          "teacher_proxy_cp": 3
+        },
+        {
+          "move": "c0e2",
+          "prior": 2.7993311883652833e-05,
+          "visits": 1,
+          "root_q": -0.09022210538387299,
+          "completed_q": -0.09022210538387299,
+          "target": 1.394144787045796e-11,
+          "teacher_proxy_cp": 37
+        },
+        {
+          "move": "d0e1",
+          "prior": 1.281643489237797e-06,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.0108719083568004e-06,
+          "teacher_proxy_cp": 39
+        },
+        {
+          "move": "e0e1",
+          "prior": 6.223989806400736e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 4.909053497342936e-10,
+          "teacher_proxy_cp": -128
+        },
+        {
+          "move": "f0e1",
+          "prior": 3.442656320560025e-06,
+          "visits": 3,
+          "root_q": 0.041103653609752655,
+          "completed_q": 0.041103653609752655,
+          "target": 1.9127618829838426e-07,
+          "teacher_proxy_cp": 39
+        },
+        {
+          "move": "g0e2",
+          "prior": 1.6547285465300008e-05,
+          "visits": 1,
+          "root_q": -0.11013863980770111,
+          "completed_q": -0.11013863980770111,
+          "target": 1.4141228087002962e-12,
+          "teacher_proxy_cp": 42
+        },
+        {
+          "move": "g0i2",
+          "prior": 3.7513274192712954e-07,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 2.958788102177435e-07,
+          "teacher_proxy_cp": 4
+        },
+        {
+          "move": "h0g2",
+          "prior": 0.00024230269883820907,
+          "visits": 1,
+          "root_q": -0.08330921083688736,
+          "completed_q": -0.08330921083688736,
+          "target": 2.2248942616656894e-10,
+          "teacher_proxy_cp": 49
+        },
+        {
+          "move": "h0i2",
+          "prior": 1.410902871273771e-06,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.1128227857177388e-06,
+          "teacher_proxy_cp": 1
+        },
+        {
+          "move": "i0i1",
+          "prior": 2.3195239842318406e-10,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 1.8294803945941736e-10,
+          "teacher_proxy_cp": -91
+        },
+        {
+          "move": "i0i2",
+          "prior": 9.039930430563573e-12,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.07108049255577,
+          "target": 7.130073068284451e-12,
+          "teacher_proxy_cp": -98
+        }
+      ]
+    },
+    {
+      "game": 4,
+      "ply": 75,
+      "phase": "uncertain-last-own-dark",
+      "root_network_value": 0.9934679269790649,
+      "completed_simulations": 256,
+      "visited_actions": 8,
+      "legal_actions": 30,
+      "scale": 47.0,
+      "mixed_completion_value": 0.9966195085695593,
+      "own_completed_q_objective_gain": 7.493617620333243e-06,
+      "target_to_prior_kl": 0.00017635660994151582,
+      "policy_entropy": {
+        "prior": 2.4547674017433083,
+        "visits": 2.062856422521676,
+        "completed_q": 2.4610401344617205
+      },
+      "expected_teacher_history_reset_depth_proxy_cp": {
+        "prior": 2370.781833433958,
+        "visits": 2354.95703125,
+        "completed_q": 2370.1568247756654
+      },
+      "selected_by_original_search": "g4h4",
+      "actions": [
+        {
+          "move": "e9e8",
+          "prior": 0.0021643747421996777,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.002162990096770229,
+          "teacher_proxy_cp": 2218
+        },
+        {
+          "move": "e9d9",
+          "prior": 0.022379604832501926,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.022365287617954848,
+          "teacher_proxy_cp": 2404
+        },
+        {
+          "move": "e9f9",
+          "prior": 0.012829448146834097,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.01282124058628897,
+          "teacher_proxy_cp": 2368
+        },
+        {
+          "move": "a8b9",
+          "prior": 0.010548144459929418,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.010541396349386955,
+          "teacher_proxy_cp": 2318
+        },
+        {
+          "move": "b7b8",
+          "prior": 0.00036651671644234837,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.00036628223962724567,
+          "teacher_proxy_cp": 2222
+        },
+        {
+          "move": "b7b9",
+          "prior": 7.755292907914727e-05,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 7.75033150697537e-05,
+          "teacher_proxy_cp": 2237
+        },
+        {
+          "move": "b7b6",
+          "prior": 0.008544886049070237,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.00853941951077518,
+          "teacher_proxy_cp": 2547
+        },
+        {
+          "move": "b7b5",
+          "prior": 0.0020147964432965073,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.002013507489663809,
+          "teacher_proxy_cp": 1913
+        },
+        {
+          "move": "b7b4",
+          "prior": 0.017077136082858806,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.017066211090081808,
+          "teacher_proxy_cp": 2589
+        },
+        {
+          "move": "b7b3",
+          "prior": 0.015519517014854553,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.01550958849929619,
+          "teacher_proxy_cp": 2337
+        },
+        {
+          "move": "b7b2",
+          "prior": 0.024350912487559766,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.024335334141064716,
+          "teacher_proxy_cp": 2363
+        },
+        {
+          "move": "b7b1",
+          "prior": 0.02529820776151081,
+          "visits": 21,
+          "root_q": 0.9971057687486921,
+          "completed_q": 0.9971057687486921,
+          "target": 0.025866477713515943,
+          "teacher_proxy_cp": 2338
+        },
+        {
+          "move": "b7b0",
+          "prior": 0.04084634862598271,
+          "visits": 32,
+          "root_q": 0.9971144702285528,
+          "completed_q": 0.9971144702285528,
+          "target": 0.041780957845112106,
+          "teacher_proxy_cp": 2305
+        },
+        {
+          "move": "b7a7",
+          "prior": 8.889877072655853e-05,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 8.884189828475318e-05,
+          "teacher_proxy_cp": 2190
+        },
+        {
+          "move": "c7c6",
+          "prior": 0.019815134198690028,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.01980245758845837,
+          "teacher_proxy_cp": 2180
+        },
+        {
+          "move": "i7g9",
+          "prior": 0.011067651500431501,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.011060571038455105,
+          "teacher_proxy_cp": 2382
+        },
+        {
+          "move": "i7g5",
+          "prior": 0.09273258647286778,
+          "visits": 32,
+          "root_q": 0.9968214202672243,
+          "completed_q": 0.9968214202672243,
+          "target": 0.09355690288208966,
+          "teacher_proxy_cp": 2256
+        },
+        {
+          "move": "a5a4",
+          "prior": 0.05566978032977459,
+          "visits": 32,
+          "root_q": 0.9967721812427044,
+          "completed_q": 0.9967721812427044,
+          "target": 0.0560348110398233,
+          "teacher_proxy_cp": 2498
+        },
+        {
+          "move": "c5c4",
+          "prior": 0.21374481804659207,
+          "visits": 33,
+          "root_q": 0.9960626634684476,
+          "completed_q": 0.9960626634684476,
+          "target": 0.20809010773159514,
+          "teacher_proxy_cp": 2411
+        },
+        {
+          "move": "f4e6",
+          "prior": 0.007299173518632525,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.007294503917267148,
+          "teacher_proxy_cp": 2239
+        },
+        {
+          "move": "f4g6",
+          "prior": 0.0001546994020888188,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.0001546004340978023,
+          "teacher_proxy_cp": 1826
+        },
+        {
+          "move": "f4e2",
+          "prior": 0.01852408491597806,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.018512234246584464,
+          "teacher_proxy_cp": 2525
+        },
+        {
+          "move": "f4g2",
+          "prior": 0.005615192740757212,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.005611600455737257,
+          "teacher_proxy_cp": 1520
+        },
+        {
+          "move": "g4h4",
+          "prior": 0.24578873137323218,
+          "visits": 44,
+          "root_q": 0.9965965327891436,
+          "completed_q": 0.9965965327891436,
+          "target": 0.24536638467525643,
+          "teacher_proxy_cp": 2411
+        },
+        {
+          "move": "g3g2",
+          "prior": 0.0002407162111387238,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.00024056221442315945,
+          "teacher_proxy_cp": 2194
+        },
+        {
+          "move": "g3g1",
+          "prior": 0.0001362834225499044,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.0001361962360685322,
+          "teacher_proxy_cp": 2441
+        },
+        {
+          "move": "g3g0",
+          "prior": 0.01827211407251781,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.018260424599921544,
+          "teacher_proxy_cp": 2458
+        },
+        {
+          "move": "g3f3",
+          "prior": 0.09040992638369276,
+          "visits": 32,
+          "root_q": 0.9975036047399044,
+          "completed_q": 0.9975036047399044,
+          "target": 0.09418553729855139,
+          "teacher_proxy_cp": 2298
+        },
+        {
+          "move": "g3h3",
+          "prior": 0.037612238730671196,
+          "visits": 30,
+          "root_q": 0.996483157078425,
+          "completed_q": 0.996483157078425,
+          "target": 0.03734806215873917,
+          "teacher_proxy_cp": 2290
+        },
+        {
+          "move": "g3i3",
+          "prior": 0.0008105236175382747,
+          "visits": 0,
+          "root_q": null,
+          "completed_q": 0.9966195085695593,
+          "target": 0.0008100050900390388,
+          "teacher_proxy_cp": 2299
+        }
+      ]
+    },
+    {
+      "game": 1,
+      "ply": 65,
+      "phase": "fully-public",
+      "root_network_value": -0.33324041962623596,
+      "completed_simulations": 256,
+      "visited_actions": 31,
+      "legal_actions": 31,
+      "scale": 77.5,
+      "mixed_completion_value": -0.5428888598713838,
+      "own_completed_q_objective_gain": 0.6060640270995251,
+      "target_to_prior_kl": 6.203247350280184,
+      "policy_entropy": {
+        "prior": 2.7702239852833395,
+        "visits": 2.2807757287152324,
+        "completed_q": 3.224361140504846e-11
+      },
+      "expected_teacher_history_reset_depth_proxy_cp": {
+        "prior": -242.79846232705347,
+        "visits": -302.61328125,
+        "completed_q": -404.9999999995578
+      },
+      "selected_by_original_search": "a8a7",
+      "actions": [
+        {
+          "move": "d9d8",
+          "prior": 0.015489611394539918,
+          "visits": 1,
+          "root_q": -0.6184219121932983,
+          "completed_q": -0.6184219121932983,
+          "target": 9.344733393083067e-23,
+          "teacher_proxy_cp": -110
+        },
+        {
+          "move": "d9e9",
+          "prior": 0.028255837955736815,
+          "visits": 5,
+          "root_q": -0.4975878417491913,
+          "completed_q": -0.4975878417491913,
+          "target": 1.9890525672717732e-18,
+          "teacher_proxy_cp": -646
+        },
+        {
+          "move": "a8a7",
+          "prior": 0.002022851052967965,
+          "visits": 105,
+          "root_q": 0.06235622800886631,
+          "completed_q": 0.06235622800886631,
+          "target": 0.9999999999988693,
+          "teacher_proxy_cp": -405
+        },
+        {
+          "move": "e8e7",
+          "prior": 0.04729503734642255,
+          "visits": 6,
+          "root_q": -0.4918317993481954,
+          "completed_q": -0.4918317993481954,
+          "target": 5.2010316303648424e-18,
+          "teacher_proxy_cp": -453
+        },
+        {
+          "move": "c7b8",
+          "prior": 0.0018423045945441883,
+          "visits": 1,
+          "root_q": -0.7283601760864258,
+          "completed_q": -0.7283601760864258,
+          "target": 2.2161812337439603e-27,
+          "teacher_proxy_cp": -610
+        },
+        {
+          "move": "c7d8",
+          "prior": 0.08356182472072296,
+          "visits": 14,
+          "root_q": -0.4867541013019426,
+          "completed_q": -0.4867541013019426,
+          "target": 1.3620281890835623e-17,
+          "teacher_proxy_cp": -564
+        },
+        {
+          "move": "c7b6",
+          "prior": 0.0032144247661732846,
+          "visits": 1,
+          "root_q": -0.7719662189483643,
+          "completed_q": -0.7719662189483643,
+          "target": 1.3172331731329024e-28,
+          "teacher_proxy_cp": -630
+        },
+        {
+          "move": "c7d6",
+          "prior": 0.1546756639609603,
+          "visits": 19,
+          "root_q": -0.5154282787912771,
+          "completed_q": -0.5154282787912771,
+          "target": 2.7320572647744888e-18,
+          "teacher_proxy_cp": -178
+        },
+        {
+          "move": "f7f8",
+          "prior": 0.05750924927937445,
+          "visits": 4,
+          "root_q": -0.5885712802410126,
+          "completed_q": -0.5885712802410126,
+          "target": 3.5072874300065245e-21,
+          "teacher_proxy_cp": 12
+        },
+        {
+          "move": "f7f9",
+          "prior": 0.174824603713908,
+          "visits": 22,
+          "root_q": -0.46735901791941037,
+          "completed_q": -0.46735901791941037,
+          "target": 1.2810822219697447e-16,
+          "teacher_proxy_cp": -11
+        },
+        {
+          "move": "f7f6",
+          "prior": 0.0057646549905882695,
+          "visits": 1,
+          "root_q": -0.7805389165878296,
+          "completed_q": -0.7805389165878296,
+          "target": 1.2156103244659568e-28,
+          "teacher_proxy_cp": -1009
+        },
+        {
+          "move": "f7f5",
+          "prior": 0.0008398293083032799,
+          "visits": 1,
+          "root_q": -0.9073013067245483,
+          "completed_q": -0.9073013067245483,
+          "target": 9.586632489401026e-34,
+          "teacher_proxy_cp": -1008
+        },
+        {
+          "move": "f7f4",
+          "prior": 0.011633490039703747,
+          "visits": 1,
+          "root_q": -0.6661806702613831,
+          "completed_q": -0.6661806702613831,
+          "target": 1.732928406781289e-24,
+          "teacher_proxy_cp": 223
+        },
+        {
+          "move": "f7f3",
+          "prior": 0.013540217525502204,
+          "visits": 1,
+          "root_q": -0.8990471363067627,
+          "completed_q": -0.8990471363067627,
+          "target": 2.9303405514357385e-32,
+          "teacher_proxy_cp": -963
+        },
+        {
+          "move": "f7f2",
+          "prior": 0.001920097931092441,
+          "visits": 1,
+          "root_q": -0.9791932702064514,
+          "completed_q": -0.9791932702064514,
+          "target": 8.338184425990362e-36,
+          "teacher_proxy_cp": -1057
+        },
+        {
+          "move": "f7f1",
+          "prior": 0.026482839845401902,
+          "visits": 1,
+          "root_q": -0.9011427164077759,
+          "completed_q": -0.9011427164077759,
+          "target": 4.872191447438173e-32,
+          "teacher_proxy_cp": -814
+        },
+        {
+          "move": "f7e7",
+          "prior": 0.10369054497678708,
+          "visits": 18,
+          "root_q": -0.4839676345388095,
+          "completed_q": -0.4839676345388095,
+          "target": 2.0975085574198647e-17,
+          "teacher_proxy_cp": 121
+        },
+        {
+          "move": "f7d7",
+          "prior": 0.038326705305842104,
+          "visits": 6,
+          "root_q": -0.48753514885902405,
+          "completed_q": -0.48753514885902405,
+          "target": 5.880189313955833e-18,
+          "teacher_proxy_cp": -224
+        },
+        {
+          "move": "g7e9",
+          "prior": 0.005711835855336886,
+          "visits": 1,
+          "root_q": -0.6919381618499756,
+          "completed_q": -0.6919381618499756,
+          "target": 1.155860016513088e-25,
+          "teacher_proxy_cp": -114
+        },
+        {
+          "move": "g7i9",
+          "prior": 0.002170881558949168,
+          "visits": 1,
+          "root_q": -0.7314139604568481,
+          "completed_q": -0.7314139604568481,
+          "target": 2.061086579459684e-27,
+          "teacher_proxy_cp": -332
+        },
+        {
+          "move": "g7e5",
+          "prior": 0.0568812720513375,
+          "visits": 3,
+          "root_q": -0.6810519297917684,
+          "completed_q": -0.6810519297917684,
+          "target": 2.6761206378432756e-24,
+          "teacher_proxy_cp": -575
+        },
+        {
+          "move": "g7i5",
+          "prior": 0.04519388680977038,
+          "visits": 3,
+          "root_q": -0.6826810836791992,
+          "completed_q": -0.6826810836791992,
+          "target": 1.874054897136631e-24,
+          "teacher_proxy_cp": -275
+        },
+        {
+          "move": "a0a1",
+          "prior": 0.014817734362678489,
+          "visits": 2,
+          "root_q": -0.4957956224679947,
+          "completed_q": -0.4957956224679947,
+          "target": 1.1985111335704094e-18,
+          "teacher_proxy_cp": -608
+        },
+        {
+          "move": "a0a2",
+          "prior": 0.024820927776046803,
+          "visits": 10,
+          "root_q": -0.40717634595930574,
+          "completed_q": -0.40717634595930574,
+          "target": 1.9293461110894753e-15,
+          "teacher_proxy_cp": -565
+        },
+        {
+          "move": "a0a3",
+          "prior": 0.012529643396409112,
+          "visits": 1,
+          "root_q": -0.6621971130371094,
+          "completed_q": -0.6621971130371094,
+          "target": 2.541482775653117e-24,
+          "teacher_proxy_cp": -565
+        },
+        {
+          "move": "a0a4",
+          "prior": 0.011583716339114454,
+          "visits": 1,
+          "root_q": -0.610146164894104,
+          "completed_q": -0.610146164894104,
+          "target": 1.3271436686820588e-22,
+          "teacher_proxy_cp": 175
+        },
+        {
+          "move": "a0a5",
+          "prior": 0.017111396246012663,
+          "visits": 22,
+          "root_q": -0.32016650993715634,
+          "completed_q": -0.32016650993715634,
+          "target": 1.1283379227412646e-12,
+          "teacher_proxy_cp": -13
+        },
+        {
+          "move": "a0b0",
+          "prior": 0.022323407467588118,
+          "visits": 1,
+          "root_q": -0.5987657308578491,
+          "completed_q": -0.5987657308578491,
+          "target": 6.1783305362486725e-22,
+          "teacher_proxy_cp": -52
+        },
+        {
+          "move": "a0c0",
+          "prior": 0.011759111287453333,
+          "visits": 1,
+          "root_q": -0.6083902716636658,
+          "completed_q": -0.6083902716636658,
+          "target": 1.5436330499382708e-22,
+          "teacher_proxy_cp": -494
+        },
+        {
+          "move": "a0d0",
+          "prior": 0.002930699426093922,
+          "visits": 1,
+          "root_q": -0.7987837195396423,
+          "completed_q": -0.7987837195396423,
+          "target": 1.5028374276265142e-29,
+          "teacher_proxy_cp": -836
+        },
+        {
+          "move": "a0e0",
+          "prior": 0.0012756987146377234,
+          "visits": 1,
+          "root_q": -0.838516116142273,
+          "completed_q": -0.838516116142273,
+          "target": 3.008727772357925e-31,
+          "teacher_proxy_cp": -460
+        }
+      ]
+    }
+  ]
+}

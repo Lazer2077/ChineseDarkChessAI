@@ -117,3 +117,10 @@ with no technical games or ambiguous clock margins. Thus improvement over the
 unanchored RL1does not establish improvement over the original warm model;
 this screen shows none. The native-teacher contrast continues unchanged.
 Evidence: `results/20261027-legal-anchor-vs-warm{,-audit}.json`.
+
+The final teacher contrast completed0W/0D/64L, with all2,524moves/clocks clean.
+The whole frozen campaign closes with8,766audited moves. The anchor improves
+the degraded RL1comparison but neither establishes warm-model superiority nor
+progress against the native teacher. No model is promoted. Evidence:
+`results/20261027-legal-anchor-vs-teacher{,-audit}.json` and
+`results/20261027-legal-anchor-summary.json`.

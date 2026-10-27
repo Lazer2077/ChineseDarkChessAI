@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Same-seed technical control reproduction, not new strength evidence.",
+  "model_sha256": "c09575bbee3d4d9f2c4dd6e6818b569f156b20973bd09b402e5f7b51eaf7cffb",
+  "epochs": 4,
+  "updates": 436,
+  "all_selected_arrays_reproduced_bitwise": true
+}

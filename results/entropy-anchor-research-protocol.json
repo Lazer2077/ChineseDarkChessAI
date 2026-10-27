@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "scope": "Single observable-uncertainty weighting ablation following completed constant-anchor campaign; development only.",
+  "coefficient": "lambda_i = normalized_live_type_entropy_i / mean_TRAIN(normalized_live_type_entropy); global mean1, range[0,2.706577741827119]. Teacher query and original losses unchanged.",
+  "training_pipeline_plan_sha256": "9426ba41ec9a453a37e61e63efd6a4666cf5c498a0968c6a0cd7872daa7b3d4a",
+  "checkpoint_selection": "Original unweighted search CE+terminal MSE on separate32selection games; coefficients use TRAIN records only.",
+  "matches": [
+    {
+      "opponent": "constant-unit-anchor-c09575bb",
+      "games": 64,
+      "seed": 9630001
+    },
+    {
+      "opponent": "original-warm-4ff3c675",
+      "games": 64,
+      "seed": 9631001
+    },
+    {
+      "opponent": "unchanged-native-teacher",
+      "games": 64,
+      "seed": 9632001
+    }
+  ],
+  "clock": "10+0.1",
+  "leaf_batch_neural_both": 32,
+  "concurrency": 2,
+  "threads_each": 1,
+  "outcome_dependence": "All three frozen contrasts finish irrespective of earlier outcomes; no checkpoint or coefficient tuning on matches. Source/model hashes freeze after selection and before first game. Native replay/clock audits and raw archives required. No promotion or final70%claim."
+}

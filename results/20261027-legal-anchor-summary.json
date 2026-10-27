@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Constant-unit legal warm-policy anchor: positive64-game development contrast vs degraded RL1, no warm superiority and0/0/64vs unchanged native teacher. Same c09575bbcheckpoint across all three tests. No promotion or final70%claim.",
+  "plan_sha256": "4e172fba3a4fdde78e5e022e2c3820fc5e26239e7a75ff2922d4108f18626e41",
+  "selected_actor_sha256": "c09575bbee3d4d9f2c4dd6e6818b569f156b20973bd09b402e5f7b51eaf7cffb",
+  "contrasts": [
+    {
+      "opponent": "unanchored",
+      "wdl": [
+        43,
+        1,
+        20
+      ],
+      "score": 0.6796875,
+      "paired_bootstrap_95": [
+        0.5546875,
+        0.796875
+      ],
+      "moves": 3243,
+      "report": "results/20261027-legal-anchor-vs-unanchored.json",
+      "audit": "results/20261027-legal-anchor-vs-unanchored-audit.json"
+    },
+    {
+      "opponent": "warm",
+      "wdl": [
+        30,
+        1,
+        33
+      ],
+      "score": 0.4765625,
+      "paired_bootstrap_95": [
+        0.359375,
+        0.59375
+      ],
+      "moves": 2999,
+      "report": "results/20261027-legal-anchor-vs-warm.json",
+      "audit": "results/20261027-legal-anchor-vs-warm-audit.json"
+    },
+    {
+      "opponent": "teacher",
+      "wdl": [
+        0,
+        0,
+        64
+      ],
+      "score": 0.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "moves": 2524,
+      "report": "results/20261027-legal-anchor-vs-teacher.json",
+      "audit": "results/20261027-legal-anchor-vs-teacher-audit.json"
+    }
+  ],
+  "total_audited_moves": 8766
+}

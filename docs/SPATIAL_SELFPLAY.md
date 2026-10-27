@@ -98,3 +98,19 @@ checks the complete optimizer/selection budget and exact played-model digest,
 and retains raw episodes, curves and positive/negative/technical match flags.
 It never restarts a missing or failed dependency. Recipe:
 `results/spatial-relative-rl-archive-queue-plan.json`.
+
+Generation and fitting have now completed, before either strength screen:
+288games/16,009positions, including877private dark captures and446fully public
+positions. The fixed whole-game split contains14,255TRAIN positions from256games
+and1754selection positions from32games. All576episode NPZ/JSON artifacts plus
+the completed generation manifest are bound in the training-plan digests.
+
+All four epochs finish448updates (112per epoch). The fixed selection rule picks
+epoch4, model
+`1f6bf7acb49b23439104318c8bc31c196570f4bb4614164f39f75823ae379a2e`.
+Selection search-policy CE changes5.735707→3.330671and source terminal-return
+MSE0.944537→0.890993. These targets/data differ from teacher-replay pretraining;
+their magnitudes are not directly comparable with its CE/mixed-value MSE. Lower
+self-play selection loss does not prove policy improvement or native strength.
+The parent screen has started with this frozen updated artifact, followed by
+the unchanged teacher; no outcome is yet used to promote or retune the model.

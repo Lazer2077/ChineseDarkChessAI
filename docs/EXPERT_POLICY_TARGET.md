@@ -107,3 +107,11 @@ intervention was frozen before this complete-control result was inspected;
 see `EXPERT_VALUE_DIAGNOSTIC.md` for its distinct computation profile.
 
 Evidence: `results/20261027-expert-policy-target-vs-control{,-audit}.json`.
+
+The original-warm comparison now completes23W4D37L/64,39.0625%score, paired
+bootstrap95%[0.2890625,0.4921875]. All3494moves pass native identity, legality,
+terminal and clock audits with no technical games or ambiguous margins. Thus
+the matched-control improvement does not translate into an established gain
+over warm. The unchanged-native-teacher comparison continues as declared,
+without changing the fitted actor or treating the degraded-control result as
+a promotion. Evidence: `results/20261027-expert-policy-target-vs-warm{,-audit}.json`.

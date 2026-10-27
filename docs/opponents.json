@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-26",
+  "as_of": "2026-10-27",
   "scope": "Publicly discoverable full-board Jieqi AI; ongoing inventory, not proof of exhaustive coverage",
   "opponents": [
     {
@@ -444,6 +444,74 @@
       "status": "discovered via PikaJieQi repository search; pinned source, license, rule profile, independent lineage and model availability audit pending",
       "defeated": false,
       "repository_full_name": "nguyen05566/ck"
+    },
+    {
+      "id": "musesfish-jieqi-mcts-scaffold",
+      "url": "https://github.com/miaosiSari/JieqiMCTS",
+      "commit": "c506cdd03693a0cb34797e2ed8194a372b48528e",
+      "kind": "Muses-family C++ hint engine and MCTS research scaffold",
+      "license": "GPL-3.0 root LICENSE; bundled pybind11 has its own license",
+      "status": "Unchanged C++ sources build and opening44moves match native; public in-check probe15vs2generated moves differs, while depth1hint remains legal. Callable AIBoard4 hints and MCTS scaffold, no validated strict-native playing adapter/complete MCTS controller or independent strength. Not defeated.",
+      "defeated": false,
+      "source_audit": "results/20261027-broader-opponent-source-audit.json",
+      "checked_date": "2026-10-27",
+      "build_evidence": "results/20261027-jieqi-mcts-build-smoke.json",
+      "rule_probe": "results/20261027-jieqi-mcts-public-check-probe.json"
+    },
+    {
+      "id": "rexfang-jieqi-ai-plan",
+      "url": "https://github.com/rexfang0829/jieqi-ai",
+      "commit": "1a04cd57c2d54ff09eff9bc2979722100b0b1c54",
+      "kind": "planning-only repository",
+      "license": "No root license-named file or grant established in inspected README/PROJECT_PLAN",
+      "status": "Planning-only repository at this pin; not a runnable AI and not defeated.",
+      "defeated": false,
+      "source_audit": "results/20261027-broader-opponent-source-audit.json",
+      "checked_date": "2026-10-27"
+    },
+    {
+      "id": "remilia-masked-chinese-chess",
+      "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess",
+      "commit": "9c74229ca325bb5292e36f1ab6892d5081f3dbf6",
+      "kind": "TypeScript game and search candidate",
+      "license": "No explicit grant established in inspected root README/package and source interfaces; API license null",
+      "status": "Full-board game/AI candidate; not built or admitted to fair baseline suite. License and strict observer/rule compatibility unverified.",
+      "defeated": false,
+      "source_audit": "results/20261027-broader-opponent-source-audit.json",
+      "checked_date": "2026-10-27"
+    },
+    {
+      "id": "chess-z-master-xiangqi",
+      "url": "https://github.com/ZJQJZ/chess_z",
+      "commit": "f77b51d353bd0ad50d9d8c75180d8e24eba99404",
+      "kind": "ordinary Xiangqi engine at advertised master",
+      "license": "No explicit grant established in root README/CMake and inspected public headers; API license null",
+      "status": "Advertised default master is ordinary Xiangqi; full-board hidden-piece mode not established. No build/match or defeat.",
+      "defeated": false,
+      "source_audit": "results/20261027-broader-opponent-source-audit.json",
+      "checked_date": "2026-10-27"
+    },
+    {
+      "id": "asun-chess-frontend",
+      "url": "https://github.com/aSun-King-W/chess",
+      "commit": "75c8fcd0797ca53d28b300a86455e9a1d41e152b",
+      "kind": "multi-game frontend and engine integration",
+      "license": "No root LICENSE-named file or project grant established in inspected README; optional Pikafish component is described as GPL-3.0",
+      "status": "Multi-mode frontend/integration candidate; independent strong Jieqi engine not established. No build/match or defeat.",
+      "defeated": false,
+      "source_audit": "results/20261027-broader-opponent-source-audit.json",
+      "checked_date": "2026-10-27"
+    },
+    {
+      "id": "dsh-xiangqi-plugin",
+      "url": "https://github.com/hjfkj/dsh-xiangqi",
+      "commit": "01d12b9fe09a73a7fa8dcbdff7731faf4616d6a5",
+      "kind": "HTML alpha-beta engine/plugin with disclosed privileged search",
+      "license": "MIT root LICENSE and README",
+      "status": "Published default Jieqi mode is incompatible with strict hidden-information and terminal rules; not used as a fair strong baseline and not defeated.",
+      "defeated": false,
+      "source_audit": "results/20261027-broader-opponent-source-audit.json",
+      "checked_date": "2026-10-27"
     }
   ],
   "routine_baseline_preselection": {
@@ -461,5 +529,13 @@
     "date": "2026-10-27",
     "evidence": "results/20261027-opponent-refresh.json",
     "scope": "Targeted discovery and major upstream versions only; original entry-specific audits remain scoped to their pinned commits."
+  },
+  "latest_broader_discovery": {
+    "checked_date": "2026-10-27",
+    "report": "results/20261027-broader-opponent-source-audit.json",
+    "new_entries": 6,
+    "inventory_entries": 46,
+    "new_compatible_strong_baselines_established": 0,
+    "scope": "Six newly pinned source audits and one opening-only C++ build smoke; not an all-entry refresh or exhaustive discovery, and no new defeat/suite-strength claim."
   }
 }

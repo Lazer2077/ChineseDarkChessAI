@@ -1,0 +1,274 @@
+{
+  "schema": 1,
+  "checked_date": "2026-10-27",
+  "scope": "Broader public GitHub repository discovery and six pinned source audits while frozen neural matches continue. Not an exhaustive all-repository audit, complete rule certification, new victory or strength-based suite change.",
+  "queries": [
+    {
+      "query": "jieqi",
+      "returned": 100,
+      "capped": true
+    },
+    {
+      "query": "揭棋 AI",
+      "returned": 35
+    },
+    {
+      "query": "揭棋 引擎",
+      "returned": 10
+    },
+    {
+      "query": "揭棋",
+      "returned": 100,
+      "capped": true
+    }
+  ],
+  "query_semantics_note": "Connected search results are observations, not proof of exhaustive GitHub search semantics. A negative-term exploratory query returned apparent excluded names and is not used to assert exclusion or coverage.",
+  "entries": [
+    {
+      "repository": "miaosiSari/JieqiMCTS",
+      "url": "https://github.com/miaosiSari/JieqiMCTS",
+      "commit": "c506cdd03693a0cb34797e2ed8194a372b48528e",
+      "default_branch": "main",
+      "description": null,
+      "tree_complete": true,
+      "tree_file_count": 246,
+      "license": "GPL-3.0 root LICENSE; bundled pybind11 has its own license",
+      "disposition": "Buildable Muses-family C++ hint engine/MCTS scaffold. Default God move-generator API differs from strict native rules in a fully public check fixture; no validated native-compatible playing adapter or independent strength. Not defeated.",
+      "findings": [
+        "Original game/search sources build with installed pybind11 headers; no algorithm modifications.",
+        "God.Hint and Node.AIHint depth1 return an opening-legal action; opening44move set matches pinned native referee.",
+        "Direct Searcher.ai leaves root visits0; Python binding does not expose Searcher.bp. Inspected Python UCT/expand examples are tree-API demos, not an established complete MCTS playing loop.",
+        "Separate repository is not proof of an independent algorithm family; same author/AIBoard4 class and copied parent-style README indicate Muses lineage.",
+        "A separate fully public in-check probe yields15God-generated moves versus2native legal moves,13source-only moves. Its depth1AIHint still selects a native-legal escape. Opening agreement is insufficient; do not claim every hint is illegal."
+      ],
+      "defeated": false,
+      "build_evidence": "results/20261027-jieqi-mcts-build-smoke.json",
+      "inspected_files": [
+        {
+          "path": "LICENSE",
+          "git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "7d41f35ec3f48bf7a0083eea706b717b8d30d977",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/README.md"
+        },
+        {
+          "path": "CMakeLists.txt",
+          "git_blob_sha": "f74f797773339767ce542c0c806a79d7d76e9556",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/CMakeLists.txt"
+        },
+        {
+          "path": "main.cpp",
+          "git_blob_sha": "d3a131279cf4e6b542b288362da844a0b659a537",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/main.cpp"
+        },
+        {
+          "path": "board/searcher.h",
+          "git_blob_sha": "3e830c17b11c121d7a3e5c141c8800d11480f133",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/board/searcher.h"
+        },
+        {
+          "path": "board/god.cpp",
+          "git_blob_sha": "95f2e45dc004d817175b06d5e3a9a1a31b534fa9",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/board/god.cpp"
+        },
+        {
+          "path": "board/god.h",
+          "git_blob_sha": "951c319f7cda2220b08386a041b5da8905f526ae",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/board/god.h"
+        },
+        {
+          "path": "board/board.cpp",
+          "git_blob_sha": "b1b4a3705f6d3d877574fb32728687f156757c3e",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/board/board.cpp"
+        },
+        {
+          "path": "python/testsearcher.py",
+          "git_blob_sha": "0ad863589f5220e1b6be16c92c8b197a3af5f48c",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/python/testsearcher.py"
+        },
+        {
+          "path": "python/testsearcher2.py",
+          "git_blob_sha": "074817cd832e5b7e46d57cff45b650a367f4af8f",
+          "url": "https://github.com/miaosiSari/JieqiMCTS/blob/c506cdd03693a0cb34797e2ed8194a372b48528e/python/testsearcher2.py"
+        }
+      ],
+      "rule_probe": "results/20261027-jieqi-mcts-public-check-probe.json"
+    },
+    {
+      "repository": "rexfang0829/jieqi-ai",
+      "url": "https://github.com/rexfang0829/jieqi-ai",
+      "commit": "1a04cd57c2d54ff09eff9bc2979722100b0b1c54",
+      "default_branch": "main",
+      "description": "大盤揭棋 AI 分析工具",
+      "tree_complete": true,
+      "tree_file_count": 2,
+      "license": "No root license-named file or grant established in inspected README/PROJECT_PLAN",
+      "disposition": "Planning-only repository at this pin; not a runnable AI and not defeated.",
+      "findings": [
+        "Complete tree has only README.md and PROJECT_PLAN.md; no game/search source, model or executable entrypoint."
+      ],
+      "defeated": false,
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "bd346861a7f3f6c1cc14d4346bfa2b25cdadac81",
+          "url": "https://github.com/rexfang0829/jieqi-ai/blob/1a04cd57c2d54ff09eff9bc2979722100b0b1c54/README.md"
+        },
+        {
+          "path": "PROJECT_PLAN.md",
+          "git_blob_sha": "b6ae23b068a871129bb1577976e74cb3fc0dfa02",
+          "url": "https://github.com/rexfang0829/jieqi-ai/blob/1a04cd57c2d54ff09eff9bc2979722100b0b1c54/PROJECT_PLAN.md"
+        }
+      ]
+    },
+    {
+      "repository": "RemiliaScarlet-57/masked-chinese-chess",
+      "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess",
+      "commit": "9c74229ca325bb5292e36f1ab6892d5081f3dbf6",
+      "default_branch": "main",
+      "description": "中国象棋揭棋（含ai对战，局面分数评估、FEN导入导出功能）",
+      "tree_complete": true,
+      "tree_file_count": 29,
+      "license": "No explicit grant established in inspected root README/package and source interfaces; API license null",
+      "disposition": "Full-board game/AI candidate; not built or admitted to fair baseline suite. License and strict observer/rule compatibility unverified.",
+      "findings": [
+        "TypeScript probability and alpha-beta code exists.",
+        "generateHypotheticalState samples dark types independently from marginal probabilities and sets every sampled dark to isRevealed=true; this is an approximate search model, not proof of compatible game/referee semantics.",
+        "Root game/private-capture information and repetition/no-capture profile were not fully audited. Do not infer independent strength or defeat."
+      ],
+      "defeated": false,
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "4a858ff21411035f3ad529e280a0cf62769c68f7",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess/blob/9c74229ca325bb5292e36f1ab6892d5081f3dbf6/README.md"
+        },
+        {
+          "path": "package.json",
+          "git_blob_sha": "d018f7bf0f1150ce6a82be0ff4f7932597cabdcd",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess/blob/9c74229ca325bb5292e36f1ab6892d5081f3dbf6/package.json"
+        },
+        {
+          "path": "src/ai/board-state.ts",
+          "git_blob_sha": "77fce3f6398488d0f9c050ddfd7c8751e8650999",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess/blob/9c74229ca325bb5292e36f1ab6892d5081f3dbf6/src/ai/board-state.ts"
+        },
+        {
+          "path": "src/ai/search.ts",
+          "git_blob_sha": "e723f967b9bd49b2b464222ea63b8b217bac0cce",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess/blob/9c74229ca325bb5292e36f1ab6892d5081f3dbf6/src/ai/search.ts"
+        },
+        {
+          "path": "src/ai/probability.ts",
+          "git_blob_sha": "ffd13142ee46d865dfb53780b0d1cc70831965d8",
+          "url": "https://github.com/RemiliaScarlet-57/masked-chinese-chess/blob/9c74229ca325bb5292e36f1ab6892d5081f3dbf6/src/ai/probability.ts"
+        }
+      ]
+    },
+    {
+      "repository": "ZJQJZ/chess_z",
+      "url": "https://github.com/ZJQJZ/chess_z",
+      "commit": "f77b51d353bd0ad50d9d8c75180d8e24eba99404",
+      "default_branch": "master",
+      "description": "象棋、揭棋引擎",
+      "tree_complete": true,
+      "tree_file_count": 88,
+      "license": "No explicit grant established in root README/CMake and inspected public headers; API license null",
+      "disposition": "Advertised default master is ordinary Xiangqi; full-board hidden-piece mode not established. No build/match or defeat.",
+      "findings": [
+        "Only advertised branch is master at the pinned commit.",
+        "README describes standard Xiangqi; piece enum has only seven normal piece types and position interface has no live-dark identity/inventory fields.",
+        "Repository description mentions Jieqi, but no compatible Jieqi implementation is established from this source audit. Other behavior is not inferred from the description."
+      ],
+      "defeated": false,
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "20af52ed970dc3c2468f1e8f0069adac0f817607",
+          "url": "https://github.com/ZJQJZ/chess_z/blob/f77b51d353bd0ad50d9d8c75180d8e24eba99404/README.md"
+        },
+        {
+          "path": "CMakeLists.txt",
+          "git_blob_sha": "d6fb30cd973af9181e581bd91cad3a8477e80a41",
+          "url": "https://github.com/ZJQJZ/chess_z/blob/f77b51d353bd0ad50d9d8c75180d8e24eba99404/CMakeLists.txt"
+        },
+        {
+          "path": "include/xiangqi/types.h",
+          "git_blob_sha": "1e51e0c30e0cf214ca71e5ff9289cae537ad5f7c",
+          "url": "https://github.com/ZJQJZ/chess_z/blob/f77b51d353bd0ad50d9d8c75180d8e24eba99404/include/xiangqi/types.h"
+        },
+        {
+          "path": "include/xiangqi/position.h",
+          "git_blob_sha": "2638305aae71f190a4df38e6bcac555fc52e2ec9",
+          "url": "https://github.com/ZJQJZ/chess_z/blob/f77b51d353bd0ad50d9d8c75180d8e24eba99404/include/xiangqi/position.h"
+        },
+        {
+          "path": "include/xiangqi/engine.h",
+          "git_blob_sha": "407e9f123c347793921be28afed701d957418e24",
+          "url": "https://github.com/ZJQJZ/chess_z/blob/f77b51d353bd0ad50d9d8c75180d8e24eba99404/include/xiangqi/engine.h"
+        }
+      ]
+    },
+    {
+      "repository": "aSun-King-W/chess",
+      "url": "https://github.com/aSun-King-W/chess",
+      "commit": "75c8fcd0797ca53d28b300a86455e9a1d41e152b",
+      "default_branch": "main",
+      "description": "中国象棋，象棋、揭棋、残局、排位赛、五子棋等",
+      "tree_complete": true,
+      "tree_file_count": 120,
+      "license": "No root LICENSE-named file or project grant established in inspected README; optional Pikafish component is described as GPL-3.0",
+      "disposition": "Multi-mode frontend/integration candidate; independent strong Jieqi engine not established. No build/match or defeat.",
+      "findings": [
+        "README advertises standard Xiangqi, full-board Jieqi and separate Banqi modes, with ordinary Pikafish WASM integration and local heuristic fallback.",
+        "Jieqi-specific AI path, fair private observation and complete rules remain unaudited; do not automatically count integrated Pikafish as a new family."
+      ],
+      "defeated": false,
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "dd472309fa2b053d0994f36ac9fb0f47a62488c7",
+          "url": "https://github.com/aSun-King-W/chess/blob/75c8fcd0797ca53d28b300a86455e9a1d41e152b/README.md"
+        }
+      ]
+    },
+    {
+      "repository": "hjfkj/dsh-xiangqi",
+      "url": "https://github.com/hjfkj/dsh-xiangqi",
+      "commit": "01d12b9fe09a73a7fa8dcbdff7731faf4616d6a5",
+      "default_branch": "main",
+      "description": "中国象棋 / 揭棋插件 for DeepSeek Harness Web，含引擎、开局库、教练点评与复盘",
+      "tree_complete": true,
+      "tree_file_count": 12,
+      "license": "MIT root LICENSE and README",
+      "disposition": "Published default Jieqi mode is incompatible with strict hidden-information and terminal rules; not used as a fair strong baseline and not defeated.",
+      "findings": [
+        "Self-contained HTML implements alpha-beta/quiescence, advertised depths3/4/6.",
+        "README known limitations explicitly states search sees true identities when trying dark moves.",
+        "README also states missing long-check loss, long-chase bans and40-round no-capture draw. No modified private-observation adapter is introduced."
+      ],
+      "defeated": false,
+      "inspected_files": [
+        {
+          "path": "LICENSE",
+          "git_blob_sha": "ddcd15bbde2340585c4f5a8270567dac9dca3122",
+          "url": "https://github.com/hjfkj/dsh-xiangqi/blob/01d12b9fe09a73a7fa8dcbdff7731faf4616d6a5/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "47ae57375d0e5265a1e71e610fe6110e18311818",
+          "url": "https://github.com/hjfkj/dsh-xiangqi/blob/01d12b9fe09a73a7fa8dcbdff7731faf4616d6a5/README.md"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Repository names, stars, self-descriptions, forks and build success are not strength evidence.",
+    "Root license checks describe reviewed evidence, not a universal legal conclusion about every file.",
+    "Only the original C++/MCTS scaffold was built; no new benchmark match or promotion was conducted.",
+    "Unreviewed returned repositories include frontends, forks and unrelated solar-term/CMS/book projects. Search remains ongoing; refresh before final strong-suite confirmation."
+  ]
+}

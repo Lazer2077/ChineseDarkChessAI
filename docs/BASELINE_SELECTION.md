@@ -17,6 +17,36 @@ runtime questions remain scoped explicitly in
 `results/20261027-pending-opponent-source-audit.json`. These findings do not
 change the provisional three-profile strong suite or any strength result.
 
+## Broader source discovery, 2026-10-27
+
+Six newly pinned source audits expand the ongoing inventory to46entries.
+This is a registry update, not46independent engines, a full refresh of every
+older entry, exhaustive discovery or any new defeat. The strong suite remains
+unchanged; no newly compatible independent strong baseline is established.
+
+| Candidate | Verified evidence | Remaining limit |
+| --- | --- | --- |
+| miaosiSari/JieqiMCTS | GPLv3 root license; unchanged C++ sources build with installed binding headers; callable AIBoard4 hints and opening44moves matching native | MCTS tree scaffolding is not an established complete MCTS playing controller. A fully public check fixture has15God-generated moves versus2native legal moves; its depth1hint is nevertheless legal. Strict playing adapter, full history/private information and independent strength remain unverified. |
+| rexfang0829/jieqi-ai | Complete pinned tree has only README and project plan | No runnable game/search/model; no license grant established in inspected evidence |
+| RemiliaScarlet-57/masked-chinese-chess | TypeScript board, probability and alpha-beta source | Grant, private-capture view and full terminal profile unverified. Hypothetical-state code independently samples dark types and marks all revealed; this approximate search model is not proof of referee compatibility. |
+| ZJQJZ/chess_z | Only advertised master reviewed; ordinary Xiangqi README, seven-piece enum and ordinary position interface | Full Jieqi mode and license grant not established; repository description alone is insufficient |
+| aSun-King-W/chess | Multi-mode frontend, Pikafish WASM integration and local heuristic fallback described | Jieqi AI path/rules/observation and project grant unverified; integrated engine is not automatically another independent family |
+| hjfkj/dsh-xiangqi | MIT root license and self-contained alpha-beta implementation described | README explicitly discloses true dark identities in search and missing long-check/chase/no-capture outcomes; default profile is not a fair strict-observation baseline |
+
+The C++/MCTS build substitutes only binding headers for the current Python ABI;
+game/search sources remain unchanged. Its opening smoke and fully public
+in-check probe are feasibility/differential evidence, not matches or a claim
+that every hint is illegal. Do not discard all potential callable C++ search
+variants merely because a complete MCTS loop is unestablished. A future
+compatible profile still needs explicit observation, history, terminal, clock
+and opponent-only strength checks before suite admission.
+
+Pinned primary URLs, complete-tree availability, reviewed files, build digest
+and bounded conclusions are in
+`results/20261027-broader-opponent-source-audit.json`,
+`results/20261027-jieqi-mcts-build-smoke.json` and
+`results/20261027-jieqi-mcts-public-check-probe.json`.
+
 The user authorized opponent-versus-opponent preselection to reduce repeated
 candidate evaluation on 2026-10-26. The final routine suite may contain only a
 few profiles, ordinarily about 3–5. Its declared strong members must each meet

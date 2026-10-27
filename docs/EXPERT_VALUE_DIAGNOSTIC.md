@@ -110,3 +110,13 @@ Evidence: `results/expert-value-target-diagnostic-plan.json`,
 `results/20261027-expert-policy-target-retention.json`,
 `results/expert-policy-target-retention-plan.json` and
 `results/expert-policy-warm-value-evaluation-plan.json`.
+
+The first direct preserved-value contrast completes31W3D30L/64 against the same
+expert policy with its updated value,50.78125%score, paired bootstrap95%
+[0.3828125,0.640625]. It contains one time-forfeit game and one rounded-clock
+ambiguity, so it is not accepted as a clean superiority test. All3547recorded
+moves replay legally with matching seeded reveals. Preserve the technical
+flags and complete raw sample; do not remove the failed game or infer that warm
+value restores playing strength. The prespecified warm/teacher contrasts
+continue unchanged. Evidence:
+`results/20261027-expert-policy-warm-value-vs-updated-value{,-audit}.json`.

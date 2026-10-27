@@ -113,3 +113,11 @@ ambiguity. This improves over the terminal-value/expert-policy control only;
 warm/teacher superiority remains unestablished and the other prespecified
 contrasts continue unchanged. No promotion follows from this result. Evidence:
 `results/20261027-joint-expert-target-proxy-expert-vs-terminal-expert{,-audit}.json`.
+
+The independent-layout warm-model screen completes32W2D30L/64,
+51.5625%score, paired bootstrap95%[0.3984375,0.6328125]. All3260moves pass
+the native identity, legality, terminal and clock audits, with zero technical
+games or timing ambiguity. The positive degraded-control result therefore
+does not establish an improvement over the warm model. The native-teacher and
+search-policy factorial contrasts continue as prespecified, without retuning.
+Evidence: `results/20261027-joint-expert-target-proxy-expert-vs-warm{,-audit}.json`.

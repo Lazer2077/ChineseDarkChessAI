@@ -104,3 +104,17 @@ Evidence: `results/spatial-policy-research-protocol.json`,
 `results/spatial-policy-{dense2550,relative50}-training-plan.json`,
 `results/20261027-spatial-policy-actor-integration.json` and
 `results/20261027-spatial-policy-integration-{dense2550,relative50}.json`.
+
+The queued evaluator waits for both verified live training controllers to
+complete, then binds both selected artifacts before starting any matches. It
+requires the complete epoch/update budget, matching replay and selection data,
+the prescribed minimum-validation-loss checkpoint, and matching report/model
+digests. The relative three-match and dense two-match campaigns run on separate
+inference devices after training releases them. All runtime inputs are frozen;
+an occupied device or failed dependency stops dispatch without restarting a fit
+or overwriting a prior evaluation. Preparation on the completed tiny fits
+retains all five planned contrasts/seeds and creates no match outputs. Three
+targeted tests also reject incomplete fits, checkpoint reselection and nonfinite
+selection losses. This verifies scheduling boundaries, not playing strength.
+Evidence: `results/spatial-policy-evaluation-queue-recipe.json` and
+`results/20261027-spatial-policy-evaluation-queue-integration.json`.

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Preparation-only integration on completed tiny TRAIN-subset fits. Both selected artifacts frozen before any match; all five prespecified contrasts retained. No matches run and no strength/generalization evidence.",
+  "recipe_sha256": "bae098cbd9d1c86c8ac63337ed9a82235cef30f3cf5977a8d2b227d22f6a2c82",
+  "queue_source_sha256": "7cc7d90ffabaf120983555c895b6a114604be3e18dfa3fc1d35ac6e2176c961d",
+  "unit_tests": {
+    "passed": 3,
+    "covers": [
+      "full-budget/incomplete rejection",
+      "minimum-validation-loss selection and nonfinite rejection",
+      "wrong head and missing epoch rejection"
+    ]
+  },
+  "plans": {
+    "dense2550": {
+      "path": "results/spatial-policy-dense2550-evaluation-integration-plan.json",
+      "sha256": "8b0c9b812ba43e315bfeac205df9c1d07be1dc3ce3acb396738109aa88a953d4"
+    },
+    "relative50": {
+      "path": "results/spatial-policy-relative50-evaluation-integration-plan.json",
+      "sha256": "917958fb53656332732e468b2a876a6342265d3ffcfe4182ddf65de12046b886"
+    }
+  },
+  "artifacts": {
+    "dense2550": {
+      "path": "runs/spatial-policy-integration-01/dense2550/best.npz",
+      "sha256": "dbb88f809eac17ded3db73d209d6fef25d0f5c1c9a21ca6477d53add5ba16389"
+    },
+    "relative50": {
+      "path": "runs/spatial-policy-integration-01/relative50/best.npz",
+      "sha256": "5b288e12971a44db72eb128141f5e99759a4bbc767c19d6ec730b8dfd5a6ae55"
+    }
+  },
+  "matches": [
+    {
+      "id": "dense2550-vs-old-warm64x15",
+      "seed": 9673001,
+      "games": 64,
+      "candidate_model": "runs/spatial-policy-integration-01/dense2550/best.npz",
+      "baseline_model": "runs/neural-policy-phase-02/shared/best.npz"
+    },
+    {
+      "id": "dense2550-vs-unchanged-native-teacher",
+      "seed": 9674001,
+      "games": 64,
+      "candidate_model": "runs/spatial-policy-integration-01/dense2550/best.npz",
+      "baseline_model": "external/devinokeefe-jieqi/engine/nets/it014.jqn"
+    },
+    {
+      "id": "relative50-vs-matched-dense128x15",
+      "seed": 9670001,
+      "games": 64,
+      "candidate_model": "runs/spatial-policy-integration-01/relative50/best.npz",
+      "baseline_model": "runs/spatial-policy-integration-01/dense2550/best.npz"
+    },
+    {
+      "id": "relative50-vs-old-warm64x15",
+      "seed": 9671001,
+      "games": 64,
+      "candidate_model": "runs/spatial-policy-integration-01/relative50/best.npz",
+      "baseline_model": "runs/neural-policy-phase-02/shared/best.npz"
+    },
+    {
+      "id": "relative50-vs-unchanged-native-teacher",
+      "seed": 9672001,
+      "games": 64,
+      "candidate_model": "runs/spatial-policy-integration-01/relative50/best.npz",
+      "baseline_model": "external/devinokeefe-jieqi/engine/nets/it014.jqn"
+    }
+  ],
+  "actual_matches_started": 0
+}

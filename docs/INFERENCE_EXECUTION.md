@@ -97,3 +97,18 @@ The already frozen wider dense/relative12-epoch study and all five of its eager
 evaluation contrasts remain unchanged. Graph execution is not silently added
 to those actors or used to select their checkpoints. No public push or final
 >70%-win/report claim follows from runtime evidence alone.
+
+## First actual-clock screen: no demonstrated playing-strength gain
+
+The graph-versus-eager warm-model screen completes30W2D32L/64,
+48.4375%score, paired bootstrap95%[0.3828125,0.59375]. All3333moves pass the
+independent native reveal/legal/terminal/clock audit, with zero technical games,
+voids or rounding ambiguities. Thus the bounded fixed-work speed improvement
+does not establish a playing-strength improvement at this clock. This sample
+also cannot rule out smaller effects. Existing records lack completed per-move
+simulation counts, so similar mean move times alone cannot explain the result.
+The unchanged-teacher contrast continues without retuning. No promotion or
+larger confirmation campaign is justified by this first screen. Fixed-work
+generation efficiency remains a separate possible use, requiring equivalence
+checks for any newly trained checkpoint before adopting it.
+Evidence: `results/20261027-cuda-graph-vs-eager{,-audit}.json`.

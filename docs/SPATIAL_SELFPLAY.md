@@ -91,3 +91,10 @@ no promotion or final-suite status. The known source/native rule-profile
 difference remains explicit. Protocol and immutable runtime inputs:
 `results/spatial-relative-rl-plan.json` and
 `results/spatial-relative-rl-pipeline-plan.json`.
+
+A separate queued archive waits for the original live controller to complete
+both matches and all native audits. It then replays every source episode,
+checks the complete optimizer/selection budget and exact played-model digest,
+and retains raw episodes, curves and positive/negative/technical match flags.
+It never restarts a missing or failed dependency. Recipe:
+`results/spatial-relative-rl-archive-queue-plan.json`.

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Closed unchanged-weight FP32 CUDA-graph actual-clock study: fixed-work search runs faster on declared TRAIN roots, but64games versus eager do not establish a playing-strength gain and64teacher games all lose. No promotion, expanded strength confirmation or final-suite claim.",
+  "plan_sha256": "e73b341337d0613a9b544310362deed91ab167e4ffd9be5d8dd61c0bac5dd1be",
+  "candidate_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "contrasts": [
+    {
+      "contrast": "graph-vs-eager",
+      "wdl": [
+        30,
+        2,
+        32
+      ],
+      "score": 0.484375,
+      "paired_score_bootstrap_95": [
+        0.3828125,
+        0.59375
+      ],
+      "clean_moves": 3333,
+      "report": "results/20261027-cuda-graph-vs-eager.json",
+      "report_sha256": "66a16823992fe546928243b755374bccc332d75676ac5cb268d537a294156b29",
+      "audit": "results/20261027-cuda-graph-vs-eager-audit.json",
+      "audit_sha256": "9cbe3be16eb6c741faeb5e496315e9e2f1c6f8499a7acbaeb51c55dfa59284e8",
+      "raw_games": {
+        "path": "results/raw/graph-vs-eager-fd7a2258d1ca.jsonl.gz",
+        "uncompressed_sha256": "fd7a2258d1cab189b8cf271b7984a3f48b3c8d276799ee8996339a5843dcd607"
+      }
+    },
+    {
+      "contrast": "graph-vs-teacher",
+      "wdl": [
+        0,
+        0,
+        64
+      ],
+      "score": 0.0,
+      "paired_score_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "clean_moves": 2642,
+      "report": "results/20261027-cuda-graph-vs-teacher.json",
+      "report_sha256": "7b80fb2201ce0dc5ffc79faa91bc0dd1b5d64a65f0e3570d096f33dfd02194b8",
+      "audit": "results/20261027-cuda-graph-vs-teacher-audit.json",
+      "audit_sha256": "5ab6f368b164564acd15f8c374f2e32e1a4eb75545ae869413b081918007c028",
+      "raw_games": {
+        "path": "results/raw/graph-vs-teacher-03d25f0fd9f0.jsonl.gz",
+        "uncompressed_sha256": "03d25f0fd9f0ac0a869a190f07c443e53e6e321f42d1bd6f2879e0e33e092601"
+      }
+    }
+  ],
+  "total_games": 128,
+  "total_clean_audited_moves": 5975,
+  "technical_games": 0,
+  "clock_ambiguity": 0,
+  "decision": "Do not expand actual-clock strength testing on this evidence. Fixed-work runtime is a distinct compute-efficiency result; future use on new checkpoints requires fresh bounded equivalence checks and must preserve frozen experiments."
+}

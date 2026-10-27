@@ -146,3 +146,18 @@ in both generated evaluation plans before the first game. Reports and vector
 curves: `results/20261027-spatial-policy-{dense2550,relative50}-training.json`,
 `results/spatial-policy-{dense2550,relative50}-evaluation-plan.json` and
 `results/figures/spatial_policy_pretraining_20261027.{pdf,json}`.
+
+The first two fixed screens complete with technically clean native/clock audits:
+
+| Contrast | W/D/L | Score | Paired score bootstrap95% | Audited moves |
+| --- | --- | ---: | --- | ---: |
+| Dense128vs old warm64 | 40/1/23 | 63.28125% | [50%,76.5625%] | 3482 |
+| Relative128vs matched dense128 | 38/1/25 | 60.15625% | [48.4375%,71.875%] | 3120 |
+
+Both have zero technical games and rounding ambiguities. Neither interval has
+a lower bound strictly above50%, so these favorable point estimates do not yet
+establish superiority. The direct relative-versus-warm and both native-teacher
+contrasts continue unchanged; do not infer the former transitively from this
+table. Evidence uses
+`results/20261027-spatial-policy-dense2550-vs-old-warm64x15{,-audit}.json` and
+`results/20261027-spatial-policy-relative50-vs-matched-dense128x15{,-audit}.json`.

@@ -112,3 +112,11 @@ larger confirmation campaign is justified by this first screen. Fixed-work
 generation efficiency remains a separate possible use, requiring equivalence
 checks for any newly trained checkpoint before adopting it.
 Evidence: `results/20261027-cuda-graph-vs-eager{,-audit}.json`.
+
+The teacher screen is now complete as well:0W0D64L,2642independently clean
+moves, no technical games or clock ambiguity. Both128prespecified games and
+5975move audits are closed. The faster fixed-work execution does not bridge
+the teacher gap, and the eager comparison remains inconclusive. No expanded
+actual-clock strength campaign follows. The new wide decoder and RL experiments
+continue with their frozen eager settings. Complete source/model/report/raw
+bindings: `results/20261027-cuda-graph-actual-clock-summary.json`.

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "run": "relative50-vs-matched-dense128x15",
+  "games": 64,
+  "complete_pairs": 32,
+  "moves_replayed": 3120,
+  "wins_draws_losses": [
+    38,
+    1,
+    25
+  ],
+  "seeded_identities_match": true,
+  "all_recorded_moves_legal": true,
+  "nontechnical_terminal_results_match": true,
+  "technical_games": 0,
+  "actual_clock_moves_checked": 3120,
+  "clock_ambiguous_moves_from_rounding": 0,
+  "minimum_clock_lower_margin_ms": 1218.0,
+  "raw_games_sha256": "e8fb06e57ad623169c726c2916b2f1d2db7b3c0d1e0c7ef5b750aaf9f3a8f271",
+  "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+  "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+}

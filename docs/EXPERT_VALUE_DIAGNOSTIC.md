@@ -129,3 +129,12 @@ superiority. Its different layouts and two-forward cost also prohibit treating
 the result as a paired improvement over the ordinary single-forward23W4D37L
 policy-target contrast. The unchanged-teacher comparison continues unchanged.
 Evidence: `results/20261027-expert-policy-warm-value-vs-warm{,-audit}.json`.
+
+The native-teacher comparison now closes1W2D61L/64,3.125%score, paired
+bootstrap95%[0,0.0703125]. All2578moves pass native replay and clock audits
+without technical games or ambiguity. The192-game preserved-value campaign
+therefore closes without established warm/teacher improvement. All9587recorded
+moves replay legally, but only the warm/teacher contrasts containing6040moves
+are technically clean and unambiguous. Retain the first contrast's flags;
+do not label the whole campaign clean or infer a universal verdict about value
+retention. Evidence: `results/20261027-expert-policy-warm-value-summary.json`.

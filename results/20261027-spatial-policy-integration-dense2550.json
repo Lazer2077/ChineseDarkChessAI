@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "One-epoch GPU integration on4original TRAIN games/357rows and2additional TRAIN smoke games/145rows. Identical common initialization, mixed targets and updates; no independent selection/generalization or strength claim.",
+  "training_plan_sha256": "57138fe436f86f022111f79bed196d1cfc0d1e1122af34df64d19f51e6046cc3",
+  "research_stage": "integration",
+  "policy_head": "dense2550",
+  "policy_mapping_sha256": "a7f7b785376998a1825553ebe64d245603b8334c88b832fb30fe29a5757a156e",
+  "model_sha256": "dbb88f809eac17ded3db73d209d6fef25d0f5c1c9a21ca6477d53add5ba16389",
+  "initial_sha256": "22157ab8efd896e8a5bd9f53b94d8818c4f75616a90c67f3522ba1ddfc8548c5",
+  "parameters": 8103319,
+  "channels": 8,
+  "blocks": 1,
+  "training": [
+    {
+      "sha256": "e1965b36dc80b360f8db488eaeb4641e6e861547cb1e7e2ba2a703dd2b4bf64d",
+      "games": 4,
+      "games_with_search_records": 4,
+      "positions": 357
+    }
+  ],
+  "selection_validation": [
+    {
+      "sha256": "a78cb10db98ee50804e70fb675ef591dd1ab123bb8bac70641965b11b3384792",
+      "games": 2,
+      "games_with_search_records": 2,
+      "positions": 145
+    }
+  ],
+  "epochs": 1,
+  "updates": 11,
+  "selected_epoch": 1,
+  "initial_validation": {
+    "loss": 8.583408895032159,
+    "policy_ce": 7.842919921875,
+    "value_mse": 0.7404889731571592,
+    "teacher_action_top1": 0.0,
+    "teacher_action_top5": 0.006896551724137931,
+    "full_public_positions": 0,
+    "full_public_policy_ce": 0.0,
+    "full_public_value_mse": 0.0
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 11,
+      "train_policy_ce": 7.693253907290372,
+      "train_value_mse": 0.4146783934398131,
+      "validation": {
+        "loss": 8.482815959535795,
+        "policy_ce": 7.710418175006735,
+        "value_mse": 0.7723977845290612,
+        "teacher_action_top1": 0.006896551724137931,
+        "teacher_action_top5": 0.013793103448275862,
+        "full_public_positions": 0,
+        "full_public_policy_ce": 0.0,
+        "full_public_value_mse": 0.0
+      },
+      "seconds": 2.3565155006945133
+    }
+  ],
+  "checkpoint_selection": "Minimum common selection policy CE + original0.7score/0.3outcome MSE; no match-based choice.",
+  "limitations": "Supervised search-action imitation, not current-model self-play RL, an information-state sufficiency proof or a playing-strength/promotion result."
+}

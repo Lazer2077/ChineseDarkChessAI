@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "scope": "Controlled wider residual policy-decoder study following completed repeated neural stalls. Supervised expert-replay pretraining, not current-model self-play RL or a new AlphaZero/Leela algorithm.",
+  "primary_sources": [
+    "https://lczero.org/dev/backend/nn/",
+    "https://arxiv.org/html/1712.01815v1"
+  ],
+  "hypothesis": "Replacing a large location-specific dense classifier with shared relative-displacement logits may improve data efficiency and actual-clock policy/value planning. Fewer parameters, lower CE or an exact action map alone cannot establish strength.",
+  "arms": [
+    "dense2550",
+    "relative50"
+  ],
+  "body": {
+    "channels": 128,
+    "residual_blocks": 15,
+    "phase_experts": false
+  },
+  "initialization": "One common cold seed; all shared trunk, value and policy-conv/BN arrays must match exactly, and initial value outputs match on64TRAIN rows. Decoder functions differ by design; this is not full-function-preserving widening of the old warm model.",
+  "relative_decoder": "32shared policy features ->50relative-displacement planes by1x1convolution, gather only the original2550geometric actions before softmax. Same actual movement/legality mask and observer contract. This shares a decoder; it does not assume palace/river/dark-home game translation symmetry.",
+  "data": "Exactly the original4certified native replay files:32768generated games,32767with searched records,2417541positions. Same512selection games/37471positions. Original certified zero-search-prefix game preserved; no invented action or game-boundary merge.",
+  "targets": "Original one-hot actual teacher-selected move and0.7*tanh(score/860)+0.3terminal outcome, actor perspective; same in both arms. Keep original input encoder and public-only inventory canonicalization; no true hidden identities or fabricated history planes.",
+  "training": {
+    "seed": 20261029,
+    "epochs": 12,
+    "batch": 512,
+    "lr": 0.0003,
+    "updates_each": 56652,
+    "optimizer": "Original AdamW wd0.0001, gradient clip1",
+    "schedule": "5% linear warmup then cosine to10% peak",
+    "augmentation": "Original horizontal mirror, same dedicated per-arm RNG stream",
+    "checkpoint_selection": "Minimum common selection CE+MSE within each complete12-epoch run; initial excluded. No early stop, retuning or match-based model choice.",
+    "precision": "Original BF16autocast if supported, otherwise scaled FP16; finite gradients required, no skipped updates counted."
+  },
+  "resources": "Two independent single-GPU training arms with2CPU threads each, separate from live match GPUs. This is not distributed training, equal FLOP/memory cost or multi-training-seed robustness. Matched data/updates, architecture changes parameter count and runtime.",
+  "matches": [
+    {
+      "candidate": "relative50",
+      "opponent": "matched-dense128x15",
+      "games": 64,
+      "seed": 9670001
+    },
+    {
+      "candidate": "relative50",
+      "opponent": "old-warm64x15",
+      "games": 64,
+      "seed": 9671001
+    },
+    {
+      "candidate": "relative50",
+      "opponent": "unchanged-native-teacher",
+      "games": 64,
+      "seed": 9672001
+    },
+    {
+      "candidate": "dense128x15",
+      "opponent": "old-warm64x15",
+      "games": 64,
+      "seed": 9673001
+    },
+    {
+      "candidate": "dense128x15",
+      "opponent": "unchanged-native-teacher",
+      "games": 64,
+      "seed": 9674001
+    }
+  ],
+  "match_conditions": "Actual10+0.1, LeafBatch32neural actors, one CPU thread each,2concurrent games on one dedicated shared inference GPU per campaign. Dense/relative use the same tagged safe loader and unchanged observer/search. Measure actual throughput; no equal-work/Hash/simulation claim.",
+  "outcome_dependence": "Finish all5contrasts regardless of earlier results; freeze selected artifacts before first game. No head/budget/label tuning on matches. Raw native identity/legality/terminal/clock audits required, with technical/ambiguous flags retained. No promotion from a degraded control or geometry tests; final independent multi-set70%strong-suite/report gate remains unmet."
+}

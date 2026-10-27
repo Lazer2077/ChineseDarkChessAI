@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Frozen expert-guided policy with original warm value, two complete forwards for neural actors. No established warm/teacher improvement. First contrast has one time forfeit and one clock ambiguity; no clean full-campaign, component-causality or promotion claim.",
+  "plan_sha256": "ff558cb07f2143764f042ce11162a7a846b49de34ece45b660743daf35ce3d97",
+  "policy_model_sha256": "0fa5152fd4f4a59a93625579624daf642b9a9b78751f206723a0cdeec94404f8",
+  "value_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "contrasts": [
+    {
+      "opponent": "updated-value",
+      "wdl": [
+        31,
+        3,
+        30
+      ],
+      "score": 0.5078125,
+      "paired_bootstrap_95": [
+        0.3828125,
+        0.640625
+      ],
+      "valid_technical_run": false,
+      "technical_games": 1,
+      "ambiguous_clock_moves": 1,
+      "moves_replayed_legally": 3547,
+      "report": "results/20261027-expert-policy-warm-value-vs-updated-value.json",
+      "audit": "results/20261027-expert-policy-warm-value-vs-updated-value-audit.json"
+    },
+    {
+      "opponent": "warm",
+      "wdl": [
+        33,
+        2,
+        29
+      ],
+      "score": 0.53125,
+      "paired_bootstrap_95": [
+        0.4453125,
+        0.625
+      ],
+      "valid_technical_run": true,
+      "technical_games": 0,
+      "ambiguous_clock_moves": 0,
+      "moves_replayed_legally": 3462,
+      "report": "results/20261027-expert-policy-warm-value-vs-warm.json",
+      "audit": "results/20261027-expert-policy-warm-value-vs-warm-audit.json"
+    },
+    {
+      "opponent": "teacher",
+      "wdl": [
+        1,
+        2,
+        61
+      ],
+      "score": 0.03125,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0703125
+      ],
+      "valid_technical_run": true,
+      "technical_games": 0,
+      "ambiguous_clock_moves": 0,
+      "moves_replayed_legally": 2578,
+      "report": "results/20261027-expert-policy-warm-value-vs-teacher.json",
+      "audit": "results/20261027-expert-policy-warm-value-vs-teacher-audit.json"
+    }
+  ],
+  "total_moves_replayed_legally": 9587,
+  "moves_in_technically_clean_unambiguous_contrasts": 6040
+}

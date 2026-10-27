@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "GPU opening-only eight-completed-simulation smoke with tiny one-epoch TRAIN-subset models. Dense old/new loaders agree; relative policy produces a legal action. No full game, timed-budget, generalization or strength evidence.",
+  "cases": [
+    {
+      "label": "dense-legacy",
+      "adapter_sha256": "44dc337b287f868605c9bdf02ca542487c3aaaed848e648721eb6a01c15f6f9a",
+      "model_sha256": "dbb88f809eac17ded3db73d209d6fef25d0f5c1c9a21ca6477d53add5ba16389",
+      "move": "a3a4",
+      "completed_simulations": 8,
+      "opening_legal": true
+    },
+    {
+      "label": "dense-new-loader",
+      "adapter_sha256": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+      "model_sha256": "dbb88f809eac17ded3db73d209d6fef25d0f5c1c9a21ca6477d53add5ba16389",
+      "move": "a3a4",
+      "completed_simulations": 8,
+      "opening_legal": true
+    },
+    {
+      "label": "relative-new-loader",
+      "adapter_sha256": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+      "model_sha256": "5b288e12971a44db72eb128141f5e99759a4bbc767c19d6ec730b8dfd5a6ae55",
+      "move": "b2a2",
+      "completed_simulations": 8,
+      "opening_legal": true
+    }
+  ]
+}

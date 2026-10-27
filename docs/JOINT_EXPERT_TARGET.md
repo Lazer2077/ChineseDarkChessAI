@@ -105,3 +105,11 @@ supervision. All four prespecified matches have been queued with the frozen
 artifacts. Evidence:
 `results/20261027-joint-expert-target-{terminal-expert-reproduction,proxy-search,proxy-expert}-training.json`
 and `results/joint-expert-target-evaluation-plan.json`.
+
+The first direct value-target replacement at expert policy completes39W4D21L/64,
+64.0625%score, paired bootstrap95%[0.53125,0.7421875]. All3307moves pass native
+reveal, legality, terminal and clock audits without technical games or timing
+ambiguity. This improves over the terminal-value/expert-policy control only;
+warm/teacher superiority remains unestablished and the other prespecified
+contrasts continue unchanged. No promotion follows from this result. Evidence:
+`results/20261027-joint-expert-target-proxy-expert-vs-terminal-expert{,-audit}.json`.

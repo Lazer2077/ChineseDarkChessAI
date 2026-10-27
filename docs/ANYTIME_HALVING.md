@@ -2,7 +2,7 @@
 
 Fixed-work root halving has a positive64-game development result against the
 same warm CNN/PUCT control, but it consumes exactly256simulations regardless
-of the available time. Its independent200-game confirmation remains separate.
+of the available time. Its completed independent200-game confirmation is reported separately.
 A timed actor needs a defined recommendation if interrupted early and useful
 continuation if the prefix finishes early. This new hybrid tests those choices
 under the original10+0.1actual-clock benchmark stratum.
@@ -80,3 +80,12 @@ terminal/clock audits and raw archiving. The aligned-weight campaign completed,
 and this study has started its warm-model comparison on the released GPU.
 No superiority or promotion
 is implied by passing tests or producing this timed actor.
+
+The first frozen timed contrast has completed36W/2D/26L against warm PUCT:
+56.25%wins,57.8125%score, paired bootstrap95% score interval
+[46.09375%,69.53125%]. This interval includes parity, so improvement is not
+established. All3,614moves pass native seeded-identity/legal/terminal/actual-
+clock replay; there are no technical games or ambiguous clock margins.
+The unchanged native-teacher contrast continues with its original frozen
+settings. No tuning follows the warm-control result. Evidence:
+`results/20261027-anytime-halving-vs-warm{,-audit}.json`.

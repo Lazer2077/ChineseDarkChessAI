@@ -130,8 +130,8 @@ never reaches a fully revealed turn, that mechanism is unexercised rather than
 positive or negative evidence for the switch. Every exercised phase count is
 reported by the witness audit.
 
-The teacher-leaf campaign released its GPU for this study; both contrasts have
-now completed and the independent confirmation uses that GPU. The studies did
+The teacher-leaf campaign released its GPU for this study; both contrasts and the independent confirmation have
+now completed on that GPU. The studies did
 not run concurrently on it. No strong-baseline superiority conclusion or
 promotion follows from the prototype or the smoke. Future advantages would
 initially be search changes of the unchanged warm network, not newly learned
@@ -175,11 +175,32 @@ all-game contrast provides little power for the late-only mechanism here.
 Evidence: `results/20261026-root-halving-fixed-public{,-native-audit,-work-audit}.json`;
 paired prefix/coverage analysis:
 `results/20261027-root-halving-public-prefix-analysis.json`. Both original
-contrasts are now closed,7,197audited moves in total; all-phase confirmation
-is running on the released GPU. Completed development summary:
+contrasts are now closed,7,197audited moves in total; the all-phase confirmation
+result is reported below. Completed development summary:
 `results/20261027-root-halving-development-summary.json`.
 
 A separately defined [timed hybrid](ANYTIME_HALVING.md) now preserves the exact
 fixed prefix and continues within two survivors when time remains. It does not
 change this fixed-work confirmation, and its future timed results must not be
 pooled with the60+0.5fixed-work stratum.
+
+## Independent confirmation completed
+
+The frozen200-game confirmation finished115W/2D/83L:57.5%wins,
+58%score, paired bootstrap95% score interval[51.75%,64.25%]. The conservative
+paired Hoeffding interval[44.41898%,71.58102%] still includes50%. Thus a second
+independent layout set supports the direction of the development signal under
+the bootstrap analysis, with a smaller observed effect. It is neither the
+required70%win-rate gate nor evidence against the native teacher. No weights
+changed, and no promotion is recorded.
+
+All11,917moves passed seeded-identity, legality, complete-history terminal and
+actual-clock replay, with no technical games or ambiguous clock margins.
+Separate simulation witnesses cover400fresh actors plus400warmups and verify
+exactly256completed simulations per decision;562decisions were fully public.
+Candidate5,967decisions use all-phase halving and baseline5,950use PUCT.
+Both raw games and per-call simulation witnesses are archived. Development and
+confirmation are reported separately; neither the public-only variant nor the
+timed hybrid is pooled with this method.
+
+Evidence: `results/20261027-root-halving-confirmation{,-native-audit,-work-audit}.json`.

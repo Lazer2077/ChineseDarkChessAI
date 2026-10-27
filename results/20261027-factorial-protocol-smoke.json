@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "scope": "CPU actual full-checkpoint observer/private-capture UCI integration only; no strength evidence",
+  "profiles": [
+    {
+      "profile": "warm-warm",
+      "policy_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "value_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "stdout": "id name CDCA two-network policy/value factorial PUCT (research)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string batch deadline sha256 64ad83b6ee1e689a3912f3a97faa6ece30efd2bbe34d79e30bcad8393e7b7077\nuciok\nreadyok\ninfo string {\"simulations\": 16, \"elapsed_ms\": 209.5688059926033, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 1.0}\nbestmove a9b9\n"
+    },
+    {
+      "profile": "rl-warm",
+      "policy_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+      "value_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "stdout": "id name CDCA two-network policy/value factorial PUCT (research)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string batch deadline sha256 64ad83b6ee1e689a3912f3a97faa6ece30efd2bbe34d79e30bcad8393e7b7077\nuciok\nreadyok\ninfo string {\"simulations\": 16, \"elapsed_ms\": 232.68012516200542, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 1.0}\nbestmove a9b9\n"
+    },
+    {
+      "profile": "warm-rl",
+      "policy_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "value_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+      "stdout": "id name CDCA two-network policy/value factorial PUCT (research)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string batch deadline sha256 64ad83b6ee1e689a3912f3a97faa6ece30efd2bbe34d79e30bcad8393e7b7077\nuciok\nreadyok\ninfo string {\"simulations\": 16, \"elapsed_ms\": 204.1211873292923, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 1.0}\nbestmove a9b9\n"
+    },
+    {
+      "profile": "rl-rl",
+      "policy_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+      "value_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+      "stdout": "id name CDCA two-network policy/value factorial PUCT (research)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string batch deadline sha256 64ad83b6ee1e689a3912f3a97faa6ece30efd2bbe34d79e30bcad8393e7b7077\nuciok\nreadyok\ninfo string {\"simulations\": 16, \"elapsed_ms\": 202.86311209201813, \"device\": \"cpu\", \"phase_experts\": false, \"visit_mass\": 1.0}\nbestmove a9b9\n"
+    }
+  ]
+}

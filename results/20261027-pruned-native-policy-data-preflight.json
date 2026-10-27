@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "roles": [
+    {
+      "role": "training_games",
+      "games": 256,
+      "positions": 13646,
+      "observations_sha256": "5d884215282ef14e511c2200b4e3aba73da2dadf37ed1c28fc76bf7175dcce42",
+      "native_returns_sha256": "1c65ff5bce47680a5dcd145f38080443cf49af68da1173aad0245112ed422b12",
+      "raw_policy_sha256": "f5043d86e775202571dd0cc6247b3c401f60b6904bb391e4a8aac3ab65c1c739",
+      "pruned_policy_sha256": "19dc5944b45352388fc1fd3026ee74b35a2bbd64b4a80ce2dd5d41e2e4ca15da",
+      "changed_policy_rows": 13052,
+      "bitwise_matched_observations_and_returns": true,
+      "whole_game_membership_and_source_binding_equal": true
+    },
+    {
+      "role": "selection_validation_games",
+      "games": 32,
+      "positions": 1685,
+      "observations_sha256": "0897c51b7a1f21e829533bd92c650db1f77c300cfa86e5bd37b73692f89eb087",
+      "native_returns_sha256": "c54c6e65b3386405ebd781e68a49cea7c57564f59076f7014423270e6164ef24",
+      "raw_policy_sha256": "b3c451aed29c9c046404be10f4cb9648ad2ee1b61849df6abda2588f41367e86",
+      "pruned_policy_sha256": "1f1df27d902d7c43924e7115875089a26cb608b39853d94fd2a8296f0bd38195",
+      "changed_policy_rows": 1629,
+      "bitwise_matched_observations_and_returns": true,
+      "whole_game_membership_and_source_binding_equal": true
+    }
+  ],
+  "raw_plan_sha256": "dc24a4e530ef1e4dec5db763380234540d01b2f9dc1a841bb887a492ceac7644",
+  "pruned_plan_sha256": "ba6f16835f144a46b54c6d5c0c82841ce3f82386a444e9247243e8d09f850d7e",
+  "scope": "Whole actual native-prefix TRAIN/selection split boundary checks. Only policy targets change; no fit, teacher label imitation, strength match or promotion."
+}

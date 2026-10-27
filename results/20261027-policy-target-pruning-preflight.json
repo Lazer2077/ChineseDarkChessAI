@@ -1,0 +1,2322 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Four selectedTRAIN-root transport/data-boundary preflight,8PUCT/64teacher nodes. Reused subset of full diagnostic with different work, no independent benefit estimate or automatic training trigger.",
+  "plan_sha256": "f6cb752b50cf87a11b798d62f59a8cdcb141f4f72aa4a3dc4ce0b081227b7ec7",
+  "model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+  "cases": [
+    {
+      "game": 15,
+      "ply": 83,
+      "phase": "0-0",
+      "live_darks": 0,
+      "search_seed": 9750001,
+      "completed_simulations": 8,
+      "legal_actions": 36,
+      "actual_chosen_move": "e7c9",
+      "search_statistics_unchanged": true,
+      "entropy": {
+        "raw": 2.0794415416798357,
+        "pruned": 2.0794415416798357
+      },
+      "target_total_variation": 0.0,
+      "teacher_forced_nodes_per_action": 64,
+      "expected_teacher_proxy": {
+        "raw": -0.2490086893159176,
+        "pruned": -0.2490086893159176
+      },
+      "pruned_minus_raw_teacher_proxy": 0.0,
+      "actions": [
+        {
+          "move": "b9a8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0158161363087666,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -284,
+            "completed_depth": 6,
+            "proxy": -0.31872972526186155
+          }
+        },
+        {
+          "move": "b9c8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.011891391393583537,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -361,
+            "completed_depth": 6,
+            "proxy": -0.3967344961934855
+          }
+        },
+        {
+          "move": "e9e8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004125770881654285,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -358,
+            "completed_depth": 7,
+            "proxy": -0.39379112623974577
+          }
+        },
+        {
+          "move": "e9d9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0017061581810848608,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -917,
+            "completed_depth": 7,
+            "proxy": -0.7880552331984781
+          }
+        },
+        {
+          "move": "g9g8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0023816457081272625,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -386,
+            "completed_depth": 7,
+            "proxy": -0.420942721163937
+          }
+        },
+        {
+          "move": "e7c9",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.03137481409413653,
+          "root_actor_q": -0.6074355840682983,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -321,
+            "completed_depth": 5,
+            "proxy": -0.35683625148178444
+          }
+        },
+        {
+          "move": "e7c5",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.03633919154716498,
+          "root_actor_q": -0.4961618185043335,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 53,
+            "completed_depth": 5,
+            "proxy": 0.06155000441612821
+          }
+        },
+        {
+          "move": "e7g5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0064266311130471414,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -890,
+            "completed_depth": 7,
+            "proxy": -0.775859643129534
+          }
+        },
+        {
+          "move": "f7e8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0017229893909565556,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1033,
+            "completed_depth": 5,
+            "proxy": -0.8340089377905089
+          }
+        },
+        {
+          "move": "f7g8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.011165086485934183,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -442,
+            "completed_depth": 7,
+            "proxy": -0.4730198369087599
+          }
+        },
+        {
+          "move": "f7e6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.016787602557226167,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -314,
+            "completed_depth": 7,
+            "proxy": -0.3497126075809825
+          }
+        },
+        {
+          "move": "g6f8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.008671488127197403,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1266,
+            "completed_depth": 7,
+            "proxy": -0.8999759686626815
+          }
+        },
+        {
+          "move": "g6h8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.021207281131838316,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -810,
+            "completed_depth": 6,
+            "proxy": -0.7360758717249808
+          }
+        },
+        {
+          "move": "g6f4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.003981707394623783,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -714,
+            "completed_depth": 6,
+            "proxy": -0.6806008590047616
+          }
+        },
+        {
+          "move": "g6h4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.015451313062336646,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -875,
+            "completed_depth": 7,
+            "proxy": -0.7688225377635935
+          }
+        },
+        {
+          "move": "g6e5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.022957249190040573,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1104,
+            "completed_depth": 7,
+            "proxy": -0.8574731423096411
+          }
+        },
+        {
+          "move": "g6i7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00010154418282263854,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1133,
+            "completed_depth": 7,
+            "proxy": -0.8661463439710494
+          }
+        },
+        {
+          "move": "g6i5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.011981311514448782,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1021,
+            "completed_depth": 6,
+            "proxy": -0.8297113565200153
+          }
+        },
+        {
+          "move": "g4g3",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.06521230570794193,
+          "root_actor_q": -0.1910880208015442,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 83,
+            "completed_depth": 6,
+            "proxy": 0.09621308782094427
+          }
+        },
+        {
+          "move": "g4f4",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.22088711216646342,
+          "root_actor_q": -0.17735761404037476,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -264,
+            "completed_depth": 7,
+            "proxy": -0.29768423577654235
+          }
+        },
+        {
+          "move": "g4h4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.005869548904711064,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -865,
+            "completed_depth": 6,
+            "proxy": -0.7640250760488041
+          }
+        },
+        {
+          "move": "f3f2",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.22271196786869601,
+          "root_actor_q": -0.06439273059368134,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -186,
+            "completed_depth": 6,
+            "proxy": -0.21296872559683488
+          }
+        },
+        {
+          "move": "f3e3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.011880697017058224,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -857,
+            "completed_depth": 7,
+            "proxy": -0.76012523261741
+          }
+        },
+        {
+          "move": "f3g3",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.03216178907618849,
+          "root_actor_q": -0.12173386663198471,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -217,
+            "completed_depth": 6,
+            "proxy": -0.24710349507543636
+          }
+        },
+        {
+          "move": "c2c3",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.08288552892879815,
+          "root_actor_q": -0.5146465301513672,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -995,
+            "completed_depth": 7,
+            "proxy": -0.8200521731808194
+          }
+        },
+        {
+          "move": "c2c4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00045613441389779675,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1128,
+            "completed_depth": 7,
+            "proxy": -0.8646867398260751
+          }
+        },
+        {
+          "move": "c2c5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004128819565931531,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -498,
+            "completed_depth": 6,
+            "proxy": -0.5219889885776863
+          }
+        },
+        {
+          "move": "c2c6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.005591905362624039,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -213,
+            "completed_depth": 6,
+            "proxy": -0.2427313394515708
+          }
+        },
+        {
+          "move": "c2c7",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.05809807451995601,
+          "root_actor_q": -0.5455743074417114,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -188,
+            "completed_depth": 6,
+            "proxy": -0.2151877256529957
+          }
+        },
+        {
+          "move": "c2c8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.021357924412489942,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -212,
+            "completed_depth": 6,
+            "proxy": -0.24163675019144762
+          }
+        },
+        {
+          "move": "c2c9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0030844191224324575,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -149,
+            "completed_depth": 6,
+            "proxy": -0.17154280590846646
+          }
+        },
+        {
+          "move": "c2c1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004073410998119522,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -267,
+            "completed_depth": 6,
+            "proxy": -0.30086017174196183
+          }
+        },
+        {
+          "move": "c2c0",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.008954665122051578,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -778,
+            "completed_depth": 7,
+            "proxy": -0.7185550657212582
+          }
+        },
+        {
+          "move": "c2b2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.007478529168513214,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -207,
+            "completed_depth": 6,
+            "proxy": -0.23615462379661573
+          }
+        },
+        {
+          "move": "d2d1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.021040587438834756,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -374,
+            "completed_depth": 5,
+            "proxy": -0.4093946103652824
+          }
+        },
+        {
+          "move": "d2e2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 3.7267940301618335e-05,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -972,
+            "completed_depth": 6,
+            "proxy": -0.8110988395907178
+          }
+        }
+      ]
+    },
+    {
+      "game": 163,
+      "ply": 50,
+      "phase": "1-4",
+      "live_darks": 4,
+      "search_seed": 9750009,
+      "completed_simulations": 8,
+      "legal_actions": 46,
+      "actual_chosen_move": "c4a6",
+      "search_statistics_unchanged": true,
+      "entropy": {
+        "raw": 2.0794415416798357,
+        "pruned": 2.0794415416798357
+      },
+      "target_total_variation": 0.0,
+      "teacher_forced_nodes_per_action": 64,
+      "expected_teacher_proxy": {
+        "raw": 0.8784841432286158,
+        "pruned": 0.8784841432286158
+      },
+      "pruned_minus_raw_teacher_proxy": 0.0,
+      "actions": [
+        {
+          "move": "a5a6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.007341187604080083,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1083,
+            "completed_depth": 7,
+            "proxy": 0.8508716536477885
+          }
+        },
+        {
+          "move": "a5b5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.015869004990785685,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1079,
+            "completed_depth": 6,
+            "proxy": 0.8495827600955786
+          }
+        },
+        {
+          "move": "c4a6",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.06105408947910293,
+          "root_actor_q": 0.6809633374214172,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 980,
+            "completed_depth": 6,
+            "proxy": 0.814257415970249
+          }
+        },
+        {
+          "move": "c4e6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.014660344772187178,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1044,
+            "completed_depth": 5,
+            "proxy": 0.8378614908466212
+          }
+        },
+        {
+          "move": "c4a2",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.04070935112745753,
+          "root_actor_q": 0.6245368719100952,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1152,
+            "completed_depth": 6,
+            "proxy": 0.8715604867735567
+          }
+        },
+        {
+          "move": "g3g4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0010918535059651917,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -528,
+            "completed_depth": 7,
+            "proxy": -0.5469040726299834
+          }
+        },
+        {
+          "move": "g3g5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.006465211648722442,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1072,
+            "completed_depth": 7,
+            "proxy": 0.8473025493698156
+          }
+        },
+        {
+          "move": "g3g6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0024971603949173423,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 230,
+            "completed_depth": 7,
+            "proxy": 0.26124288048792765
+          }
+        },
+        {
+          "move": "g3g2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.009599505197362652,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 978,
+            "completed_depth": 6,
+            "proxy": 0.8134722448463226
+          }
+        },
+        {
+          "move": "g3g1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0014495251544165972,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 959,
+            "completed_depth": 7,
+            "proxy": 0.8058634874331205
+          }
+        },
+        {
+          "move": "g3g0",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.001262619070663546,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 920,
+            "completed_depth": 6,
+            "proxy": 0.7893735883604803
+          }
+        },
+        {
+          "move": "g3f3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 8.253151639823045e-05,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -677,
+            "completed_depth": 6,
+            "proxy": -0.6568252065348454
+          }
+        },
+        {
+          "move": "g3e3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0017245761487111376,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 168,
+            "completed_depth": 6,
+            "proxy": 0.19290127784339675
+          }
+        },
+        {
+          "move": "g3d3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0011281795109331643,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -675,
+            "completed_depth": 7,
+            "proxy": -0.655500905474873
+          }
+        },
+        {
+          "move": "g3c3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.013485292260733934,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 965,
+            "completed_depth": 6,
+            "proxy": 0.8082957084461769
+          }
+        },
+        {
+          "move": "g3b3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.009358434206420529,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1016,
+            "completed_depth": 6,
+            "proxy": 0.8278910900491768
+          }
+        },
+        {
+          "move": "g3a3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.029024333381577297,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 910,
+            "completed_depth": 6,
+            "proxy": 0.7849507574147577
+          }
+        },
+        {
+          "move": "g3h3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.03290432016783001,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 968,
+            "completed_depth": 6,
+            "proxy": 0.8095015757073579
+          }
+        },
+        {
+          "move": "g3i3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0064427588579528475,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1082,
+            "completed_depth": 6,
+            "proxy": 0.8505503854355663
+          }
+        },
+        {
+          "move": "c2b4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0036447801008575305,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 257,
+            "completed_depth": 7,
+            "proxy": 0.29024813961019025
+          }
+        },
+        {
+          "move": "c2d4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00019044024927237574,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 297,
+            "completed_depth": 7,
+            "proxy": 0.3322442198500516
+          }
+        },
+        {
+          "move": "c2d0",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004174662843089285,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 72,
+            "completed_depth": 5,
+            "proxy": 0.08352587167723433
+          }
+        },
+        {
+          "move": "c2a3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0018127980097819975,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -6,
+            "completed_depth": 7,
+            "proxy": -0.006976630990670336
+          }
+        },
+        {
+          "move": "c2a1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.008219453681697608,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -71,
+            "completed_depth": 7,
+            "proxy": -0.08237108163535943
+          }
+        },
+        {
+          "move": "c2e3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.016247040007765917,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "mate",
+            "value": -2,
+            "completed_depth": 25,
+            "proxy": -1.0
+          }
+        },
+        {
+          "move": "c2e1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00035132782818361865,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "mate",
+            "value": -1,
+            "completed_depth": 111,
+            "proxy": -1.0
+          }
+        },
+        {
+          "move": "e2e3",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.08856196890650156,
+          "root_actor_q": 0.7078897953033447,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1487,
+            "completed_depth": 5,
+            "proxy": 0.9389459081315074
+          }
+        },
+        {
+          "move": "b1a2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0046569808449438916,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1193,
+            "completed_depth": 6,
+            "proxy": 0.8825553944168543
+          }
+        },
+        {
+          "move": "b1a0",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0032283212747652064,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 874,
+            "completed_depth": 6,
+            "proxy": 0.7683466335695959
+          }
+        },
+        {
+          "move": "b1c0",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.022312790631898973,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1172,
+            "completed_depth": 6,
+            "proxy": 0.8770387476245746
+          }
+        },
+        {
+          "move": "f1f2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0007614395743790748,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1063,
+            "completed_depth": 6,
+            "proxy": 0.8443242661516807
+          }
+        },
+        {
+          "move": "f1f3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0012363465766879176,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -615,
+            "completed_depth": 7,
+            "proxy": -0.6138750968646488
+          }
+        },
+        {
+          "move": "f1f4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0010638812318392696,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -621,
+            "completed_depth": 6,
+            "proxy": -0.6182040957027548
+          }
+        },
+        {
+          "move": "f1f5",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.08076156103223316,
+          "root_actor_q": 0.8321691751480103,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1186,
+            "completed_depth": 6,
+            "proxy": 0.8807427950672579
+          }
+        },
+        {
+          "move": "f1f6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.02692449895420144,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1364,
+            "completed_depth": 4,
+            "proxy": 0.9195409526799733
+          }
+        },
+        {
+          "move": "f1f7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0023517590518343265,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -563,
+            "completed_depth": 7,
+            "proxy": -0.5747927725671966
+          }
+        },
+        {
+          "move": "f1f8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.001852939177758355,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -504,
+            "completed_depth": 8,
+            "proxy": -0.5270462622537498
+          }
+        },
+        {
+          "move": "f1f9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0014451286132785934,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -158,
+            "completed_depth": 7,
+            "proxy": -0.18168139482885642
+          }
+        },
+        {
+          "move": "f1e1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0004943906202318356,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1083,
+            "completed_depth": 6,
+            "proxy": 0.8508716536477885
+          }
+        },
+        {
+          "move": "f1d1",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.039171443225991864,
+          "root_actor_q": 0.3044030964374542,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1332,
+            "completed_depth": 6,
+            "proxy": 0.9135934302281199
+          }
+        },
+        {
+          "move": "f1c1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004666451464407401,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -73,
+            "completed_depth": 7,
+            "proxy": -0.08468043742740154
+          }
+        },
+        {
+          "move": "f1g1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.005195545143570962,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1030,
+            "completed_depth": 7,
+            "proxy": 0.8329438815591182
+          }
+        },
+        {
+          "move": "f1h1",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.14451241801830436,
+          "root_actor_q": 0.7527525424957275,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1212,
+            "completed_depth": 6,
+            "proxy": 0.8873458870185605
+          }
+        },
+        {
+          "move": "b0d1",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.09590600635772083,
+          "root_actor_q": 0.8364167213439941,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1096,
+            "completed_depth": 6,
+            "proxy": 0.8549907169525194
+          }
+        },
+        {
+          "move": "e0e1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004652104905500367,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 955,
+            "completed_depth": 5,
+            "proxy": 0.804226740938831
+          }
+        },
+        {
+          "move": "f0e1",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.17945324267708396,
+          "root_actor_q": 0.8901987075805664,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 1134,
+            "completed_depth": 6,
+            "proxy": 0.8664365056871544
+          }
+        }
+      ]
+    },
+    {
+      "game": 115,
+      "ply": 35,
+      "phase": "5-14",
+      "live_darks": 13,
+      "search_seed": 9750017,
+      "completed_simulations": 8,
+      "legal_actions": 46,
+      "actual_chosen_move": "d9e8",
+      "search_statistics_unchanged": true,
+      "entropy": {
+        "raw": 2.0794415416798357,
+        "pruned": 2.0794415416798357
+      },
+      "target_total_variation": 0.0,
+      "teacher_forced_nodes_per_action": 64,
+      "expected_teacher_proxy": {
+        "raw": -0.7780712744515926,
+        "pruned": -0.7780712744515926
+      },
+      "pruned_minus_raw_teacher_proxy": 0.0,
+      "actions": [
+        {
+          "move": "a9a8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 2.535768041432441e-07,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2291,
+            "completed_depth": 4,
+            "proxy": -0.9903384604701082
+          }
+        },
+        {
+          "move": "a9b9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.014498786399617358,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2317,
+            "completed_depth": 4,
+            "proxy": -0.990902757290002
+          }
+        },
+        {
+          "move": "a9c9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00010164120191467572,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2262,
+            "completed_depth": 4,
+            "proxy": -0.9896678758528277
+          }
+        },
+        {
+          "move": "d9e8",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.06280564256373977,
+          "root_actor_q": -0.9768533706665039,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1668,
+            "completed_depth": 5,
+            "proxy": -0.9594971081849404
+          }
+        },
+        {
+          "move": "e9e8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 4.864779273904105e-05,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2524,
+            "completed_depth": 4,
+            "proxy": -0.9943688399636381
+          }
+        },
+        {
+          "move": "f9e8",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.04017424416862031,
+          "root_actor_q": -0.9832391738891602,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1616,
+            "completed_depth": 5,
+            "proxy": -0.9544093002142784
+          }
+        },
+        {
+          "move": "i9i8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0001236089832353469,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2337,
+            "completed_depth": 4,
+            "proxy": -0.9913144000057977
+          }
+        },
+        {
+          "move": "i9i7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 1.9666972642343485e-05,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2323,
+            "completed_depth": 4,
+            "proxy": -0.9910282485743934
+          }
+        },
+        {
+          "move": "i9h9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0038251553938755986,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2339,
+            "completed_depth": 4,
+            "proxy": -0.9913545301166716
+          }
+        },
+        {
+          "move": "i9g9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0034056888878141946,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2312,
+            "completed_depth": 3,
+            "proxy": -0.9907968476007737
+          }
+        },
+        {
+          "move": "h8h9",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 9.92414675017379e-05,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3151,
+            "completed_depth": 4,
+            "proxy": -0.9986869682827656
+          }
+        },
+        {
+          "move": "h8h7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00010209458864268972,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3149,
+            "completed_depth": 4,
+            "proxy": -0.9986808509713254
+          }
+        },
+        {
+          "move": "h8h6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0016536192748514797,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3163,
+            "completed_depth": 4,
+            "proxy": -0.998723081385987
+          }
+        },
+        {
+          "move": "h8h5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0005260237740178881,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3140,
+            "completed_depth": 4,
+            "proxy": -0.998652968697843
+          }
+        },
+        {
+          "move": "h8h4",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0026111059205169928,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3200,
+            "completed_depth": 3,
+            "proxy": -0.9988282996638527
+          }
+        },
+        {
+          "move": "h8h3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0011699335397354863,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3188,
+            "completed_depth": 4,
+            "proxy": -0.9987951604917619
+          }
+        },
+        {
+          "move": "h8h2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.003208852938507977,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2188,
+            "completed_depth": 2,
+            "proxy": -0.9877395178310482
+          }
+        },
+        {
+          "move": "h8h1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.005922280006426456,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3175,
+            "completed_depth": 3,
+            "proxy": -0.9987582018658575
+          }
+        },
+        {
+          "move": "h8g8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.006440394290976727,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3116,
+            "completed_depth": 4,
+            "proxy": -0.9985757028992621
+          }
+        },
+        {
+          "move": "h8f8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0009775487300747654,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3133,
+            "completed_depth": 4,
+            "proxy": -0.9986308759559079
+          }
+        },
+        {
+          "move": "h8e8",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.3194100426321942,
+          "root_actor_q": -0.9618021845817566,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -946,
+            "completed_depth": 6,
+            "proxy": -0.8004990217606297
+          }
+        },
+        {
+          "move": "h8d8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.002553809328287811,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3123,
+            "completed_depth": 4,
+            "proxy": -0.9985986853118405
+          }
+        },
+        {
+          "move": "h8c8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.007637081351127312,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3139,
+            "completed_depth": 4,
+            "proxy": -0.9986498345387343
+          }
+        },
+        {
+          "move": "h8b8",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.03146482873631679,
+          "root_actor_q": -0.9975868463516235,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3139,
+            "completed_depth": 2,
+            "proxy": -0.9986498345387343
+          }
+        },
+        {
+          "move": "h8a8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.01672279579145671,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3139,
+            "completed_depth": 5,
+            "proxy": -0.9986498345387343
+          }
+        },
+        {
+          "move": "h8i8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.008659805743455847,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3139,
+            "completed_depth": 4,
+            "proxy": -0.9986498345387343
+          }
+        },
+        {
+          "move": "a7a8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0006604907411102564,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2023,
+            "completed_depth": 3,
+            "proxy": -0.9820563021526176
+          }
+        },
+        {
+          "move": "a7b7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0017220188615242242,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2890,
+            "completed_depth": 4,
+            "proxy": -0.9975920698090904
+          }
+        },
+        {
+          "move": "a7c7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.021376320205929264,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2905,
+            "completed_depth": 4,
+            "proxy": -0.997674523204957
+          }
+        },
+        {
+          "move": "a7d7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.022806734763682116,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2928,
+            "completed_depth": 5,
+            "proxy": -0.997795507596643
+          }
+        },
+        {
+          "move": "f7f6",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.015327583362919605,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3207,
+            "completed_depth": 4,
+            "proxy": -0.9988472085340979
+          }
+        },
+        {
+          "move": "g7e5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0016691241652614483,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1875,
+            "completed_depth": 6,
+            "proxy": -0.9747772648220281
+          }
+        },
+        {
+          "move": "g7i5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.002413020834859365,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -3250,
+            "completed_depth": 4,
+            "proxy": -0.9989568539285347
+          }
+        },
+        {
+          "move": "a6a5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.019108622473926133,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2013,
+            "completed_depth": 3,
+            "proxy": -0.9816379928344178
+          }
+        },
+        {
+          "move": "g6g5",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.04653947607432912,
+          "root_actor_q": -0.9941415786743164,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1763,
+            "completed_depth": 4,
+            "proxy": -0.9673950012571181
+          }
+        },
+        {
+          "move": "i6i5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.01749176832033644,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2051,
+            "completed_depth": 4,
+            "proxy": -0.9831779851197107
+          }
+        },
+        {
+          "move": "e1e2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.012882709900345223,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2743,
+            "completed_depth": 4,
+            "proxy": -0.9966123467354779
+          }
+        },
+        {
+          "move": "e1e3",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.029510429768069262,
+          "root_actor_q": -0.9755557179450989,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2667,
+            "completed_depth": 5,
+            "proxy": -0.9959587493592544
+          }
+        },
+        {
+          "move": "e1e6",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.19667627592006545,
+          "root_actor_q": 0.1258459985256195,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 396,
+            "completed_depth": 5,
+            "proxy": 0.430463218149665
+          }
+        },
+        {
+          "move": "e1d1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.012745018520010245,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1996,
+            "completed_depth": 7,
+            "proxy": -0.9809045819460118
+          }
+        },
+        {
+          "move": "e1c1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.019387095362770536,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1974,
+            "completed_depth": 7,
+            "proxy": -0.9799122509233229
+          }
+        },
+        {
+          "move": "e1b1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0011512818268916895,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2294,
+            "completed_depth": 7,
+            "proxy": -0.9904053097233485
+          }
+        },
+        {
+          "move": "e1f1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0013252149252232196,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1975,
+            "completed_depth": 7,
+            "proxy": -0.9799584447566748
+          }
+        },
+        {
+          "move": "e1g1",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.023239466329454405,
+          "root_actor_q": -0.9885790348052979,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1947,
+            "completed_depth": 7,
+            "proxy": -0.9786243984474512
+          }
+        },
+        {
+          "move": "e1h1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.018069434161806182,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -1903,
+            "completed_depth": 7,
+            "proxy": -0.9763485398271277
+          }
+        },
+        {
+          "move": "e1i1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0017351194263921907,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -2140,
+            "completed_depth": 7,
+            "proxy": -0.9863015119457649
+          }
+        }
+      ]
+    },
+    {
+      "game": 109,
+      "ply": 17,
+      "phase": "15-30",
+      "live_darks": 16,
+      "search_seed": 9750025,
+      "completed_simulations": 8,
+      "legal_actions": 25,
+      "actual_chosen_move": "b9a7",
+      "search_statistics_unchanged": true,
+      "entropy": {
+        "raw": 2.0794415416798357,
+        "pruned": 2.0794415416798357
+      },
+      "target_total_variation": 0.0,
+      "teacher_forced_nodes_per_action": 64,
+      "expected_teacher_proxy": {
+        "raw": 0.13599889418499927,
+        "pruned": 0.13599889418499927
+      },
+      "pruned_minus_raw_teacher_proxy": 0.0,
+      "actions": [
+        {
+          "move": "a9a8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.001994473675451349,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 233,
+            "completed_depth": 6,
+            "proxy": 0.2644902062113396
+          }
+        },
+        {
+          "move": "a9a7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004584607314307028,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 223,
+            "completed_depth": 6,
+            "proxy": 0.25364285848516793
+          }
+        },
+        {
+          "move": "b9a7",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.02384033857280981,
+          "root_actor_q": -0.2090529054403305,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 229,
+            "completed_depth": 5,
+            "proxy": 0.26015911902013766
+          }
+        },
+        {
+          "move": "b9c7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0016860550214790005,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 354,
+            "completed_depth": 6,
+            "proxy": 0.38985404329450773
+          }
+        },
+        {
+          "move": "c9a7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.004642334879840359,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 231,
+            "completed_depth": 5,
+            "proxy": 0.2623259837258082
+          }
+        },
+        {
+          "move": "d9e8",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.05202357225264835,
+          "root_actor_q": 0.3390103876590729,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 279,
+            "completed_depth": 6,
+            "proxy": 0.31349676525740505
+          }
+        },
+        {
+          "move": "e9e8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.011672463552551584,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 40,
+            "completed_depth": 5,
+            "proxy": 0.046478116881132014
+          }
+        },
+        {
+          "move": "f9e8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.006445708376072602,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 275,
+            "completed_depth": 6,
+            "proxy": 0.30929662573884215
+          }
+        },
+        {
+          "move": "h9g7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.002384237071871715,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 318,
+            "completed_depth": 6,
+            "proxy": 0.35378827948511093
+          }
+        },
+        {
+          "move": "h9i7",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00023055317267683224,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 288,
+            "completed_depth": 6,
+            "proxy": 0.3229021671784935
+          }
+        },
+        {
+          "move": "h9f8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.000132718621495641,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 333,
+            "completed_depth": 5,
+            "proxy": 0.3689519012786573
+          }
+        },
+        {
+          "move": "e7g8",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0004387162732724356,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 62,
+            "completed_depth": 5,
+            "proxy": 0.07196838351477193
+          }
+        },
+        {
+          "move": "a6a5",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.07774757038317592,
+          "root_actor_q": -0.08700355887413025,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 338,
+            "completed_depth": 6,
+            "proxy": 0.37396362045662995
+          }
+        },
+        {
+          "move": "c6c5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.001466280350811133,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 347,
+            "completed_depth": 5,
+            "proxy": 0.38292978583377624
+          }
+        },
+        {
+          "move": "e6e5",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.689796404962675,
+          "root_actor_q": 0.44501811265945435,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 486,
+            "completed_depth": 5,
+            "proxy": 0.5117636286442424
+          }
+        },
+        {
+          "move": "g6g5",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.01637586246113016,
+          "root_actor_q": 0.05460961163043976,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 342,
+            "completed_depth": 6,
+            "proxy": 0.3779573484091573
+          }
+        },
+        {
+          "move": "h6h5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0036236346651216163,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 204,
+            "completed_depth": 6,
+            "proxy": 0.23285809245380512
+          }
+        },
+        {
+          "move": "i4g2",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0070986879857126385,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 280,
+            "completed_depth": 7,
+            "proxy": 0.31454489407941255
+          }
+        },
+        {
+          "move": "g0g1",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.0005651376115071689,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -887,
+            "completed_depth": 6,
+            "proxy": -0.7744673626313345
+          }
+        },
+        {
+          "move": "g0g2",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.015230023673361424,
+          "root_actor_q": -0.24710363149642944,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -464,
+            "completed_depth": 5,
+            "proxy": -0.4926358102013618
+          }
+        },
+        {
+          "move": "g0g3",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00015344709764793352,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 180,
+            "completed_depth": 7,
+            "proxy": 0.2062986139555119
+          }
+        },
+        {
+          "move": "g0g4",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.012924859615292224,
+          "root_actor_q": 0.22662387788295746,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 74,
+            "completed_depth": 6,
+            "proxy": 0.08583477582998095
+          }
+        },
+        {
+          "move": "g0g5",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.001430991606276234,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": 188,
+            "completed_depth": 7,
+            "proxy": 0.2151877256529957
+          }
+        },
+        {
+          "move": "g0f0",
+          "actual_visits": 0,
+          "raw_target": 0.0,
+          "pruned_target": 0.0,
+          "noised_prior": 0.00037395934670904395,
+          "root_actor_q": null,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -787,
+            "completed_depth": 5,
+            "proxy": -0.7235788575763872
+          }
+        },
+        {
+          "move": "g0h0",
+          "actual_visits": 1,
+          "raw_target": 0.125,
+          "pruned_target": 0.125,
+          "noised_prior": 0.06313736145610281,
+          "root_actor_q": -0.6185095906257629,
+          "teacher_score": {
+            "kind": "cp",
+            "value": -307,
+            "completed_depth": 6,
+            "proxy": -0.34254829393619746
+          }
+        }
+      ]
+    }
+  ],
+  "quarantined": [],
+  "limitations": [
+    "No actual hidden assignment, opponent-private capture identity or completed game seed enters neural or native inference.",
+    "Existing source PUCT dynamics and sampled world estimates remain approximate; native-terminal prefix membership does not certify counterfactual search rules.",
+    "Native/source full legal sets checked at each selected root; incompatible roots quarantined, never silently substituted or reset to a current FEN.",
+    "Teacher query replays complete actor-specific tokens with only lawful moved reveals and captor-known private events; clears hash for each forced action.",
+    "The full diagnostic requests2048nodes per action (this transport preflight requests64) yields scores of different completed depths; the score proxy tanh(cp/860) or sign(mate) is not calibrated value, equilibrium regret or an equal-wall-time strength test.",
+    "Sharper targets or better teacher proxy do not establish better self-play or playing strength. Even positive primary evidence only supports a separately frozen controlled learning study.",
+    "One model,32reused TRAIN roots and descriptive phase sampling; no independent test generalization or multiple-comparison guarantee."
+  ],
+  "summary": {
+    "games": 4,
+    "roots": 4,
+    "game_mean_pruned_minus_raw_teacher_proxy": 0.0,
+    "paired_game_bootstrap_95": [
+      0.0,
+      0.0
+    ],
+    "resamples": 10000,
+    "benefit_supported": false,
+    "scope": "Descriptive TRAIN-root teacher-search proxy, not true values or strength."
+  },
+  "phase_descriptive": {
+    "0-0": {
+      "games": 1,
+      "roots": 1,
+      "game_mean_pruned_minus_raw_teacher_proxy": 0.0,
+      "paired_game_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "resamples": 10000,
+      "benefit_supported": false,
+      "scope": "Descriptive TRAIN-root teacher-search proxy, not true values or strength."
+    },
+    "1-4": {
+      "games": 1,
+      "roots": 1,
+      "game_mean_pruned_minus_raw_teacher_proxy": 0.0,
+      "paired_game_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "resamples": 10000,
+      "benefit_supported": false,
+      "scope": "Descriptive TRAIN-root teacher-search proxy, not true values or strength."
+    },
+    "15-30": {
+      "games": 1,
+      "roots": 1,
+      "game_mean_pruned_minus_raw_teacher_proxy": 0.0,
+      "paired_game_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "resamples": 10000,
+      "benefit_supported": false,
+      "scope": "Descriptive TRAIN-root teacher-search proxy, not true values or strength."
+    },
+    "5-14": {
+      "games": 1,
+      "roots": 1,
+      "game_mean_pruned_minus_raw_teacher_proxy": 0.0,
+      "paired_game_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "resamples": 10000,
+      "benefit_supported": false,
+      "scope": "Descriptive TRAIN-root teacher-search proxy, not true values or strength."
+    }
+  },
+  "all_planned_cases_accounted": true,
+  "eligible_for_controlled_target_study": false,
+  "source_report_sha256": "74c9ae2d222a03449cb3436383eb1fb6416205d34c31c78e8ba1ca98b33d66e0"
+}

@@ -103,3 +103,16 @@ Evidence: `results/native-terminal-target-research-protocol.json`,
 `results/20261027-native-terminal-target-data-preflight.json`,
 `results/20261027-native-terminal-{source-full-control,source-prefix-control,native-prefix}-training.json`
 and `results/native-terminal-target-evaluation-plan.json`.
+
+The first fixed contrast is complete: native versus source-return prefix control
+scores32wins/3draws/29losses,52.34375%score with paired bootstrap95%
+[41.40625%,63.28125%]. All64games/3339moves pass native identity/legal/terminal
+and actual-clock audits, with zero technical games or rounding ambiguities.
+This label-only screen is inconclusive. Native prefix versus the full-source
+control also finishes at30wins/0draws/34losses,46.875%score with paired95%
+[35.9375%,57.8125%], again technically clean. That second contrast changes
+data/update count as declared and is not label-only. The remaining parent and
+teacher screens continue unchanged. Neither finished comparison establishes
+that correcting native returns alone
+recovers the pretrained parent's strength. Evidence:
+`results/20261027-native-terminal-native-prefix-vs-{source-prefix-control,source-full-control}{,-audit}.json`.

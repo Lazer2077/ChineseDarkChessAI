@@ -135,3 +135,8 @@ native terminal. This diagnostic is not proof that the mismatch caused the
 observed regression. A new matched prefix/return-label study tests that distinct
 hypothesis without altering this completed experiment or its original labels;
 see [native-terminal reanalysis](NATIVE_TERMINAL_REANALYSIS.md).
+
+The independently specified [policy-target pruning study](POLICY_TARGET_PRUNING.md)
+addresses exploratory visit targets on the same certified native prefixes.
+Its32-root TRAIN teacher proxy supports a bounded matched learner comparison;
+no resulting actor-strength gain is established yet.

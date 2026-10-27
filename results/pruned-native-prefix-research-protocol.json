@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "scope": "One controlled target-pruning research update after positive but bounded TRAIN-root proxy evidence. No privileged student, strong-suite claim or automatic promotion.",
+  "trigger": {
+    "report": "results/20261027-policy-target-pruning-diagnostic.json",
+    "sha256": "fd140fe97dc85078603df7a8e67135e607a0929d9284a24a8a49706840f230b8",
+    "game_mean_proxy_difference": 0.022003619033994382,
+    "paired_bootstrap_95": [
+      0.007406392464122086,
+      0.04215401362624856
+    ]
+  },
+  "data": "Exactly reproduced actual searches for all288native-terminal prefixes, frozen original256TRAIN/32selection roles. No source files or actual visits rewritten. Any reproduction mismatch stops before fitting.",
+  "control": {
+    "model_sha256": "318325e35e1a49b7418ed4c0514ee5fae9eaafd00596a72659d7811bc8cecd80",
+    "raw_policy": "original actual completed visits /256",
+    "value": "native-prefix actual terminal return"
+  },
+  "intervention": "Same x,z,game membership,order,augmentation and optimizer budget. Replace only the CE target with separately archived upstream pruned target from the exactly reproduced root. No forced-playout search or rule changes.",
+  "training": {
+    "seed": 20261031,
+    "initial_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+    "epochs": 4,
+    "batch": 128,
+    "lr": 1e-05,
+    "updates_expected": 428,
+    "precision": "eagerFP32 original trainer arithmetic",
+    "checkpoint": "fixed final epoch4 for raw control and pruned intervention; no match selection",
+    "reproduction_gate": "Refit raw control through the new target loader and require exact318325model digest before the pruned fit."
+  },
+  "matches": [
+    {
+      "opponent": "native-prefix-raw-control",
+      "seed": 9760001,
+      "games": 64
+    },
+    {
+      "opponent": "pretrained-parent",
+      "seed": 9761001,
+      "games": 64
+    },
+    {
+      "opponent": "unchanged-native-teacher",
+      "seed": 9762001,
+      "games": 64
+    }
+  ],
+  "conditions": "Freeze played artifacts before all3matches. Actual10+0.1,LeafBatch32neural,1CPU each,2concurrent,shared dedicated inference device. Finish all regardless of results; independent native identity/legal/terminal/clock audits and raw archives. No retuning or unplanned matching based on other running experiment scores.",
+  "limitations": "One training seed and reused rollouts. Sharper targets/better TRAIN proxy do not imply policy improvement, better expected game return, equilibrium or teacher strength. More than a weak-control victory is required."
+}

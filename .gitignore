@@ -7,3 +7,6 @@ node_modules/
 external/
 
 build/
+
+# Preserve the frozen runtime digest locally; publish its normalized copy.
+results/raw/pruned-native-prefix-targets.tar.gz

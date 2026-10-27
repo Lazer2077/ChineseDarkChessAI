@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "source": "results/20261027-policy-target-pruning-diagnostic.json",
+  "source_sha256": "fd140fe97dc85078603df7a8e67135e607a0929d9284a24a8a49706840f230b8",
+  "script_sha256": "3043549796ef001c82c63603e0a81e17d5b1d7a00e22c23315f5c59975bee416",
+  "scope": "Descriptive individual-root changes and fixed-stratum means. Teacher search proxy is not truth or playing strength. Same32TRAIN roots, not independent generalization; no phase-interaction or monotonic-observability inference.",
+  "artifacts": {
+    "results/figures/policy_target_pruning_20261027.png": "dc6ef0c4a9ac9a833ae37ea40c9156c062ac086fec5ff981bcc5502f47c7a146",
+    "results/figures/policy_target_pruning_20261027.pdf": "ab9993626bce8130be8a29f33f1415cf811d5a0a91437f8f3ccde1e0d8abb67f"
+  }
+}

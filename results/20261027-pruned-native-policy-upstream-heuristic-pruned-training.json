@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "One paired raw/pruned policy-target update on the exact same native-terminal prefixes. Original native return targets, initial relative parent, one seed20261031, four epochs/428updates and final-epoch selection. Exact raw318325control reproduction is required before fitting the pruned intervention. No strength or promotion follows from fitting.",
+  "training_plan_sha256": "ba6f16835f144a46b54c6d5c0c82841ce3f82386a444e9247243e8d09f850d7e",
+  "policy_target_scheme": "upstream-heuristic-pruned",
+  "checkpoint_selection": "fixed-final-epoch",
+  "initial_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+  "model_sha256": "d73e7e018e5aa184d5e91affac67d753b811a2eb3885906bf67b683d72b8fb6d",
+  "raw_control_reproduced_bitwise": false,
+  "native_terminal_annotations_sha256": "6e13ecd785c42735f5aff5670c9c15586531d6fefa29089c9eb7bea1236e1c18",
+  "derived_targets_manifest_sha256": "7284fce4ea9bcca1d93c09db2d4d54fec7ffeec7a96345dc7fa4ef3f9fd96061",
+  "training_games": 256,
+  "training_positions": 13646,
+  "selection_games": 32,
+  "selection_positions": 1685,
+  "epochs": 4,
+  "updates": 428,
+  "selected_epoch": 4,
+  "initial_validation": {
+    "loss": 6.644735131419377,
+    "search_policy_ce": 5.673710365182214,
+    "terminal_value_mse": 0.9710247662371627
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 107,
+      "train_policy_ce": 4.057900730647702,
+      "train_terminal_mse": 0.8194626440195399,
+      "validation": {
+        "loss": 4.6168990771919045,
+        "search_policy_ce": 3.659911185697561,
+        "terminal_value_mse": 0.9569878914943435
+      },
+      "seconds": 3.5959875732660294
+    },
+    {
+      "epoch": 2,
+      "updates": 214,
+      "train_policy_ce": 3.4341386696573544,
+      "train_terminal_mse": 0.7596233685170732,
+      "validation": {
+        "loss": 4.347194952356356,
+        "search_policy_ce": 3.4179078280395148,
+        "terminal_value_mse": 0.9292871243168409
+      },
+      "seconds": 6.777759214863181
+    },
+    {
+      "epoch": 3,
+      "updates": 321,
+      "train_policy_ce": 3.2972141218975146,
+      "train_terminal_mse": 0.7168762883395022,
+      "validation": {
+        "loss": 4.273758851456005,
+        "search_policy_ce": 3.3397430329365263,
+        "terminal_value_mse": 0.9340158185194791
+      },
+      "seconds": 10.772570153698325
+    },
+    {
+      "epoch": 4,
+      "updates": 428,
+      "train_policy_ce": 3.2456658205538047,
+      "train_terminal_mse": 0.678839223844013,
+      "validation": {
+        "loss": 4.230965362458272,
+        "search_policy_ce": 3.30570464997334,
+        "terminal_value_mse": 0.9252607124849314
+      },
+      "seconds": 14.7385527305305
+    }
+  ],
+  "limitations": "One training seed, reused rollouts, approximate original search and upstream pruning heuristic. Only CE policy targets change against the matched raw native-prefix control. Different-target losses and fits alone do not establish playing strength."
+}

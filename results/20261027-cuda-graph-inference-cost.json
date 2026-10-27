@@ -1,0 +1,1085 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "530ce891275db889010b866ac62268068637052d4f257b8583a1b08110af3b34",
+  "scope": "Fixed FP32 CUDA-graph forward arithmetic against actual eager inference on the same128TRAIN records/models as the prior precision diagnostic. No actor/search settings or scheduled training/matches changed.",
+  "samples": [
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.490574777126312
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 0.5789273418486118
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 0.581334438174963
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.562403310090303
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.588735803961754
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 0.5786953493952751
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 9.098509140312672
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 2.901623584330082
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 2.679530903697014
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 8.780339453369379
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 8.969071321189404
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 2.722547948360443
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.464936025440693
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 0.653773732483387
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 0.6528315134346485
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.358188204467297
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.388035602867603
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 0.6511121988296509
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 8.894685469567776
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 2.8950152918696404
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 2.879389002919197
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 8.986723329871893
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 8.93510328605771
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 2.942961174994707
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.332904938608408
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 0.895687285810709
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 0.8981629274785519
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.312013976275921
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.401205528527498
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 0.896820891648531
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 8.951371815055609
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 3.2957149669528008
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 3.254139330238104
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 9.034250024706125
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 8.702039811760187
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 3.2437046989798546
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.6955240443348885
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 0.7702219299972057
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 0.7723304443061352
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.572148576378822
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.495158839970827
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 0.7717356085777283
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 9.21421805396676
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 2.9265424236655235
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 2.9067598283290863
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 8.919954113662243
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 8.886174112558365
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 2.9788028448820114
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.54041450470686
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 1.0258829221129417
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 1.0259526781737804
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.475774850696325
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.587497983127832
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 1.0229725390672684
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 8.992424607276917
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 3.204729314893484
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 3.2393936067819595
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 9.117442648857832
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 9.162748698145151
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 3.255191259086132
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.4834559336304665
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 1.9424783065915108
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 1.942533254623413
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.622172798961401
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.424081884324551
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 1.7743640579283237
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 9.042296558618546
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 4.227043408900499
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 4.216363932937384
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 9.186097141355276
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 9.00172796100378
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 4.233962390571833
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.549187004566193
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 0.7379498332738876
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 0.7352700456976891
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.621101591736078
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.710543483495712
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 0.7353772409260273
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 9.038994275033474
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 2.848254796117544
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 2.8604083694517612
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 9.033568669110537
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 9.017200022935867
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 3.0043394304811954
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.771895941346884
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 0.9784344583749771
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 0.9799891151487827
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.699945125728846
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.751292664557695
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 0.9787360206246376
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 9.119876101613045
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 3.2172332517802715
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 3.285304643213749
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 9.139543492347002
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 9.281184244900942
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 3.2612130977213383
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 6.507132016122341
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 1.8940826877951622
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 1.895835343748331
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 6.553855631500483
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 6.532756891101599
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 1.73932621255517
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "eager",
+      "milliseconds_per_call": 9.288434404879808
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "mode": "graph",
+      "milliseconds_per_call": 4.184307157993317
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "graph",
+      "milliseconds_per_call": 4.168951511383057
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "mode": "eager",
+      "milliseconds_per_call": 9.240078181028366
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "eager",
+      "milliseconds_per_call": 9.151146560907364
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "mode": "graph",
+      "milliseconds_per_call": 4.18598810210824
+    }
+  ],
+  "checks": [
+    {
+      "model": "trained-warm64",
+      "positions_checked_across_shapes": 384,
+      "bitwise_policy_value_match": true,
+      "earlier_output_lifetimes_preserved": true,
+      "uncaptured_shape_eager_match": true,
+      "weights_and_buffers_unchanged": true,
+      "capture_seconds_excluded_from_timings": 1.0107481852173805
+    },
+    {
+      "model": "trained-wide128",
+      "positions_checked_across_shapes": 384,
+      "bitwise_policy_value_match": true,
+      "earlier_output_lifetimes_preserved": true,
+      "uncaptured_shape_eager_match": true,
+      "weights_and_buffers_unchanged": true,
+      "capture_seconds_excluded_from_timings": 0.5504022855311632
+    },
+    {
+      "model": "initial-relative128",
+      "positions_checked_across_shapes": 384,
+      "bitwise_policy_value_match": true,
+      "earlier_output_lifetimes_preserved": true,
+      "uncaptured_shape_eager_match": true,
+      "weights_and_buffers_unchanged": true,
+      "capture_seconds_excluded_from_timings": 0.4884682446718216
+    }
+  ],
+  "captured_arithmetic": "FP32 with original unchanged TF32 settings; no autocast, model training or observation changes.",
+  "summary": [
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.562403310090303,
+        "graph": 0.5789273418486118
+      },
+      "eager_over_graph": 11.335452371510822
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 8.969071321189404,
+        "graph": 2.722547948360443
+      },
+      "eager_over_graph": 3.2943667076977303
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.388035602867603,
+        "graph": 0.6528315134346485
+      },
+      "eager_over_graph": 9.785121384933076
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 8.93510328605771,
+        "graph": 2.8950152918696404
+      },
+      "eager_over_graph": 3.086375160487425
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.332904938608408,
+        "graph": 0.896820891648531
+      },
+      "eager_over_graph": 7.061504696848998
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 8.951371815055609,
+        "graph": 3.254139330238104
+      },
+      "eager_over_graph": 2.750764766547547
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.572148576378822,
+        "graph": 0.7717356085777283
+      },
+      "eager_over_graph": 8.516062370752824
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 8.919954113662243,
+        "graph": 2.9265424236655235
+      },
+      "eager_over_graph": 3.047949703900042
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.54041450470686,
+        "graph": 1.0258829221129417
+      },
+      "eager_over_graph": 6.375400509871058
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 9.117442648857832,
+        "graph": 3.2393936067819595
+      },
+      "eager_over_graph": 2.814552276009205
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.4834559336304665,
+        "graph": 1.9424783065915108
+      },
+      "eager_over_graph": 3.337723727276554
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 9.042296558618546,
+        "graph": 4.227043408900499
+      },
+      "eager_over_graph": 2.139153939034316
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.621101591736078,
+        "graph": 0.7353772409260273
+      },
+      "eager_over_graph": 9.003680319774956
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 9.033568669110537,
+        "graph": 2.8604083694517612
+      },
+      "eager_over_graph": 3.1581395039904567
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.751292664557695,
+        "graph": 0.9787360206246376
+      },
+      "eager_over_graph": 6.897970977147611
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 9.139543492347002,
+        "graph": 3.2612130977213383
+      },
+      "eager_over_graph": 2.802498094568842
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_softmax",
+      "median_ms": {
+        "eager": 6.532756891101599,
+        "graph": 1.8940826877951622
+      },
+      "eager_over_graph": 3.4490346874487092
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "eager": 9.240078181028366,
+        "graph": 4.184307157993317
+      },
+      "eager_over_graph": 2.208269572987004
+    }
+  ],
+  "limitations": "Only fixed neural forward arithmetic is captured. Eager observer encoding, legality/history processing, tree allocation and search remain outside capture. Exactness on128correlated TRAIN rows/three batch sizes plus one fallback does not prove every search branch or deadline. Cold relative weights do not certify future trained relative activations. Microbenchmark cost excludes capture; a future timed actor must preload shapes before clocks and pass whole-search equivalence plus actual-clock matches."
+}

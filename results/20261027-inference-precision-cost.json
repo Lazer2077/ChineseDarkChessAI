@@ -1,0 +1,1352 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "646b21280757bd2c27e2df82d678923569f8e88109a47fb3134614de534e5748",
+  "scope": "Frozen numerical/cost diagnostic on128existing TRAIN records,32per live-dark bin. Compare FP32 with per-call BF16 autocast at one CPU thread on one isolated GPU. No actor, search, model, training or fixed spatial-head match settings changed.",
+  "sample_indices": [
+    223,
+    38,
+    18,
+    0,
+    224,
+    39,
+    19,
+    1,
+    225,
+    40,
+    20,
+    2,
+    226,
+    41,
+    21,
+    3,
+    227,
+    42,
+    22,
+    4,
+    330,
+    43,
+    23,
+    5,
+    331,
+    44,
+    24,
+    6,
+    332,
+    45,
+    25,
+    7,
+    333,
+    46,
+    26,
+    8,
+    334,
+    47,
+    27,
+    9,
+    335,
+    48,
+    28,
+    10,
+    336,
+    49,
+    29,
+    11,
+    337,
+    50,
+    30,
+    12,
+    338,
+    51,
+    31,
+    13,
+    339,
+    52,
+    32,
+    14,
+    340,
+    53,
+    33,
+    15,
+    341,
+    54,
+    34,
+    16,
+    342,
+    97,
+    35,
+    17,
+    343,
+    98,
+    36,
+    55,
+    344,
+    99,
+    37,
+    56,
+    345,
+    100,
+    70,
+    57,
+    346,
+    101,
+    71,
+    58,
+    347,
+    102,
+    72,
+    59,
+    348,
+    103,
+    73,
+    60,
+    349,
+    104,
+    74,
+    61,
+    350,
+    105,
+    75,
+    62,
+    351,
+    106,
+    76,
+    63,
+    352,
+    107,
+    77,
+    64,
+    353,
+    108,
+    78,
+    65,
+    354,
+    109,
+    79,
+    66,
+    355,
+    110,
+    80,
+    67,
+    356,
+    111,
+    81,
+    68
+  ],
+  "sample_live_dark_counts": [
+    0,
+    4,
+    14,
+    24,
+    0,
+    3,
+    13,
+    24,
+    0,
+    2,
+    13,
+    23,
+    0,
+    2,
+    12,
+    23,
+    0,
+    2,
+    11,
+    22,
+    0,
+    2,
+    10,
+    21,
+    0,
+    2,
+    9,
+    20,
+    0,
+    2,
+    8,
+    19,
+    0,
+    2,
+    8,
+    19,
+    0,
+    2,
+    8,
+    19,
+    0,
+    1,
+    7,
+    18,
+    0,
+    1,
+    7,
+    18,
+    0,
+    1,
+    7,
+    17,
+    0,
+    1,
+    6,
+    16,
+    0,
+    1,
+    6,
+    16,
+    0,
+    1,
+    6,
+    15,
+    0,
+    1,
+    6,
+    15,
+    0,
+    4,
+    6,
+    15,
+    0,
+    4,
+    6,
+    28,
+    0,
+    4,
+    5,
+    27,
+    0,
+    4,
+    14,
+    26,
+    0,
+    4,
+    14,
+    25,
+    0,
+    4,
+    13,
+    24,
+    0,
+    4,
+    12,
+    23,
+    0,
+    3,
+    12,
+    22,
+    0,
+    3,
+    11,
+    22,
+    0,
+    3,
+    10,
+    21,
+    0,
+    2,
+    10,
+    20,
+    0,
+    2,
+    10,
+    19,
+    0,
+    2,
+    10,
+    18,
+    0,
+    2,
+    9,
+    17,
+    0,
+    2,
+    9,
+    16
+  ],
+  "torch_version": "2.7.0+cu126",
+  "cpu_threads": 1,
+  "tf32_matmul": false,
+  "tf32_cudnn": true,
+  "samples": [
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.3609592616558075
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.810586389154196
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.780322130769491
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.383828166872263
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.284636911004782
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 9.083109349012375
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.96076625213027
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.421529110521078
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.283354554325342
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.801062405109406
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.981004357337952
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.213335860520601
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.3060385175049305
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.875573799014091
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.984147105365992
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.437906995415688
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.291897222399712
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.792757242918015
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.93766200169921
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.3919110968709
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.843288969248533
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.827757462859154
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.976790588349104
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.289197392761707
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.257307343184948
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.799579367041588
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.628991898149252
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 5.930028576403856
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.042622309178114
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.368534408509731
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.581954799592495
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.989301465451717
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.016948614269495
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.63107843324542
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.883599378168583
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.469012964516878
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.6825528629124165
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.972939662635326
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.570229355245829
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.214444246143103
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.655740272253752
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 9.0463537722826
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.615952637046576
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.062252335250378
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.49541949853301
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.827659022063017
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.845613617449999
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.97939619794488
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.7928592674434185
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.678346406668425
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.675305265933275
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.7556992173194885
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.764291692525148
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.603877015411854
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.197093453258276
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.203820910304785
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.063632369041443
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.090909734368324
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.22932280227542
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.950718633830547
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.394282262772322
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.664354961365461
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.583656046539545
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.335260067135096
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.240327004343271
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.353808335959911
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.729601465165615
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.804615169763565
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.888535995036364
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.728979155421257
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.713709656149149
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.882321931421757
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.462565530091524
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.729024976491928
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.672932349145412
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.4447201788425446
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.5280769020318985
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.785822428762913
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.895270433276892
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.072167940437794
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.040794383734465
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.842117246240377
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.864996768534184
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.064219009131193
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.560487020760775
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.410426508635283
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.388380147516727
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.49400744587183
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.6476053558290005
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.422088623046875
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 8.956627734005451
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.794621054083109
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.982959624379873
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.080562181770802
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.034546837210655
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.01876711472869
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.372077576816082
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.460006397217512
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.530469331890345
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.369551457464695
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 6.438324321061373
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 8.449823968112469
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.074661135673523
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 0,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.948032885789871
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "bf16",
+      "milliseconds_per_call": 11.050239577889442
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 1,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.079266432672739
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "fp32",
+      "milliseconds_per_call": 9.0886440128088
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "repeat": 2,
+      "precision": "bf16",
+      "milliseconds_per_call": 10.97330804914236
+    }
+  ],
+  "numeric_comparisons": [
+    {
+      "model": "trained-warm64",
+      "trained": true,
+      "value_mean_absolute_difference": 0.0026046684943139553,
+      "value_max_absolute_difference": 0.0125199556350708,
+      "mean_policy_total_variation": 0.010862178169190884,
+      "full_geometry_top1_disagreements": 1,
+      "positions": 128,
+      "all_finite": true
+    },
+    {
+      "model": "trained-wide128",
+      "trained": true,
+      "value_mean_absolute_difference": 0.0019386436324566603,
+      "value_max_absolute_difference": 0.01054033637046814,
+      "mean_policy_total_variation": 0.010614080354571342,
+      "full_geometry_top1_disagreements": 2,
+      "positions": 128,
+      "all_finite": true
+    },
+    {
+      "model": "initial-relative128",
+      "trained": false,
+      "value_mean_absolute_difference": 8.186796912923455e-05,
+      "value_max_absolute_difference": 0.0002247244119644165,
+      "mean_policy_total_variation": 9.381665586261079e-05,
+      "full_geometry_top1_disagreements": 29,
+      "positions": 128,
+      "all_finite": true
+    }
+  ],
+  "precision_context": "Autocast entered separately for every forward, FP32 stored parameters; softmax and returned values explicitly FP32. Model eval/inference mode; no weight updates.",
+  "summary": [
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.3609592616558075,
+        "bf16": 8.810586389154196
+      },
+      "fp32_over_bf16": 0.7219677534160641
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 8.96076625213027,
+        "bf16": 11.283354554325342
+      },
+      "fp32_over_bf16": 0.7941579969846171
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.3060385175049305,
+        "bf16": 8.875573799014091
+      },
+      "fp32_over_bf16": 0.7104936154331128
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 8.93766200169921,
+        "bf16": 11.3919110968709
+      },
+      "fp32_over_bf16": 0.784562127082802
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.042622309178114,
+        "bf16": 8.628991898149252
+      },
+      "fp32_over_bf16": 0.7002697859148688
+    },
+    {
+      "model": "trained-warm64",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 8.63107843324542,
+        "bf16": 11.016948614269495
+      },
+      "fp32_over_bf16": 0.7834363883722012
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.655740272253752,
+        "bf16": 8.972939662635326
+      },
+      "fp32_over_bf16": 0.7417569405898558
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 8.827659022063017,
+        "bf16": 11.062252335250378
+      },
+      "fp32_over_bf16": 0.7979983419771826
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.764291692525148,
+        "bf16": 8.675305265933275
+      },
+      "fp32_over_bf16": 0.7797180024416648
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 9.197093453258276,
+        "bf16": 11.063632369041443
+      },
+      "fp32_over_bf16": 0.8312905876187493
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.335260067135096,
+        "bf16": 8.583656046539545
+      },
+      "fp32_over_bf16": 0.7380608021554081
+    },
+    {
+      "model": "trained-wide128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 8.728979155421257,
+        "bf16": 10.882321931421757
+      },
+      "fp32_over_bf16": 0.802124694566983
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.462565530091524,
+        "bf16": 8.729024976491928
+      },
+      "fp32_over_bf16": 0.7403536531852998
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 1,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 8.864996768534184,
+        "bf16": 11.064219009131193
+      },
+      "fp32_over_bf16": 0.8012311362616726
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.560487020760775,
+        "bf16": 8.410426508635283
+      },
+      "fp32_over_bf16": 0.7800421315167418
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 8,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 9.034546837210655,
+        "bf16": 10.982959624379873
+      },
+      "fp32_over_bf16": 0.8225967449753572
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "forward_only",
+      "median_ms": {
+        "fp32": 6.372077576816082,
+        "bf16": 8.460006397217512
+      },
+      "fp32_over_bf16": 0.7532000896490872
+    },
+    {
+      "model": "initial-relative128",
+      "batch": 32,
+      "path": "encode_forward_cpu_return",
+      "median_ms": {
+        "fp32": 9.079266432672739,
+        "bf16": 10.97330804914236
+      },
+      "fp32_over_bf16": 0.8273955667709835
+    }
+  ],
+  "limitations": "Two previously trained dense actors plus one cold relative model. Cold-model numerical behavior does not certify a future trained relative checkpoint. Full2550-action probabilities are measured without actual legal masks; top1changes are not illegal moves or played-game disagreements. Repeated microbenchmarks on correlated TRAIN records do not establish end-to-end search throughput or strength. BF16 is approximate, not an exactly equivalent search optimization; any deployment requires separate fixed-work and actual-clock validation."
+}

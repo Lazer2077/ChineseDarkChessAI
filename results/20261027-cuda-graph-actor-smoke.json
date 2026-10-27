@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "cases": [
+    {
+      "adapter": "adapters/spatial_policy_gpu_uci.sh",
+      "adapter_sha256": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+      "move": "a3a4",
+      "simulations": 8,
+      "preload_with_repeated_ready_seconds": 5.284670846536756,
+      "opening_legal": true
+    },
+    {
+      "adapter": "adapters/neural_policy_graph_gpu_uci.sh",
+      "adapter_sha256": "2a6c9e70b755e35e90b93ac8a12e1899e5d26bfcf1dc2110321e1140bb034418",
+      "move": "a3a4",
+      "simulations": 8,
+      "preload_with_repeated_ready_seconds": 14.500939032062888,
+      "opening_legal": true
+    }
+  ],
+  "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "script_sha256": "0828f3d1c1f7888da4595b2fd31ef3e920948af2be295e49d4173d96bf1561ed",
+  "scope": "Opening-only complete UCI control,32leaf batches,8completed simulations each. Both ready paths finish before go. No full-game, actual-clock strength or startup-throughput claim."
+}

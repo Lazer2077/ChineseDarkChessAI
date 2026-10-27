@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "out": "runs/cuda-graph-inference-cost-01",
+  "scope": "Fixed FP32 CUDA-graph forward arithmetic against actual eager inference on the same128TRAIN records/models as the prior precision diagnostic. No actor/search settings or scheduled training/matches changed.",
+  "steps": [
+    {
+      "id": "benchmark",
+      "argv": [
+        "scripts/benchmark_cuda_graph_inference.py",
+        "--plan",
+        "results/cuda-graph-inference-cost-plan.json"
+      ]
+    }
+  ],
+  "sha256": {
+    "adapters/neural_policy_gpu_uci.sh": "44dc337b287f868605c9bdf02ca542487c3aaaed848e648721eb6a01c15f6f9a",
+    "adapters/neural_policy_uci.py": "18ee5e451f97c8150c5f00ec8ff13d4b8cc168d5355d32660bd3fa138c27a4ac",
+    "adapters/neural_policy_uci.sh": "677d4d3b9b5fbbf6429312940113cc193767dbf039754cce3756a7aa7d14e775",
+    "adapters/yuan_observer.py": "44e0636f4547c0bef5499ae9e780580f071e0fdf95263e1e242ca6d58fecb887",
+    "adapters/yuan_uci.py": "802132ad3a664b1edd940081d84f2509d46ed97e12dfb2e5c4f51bbc7ea2ad69",
+    "external/yuan-bai-jieqi-lab/analysis_longcheck.py": "e88186f7ef9860d239ff6695970a683d8ef6caffd200594871eac32289c364a8",
+    "external/yuan-bai-jieqi-lab/analysis_move81.py": "4bdf42594bb476962efbd64abaf825efe7e9bea569a73c246a171c6a7134ac41",
+    "external/yuan-bai-jieqi-lab/azero.py": "4a184dd7ea1d93a8fe2328ace3439ddbe3f78c200cd8dd50ccd610558f1223f2",
+    "external/yuan-bai-jieqi-lab/evaluation_runtime.py": "e3362601af98e471664c89cd7ba4bdd23fa01ad229e8c8c92f488d7d2d17ca40",
+    "external/yuan-bai-jieqi-lab/game_record.py": "11eabc484e65755474df00dac63ea59c3bf778215bce1b689eccdf0bab1b8d20",
+    "external/yuan-bai-jieqi-lab/gui.py": "54cbb567be0925c8fc2ee0c73a1ff2f2a93d9b5ba8ee0dcd459a291be8727a94",
+    "external/yuan-bai-jieqi-lab/gui_tasks.py": "d25e137cf980b232576d9f0f8154007b30ad6f0e01983714aa2ea82250ec54df",
+    "external/yuan-bai-jieqi-lab/ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+    "external/yuan-bai-jieqi-lab/jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+    "external/yuan-bai-jieqi-lab/merge_selfplay.py": "8320e4252b31f31b1d79e3fe87423b5c968894764e60857eae57e43d6c034df1",
+    "external/yuan-bai-jieqi-lab/pika_engine.py": "ece2a5738d92b0f7666fc08470db3d66497fa4fa380027afb25aa4f1117a4f41",
+    "external/yuan-bai-jieqi-lab/position_editor.py": "0bf53b60c7d59f9c04fe43d5905eabc850bd5d50ffc50799b6404cb3a7242fce",
+    "external/yuan-bai-jieqi-lab/run_records.py": "d81739d6fdfe4b610022c39ac1e6b6dd889fdeea964e0968adb7f715d05828ec",
+    "external/yuan-bai-jieqi-lab/search_engine.py": "148fa0fca31dd1f263f352c650acb0a84404fa03517d557ba7e9cdce6bf96184",
+    "external/yuan-bai-jieqi-lab/training_diagnostics.py": "862abe86998f8e127f154db294a19018b0902b9f469e28a3c8144d9c3012b856",
+    "external/yuan-bai-jieqi-lab/training_runtime.py": "9ac2a187a7f9944457e2fdc17996a7436c16e9ccba7e638e66d926cdf9c2a4ea",
+    "external/yuan-bai-jieqi-lab/web_runtime.py": "e354281c7b404dacbcdc8ac83281d2af25d865df6223846353a958d949e108b4",
+    "external/yuan-bai-jieqi-lab/web_server.py": "5b341209c352de505f5e803aa22b3ba381553f7ee7846f8bc42b8035234f8465",
+    "research/neural_replay.py": "0314126b96fe2bf3e059c22b3d9af7c51aef2bf31a4cc5db2382de40ea2c432c",
+    "research/neural_search.py": "db3d2aadc4c4f9d22c0d40f148df2f4740992df1a6ff4b1a79ad7ba223dc7eb7",
+    "research/policy_value.py": "e49ea26e059981e6de9cd7cdc5991748f8ee45ef159804412382e5f509de2183",
+    "research/spatial_policy_value.py": "51d8513b8de5d60ddf213f33ffdf313ef879a968a81a051971e6f18da05ad62d",
+    "runs/continual-series-01/seed-20261026/iter-001.bin": "f7673af707fefd25e573c962d078837110ca5ccb3d4299b809385431016f549d",
+    "runs/neural-policy-phase-02/shared/best.json": "e07790ae821426c3454e0c048cecbb69dc0c843ff11e7b75d9745f0d95851eb3",
+    "runs/neural-policy-phase-02/shared/best.npz": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "runs/residual-width-01/wide/best.json": "67beb83e03c668d8a737bc248167df5591d7d9382094a9a77cb683bf6c8ac1d6",
+    "runs/residual-width-01/wide/best.npz": "64040c09059c171b76e2222f2b219eb13deb9e7460da40329367155439c0b2ea",
+    "runs/spatial-policy-initialization-01/relative50.npz": "150a2d69497041dd5763f7b364d82c946b340dfadf79d36d4ac99c1829fbcd30",
+    "scripts/benchmark_inference_precision.py": "86c63a12f12eb9af78f6b3fa8657c76252adb8b7decbdfb1ee02c00a96b5661c",
+    "scripts/run_frozen_experiment.py": "520c3a00bc8ae3b06f40565ca97fc08f243d5508e60b675ec60a43e8c6bf6534",
+    "research/cuda_graph_inference.py": "8e402ded1c040529f2d87c33d3e74c16eeae9ba754af28c3682535a810286ed7",
+    "scripts/benchmark_cuda_graph_inference.py": "5e780097f178b3291b4f9ae2677bc307715ec6695024ec3d8b100cad72a41d07",
+    "results/20261027-inference-precision-cost.json": "876b750dd5e292d932ce4a137ef202fadc33b528cdb25dc9114b7dd39de1a29c",
+    "results/cuda-graph-inference-cost-plan.json": "530ce891275db889010b866ac62268068637052d4f257b8583a1b08110af3b34"
+  }
+}

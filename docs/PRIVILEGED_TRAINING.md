@@ -1,8 +1,18 @@
 # Training-time privileged information: feasibility and research decision
 
-Decision: investigate a **training-only privileged value estimator**, beginning
-with supervised conditional-return prediction. Do not assume that direct
-imitation of a clairvoyant move selector is an appropriate Jieqi objective.
+Current decision: **academically defensible, but do not expand the tested
+privileged-value branch**. The paired conditional-prediction study is complete
+and found no held-out benefit: game-mean MSE is0.8954248652for the symmetric
+control and0.8978617700with live-dark identity features on64test games. See the
+completed result below for uncertainty, selection and scope. No student update
+or larger privileged fit is justified by this evidence.
+
+This rejects expansion of this particular predictor, not privileged-information
+learning in general. A future reopening needs a distinct, specified hypothesis,
+such as a history-state critic with a correctly defined observer-limited
+continuation policy and a controlled actor update. Merely giving the same
+teacher more hidden information is not sufficient justification. Direct
+imitation of a clairvoyant move selector remains an unsuitable default target.
 No privileged evaluator or actual hidden assignment enters a deployed actor.
 
 ## Academic basis and qualifications

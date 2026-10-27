@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "scope": "CPU real warm-network UCI integration smoke only, not a match/strength result.",
+  "stdout": "id name CDCA greedy masked warm policy (zero tree search)\noption name EvalFile type string default <empty>\noption name Seed type spin default 20261029 min 1 max 2147483647\noption name MoveOverhead type spin default 20 min 0 max 1000\noption name LeafBatch type spin default 8 min 1 max 128\ninfo string policy-only source sha256 aac6e834669fb80bbcf3bb5911cd47458caef5ca9be37925a10e8b6fa2d59b41\nuciok\nreadyok\ninfo string {\"simulations\": 0, \"elapsed_ms\": 17.730027437210083, \"device\": \"cpu\", \"phase_experts\": false, \"selection\": \"greedy legal-normalized policy, one inference\", \"policy_mass\": 1.0000000000000004}\nbestmove a9b9\n",
+  "exit_code": 0
+}

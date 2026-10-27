@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "scope": "Descriptive algebraic decomposition of different selection datasets/model pairs, not a fixed-data causal effect, new independent evaluation, or playing strength.",
+  "cross_arm_ce_gap_nats": 1.263331959778005,
+  "target_entropy_gap_nats": 1.1133652777028917,
+  "cross_arm_kl_gap_nats": 0.14996668207511332,
+  "entropy_fraction_of_ce_gap": 0.8812927347286728,
+  "report_sha256": "fabb5fb3aa9b494f086bf229846a550b01aee275abee8a5c6f32aeecafcafe8c"
+}

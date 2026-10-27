@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "out": "runs/root-halving-confirmation-01",
+  "scope": "Independent200game fixed-work confirmation of all-phase root halving after positive64game development41W0D23L, not a learned-model or native-teacher claim. Same frozen original warm CNN, original PUCTcontrol,256completed simulations,LeafBatch8,zero-noise16candidate halving and generous actual60+0.5clocks. No parameter or model change.",
+  "work_budget": {
+    "completed_simulations_per_decision": 256,
+    "leaf_batch": 8,
+    "noise_scale": 0.0,
+    "halving_candidates": 16,
+    "interior": "unchanged observer-consistent PUCT/chance/history/backup"
+  },
+  "clock": "60+0.5",
+  "clock_scope": "Identical generous actual fail-safe clocks. Every real wall time remains charged, no extra grace. Primary resource control is completed simulations, not equal inference time, FLOPs or NN evaluation count. This is a distinct stratum from10+0.1 teacher studies.",
+  "resources": "Both neural actors share one dedicated GPU, oneCPUthread each, two concurrent games. No GPU sharing with preceding campaign.",
+  "selection": "Predeclared before any confirmation outcome and before the public-only64game contrast finishes. Run after BOTH original contrasts complete regardless of public-only result. No confirmation-driven retuning, optional stopping or replacement of the original plan.",
+  "environment": {
+    "JIEQI_FIXED_WORK_SIMULATIONS": "256",
+    "JIEQI_FIXED_WORK_DEVICE": "cuda",
+    "JIEQI_FIXED_WORK_WITNESS_DIR": "runs/root-halving-confirmation-01/witnesses"
+  },
+  "wait_for": {
+    "state": "runs/root-halving-matches-01/state.json",
+    "plan_sha256": "b4ee1725df7ff8b4fb0fd659edaac937c6d0eb280b8f273ecc8ccd865543a610"
+  },
+  "steps": [
+    {
+      "id": "match",
+      "argv": [
+        "scripts/native_match.py",
+        "--candidate=adapters/neural_policy_fixed_halving_gpu_uci.sh",
+        "--candidate-net=runs/neural-policy-phase-02/shared/best.npz",
+        "--candidate-options=LeafBatch=8",
+        "--baseline=adapters/neural_policy_fixed_puct_gpu_uci.sh",
+        "--net=runs/neural-policy-phase-02/shared/best.npz",
+        "--baseline-options=LeafBatch=8",
+        "--tc=60+0.5",
+        "--games=200",
+        "--seed=9480001",
+        "--concurrency=2",
+        "--stage=confirmation",
+        "--out=runs/root-halving-confirmation-01/match"
+      ]
+    },
+    {
+      "id": "native-audit",
+      "argv": [
+        "scripts/audit_native_games.py",
+        "--run",
+        "runs/root-halving-confirmation-01/match",
+        "--out",
+        "results/20261027-root-halving-confirmation-native-audit.json"
+      ]
+    },
+    {
+      "id": "work-audit",
+      "argv": [
+        "scripts/audit_fixed_work.py",
+        "--run",
+        "runs/root-halving-confirmation-01/match",
+        "--witness-dir",
+        "runs/root-halving-confirmation-01/witnesses",
+        "--simulations",
+        "256",
+        "--candidate-strategy",
+        "halving",
+        "--out",
+        "results/20261027-root-halving-confirmation-work-audit.json"
+      ]
+    },
+    {
+      "id": "archive",
+      "argv": [
+        "scripts/archive_native_results.py",
+        "--out",
+        "results/20261027-root-halving-confirmation.json",
+        "--raw-dir",
+        "results/raw",
+        "runs/root-halving-confirmation-01/match"
+      ]
+    }
+  ],
+  "sha256": {
+    "adapters/neural_policy_fixed_halving_gpu_uci.sh": "4ce2e66f054f7772898a34298fa292aa1446b180adde8c48a3b0b332e4031277",
+    "adapters/neural_policy_fixed_public_halving_gpu_uci.sh": "12076db2c1396da48e97615081c1553afb8d20ab35dcef2ac91218d642338e31",
+    "adapters/neural_policy_fixed_puct_gpu_uci.sh": "2badcaa3ac048adef0a6bd0e1239a0f5cde15a8b4647afcc569515e35e349d6a",
+    "adapters/neural_policy_fixed_work_uci.py": "af124b1c3f2e928e03bddd81c7e6f48e99e2bf5aa556c2e127980fd9d1b435e8",
+    "adapters/neural_policy_uci.py": "18ee5e451f97c8150c5f00ec8ff13d4b8cc168d5355d32660bd3fa138c27a4ac",
+    "adapters/neural_policy_gpu_uci.sh": "44dc337b287f868605c9bdf02ca542487c3aaaed848e648721eb6a01c15f6f9a",
+    "adapters/yuan_observer.py": "44e0636f4547c0bef5499ae9e780580f071e0fdf95263e1e242ca6d58fecb887",
+    "adapters/yuan_uci.py": "802132ad3a664b1edd940081d84f2509d46ed97e12dfb2e5c4f51bbc7ea2ad69",
+    "research/fixed_work_profile.py": "9665b1f3044ad55f6800a366bc8e6140074e13163a5a0dc16b0b391c26ac6cd9",
+    "research/fixed_work_contract.py": "e380ca0b2e9a923860e5bd22d607ebfc1708318be6a0ed824702663ef6222469",
+    "research/sequential_halving.py": "09dacee3f4da88fde9ca8d7d7e5e62ccdff1888809d195a1bf88f31ea8dab001",
+    "research/neural_search.py": "db3d2aadc4c4f9d22c0d40f148df2f4740992df1a6ff4b1a79ad7ba223dc7eb7",
+    "research/policy_value.py": "e49ea26e059981e6de9cd7cdc5991748f8ee45ef159804412382e5f509de2183",
+    "scripts/native_match.py": "0d20b9cbedfe557c5329eaf2421a6d33cbd92236c1a99824f6285fd9f4789056",
+    "scripts/referee_entry.py": "c66d886f08e709b720f8907c6b23ab81c70a335bd69eb7f969a7c62658dd2828",
+    "scripts/run_frozen_experiment.py": "520c3a00bc8ae3b06f40565ca97fc08f243d5508e60b675ec60a43e8c6bf6534",
+    "scripts/wait_frozen_experiment.py": "e45e9f126693644f41f24b59260f6e228577db41653f148d84b5da9f849be285",
+    "scripts/audit_fixed_work.py": "f453e3bfed73aefd036b3e71d065454a1ae47c8a1345aaa40494735c4e089564",
+    "scripts/audit_native_games.py": "bbab817dcd47d51b50e741bcff8b5439a4996254ebe78f67682ba2b713d9cff7",
+    "scripts/archive_native_results.py": "6a334572d151817d5455dd255d94f8364b7393ec1682a4bdac135946c5523375",
+    "external/devinokeefe-jieqi/engine/tools/match.py": "d7bd06cdf7d30dba2ecc625058d0364515b2f15c94ecb7e2047574e0db2d0e01",
+    "external/devinokeefe-jieqi/jieqi/setup.py": "c2d8515f504814f54e820926720783f83452b90a07e0fc82b64b67fa33983d93",
+    "external/devinokeefe-jieqi/jieqi/native.py": "20fa64b5e6f2a093402141353962512801dcc7d0073646c3a204026044cf3605",
+    "external/devinokeefe-jieqi/build/release/lib/libjieqi_rules.so": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+    "build/yuan-native/source/_jieqi_legal.cpython-311-x86_64-linux-gnu.so": "1401b316a901b02a50a31d7592bb3f675101964230dee5b3e7c4377dcf67c4af",
+    "build/yuan-native/source/_jieqi_rules.cpython-311-x86_64-linux-gnu.so": "22dac537f95f1b2e301b132b33dfca1391597b3ade1ea8052bcf9fa3d232619a",
+    "build/yuan-native/manifest.json": "28dcf311a3fbe99560a4249c16d4c098d38608d2589a80672b135313b963fddf",
+    "runs/neural-policy-phase-02/shared/best.npz": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "runs/neural-policy-phase-02/shared/best.json": "e07790ae821426c3454e0c048cecbb69dc0c843ff11e7b75d9745f0d95851eb3",
+    "results/root-halving-diagnostic-plan.json": "74577bd5c965cbb8153ee96ac517cb48a7963c9b0efee2157ad5aba92510d450",
+    "results/20261026-root-halving-diagnostic.json": "a23c91c8af83927cd2f90c41fefac9802f058dc715820a706089dc9d906f1d67",
+    "external/yuan-bai-jieqi-lab/analysis_longcheck.py": "e88186f7ef9860d239ff6695970a683d8ef6caffd200594871eac32289c364a8",
+    "external/yuan-bai-jieqi-lab/analysis_move81.py": "4bdf42594bb476962efbd64abaf825efe7e9bea569a73c246a171c6a7134ac41",
+    "external/yuan-bai-jieqi-lab/azero.py": "4a184dd7ea1d93a8fe2328ace3439ddbe3f78c200cd8dd50ccd610558f1223f2",
+    "external/yuan-bai-jieqi-lab/evaluation_runtime.py": "e3362601af98e471664c89cd7ba4bdd23fa01ad229e8c8c92f488d7d2d17ca40",
+    "external/yuan-bai-jieqi-lab/game_record.py": "11eabc484e65755474df00dac63ea59c3bf778215bce1b689eccdf0bab1b8d20",
+    "external/yuan-bai-jieqi-lab/gui.py": "54cbb567be0925c8fc2ee0c73a1ff2f2a93d9b5ba8ee0dcd459a291be8727a94",
+    "external/yuan-bai-jieqi-lab/gui_tasks.py": "d25e137cf980b232576d9f0f8154007b30ad6f0e01983714aa2ea82250ec54df",
+    "external/yuan-bai-jieqi-lab/ismcts.py": "e4f44974863a35c5efa5f85877b981a954731fdf4362feaea1ca70763dd42d73",
+    "external/yuan-bai-jieqi-lab/jieqi.py": "315ab6c37513bdedf11b692309ef15e92cc8c4261220e9f64a6752fd85a50230",
+    "external/yuan-bai-jieqi-lab/merge_selfplay.py": "8320e4252b31f31b1d79e3fe87423b5c968894764e60857eae57e43d6c034df1",
+    "external/yuan-bai-jieqi-lab/pika_engine.py": "ece2a5738d92b0f7666fc08470db3d66497fa4fa380027afb25aa4f1117a4f41",
+    "external/yuan-bai-jieqi-lab/position_editor.py": "0bf53b60c7d59f9c04fe43d5905eabc850bd5d50ffc50799b6404cb3a7242fce",
+    "external/yuan-bai-jieqi-lab/run_records.py": "d81739d6fdfe4b610022c39ac1e6b6dd889fdeea964e0968adb7f715d05828ec",
+    "external/yuan-bai-jieqi-lab/search_engine.py": "148fa0fca31dd1f263f352c650acb0a84404fa03517d557ba7e9cdce6bf96184",
+    "external/yuan-bai-jieqi-lab/training_diagnostics.py": "862abe86998f8e127f154db294a19018b0902b9f469e28a3c8144d9c3012b856",
+    "external/yuan-bai-jieqi-lab/training_runtime.py": "9ac2a187a7f9944457e2fdc17996a7436c16e9ccba7e638e66d926cdf9c2a4ea",
+    "external/yuan-bai-jieqi-lab/web_runtime.py": "e354281c7b404dacbcdc8ac83281d2af25d865df6223846353a958d949e108b4",
+    "external/yuan-bai-jieqi-lab/web_server.py": "5b341209c352de505f5e803aa22b3ba381553f7ee7846f8bc42b8035234f8465",
+    "results/root-halving-matches-plan.json": "b4ee1725df7ff8b4fb0fd659edaac937c6d0eb280b8f273ecc8ccd865543a610",
+    "results/20261026-root-halving-fixed-all.json": "3acaf86b0d8938a16ceb93016fedb22faed45fbcbb927849735c24a2eaf0463a",
+    "results/20261026-root-halving-fixed-all-native-audit.json": "10190450b0a7e179a36946ca332c204e3080f4f3e95f48c7ae326123e8f87ef3",
+    "results/20261026-root-halving-fixed-all-work-audit.json": "8c0972cbcf7db105731b670a40ce4eed0bd711990f69ceb5d835b02c8f757ad6"
+  }
+}

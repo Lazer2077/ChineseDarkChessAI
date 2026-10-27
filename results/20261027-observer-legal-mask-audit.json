@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Read-only exhaustive compatible-own-inventory legal-mask audit on two completed TRAIN generation arms,576games. At actual long-check/chase-ban positions with live own dark pieces and unknown own captured types, enumerate ALL finite private-capture vectors consistent with the same actor information state, retaining full board/history/counters. Compare original legal masks, and test selected action against their intersection. This audits upstream hidden-inventory sensitivity; not playing-strength evidence. No changed rules, source, models, live jobs or training data.",
+  "plan_sha256": "e6423213e522729e1224e0605d86f919a050f9ab53765420267f0b522ffce767",
+  "datasets": [
+    {
+      "label": "leaf32",
+      "games": 288,
+      "positions": 15682,
+      "ban_positions": 10,
+      "ban_with_own_live_unknown_inventory": 8,
+      "compatible_worlds_checked": 72,
+      "inventory_sensitive_masks": 0,
+      "chosen_action_not_universally_legal": 0
+    },
+    {
+      "label": "leaf8",
+      "games": 288,
+      "positions": 17358,
+      "ban_positions": 11,
+      "ban_with_own_live_unknown_inventory": 7,
+      "compatible_worlds_checked": 34,
+      "inventory_sensitive_masks": 0,
+      "chosen_action_not_universally_legal": 0
+    }
+  ],
+  "counterexamples": []
+}

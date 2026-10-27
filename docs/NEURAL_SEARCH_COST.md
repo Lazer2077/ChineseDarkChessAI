@@ -203,6 +203,23 @@ play. Fresh fixed warm/teacher matches are now running/pending, still at
 LeafBatch32 for both actors. Curves, actual episode digests and source checks:
 `results/20261026-neural-small-batch-rl-training.json`.
 
+The first fresh match has completed29W/1D/34L against the original warm actor,
+46.09375%score, paired bootstrap95% [35.9375%,56.25%], all3,658moves/clocks
+clean. There is no supported strength improvement from these learned weights.
+The predeclared teacher screen completed0W/1D/63L, all2,712moves/clocks clean.
+Both screens are now closed,6,370audited moves in total, without promotion.
+Evidence:
+`results/20261027-neural-small-batch-vs-warm{,-audit}.json`.
+Teacher evidence uses the matching`-vs-teacher` names; completed summary:
+`results/20261027-neural-small-batch-rl-summary.json`.
+
+A [fixed selection-data cross-matrix](VISIT_TARGET_DIAGNOSTICS.md) decomposes
+the two arms' losses into target entropy and full-action policy KL. The lower
+raw loss mostly reflects a lower target-entropy term; it does not establish
+stronger play. An exhaustive observer-mask audit on both completed generation
+arms finds no inventory-sensitive mask at15eligible actual ban roots; that
+bounded result does not prove invariance at all future/search states.
+
 A separate [fixed-work root sequential-halving prototype](ROOT_HALVING.md)
 keeps interior information-set PUCT and tests allocation on three existing
 training roots. It is neither a full Gumbel AlphaZero implementation nor a

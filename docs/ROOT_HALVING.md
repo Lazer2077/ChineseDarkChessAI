@@ -136,3 +136,20 @@ run concurrently with the preceding campaign on that GPU. No game-strength concl
 promotion follows from the prototype or the smoke. Future advantages would
 initially be search changes of the unchanged warm network, not newly learned
 weights, full Gumbel AlphaZero, or superiority over the native teacher.
+
+The all-phase development contrast completed41W/0D/23L,64.0625%wins/score,
+paired bootstrap95% [53.125%,75%]; the more conservative Hoeffding interval
+[40.05443%,88.07057%] still includes50%. All3,840moves,128fresh actors and
+128warmups passed independent native and simulation-witness audits;181moves
+were fully public. Every actual decision completed exactly256simulations.
+This is a positive development signal for search on the unchanged warm network,
+not a new trained model or a native-teacher advantage. Evidence:
+`results/20261026-root-halving-fixed-all{,-native-audit,-work-audit}.json`.
+The public-only contrast remains running and is not inferred from this result.
+
+Before the public-only result, `results/root-halving-confirmation-plan.json`
+freezes one independent200-game confirmation, seed9480001, with the exact same
+network, actors,256simulation budget,LeafBatch8,zero noise and actual60+0.5.
+It queues after both original contrasts finish, regardless of public-only
+outcome. No retuning or optional stopping is allowed. Both audits and raw
+witness archives remain required. This is not a final strong-baseline70%gate.

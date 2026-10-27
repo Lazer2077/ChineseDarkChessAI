@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "One training seed, one controlled LeafBatch8generation RL update from original warm model. Fixed inference tests keptLeafBatch32both actors to isolate training.29W1D34Lversuswarm,0W1D63Lversusteacher; no supported improvement or promotion. Different datasets/target entropy make cross-arm training losses noncausal.",
+  "iteration": {
+    "iteration": 1,
+    "previous_actor": "runs/neural-policy-phase-02/shared",
+    "research_actor": "runs/neural-small-batch-rl-01/iter-001/trained",
+    "network_sha256": "7ece25a72f60ffb2195e0cee7e1995d6b38499621e4993323131802d2c9769f5",
+    "training_manifest_sha256": "e033059a4ce2d7cf00529ed633869c390e0f2139c3ef3ce7a5b9d2f1bcfedaa0",
+    "generation_plan_sha256": "11ece5cb80afd87fc5a9788cdbd2deb97b866aa727181dfd8a73b9d9f8461595",
+    "training_plan_sha256": "9b13f5d5172f6d15fce96403fc5f18886668497a634d0d97eec60a82b1ab9f70",
+    "actor_update": "Fixed validation-selected research actor advances, independent of match outcomes. No benchmark promotion.",
+    "matches": {
+      "previous": {
+        "timing": {
+          "candidate": {
+            "moves": 1828,
+            "mean_ms": 321.70399844584244,
+            "p95_ms": 472.300138,
+            "max_ms": 588.050311
+          },
+          "baseline": {
+            "moves": 1830,
+            "mean_ms": 321.26933522349725,
+            "p95_ms": 476.009423,
+            "max_ms": 631.120002
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 29,
+        "draws": 1,
+        "losses": 34,
+        "score": 0.4609375,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.359375,
+          0.5625
+        ],
+        "paired_hoeffding_95": [
+          0.22085680217001982,
+          0.7010181978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "teacher": {
+        "timing": {
+          "candidate": {
+            "moves": 1341,
+            "mean_ms": 357.39855081879193,
+            "p95_ms": 480.933265,
+            "max_ms": 564.845073
+          },
+          "baseline": {
+            "moves": 1371,
+            "mean_ms": 361.6846234595186,
+            "p95_ms": 873.910184,
+            "max_ms": 2125.132788
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 0,
+        "draws": 1,
+        "losses": 63,
+        "score": 0.0078125,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.0234375
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.24789319782998018
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      }
+    }
+  },
+  "evidence_sha256": {
+    "results/neural-small-batch-rl-plan.json": "7a6194e2d54594890e151109f62a8b1c4ccf4d3289d478932f2a7a6a8e8869bb",
+    "results/20261026-neural-small-batch-rl-training.json": "8394f535ab48b7ac5045c392ba71382bb2f4151e39ef3c8536b472998da0a71e",
+    "results/20261027-neural-small-batch-vs-warm.json": "4074a180df27fb0a73e50c8b0c5bb1b7b099d76dc4eb44d3148cc46b5c1b6be5",
+    "results/20261027-neural-small-batch-vs-warm-audit.json": "e9b79b7caa60d65858f98ed0d68ac86aab14ff4960ef19f95eeb30247b3d2d99",
+    "results/20261027-neural-small-batch-vs-teacher.json": "c031296eea207d7215ec31b6da5c1ebad9c569122a1c09bab409b19fb52c0f08",
+    "results/20261027-neural-small-batch-vs-teacher-audit.json": "217220db398b41f52693e9ab470a8e361555e10b575d82fb06baea149baccc6e"
+  }
+}

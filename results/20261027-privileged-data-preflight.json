@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "contract": "cdca-training-only-fixed-deal-dark-labels-v1",
+  "plan_sha256": "abd7685de89b689675471a8ef9904f0f7c1778bd99567b87ef8a704b2a090fe1",
+  "network_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "scope": "Training-only data feasibility: eight new ex-ante materialized-deal games played by unchanged observer-limited warm PUCT. Hidden labels are recorded separately; actual assignment map stripped before every search. No privileged teacher, fitted critic, actor update, strength comparison or policy-gradient theorem claim.",
+  "games": [
+    {
+      "index": 0,
+      "seed": 9600001,
+      "outcome": 1,
+      "reason": "checkmate",
+      "npz_sha256": "6c6e3aa986cf591e7be8e92d8765dfed865717e74c802c804cd1440591d4e374",
+      "audit": {
+        "positions_replayed": 75,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-0-6c6e3aa986cf.npz"
+    },
+    {
+      "index": 1,
+      "seed": 9600002,
+      "outcome": -1,
+      "reason": "checkmate",
+      "npz_sha256": "f098a2c014dd38e5a6d40fdaeab41b5fe3ee8c537bad2efdeb80b3d9a7627cd7",
+      "audit": {
+        "positions_replayed": 70,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-1-f098a2c014dd.npz"
+    },
+    {
+      "index": 2,
+      "seed": 9600003,
+      "outcome": 1,
+      "reason": "checkmate",
+      "npz_sha256": "c5782f29932fe03d485cfddda54cbfa00c75680228632d91c892577bae954216",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-2-c5782f29932f.npz"
+    },
+    {
+      "index": 3,
+      "seed": 9600004,
+      "outcome": 1,
+      "reason": "checkmate",
+      "npz_sha256": "4cc62b463497357222384b457446f0fbfbb2ec43edc74e4b9f32348ba5414d7d",
+      "audit": {
+        "positions_replayed": 67,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-3-4cc62b463497.npz"
+    },
+    {
+      "index": 4,
+      "seed": 9600005,
+      "outcome": -1,
+      "reason": "checkmate",
+      "npz_sha256": "f5ebf8ed3df1b510c15a2c3b145b0445a0a4fe5855a807f7e0891344ad066f71",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-4-f5ebf8ed3df1.npz"
+    },
+    {
+      "index": 5,
+      "seed": 9600006,
+      "outcome": 1,
+      "reason": "checkmate",
+      "npz_sha256": "b3c1ff94e7ba77321ecc12d1873db5e141bbc6a4527a6e72d34d407c3b87f6cb",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-5-b3c1ff94e7ba.npz"
+    },
+    {
+      "index": 6,
+      "seed": 9600007,
+      "outcome": 1,
+      "reason": "checkmate",
+      "npz_sha256": "d9000b92e9d21d190ef4bc27deb80c14534bbcb2a6c9733cf59dcc2e72d2ea07",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-6-d9000b92e9d2.npz"
+    },
+    {
+      "index": 7,
+      "seed": 9600008,
+      "outcome": 1,
+      "reason": "checkmate",
+      "npz_sha256": "292591724f5618cecc55f08a086c6b6b03e03da43ff6fe39a02dadaff46296c9",
+      "audit": {
+        "positions_replayed": 81,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "fixed_deal_labels_match": true,
+        "observer_records_match": true,
+        "legal_policy_support": true,
+        "terminal_actor_returns_match": true
+      },
+      "archive": "results/raw/privileged-preflight-7-292591724f56.npz"
+    }
+  ],
+  "totals": {
+    "positions_replayed": 480,
+    "fully_public_positions": 0,
+    "private_dark_captures": 27
+  },
+  "limitations": [
+    "No fitted privileged critic or student update; no playing-strength or variance-reduction evidence.",
+    "Live-dark labels are partial privileged signals, not full history/state; captured-private ledgers are not privileged network features.",
+    "All eight games use one unchanged observer-limited warm model and 32 simulations; this is not a teacher or strong-baseline comparison.",
+    "No natural fully public position occurred; zero-privilege collapse is covered only by the unit test.",
+    "Stripping actual assignment maps and tested counterfactual invariance do not prove every possible hidden-inventory rules path is invariant."
+  ],
+  "corruption_checks": [
+    {
+      "mutation": "truth",
+      "rejected": true,
+      "reason": "Seeded observation/true assignment mismatch"
+    },
+    {
+      "mutation": "observation",
+      "rejected": true,
+      "reason": "Seeded observation/true assignment mismatch"
+    },
+    {
+      "mutation": "reveal",
+      "rejected": true,
+      "reason": "Recorded reveal differs from fixed deal"
+    },
+    {
+      "mutation": "return",
+      "rejected": true,
+      "reason": "Incorrect actor-relative terminal target"
+    }
+  ]
+}

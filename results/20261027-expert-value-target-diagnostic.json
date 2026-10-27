@@ -1,0 +1,761 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Post-fit descriptive diagnostic on exactly31accepted original selection games/1677positions, already logged during fixed-duration fitting. No independent test/generalization or chess-strength claim. Compare actual source learner terminal outcomes and a declared normalized observer-expert search-score proxy; these refer to different continuation policies and rules, so disagreement is not a false-label or game-value error proof. Exact finite-input aliases do not establish Bayes-risk bounds/history sufficiency. No fit, model reselection, target tuning or new matches.",
+  "plan_sha256": "60cece49964e2178e9706a86d86511ab4cdec7d8e1d13408fb9f6eb620cfedb6",
+  "sources": [
+    {
+      "game": 256,
+      "npz_sha256": "2d3916f645416b9d192c7f3edf5f39335caaf83d5788ddbde5e74847267f7ee7",
+      "positions": 63,
+      "labels_sha256": "5f2b988cc470995e0f2242be3f9310f5e057a34242e74ab5bfc41fa5a4b3b319"
+    },
+    {
+      "game": 258,
+      "npz_sha256": "c3743d2d8dcc4cc9eac82236081a728008ca77a25aa0be5a91376a3134b9dc1f",
+      "positions": 62,
+      "labels_sha256": "c68bb1f618eeb47739a5b41eec4e3d1df9aa215a64c82269663788fc71e3c7f0"
+    },
+    {
+      "game": 259,
+      "npz_sha256": "496a2ad19e9fedd030618afec846011e93aa5c84b09872e6dfee10db469c1f4f",
+      "positions": 43,
+      "labels_sha256": "767e62e55227f5fdd1af242891447a5c9d5ed507235e9543a5d6acd403f32685"
+    },
+    {
+      "game": 260,
+      "npz_sha256": "da9d35b3af738235788b13cb441d3f762713dd46598eab3daa134cd50835fcd6",
+      "positions": 93,
+      "labels_sha256": "71b740b2fdec84ab7a4e3f1837fd61119684c0d874fece282beec9730437ca62"
+    },
+    {
+      "game": 261,
+      "npz_sha256": "4e4fb8cfe7fd67974704d30429402496f06f76a4eb4d9b47e04f9076f62fd744",
+      "positions": 41,
+      "labels_sha256": "a9089e80e971418276eef7148870f82d48b7fbdd0dde50727f2a370a50fcd2b4"
+    },
+    {
+      "game": 262,
+      "npz_sha256": "2b7ea9dcbdec0a700de7bafe62e5079b3b9a9fdfba6f52e8d9a2c2700d587260",
+      "positions": 27,
+      "labels_sha256": "41913c1f8107bdc759872591d9744b8c52ee3266dee14172511c723002f0d79c"
+    },
+    {
+      "game": 263,
+      "npz_sha256": "c62b07ce9b4566b2e38c1eab687824d25d37ac7659089c52dddb1858d4799aa8",
+      "positions": 23,
+      "labels_sha256": "102aac8c55859bac8ca194f1b06ca80194f2d0416b1817ec15664cda51c34694"
+    },
+    {
+      "game": 264,
+      "npz_sha256": "9108e875641a732880ab13c26c9f96eaa870edad84c17c09037cc724b26a89ec",
+      "positions": 26,
+      "labels_sha256": "63c234e8cddbf5c7d338a3f962d5e329dcb4cba1779dc5ca9c984044ce2193ce"
+    },
+    {
+      "game": 265,
+      "npz_sha256": "ec56c315c3f458c33e6ce097d1de03dd3fcc77bf6c98d8895f857dff2c665242",
+      "positions": 38,
+      "labels_sha256": "f2ffb9544aa023cc906d3f4505052c1b6ee8da231a8a97a8db3761768c4baf59"
+    },
+    {
+      "game": 266,
+      "npz_sha256": "b74e5e4e26a873ae1981bbc897902239889ebb182427aa23ab7acb1cfb5e3034",
+      "positions": 78,
+      "labels_sha256": "cef5acfab06b2f225c5a3070ccea8e1f2463dfe7b06c76ae159cb80b7cd5faa3"
+    },
+    {
+      "game": 267,
+      "npz_sha256": "629dc46535d3e129c0f2b420a5fdabaee82a8cb5ec867d61a28dfb1fc139497b",
+      "positions": 58,
+      "labels_sha256": "3f0f5f5c66f6ac34676b91ed0bda22c8f40039ecbf288d5438ef369317ce4ffd"
+    },
+    {
+      "game": 268,
+      "npz_sha256": "af3675a88ebbdbde977cda5aa8094fe90d49c2abf97a81a9654487cad6ce003d",
+      "positions": 47,
+      "labels_sha256": "ed502a1c685deed41eeae325ca96cecc0c19d51d77cd6f52c02b735c97dfa163"
+    },
+    {
+      "game": 269,
+      "npz_sha256": "b0d0c1857913369e80ff68242a14908509e0d2992aec2e95080deab83e662988",
+      "positions": 63,
+      "labels_sha256": "d6c2b221aa060868c9a78a0d8ad60304a82d667b597b30c19de7e662c5e62be7"
+    },
+    {
+      "game": 270,
+      "npz_sha256": "4d1b3ec74c287f0472f08f17908e08cb7a0e1319b1e16760afde08e61b5da323",
+      "positions": 54,
+      "labels_sha256": "cf6980bfc22cd1bfc04d13ac101687bd3e03f13738175aeb4c28eac2fcf731cb"
+    },
+    {
+      "game": 271,
+      "npz_sha256": "358cb4ef305e11b28edd185d45113317ce1141c9b2682554aeaea85028c73c99",
+      "positions": 27,
+      "labels_sha256": "0d1df092cc9bfc9961e689d01154e11f3ac332e63bca3fa2da1bba9466cef0a1"
+    },
+    {
+      "game": 272,
+      "npz_sha256": "c2a9b4bafb0dd0a101db800097c6d11169b591731f25a341ea7392a8f5925083",
+      "positions": 48,
+      "labels_sha256": "c24c4c15f025036a096855e119cd5be2d20756d5849bfd45f383956cb9d6c453"
+    },
+    {
+      "game": 273,
+      "npz_sha256": "576ed635e7c30f7bd1ce1bb8401506b94edd300418ff45aaf23f1dd6e9968d0c",
+      "positions": 38,
+      "labels_sha256": "51dbf61397223f7d7e4bbf95830f46066ab60c524cb8cd70eaa35ddc36aadd32"
+    },
+    {
+      "game": 274,
+      "npz_sha256": "96319c9ce70c933ae2fe78779aa46e9a320ab7dba64c8e8b4dd5047b7a9830f3",
+      "positions": 67,
+      "labels_sha256": "96fbc43d55353d80ecc95d1c5a42e8c741fcefca9e12b9068be6c0776a29bf82"
+    },
+    {
+      "game": 275,
+      "npz_sha256": "9b0e62d677785126e9cdb357b299bab084613010c728d6f11a4be16c6518c642",
+      "positions": 55,
+      "labels_sha256": "768d622a1dfaa45b7c7090ca9dea391470739e36159705032ab009b408d898b7"
+    },
+    {
+      "game": 276,
+      "npz_sha256": "54165418e78286a79e1d862c59c406d64a7bba06875474b268de4cf578e6a26a",
+      "positions": 36,
+      "labels_sha256": "7ca16466fa97a01447095bbec388180c49a9c6f7744bd209802be1d3eebb6e2d"
+    },
+    {
+      "game": 277,
+      "npz_sha256": "6f2e117c80c2d75ede6c84da1a1158f75460d58cf8a0ae4bb7ce6cf5fbe5ed50",
+      "positions": 19,
+      "labels_sha256": "19e243010cb794eb78e4344e2bb4ca375f2242717774438e441389c7ea2317f5"
+    },
+    {
+      "game": 278,
+      "npz_sha256": "7d9e34ce02bf4b4546543ae823ad5f2da6ab6f7b65ae0c133bc06db99bf599aa",
+      "positions": 76,
+      "labels_sha256": "beb3fd156559e57dfce47bd6a3b955633ef9e3fa78ad5fe33250215374d5de22"
+    },
+    {
+      "game": 279,
+      "npz_sha256": "d9d5461d14d6108bf4ac9df569d1b82a9c88af473d6da1fb13a6238a76d7dc8c",
+      "positions": 81,
+      "labels_sha256": "9fbb779ed2838457fbf65a4b4f22f3003d8a4621f4c16b76ee373114c0b26120"
+    },
+    {
+      "game": 280,
+      "npz_sha256": "d441852a33db29d0c338ba07f7cade6273a29fe35ae98d1ecd4c5c099b49b14a",
+      "positions": 73,
+      "labels_sha256": "2e859b00330f7a5841dd972e26b4008252674ac3657f40e964502e338fad0fe2"
+    },
+    {
+      "game": 281,
+      "npz_sha256": "798c423b53c0665b9691582d731b93d5e3c8295a2e4b6e3eae8650ff681fd052",
+      "positions": 66,
+      "labels_sha256": "99cb9520afe62be6cfe4d3d1ab12f2ad39ce2c7760d553aeb4dc69c87b05942b"
+    },
+    {
+      "game": 282,
+      "npz_sha256": "b1cc2f2265fcaacc3fdf774270c39a766420aafaec6551606e43ea3217463e7a",
+      "positions": 81,
+      "labels_sha256": "bd600da3ecb215df0f88bc34553d06f1c6943f402ba3fd11988f6e0d6346703e"
+    },
+    {
+      "game": 283,
+      "npz_sha256": "4821dfd6164186bf3c6523dbfa95abd670ac4039dddd384afc8ef8cd98bd0488",
+      "positions": 83,
+      "labels_sha256": "f59d772a2af77d4a8e984d54277275e927f895c422ceb56f96d4a534cf90f751"
+    },
+    {
+      "game": 284,
+      "npz_sha256": "e407f6a45527d6181acd8af9f5c88eb8e43a3a3597099051a6ae5a8a9f14aa7c",
+      "positions": 48,
+      "labels_sha256": "25ef54815f84e67bd3031d49797a76568efab26ff4168ca08f527d75334f7d3b"
+    },
+    {
+      "game": 285,
+      "npz_sha256": "35b2fdf2deaf0f452588db1b972b3c29721bd9bd142d90734bcc7f6fee83d9e1",
+      "positions": 57,
+      "labels_sha256": "0a9084bf196be346ac51a541d7572e14516560c9d53afa71c0a1b0e87f073841"
+    },
+    {
+      "game": 286,
+      "npz_sha256": "f93ceab104e568c84c34a75937ea7896e029bf007a54f7bf1657bc3af8fe6bf1",
+      "positions": 54,
+      "labels_sha256": "8584990e91304eced27bbff51d1180ae901475ec24deb472770d2bbe4308aad2"
+    },
+    {
+      "game": 287,
+      "npz_sha256": "b33226d7d6736d9bc125813be4aedafcb08f9d289d03afbe8b817fdf02fc6537",
+      "positions": 52,
+      "labels_sha256": "71a22f0c548f42be2e5a7a236a603a44d02abd59d7aa5003509445db056d0ddb"
+    }
+  ],
+  "teacher_score_proxy": "cp -> tanh(cp/860); nonzero mate -> sign(mate). Fixed monotone proxy, not calibrated value or game-theoretic truth.",
+  "alias_diagnostic": {
+    "positions": 1677,
+    "unique_inputs": 1645,
+    "repeated_input_groups": 3,
+    "groups_with_multiple_projected_histories": 0,
+    "conflicting_expert_action_groups": 0,
+    "positions_in_conflicting_groups": 0,
+    "minimum_empirical_policy_ce_for_this_finite_encoded_sample": 0.0,
+    "minimum_empirical_terminal_mse_for_this_finite_encoded_sample": 0.018312268834350075,
+    "scope": "Exact duplicates in this finite reused selection sample only; empirical fitted-sample minima are not Bayes-risk bounds, proof of history sufficiency, or generalization estimates."
+  },
+  "source_terminal_vs_teacher_search_proxy_mse": {
+    "all": {
+      "positions": 1677,
+      "games": 31,
+      "position_mean": 0.8170040773909863,
+      "game_mean": 0.8307870819845973
+    },
+    "partial": {
+      "positions": 1658,
+      "games": 31,
+      "position_mean": 0.8105349684742311,
+      "game_mean": 0.8273717279126026
+    },
+    "public": {
+      "positions": 19,
+      "games": 2,
+      "position_mean": 1.3815189502320369,
+      "game_mean": 1.0937115088161125
+    },
+    "type-certain": {
+      "positions": 79,
+      "games": 3,
+      "position_mean": 0.6587139091742508,
+      "game_mean": 0.7778883761105898
+    },
+    "entropy0-.25": {
+      "positions": 606,
+      "games": 27,
+      "position_mean": 0.5298219107610855,
+      "game_mean": 0.5567496802317368
+    },
+    "entropy.25-.5": {
+      "positions": 427,
+      "games": 31,
+      "position_mean": 1.0356445753181849,
+      "game_mean": 0.9741825111706474
+    },
+    "entropy.5-.75": {
+      "positions": 347,
+      "games": 31,
+      "position_mean": 0.9385725728844366,
+      "game_mean": 0.9504481688874976
+    },
+    "entropy.75-1": {
+      "positions": 218,
+      "games": 31,
+      "position_mean": 1.0509194705822749,
+      "game_mean": 1.0339531861388336
+    }
+  },
+  "models": [
+    {
+      "label": "warm",
+      "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "strata": {
+        "all": {
+          "source_learner_terminal_mse": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.7902488099740952,
+            "game_mean": 0.8100113816722138
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.06463084991213794,
+            "game_mean": 0.06198296789835216
+          },
+          "mean_absolute_prediction": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.48857192408784833,
+            "game_mean": 0.46229477138813246
+          }
+        },
+        "partial": {
+          "source_learner_terminal_mse": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.7908813508652466,
+            "game_mean": 0.8108641767823866
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.06364881738913741,
+            "game_mean": 0.06106878591430376
+          },
+          "mean_absolute_prediction": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.4867166748473101,
+            "game_mean": 0.46156268921765087
+          }
+        },
+        "public": {
+          "source_learner_terminal_mse": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.7350512943146684,
+            "game_mean": 0.5819160188972073
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.150326109024501,
+            "game_mean": 0.11901439085631312
+          },
+          "mean_absolute_prediction": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.6504668314990244,
+            "game_mean": 0.723084054133367
+          }
+        },
+        "type-certain": {
+          "source_learner_terminal_mse": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.2912253051882522,
+            "game_mean": 0.3816407768464343
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.13693424097080822,
+            "game_mean": 0.12298885248442487
+          },
+          "mean_absolute_prediction": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.7196258195687698,
+            "game_mean": 0.7244637371663578
+          }
+        },
+        "entropy0-.25": {
+          "source_learner_terminal_mse": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.5595197176648464,
+            "game_mean": 0.6012996726707054
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.09137272664181909,
+            "game_mean": 0.10172831962843797
+          },
+          "mean_absolute_prediction": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.6813123639643794,
+            "game_mean": 0.6970430853590025
+          }
+        },
+        "entropy.25-.5": {
+          "source_learner_terminal_mse": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 1.0233898809135222,
+            "game_mean": 0.9855431985951818
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.07137758740786046,
+            "game_mean": 0.07185468513120989
+          },
+          "mean_absolute_prediction": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.4714500380207488,
+            "game_mean": 0.46337472923708944
+          }
+        },
+        "entropy.5-.75": {
+          "source_learner_terminal_mse": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.8639258102358491,
+            "game_mean": 0.878436568668172
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.028650557098159852,
+            "game_mean": 0.026904846533786723
+          },
+          "mean_absolute_prediction": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.3150895395261163,
+            "game_mean": 0.3077165851189357
+          }
+        },
+        "entropy.75-1": {
+          "source_learner_terminal_mse": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 1.0385402339902525,
+            "game_mean": 1.0204281058196076
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.008148095343124894,
+            "game_mean": 0.007716835025827347
+          },
+          "mean_absolute_prediction": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.17873462356216863,
+            "game_mean": 0.17765987062645183
+          }
+        }
+      }
+    },
+    {
+      "label": "matched-search-control",
+      "model_sha256": "eff3901fa82f2b71ef1f17b9f1bfbeee00a4a06700e404f546b0bc0a51058c12",
+      "strata": {
+        "all": {
+          "source_learner_terminal_mse": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.797622849069062,
+            "game_mean": 0.812864883267996
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.11040105742085946,
+            "game_mean": 0.11002317130029425
+          },
+          "mean_absolute_prediction": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.4216328795584025,
+            "game_mean": 0.39432137719036076
+          }
+        },
+        "partial": {
+          "source_learner_terminal_mse": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.8009716147229948,
+            "game_mean": 0.8135798640325161
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.10802051355968195,
+            "game_mean": 0.10832597792403141
+          },
+          "mean_absolute_prediction": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.4192547654187216,
+            "game_mean": 0.39325968954708695
+          }
+        },
+        "public": {
+          "source_learner_terminal_mse": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.5053989830574406,
+            "game_mean": 0.4001129113189023
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.3181348322541391,
+            "game_mean": 0.25186197695898616
+          },
+          "mean_absolute_prediction": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.629154629221088,
+            "game_mean": 0.7055327576097279
+          }
+        },
+        "type-certain": {
+          "source_learner_terminal_mse": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.4767526492786289,
+            "game_mean": 0.433161992902904
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.16089398285512005,
+            "game_mean": 0.18643268324079396
+          },
+          "mean_absolute_prediction": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.6125935866862913,
+            "game_mean": 0.646310125056066
+          }
+        },
+        "entropy0-.25": {
+          "source_learner_terminal_mse": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.598533107168255,
+            "game_mean": 0.6163498558189207
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.13276564043291858,
+            "game_mean": 0.145254134456312
+          },
+          "mean_absolute_prediction": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.5885713853538667,
+            "game_mean": 0.5859343371251283
+          }
+        },
+        "entropy.25-.5": {
+          "source_learner_terminal_mse": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.964051561752403,
+            "game_mean": 0.9513686919939731
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.12564769594468347,
+            "game_mean": 0.13422152664691708
+          },
+          "mean_absolute_prediction": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.38415928490474094,
+            "game_mean": 0.37400143024102916
+          }
+        },
+        "entropy.5-.75": {
+          "source_learner_terminal_mse": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.8974705671814364,
+            "game_mean": 0.8835412891345996
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.07873551996711912,
+            "game_mean": 0.08116667649186474
+          },
+          "mean_absolute_prediction": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.28046215211090925,
+            "game_mean": 0.27391438799857054
+          }
+        },
+        "entropy.75-1": {
+          "source_learner_terminal_mse": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.9824160182183858,
+            "game_mean": 0.9792813212511331
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.05047329793535776,
+            "game_mean": 0.047518217815554334
+          },
+          "mean_absolute_prediction": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.18648075555032545,
+            "game_mean": 0.19035106159501541
+          }
+        }
+      }
+    },
+    {
+      "label": "observer-expert-policy-target",
+      "model_sha256": "0fa5152fd4f4a59a93625579624daf642b9a9b78751f206723a0cdeec94404f8",
+      "strata": {
+        "all": {
+          "source_learner_terminal_mse": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.7768181529162738,
+            "game_mean": 0.7958674018385635
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.09638687547991993,
+            "game_mean": 0.09524940193929789
+          },
+          "mean_absolute_prediction": {
+            "positions": 1677,
+            "games": 31,
+            "position_mean": 0.4288622030628607,
+            "game_mean": 0.4026355300962192
+          }
+        },
+        "partial": {
+          "source_learner_terminal_mse": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.780300409351949,
+            "game_mean": 0.7969079278997442
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.09423268727811135,
+            "game_mean": 0.09363436633763386
+          },
+          "mean_absolute_prediction": {
+            "positions": 1658,
+            "games": 31,
+            "position_mean": 0.4268162437809145,
+            "game_mean": 0.401703897828087
+          }
+        },
+        "public": {
+          "source_learner_terminal_mse": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.47294545973997965,
+            "game_mean": 0.3744181468028659
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.2843681406693229,
+            "game_mean": 0.2251291463394043
+          },
+          "mean_absolute_prediction": {
+            "positions": 19,
+            "games": 2,
+            "position_mean": 0.6073990709295398,
+            "game_mean": 0.6884855084076879
+          }
+        },
+        "type-certain": {
+          "source_learner_terminal_mse": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.34906236750152203,
+            "game_mean": 0.3467693374496888
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.16498782257315037,
+            "game_mean": 0.1781324237091716
+          },
+          "mean_absolute_prediction": {
+            "positions": 79,
+            "games": 3,
+            "position_mean": 0.6136309946003028,
+            "game_mean": 0.6431529750524644
+          }
+        },
+        "entropy0-.25": {
+          "source_learner_terminal_mse": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.562912485225514,
+            "game_mean": 0.5755815866998942
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.12508713586163642,
+            "game_mean": 0.13249078894776026
+          },
+          "mean_absolute_prediction": {
+            "positions": 606,
+            "games": 27,
+            "position_mean": 0.6054265916930733,
+            "game_mean": 0.6027810264528802
+          }
+        },
+        "entropy.25-.5": {
+          "source_learner_terminal_mse": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.9520076119409647,
+            "game_mean": 0.9288242454201021
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.10778691026440006,
+            "game_mean": 0.11156394428938908
+          },
+          "mean_absolute_prediction": {
+            "positions": 427,
+            "games": 31,
+            "position_mean": 0.40018819944182765,
+            "game_mean": 0.39336406292852516
+          }
+        },
+        "entropy.5-.75": {
+          "source_learner_terminal_mse": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.8999078105963132,
+            "game_mean": 0.8827557239881184
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.06054287870561399,
+            "game_mean": 0.061787218455241724
+          },
+          "mean_absolute_prediction": {
+            "positions": 347,
+            "games": 31,
+            "position_mean": 0.27793159310354365,
+            "game_mean": 0.27044730461089256
+          }
+        },
+        "entropy.75-1": {
+          "source_learner_terminal_mse": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.9873756366311779,
+            "game_mean": 0.9849839989127559
+          },
+          "teacher_search_proxy_mse": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.02647045078279037,
+            "game_mean": 0.024208422522797767
+          },
+          "mean_absolute_prediction": {
+            "positions": 218,
+            "games": 31,
+            "position_mean": 0.1674950799467939,
+            "game_mean": 0.1711467185210506
+          }
+        }
+      }
+    }
+  ],
+  "prediction_arrays_sha256": "8b27ba2236403fbc59cdc527ffe863f9bbe6dcccd3e1e1794543032566ff6869",
+  "prediction_archive": {
+    "path": "results/raw/expert-value-diagnostic-8b27ba223640.npz",
+    "sha256": "8b27ba2236403fbc59cdc527ffe863f9bbe6dcccd3e1e1794543032566ff6869"
+  }
+}

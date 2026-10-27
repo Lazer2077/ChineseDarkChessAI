@@ -95,3 +95,15 @@ independent generalization or legal-masked policy KL. It preserves the actual
 clock-match GPU allocation and cannot establish playing strength.
 
 Plans: `results/expert-policy-target-{evaluation,retention}-plan.json`.
+
+The first64-game matched-control contrast has completed51W3D10L,82.03125%score,
+paired bootstrap95%[0.734375,0.8984375]. All3078moves pass native seeded-reveal,
+legality, terminal and rounded-clock audits, with no technical games or
+ambiguous margins. This is improvement over the matched visit-target update,
+not established superiority over the original warm actor or native teacher.
+Only32paired layouts are present, below the final gate's minimum. The other
+prespecified contrasts continue unchanged. The separate preserved-warm-value
+intervention was frozen before this complete-control result was inspected;
+see `EXPERT_VALUE_DIAGNOSTIC.md` for its distinct computation profile.
+
+Evidence: `results/20261027-expert-policy-target-vs-control{,-audit}.json`.

@@ -59,3 +59,11 @@ decomposition or proof that the value function is harmless. The two remaining
 contrasts continue without changing the plan.
 
 Evidence: `results/20261027-factorial-rl-policy-warm-value{,-audit}.json`.
+
+The second contrast, Warm-policy/RL-value, completed24W/2D/38L:39.0625%score,
+paired bootstrap95%[27.34375%,50.78125%]. All2,949moves/clocks are clean under
+the same independent replay. This also gives no gain while preserving the
+warm policy, though its interval includes parity. The final RL-policy/RL-value
+contrast continues on the same original layouts and settings; conclusions
+about cross-function effects wait for its completion. Evidence:
+`results/20261027-factorial-warm-policy-rl-value{,-audit}.json`.

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Full original first RL update reproduction with zero legal-anchor coefficient, same training seed/data/optimizer/selection and original deployable checkpoint. Implementation validation only; not independent training-seed robustness, strength improvement or model promotion. No redundant matches of identical arrays are required.",
+  "plan_sha256": "843aa3577327e25b490d14e023372daa49091cf968cc1df1789a0c938b576950",
+  "games": 256,
+  "training_positions": 13924,
+  "selection_games": 32,
+  "epochs": 4,
+  "updates": 436,
+  "policy_anchor_lambda": 0.0,
+  "reproduced_model_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+  "all_arrays_bitwise_equal_to_original": true,
+  "selected_epoch": 4,
+  "selection": {
+    "loss": 4.6379489270936585,
+    "search_policy_ce": 3.8773665923343663,
+    "terminal_value_mse": 0.7605823347592924
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 109,
+      "train_policy_ce": 4.572219229581107,
+      "train_terminal_mse": 0.8370752178776781,
+      "train_legal_teacher_kl": 0.0,
+      "validation": {
+        "loss": 4.975520589705829,
+        "search_policy_ce": 4.221872519631915,
+        "terminal_value_mse": 0.7536480700739143
+      },
+      "seconds": 3.8754278402775526
+    },
+    {
+      "epoch": 2,
+      "updates": 218,
+      "train_policy_ce": 4.0609662791070935,
+      "train_terminal_mse": 0.7754402482382904,
+      "train_legal_teacher_kl": 0.0,
+      "validation": {
+        "loss": 4.77044947364499,
+        "search_policy_ce": 4.0171467964166725,
+        "terminal_value_mse": 0.7533026772283179
+      },
+      "seconds": 9.722784483805299
+    },
+    {
+      "epoch": 3,
+      "updates": 327,
+      "train_policy_ce": 3.900823996990374,
+      "train_terminal_mse": 0.7425640082605883,
+      "train_legal_teacher_kl": 0.0,
+      "validation": {
+        "loss": 4.692249877699361,
+        "search_policy_ce": 3.9338698145415143,
+        "terminal_value_mse": 0.7583800631578465
+      },
+      "seconds": 15.560776652768254
+    },
+    {
+      "epoch": 4,
+      "updates": 436,
+      "train_policy_ce": 3.8161628762423327,
+      "train_terminal_mse": 0.7135496268803894,
+      "train_legal_teacher_kl": 0.0,
+      "validation": {
+        "loss": 4.6379489270936585,
+        "search_policy_ce": 3.8773665923343663,
+        "terminal_value_mse": 0.7605823347592924
+      },
+      "seconds": 21.25216042622924
+    }
+  ]
+}

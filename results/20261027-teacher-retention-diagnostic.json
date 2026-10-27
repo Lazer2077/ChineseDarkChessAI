@@ -1,0 +1,161 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Descriptive retention on the same512teacher selection games already used for warm checkpoint selection. All four checkpoint choices fixed from their own original validation before this diagnostic. Reused selection data, not independent generalization or chess-strength evidence; no fitting or new selection. Full2550action distributions, not legal-masked policies.",
+  "plan_sha256": "a08390fe44432664b3996bacb810134df7cce0124285337c35881e5faf28c0f9",
+  "dataset": [
+    {
+      "sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+      "games": 512,
+      "games_with_search_records": 512,
+      "positions": 37471
+    }
+  ],
+  "fully_public_positions": 4570,
+  "models": [
+    {
+      "label": "warm",
+      "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.3648354665119133,
+          "teacher_action_top1": 0.35125830642363426,
+          "teacher_action_top5": 0.7116703584105041,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08446411096145352,
+          "terminal_value_mse": 0.4616102558510996,
+          "teacher_static_value_mse": 0.04710825710182755
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.3715064128836167,
+          "teacher_action_top1": 0.35336311966201633,
+          "teacher_action_top5": 0.7118932555241482,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08673561486006266,
+          "terminal_value_mse": 0.5013027038306944,
+          "teacher_static_value_mse": 0.04503690030397967
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.3168090318127006,
+          "teacher_action_top1": 0.3361050328227571,
+          "teacher_action_top5": 0.7100656455142232,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.06811077403188263,
+          "terminal_value_mse": 0.17585068670960222,
+          "teacher_static_value_mse": 0.0620206662935109
+        }
+      }
+    },
+    {
+      "label": "rl256-leaf32",
+      "model_sha256": "168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.75907762409677,
+          "teacher_action_top1": 0.2519281577753463,
+          "teacher_action_top5": 0.5955538950121427,
+          "warm_to_model_policy_kl_nats": 0.5471878502595675,
+          "mixed_value_mse": 0.17903847808027115,
+          "terminal_value_mse": 0.5640568967799103,
+          "teacher_static_value_mse": 0.138308792587791
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.8003333621311213,
+          "teacher_action_top1": 0.24591957691255584,
+          "teacher_action_top5": 0.5873985593143065,
+          "warm_to_model_policy_kl_nats": 0.5909247564424953,
+          "mixed_value_mse": 0.17342295065375962,
+          "terminal_value_mse": 0.5950608145480133,
+          "teacher_static_value_mse": 0.12869390398755293
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.4620633927908204,
+          "teacher_action_top1": 0.2951859956236324,
+          "teacher_action_top5": 0.6542669584245077,
+          "warm_to_model_policy_kl_nats": 0.23231083705945688,
+          "mixed_value_mse": 0.21946658920929865,
+          "terminal_value_mse": 0.34084904153081746,
+          "teacher_static_value_mse": 0.20752967876644152
+        }
+      }
+    },
+    {
+      "label": "rl256-leaf8",
+      "model_sha256": "7ece25a72f60ffb2195e0cee7e1995d6b38499621e4993323131802d2c9769f5",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.438847767337412,
+          "teacher_action_top1": 0.3274265431934029,
+          "teacher_action_top5": 0.6844493074644392,
+          "warm_to_model_policy_kl_nats": 0.1420725296714922,
+          "mixed_value_mse": 0.15024501311160365,
+          "terminal_value_mse": 0.5353566928266311,
+          "teacher_static_value_mse": 0.10947535861252859
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.4531984066576706,
+          "teacher_action_top1": 0.32834868241086895,
+          "teacher_action_top5": 0.682836387951734,
+          "warm_to_model_policy_kl_nats": 0.15239768953738445,
+          "mixed_value_mse": 0.16025117079759518,
+          "terminal_value_mse": 0.5846950130562318,
+          "teacher_static_value_mse": 0.11431956197522436
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.3355325847825252,
+          "teacher_action_top1": 0.32078774617067835,
+          "teacher_action_top5": 0.6960612691466083,
+          "warm_to_model_policy_kl_nats": 0.06773815664135649,
+          "mixed_value_mse": 0.07820724636613162,
+          "terminal_value_mse": 0.180153175567529,
+          "teacher_static_value_mse": 0.07460027440332653
+        }
+      }
+    },
+    {
+      "label": "rl2048-leaf32",
+      "model_sha256": "fb598f165f10a9a2a8e170986844122d01476187ba8cb315efe210d4cdd8a367",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.4434198786194115,
+          "teacher_action_top1": 0.32339676016119134,
+          "teacher_action_top5": 0.682794694563796,
+          "warm_to_model_policy_kl_nats": 0.15223785555504246,
+          "mixed_value_mse": 0.12039765672244616,
+          "terminal_value_mse": 0.505669732104557,
+          "teacher_static_value_mse": 0.07955926122319246
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.4567984627406982,
+          "teacher_action_top1": 0.3246709826449044,
+          "teacher_action_top5": 0.6821069268411295,
+          "warm_to_model_policy_kl_nats": 0.162164318366575,
+          "mixed_value_mse": 0.12634144971953548,
+          "terminal_value_mse": 0.548810389935343,
+          "teacher_static_value_mse": 0.08125622748694854
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.3471028553864883,
+          "teacher_action_top1": 0.31422319474835886,
+          "teacher_action_top5": 0.687746170678337,
+          "warm_to_model_policy_kl_nats": 0.08077383958956505,
+          "mixed_value_mse": 0.07760624897688025,
+          "terminal_value_mse": 0.19508531562956974,
+          "teacher_static_value_mse": 0.06734221810637855
+        }
+      }
+    }
+  ]
+}

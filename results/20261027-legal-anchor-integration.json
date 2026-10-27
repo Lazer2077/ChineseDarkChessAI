@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "scope": "CPU full-checkpoint integration on four old TRAIN games and two old TRAIN games used only for smoke selection. One epoch, no development/final test data, no strength evidence or formal new training recipe selected.",
+  "profiles": [
+    {
+      "profile": "original",
+      "selected_model_sha256": "3aa9ffd099d5c41ef0f6df36d958cbf726b3c6904ea036024f7ee017076e1de0",
+      "updates": 3,
+      "anchor_coefficient": 0,
+      "mean_legal_teacher_kl": null
+    },
+    {
+      "profile": "zero",
+      "selected_model_sha256": "3aa9ffd099d5c41ef0f6df36d958cbf726b3c6904ea036024f7ee017076e1de0",
+      "updates": 3,
+      "anchor_coefficient": 0,
+      "mean_legal_teacher_kl": 0.0
+    },
+    {
+      "profile": "positive",
+      "selected_model_sha256": "0dca3bd68d70e9720bd362c56495001d7651ecd0dd04b69b63509aed7667c74a",
+      "updates": 3,
+      "anchor_coefficient": 1,
+      "mean_legal_teacher_kl": 0.11676719360133653
+    }
+  ],
+  "zero_coefficient_reproduces_original_arrays_bitwise": true,
+  "positive_coefficient_updates_finite": true,
+  "training_positions": 186,
+  "original_trainer_sha256": "0d8f6fdf9c5536ed8bf996a79a53e8d38b4224905a6f9a716b92fd1c61613e57",
+  "wrapper_sha256": "b72ccc656f4c357fcca32976daec5355f29bf0d894f64cac3e8a65338fc55cd9"
+}

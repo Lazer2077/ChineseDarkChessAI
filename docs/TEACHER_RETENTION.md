@@ -36,3 +36,69 @@ control, compatible information inputs, new isolated match seeds and the native
 teacher attribution control. Search-visit fitting and actor strength must still
 be evaluated separately. No new training campaign is selected before the
 diagnostic and remaining function-level contrasts finish.
+
+## Completed descriptive retention matrix
+
+| Frozen model | Teacher action CE | Top1 | Warm-to-model KL | Original mixed-value MSE |
+| --- | ---: | ---: | ---: | ---: |
+| Warm | 2.364835 | 35.1258% | 0 | 0.084464 |
+| RL256,Leaf32 | 2.759078 | 25.1928% | 0.547188 | 0.179038 |
+| RL256,Leaf8 | 2.438848 | 32.7427% | 0.142073 | 0.150245 |
+| RL2048,Leaf32 | 2.443420 | 32.3397% | 0.152238 | 0.120398 |
+
+All runs are complete and use the same37,471reused positions. The high-search
+and small-batch recipes preserve more teacher-policy agreement than original
+RL256/Leaf32, but their completed matches still show no established warm-control
+gain. Agreement retention is therefore not sufficient evidence of strength.
+Mixed-value targets reflect the original teacher's search/continuation, whereas
+neural self-play terminal labels reflect its own policies; this column measures
+retention of old supervision, not whether the new value is an unbiased or
+universally incorrect estimate. No uncertainty or new generalization claim is
+attached to these descriptive means. Evidence:
+`results/20261027-teacher-retention-diagnostic.json`.
+
+## Legal-anchor implementation preparation
+
+`research/policy_anchor.py` implements KL from the frozen warm policy to the
+student, each normalized only over observer-compatible legal actions. The
+existing full-action search CE and terminal MSE remain separate objectives.
+No old probability mass on illegal actions is preserved by the auxiliary loss.
+Teacher logits are detached, masked actions have zero KL derivative and empty
+legal sets reject. Two tests verify an analytic KL/gradient example and actual
+private-capture observer-mask/visit-support checks.
+
+Masks are reconstructed exclusively from actor InformationState plus one fixed
+internal compatible-inventory sample, with full known rule history. This is
+not a proof of inventory-invariant rules. All256original RL training games,
+13,924positions, pass exact observer replay and stored visit-support checks;
+no episode or action is filtered silently. There are450,663legal action entries,
+414,635visited entries and267fully public positions. Packed masks, offsets,
+episode ordering and source digests are archived in
+`results/20261027-observer-policy-masks.json`.
+
+`scripts/train_anchored_selfplay.py` makes explicit guarded source substitutions
+to the pinned original trainer; no existing file or active recipe is edited.
+It queries a fixed eval-mode warm teacher on the **same augmented student
+inputs**, retaining the student's original train-mode normalization behavior.
+Checkpoint selection remains the original unanchored selection CE+MSE. A positive
+coefficient requires additional training forwards; equal optimizer updates do
+not imply equal training FLOPs.
+
+The CPU integration uses four existing TRAIN games and two different TRAIN
+games for smoke selection, one epoch/three updates. Zero coefficient reproduces
+the original selected NPZ arrays bitwise; a positive coefficient gives finite
+nonzero KL and changed weights. This verifies only the small integration case,
+not full-run reproduction, a chosen research coefficient or playing strength.
+No formal new training campaign has started. Evidence:
+`results/20261027-legal-anchor-integration.json`.
+
+The zero-coefficient implementation has now also reproduced the **full**
+original first RL update on GPU:256training games/13,924positions,32selection
+games, four epochs and436updates. Every selected parameter/buffer array and the
+entire selected NPZ digest exactly match original checkpoint
+`168ae3d997d8c671acf91d36b73d23eeedfdfc48985fc2f6a91948526b4d7d98`.
+This extends the implementation check beyond the small CPU integration. It
+reuses the same training seed and does not warrant duplicate matches or a new
+strength/robustness claim. Evidence:
+`results/20261027-legal-anchor-zero-reproduction.json`. A nonzero-coefficient
+research campaign still waits for the original function-level study to finish.

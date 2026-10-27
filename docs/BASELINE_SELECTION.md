@@ -1,5 +1,22 @@
 # Select a small strong suite with opponent-only screening
 
+Targeted2026-10-27refresh finds no newly established compatible independent
+engine: AB's latest release remainsv0.2d, the jqe teacher main commit is unchanged,
+and official Pikafish advertises the already pinnedjieqi_oldbranch, with no
+currentjieqibranch. This is a targeted refresh, not exhaustive discovery;
+`results/20261027-opponent-refresh.json` records queries and primary endpoints.
+
+Three pending candidates now have pinned complete-tree/source availability
+audits. BUPT's116-file Java project uses an incompatible ignore-check/six-check-
+chase profile. zhzjzz's41-file Java project permits in-place dark flips and has a
+local search fallback plus optional hosted-model selection. Lazyy's pinned tree
+contains only a README. None has an established license grant in the inspected
+evidence, and none is newly runnable/compatible or defeated by this audit.
+No API calls or builds were performed. Original private-capture/terminal and
+runtime questions remain scoped explicitly in
+`results/20261027-pending-opponent-source-audit.json`. These findings do not
+change the provisional three-profile strong suite or any strength result.
+
 The user authorized opponent-versus-opponent preselection to reduce repeated
 candidate evaluation on 2026-10-26. The final routine suite may contain only a
 few profiles, ordinarily about 3–5. Its declared strong members must each meet

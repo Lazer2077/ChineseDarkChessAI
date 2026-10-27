@@ -46,3 +46,16 @@ replay and raw-game archiving. Source/model hashes are checked while queued and
 before and after every stage. Current evidence:
 `results/policy-value-factorial-plan.json` and
 `results/20261027-factorial-protocol-smoke.json`.
+
+The first contrast, RL-policy/Warm-value versus Warm-policy/Warm-value, has
+completed23W/0D/41L:35.9375%score, paired bootstrap95%[25%,48.4375%]. All3,007
+moves pass native seeded-identity, legality, full-history terminal and actual-
+clock replay, with no technical games or ambiguous margins. Retaining the warm
+value function therefore does not rescue the learned policy in this diagnostic.
+This is a negative policy-function signal under the matched two-forward clock
+profile; the interval is per-contrast and unadjusted for the three planned
+comparisons. It is not a completed factorial analysis, an equal-simulation
+decomposition or proof that the value function is harmless. The two remaining
+contrasts continue without changing the plan.
+
+Evidence: `results/20261027-factorial-rl-policy-warm-value{,-audit}.json`.

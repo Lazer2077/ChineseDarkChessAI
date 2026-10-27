@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "checked_date": "2026-10-27",
+  "scope": "Targeted discovery and current upstream-version refresh, not an exhaustive inventory audit or any new strength evidence.",
+  "search_queries": [
+    "site:github.com 揭棋 AI NNUE Jieqi 2026 engine",
+    "site:github.com Jieqi AI POMDP reinforcement learning dark chess -banqi",
+    "揭棋 人工智能 论文 Jieqi imperfect information AI research"
+  ],
+  "discovery_rechecked": [
+    {
+      "url": "https://github.com/YOLOW92/moyi-jieqi",
+      "inventory_id": "moyi-jieqi",
+      "outcome": "Already inventoried incompatible mixed-colour variant; exclusion unchanged."
+    },
+    {
+      "url": "https://github.com/igofreely/flipchess",
+      "inventory_id": "flipchess-igofreely",
+      "outcome": "Already inventoried Pikafish frontend/integration; no new independent engine established."
+    }
+  ],
+  "upstreams": [
+    {
+      "repository": "lxsgx23/AB-JChess",
+      "source": "https://api.github.com/repos/lxsgx23/AB-JChess/releases/latest",
+      "latest_release": "v0.2d",
+      "published_at": "2026-10-10T10:07:39Z",
+      "assets": [
+        {
+          "name": "0.2d_bmi2.zip",
+          "size": 60640272,
+          "digest": "sha256:01d3d539b1d3c50371132401d70c441364ae1c2e9d6e4121f83143f2fe1b3a4e",
+          "url": "https://github.com/lxsgx23/AB-JChess/releases/download/v0.2d/0.2d_bmi2.zip"
+        }
+      ],
+      "outcome": "Latest published release remains already pinned v0.2d; no replacement campaign."
+    },
+    {
+      "repository": "devinokeefe/jieqi",
+      "source": "https://api.github.com/repos/devinokeefe/jieqi/branches/main",
+      "branch": "main",
+      "commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+      "outcome": "Current main remains pinned teacher/referee commit."
+    },
+    {
+      "repository": "official-pikafish/Pikafish",
+      "source": "https://api.github.com/repos/official-pikafish/Pikafish/branches?per_page=100",
+      "branches": [
+        {
+          "name": "jieqi_old",
+          "commit": "23b9466c981f0f3a1133f92de1a6f86406c4eccc"
+        },
+        {
+          "name": "master",
+          "commit": "9d7833aa113626b3ea63ad83f49fb9b456bd5839"
+        },
+        {
+          "name": "tune",
+          "commit": "28219852686ae5bb50181a963bd24177c447b0c4"
+        }
+      ],
+      "outcome": "jieqi_old remains already pinned; no current branch named jieqi is advertised. This does not establish absence of archived copies or runnable weights."
+    }
+  ],
+  "new_compatible_independent_engines_established": 0,
+  "limitations": [
+    "Search indexing and queried endpoints do not prove exhaustive coverage or absence of unpublished research.",
+    "No old engine is defeated by discovery, exclusion or version checks.",
+    "Refresh again before final strong-baseline confirmation."
+  ]
+}

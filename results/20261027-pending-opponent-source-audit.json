@@ -1,0 +1,887 @@
+{
+  "schema": 1,
+  "checked_date": "2026-10-27",
+  "scope": "Pinned source/tree/runtime-license availability audit, not compilation, exhaustive legal review, playing-strength evidence or authorization to redistribute unlicensed code.",
+  "projects": [
+    {
+      "id": "bupt-2026-jieqi",
+      "repo": "Makinuohara/2026-jieqi-AI",
+      "commit": "ea945de10bb58ed29b237fcfc85fe0f3e070ea47",
+      "kind": "Independent Java expectiminimax, iterative deepening/alpha-beta/quiescence/TT.",
+      "runtime": "Maven multimodule, JDK21; GUI JavaFX21, optional server/WebSocket. No original UCI interface verified; not built or run.",
+      "rules": "Original source/README permit ignoring check, king capture, 80 quiet halfmoves and six-consecutive check/chase adjudication. Root legalMoves iterates movement constraints; validate forbids in-place flip. Incompatible original rule profile.",
+      "decision": "Retain unverified/incompatible; no baseline match or defeat claim.",
+      "tree_source": "https://api.github.com/repos/Makinuohara/2026-jieqi-AI/git/trees/ea945de10bb58ed29b237fcfc85fe0f3e070ea47?recursive=1",
+      "tree_truncated": false,
+      "tracked_files": 116,
+      "license_named_files": [],
+      "license_status": "No license-named file in complete pinned tree; inspected README/build metadata/source headers do not establish a license grant. Public source visibility is not license clearance.",
+      "inspected_files": [
+        {
+          "label": "bupt-readme",
+          "url": "https://github.com/Makinuohara/2026-jieqi-AI/blob/ea945de10bb58ed29b237fcfc85fe0f3e070ea47/README.md"
+        },
+        {
+          "label": "bupt-pom",
+          "url": "https://github.com/Makinuohara/2026-jieqi-AI/blob/ea945de10bb58ed29b237fcfc85fe0f3e070ea47/pom.xml"
+        },
+        {
+          "label": "bupt-ai",
+          "url": "https://github.com/Makinuohara/2026-jieqi-AI/blob/ea945de10bb58ed29b237fcfc85fe0f3e070ea47/jieqi-ai/src/main/java/edu/bupt/jieqi/ai/ExpectiminimaxAgent.java"
+        },
+        {
+          "label": "bupt-rules",
+          "url": "https://github.com/Makinuohara/2026-jieqi-AI/blob/ea945de10bb58ed29b237fcfc85fe0f3e070ea47/jieqi-rules/src/main/java/edu/bupt/jieqi/rules/StandardGameEngine.java"
+        }
+      ],
+      "source_tree_files": [
+        {
+          "path": ".dockerignore",
+          "git_blob_sha": "695e09e8014510db08ff83f2d00449bbac5816f4",
+          "size": 120
+        },
+        {
+          "path": ".gitattributes",
+          "git_blob_sha": "63ab75bc5830785bb8fcd470fe506fdb98885f9f",
+          "size": 60
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "8d83af7595a983291e89c077b6dc005b502bad66",
+          "size": 143
+        },
+        {
+          "path": ".mvn/wrapper/maven-wrapper.properties",
+          "git_blob_sha": "ffcab66aa2834b68df24bd23612a717fdbf7920a",
+          "size": 166
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "a2c1ea979d25faaf78c49e84305a565cbc5af99f",
+          "size": 12398
+        },
+        {
+          "path": "docker-compose.yml",
+          "git_blob_sha": "464a24767fa28a4e3afad4d0ab3a88ac3e2621b4",
+          "size": 202
+        },
+        {
+          "path": "docs/bug记录.md",
+          "git_blob_sha": "783979cb21a8a21cfef93b5b0eafd4fe9f318967",
+          "size": 665
+        },
+        {
+          "path": "docs/team-tasks.md",
+          "git_blob_sha": "c86072c0e064550ffd42f17eda419599dad0646f",
+          "size": 337
+        },
+        {
+          "path": "docs/协议约定.md",
+          "git_blob_sha": "757050f11ee3a33c6fdfcdb4ca9fcad818d65812",
+          "size": 2715
+        },
+        {
+          "path": "docs/开发任务.md",
+          "git_blob_sha": "1395c79cbc3ab8e457d0ba7faba7eeb0623cd0b0",
+          "size": 4690
+        },
+        {
+          "path": "docs/架构说明.md",
+          "git_blob_sha": "ef99133c623f76adc704ac7df362ed94689684cb",
+          "size": 4088
+        },
+        {
+          "path": "docs/迭代计划/2026-06-07-完整终局规则实施计划.md",
+          "git_blob_sha": "6de4b27dbf6b72b110835ea19d9b2ae7106dc7b8",
+          "size": 1108
+        },
+        {
+          "path": "docs/迭代计划/2026-06-07-完整终局规则设计.md",
+          "git_blob_sha": "4f2eb4c0c7218e6445e1dda16423e3a90406e541",
+          "size": 2139
+        },
+        {
+          "path": "docs/迭代计划/2026-06-07-棋子明牌显示修正.md",
+          "git_blob_sha": "b4a22be6b9a9074acfca54319c94f01920484a94",
+          "size": 1433
+        },
+        {
+          "path": "docs/迭代计划/2026-06-07-首版本地人机对弈实施计划.md",
+          "git_blob_sha": "03d80c69bbdedcb8f53886657385442c8c9a83a3",
+          "size": 2925
+        },
+        {
+          "path": "docs/迭代计划/2026-06-07-首版本地人机对弈设计.md",
+          "git_blob_sha": "2835e32ebddba13f45588626d06f30642e6db149",
+          "size": 3935
+        },
+        {
+          "path": "jieqi-ai/pom.xml",
+          "git_blob_sha": "000602dc091ab4a62fe152896581e6491f3fb8ca",
+          "size": 925
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/Agent.java",
+          "git_blob_sha": "97a409e03ef11c8daf84830e6a5a872a8212fcea",
+          "size": 210
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/Evaluator.java",
+          "git_blob_sha": "14a16ccca6ea719af63f3e7ccd9628bf0899b4f8",
+          "size": 341
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/ExpectiminimaxAgent.java",
+          "git_blob_sha": "10eab77cd663c1fdcfb85bc97602c13bdaf0770c",
+          "size": 21589
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/GreedyAgent.java",
+          "git_blob_sha": "df208027a757a89283cc91259ea516f7d413782b",
+          "size": 3664
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/MaterialEvaluator.java",
+          "git_blob_sha": "9b71d6701c21096152b4998f1144c17ce12e619e",
+          "size": 4648
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/RandomAgent.java",
+          "git_blob_sha": "90c924b2e2ec527301b640e0ecd1618a1ad936ce",
+          "size": 822
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/SearchBudget.java",
+          "git_blob_sha": "4577779815ff13208b523b21c64a026193c9a24a",
+          "size": 444
+        },
+        {
+          "path": "jieqi-ai/src/main/java/edu/bupt/jieqi/ai/SearchSupport.java",
+          "git_blob_sha": "14f902940bbec8ddb6531783a992939f635f44c5",
+          "size": 21058
+        },
+        {
+          "path": "jieqi-ai/src/test/java/edu/bupt/jieqi/ai/ExpectiminimaxAgentTest.java",
+          "git_blob_sha": "00fdea25a76edc1ad81b2f780bfe63b5385b5e40",
+          "size": 9947
+        },
+        {
+          "path": "jieqi-ai/src/test/java/edu/bupt/jieqi/ai/GreedyAgentTest.java",
+          "git_blob_sha": "013c3723b3d70fffdb760e64fd293b02fcda5322",
+          "size": 3892
+        },
+        {
+          "path": "jieqi-ai/src/test/java/edu/bupt/jieqi/ai/MaterialEvaluatorTest.java",
+          "git_blob_sha": "8a1c14d4907b6d554484d1cc90bfeed4413fa4b8",
+          "size": 2475
+        },
+        {
+          "path": "jieqi-ai/src/test/java/edu/bupt/jieqi/ai/RandomAgentTest.java",
+          "git_blob_sha": "5f4e148788a89ca13c0c42ed822feaefaa1aa284",
+          "size": 923
+        },
+        {
+          "path": "jieqi-app/pom.xml",
+          "git_blob_sha": "fc62bacdd355656ad96918cfc9fde963731a9e0a",
+          "size": 1149
+        },
+        {
+          "path": "jieqi-app/src/main/java/edu/bupt/jieqi/app/EmbeddedServerControl.java",
+          "git_blob_sha": "a1ee5887bf8165cfb72e0d6ea690ce03ff0f4a1c",
+          "size": 2841
+        },
+        {
+          "path": "jieqi-app/src/main/java/edu/bupt/jieqi/app/JieqiLauncher.java",
+          "git_blob_sha": "a6ef98759113a89216c5d9b5d10baa6464325e64",
+          "size": 798
+        },
+        {
+          "path": "jieqi-gui/pom.xml",
+          "git_blob_sha": "6e31222078b15876acfd11869e718f2146f8e13a",
+          "size": 1845
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/BoardViewFactory.java",
+          "git_blob_sha": "0af65c3dda0df57055834d8ce137030967a1a3db",
+          "size": 6441
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/GameRecordDialog.java",
+          "git_blob_sha": "5b610dd40bd8290ad0c82f81ef40a042034f2152",
+          "size": 4144
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/HumanVsAiView.java",
+          "git_blob_sha": "4a86927de787e009f653653be52e41f32dffbaf0",
+          "size": 12563
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/JieqiApplication.java",
+          "git_blob_sha": "1958602ccec8853989bb8b891b27b3b579fbbda4",
+          "size": 6426
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/LocalAiVsAiExperiment.java",
+          "git_blob_sha": "801a220378ce6f1b1aff66aa698c1bbf23d28470",
+          "size": 11133
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/LocalAiVsAiGame.java",
+          "git_blob_sha": "0709251adcd9da5f9695f992a379ba9de58266e7",
+          "size": 6746
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/LocalAiVsAiView.java",
+          "git_blob_sha": "200797eeb5d07aa8934be4755fc9cc3730e648e9",
+          "size": 12628
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/LocalHumanVsAiGame.java",
+          "git_blob_sha": "1c7a569a8a6b46bb9f2eff77eb5a4c536112868a",
+          "size": 5882
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/NetworkGameClient.java",
+          "git_blob_sha": "2d8d5849045cc08ff3934ac8c3301e3128140e7f",
+          "size": 1510
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/NetworkLobbyView.java",
+          "git_blob_sha": "52047f0d4cfaf4f7d45d199b73d99c952918036c",
+          "size": 22484
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/PieceTextFormatter.java",
+          "git_blob_sha": "5024d6b57b830566ce2d4cf3cf5d8adbfbdee60a",
+          "size": 859
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/ServerControl.java",
+          "git_blob_sha": "688ebe7f415592b1391a4c2a08134cb552df1836",
+          "size": 275
+        },
+        {
+          "path": "jieqi-gui/src/main/java/edu/bupt/jieqi/gui/StartServerView.java",
+          "git_blob_sha": "df562825a2b13df716de21f76a1f50ffbac0e21c",
+          "size": 8708
+        },
+        {
+          "path": "jieqi-gui/src/main/resources/edu/bupt/jieqi/gui/app.css",
+          "git_blob_sha": "a5af31fbc2bcd19f365271606f13824d8e927080",
+          "size": 4602
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/GameRecordDialogTest.java",
+          "git_blob_sha": "320526b0ca8ddb06f6c0c83cb86180a6df55f546",
+          "size": 834
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/GameStatusTextTest.java",
+          "git_blob_sha": "cc1793063b0d8b816a2f44a679ebf7fb16e18cd0",
+          "size": 694
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/HumanVsAiLayoutTest.java",
+          "git_blob_sha": "c61177edb253e2985ca6e8e06411f37e22aa2ef6",
+          "size": 1308
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/JieqiApplicationTextTest.java",
+          "git_blob_sha": "e6ffbf5132ef637921324b508a392a7313cf3f7e",
+          "size": 2427
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/LocalAiVsAiGameTest.java",
+          "git_blob_sha": "a1ac3c052624bc3366654846f705093b622aeb4d",
+          "size": 3531
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/LocalHumanVsAiGameTest.java",
+          "git_blob_sha": "261e7f25c8f2ee597cd8d4f3d66ebb6efade8ffc",
+          "size": 2571
+        },
+        {
+          "path": "jieqi-gui/src/test/java/edu/bupt/jieqi/gui/PieceTextFormatterTest.java",
+          "git_blob_sha": "829528b569528d4497d801284d1a345f06285b25",
+          "size": 2371
+        },
+        {
+          "path": "jieqi-model/pom.xml",
+          "git_blob_sha": "fc8972e38f610d48bc64f5f92b6e93d9c23c9287",
+          "size": 553
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/Board.java",
+          "git_blob_sha": "37eb164fe41e742377980446a145773b144004e7",
+          "size": 2589
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/Color.java",
+          "git_blob_sha": "a59aedf0f39a95278dba07f3ef011645f700c307",
+          "size": 153
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/GameState.java",
+          "git_blob_sha": "547cd3a5d81a5a0ab10e60407c637f76233a2df0",
+          "size": 2513
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/GameStatus.java",
+          "git_blob_sha": "b033b3b26e86efec7c827b6ea36d51a940a358c3",
+          "size": 122
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/HiddenPiecePool.java",
+          "git_blob_sha": "5922123f6704d572580050c8ddc73fd8564ed615",
+          "size": 1850
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/Move.java",
+          "git_blob_sha": "939cd48dbf09d7dac8701f2763ffb399e768d76d",
+          "size": 277
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/Piece.java",
+          "git_blob_sha": "bda6b4e27e54383cad1f32f354f957cd04edba97",
+          "size": 1155
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/PieceType.java",
+          "git_blob_sha": "097c03da7b09ac5693b3b70b7385b0a7154b0a42",
+          "size": 846
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/PlayerView.java",
+          "git_blob_sha": "8631306eab8e9341ec6e00de7756961336b053c0",
+          "size": 636
+        },
+        {
+          "path": "jieqi-model/src/main/java/edu/bupt/jieqi/model/Position.java",
+          "git_blob_sha": "4729275d9d429e1fabea89dc18abbeb77a4a0498",
+          "size": 685
+        },
+        {
+          "path": "jieqi-model/src/test/java/edu/bupt/jieqi/model/BoardTest.java",
+          "git_blob_sha": "4062db1853891d64f567eecc075cb1bc9d7861f1",
+          "size": 1326
+        },
+        {
+          "path": "jieqi-model/src/test/java/edu/bupt/jieqi/model/HiddenPiecePoolTest.java",
+          "git_blob_sha": "58b3a8441a7b1a1a5a5ce9418d3a69b04694ef82",
+          "size": 1121
+        },
+        {
+          "path": "jieqi-model/src/test/java/edu/bupt/jieqi/model/PositionTest.java",
+          "git_blob_sha": "82bd9aee3c85478dc5dc0ccbe5c1cbdb52a75bda",
+          "size": 615
+        },
+        {
+          "path": "jieqi-protocol/pom.xml",
+          "git_blob_sha": "f1db5440f100c9ca71b1188ce9100ad957c9eedc",
+          "size": 881
+        },
+        {
+          "path": "jieqi-protocol/src/main/java/edu/bupt/jieqi/protocol/FrameTooLargeException.java",
+          "git_blob_sha": "3d54ce611c3c5b5793c2c006820491da2651e94b",
+          "size": 262
+        },
+        {
+          "path": "jieqi-protocol/src/main/java/edu/bupt/jieqi/protocol/Messages.java",
+          "git_blob_sha": "50a561364c1058572bdf6f6d6e398eb4ed025726",
+          "size": 1489
+        },
+        {
+          "path": "jieqi-protocol/src/main/java/edu/bupt/jieqi/protocol/ProtocolCodec.java",
+          "git_blob_sha": "23ed0e56dbdcb8c1dd7998b232be01180303b869",
+          "size": 1385
+        },
+        {
+          "path": "jieqi-protocol/src/main/java/edu/bupt/jieqi/protocol/WireBoardCodec.java",
+          "git_blob_sha": "d148170386c26b9d0c8d8afda65d3ddc25966fdc",
+          "size": 3688
+        },
+        {
+          "path": "jieqi-protocol/src/test/java/edu/bupt/jieqi/protocol/ProtocolCodecTest.java",
+          "git_blob_sha": "6b52fc6fb56309bf6da5c1a9555e038e4c50354a",
+          "size": 1030
+        },
+        {
+          "path": "jieqi-protocol/src/test/java/edu/bupt/jieqi/protocol/WireBoardCodecTest.java",
+          "git_blob_sha": "36cc882cc9610b95e1c8a81986512a046d5ac0d9",
+          "size": 1275
+        },
+        {
+          "path": "jieqi-rules/pom.xml",
+          "git_blob_sha": "da5ab356e2fb53bdea4febc56276cbfdc09f2df3",
+          "size": 741
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/ApplyResult.java",
+          "git_blob_sha": "b022ed7a3e4e93a8e6a517c077b3e2f1b5331582",
+          "size": 463
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/GameEngine.java",
+          "git_blob_sha": "0f77c40da93f409a33cbe4f3ecbf3cb2b196de2b",
+          "size": 345
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/GameEvent.java",
+          "git_blob_sha": "3cd0105bed65df67e8907ecf0982bb4970f8b5af",
+          "size": 480
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/MoveError.java",
+          "git_blob_sha": "f4478fff9df0d894f1c5237c720aec14134944ae",
+          "size": 241
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/MoveValidationResult.java",
+          "git_blob_sha": "8be11f96d81300d5b6b390a33cffa12b4c745359",
+          "size": 400
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/RulesConstants.java",
+          "git_blob_sha": "15f1f1e8b56f17ebc29d412a5b780cf637473011",
+          "size": 335
+        },
+        {
+          "path": "jieqi-rules/src/main/java/edu/bupt/jieqi/rules/StandardGameEngine.java",
+          "git_blob_sha": "a1e1ebf0de1e452b5bbd767730866ad2d3fef96c",
+          "size": 22061
+        },
+        {
+          "path": "jieqi-rules/src/test/java/edu/bupt/jieqi/rules/RepetitionRuleTest.java",
+          "git_blob_sha": "6a9b6b76768a4ed043752fee3d165d5498e9e439",
+          "size": 29371
+        },
+        {
+          "path": "jieqi-rules/src/test/java/edu/bupt/jieqi/rules/StandardGameEngineTest.java",
+          "git_blob_sha": "9b7bf5d7e5231fe3f7e86576972c7cc005dea79c",
+          "size": 12790
+        },
+        {
+          "path": "jieqi-server/Dockerfile",
+          "git_blob_sha": "95f4cd5e6acddf7144139ea81870fa47fa01a9e8",
+          "size": 810
+        },
+        {
+          "path": "jieqi-server/pom.xml",
+          "git_blob_sha": "cd6f3b1e2ffb845994004a9b05fa0e73041a6a78",
+          "size": 2822
+        },
+        {
+          "path": "jieqi-server/src/main/java/edu/bupt/jieqi/server/JieqiWebSocketServer.java",
+          "git_blob_sha": "88f183c8dc026243e47e4e5f14c1601ed1180dd7",
+          "size": 2896
+        },
+        {
+          "path": "jieqi-server/src/main/java/edu/bupt/jieqi/server/MessageRouter.java",
+          "git_blob_sha": "9b922c900483f4d171d497a1c41f02fadd2f5c9b",
+          "size": 1267
+        },
+        {
+          "path": "jieqi-server/src/main/java/edu/bupt/jieqi/server/NetworkGameHub.java",
+          "git_blob_sha": "880f25daa8eb879d64547ccb58e76ace14a666b6",
+          "size": 29033
+        },
+        {
+          "path": "jieqi-server/src/main/java/edu/bupt/jieqi/server/ServerMain.java",
+          "git_blob_sha": "e8e113de727c2a47113451936dc04fbd4f6bb502",
+          "size": 400
+        },
+        {
+          "path": "jieqi-server/src/test/java/edu/bupt/jieqi/server/MessageRouterTest.java",
+          "git_blob_sha": "d0a207e1945d143cf44207be1883e94540129219",
+          "size": 943
+        },
+        {
+          "path": "jieqi-server/src/test/java/edu/bupt/jieqi/server/NetworkGameHubTest.java",
+          "git_blob_sha": "35888fea36de3b150b492594ffae1336db4c05c3",
+          "size": 7118
+        },
+        {
+          "path": "mvnw",
+          "git_blob_sha": "bd8896bf2217b46faa0291585e01ac1a3441a958",
+          "size": 11790
+        },
+        {
+          "path": "mvnw.cmd",
+          "git_blob_sha": "92450f93273470af42eeee491874afb2039b700a",
+          "size": 8292
+        },
+        {
+          "path": "pom.xml",
+          "git_blob_sha": "52b3aa70ff24d983128f0ed2e1f2928d6074eed7",
+          "size": 2908
+        },
+        {
+          "path": "resources/assignment/2026大作业——揭棋.docx",
+          "git_blob_sha": "a289fccb54cd8b2a6572bc50aa1958e326237574",
+          "size": 27488
+        },
+        {
+          "path": "resources/assignment/2026大作业公共接口.docx",
+          "git_blob_sha": "6c6f9fc9e3985fc9045f5924229fc0b7584b034f",
+          "size": 28541
+        },
+        {
+          "path": "resources/assignment/Unvei接口文档- 张恒基.pdf",
+          "git_blob_sha": "be8c7a20d225bd20ae266ac91ab32c25d2f51fa3",
+          "size": 1178183
+        },
+        {
+          "path": "resources/assignment/接口文档-张恒基问题回答.txt",
+          "git_blob_sha": "f2dd8f7a8fca42ccd40b1c670a045fa6d4bb2b13",
+          "size": 4037
+        },
+        {
+          "path": "resources/assignment/揭棋规则与协议待确认问题.pdf",
+          "git_blob_sha": "46058dcb73efb2103b33cb8dce29acf3cbdc4ada",
+          "size": 112124
+        },
+        {
+          "path": "resources/assignment/揭棋规则与协议待确认问题的老师解答.txt",
+          "git_blob_sha": "5581853f95c2f13caa256350c80fad457d7e9245",
+          "size": 1654
+        },
+        {
+          "path": "resources/assignment/问题回答.txt",
+          "git_blob_sha": "f2dd8f7a8fca42ccd40b1c670a045fa6d4bb2b13",
+          "size": 4037
+        },
+        {
+          "path": "resources/presentations/jieqi_presentation.html",
+          "git_blob_sha": "18c41a96d4a2a04111ccfa87a0589172507bc561",
+          "size": 73104
+        },
+        {
+          "path": "resources/report-images/揭棋主界面.png",
+          "git_blob_sha": "3297a5b7ac2901dc25e4de03485b731a3f567105",
+          "size": 178297
+        },
+        {
+          "path": "resources/report-images/本地批量ai对战.png",
+          "git_blob_sha": "a3b879e2502957efe2c2b3798ff43d9f17a70754",
+          "size": 179188
+        },
+        {
+          "path": "resources/report-images/真人不同电脑联网对弈.png",
+          "git_blob_sha": "35c1dc9c06f31f4a434cc0399aca70dfeef083c4",
+          "size": 410909
+        },
+        {
+          "path": "resources/report-images/真人对人工智能页（已实现士过河，UI有落点提示）.png",
+          "git_blob_sha": "2736c6c28c19fbe629e7ee55067d06912e6f0d4d",
+          "size": 815682
+        },
+        {
+          "path": "run-gui.cmd",
+          "git_blob_sha": "7d10ca0510b07ecc9347041e94caa139c7aeff01",
+          "size": 82
+        },
+        {
+          "path": "run-gui.sh",
+          "git_blob_sha": "44315048e61a3676f9d397fb5c4c7335a10ed095",
+          "size": 80
+        },
+        {
+          "path": "run-server.cmd",
+          "git_blob_sha": "1ddba354a3424fd319c2eea4df0f0c081b2d65f4",
+          "size": 85
+        },
+        {
+          "path": "run-server.sh",
+          "git_blob_sha": "8e8590c9a8f806555c95cadd853232a8db263447",
+          "size": 83
+        },
+        {
+          "path": "scripts/run-gui.cmd",
+          "git_blob_sha": "3284793fdb7b4a587d7009e69eec5229b8afd664",
+          "size": 261
+        },
+        {
+          "path": "scripts/run-gui.sh",
+          "git_blob_sha": "82a9c04da8678c6fc7a9b6b4ef691889cdd4ef57",
+          "size": 136
+        },
+        {
+          "path": "scripts/run-server.cmd",
+          "git_blob_sha": "cd721a065bdb9fa54ae94832bd5ed14099337e34",
+          "size": 267
+        },
+        {
+          "path": "scripts/run-server.sh",
+          "git_blob_sha": "635a0dd2f59e3f2832f5a805d665caeb388a8ed4",
+          "size": 142
+        }
+      ]
+    },
+    {
+      "id": "zhzjzz-jieqi",
+      "repo": "zhzjzz/AI-Jieqi",
+      "commit": "a6388c8820592239dc9b567aff9704dab0bd9b6f",
+      "kind": "Independent Java local search/evaluation fallback with optional DeepSeek candidate selection.",
+      "runtime": "Maven compiler17, JavaFX21.0.2 Windows classifier, WebSocket/JSON; no UCI verified. AiAgent uses local search fallback when API key absent. No API calls, build or runtime test performed.",
+      "rules": "RuleEngine allows dark in-place flip actions and tests own-general safety after moving/revealing; in-place flip is incompatible with standard move-to-reveal Jieqi. Private dark-capture observer semantics and full terminal rules still unverified.",
+      "decision": "Retain unverified/incompatible original profile; hosted-API mode has not been validated as a reproducible open-weight baseline.",
+      "tree_source": "https://api.github.com/repos/zhzjzz/AI-Jieqi/git/trees/a6388c8820592239dc9b567aff9704dab0bd9b6f?recursive=1",
+      "tree_truncated": false,
+      "tracked_files": 41,
+      "license_named_files": [],
+      "license_status": "No license-named file in complete pinned tree; inspected README/build metadata/source headers do not establish a license grant. Public source visibility is not license clearance.",
+      "inspected_files": [
+        {
+          "label": "zh-readme",
+          "url": "https://github.com/zhzjzz/AI-Jieqi/blob/a6388c8820592239dc9b567aff9704dab0bd9b6f/README.md"
+        },
+        {
+          "label": "zh-pom",
+          "url": "https://github.com/zhzjzz/AI-Jieqi/blob/a6388c8820592239dc9b567aff9704dab0bd9b6f/pom.xml"
+        },
+        {
+          "label": "zh-agent",
+          "url": "https://github.com/zhzjzz/AI-Jieqi/blob/a6388c8820592239dc9b567aff9704dab0bd9b6f/src/main/java/org/example/ai/AiAgent.java"
+        },
+        {
+          "label": "zh-rules",
+          "url": "https://github.com/zhzjzz/AI-Jieqi/blob/a6388c8820592239dc9b567aff9704dab0bd9b6f/src/main/java/org/example/common/RuleEngine.java"
+        }
+      ],
+      "source_tree_files": [
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "e96d31ad1661e5b1fecc8f44b5d9fc86991f6cd7",
+          "size": 588
+        },
+        {
+          "path": "2026-05-18-jiqi-ai-agent-prd.md",
+          "git_blob_sha": "ef6d4cf7563532aa0bd93fd2cc8a05d03fab063a",
+          "size": 15715
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "8aa8cd220c565881dd19d17d8fb62bb39378836e",
+          "size": 2045
+        },
+        {
+          "path": "ai.local.properties",
+          "git_blob_sha": "396900b09e3e5c96b41ddf1099ea86952461a83c",
+          "size": 102
+        },
+        {
+          "path": "docs/superpowers/plans/2026-05-19-deepseek-ai-opponent.md",
+          "git_blob_sha": "0ce8eced29a924adc8dbb20fb648b2659b2bb4d9",
+          "size": 52147
+        },
+        {
+          "path": "docs/superpowers/specs/2026-05-19-deepseek-ai-opponent-design.md",
+          "git_blob_sha": "6b7b3ad3718cce5ac1998c3a3e83253afb821dcb",
+          "size": 12778
+        },
+        {
+          "path": "pom.xml",
+          "git_blob_sha": "e3a381ae936c9682c035084c05ad90c94aba5f5c",
+          "size": 2909
+        },
+        {
+          "path": "src/main/java/org/example/Main.java",
+          "git_blob_sha": "194b9d1c35e98da420cf06cd2d9f9429c87949b1",
+          "size": 736
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiAgent.java",
+          "git_blob_sha": "827ce2583b8ae507765dfd9525161be000decc2f",
+          "size": 3867
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiClientApp.java",
+          "git_blob_sha": "7224583ebfe8cb1dab1c0d96a330f82a21860b0c",
+          "size": 19290
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiClientMain.java",
+          "git_blob_sha": "4de408a7a2496abd898a404413b75b3694b2b2e9",
+          "size": 138
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiConfig.java",
+          "git_blob_sha": "c1f28a4d9d1f2a1cb04b7c1e1825edd8d579a281",
+          "size": 3520
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiDecision.java",
+          "git_blob_sha": "9ee35832ebd54c614cc8367ffa37997f230ad79d",
+          "size": 332
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiDecisionLogger.java",
+          "git_blob_sha": "cdb6b3b573213f82a2207dd5526432ed867bffbf",
+          "size": 1116
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiDecisionSource.java",
+          "git_blob_sha": "a61eabc28055139eb0377fb7b789dd375a300aee",
+          "size": 95
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiGameClient.java",
+          "git_blob_sha": "4742810f6bd4bbbb0d5713ee82ad2681fa89e3fb",
+          "size": 5358
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiVsAiApp.java",
+          "git_blob_sha": "baee07203a86942298107a0dcb05f9db9d388b34",
+          "size": 12251
+        },
+        {
+          "path": "src/main/java/org/example/ai/AiVsAiMain.java",
+          "git_blob_sha": "fd97b63a0f538ef410df432ae713e26487cd6881",
+          "size": 134
+        },
+        {
+          "path": "src/main/java/org/example/ai/BoardSnapshotFormatter.java",
+          "git_blob_sha": "c66c9ba4e0433f7879814c48e54ea2ffb2f11725",
+          "size": 3029
+        },
+        {
+          "path": "src/main/java/org/example/ai/CandidateMove.java",
+          "git_blob_sha": "c4629b8fa1a4e09c84f250450931d6ee733e9bf0",
+          "size": 381
+        },
+        {
+          "path": "src/main/java/org/example/ai/DeepSeekClient.java",
+          "git_blob_sha": "193ce21eee226f0df5f8ae1b0c6a4dc25ce32090",
+          "size": 297
+        },
+        {
+          "path": "src/main/java/org/example/ai/DeepSeekResponseParser.java",
+          "git_blob_sha": "43a11ff0f0df4be076334976a08753129da698e8",
+          "size": 1970
+        },
+        {
+          "path": "src/main/java/org/example/ai/DeepSeekSelection.java",
+          "git_blob_sha": "ce75419cd20ade38f9b79767601ca384e40bb4dd",
+          "size": 115
+        },
+        {
+          "path": "src/main/java/org/example/ai/HeuristicMoveSelector.java",
+          "git_blob_sha": "6248f256f53edecda82d0de309dd4ab8c7a66946",
+          "size": 6656
+        },
+        {
+          "path": "src/main/java/org/example/ai/HttpDeepSeekClient.java",
+          "git_blob_sha": "19331467d1612d0033f2242c14283bcd62fdce58",
+          "size": 3978
+        },
+        {
+          "path": "src/main/java/org/example/ai/LegalMoveGenerator.java",
+          "git_blob_sha": "6307ef5069e5b4b4c742f0aefef81ece6814ff33",
+          "size": 3036
+        },
+        {
+          "path": "src/main/java/org/example/ai/MoveKind.java",
+          "git_blob_sha": "bc1d4d4c1d3d007c846dd543835ac5c605d57d0c",
+          "size": 105
+        },
+        {
+          "path": "src/main/java/org/example/ai/MoveSearchEngine.java",
+          "git_blob_sha": "97ffb09037da0666af01d457c3e04ce5bebe45d7",
+          "size": 5404
+        },
+        {
+          "path": "src/main/java/org/example/ai/PositionEvaluator.java",
+          "git_blob_sha": "f71a9bab6c8754d466a78167a4b937f5a9710404",
+          "size": 10205
+        },
+        {
+          "path": "src/main/java/org/example/ai/SearchAnalysis.java",
+          "git_blob_sha": "1c50f0ebf213fc0f23b77af72c15694527f4b513",
+          "size": 118
+        },
+        {
+          "path": "src/main/java/org/example/client/ClientMain.java",
+          "git_blob_sha": "7d5a0dc444daba7efbffb2f2718b1ee241ff5938",
+          "size": 139
+        },
+        {
+          "path": "src/main/java/org/example/client/GameClient.java",
+          "git_blob_sha": "f448d96e1611081d4b05c0527b9d5ef6bad58ab7",
+          "size": 6201
+        },
+        {
+          "path": "src/main/java/org/example/common/GameBoard.java",
+          "git_blob_sha": "bd51b24ff1b783afda46914435a35284f1436a8f",
+          "size": 3288
+        },
+        {
+          "path": "src/main/java/org/example/common/Move.java",
+          "git_blob_sha": "85afced3c13bf2b8ca916107e5fc3f07b0948fb0",
+          "size": 1482
+        },
+        {
+          "path": "src/main/java/org/example/common/Piece.java",
+          "git_blob_sha": "ad49a0d644c6ce675c4385382e146a5f985ae040",
+          "size": 1149
+        },
+        {
+          "path": "src/main/java/org/example/common/RuleEngine.java",
+          "git_blob_sha": "cc12deecf97b51851478080a76fc74da2c1e608c",
+          "size": 9500
+        },
+        {
+          "path": "src/main/java/org/example/net/GameServer.java",
+          "git_blob_sha": "e6f77bec84df76d5888a71371c6928f7dfdd555d",
+          "size": 16455
+        },
+        {
+          "path": "src/main/java/org/example/protocol/JsonProtocol.java",
+          "git_blob_sha": "b9aae7ea17f93aec3d7374d474b54bd417db5698",
+          "size": 8829
+        },
+        {
+          "path": "src/main/java/org/example/server/ServerMain.java",
+          "git_blob_sha": "28b3369881489a13aa247a2fc3e48865c88143da",
+          "size": 175
+        },
+        {
+          "path": "src/main/java/org/example/ui/GameApp.java",
+          "git_blob_sha": "065ea38faa9c836729df85f3001c0db309dc3836",
+          "size": 19538
+        },
+        {
+          "path": "src/test/java/org/example/protocol/JsonProtocolTest.java",
+          "git_blob_sha": "96d9732bdf11d5e820fe5eea837de6382f88d7f0",
+          "size": 2451
+        }
+      ]
+    },
+    {
+      "id": "lazyy-jieqi",
+      "repo": "Lazyy-star/AI-Jieqi",
+      "commit": "2d6fd0734a2c06e1af9068ff66ed4abcff7ad6d7",
+      "kind": "Placeholder repository; complete pinned tree contains only README.md.",
+      "runtime": "No source, executable, model or build configuration in pinned tree.",
+      "rules": "No game rules or independent search implementation can be verified.",
+      "decision": "Not runnable at pinned commit; unverified, never defeated.",
+      "tree_source": "https://api.github.com/repos/Lazyy-star/AI-Jieqi/git/trees/2d6fd0734a2c06e1af9068ff66ed4abcff7ad6d7?recursive=1",
+      "tree_truncated": false,
+      "tracked_files": 1,
+      "license_named_files": [],
+      "license_status": "No license-named file in complete pinned tree; inspected README/build metadata/source headers do not establish a license grant. Public source visibility is not license clearance.",
+      "inspected_files": [
+        {
+          "label": "lazy-readme",
+          "url": "https://github.com/Lazyy-star/AI-Jieqi/blob/2d6fd0734a2c06e1af9068ff66ed4abcff7ad6d7/README.md"
+        }
+      ],
+      "source_tree_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha": "a6404d813c1c05efdc2d205457144229480d640f",
+          "size": 10
+        }
+      ]
+    }
+  ]
+}

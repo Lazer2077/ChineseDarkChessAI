@@ -39,3 +39,11 @@ improvement over the256simulation dataset or its trained model. Both fixed
 warm/teacher screens remain required; the warm comparison is running.
 Training curve, episode seeds/digests and counts are archived in
 `results/20261027-neural-high-search-training.json`.
+
+The warm-control screen completed27W/2D/35L,43.75%score with paired bootstrap
+95%[33.59375%,53.90625%]. All3,180moves pass native identity, legality, full-
+history terminal and actual-clock replay; no technical games or ambiguous
+clock margins occur. This shows no established improvement from the higher
+training search budget. The independently frozen teacher screen continues;
+the candidate is not promoted. Evidence:
+`results/20261027-neural-high-search-vs-warm{,-audit}.json`.

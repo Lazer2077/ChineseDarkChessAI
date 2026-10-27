@@ -225,29 +225,32 @@
       "repository_url": "https://github.com/Makinuohara/2026-jieqi-AI",
       "commit": "ea945de10bb58ed29b237fcfc85fe0f3e070ea47",
       "kind": "Java expectiminimax engine candidate",
-      "license": "audit pending",
-      "status": "README: JDK21, allows ignoring check and king capture, six-round check/chase profile; source and license verification pending",
-      "defeated": false
+      "license": "No license grant established: complete pinned tree has no license-named file; inspected README/build metadata/source headers are insufficient.",
+      "status": "Pinned116-file tree/source audit: independent Java expectiminimax/alpha-beta/quiescence/TT; Maven/JDK21. Original rules permit ignoring check and use six-check/chase adjudication, incompatible with native benchmark. No license grant established from complete tree plus inspected README/POM/source headers. No build, adapter or strength result; unverified.",
+      "defeated": false,
+      "evidence": "results/20261027-pending-opponent-source-audit.json"
     },
     {
       "id": "zhzjzz-jieqi",
       "url": "https://github.com/zhzjzz/AI-Jieqi",
       "repository_url": "https://github.com/zhzjzz/AI-Jieqi",
       "commit": "a6388c8820592239dc9b567aff9704dab0bd9b6f",
-      "kind": "Java AI client candidate",
-      "license": "audit pending",
-      "status": "README describes AI client; independent search, source rules and license unverified",
-      "defeated": false
+      "kind": "Java local-search AI with optional hosted-model selection",
+      "license": "No license grant established: complete pinned tree has no license-named file; inspected README/build metadata/source headers are insufficient.",
+      "status": "Pinned41-file tree/source audit: Java local search fallback plus optional hosted DeepSeek candidate selection. Original RuleEngine allows in-place dark flips, incompatible with standard move-to-reveal Jieqi. Maven compiler17/JavaFX21 Windows configuration; private-capture/terminal profile unresolved. No license grant established, API calls/build/runtime not performed; unverified.",
+      "defeated": false,
+      "evidence": "results/20261027-pending-opponent-source-audit.json"
     },
     {
       "id": "lazyy-jieqi",
       "url": "https://github.com/Lazyy-star/AI-Jieqi",
       "repository_url": "https://github.com/Lazyy-star/AI-Jieqi",
       "commit": "2d6fd0734a2c06e1af9068ff66ed4abcff7ad6d7",
-      "kind": "candidate AI project",
-      "license": "audit pending",
-      "status": "minimal README; source, rules and run conditions unverified",
-      "defeated": false
+      "kind": "placeholder repository; no engine source",
+      "license": "No license grant established: complete pinned tree has no license-named file; inspected README/build metadata/source headers are insufficient.",
+      "status": "Complete pinned tree contains only a10-byte README; no engine source, executable, model, rules or build configuration. No license grant established. Not runnable at this commit; unverified, not defeated.",
+      "defeated": false,
+      "evidence": "results/20261027-pending-opponent-source-audit.json"
     },
     {
       "id": "wangyiming-jieqi",
@@ -453,5 +456,10 @@
     ],
     "selected_profiles": 3,
     "scope": "Small routine suite after160 opponent-only games plus400 reused teacher-anchor games. Three profiles include two related Stockfish/Pikafish variants; not3 wholly independent lineages. Other entries remain visible and unverified strong candidates require review. Exclusion is not defeat by our model."
+  },
+  "latest_targeted_refresh": {
+    "date": "2026-10-27",
+    "evidence": "results/20261027-opponent-refresh.json",
+    "scope": "Targeted discovery and major upstream versions only; original entry-specific audits remain scoped to their pinned commits."
   }
 }

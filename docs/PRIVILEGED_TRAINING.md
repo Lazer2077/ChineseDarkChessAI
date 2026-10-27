@@ -187,3 +187,17 @@ artifact is deployable through the existing actor loader.
 
 Plans: `results/privileged-value-{corpus,training,study}-plan.json`.
 Integration: `results/20261027-privileged-value-training-integration.json`.
+
+An additional frozen CPU audit waits for the same corpus, then examines only
+its256training games. At every real root it compares assignment-bearing and
+assignment-stripped legal masks. At check/chase-ban roots with unknown own
+captured inventory, it enumerates all compatible remaining-type count vectors
+to test inventory sensitivity. This extends the older lazy-episode bounded
+audit to fixed-deal data; it does not inspect held-out prediction labels or
+prove all reachable/internal simulated states invariant. The preliminary
+eight-game/480-position integration has no mask differences but also no ban
+roots, so its inventory-sensitive branch is unexercised. The formal audit must
+report its actual eligible-root and compatible-world counts.
+
+Plan: `results/privileged-root-mask-audit-plan.json`;
+integration: `results/20261027-privileged-root-mask-integration.json`.

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Eight preflight-game CPU integration only; not the formal256-game training-corpus audit or a universal no-leak theorem.",
+  "plan_sha256": "22b200cadc448b61c8f420a05769c085f79f1b1f1fd80b7c66d708c4d8f84dae",
+  "games": 8,
+  "positions": 480,
+  "ban_positions": 0,
+  "eligible_unknown_inventory_roots": 0,
+  "compatible_inventory_worlds": 0,
+  "actual_vs_projected_mask_differences": 0,
+  "inventory_sensitive_roots": 0,
+  "selected_not_universally_legal": 0,
+  "counterexamples": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Matched policy/value target factorial, fixed final epoch and one training seed. Expert scores are uncalibrated observer-only search proxies, not true returns or an unbiased asymmetric critic. Losses across target definitions are not chess-strength evidence. No new native match, promotion or final70%claim.",
+  "research_stage": "development",
+  "training_plan_sha256": "93196f281c79ae7e32b57ec79fe31969e63e2ed6b791161e634269ddd2d107c9",
+  "policy_target": "original-search-visits",
+  "value_target": "observer-expert-search-proxy",
+  "value_score_scale": 860.0,
+  "value_definition": "Observer-expert cp -> tanh(cp/860), nonzero mate -> sign; fixed proxy only.",
+  "checkpoint_selection": "fixed-final-epoch",
+  "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "model_sha256": "aa2b6b05190942b196b79edcfc37226e75bf84ed7bc8bd9808fc2f9f4d30cc5c",
+  "training_games": 249,
+  "training_positions": 13304,
+  "selection_games": 31,
+  "selection_positions": 1677,
+  "epochs": 4,
+  "updates": 416,
+  "selected_epoch": 4,
+  "initial_validation": {
+    "loss": 5.677116595037129,
+    "policy_target_ce": 5.612485745442551,
+    "value_target_mse": 0.06463084959457797
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 104,
+      "train_policy_ce": 4.5852383912854435,
+      "train_value_target_mse": 0.07513986726392842,
+      "validation": {
+        "loss": 4.283071876186028,
+        "policy_target_ce": 4.216423684179825,
+        "value_target_mse": 0.06664819200620384
+      },
+      "seconds": 3.5921680722385645
+    },
+    {
+      "epoch": 2,
+      "updates": 208,
+      "train_policy_ce": 4.060609478166463,
+      "train_value_target_mse": 0.07414191026717729,
+      "validation": {
+        "loss": 4.08130365238387,
+        "policy_target_ce": 4.016292930374799,
+        "value_target_mse": 0.06501072200907079
+      },
+      "seconds": 7.067660456523299
+    },
+    {
+      "epoch": 3,
+      "updates": 312,
+      "train_policy_ce": 3.9022223171237695,
+      "train_value_target_mse": 0.0697964708658492,
+      "validation": {
+        "loss": 3.997890772593848,
+        "policy_target_ce": 3.930217986447037,
+        "value_target_mse": 0.0676727861468111
+      },
+      "seconds": 10.755170295014977
+    },
+    {
+      "epoch": 4,
+      "updates": 416,
+      "train_policy_ce": 3.8127262224903196,
+      "train_value_target_mse": 0.06911775549527614,
+      "validation": {
+        "loss": 3.9415111156264646,
+        "policy_target_ce": 3.876408076756449,
+        "value_target_mse": 0.06510303887001588
+      },
+      "seconds": 14.076379572972655
+    }
+  ],
+  "terminal_control_reproduced_bitwise": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "scope": "Complete a2x2policy/value supervision factorial on identical accepted learner data; one training seed, fixed final4epochs. No privileged hidden state.",
+  "declared_context": "After the completed policy-only192-game campaign:51/3/10vs degraded matched control,23/4/37vs warm,1/0/63vs unchanged teacher. Preserved-warm-value inference campaign remains active; its first contrast31/3/30has a time-forfeit and clock ambiguity and is not clean benefit evidence.",
+  "factors": {
+    "policy": [
+      "original-search-visits",
+      "observer-expert-onehot"
+    ],
+    "value": [
+      "original-learner-terminal",
+      "observer-expert-search-proxy"
+    ]
+  },
+  "value_proxy": "Completed observer-only expert cp -> tanh(cp/860), nonzero mate -> sign. Scale fixed at860from existing convention, not tuned or calibrated to win probability. Full projected history, own private captures only; no hidden assignments, opponent-private facts or future labels enter the teacher or playing actor.",
+  "interpretation": "Fit the declared surrogate E[normalized expert search score|existing observer encoder], not true V(h), E[G]under the learner, an asymmetric critic or a policy-gradient theorem. Native/source continuation rule differences remain; teacher proxy fitting alone is not chess progress.",
+  "data": "Same249TRAIN/13304positions and31selection/1677positions;8whole incompatible source episodes excluded from every arm. Policy/observation/split/optimizer/search architecture unchanged. Source terminal controls already fit; one complete terminal/expert-policy reproduction must match0fa5152f before new fits.",
+  "recipe": {
+    "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+    "seed": 20261027,
+    "epochs": 4,
+    "batch": 128,
+    "lr": 1e-05,
+    "updates_each": 416,
+    "checkpoint_selection": "fixed-final-epoch",
+    "optimizer": "Original AdamW wd0.0001, clip1, mirror draws and BN updates"
+  },
+  "matches": [
+    {
+      "candidate": "proxy-value/expert-policy",
+      "opponent": "terminal-value/expert-policy-0fa5152f",
+      "games": 64,
+      "seed": 9660001
+    },
+    {
+      "candidate": "proxy-value/expert-policy",
+      "opponent": "original-warm",
+      "games": 64,
+      "seed": 9661001
+    },
+    {
+      "candidate": "proxy-value/expert-policy",
+      "opponent": "unchanged-native-teacher",
+      "games": 64,
+      "seed": 9662001
+    },
+    {
+      "candidate": "proxy-value/search-policy",
+      "opponent": "terminal-value/search-policy-eff3901f",
+      "games": 64,
+      "seed": 9660001
+    }
+  ],
+  "correlation": "The two direct value replacements reuse the same32fresh paired layouts/seed9660001; they are correlated factorial contrasts, not independent test sets. Warm and teacher screens use separate seeds. No final multi-set confirmation claim.",
+  "match_conditions": "Actual10+0.1, LeafBatch32neural actors, one CPU thread each,2concurrent games and one shared dedicated inference GPU per campaign. One ordinary network forward each; no exact FLOP/Hash/simulation claim.",
+  "outcome_dependence": "Finish all4contrasts regardless of earlier results. No target, scale, duration or checkpoint tuning on matches. Require raw/native identity, legality, terminal and clock audits; preserve any technical/ambiguous flags. Improvement over either degraded terminal-value control alone is not warm/teacher progress, promotion or final70%report evidence."
+}

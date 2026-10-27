@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Matched policy/value target factorial, fixed final epoch and one training seed. Expert scores are uncalibrated observer-only search proxies, not true returns or an unbiased asymmetric critic. Losses across target definitions are not chess-strength evidence. No new native match, promotion or final70%claim.",
+  "research_stage": "integration",
+  "training_plan_sha256": "ab3378f3869b41db8752f150d14a6f245181c62a3f81d8375a4f3a01d3e86895",
+  "policy_target": "original-search-visits",
+  "value_target": "original-learner-terminal",
+  "value_score_scale": 860.0,
+  "value_definition": "Original learner terminal return",
+  "checkpoint_selection": "fixed-final-epoch",
+  "initial_model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+  "model_sha256": "3aa9ffd099d5c41ef0f6df36d958cbf726b3c6904ea036024f7ee017076e1de0",
+  "training_games": 4,
+  "training_positions": 186,
+  "selection_games": 2,
+  "selection_positions": 90,
+  "epochs": 1,
+  "updates": 3,
+  "selected_epoch": 1,
+  "initial_validation": {
+    "loss": 6.51774639541723,
+    "policy_target_ce": 6.036733256328282,
+    "value_target_mse": 0.48101313908894855
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 3,
+      "train_policy_ce": 5.406644481324831,
+      "train_value_target_mse": 1.2858934543466056,
+      "validation": {
+        "loss": 6.242671487601345,
+        "policy_target_ce": 5.809202997424614,
+        "value_target_mse": 0.43346849017673067
+      },
+      "seconds": 5.092889728024602
+    }
+  ],
+  "terminal_control_reproduced_bitwise": true
+}

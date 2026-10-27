@@ -115,3 +115,12 @@ the matched-control improvement does not translate into an established gain
 over warm. The unchanged-native-teacher comparison continues as declared,
 without changing the fitted actor or treating the degraded-control result as
 a promotion. Evidence: `results/20261027-expert-policy-target-vs-warm{,-audit}.json`.
+
+The unchanged-teacher contrast completes1W0D63L/64,1.5625%score, paired
+bootstrap95%[0,0.046875]. All2737moves pass replay and clock audits without
+technical games or ambiguous margins. The192-game campaign is closed with
+9309clean audited moves and no established warm/teacher gain. Its positive
+matched-control result is not a promoted model. The next distinct intervention
+tests policy/value supervision jointly; it does not tune or rerun this fitted
+actor against the same test layouts. See `JOINT_EXPERT_TARGET.md` and
+`results/20261027-expert-policy-target-summary.json`.

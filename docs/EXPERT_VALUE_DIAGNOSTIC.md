@@ -120,3 +120,12 @@ flags and complete raw sample; do not remove the failed game or infer that warm
 value restores playing strength. The prespecified warm/teacher contrasts
 continue unchanged. Evidence:
 `results/20261027-expert-policy-warm-value-vs-updated-value{,-audit}.json`.
+
+Against original warm policy/value under the same two-forward convention,
+the preserved-value profile completes33W2D29L/64,53.125%score, paired
+bootstrap95%[0.4453125,0.625]. All3462moves pass native replay and clock audits
+without technical games or timing ambiguity. This does not establish warm
+superiority. Its different layouts and two-forward cost also prohibit treating
+the result as a paired improvement over the ordinary single-forward23W4D37L
+policy-target contrast. The unchanged-teacher comparison continues unchanged.
+Evidence: `results/20261027-expert-policy-warm-value-vs-warm{,-audit}.json`.

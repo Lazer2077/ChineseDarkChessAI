@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Observer-only expert policy labels beat the matched degraded visit-target control but do not beat the original warm actor or unchanged native teacher. Retained learner-terminal value targets, one fixed training seed and last epoch4. No promotion, strong-suite superiority or final70%report claim.",
+  "plan_sha256": "21f60742702350ebf72f01c0a997bd04c0b962c3a20335f6f52b88b02c455ba7",
+  "selected_actor_sha256": "0fa5152fd4f4a59a93625579624daf642b9a9b78751f206723a0cdeec94404f8",
+  "contrasts": [
+    {
+      "opponent": "control",
+      "wdl": [
+        51,
+        3,
+        10
+      ],
+      "score": 0.8203125,
+      "paired_bootstrap_95": [
+        0.734375,
+        0.8984375
+      ],
+      "moves": 3078,
+      "valid_technical_run": true,
+      "report": "results/20261027-expert-policy-target-vs-control.json",
+      "audit": "results/20261027-expert-policy-target-vs-control-audit.json",
+      "report_sha256": "e0af3e1f9ed16938430c42af77df862b15792e618f36991246a13bf7068c3bb9",
+      "audit_sha256": "f437618ae16c8863933d4646615882d4f93eca699c6dae5ca8d005b840ae6f2c"
+    },
+    {
+      "opponent": "warm",
+      "wdl": [
+        23,
+        4,
+        37
+      ],
+      "score": 0.390625,
+      "paired_bootstrap_95": [
+        0.2890625,
+        0.4921875
+      ],
+      "moves": 3494,
+      "valid_technical_run": true,
+      "report": "results/20261027-expert-policy-target-vs-warm.json",
+      "audit": "results/20261027-expert-policy-target-vs-warm-audit.json",
+      "report_sha256": "3cdc137dbe2f2fad76d9b54ea027dd8b78301bba202f4bf244fdf81448930cf1",
+      "audit_sha256": "83b0f21ac2044e896bf0db7345247213cc1780a53b0a9918d5b762b88a221b1b"
+    },
+    {
+      "opponent": "teacher",
+      "wdl": [
+        1,
+        0,
+        63
+      ],
+      "score": 0.015625,
+      "paired_bootstrap_95": [
+        0.0,
+        0.046875
+      ],
+      "moves": 2737,
+      "valid_technical_run": true,
+      "report": "results/20261027-expert-policy-target-vs-teacher.json",
+      "audit": "results/20261027-expert-policy-target-vs-teacher-audit.json",
+      "report_sha256": "04302dd2fc0688f1306c2fea2bd09c1a3928e6e4524becd0593b6d8993665e44",
+      "audit_sha256": "b6f62667d28753ec6aca8d9af1f761e6e968c8cff32b26b32505547febdd3394"
+    }
+  ],
+  "total_clean_audited_moves": 9309
+}

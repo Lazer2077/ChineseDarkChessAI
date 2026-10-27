@@ -130,3 +130,29 @@ its degraded-Bcontrol win establishes the desired playing-strength progress.
 The final C-versus-Acontrast continues under the frozen plan. No promotion or
 larger proxy-value campaign follows these results. Evidence:
 `results/20261027-joint-expert-target-proxy-expert-vs-teacher{,-audit}.json`.
+
+## Completed study: no warm/teacher progress
+
+The fourth and final contrast, Cproxy/search versus Aterminal/search, completes
+27W9D28L/64,49.21875%score, paired bootstrap95%[0.3828125,0.6015625]. All3646moves
+pass the independent native identity/legality/terminal/clock checks, without
+technical games or timing ambiguity. There is no supported improvement from
+replacing terminal targets alone under the original search-policy supervision.
+
+| Fixed contrast | W/D/L | Score | Paired score bootstrap95% |
+| --- | --- | ---: | --- |
+| Dproxy/expert vs Bterminal/expert | 39/4/21 | 64.0625% | [53.125%,74.21875%] |
+| Dproxy/expert vs original warm | 32/2/30 | 51.5625% | [39.84375%,63.28125%] |
+| Dproxy/expert vs native teacher | 1/2/61 | 3.125% | [0%,7.03125%] |
+| Cproxy/search vs Aterminal/search | 27/9/28 | 49.21875% | [38.28125%,60.15625%] |
+
+All256prespecified games are complete;13,058moves are independently cleanly
+audited. The two direct value replacements intentionally share their32paired
+layouts, so they are correlated contrasts rather than independent confirmation.
+No complete causal interaction estimate follows from this set of opponents.
+Lower proxy loss and the degraded-control win do not establish stronger play
+than the original warm model or teacher. This fixed study is closed without
+promotion or an expanded proxy-value fit. The independently frozen wider
+decoder study proceeds separately, and exact graph execution is an unchanged-
+weight runtime experiment. Source/model/report/raw digests and all four screens:
+`results/20261027-joint-expert-target-summary.json`.

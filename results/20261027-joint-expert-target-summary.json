@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Closed observer-only joint expert-policy/proxy-value study. The selected expert/proxy model beats the degraded expert/terminal control but does not establish superiority over the original warm actor and remains far below the unchanged teacher. Proxy replacement at original search-policy targets is inconclusive. No promotion or larger proxy-value campaign justified.",
+  "evaluation_plan_sha256": "323b8afbb71a9bb4f4ad9922fec6246409777acfde7cd65a6e1c266f58227d4f",
+  "research_protocol_sha256": "28b4e97652b25d62aa418627a82f773b8087ebdaa50f0c41c646cbc85164154d",
+  "selected_models": {
+    "proxy-expert": {
+      "path": "runs/joint-expert-target-training-01/proxy-expert/best.npz",
+      "sha256": "aaebd5a81326b995990c68bfbbe3d5f75e9c993c060bb38767233b46bc998eaf"
+    },
+    "proxy-search": {
+      "path": "runs/joint-expert-target-training-01/proxy-search/best.npz",
+      "sha256": "aa2b6b05190942b196b79edcfc37226e75bf84ed7bc8bd9808fc2f9f4d30cc5c"
+    }
+  },
+  "contrasts": [
+    {
+      "contrast": "proxy-expert-vs-terminal-expert",
+      "seed": 9660001,
+      "wdl": [
+        39,
+        4,
+        21
+      ],
+      "win_fraction": 0.609375,
+      "score": 0.640625,
+      "paired_score_bootstrap_95": [
+        0.53125,
+        0.7421875
+      ],
+      "clean_audited_moves": 3307,
+      "candidate_sha256": "aaebd5a81326b995990c68bfbbe3d5f75e9c993c060bb38767233b46bc998eaf",
+      "baseline_sha256": "0fa5152fd4f4a59a93625579624daf642b9a9b78751f206723a0cdeec94404f8",
+      "report": "results/20261027-joint-expert-target-proxy-expert-vs-terminal-expert.json",
+      "report_sha256": "781d9ce639cd2a0046e77382c24b592124e821c4b43ec69d76a31a506769faa5",
+      "audit": "results/20261027-joint-expert-target-proxy-expert-vs-terminal-expert-audit.json",
+      "audit_sha256": "fd432c3629ec3d23c3ebb1bc2292f77bb77152554aa723fa457967a389a02232",
+      "raw_games": {
+        "path": "results/raw/proxy-expert-vs-terminal-expert-a4dfc6c852d3.jsonl.gz",
+        "uncompressed_sha256": "a4dfc6c852d3d8527fcf47b9280849c5578e8db814d246a7a6c32e3d11046de7"
+      }
+    },
+    {
+      "contrast": "proxy-expert-vs-warm",
+      "seed": 9661001,
+      "wdl": [
+        32,
+        2,
+        30
+      ],
+      "win_fraction": 0.5,
+      "score": 0.515625,
+      "paired_score_bootstrap_95": [
+        0.3984375,
+        0.6328125
+      ],
+      "clean_audited_moves": 3260,
+      "candidate_sha256": "aaebd5a81326b995990c68bfbbe3d5f75e9c993c060bb38767233b46bc998eaf",
+      "baseline_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "report": "results/20261027-joint-expert-target-proxy-expert-vs-warm.json",
+      "report_sha256": "7866ee75a4099ea8abe54f390e2a3c05bdb3cdf2809109c904c7855cf4880701",
+      "audit": "results/20261027-joint-expert-target-proxy-expert-vs-warm-audit.json",
+      "audit_sha256": "60a85f5a66db0e6a90c948e727a69ff7b1eb1dd73a5e2b724b6c5e269cc6bbfe",
+      "raw_games": {
+        "path": "results/raw/proxy-expert-vs-warm-36a4155ef8d0.jsonl.gz",
+        "uncompressed_sha256": "36a4155ef8d0c01fb3b2b0cedeef5dd7fe1a571ce8937b4d86c824b919625c39"
+      }
+    },
+    {
+      "contrast": "proxy-expert-vs-teacher",
+      "seed": 9662001,
+      "wdl": [
+        1,
+        2,
+        61
+      ],
+      "win_fraction": 0.015625,
+      "score": 0.03125,
+      "paired_score_bootstrap_95": [
+        0.0,
+        0.0703125
+      ],
+      "clean_audited_moves": 2845,
+      "candidate_sha256": "aaebd5a81326b995990c68bfbbe3d5f75e9c993c060bb38767233b46bc998eaf",
+      "baseline_sha256": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+      "report": "results/20261027-joint-expert-target-proxy-expert-vs-teacher.json",
+      "report_sha256": "977845090b835819767e10feb6201e7adf54f6af1d8e3d0815f1e86ce12c7f5e",
+      "audit": "results/20261027-joint-expert-target-proxy-expert-vs-teacher-audit.json",
+      "audit_sha256": "da945005f6427f9400365b4f0d9d815173ea376519d5f9a9137e77d44360f501",
+      "raw_games": {
+        "path": "results/raw/proxy-expert-vs-teacher-3f76d0c83c8e.jsonl.gz",
+        "uncompressed_sha256": "3f76d0c83c8ec173f4024d79500da6f30c54debdfe30b9a188a382e79f27dd25"
+      }
+    },
+    {
+      "contrast": "proxy-search-vs-terminal-search",
+      "seed": 9660001,
+      "wdl": [
+        27,
+        9,
+        28
+      ],
+      "win_fraction": 0.421875,
+      "score": 0.4921875,
+      "paired_score_bootstrap_95": [
+        0.3828125,
+        0.6015625
+      ],
+      "clean_audited_moves": 3646,
+      "candidate_sha256": "aa2b6b05190942b196b79edcfc37226e75bf84ed7bc8bd9808fc2f9f4d30cc5c",
+      "baseline_sha256": "eff3901fa82f2b71ef1f17b9f1bfbeee00a4a06700e404f546b0bc0a51058c12",
+      "report": "results/20261027-joint-expert-target-proxy-search-vs-terminal-search.json",
+      "report_sha256": "75767c6de89bc459ab266c441c36e845fcb3c3a6cbc8127dcbe07b0965ac4a03",
+      "audit": "results/20261027-joint-expert-target-proxy-search-vs-terminal-search-audit.json",
+      "audit_sha256": "5cd5da2e6efc013f574c84ebd1a7dd868e544ee08d5d27900d8eed94ba6c6692",
+      "raw_games": {
+        "path": "results/raw/proxy-search-vs-terminal-search-ce267d72cc00.jsonl.gz",
+        "uncompressed_sha256": "ce267d72cc00f2e7c6dd5878169a9c50e1cbfed0ddcde3cc36d7bcca820970b4"
+      }
+    }
+  ],
+  "total_games": 256,
+  "total_clean_audited_moves": 13058,
+  "technical_games": 0,
+  "clock_ambiguous_moves": 0,
+  "interpretation": [
+    "Teacher CP/mate transforms are a fixed surrogate, not calibrated game values, learner terminal returns or an unbiased privileged advantage/critic. No hidden truth enters either actor.",
+    "One fixed training seed,4epochs/416updates, common accepted249TRAIN and31selection games; no match-based checkpoint or target tuning.",
+    "Two direct value-replacement contrasts intentionally reuse seed9660001: their outcomes are correlated and are not independent confirmation sets. The warm and teacher contrasts use separate layout streams.",
+    "A score improvement over a degraded control is not a new learned-model advantage over the original warm actor or teacher. No full2x2causal-interaction estimate is claimed.",
+    "The stable>70%win-fraction gate against every final strong opponent on independent paired sets remains unmet."
+  ],
+  "decision": "Close this fixed proxy-value study without expansion; retain all negative results and pursue the independently frozen wider spatial-decoder comparison. Exact graph execution has a separate unchanged-weight actual-clock screen and must not be confused with these learned models."
+}

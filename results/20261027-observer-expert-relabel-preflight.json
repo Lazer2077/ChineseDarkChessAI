@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Feasibility only on first8original TRAIN episodes; source learner trajectories unchanged. One-thread cold8192-node expert queries use full observer-specific histories, public reveals and own private captures only. Compare native echo and complete legal action sets at every queried root. Quarantine whole episode after any failure; never reset history or retain favorable prefixes. Source terminal returns are not native-expert value labels, and terminal equivalence is not claimed. No model fit, matches, theorem transfer, or student-strength claim.",
+  "plan_sha256": "1fc4899595309d63db9339076e81d25f1954817bf773251aa4752a10e5ac37a8",
+  "nodes_per_query": 8192,
+  "episodes": [
+    {
+      "game": 0,
+      "source_npz_sha256": "57a636d84577480999e14987f4b4f97e409e6472d3884225220d22518937ddaa",
+      "source_positions": 31,
+      "status": "compatible-roots",
+      "roots_checked": 31,
+      "private_dark_captures": 2,
+      "teacher_action_disagreements": 27,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "ceed252d07db947116a83e4bf78ff35ee6e2310c54a87f3a8c1198c51ecc49b3"
+    },
+    {
+      "game": 1,
+      "source_npz_sha256": "54fbf8328958ec05937aa8064444ee726e656eb87db3aef75b15d1553310ab11",
+      "source_positions": 57,
+      "status": "compatible-roots",
+      "roots_checked": 57,
+      "private_dark_captures": 4,
+      "teacher_action_disagreements": 45,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "a4707735d38cd8b1e2115916b294fe7ac0c477b2ae128d03a2216ca830066fa8"
+    },
+    {
+      "game": 2,
+      "source_npz_sha256": "b61e3aae6153398ba1d07c6839d7fab53725deb2c15766c32e5d3e3952d27dd9",
+      "source_positions": 57,
+      "status": "compatible-roots",
+      "roots_checked": 57,
+      "private_dark_captures": 1,
+      "teacher_action_disagreements": 39,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "ec91b59aee1f3a30d5d204a2504ea8e2893a14e4e23aaeae1fd6e9f471a70bbd"
+    },
+    {
+      "game": 3,
+      "source_npz_sha256": "f4ff565040b24d23ffb65fcba2059f3cf76b9ea0195736b974e9779d9f342bc9",
+      "source_positions": 41,
+      "status": "compatible-roots",
+      "roots_checked": 41,
+      "private_dark_captures": 5,
+      "teacher_action_disagreements": 33,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "cbee38febe6d2a4446a375b4c8de66c2a17ac2bac76554636cf092c1f3250606"
+    },
+    {
+      "game": 4,
+      "source_npz_sha256": "87e8f898030bd289cab5efb03a74160256da42b0d024bd0882b07827882920ff",
+      "source_positions": 72,
+      "status": "compatible-roots",
+      "roots_checked": 72,
+      "private_dark_captures": 1,
+      "teacher_action_disagreements": 58,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "805b9b48bef4acd271f6f5f0664ed4a13187995fcdc369308468f9e10f94fe91"
+    },
+    {
+      "game": 5,
+      "source_npz_sha256": "3fd758027ed9546f2113fc4074c61161652e2cbeb25d50d414aab7eaa36d713d",
+      "source_positions": 18,
+      "status": "compatible-roots",
+      "roots_checked": 18,
+      "private_dark_captures": 0,
+      "teacher_action_disagreements": 14,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "3c02a427ca526a3df7bcf71fec6d20545a0d6ce9acfd3965bbf5dd61da40bebe"
+    },
+    {
+      "game": 6,
+      "source_npz_sha256": "5d02d718568444270524a304dd88d0c3d30c1967ddf16cd0d8ae499ccf335e78",
+      "source_positions": 45,
+      "status": "compatible-roots",
+      "roots_checked": 45,
+      "private_dark_captures": 2,
+      "teacher_action_disagreements": 32,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "51e7c8d95e00e34c71cfbdd0e70d92cb6172ae4a3d3e6d6e785d32cbd59dce4f"
+    },
+    {
+      "game": 7,
+      "source_npz_sha256": "80b71fc77a08b4601defd76bca542071fbb4d8a1d63990190d792c94753d98bd",
+      "source_positions": 47,
+      "status": "compatible-roots",
+      "roots_checked": 47,
+      "private_dark_captures": 0,
+      "teacher_action_disagreements": 38,
+      "source_terminal_reason": "checkmate",
+      "native_terminal_equivalence_verified": false,
+      "labels_sha256": "4e2e143ac830c0ceacfd20383c448d94abbfb5e80654ff7f7db0c4c567ed34d6"
+    }
+  ],
+  "compatible_games": 8,
+  "quarantined_games": 0,
+  "checked_roots": 368,
+  "label_archive": {
+    "path": "results/raw/observer-expert-preflight-159f5b0b2e7d.tar.gz",
+    "uncompressed_sha256": "159f5b0b2e7d1f2e7f2753100f5ade63f32c58c7c6d211b5aa010fa2028df28f",
+    "sha256": "70a935874c0c5a0a7e468feb3af7d4b202ff98a62c7a1136af0676ea5d2e7b27"
+  }
+}

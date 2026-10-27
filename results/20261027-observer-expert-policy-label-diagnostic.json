@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Descriptive agreement on same8original TRAIN episodes,368roots; no fresh generalization, fit, regret or chess-strength claim. Acting moves were temperature-sampled from noisy self-play searches, so disagreement is not search-argmax error. Expert is the fixed observer-only8192-node native query; its selected action is not game-theoretic truth. Exclude any whole quarantined episode.",
+  "plan_sha256": "e1e0ace7de68572c92e2b73b6e91749151edde1fa7d58092eb1a0a1bdc711b5e",
+  "quarantined_games_excluded": [],
+  "strata": {
+    "all": {
+      "positions": 368,
+      "games": 8,
+      "mean_expert_visit_mass": 0.12942637567934784,
+      "unvisited": 3,
+      "tied_visit_max": 178,
+      "matches_sampled": 82
+    },
+    "first30_temperature1": {
+      "positions": 228,
+      "games": 8,
+      "mean_expert_visit_mass": 0.11319558662280702,
+      "unvisited": 1,
+      "tied_visit_max": 117,
+      "matches_sampled": 26
+    },
+    "later_temperature_point1": {
+      "positions": 140,
+      "games": 7,
+      "mean_expert_visit_mass": 0.155859375,
+      "unvisited": 2,
+      "tied_visit_max": 61,
+      "matches_sampled": 56
+    },
+    "fully_public": {
+      "positions": 0
+    }
+  }
+}

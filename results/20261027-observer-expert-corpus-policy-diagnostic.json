@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Descriptive agreement on280compatible original learner episodes from256TRAIN/32selection generation;8whole episodes quarantined. Not new test/generalization data. No fitting, tuning, regret, native terminal equivalence or chess-strength claim. Compare recorded noisy search visits with observer-only native8192-node expert actions, not omniscient ground truth; played actions were temperature-sampled. First8games were already used for feasibility.",
+  "plan_sha256": "d30181357d0ed7d269d6d3eb3b184df50d92921b83dbea336efa62c38b63091e",
+  "quarantined_games_excluded": [
+    31,
+    73,
+    74,
+    98,
+    149,
+    184,
+    246,
+    257
+  ],
+  "strata": {
+    "all": {
+      "positions": 14981,
+      "games": 280,
+      "mean_expert_visit_mass": 0.13883366848007475,
+      "unvisited": 67,
+      "tied_visit_max": 6581,
+      "matches_sampled": 3360
+    },
+    "first30_temperature1": {
+      "positions": 8129,
+      "games": 280,
+      "mean_expert_visit_mass": 0.12260310308771066,
+      "unvisited": 19,
+      "tied_visit_max": 4113,
+      "matches_sampled": 1020
+    },
+    "later_temperature_point1": {
+      "positions": 6852,
+      "games": 244,
+      "mean_expert_visit_mass": 0.15808910719497957,
+      "unvisited": 48,
+      "tied_visit_max": 2468,
+      "matches_sampled": 2340
+    },
+    "fully_public": {
+      "positions": 286,
+      "games": 20,
+      "mean_expert_visit_mass": 0.24142263986013987,
+      "unvisited": 5,
+      "tied_visit_max": 116,
+      "matches_sampled": 114
+    }
+  }
+}

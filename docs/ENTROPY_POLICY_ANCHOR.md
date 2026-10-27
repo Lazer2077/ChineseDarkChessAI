@@ -79,3 +79,34 @@ distributions, not the legal-only training objective.
 Evidence: `results/entropy-anchor-{research-protocol,training-pipeline-plan,evaluation-plan,retention-plan}.json`;
 full control: `results/20261027-entropy-anchor-constant-reproduction.json`;
 training curve and weighting metadata: `results/20261027-entropy-anchor-training.json`.
+
+## Completed retention diagnostic and first match
+
+On the same reused512teacher-selection games, the entropy-weighted actor has
+full-action warm-to-model KL0.25302and teacher-action CE2.50660, versus0.23318
+and2.49914for the constant anchor. Thus overall teacher retention is not better.
+In the highest normalized-entropy bin, KL improves from0.59309to0.37392, but
+at type certainty it worsens from0.09959to0.15513. These are descriptive metrics
+on reused data; the strata do not establish causal effects or playing strength.
+Physical-type certainty also does not establish accurate neural action values.
+
+The first frozen64-game development contrast against the constant anchor
+finishes30W4D30L,50%score, paired bootstrap95%[0.3828125,0.6171875]. One game
+has a time-forfeit result and the rounded-clock replay has one ambiguous move;
+the run is technically invalid as a clean superiority test. All3269recorded
+moves replay legally with matching seeded reveals. Retain the flag and raw
+records; do not discard the technical game or recast the result as an accepted
+chess improvement. The prespecified warm and native-teacher contrasts continue
+regardless of this outcome, without changing the selected actor or clock.
+
+Evidence: `results/20261027-entropy-anchor-retention.json`,
+`results/20261027-entropy-anchor-vs-constant.json` and its `-audit.json`.
+
+The warm-model contrast has also completed:21W3D40L/64,35.15625%score,
+paired bootstrap95%[0.21875,0.4921875]. All3163moves pass native replay,
+seeded-reveal, terminal and rounded-clock audits without technical games or
+ambiguous margins. This development result does not support improvement over
+the original warm actor. The prespecified unchanged-teacher contrast remains
+in progress; no further entropy-weight tuning or model expansion follows this
+negative warm-control result. Evidence:
+`results/20261027-entropy-anchor-vs-warm.json` and its `-audit.json`.

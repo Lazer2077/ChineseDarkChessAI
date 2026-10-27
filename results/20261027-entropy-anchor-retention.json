@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Post-selection descriptive retention on the same512teacher selection games previously reused by warm and constant models. Compare three already selected actors in observer-only entropy strata; no fitting, reselection, independent generalization, legal-masked-KL or chess-strength claim. The count-only prior entropy is not an exact opponent-strategy posterior.",
+  "plan_sha256": "4fedbea0a46b14b55b57c1038a16633dd0e06ee519b02198891583b6024f90f2",
+  "dataset": [
+    {
+      "sha256": "46c52ed4f66f2609bfce57cc090c0045c1dbff678ee6aa191c7646754589ba7c",
+      "games": 512,
+      "games_with_search_records": 512,
+      "positions": 37471
+    }
+  ],
+  "fully_public_positions": 4570,
+  "models": [
+    {
+      "label": "warm",
+      "model_sha256": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.3648354665119133,
+          "teacher_action_top1": 0.35125830642363426,
+          "teacher_action_top5": 0.7116703584105041,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08446411096145352,
+          "terminal_value_mse": 0.4616102558510996,
+          "teacher_static_value_mse": 0.04710825710182755
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.3715064128836167,
+          "teacher_action_top1": 0.35336311966201633,
+          "teacher_action_top5": 0.7118932555241482,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08673561486006266,
+          "terminal_value_mse": 0.5013027038306944,
+          "teacher_static_value_mse": 0.04503690030397967
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.3168090318127006,
+          "teacher_action_top1": 0.3361050328227571,
+          "teacher_action_top5": 0.7100656455142232,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.06811077403188263,
+          "terminal_value_mse": 0.17585068670960222,
+          "teacher_static_value_mse": 0.0620206662935109
+        },
+        "type-certain": {
+          "positions": 6231,
+          "teacher_action_ce": 2.3233090964292713,
+          "teacher_action_top1": 0.33814796982827794,
+          "teacher_action_top5": 0.708554004172685,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.07065731503940043,
+          "terminal_value_mse": 0.1892041335753204,
+          "teacher_static_value_mse": 0.061677678957533746
+        },
+        "entropy0-.25": {
+          "positions": 17810,
+          "teacher_action_ce": 2.6628347980982046,
+          "teacher_action_top1": 0.30179674340258283,
+          "teacher_action_top5": 0.6483997754070747,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08721147642627151,
+          "terminal_value_mse": 0.36585135428176746,
+          "teacher_static_value_mse": 0.05733164156468261
+        },
+        "entropy.25-.5": {
+          "positions": 7219,
+          "teacher_action_ce": 2.4184600597318835,
+          "teacher_action_top1": 0.3264995151683059,
+          "teacher_action_top5": 0.7178279540102507,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08744692913274554,
+          "terminal_value_mse": 0.6202982171030387,
+          "teacher_static_value_mse": 0.03560861457866984
+        },
+        "entropy.5-.75": {
+          "positions": 4457,
+          "teacher_action_ce": 1.7291038802788594,
+          "teacher_action_top1": 0.4695983845636078,
+          "teacher_action_top5": 0.8584249495176127,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08675016727680575,
+          "terminal_value_mse": 0.7911417220373245,
+          "teacher_static_value_mse": 0.01990959472245074
+        },
+        "entropy.75-1": {
+          "positions": 1754,
+          "teacher_action_ce": 0.8812108700574406,
+          "teacher_action_top1": 0.701254275940707,
+          "teacher_action_top5": 0.9669327251995439,
+          "warm_to_model_policy_kl_nats": 0.0,
+          "mixed_value_mse": 0.08753004544595878,
+          "terminal_value_mse": 0.911176075566285,
+          "teacher_static_value_mse": 0.007986143494760099
+        }
+      }
+    },
+    {
+      "label": "constant-unit-anchor",
+      "model_sha256": "c09575bbee3d4d9f2c4dd6e6818b569f156b20973bd09b402e5f7b51eaf7cffb",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.4991384464673105,
+          "teacher_action_top1": 0.3130687731845961,
+          "teacher_action_top5": 0.6675829307998186,
+          "warm_to_model_policy_kl_nats": 0.23318284526595207,
+          "mixed_value_mse": 0.1626514534394614,
+          "terminal_value_mse": 0.5467251941800243,
+          "teacher_static_value_mse": 0.12232662992944254
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.5180177035677724,
+          "teacher_action_top1": 0.31245250904227834,
+          "teacher_action_top5": 0.6645694659736786,
+          "warm_to_model_policy_kl_nats": 0.25198393255156365,
+          "mixed_value_mse": 0.15900693644755867,
+          "terminal_value_mse": 0.5797017295930177,
+          "teacher_static_value_mse": 0.11468206295940678
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.363220188729389,
+          "teacher_action_top1": 0.3175054704595186,
+          "teacher_action_top5": 0.6892778993435449,
+          "warm_to_model_policy_kl_nats": 0.09782735887997655,
+          "mixed_value_mse": 0.18888958331924088,
+          "terminal_value_mse": 0.309315786822716,
+          "teacher_static_value_mse": 0.17736249379840255
+        },
+        "type-certain": {
+          "positions": 6231,
+          "teacher_action_ce": 2.3702294961069077,
+          "teacher_action_top1": 0.31888942384849944,
+          "teacher_action_top5": 0.683357406515808,
+          "warm_to_model_policy_kl_nats": 0.09958566228778358,
+          "mixed_value_mse": 0.17634425479822974,
+          "terminal_value_mse": 0.3016533378303776,
+          "teacher_static_value_mse": 0.16446650536083682
+        },
+        "entropy0-.25": {
+          "positions": 17810,
+          "teacher_action_ce": 2.723779844106456,
+          "teacher_action_top1": 0.2717574396406513,
+          "teacher_action_top5": 0.6074677147669848,
+          "warm_to_model_policy_kl_nats": 0.1626261707896097,
+          "mixed_value_mse": 0.16417989623788565,
+          "terminal_value_mse": 0.4437475702256922,
+          "teacher_static_value_mse": 0.13390243446244934
+        },
+        "entropy.25-.5": {
+          "positions": 7219,
+          "teacher_action_ce": 2.5851055393575617,
+          "teacher_action_top1": 0.2787089624601745,
+          "teacher_action_top5": 0.6542457404072586,
+          "warm_to_model_policy_kl_nats": 0.3044970933242494,
+          "mixed_value_mse": 0.17111663450133668,
+          "terminal_value_mse": 0.718616878498863,
+          "teacher_static_value_mse": 0.1130001959355896
+        },
+        "entropy.5-.75": {
+          "positions": 4457,
+          "teacher_action_ce": 2.055596581086741,
+          "teacher_action_top1": 0.4067758582005834,
+          "teacher_action_top5": 0.8025577742876374,
+          "warm_to_model_policy_kl_nats": 0.4447516171103361,
+          "mixed_value_mse": 0.14251584637293366,
+          "terminal_value_mse": 0.8658161141592179,
+          "teacher_static_value_mse": 0.06757153966467916
+        },
+        "entropy.75-1": {
+          "positions": 1754,
+          "teacher_action_ce": 1.4493311649216807,
+          "teacher_action_top1": 0.6151653363740023,
+          "teacher_action_top5": 0.9338654503990877,
+          "warm_to_model_policy_kl_nats": 0.5930909676817772,
+          "mixed_value_mse": 0.11481385201609481,
+          "terminal_value_mse": 0.9446726970855762,
+          "teacher_static_value_mse": 0.03260731508668668
+        }
+      }
+    },
+    {
+      "label": "mean-matched-entropy-anchor",
+      "model_sha256": "567043dc673a055bd7ea064435dbdc3571d894aba4506ca8aa763c269810064e",
+      "strata": {
+        "all": {
+          "positions": 37471,
+          "teacher_action_ce": 2.506598470808303,
+          "teacher_action_top1": 0.30951936163966803,
+          "teacher_action_top5": 0.6604307331002642,
+          "warm_to_model_policy_kl_nats": 0.25302408417294353,
+          "mixed_value_mse": 0.16560547058050035,
+          "terminal_value_mse": 0.5501818063040727,
+          "teacher_static_value_mse": 0.12506524922062037
+        },
+        "partial": {
+          "positions": 32901,
+          "teacher_action_ce": 2.5211165739625336,
+          "teacher_action_top1": 0.3094738761739765,
+          "teacher_action_top5": 0.6585514118111911,
+          "warm_to_model_policy_kl_nats": 0.26710233336722516,
+          "mixed_value_mse": 0.16271341452794896,
+          "terminal_value_mse": 0.5841003936187444,
+          "teacher_static_value_mse": 0.11809188992036716
+        },
+        "public": {
+          "positions": 4570,
+          "teacher_action_ce": 2.402077658581307,
+          "teacher_action_top1": 0.3098468271334792,
+          "teacher_action_top5": 0.6739606126914661,
+          "warm_to_model_policy_kl_nats": 0.15166993171319243,
+          "mixed_value_mse": 0.18642637565380327,
+          "terminal_value_mse": 0.3059902436694944,
+          "teacher_static_value_mse": 0.17526885848487225
+        },
+        "type-certain": {
+          "positions": 6231,
+          "teacher_action_ce": 2.410101288963368,
+          "teacher_action_top1": 0.3092601508586102,
+          "teacher_action_top5": 0.6684320333814797,
+          "warm_to_model_policy_kl_nats": 0.15512631994183998,
+          "mixed_value_mse": 0.17347505950723463,
+          "terminal_value_mse": 0.2976041112145171,
+          "teacher_static_value_mse": 0.16210303778049834
+        },
+        "entropy0-.25": {
+          "positions": 17810,
+          "teacher_action_ce": 2.763496863249656,
+          "teacher_action_top1": 0.26024705221785516,
+          "teacher_action_top5": 0.5938236945536216,
+          "warm_to_model_policy_kl_nats": 0.2240351921085726,
+          "mixed_value_mse": 0.16842877079019347,
+          "terminal_value_mse": 0.44838676202902195,
+          "teacher_static_value_mse": 0.13798403019289066
+        },
+        "entropy.25-.5": {
+          "positions": 7219,
+          "teacher_action_ce": 2.5927966038998393,
+          "teacher_action_top1": 0.27815486909544257,
+          "teacher_action_top5": 0.6538301703837096,
+          "warm_to_model_policy_kl_nats": 0.3167104728576048,
+          "mixed_value_mse": 0.17668104283965572,
+          "terminal_value_mse": 0.7256968706506295,
+          "teacher_static_value_mse": 0.11791506835385973
+        },
+        "entropy.5-.75": {
+          "positions": 4457,
+          "teacher_action_ce": 1.9765691448218528,
+          "teacher_action_top1": 0.4256226161094907,
+          "teacher_action_top5": 0.8117567870765089,
+          "warm_to_model_policy_kl_nats": 0.3549962481787256,
+          "mixed_value_mse": 0.14565450729962365,
+          "terminal_value_mse": 0.870449241625816,
+          "teacher_static_value_mse": 0.07006971493140848
+        },
+        "entropy.75-1": {
+          "positions": 1754,
+          "teacher_action_ce": 1.2329325379856608,
+          "teacher_action_top1": 0.644811858608894,
+          "teacher_action_top5": 0.95096921322691,
+          "warm_to_model_policy_kl_nats": 0.37391984341017825,
+          "mixed_value_mse": 0.114093784073607,
+          "terminal_value_mse": 0.9448831448986353,
+          "teacher_static_value_mse": 0.03148845467753593
+        }
+      }
+    }
+  ]
+}

@@ -121,3 +121,12 @@ games or timing ambiguity. The positive degraded-control result therefore
 does not establish an improvement over the warm model. The native-teacher and
 search-policy factorial contrasts continue as prespecified, without retuning.
 Evidence: `results/20261027-joint-expert-target-proxy-expert-vs-warm{,-audit}.json`.
+
+The native-teacher screen also completes:1W2D61L/64,3.125%score, paired
+bootstrap95%[0,0.0703125]. All2845moves pass the independent native/clock audit,
+with no technical games or rounding ambiguities. Thus the selected Dmodel
+does not close the teacher gap; neither its lower selection proxy loss nor
+its degraded-Bcontrol win establishes the desired playing-strength progress.
+The final C-versus-Acontrast continues under the frozen plan. No promotion or
+larger proxy-value campaign follows these results. Evidence:
+`results/20261027-joint-expert-target-proxy-expert-vs-teacher{,-audit}.json`.

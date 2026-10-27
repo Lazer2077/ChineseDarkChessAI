@@ -135,10 +135,11 @@
     {
       "id": "mistboard",
       "url": "https://github.com/brianhliou/mistboard",
-      "commit": null,
+      "commit": "d457ba3256a978912ca68fb711990d6f0c7b7521",
       "kind": "GUI/service",
-      "status": "engine coverage through PikaJieQi and AB-JChess; verify deployment pins",
-      "defeated": false
+      "status": "Pinned deployment ref audit matches existing jqe331a6e6, AB-JChess-v0.2d fe35d87c and Pika WASM bcc83f8. GUI/service is not another independent AI; refs are not proof of deployed binary, rules, privacy or strength.",
+      "defeated": false,
+      "evidence": "results/20261027-iwestlin-deployment-source-audit.json"
     },
     {
       "id": "btsunamib-xiangqi",
@@ -277,10 +278,11 @@
       "url": "https://github.com/iwestlin/jieqi-ai",
       "repository_url": "https://github.com/iwestlin/jieqi-ai",
       "commit": "68e55af7036793c9a96dfdbcc34e88e852c18634",
-      "kind": "candidate engine variant",
-      "license": "audit pending",
-      "status": "README.md fetch returned 404; no deduplication or availability conclusion without source audit",
-      "defeated": false
+      "kind": "GUI/application with vendored engine",
+      "license": "Vendored engine GPL-3.0; root application grant unestablished",
+      "status": "Pinned recursive source audit: all51official jieqi_old src files identical Git blobs; only extra src file is a bundled binary, not executed/validated. NNUE disabled (USE_NNUEEVAL=0). Deduplicate this engine core against official-jieqi_old; no independent AI admission or additional victory.",
+      "defeated": false,
+      "evidence": "results/20261027-iwestlin-deployment-source-audit.json"
     },
     {
       "id": "unveil-java",
@@ -537,5 +539,10 @@
     "inventory_entries": 46,
     "new_compatible_strong_baselines_established": 0,
     "scope": "Six newly pinned source audits and one opening-only C++ build smoke; not an all-entry refresh or exhaustive discovery, and no new defeat/suite-strength claim."
+  },
+  "latest_deployment_and_dedup_audit": {
+    "date": "2026-10-27",
+    "evidence": "results/20261027-iwestlin-deployment-source-audit.json",
+    "scope": "One previously unresolved vendored engine source core and three full-commit deployment refs only; no exhaustive-discovery or new-victory claim."
   }
 }

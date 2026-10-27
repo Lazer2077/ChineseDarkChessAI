@@ -1,0 +1,698 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "source_report": "results/20261026-leaf-batch8-teacher.json",
+  "source_report_sha256": "7f5fa9f184962b507193f82d94b4aac713e5c55b209069417e08f804bacea9ad",
+  "source_audit": "results/20261026-leaf-batch8-teacher-audit.json",
+  "source_audit_sha256": "7ceeada70316c5694be34f203d2d921c96d7ca658853a4ee235407fa36aacbc8",
+  "raw_games": {
+    "path": "results/raw/teacher-a6651244d7e0.jsonl.gz",
+    "uncompressed_sha256": "a6651244d7e0e611cacd83e146476cd7ff7784c5c0bb81ae5d1d306368fa9891"
+  },
+  "script_sha256": "8a9b9311a28c88e8ddd138efbba1834cc35c2c27ef434f1b1dbe62adc7c94ec8",
+  "scope": "Post-hoc descriptive exposure on this already completed old-checkpoint match. No new games, checkpoint selection, training, causal search-versus-value attribution or independent confirmation.",
+  "games": 64,
+  "wins_draws_losses": [
+    0,
+    0,
+    64
+  ],
+  "games_with_a_fully_public_pre_action_root": 2,
+  "games_ending_without_live_darks": 2,
+  "median_terminal_live_dark": 7.0,
+  "pre_action_phase_counts_by_actor": {
+    "candidate": {
+      "D15-30": 643,
+      "D5-14": 694,
+      "D1-4": 137,
+      "D0": 19
+    },
+    "baseline": {
+      "D15-30": 641,
+      "D5-14": 717,
+      "D1-4": 148,
+      "D0": 19
+    }
+  },
+  "per_game": [
+    {
+      "pair": 0,
+      "red": "candidate",
+      "plies": 28,
+      "terminal_live_dark": 12,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 9
+      }
+    },
+    {
+      "pair": 0,
+      "red": "baseline",
+      "plies": 37,
+      "terminal_live_dark": 10,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 19
+      }
+    },
+    {
+      "pair": 1,
+      "red": "candidate",
+      "plies": 56,
+      "terminal_live_dark": 3,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 28,
+        "D1-4": 8
+      }
+    },
+    {
+      "pair": 1,
+      "red": "baseline",
+      "plies": 45,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 16,
+        "D5-14": 29
+      }
+    },
+    {
+      "pair": 2,
+      "red": "baseline",
+      "plies": 35,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 16
+      }
+    },
+    {
+      "pair": 2,
+      "red": "candidate",
+      "plies": 108,
+      "terminal_live_dark": 0,
+      "pre_action_phase_counts": {
+        "D15-30": 22,
+        "D5-14": 55,
+        "D1-4": 9,
+        "D0": 22
+      }
+    },
+    {
+      "pair": 3,
+      "red": "candidate",
+      "plies": 38,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 18
+      }
+    },
+    {
+      "pair": 3,
+      "red": "baseline",
+      "plies": 17,
+      "terminal_live_dark": 17,
+      "pre_action_phase_counts": {
+        "D15-30": 17
+      }
+    },
+    {
+      "pair": 4,
+      "red": "baseline",
+      "plies": 21,
+      "terminal_live_dark": 17,
+      "pre_action_phase_counts": {
+        "D15-30": 21
+      }
+    },
+    {
+      "pair": 4,
+      "red": "candidate",
+      "plies": 30,
+      "terminal_live_dark": 12,
+      "pre_action_phase_counts": {
+        "D15-30": 24,
+        "D5-14": 6
+      }
+    },
+    {
+      "pair": 5,
+      "red": "candidate",
+      "plies": 26,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 16,
+        "D5-14": 10
+      }
+    },
+    {
+      "pair": 5,
+      "red": "baseline",
+      "plies": 47,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 16,
+        "D5-14": 19,
+        "D1-4": 12
+      }
+    },
+    {
+      "pair": 6,
+      "red": "candidate",
+      "plies": 40,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 24,
+        "D5-14": 16
+      }
+    },
+    {
+      "pair": 6,
+      "red": "baseline",
+      "plies": 49,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 29
+      }
+    },
+    {
+      "pair": 7,
+      "red": "candidate",
+      "plies": 50,
+      "terminal_live_dark": 7,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 29
+      }
+    },
+    {
+      "pair": 7,
+      "red": "baseline",
+      "plies": 37,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 17,
+        "D5-14": 17,
+        "D1-4": 3
+      }
+    },
+    {
+      "pair": 8,
+      "red": "candidate",
+      "plies": 60,
+      "terminal_live_dark": 3,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 29,
+        "D1-4": 12
+      }
+    },
+    {
+      "pair": 8,
+      "red": "baseline",
+      "plies": 45,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 24,
+        "D5-14": 21
+      }
+    },
+    {
+      "pair": 9,
+      "red": "baseline",
+      "plies": 31,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 13
+      }
+    },
+    {
+      "pair": 9,
+      "red": "candidate",
+      "plies": 70,
+      "terminal_live_dark": 1,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 19,
+        "D1-4": 33
+      }
+    },
+    {
+      "pair": 10,
+      "red": "candidate",
+      "plies": 32,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 24,
+        "D5-14": 8
+      }
+    },
+    {
+      "pair": 10,
+      "red": "baseline",
+      "plies": 43,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 24
+      }
+    },
+    {
+      "pair": 11,
+      "red": "candidate",
+      "plies": 52,
+      "terminal_live_dark": 4,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 24,
+        "D1-4": 7
+      }
+    },
+    {
+      "pair": 11,
+      "red": "baseline",
+      "plies": 55,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 22,
+        "D5-14": 33
+      }
+    },
+    {
+      "pair": 12,
+      "red": "baseline",
+      "plies": 49,
+      "terminal_live_dark": 6,
+      "pre_action_phase_counts": {
+        "D15-30": 23,
+        "D5-14": 26
+      }
+    },
+    {
+      "pair": 12,
+      "red": "candidate",
+      "plies": 108,
+      "terminal_live_dark": 0,
+      "pre_action_phase_counts": {
+        "D15-30": 24,
+        "D5-14": 45,
+        "D1-4": 23,
+        "D0": 16
+      }
+    },
+    {
+      "pair": 13,
+      "red": "candidate",
+      "plies": 30,
+      "terminal_live_dark": 10,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 11
+      }
+    },
+    {
+      "pair": 13,
+      "red": "baseline",
+      "plies": 59,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 39
+      }
+    },
+    {
+      "pair": 14,
+      "red": "candidate",
+      "plies": 40,
+      "terminal_live_dark": 10,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 20
+      }
+    },
+    {
+      "pair": 14,
+      "red": "baseline",
+      "plies": 65,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 17,
+        "D5-14": 48
+      }
+    },
+    {
+      "pair": 15,
+      "red": "candidate",
+      "plies": 38,
+      "terminal_live_dark": 6,
+      "pre_action_phase_counts": {
+        "D15-30": 23,
+        "D5-14": 15
+      }
+    },
+    {
+      "pair": 15,
+      "red": "baseline",
+      "plies": 39,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 24,
+        "D5-14": 15
+      }
+    },
+    {
+      "pair": 16,
+      "red": "candidate",
+      "plies": 60,
+      "terminal_live_dark": 3,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 22,
+        "D1-4": 17
+      }
+    },
+    {
+      "pair": 16,
+      "red": "baseline",
+      "plies": 59,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 26,
+        "D5-14": 33
+      }
+    },
+    {
+      "pair": 17,
+      "red": "candidate",
+      "plies": 58,
+      "terminal_live_dark": 3,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 29,
+        "D1-4": 8
+      }
+    },
+    {
+      "pair": 17,
+      "red": "baseline",
+      "plies": 39,
+      "terminal_live_dark": 7,
+      "pre_action_phase_counts": {
+        "D15-30": 17,
+        "D5-14": 22
+      }
+    },
+    {
+      "pair": 18,
+      "red": "candidate",
+      "plies": 38,
+      "terminal_live_dark": 10,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 17
+      }
+    },
+    {
+      "pair": 18,
+      "red": "baseline",
+      "plies": 33,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 15
+      }
+    },
+    {
+      "pair": 19,
+      "red": "baseline",
+      "plies": 35,
+      "terminal_live_dark": 7,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 15
+      }
+    },
+    {
+      "pair": 19,
+      "red": "candidate",
+      "plies": 74,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 17,
+        "D5-14": 18,
+        "D1-4": 39
+      }
+    },
+    {
+      "pair": 20,
+      "red": "candidate",
+      "plies": 60,
+      "terminal_live_dark": 7,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 39
+      }
+    },
+    {
+      "pair": 20,
+      "red": "baseline",
+      "plies": 67,
+      "terminal_live_dark": 4,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 38,
+        "D1-4": 10
+      }
+    },
+    {
+      "pair": 21,
+      "red": "candidate",
+      "plies": 50,
+      "terminal_live_dark": 4,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 18,
+        "D1-4": 12
+      }
+    },
+    {
+      "pair": 21,
+      "red": "baseline",
+      "plies": 57,
+      "terminal_live_dark": 4,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 35,
+        "D1-4": 1
+      }
+    },
+    {
+      "pair": 22,
+      "red": "candidate",
+      "plies": 36,
+      "terminal_live_dark": 7,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 17
+      }
+    },
+    {
+      "pair": 22,
+      "red": "baseline",
+      "plies": 29,
+      "terminal_live_dark": 13,
+      "pre_action_phase_counts": {
+        "D15-30": 22,
+        "D5-14": 7
+      }
+    },
+    {
+      "pair": 23,
+      "red": "baseline",
+      "plies": 49,
+      "terminal_live_dark": 10,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 29
+      }
+    },
+    {
+      "pair": 23,
+      "red": "candidate",
+      "plies": 64,
+      "terminal_live_dark": 1,
+      "pre_action_phase_counts": {
+        "D15-30": 26,
+        "D5-14": 15,
+        "D1-4": 23
+      }
+    },
+    {
+      "pair": 24,
+      "red": "candidate",
+      "plies": 34,
+      "terminal_live_dark": 12,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 16
+      }
+    },
+    {
+      "pair": 24,
+      "red": "baseline",
+      "plies": 39,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 22,
+        "D5-14": 17
+      }
+    },
+    {
+      "pair": 25,
+      "red": "candidate",
+      "plies": 30,
+      "terminal_live_dark": 10,
+      "pre_action_phase_counts": {
+        "D15-30": 16,
+        "D5-14": 14
+      }
+    },
+    {
+      "pair": 25,
+      "red": "baseline",
+      "plies": 25,
+      "terminal_live_dark": 15,
+      "pre_action_phase_counts": {
+        "D15-30": 25
+      }
+    },
+    {
+      "pair": 26,
+      "red": "candidate",
+      "plies": 52,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 34
+      }
+    },
+    {
+      "pair": 26,
+      "red": "baseline",
+      "plies": 61,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 18,
+        "D5-14": 24,
+        "D1-4": 19
+      }
+    },
+    {
+      "pair": 27,
+      "red": "candidate",
+      "plies": 68,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 33,
+        "D1-4": 16
+      }
+    },
+    {
+      "pair": 27,
+      "red": "baseline",
+      "plies": 55,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 20,
+        "D5-14": 25,
+        "D1-4": 10
+      }
+    },
+    {
+      "pair": 28,
+      "red": "baseline",
+      "plies": 39,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 18
+      }
+    },
+    {
+      "pair": 28,
+      "red": "candidate",
+      "plies": 72,
+      "terminal_live_dark": 2,
+      "pre_action_phase_counts": {
+        "D15-30": 19,
+        "D5-14": 30,
+        "D1-4": 23
+      }
+    },
+    {
+      "pair": 29,
+      "red": "candidate",
+      "plies": 34,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 22,
+        "D5-14": 12
+      }
+    },
+    {
+      "pair": 29,
+      "red": "baseline",
+      "plies": 33,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 16,
+        "D5-14": 17
+      }
+    },
+    {
+      "pair": 30,
+      "red": "candidate",
+      "plies": 32,
+      "terminal_live_dark": 9,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 11
+      }
+    },
+    {
+      "pair": 30,
+      "red": "baseline",
+      "plies": 47,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 17,
+        "D5-14": 30
+      }
+    },
+    {
+      "pair": 31,
+      "red": "candidate",
+      "plies": 60,
+      "terminal_live_dark": 5,
+      "pre_action_phase_counts": {
+        "D15-30": 17,
+        "D5-14": 43
+      }
+    },
+    {
+      "pair": 31,
+      "red": "baseline",
+      "plies": 49,
+      "terminal_live_dark": 8,
+      "pre_action_phase_counts": {
+        "D15-30": 21,
+        "D5-14": 28
+      }
+    }
+  ],
+  "limitations": "D0 measures physical live-dark identity uncertainty only. It does not prove equality of private historical information or opponent beliefs. Existing records do not contain completed neural simulation counts, so wall times alone cannot identify a search-throughput cause."
+}

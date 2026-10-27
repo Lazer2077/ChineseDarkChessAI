@@ -1,0 +1,334 @@
+{
+  "schema": 1,
+  "as_of": "2026-10-27",
+  "scope": "Targeted engine-source deduplication and three deployment pins. Not exhaustive discovery, a new runnable-opponent admission or match evidence.",
+  "iwestlin": {
+    "repository": "iwestlin/jieqi-ai",
+    "commit": "68e55af7036793c9a96dfdbcc34e88e852c18634",
+    "tree_url": "https://api.github.com/repos/iwestlin/jieqi-ai/git/trees/68e55af7036793c9a96dfdbcc34e88e852c18634?recursive=1",
+    "tree_truncated": false,
+    "tree_entries": 166,
+    "upstream_comparison": {
+      "repository": "official-pikafish/Pikafish",
+      "commit": "68e55af7036793c9a96dfdbcc34e88e852c18634",
+      "shared_source_files": 51,
+      "identical_blob_count": 51,
+      "different_files": [],
+      "added_files": [
+        "src/PikaJieQi"
+      ],
+      "removed_files": [],
+      "blob_differences": {}
+    },
+    "source_blobs": [
+      {
+        "path": "src/Makefile",
+        "sha": "ffec427bdca8f6115fb372e2c62a1535b0649ff9",
+        "size": 24998
+      },
+      {
+        "path": "src/PikaJieQi",
+        "sha": "69a0c1d39d0bd29a1695ca7e04b680fef8d53419",
+        "size": 372280
+      },
+      {
+        "path": "src/benchmark.cpp",
+        "sha": "e0ee8d0d36b2371ba3c918f1d195b15aa2544a74",
+        "size": 4200
+      },
+      {
+        "path": "src/bitboard.cpp",
+        "sha": "a7781d25293ff8c97db881b18a5970b365058fad",
+        "size": 14885
+      },
+      {
+        "path": "src/bitboard.h",
+        "sha": "26eb6728df38a2df0539434ff668d37690e68019",
+        "size": 12144
+      },
+      {
+        "path": "src/compression/miniz.h",
+        "sha": "ca1e7b636576df68d7bd1956ea05ad7178e1c967",
+        "size": 395890
+      },
+      {
+        "path": "src/compression/zip.cpp",
+        "sha": "f3da8f5e80392cef1b313f1a0f5b2ad6e9a5042f",
+        "size": 48470
+      },
+      {
+        "path": "src/compression/zip.h",
+        "sha": "6de72194c26b6ca17e9c06905165bf1491f77ea9",
+        "size": 14713
+      },
+      {
+        "path": "src/evaluate.cpp",
+        "sha": "ae25818bad70b593c3af1e88f0c9d8d986a9a30e",
+        "size": 22439
+      },
+      {
+        "path": "src/evaluate.h",
+        "sha": "e149e1cbe0ce7713c112b9837acbb09775d99793",
+        "size": 1798
+      },
+      {
+        "path": "src/magics.h",
+        "sha": "c7122c1afb548a01f726c0ea44fa60b0275d0364",
+        "size": 18171
+      },
+      {
+        "path": "src/main.cpp",
+        "sha": "0e1c959bdd0cf688fb88b284010fa201fa01e318",
+        "size": 1293
+      },
+      {
+        "path": "src/material.cpp",
+        "sha": "4e05e9bfef9ab8103907c02d77e1265076e3abf3",
+        "size": 9030
+      },
+      {
+        "path": "src/material.h",
+        "sha": "37ecd90946c5b8e8f638b9b41dbfa02072d263df",
+        "size": 1767
+      },
+      {
+        "path": "src/misc.cpp",
+        "sha": "1f65e9156f1a530a7f5deb4a30b3a682bf110ca6",
+        "size": 19925
+      },
+      {
+        "path": "src/misc.h",
+        "sha": "95b3c143ad7db9e28c61989543baf27aaf3d2a9f",
+        "size": 13180
+      },
+      {
+        "path": "src/movegen.cpp",
+        "sha": "773f768fdb308521b9defa8beb3bf787c651e0ec",
+        "size": 7475
+      },
+      {
+        "path": "src/movegen.h",
+        "sha": "1c06bda075ac7c2b7108c45b63589599e5e9da8f",
+        "size": 2071
+      },
+      {
+        "path": "src/movepick.cpp",
+        "sha": "ac383e8f3fe695a48030764523577f5e22ee4c07",
+        "size": 10850
+      },
+      {
+        "path": "src/movepick.h",
+        "sha": "1a6bbfaa4f781cc982d018d387904796897b8ae4",
+        "size": 5893
+      },
+      {
+        "path": "src/nnue/evaluate_nnue.cpp",
+        "sha": "73caf80519fe5ac123e3b7d1a7c0e6caf48f84a3",
+        "size": 12891
+      },
+      {
+        "path": "src/nnue/evaluate_nnue.h",
+        "sha": "2e4f1f5098db640edfcfc680dc75ff8afeac83ad",
+        "size": 1754
+      },
+      {
+        "path": "src/nnue/features/half_ka_v2_hm.cpp",
+        "sha": "08f74986478dd9997cfca88e87e8e076335b1b05",
+        "size": 3251
+      },
+      {
+        "path": "src/nnue/features/half_ka_v2_hm.cpp.bak",
+        "sha": "5cc5a8572d238c48eeaaf9ca1259436e77eb5b48",
+        "size": 3199
+      },
+      {
+        "path": "src/nnue/features/half_ka_v2_hm.h",
+        "sha": "5ef98c1d22aca4ae05d80e636305214fd72226f2",
+        "size": 5628
+      },
+      {
+        "path": "src/nnue/layers/affine_transform.h",
+        "sha": "89ac31e3fb108b7a574556a0bef95a3e365715b7",
+        "size": 20707
+      },
+      {
+        "path": "src/nnue/layers/clipped_relu.h",
+        "sha": "f94d30828d73ad7ce71b56be3c475071b92de257",
+        "size": 6965
+      },
+      {
+        "path": "src/nnue/layers/simd.h",
+        "sha": "7b9e8fb23b7754d470ed8a34b2103186ae1fa818",
+        "size": 12186
+      },
+      {
+        "path": "src/nnue/layers/sqr_clipped_relu.h",
+        "sha": "b603a277fa2536770fcbe65400643afc4e0763f8",
+        "size": 3799
+      },
+      {
+        "path": "src/nnue/nnue_accumulator.h",
+        "sha": "600483b5cfdc2c0875280d4db9df706562077e69",
+        "size": 1317
+      },
+      {
+        "path": "src/nnue/nnue_architecture.h",
+        "sha": "98aa2b82c24ecd9463b3e46a11da723edb990969",
+        "size": 5041
+      },
+      {
+        "path": "src/nnue/nnue_common.h",
+        "sha": "1795618946f6c4eca027728509e7c8a23598c0d9",
+        "size": 5285
+      },
+      {
+        "path": "src/nnue/nnue_feature_transformer.h",
+        "sha": "41fc63a83a4799ea79ff68ccd00204d00796c232",
+        "size": 22795
+      },
+      {
+        "path": "src/position.cpp",
+        "sha": "6c5fcbb01cf1a55913c698fc30350b8e39563ea9",
+        "size": 41298
+      },
+      {
+        "path": "src/position.h",
+        "sha": "4173762d7740f4101b7b7c671a826d376d5ca2dd",
+        "size": 12888
+      },
+      {
+        "path": "src/psqt.cpp",
+        "sha": "1bbde455433e284ab89208d2155d779d00564739",
+        "size": 8141
+      },
+      {
+        "path": "src/psqt.h",
+        "sha": "17bd258c5be10d96874ba1ea09cb2007aedead47",
+        "size": 1097
+      },
+      {
+        "path": "src/search.cpp",
+        "sha": "a999a7e7d816f9d4af3240c96569980735fef9f6",
+        "size": 76435
+      },
+      {
+        "path": "src/search.h",
+        "sha": "7c3d5ec9d4581705c7bbba7826325b7423c48ec2",
+        "size": 3188
+      },
+      {
+        "path": "src/thread.cpp",
+        "sha": "be37fdecb17c2ffc14417d4b5512af5dffb7f52e",
+        "size": 7797
+      },
+      {
+        "path": "src/thread.h",
+        "sha": "7aec566a352e145b4cb87f17fcc378b458148bfa",
+        "size": 3703
+      },
+      {
+        "path": "src/thread_win32_osx.h",
+        "sha": "77d1c3c7ef392c6bdca7c75c6cd41640a51a0c5b",
+        "size": 2274
+      },
+      {
+        "path": "src/timeman.cpp",
+        "sha": "cab0d7671a2e7503c47b2d080a00db98838c5c22",
+        "size": 3853
+      },
+      {
+        "path": "src/timeman.h",
+        "sha": "a86f07693a010ab38a2b0ca183f410970d9d54f9",
+        "size": 1650
+      },
+      {
+        "path": "src/tt.cpp",
+        "sha": "c7118aea3fc672647b55f97d488ff29262d16e95",
+        "size": 5597
+      },
+      {
+        "path": "src/tt.h",
+        "sha": "03fe3e143d1b9a46e6165772e92fa676367b8938",
+        "size": 3449
+      },
+      {
+        "path": "src/tune.cpp",
+        "sha": "82ac3148e65bbdf1d40140bc30435bfe0d35b4a5",
+        "size": 3812
+      },
+      {
+        "path": "src/tune.h",
+        "sha": "75ab484acf066bff951e7d40b1e79d4e28e302b2",
+        "size": 6036
+      },
+      {
+        "path": "src/types.h",
+        "sha": "68c90db4484a30ed4a7bf76758b9d30a0dad9c46",
+        "size": 18925
+      },
+      {
+        "path": "src/uci.cpp",
+        "sha": "634fe87294f9eb596806951519d7cd47264f4f3e",
+        "size": 15589
+      },
+      {
+        "path": "src/uci.h",
+        "sha": "c4a42004e84d511ee1457dd1d4fa136350b755dd",
+        "size": 2404
+      },
+      {
+        "path": "src/ucioption.cpp",
+        "sha": "4a1c23644af416d6436569f4d7079d457b512aac",
+        "size": 5714
+      }
+    ],
+    "engine_license": {
+      "path": "Pikafish-jieqi_old/Copying.txt",
+      "git_blob_sha": "818433ecc0e094a4db1023c68b33f24344643ad8",
+      "identifier": "GPL-3.0",
+      "scope": "Vendored engine only; root application grant not established."
+    },
+    "nnue_status": {
+      "path": "Pikafish-jieqi_old/src/types.h",
+      "git_blob_sha": "68c90db4484a30ed4a7bf76758b9d30a0dad9c46",
+      "USE_NNUEEVAL": 0
+    },
+    "decision": "All51tracked upstream src files match Git blob-for-blob; sole extra src entry is a bundled executable, not executed or provenance-validated. No independently changed search/NNUE source in this vendored engine; reuse existing official-jieqi_old coverage rather than create another independent strength match. Application and source-review text are separate; no project-wide license or strength conclusion.",
+    "source_review_caution": "Its ai-analysis text treats dark-home nominal movement as possible leakage. Nominal movement before revealing is part of this project full-board Jieqi rule profile; do not inherit that criticism or require revealed type to explain the preceding dark move."
+  },
+  "mistboard_deployment": {
+    "repository": "brianhliou/mistboard",
+    "commit": "d457ba3256a978912ca68fb711990d6f0c7b7521",
+    "files": [
+      {
+        "path": "ab-jchess.ref",
+        "blob_sha": "a4a3762a6f507ee03d4eb0e4830d2c663e2a943a",
+        "engine_commit": "fe35d87c7553fd23e8aab3a1dde7e712f286b416",
+        "url": "https://github.com/brianhliou/mistboard/blob/d457ba3256a978912ca68fb711990d6f0c7b7521/ab-jchess.ref",
+        "matches_local_frozen_checkout": true
+      },
+      {
+        "path": "jqe.ref",
+        "blob_sha": "27543005c4cbcc55f81c54f9b96bc6791f4f0c09",
+        "engine_commit": "331a6e612a038c4a04cf980f7b9482910fd50078",
+        "url": "https://github.com/brianhliou/mistboard/blob/d457ba3256a978912ca68fb711990d6f0c7b7521/jqe.ref",
+        "matches_local_frozen_checkout": true
+      },
+      {
+        "path": "pikafish-jieqi.ref",
+        "blob_sha": "0ee87589983df86d4365774b2d5a666cddafa557",
+        "engine_commit": "bcc83f88ee18760e60903d1a3aaa61ef6f70f2c9",
+        "url": "https://github.com/brianhliou/mistboard/blob/d457ba3256a978912ca68fb711990d6f0c7b7521/pikafish-jieqi.ref",
+        "matches_local_frozen_checkout": true
+      }
+    ]
+  },
+  "routine_suite_changed": false,
+  "inventory_entries": 46,
+  "limitations": [
+    "Deployment ref files identify source pins; they are not a live-service binary/private-information/strength audit.",
+    "AB-JChess and Pika share a family; three routine opponents are not three independent engine families.",
+    "No additional project was defeated; official-jieqi_old still has its existing technical-integrity failure flag.",
+    "README search absence alone was not enough to establish availability; recursive source tree resolved this entry."
+  ]
+}

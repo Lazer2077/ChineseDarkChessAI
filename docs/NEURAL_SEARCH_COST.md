@@ -224,3 +224,31 @@ A separate [fixed-work root sequential-halving prototype](ROOT_HALVING.md)
 keeps interior information-set PUCT and tests allocation on three existing
 training roots. It is neither a full Gumbel AlphaZero implementation nor a
 demonstrated game-strength improvement.
+
+## Where the old warm model loses to the teacher
+
+A post-hoc exposure diagnostic reuses only the already completed LeafBatch8
+warm-versus-teacher64-game match and its independent3018-move legality/clock
+audit. The match was0W0D64L. Tracking public reveal/dark-capture events from the
+30initial dark squares gives the following pre-action root counts:
+
+| Live dark pieces | Candidate roots | Teacher roots |
+| --- | ---: | ---: |
+| 15–30 | 643 | 641 |
+| 5–14 | 694 | 717 |
+| 1–4 | 137 | 148 |
+| 0 | 19 | 19 |
+
+Only2/64games have any fully public pre-action root,38/3018positions in total;
+the median terminal board still has7live dark pieces. This particular old-model
+gap therefore cannot be studied adequately by intervening only after all dark
+pieces disappear. It motivates retaining partial-phase learning/search in
+future hypotheses; it does not select a new model or demonstrate a phase gate.
+D0 also does not equate both players' private histories or opponent beliefs.
+
+These logs lack completed neural simulation counts. Timing totals alone cannot
+attribute the losses to search throughput versus policy/value error. No causal
+diagnosis or new independent test is claimed. Reproduce with
+`scripts/diagnose_match_observation_phases.py`; source/raw/audit digests, actor
+phase counts and per-game records are in
+`results/20261027-warm-teacher-defeat-phase-diagnostic.json`.

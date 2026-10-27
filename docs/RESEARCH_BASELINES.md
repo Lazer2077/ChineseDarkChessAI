@@ -58,3 +58,26 @@ Selection is independent of our candidate confirmation outcomes. Missing models
 and technical failures remain unverified; exclusion is not defeat by our model.
 The >70%-win report trigger applies to the final declared strong suite under
 the updated `GOAL.md`, with independent test seeds and frozen checkpoints.
+
+## Targeted source deduplication and deployment pins, 2026-10-27
+
+The earlier missing-root-README result for
+[iwestlin/jieqi-ai](https://github.com/iwestlin/jieqi-ai/tree/68e55af7036793c9a96dfdbcc34e88e852c18634)
+is resolved by its complete166-entry recursive tree. Every one of the51tracked
+`src` files in official `jieqi_old`23b9466c has the identical Git blob in the
+vendored engine. Its only extra `src` entry is a bundled executable, which we
+did not execute or validate against source. `USE_NNUEEVAL=0`; this is not a newly
+trained neural opponent. The engine has its own GPLv3 notice; application-wide
+license terms remain unestablished. Deduplicate this engine core against the
+existing official-branch profile, without treating this as an additional win.
+Its source-review document is not a rules oracle: dark-home nominal movement
+before revealing is part of our full-board Jieqi profile.
+
+At Mistboard commitd457ba3256a978912ca68fb711990d6f0c7b7521, the three
+[deployment reference files](https://github.com/brianhliou/mistboard/tree/d457ba3256a978912ca68fb711990d6f0c7b7521)
+pin exactly our existing jqe331a6e6, AB-JChess-v0.2d fe35d87c and classical
+Pika bcc83f8 sources. This corroborates the current routine-suite versions; it
+does not verify a live-service binary, its privacy/rule behavior or its strength.
+No suite change follows, and three profiles still do not mean three independent
+families. Source hashes,51-file comparison and pinned refs:
+`results/20261027-iwestlin-deployment-source-audit.json`.

@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "plan_sha256": "689c5677df3b734610afabb77115547bda1e3632989f185484098656af72c20d",
+  "scope": "Complete tiny-model self-play/update integration. Original dense generator versus safe-loader dense generator must reproduce every recorded array and the dense update must reproduce NPZ weights. Relative decoder must generate audited complete episodes, update and safely reload. Not a strength or scalable RL benefit result.",
+  "generations": {
+    "dense-legacy": {
+      "plan_sha256": "1e22f8e0f3cc81cdc4a0d475798cebafc90c1e463e00e95867984472112a0697",
+      "games": 6,
+      "episodes": [
+        {
+          "index": 0,
+          "seed": 9690001,
+          "npz_sha256": "de7a2ab3f3d65b8db46c35fc0159eb2fce151a0b1093da77d0be25b92e02d3f4",
+          "audit": {
+            "positions_replayed": 31,
+            "fully_public_positions": 0,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 1,
+          "seed": 9690002,
+          "npz_sha256": "4fd359a7427a18ac7b46c459c223ed1dc96dc9e0a7fd0b2b748cbb5100fc1cc4",
+          "audit": {
+            "positions_replayed": 431,
+            "fully_public_positions": 261,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 2,
+          "seed": 9690003,
+          "npz_sha256": "27be41a429ec272d1de238d4992fcd377460e49e0af9ff7b7ae132d875d1ba31",
+          "audit": {
+            "positions_replayed": 109,
+            "fully_public_positions": 0,
+            "private_dark_captures": 2,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 3,
+          "seed": 9690004,
+          "npz_sha256": "e5adbf150bc25e45e80acf8d7c2c74773aed9253b72cc4b329308c3ef51d73bd",
+          "audit": {
+            "positions_replayed": 161,
+            "fully_public_positions": 0,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 4,
+          "seed": 9690005,
+          "npz_sha256": "fc4d3a06c143a9cd5a11915f7109396fd255c7ead6edce67db4b9b1743f76044",
+          "audit": {
+            "positions_replayed": 375,
+            "fully_public_positions": 222,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 5,
+          "seed": 9690006,
+          "npz_sha256": "3196d5c3b526bb3fc754fd3cddab12827e1618b65259ff8f0976b2c7c3b07cc5",
+          "audit": {
+            "positions_replayed": 221,
+            "fully_public_positions": 85,
+            "private_dark_captures": 3,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        }
+      ]
+    },
+    "dense-spatial": {
+      "plan_sha256": "c2ea50c4ff3e2d1fd834c49548c0d4c150de862ad865edd1020bf62a0797a5f0",
+      "games": 6,
+      "episodes": [
+        {
+          "index": 0,
+          "seed": 9690001,
+          "npz_sha256": "de7a2ab3f3d65b8db46c35fc0159eb2fce151a0b1093da77d0be25b92e02d3f4",
+          "audit": {
+            "positions_replayed": 31,
+            "fully_public_positions": 0,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 1,
+          "seed": 9690002,
+          "npz_sha256": "4fd359a7427a18ac7b46c459c223ed1dc96dc9e0a7fd0b2b748cbb5100fc1cc4",
+          "audit": {
+            "positions_replayed": 431,
+            "fully_public_positions": 261,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 2,
+          "seed": 9690003,
+          "npz_sha256": "27be41a429ec272d1de238d4992fcd377460e49e0af9ff7b7ae132d875d1ba31",
+          "audit": {
+            "positions_replayed": 109,
+            "fully_public_positions": 0,
+            "private_dark_captures": 2,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 3,
+          "seed": 9690004,
+          "npz_sha256": "e5adbf150bc25e45e80acf8d7c2c74773aed9253b72cc4b329308c3ef51d73bd",
+          "audit": {
+            "positions_replayed": 161,
+            "fully_public_positions": 0,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 4,
+          "seed": 9690005,
+          "npz_sha256": "fc4d3a06c143a9cd5a11915f7109396fd255c7ead6edce67db4b9b1743f76044",
+          "audit": {
+            "positions_replayed": 375,
+            "fully_public_positions": 222,
+            "private_dark_captures": 1,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 5,
+          "seed": 9690006,
+          "npz_sha256": "3196d5c3b526bb3fc754fd3cddab12827e1618b65259ff8f0976b2c7c3b07cc5",
+          "audit": {
+            "positions_replayed": 221,
+            "fully_public_positions": 85,
+            "private_dark_captures": 3,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        }
+      ]
+    },
+    "relative-spatial": {
+      "plan_sha256": "a6caaea63be719ec2fd0d5cff382fc7a934c7142c4bdfe13280d2648333bf233",
+      "games": 6,
+      "episodes": [
+        {
+          "index": 0,
+          "seed": 9690001,
+          "npz_sha256": "af4f5b3e2fe7339845b55ec970844bba9c30aaf62af2dc213c7cdeca57952b6e",
+          "audit": {
+            "positions_replayed": 98,
+            "fully_public_positions": 0,
+            "private_dark_captures": 0,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 1,
+          "seed": 9690002,
+          "npz_sha256": "c7e526c098e4988f4c8b16180a5aaba7d7fb6a4cc32240054e1e29369497723c",
+          "audit": {
+            "positions_replayed": 185,
+            "fully_public_positions": 0,
+            "private_dark_captures": 2,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 2,
+          "seed": 9690003,
+          "npz_sha256": "44b382b89e430f54f6a6a20418a0dbb7a5e6c59c475414124c886feaed11e0a2",
+          "audit": {
+            "positions_replayed": 115,
+            "fully_public_positions": 0,
+            "private_dark_captures": 4,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 3,
+          "seed": 9690004,
+          "npz_sha256": "3bfa4eb93c45c902e6d3f51bc8345788a3f0223cbc401eac69fa870e0cc55fbb",
+          "audit": {
+            "positions_replayed": 31,
+            "fully_public_positions": 0,
+            "private_dark_captures": 0,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 4,
+          "seed": 9690005,
+          "npz_sha256": "f675a19aaecd62d5270028fee9e588eb491b496884dfd1be169ad73c5391374b",
+          "audit": {
+            "positions_replayed": 159,
+            "fully_public_positions": 0,
+            "private_dark_captures": 2,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        },
+        {
+          "index": 5,
+          "seed": 9690006,
+          "npz_sha256": "3741072c0f9d432d03eb4375e741acb29c988fc64b7e2b7d723d526c9365d62d",
+          "audit": {
+            "positions_replayed": 120,
+            "fully_public_positions": 0,
+            "private_dark_captures": 4,
+            "legal_policy_support": true,
+            "root_visit_counts_match": true,
+            "observer_records_match": true,
+            "terminal_values_match": true
+          }
+        }
+      ]
+    }
+  },
+  "trainings": {
+    "dense-legacy": {
+      "plan_sha256": "95ad901873d7cf3ba6a3d8c50379aae530b7e66da5868e569e06c90f43913ca3",
+      "model_sha256": "1eafa8938e27aefc22817ce1dc024cf10c6f5dc9544f551a9bfbbbd469e58251",
+      "updates": 12,
+      "training_curve": [
+        {
+          "epoch": 1,
+          "updates": 12,
+          "train_policy_ce": 7.602273365207871,
+          "train_terminal_mse": 0.3715855304986401,
+          "validation": {
+            "loss": 8.131507838532428,
+            "search_policy_ce": 7.618999161376249,
+            "terminal_value_mse": 0.5125086771561795
+          },
+          "seconds": 3.9491699934005737
+        }
+      ],
+      "safe_reload_policy_head": "dense2550"
+    },
+    "dense-spatial": {
+      "plan_sha256": "8944bab4b21258093f474a48f0ce6bb29ec4a57232d8171d2a533933f25ce3e9",
+      "model_sha256": "1eafa8938e27aefc22817ce1dc024cf10c6f5dc9544f551a9bfbbbd469e58251",
+      "updates": 12,
+      "training_curve": [
+        {
+          "epoch": 1,
+          "updates": 12,
+          "train_policy_ce": 7.602273365207871,
+          "train_terminal_mse": 0.3715855304986401,
+          "validation": {
+            "loss": 8.131507838532428,
+            "search_policy_ce": 7.618999161376249,
+            "terminal_value_mse": 0.5125086771561795
+          },
+          "seconds": 3.9292460288852453
+        }
+      ],
+      "safe_reload_policy_head": "dense2550"
+    },
+    "relative-spatial": {
+      "plan_sha256": "8a4615610c0da116de7644d4e30d8125dde5b4b79a9856ae863590607519da7d",
+      "model_sha256": "c1fdaabd675ef239e7ab01ad24f324d50f207ee620deb6515de030b7f3ef6ee7",
+      "updates": 7,
+      "training_curve": [
+        {
+          "epoch": 1,
+          "updates": 7,
+          "train_policy_ce": 7.88610551712952,
+          "train_terminal_mse": 0.669931752003712,
+          "validation": {
+            "loss": 9.004434277720776,
+            "search_policy_ce": 7.813114665101506,
+            "terminal_value_mse": 1.1913196126192702
+          },
+          "seconds": 0.8370990101248026
+        }
+      ],
+      "safe_reload_policy_head": "relative50"
+    }
+  },
+  "dense_trajectories_exact": true,
+  "dense_training_npz_exact": true,
+  "relative_safe_model_roundtrip": true,
+  "policy_mapping_sha256": "a7f7b785376998a1825553ebe64d245603b8334c88b832fb30fe29a5757a156e",
+  "raw_episodes": {
+    "path": "results/raw/spatial-selfplay-integration-episodes.tar.gz",
+    "sha256": "1f1fc0f2417a2f30e88ffbcd3722a39a6c8cafd329eba530f53c7e1bf678d278"
+  },
+  "limitations": "6games per generator at8simulations with8channels/1block;4TRAIN/2selection games, one training seed and one epoch. Generation uses unchanged Yuan tiantian-v5/full private histories/lazy independent reveal RNG, whose profile differs from native-jqe benchmarks. No native full-game compatibility, calibrated critic, PG guarantee, new wide-model training, independent win-rate or promotion claim."
+}

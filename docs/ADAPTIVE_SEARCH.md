@@ -141,5 +141,7 @@ referee charges its measured time to the game clock. A two-game clock smoke
 finished 1 win / 1 loss, no technical errors, mean move times about 137 ms
 (candidate) and 140 ms (baseline). This smoke is not a confirmation result.
 
-One training seed does not meet the separate multi-seed training requirement;
-these runs assess whether this frozen candidate warrants that larger test.
+Under the later user amendment recorded in `GOAL.md`, one training seed is
+sufficient. Independent held-out test/layout sets using the same frozen
+checkpoint are required; this historical confirmation plan does not impose
+an additional multi-training-seed gate.

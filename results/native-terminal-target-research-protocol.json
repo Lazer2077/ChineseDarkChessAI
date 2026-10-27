@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "scope": "Controlled native-terminal reanalysis on immutable completed relative-parent source rollouts; source/native prefix and label effects, not a new game generator or already stronger actor.",
+  "hypothesis": "Training past an actual native terminal and using a later source-rule winner can contradict the benchmark objective. Remove only genuinely native-terminal suffixes and use native returns, retaining lawful observations and actual visit targets. Rule alignment alone does not imply improved strength.",
+  "trigger": "A predeclared256TRAIN audit found19earlier native terminals,12opposite terminal labels,609post-native-terminal source positions, zero illegal chosen/visited prefix moves and zero counter differences. Selection/strength outcomes were not used to select this intervention.",
+  "initial_model": "runs/spatial-policy-pretraining-01/relative50",
+  "initial_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+  "profiles": [
+    "source-full-control",
+    "source-prefix-control",
+    "native-prefix"
+  ],
+  "primary_control": "source-prefix-control and native-prefix must have bitwise-identical observations, normalized visits, minibatch/mirror RNG, membership, horizon and optimizer steps. Only returns differ. source-prefix-control deliberately retains the later source-rule return as an ablation, not as correct native RL.",
+  "reproduction_gate": "source-full-control must reproduce completed original source update1f6bf7acb49b23439104318c8bc31c196570f4bb4614164f39f75823ae379a2e over4epochs/448updates before either prefix fit.",
+  "transform": "Replay every complete public history incrementally with native no-capture80 and actual mover reveals. Admit only a positive-length true native terminal prefix whose chosen/visited actions are native legal and counters/public boards match; verify the terminal again through native one-shot replay. Quarantine any unsupported complete game by this rule, before model evaluation. Do not fabricate hidden layouts, continuation moves or nonterminal rewards.",
+  "training": {
+    "seed": 20261031,
+    "epochs": 4,
+    "batch": 128,
+    "lr": 1e-05,
+    "device": "cuda",
+    "checkpoint_selection": "fixed-final-epoch4 for all profiles; source full already selected4 in the original fit."
+  },
+  "data_roles": "Original256TRAIN/32selection source game identities, intersected with annotation-admitted IDs for both prefix profiles. All288transformations fixed before fitting; no strength games. Prefixes reduce data and can reduce update count versus full-source control, so that contrast is not label-only.",
+  "matches": [
+    {
+      "opponent": "source-prefix-control",
+      "seed": 9730001,
+      "games": 64
+    },
+    {
+      "opponent": "source-full-control",
+      "seed": 9731001,
+      "games": 64
+    },
+    {
+      "opponent": "parent",
+      "seed": 9732001,
+      "games": 64
+    },
+    {
+      "opponent": "teacher",
+      "seed": 9733001,
+      "games": 64
+    }
+  ],
+  "match_conditions": "Candidate native-prefix versus all four opponents, actual10+0.1/LeafBatch32neural,1CPU thread/engine,2concurrent games on one shared dedicated inference GPU. Freeze all artifacts before first game; finish all4regardless of results. Native identity/legal/terminal/clock audits and raw archives; retain technical/ambiguous flags.",
+  "limitations": "Same reused rollouts, one training seed and approximate Yuan-model search inside an observer policy. Prefix-native returns correspond to the public native terminal along these actual lawful trajectories, not a theorem of posterior correctness, policy improvement, fully native future search or equilibrium. Repeated baseline outcomes cannot establish final independent multi-set>70%wins. Degraded-control gains alone are insufficient."
+}

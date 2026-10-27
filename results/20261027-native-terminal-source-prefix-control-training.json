@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Controlled native-terminal reanalysis, fixed final4epochs and one training seed. Full source control reproduces original1f6; the two prefix profiles share observations/visits/data/steps and differ only in returns. No strength or policy-improvement claim from fitting.",
+  "training_plan_sha256": "15140944dfe196ec0212ce3754437eae7af017f2148cfb474008030cdfa07bbe",
+  "target_profile": "source-prefix-control",
+  "checkpoint_selection": "fixed-final-epoch",
+  "initial_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+  "model_sha256": "f3ebb9132dc748840b66caa5cd76a46a440baa02a748e86ad168084e0e1f5f9c",
+  "native_terminal_annotations_sha256": "6e13ecd785c42735f5aff5670c9c15586531d6fefa29089c9eb7bea1236e1c18",
+  "training_games": 256,
+  "training_positions": 13646,
+  "selection_games": 32,
+  "selection_positions": 1685,
+  "epochs": 4,
+  "updates": 428,
+  "selected_epoch": 4,
+  "initial_validation": {
+    "loss": 6.792944717249237,
+    "search_policy_ce": 5.812207491798772,
+    "terminal_value_mse": 0.9807372254504648
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 107,
+      "train_policy_ce": 4.143835783971441,
+      "train_terminal_mse": 0.7558885833900135,
+      "validation": {
+        "loss": 4.678717825668371,
+        "search_policy_ce": 3.718886655792861,
+        "terminal_value_mse": 0.95983116987551
+      },
+      "seconds": 4.126906065270305
+    },
+    {
+      "epoch": 2,
+      "updates": 214,
+      "train_policy_ce": 3.4885858546933726,
+      "train_terminal_mse": 0.7015431395954493,
+      "validation": {
+        "loss": 4.388780791356777,
+        "search_policy_ce": 3.4634277122599233,
+        "terminal_value_mse": 0.9253530790968536
+      },
+      "seconds": 8.106898060068488
+    },
+    {
+      "epoch": 3,
+      "updates": 321,
+      "train_policy_ce": 3.3441728061761147,
+      "train_terminal_mse": 0.6585727103920463,
+      "validation": {
+        "loss": 4.302589481219037,
+        "search_policy_ce": 3.3798272686638335,
+        "terminal_value_mse": 0.9227622125552033
+      },
+      "seconds": 11.981678823009133
+    },
+    {
+      "epoch": 4,
+      "updates": 428,
+      "train_policy_ce": 3.2894771500714395,
+      "train_terminal_mse": 0.6219882972950148,
+      "validation": {
+        "loss": 4.265006211634357,
+        "search_policy_ce": 3.3453990842494576,
+        "terminal_value_mse": 0.9196071273848989
+      },
+      "seconds": 15.829843482002616
+    }
+  ],
+  "source_control_reproduced_bitwise": false,
+  "limitations": "Reused rollouts and one fixed training seed; different-label losses are not comparable strength metrics. Prefix controls share data/steps; full-source versus prefix also changes data and step count. No native match, policy-gradient theorem or promotion follows from fitting."
+}

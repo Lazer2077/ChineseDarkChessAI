@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "All five prespecified eager-inference actual-clock contrasts of two matched-backbone supervised pretraining arms. Internal neural-reference gain, no strong-teacher gain, promotion or final-suite result. Score intervals include half draws; win_fraction is W/N.",
+  "games": 320,
+  "moves": 15828,
+  "training_seed": 20261029,
+  "epochs_per_arm": 12,
+  "updates_per_arm": 56652,
+  "contrasts": [
+    {
+      "candidate_head": "relative50",
+      "opponent": "matched-dense128x15",
+      "seed": 9670001,
+      "wins": 38,
+      "draws": 1,
+      "losses": 25,
+      "win_fraction": 0.59375,
+      "score": 0.6015625,
+      "paired_score_bootstrap_95": [
+        0.484375,
+        0.71875
+      ],
+      "audited_moves": 3120,
+      "technical_games": 0,
+      "clock_ambiguous_moves": 0,
+      "model_hashes": {
+        "candidate": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "baseline": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "net": "7e09e0b7e5c74c7aa3f37db518489df4cc36669a830ac54a904bf395dd174795",
+        "candidate_net": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f"
+      },
+      "report": "results/20261027-spatial-policy-relative50-vs-matched-dense128x15.json",
+      "report_sha256": "1a568d28d759656fe5683e8775ebb747847b19489095dd5c9e8578a88936a238",
+      "audit": "results/20261027-spatial-policy-relative50-vs-matched-dense128x15-audit.json",
+      "audit_sha256": "9b9f973ba658d692b56bfb41bb679125ae7b4703dae46b76a4efee825b379e72",
+      "raw_games": {
+        "path": "results/raw/relative50-vs-matched-dense128x15-e8fb06e57ad6.jsonl.gz",
+        "uncompressed_sha256": "e8fb06e57ad623169c726c2916b2f1d2db7b3c0d1e0c7ef5b750aaf9f3a8f271"
+      }
+    },
+    {
+      "candidate_head": "relative50",
+      "opponent": "old-warm64x15",
+      "seed": 9671001,
+      "wins": 52,
+      "draws": 1,
+      "losses": 11,
+      "win_fraction": 0.8125,
+      "score": 0.8203125,
+      "paired_score_bootstrap_95": [
+        0.71875,
+        0.90625
+      ],
+      "audited_moves": 3224,
+      "technical_games": 0,
+      "clock_ambiguous_moves": 0,
+      "model_hashes": {
+        "candidate": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "baseline": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "net": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+        "candidate_net": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f"
+      },
+      "report": "results/20261027-spatial-policy-relative50-vs-old-warm64x15.json",
+      "report_sha256": "06e811e0813530c0b5aa476455e4a67822d601aa81b120a7b8bed497050ae67a",
+      "audit": "results/20261027-spatial-policy-relative50-vs-old-warm64x15-audit.json",
+      "audit_sha256": "596130783397526f799561c9c1286becadff6aeefbd5e8306b67fbb5d5b01a7c",
+      "raw_games": {
+        "path": "results/raw/relative50-vs-old-warm64x15-d2b223e1700e.jsonl.gz",
+        "uncompressed_sha256": "d2b223e1700eec24b3dc6b0309b28677e1ccfd20d2d2e712266d65063f5ae72b"
+      }
+    },
+    {
+      "candidate_head": "relative50",
+      "opponent": "unchanged-native-teacher",
+      "seed": 9672001,
+      "wins": 0,
+      "draws": 2,
+      "losses": 62,
+      "win_fraction": 0.0,
+      "score": 0.015625,
+      "paired_score_bootstrap_95": [
+        0.0,
+        0.0390625
+      ],
+      "audited_moves": 3008,
+      "technical_games": 0,
+      "clock_ambiguous_moves": 0,
+      "model_hashes": {
+        "candidate": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f"
+      },
+      "report": "results/20261027-spatial-policy-relative50-vs-unchanged-native-teacher.json",
+      "report_sha256": "d87270ad35d0d4541a67a4ad73b529297a8d9a16b4d1c2b7deb93dbb2d35a26f",
+      "audit": "results/20261027-spatial-policy-relative50-vs-unchanged-native-teacher-audit.json",
+      "audit_sha256": "fd14b260d5a55146fb10631ae43181039c3aad29699ddaa28c66c8c391a99980",
+      "raw_games": {
+        "path": "results/raw/relative50-vs-unchanged-native-teacher-2810f5585604.jsonl.gz",
+        "uncompressed_sha256": "2810f5585604458848123bf581d1f8df3a03d709cce8492d44124f43698a3612"
+      }
+    },
+    {
+      "candidate_head": "dense2550",
+      "opponent": "old-warm64x15",
+      "seed": 9673001,
+      "wins": 40,
+      "draws": 1,
+      "losses": 23,
+      "win_fraction": 0.625,
+      "score": 0.6328125,
+      "paired_score_bootstrap_95": [
+        0.5,
+        0.765625
+      ],
+      "audited_moves": 3482,
+      "technical_games": 0,
+      "clock_ambiguous_moves": 0,
+      "model_hashes": {
+        "candidate": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "baseline": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "net": "4ff3c6751fbfd185e9e0926a20434904321f7bcc049ed813322a29828f335ddb",
+        "candidate_net": "7e09e0b7e5c74c7aa3f37db518489df4cc36669a830ac54a904bf395dd174795"
+      },
+      "report": "results/20261027-spatial-policy-dense2550-vs-old-warm64x15.json",
+      "report_sha256": "76bc2742792de38ef1f6b28ed1cafe2fc3e9fe724c1f00558f3cde5d4a32f7ea",
+      "audit": "results/20261027-spatial-policy-dense2550-vs-old-warm64x15-audit.json",
+      "audit_sha256": "dd5d59485dfed9b68a6d26daf00ff56d4cc2191435c725dd871c1da799727950",
+      "raw_games": {
+        "path": "results/raw/dense2550-vs-old-warm64x15-b6af56cc4017.jsonl.gz",
+        "uncompressed_sha256": "b6af56cc4017ad3f1d56230d5c70f84990a569679a04bf0bbf553dbcad4bc1aa"
+      }
+    },
+    {
+      "candidate_head": "dense2550",
+      "opponent": "unchanged-native-teacher",
+      "seed": 9674001,
+      "wins": 1,
+      "draws": 0,
+      "losses": 63,
+      "win_fraction": 0.015625,
+      "score": 0.015625,
+      "paired_score_bootstrap_95": [
+        0.0,
+        0.046875
+      ],
+      "audited_moves": 2994,
+      "technical_games": 0,
+      "clock_ambiguous_moves": 0,
+      "model_hashes": {
+        "candidate": "c8696fee400f792902a40df1f656cdb0228b4e64f9c15cbce0cd691148509d80",
+        "baseline": "97a2c2164d88e7d7019c26c15e8a107dce04cb1b15c016c6e7ad4a5f2dc58921",
+        "net": "f90bd44e8ee244405eb08eb4f784e3f156900f0691f651b5124d50032f8ba160",
+        "candidate_net": "7e09e0b7e5c74c7aa3f37db518489df4cc36669a830ac54a904bf395dd174795"
+      },
+      "report": "results/20261027-spatial-policy-dense2550-vs-unchanged-native-teacher.json",
+      "report_sha256": "37b8588ff38ba9f77cb01212c221edee81c3b9d0d547990f076b9f5b3e107096",
+      "audit": "results/20261027-spatial-policy-dense2550-vs-unchanged-native-teacher-audit.json",
+      "audit_sha256": "2648ce21b691d03af4d2e665ade6ee2ecb9d8603ad98cb8ad823466e2d699ea2",
+      "raw_games": {
+        "path": "results/raw/dense2550-vs-unchanged-native-teacher-73ea79055c39.jsonl.gz",
+        "uncompressed_sha256": "73ea79055c391e80f78486066f08a9ebc377257173fd7969bd91e0d37bc842fa"
+      }
+    }
+  ],
+  "evidence_sha256": {
+    "results/spatial-policy-research-protocol.json": "caa755182a2cb8ff2d36ff5517738827e61320cab65a5f34f41004a9aab337c3",
+    "results/spatial-policy-evaluation-queue-recipe.json": "2002a6887343fc6ef024bd61e2e43eea5e3500a49a45c29faf84bda6b3785034",
+    "results/spatial-policy-relative50-evaluation-plan.json": "ed88e80074e4f8a554f37f6a79c4b135f80a4d51ce1fc86d1096d88cab87f662",
+    "results/spatial-policy-dense2550-evaluation-plan.json": "614e2868fdc6d31811263e73699b9f3a2c538960b2fe865ec4e106d5fc22aa8d",
+    "results/20261027-spatial-policy-dense2550-training.json": "c4341104c44b460ba91938bc803b79a42c36813105c50bdaf936e5b6c1610977",
+    "results/20261027-spatial-policy-relative50-training.json": "d3a0cc22eb17c0f216524ae9513c1979ec18b790cf2b19ca585721f0f05200ad",
+    "results/spatial-relative-warm-confirmation-plan.json": "79f4f63fb6343073e3587df6c76348f2125565820c07d0a7c9cd18c036023fd9"
+  },
+  "decision": {
+    "relative_vs_old_warm": "Development gain; unchanged artifact enters a fresh fixed200-game/100-pair confirmation. Old warm is an internal reference, not a final strong-suite opponent.",
+    "relative_vs_matched_dense": "Paired interval includes50%; no established decoder-only playing-strength advantage.",
+    "unchanged_native_teacher": "Both arms score1.5625%; no teacher-strength gain.",
+    "public_push": "No push based on this single development campaign.",
+    "tech_report_gate_met": false
+  },
+  "limitations": [
+    "One training seed, fixed development seeds and reused checkpoint-selection data.",
+    "New relative versus old warm changes body width, initialization, fit and decoder; it is not a decoder-only comparison.",
+    "Relative versus dense holds the backbone and training recipe fixed but changes decoder structure and parameter count together.",
+    "No multiple-comparison adjustment or all-opponent superiority claim.",
+    "Teacher-policy supervised pretraining is not new self-play RL; the separate self-play update regresses."
+  ]
+}

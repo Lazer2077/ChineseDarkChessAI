@@ -1,0 +1,4540 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "scope": "Archive the one completed current-policy relative-decoder RL iteration only after both frozen native strength screens and independent audits finish. Include complete source-rule replay audits, actual optimizer budget, validation selection, exact played model digest and all positive/negative/technical flags. No promotion or final-suite conclusion.",
+  "archive_plan_sha256": "b6fb03b62645f79deb1d6a192dd6fac7d6ec472bb479cb9485772f8a9773c433",
+  "series_plan_sha256": "c7fde7508f6f26f3b3633985d0aea0c2ba5124caf1281d27265b66d12a4c3032",
+  "generation_plan_sha256": "9e23eafb244c5ae397f0b96020eae6efc7ce7e2f00433d03d562182aa0219f42",
+  "training_plan_sha256": "bcf53c30c413682d737241a12b44204fb33a48f66a442ddca97d1d56d9032b20",
+  "initial_model_sha256": "e43ff2aaf276fe8d5700da12c0ca00f1bdd9882f676dc1c51c3ed809dac28c1f",
+  "model_sha256": "1f6bf7acb49b23439104318c8bc31c196570f4bb4614164f39f75823ae379a2e",
+  "policy_head": "relative50",
+  "selected_epoch": 4,
+  "games": 288,
+  "positions": 16009,
+  "epochs": 4,
+  "updates": 448,
+  "initial_validation": {
+    "loss": 6.680244461842465,
+    "search_policy_ce": 5.735707469787892,
+    "terminal_value_mse": 0.9445369920545728
+  },
+  "training_curve": [
+    {
+      "epoch": 1,
+      "updates": 112,
+      "train_policy_ce": 4.087439867742186,
+      "train_terminal_mse": 0.7394645354656619,
+      "validation": {
+        "loss": 4.621192084034742,
+        "search_policy_ce": 3.693365347253968,
+        "terminal_value_mse": 0.9278267367807734
+      },
+      "seconds": 4.519348297268152
+    },
+    {
+      "epoch": 2,
+      "updates": 224,
+      "train_policy_ce": 3.4425023206150915,
+      "train_terminal_mse": 0.6837966128551345,
+      "validation": {
+        "loss": 4.338683233031838,
+        "search_policy_ce": 3.442078718991386,
+        "terminal_value_mse": 0.8966045140404522
+      },
+      "seconds": 10.951491808518767
+    },
+    {
+      "epoch": 3,
+      "updates": 336,
+      "train_policy_ce": 3.305631163285271,
+      "train_terminal_mse": 0.6382399801495451,
+      "validation": {
+        "loss": 4.246919143222701,
+        "search_policy_ce": 3.362071882831274,
+        "terminal_value_mse": 0.8848472603914267
+      },
+      "seconds": 17.45349100418389
+    },
+    {
+      "epoch": 4,
+      "updates": 448,
+      "train_policy_ce": 3.2530399818425995,
+      "train_terminal_mse": 0.6031065366427885,
+      "validation": {
+        "loss": 4.221663570233517,
+        "search_policy_ce": 3.330671041333335,
+        "terminal_value_mse": 0.8909925289001813
+      },
+      "seconds": 23.14009979367256
+    }
+  ],
+  "episodes": [
+    {
+      "index": 0,
+      "seed": 9700001,
+      "positions": 60,
+      "npz_sha256": "330bb52cd4b01b8672f2c20651b750bd1ca684595433bcb9e6ce968032000309",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 1,
+      "seed": 9700002,
+      "positions": 101,
+      "npz_sha256": "de292569ccd1514010301ad637c83b3f7a5b07732d0fbd581099f47092f9d4a6",
+      "audit": {
+        "positions_replayed": 101,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 2,
+      "seed": 9700003,
+      "positions": 21,
+      "npz_sha256": "7d2bdcced52a2acae422604feac1727c3fef571d5fd2c6d320a3cc705a29d17b",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 3,
+      "seed": 9700004,
+      "positions": 49,
+      "npz_sha256": "4638f51a90aed2e3b22b2c6e4ac1f4bb7504e05b023149fedb0b5921553e87e2",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 4,
+      "seed": 9700005,
+      "positions": 63,
+      "npz_sha256": "65f39d692fdbe82685de793112b2ec3d8ebb13e3342c01ed48a7c2dc5ed70fdf",
+      "audit": {
+        "positions_replayed": 63,
+        "fully_public_positions": 0,
+        "private_dark_captures": 8,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 5,
+      "seed": 9700006,
+      "positions": 50,
+      "npz_sha256": "26f2b3d3f5a05ffb4ee352283264a1aea8421cf58a7db1a633fe9d49a8eb9a7d",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 6,
+      "seed": 9700007,
+      "positions": 52,
+      "npz_sha256": "a1924a306ff7b74d9209b53de251b14d94e7f0b310ebc7929fa26c1788f28469",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 7,
+      "seed": 9700008,
+      "positions": 58,
+      "npz_sha256": "5ae103339af0a8b660be4d9c8166ecd3eba2a6751666936c8c08dd32e9f1754b",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 8,
+      "seed": 9700009,
+      "positions": 94,
+      "npz_sha256": "ead93c14ba8de803b23f7441f39f4139f383787039013731d8d2a6692b0148d3",
+      "audit": {
+        "positions_replayed": 94,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 9,
+      "seed": 9700010,
+      "positions": 13,
+      "npz_sha256": "fbaf08acf405abdc77004aafb2d205e1425fe38377b2b413a62f7c17af16bcf1",
+      "audit": {
+        "positions_replayed": 13,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 10,
+      "seed": 9700011,
+      "positions": 49,
+      "npz_sha256": "401ef9b4b733d9c575e23673f59aa1704f288582bb4a7a5dd6b60dc19aa4538b",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 11,
+      "seed": 9700012,
+      "positions": 24,
+      "npz_sha256": "1d61f9c94c7150e3a75e7d49575dc1aa62d986ebd488f92dacbf46e825dda5c1",
+      "audit": {
+        "positions_replayed": 24,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 12,
+      "seed": 9700013,
+      "positions": 19,
+      "npz_sha256": "b80616a8ce1ec108f85836fa9a7cd274d601c94e5d3640d35b43fcd1b03d4a6a",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 13,
+      "seed": 9700014,
+      "positions": 19,
+      "npz_sha256": "a78505a3016776d3d7f4c6d46fb29e4f8e764369343dfd4ba1f8462c43b9eb7b",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 14,
+      "seed": 9700015,
+      "positions": 57,
+      "npz_sha256": "3eba653ea23920dfdf96ce862fb90402516b081e6b173fd0f02944a1c57b96ad",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 15,
+      "seed": 9700016,
+      "positions": 139,
+      "npz_sha256": "a21be5c80cf67ce946f70dd94838355b073607239da5db89cdc99d220ee45fab",
+      "audit": {
+        "positions_replayed": 139,
+        "fully_public_positions": 58,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 16,
+      "seed": 9700017,
+      "positions": 13,
+      "npz_sha256": "aea260cd136b53826dc5a756655ca4ebf1c54b4a84d2c6f261acd0ed58709ee2",
+      "audit": {
+        "positions_replayed": 13,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 17,
+      "seed": 9700018,
+      "positions": 55,
+      "npz_sha256": "96cab5030bfd01f6335653e2a84e07f14dc9fa0cbfc80589b6eb780ffd8e96ef",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 18,
+      "seed": 9700019,
+      "positions": 36,
+      "npz_sha256": "4dc401c1c13136de505860142c25d0da94a5011f386b23c158bb748f7de4fd57",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 19,
+      "seed": 9700020,
+      "positions": 43,
+      "npz_sha256": "c5d2bdbe7303a9d5a81431fa2b496f78cc6e0a4c287342ad74b46ff71846f18b",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 20,
+      "seed": 9700021,
+      "positions": 51,
+      "npz_sha256": "9d669e7052dfcb48e20012334e7abeed6b6c0346f130deedea5ade84a57e1cdd",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 21,
+      "seed": 9700022,
+      "positions": 42,
+      "npz_sha256": "544e6390c78b431b72ad95063d2dec4a2579946b5fdbf0c748b83619a8d981f1",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 22,
+      "seed": 9700023,
+      "positions": 55,
+      "npz_sha256": "21b9ce3e78d779166b3c25cf45c2b7d9d5364134a07615a7cc1f08abfb17a1fc",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 23,
+      "seed": 9700024,
+      "positions": 75,
+      "npz_sha256": "9669e50da668710868baa72cd867ae24480207814d93b46a70514cf5ca26fa70",
+      "audit": {
+        "positions_replayed": 75,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 24,
+      "seed": 9700025,
+      "positions": 60,
+      "npz_sha256": "91f65893f89ecd93ed64c2f7f1903e899219cf8586757580ac788bc065a683ed",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 25,
+      "seed": 9700026,
+      "positions": 62,
+      "npz_sha256": "e33035cd1a76120e84b6b40100cd7a3c9bf767145356c93c7181998d05e5be28",
+      "audit": {
+        "positions_replayed": 62,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 26,
+      "seed": 9700027,
+      "positions": 33,
+      "npz_sha256": "4fbc863761afab58527d2ab719c5603fc4dde38662091c03ad9b6bc06bf4f9aa",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 27,
+      "seed": 9700028,
+      "positions": 82,
+      "npz_sha256": "45d8540c2e1e369ea19d83b674527f4330dff529893786ad4247cd1c4ae612f2",
+      "audit": {
+        "positions_replayed": 82,
+        "fully_public_positions": 1,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 28,
+      "seed": 9700029,
+      "positions": 35,
+      "npz_sha256": "dc8e344662184b810a185151360815482b299723600c18c0b68a5b41a1ca88ab",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 29,
+      "seed": 9700030,
+      "positions": 47,
+      "npz_sha256": "af2f491b6718970b90075aee0d5df5b65b01544a867209fdfed215195e38283e",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 30,
+      "seed": 9700031,
+      "positions": 96,
+      "npz_sha256": "84d4760ccb5dc86e306a6bcb3b2c3ffd1f6af774f28510099d9e8bc92d23659b",
+      "audit": {
+        "positions_replayed": 96,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 31,
+      "seed": 9700032,
+      "positions": 36,
+      "npz_sha256": "bd22169104a8dc7c3e59f0cd06b8f7a42a440b8b51282fc8fcb47a970479447a",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 32,
+      "seed": 9700033,
+      "positions": 47,
+      "npz_sha256": "a0e7deacb20249559b5b8003ce592325d8f8d93689985e9ee2c3622b913ddebd",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 33,
+      "seed": 9700034,
+      "positions": 106,
+      "npz_sha256": "0b1f609901fe71d3ab8e143ead1f63537a0dbb1cd7812ca21e022d4a9e27b8f5",
+      "audit": {
+        "positions_replayed": 106,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 34,
+      "seed": 9700035,
+      "positions": 95,
+      "npz_sha256": "0b8a7cb8e3a4c2147eb3aee3509b1756366b9364f476d936f04fb5caf8c16036",
+      "audit": {
+        "positions_replayed": 95,
+        "fully_public_positions": 39,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 35,
+      "seed": 9700036,
+      "positions": 61,
+      "npz_sha256": "882288133719d6f74ece53971bed1338b6c642ffe4e8ec5542d80bce07daca06",
+      "audit": {
+        "positions_replayed": 61,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 36,
+      "seed": 9700037,
+      "positions": 24,
+      "npz_sha256": "497c07c9a21e2139f00e4b37b89c9d44edfdc410ef57c91e58dab8d26749de03",
+      "audit": {
+        "positions_replayed": 24,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 37,
+      "seed": 9700038,
+      "positions": 55,
+      "npz_sha256": "45670a4d69e2047cfaab50545331d11b63740ac98b01cd2238c32043dbf10ad8",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 38,
+      "seed": 9700039,
+      "positions": 36,
+      "npz_sha256": "1ed486d501b567b8b8e18eb6a054b3f85d16947a596dc8289743e602ca6a218e",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 39,
+      "seed": 9700040,
+      "positions": 70,
+      "npz_sha256": "baf23ff21d7b5bfa42834770c3f0194dedcd9439e7303e0fa5169d1014d610ee",
+      "audit": {
+        "positions_replayed": 70,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 40,
+      "seed": 9700041,
+      "positions": 57,
+      "npz_sha256": "977f65f2d24f35afbecd005c3dc52031901871c2f5d09ef31c20f7ee5815fd16",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 41,
+      "seed": 9700042,
+      "positions": 78,
+      "npz_sha256": "7206e59e008ebe5c2c40182ae4369ac9c9857b9d50415b2846d8da0849b926e5",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 7,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 42,
+      "seed": 9700043,
+      "positions": 37,
+      "npz_sha256": "a7b793c4c5edf52af641bc8ae4099c1541c61b597ad19c996f3e259ca7cd6e69",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 43,
+      "seed": 9700044,
+      "positions": 31,
+      "npz_sha256": "37c8c32419523f7c9b194b364a41e7a8ff0cd381e4105ad5b657598f0b7f2806",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 44,
+      "seed": 9700045,
+      "positions": 81,
+      "npz_sha256": "df0789f8f81f93e729ff89072c181b4b95c4045600aae0f0900884a90aec47ab",
+      "audit": {
+        "positions_replayed": 81,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 45,
+      "seed": 9700046,
+      "positions": 57,
+      "npz_sha256": "6fe3f4008fb73a072e7b24774f5902b735a4cb08eba0ff12e7e335ffef114d85",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 46,
+      "seed": 9700047,
+      "positions": 87,
+      "npz_sha256": "8cb97c1ac2f91526f2892970d9b0ee206c0bfae47409628e15afc7bd1a611c76",
+      "audit": {
+        "positions_replayed": 87,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 47,
+      "seed": 9700048,
+      "positions": 32,
+      "npz_sha256": "baf49942632590670220f58efc55fa827ec2c4503a15a83624f6ab7755a3bebf",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 48,
+      "seed": 9700049,
+      "positions": 27,
+      "npz_sha256": "24e047cdaacef75d0f91e36ec8189057f727844bf7b73b68901a3a3e3c18b846",
+      "audit": {
+        "positions_replayed": 27,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 49,
+      "seed": 9700050,
+      "positions": 107,
+      "npz_sha256": "9e907dcc2b9ce564060ecfa0fd88cf8e610f1f9b487241b9bf2dcd15ae42ea8d",
+      "audit": {
+        "positions_replayed": 107,
+        "fully_public_positions": 7,
+        "private_dark_captures": 9,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 50,
+      "seed": 9700051,
+      "positions": 21,
+      "npz_sha256": "14c94baafade58c40b95a8a6d3e55b1335b216fc0528e157304d00e428b47497",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 51,
+      "seed": 9700052,
+      "positions": 41,
+      "npz_sha256": "852da03a1e5988f32d4f1d4eb4fac0ea75276b05ac0349ff47ed0892e59ed22f",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 52,
+      "seed": 9700053,
+      "positions": 34,
+      "npz_sha256": "c78a5ff6c3ac34542d08fdcfa61ddf58f4a6989089f0e8e50bbe5c2af610bc40",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 53,
+      "seed": 9700054,
+      "positions": 73,
+      "npz_sha256": "3fdc6341d5191a4e7b9d319d2741c836f83c5cf44aa640ee30bebdc246e77315",
+      "audit": {
+        "positions_replayed": 73,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 54,
+      "seed": 9700055,
+      "positions": 55,
+      "npz_sha256": "b7883f97588d098306bd271a63c29706dd5a5453e16165019538840913cdd131",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 55,
+      "seed": 9700056,
+      "positions": 46,
+      "npz_sha256": "4eeaab315c65d5d62f9bffb52b01123c41ce0fe4ae4f8334a25f284871f2bf42",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 56,
+      "seed": 9700057,
+      "positions": 45,
+      "npz_sha256": "75b0c116568b9efda3d50c39af58aff76d747ef16dfa018f3018c2f0b068810d",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 57,
+      "seed": 9700058,
+      "positions": 53,
+      "npz_sha256": "11e56a4b125b462462311e24be1d544f18fd1b15ad674612bbf24d6113432e7a",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 58,
+      "seed": 9700059,
+      "positions": 20,
+      "npz_sha256": "7a9486faec3d451796fd55a015acb4e9fdab488a90ade6d197632e34b55be567",
+      "audit": {
+        "positions_replayed": 20,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 59,
+      "seed": 9700060,
+      "positions": 47,
+      "npz_sha256": "8b1d88db8f67b687ec29923d7e7d0aa5bea254a17bd008e537221789bbb2a0f9",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 60,
+      "seed": 9700061,
+      "positions": 82,
+      "npz_sha256": "ed8c5001b2547fe6eb89bff171c92ff2bc6910e2b40377f91e393340775ec473",
+      "audit": {
+        "positions_replayed": 82,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 61,
+      "seed": 9700062,
+      "positions": 62,
+      "npz_sha256": "fcd888311f75932b552f8926c466681b29bad148231d3899203da7ddd0b41f97",
+      "audit": {
+        "positions_replayed": 62,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 62,
+      "seed": 9700063,
+      "positions": 24,
+      "npz_sha256": "d67cfcec58814f972dadc252e9b48a744ee6d0634f4256c4dbe3039dc2041c16",
+      "audit": {
+        "positions_replayed": 24,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 63,
+      "seed": 9700064,
+      "positions": 117,
+      "npz_sha256": "5db8e3376f7eb4f38d45df58abae3b44fc37f4142690c5d8c453225756f8768e",
+      "audit": {
+        "positions_replayed": 117,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 64,
+      "seed": 9700065,
+      "positions": 42,
+      "npz_sha256": "c1a9eebea190c3e42e353545f4f37c6f2f9f71c618b253c16febdb7c9f9a3a08",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 65,
+      "seed": 9700066,
+      "positions": 34,
+      "npz_sha256": "6bb96342665e4c9aa32e31ec22b4b54bc63cae55431f975264619db6956fb43e",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 66,
+      "seed": 9700067,
+      "positions": 58,
+      "npz_sha256": "e938688749b5d940361cd5d068ac308264625a0e3deed5b7a0bc2a59a4b2ee04",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 67,
+      "seed": 9700068,
+      "positions": 24,
+      "npz_sha256": "893f0e2eb278a69bca7bdb5eace122813870a9b032657671f01be2a72e4643a6",
+      "audit": {
+        "positions_replayed": 24,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 68,
+      "seed": 9700069,
+      "positions": 58,
+      "npz_sha256": "589f466239c4c4778258249eb4351599a1f5713bc5e1458489fade42e40115fc",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 69,
+      "seed": 9700070,
+      "positions": 15,
+      "npz_sha256": "e3a5c52a1a20dcf5f7de509a8918e4aeda83d9319b1722ae23f98cd4478fbdf3",
+      "audit": {
+        "positions_replayed": 15,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 70,
+      "seed": 9700071,
+      "positions": 78,
+      "npz_sha256": "8eadbafee13cae1d7537acb8c20753fb1e0c3362d8791d41e1f74e9b20d4e7fa",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 8,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 71,
+      "seed": 9700072,
+      "positions": 38,
+      "npz_sha256": "ac3a6d8bbf22edd6111c612541d775fc0bbb0127b7c4f11c7bd5a7d5b6059d70",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 72,
+      "seed": 9700073,
+      "positions": 40,
+      "npz_sha256": "0829fb20e5e2299ab8511d5a9ddfe5e6f2c2eb0b5c01a1b138e2252dcab41cad",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 73,
+      "seed": 9700074,
+      "positions": 51,
+      "npz_sha256": "04d3f62d7b555463e4a6469040d48378c43958878ecadccb5a251b1c679179d2",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 74,
+      "seed": 9700075,
+      "positions": 47,
+      "npz_sha256": "faa8135de11930d9bd705e3e7e0001e3d3403753c5d583c0c04711a3fa87b6e2",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 75,
+      "seed": 9700076,
+      "positions": 31,
+      "npz_sha256": "4cfaf1f907561fd7de6f18196c5568b7d23e035513115d31d2c8c31c53489dac",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 76,
+      "seed": 9700077,
+      "positions": 135,
+      "npz_sha256": "2e4d7f925a9fd37d858e46cc1e7ee412c2a8ba4a7b6df6ddc2064004546f1cb6",
+      "audit": {
+        "positions_replayed": 135,
+        "fully_public_positions": 23,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 77,
+      "seed": 9700078,
+      "positions": 48,
+      "npz_sha256": "36edd37aa9c6a8e60a0d5ec1d617f1f9fa937789fa704e586d8b17c5c7ecfa5e",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 78,
+      "seed": 9700079,
+      "positions": 106,
+      "npz_sha256": "69846a2e41c99c3c457c92e06925f6ad0995ced2df9b51d49f20d8c0130f33c4",
+      "audit": {
+        "positions_replayed": 106,
+        "fully_public_positions": 30,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 79,
+      "seed": 9700080,
+      "positions": 68,
+      "npz_sha256": "1c5b016c984bfb5c80321658503a066201022562a5d58666db12740adb5a66ee",
+      "audit": {
+        "positions_replayed": 68,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 80,
+      "seed": 9700081,
+      "positions": 37,
+      "npz_sha256": "4660b954d7efccca6beab17e71b10be5fc33c3ed2c491fae7d1273ad9335e67a",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 81,
+      "seed": 9700082,
+      "positions": 29,
+      "npz_sha256": "b2749de7e0031f83040a137dd427e23835eb600fb6bc6a197ba26669b0ed1c18",
+      "audit": {
+        "positions_replayed": 29,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 82,
+      "seed": 9700083,
+      "positions": 36,
+      "npz_sha256": "5e74468698b208c2d46b04f12f0441ff126694eba09dbe284b287563a87c1884",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 83,
+      "seed": 9700084,
+      "positions": 41,
+      "npz_sha256": "f3922c5c91f59b0c5e46121f4ad0d25d95e33b7f03fab555c175b673e663c5a9",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 84,
+      "seed": 9700085,
+      "positions": 21,
+      "npz_sha256": "106cbb2e53687ec62cf8671bbefda47d1b5c48324bd2953526db02abb2154331",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 85,
+      "seed": 9700086,
+      "positions": 31,
+      "npz_sha256": "6ac91ed3bc212936e63a795a47d73c1a80d676f95a48e95a287c48f362227f7a",
+      "audit": {
+        "positions_replayed": 31,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 86,
+      "seed": 9700087,
+      "positions": 92,
+      "npz_sha256": "2e99b6b922d032d720aa726edd4e4c3b882857e62266e616ac8ed7a9ae7de963",
+      "audit": {
+        "positions_replayed": 92,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 87,
+      "seed": 9700088,
+      "positions": 108,
+      "npz_sha256": "88db44a367956a819fc7e64594133cc6f13f55587848077c568abb429c46a12e",
+      "audit": {
+        "positions_replayed": 108,
+        "fully_public_positions": 27,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 88,
+      "seed": 9700089,
+      "positions": 46,
+      "npz_sha256": "5f771ec0f499ffa83a2fb91db7183ee11e0cd669f11d3ac20924b2ea1e346de7",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 89,
+      "seed": 9700090,
+      "positions": 56,
+      "npz_sha256": "f4564dde72d49934284852a910d1aa141b030dfa29d7daed11d2bbb73fd14ca9",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 90,
+      "seed": 9700091,
+      "positions": 69,
+      "npz_sha256": "a4d3b362b6dd46dcf74e550a0080e5faf2bbd4a6c8f7d506116a2045a20593ea",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 91,
+      "seed": 9700092,
+      "positions": 24,
+      "npz_sha256": "70af92b99fb4cdce974478f15f407c7aea92ceaa3ea35b0ad2039ee62eaf133f",
+      "audit": {
+        "positions_replayed": 24,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 92,
+      "seed": 9700093,
+      "positions": 105,
+      "npz_sha256": "d751ff998939c5460c533c718d98360a56965bb96a1818276d9fbc40d69afc73",
+      "audit": {
+        "positions_replayed": 105,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 93,
+      "seed": 9700094,
+      "positions": 26,
+      "npz_sha256": "b2d18e5b96d4c57707fcaa4ea14a1320ef10bbdaedb7e69d519aa54c1aacbfc8",
+      "audit": {
+        "positions_replayed": 26,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 94,
+      "seed": 9700095,
+      "positions": 28,
+      "npz_sha256": "b272908e57964495de26026b736c902e534f190c25c4fb133629665b603754bd",
+      "audit": {
+        "positions_replayed": 28,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 95,
+      "seed": 9700096,
+      "positions": 112,
+      "npz_sha256": "18fbee3fc5121c055f3406de922b5cce603be11e1249c81aee66614172badad2",
+      "audit": {
+        "positions_replayed": 112,
+        "fully_public_positions": 33,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 96,
+      "seed": 9700097,
+      "positions": 59,
+      "npz_sha256": "7013aeb299405575f98f7cefe1661cd9021baf9897a816de3e296b9571dbffed",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 97,
+      "seed": 9700098,
+      "positions": 78,
+      "npz_sha256": "5d4623309e9fe591954bf02f4485b3b723e69c62f5d4141bb50a56151e427266",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 98,
+      "seed": 9700099,
+      "positions": 33,
+      "npz_sha256": "39ed9803d1513114691c4d9e76890a19270ff71fbc4b08db515e056a466e3095",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 99,
+      "seed": 9700100,
+      "positions": 77,
+      "npz_sha256": "34c750cacadf646b57d372388262abc5b38cede50c9e6cf68c6a9103e79575ed",
+      "audit": {
+        "positions_replayed": 77,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 100,
+      "seed": 9700101,
+      "positions": 98,
+      "npz_sha256": "7b9690da47e449cbc2c3e53b2d65175be048a7c78def05d8d11a0149062801ca",
+      "audit": {
+        "positions_replayed": 98,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 101,
+      "seed": 9700102,
+      "positions": 57,
+      "npz_sha256": "51f6cc74acc5b702a1b8ec5a73e89f011d40dc837b20383db70c7711d1956385",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 102,
+      "seed": 9700103,
+      "positions": 93,
+      "npz_sha256": "826c81a1dd756fa398285b8c9660bddd4ade0a7b69b709f651a0bd188056d51b",
+      "audit": {
+        "positions_replayed": 93,
+        "fully_public_positions": 40,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 103,
+      "seed": 9700104,
+      "positions": 56,
+      "npz_sha256": "86c168de2e7ab9359e981f41ee121155284e265867dec383e4b5d418895ae2b2",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 104,
+      "seed": 9700105,
+      "positions": 36,
+      "npz_sha256": "5de1f785fd1cc27ea20728f49f64bab583043230b700b56c2e2bae111e073120",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 105,
+      "seed": 9700106,
+      "positions": 40,
+      "npz_sha256": "98433ddd0acf339554c10146a0543bd52a616c9ffda800193e422ef63a89538a",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 106,
+      "seed": 9700107,
+      "positions": 35,
+      "npz_sha256": "e5737356a5408aa786dc484ba4e350618184692aab9842c037f6249ffbd68c4e",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 107,
+      "seed": 9700108,
+      "positions": 59,
+      "npz_sha256": "d25016f47114efe145b61d0e0ecd2113bf378a8ef33bb19578d9f3c2e455d00b",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 108,
+      "seed": 9700109,
+      "positions": 18,
+      "npz_sha256": "7d67baa180ad12eb424e9b22f297dd1858bfcfa9efd82c8f45bd8e892b966fa1",
+      "audit": {
+        "positions_replayed": 18,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 109,
+      "seed": 9700110,
+      "positions": 50,
+      "npz_sha256": "760e8d34519ae6c3fafc473a2fd29fb3d82344c4d9ad16bb7983f0354add6f83",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 110,
+      "seed": 9700111,
+      "positions": 124,
+      "npz_sha256": "c118e496a5c7fd6313936dddb1a52b79c4172667202e06ad1b19f3c9400a0003",
+      "audit": {
+        "positions_replayed": 124,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 111,
+      "seed": 9700112,
+      "positions": 41,
+      "npz_sha256": "2be21b016af3ed88955831faa2d270f5e19058a07208156657f54a453795abd9",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 112,
+      "seed": 9700113,
+      "positions": 104,
+      "npz_sha256": "1ec42b6d296dca92e6280970236c524ab05c555211c34b279695ecf2e121a96e",
+      "audit": {
+        "positions_replayed": 104,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 113,
+      "seed": 9700114,
+      "positions": 44,
+      "npz_sha256": "757eccbdfad6cb4bcdbd12d4f2431f292d2c8f64120fa5abd2852551cf4277b6",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 114,
+      "seed": 9700115,
+      "positions": 42,
+      "npz_sha256": "8e81806ed34a3dcb569819b82ebd712834c775d584cb88cb67b689a56064a878",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 115,
+      "seed": 9700116,
+      "positions": 126,
+      "npz_sha256": "f72a68facaf7f42dab17faee56dd318c69146864ffd03da023c1badfbd2d30e4",
+      "audit": {
+        "positions_replayed": 126,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 116,
+      "seed": 9700117,
+      "positions": 30,
+      "npz_sha256": "024a07a2f14686a908a20f52f2f3f3ed0637a5f9a77b8247980d886961546038",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 117,
+      "seed": 9700118,
+      "positions": 58,
+      "npz_sha256": "e02fea2693070ef5f76df84cdd2ff5fb36b3f9cc54f107b8a1de9ea50efe6d7e",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 118,
+      "seed": 9700119,
+      "positions": 70,
+      "npz_sha256": "ee518eef9af91333a410bf90d521d6f0bd520b67de98ebb48521021a687de309",
+      "audit": {
+        "positions_replayed": 70,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 119,
+      "seed": 9700120,
+      "positions": 27,
+      "npz_sha256": "4eaadb83c1b57296eedb3bf69b1b5207c8f48a79fd63083a7928488bcb0ed046",
+      "audit": {
+        "positions_replayed": 27,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 120,
+      "seed": 9700121,
+      "positions": 57,
+      "npz_sha256": "cd52e563bbd3c59c36d46a67a83c583cb11081792cc99517ab0698f6ba95405e",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 121,
+      "seed": 9700122,
+      "positions": 48,
+      "npz_sha256": "f0716de15a1d59d7a2f58d86088fb0fc911f631d3caff3edc4bc6dedcc7c4d31",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 122,
+      "seed": 9700123,
+      "positions": 59,
+      "npz_sha256": "5ac01c869eaa5658820a3eee32412cba9edef5df5dd4956eb65c655e3f62abc6",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 123,
+      "seed": 9700124,
+      "positions": 37,
+      "npz_sha256": "db1074379ad3c220aabec862ebfafa5bd3e9a05af167d68c5013187e58069ee8",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 124,
+      "seed": 9700125,
+      "positions": 67,
+      "npz_sha256": "609a0533ad385a80826a80c86c93bb31642274a775a2414d895ee892d52f2342",
+      "audit": {
+        "positions_replayed": 67,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 125,
+      "seed": 9700126,
+      "positions": 46,
+      "npz_sha256": "bc5d8909c4d1c8ddf86c245d067423f3e3efa507dc9f6df312988efd9d944055",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 126,
+      "seed": 9700127,
+      "positions": 52,
+      "npz_sha256": "c8daabaddf3b86cd212e6b647cd22b651ea383e3fcb896cc737ee819d998ed17",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 127,
+      "seed": 9700128,
+      "positions": 44,
+      "npz_sha256": "dbbcb82e00e08bfbe5a914727c429c88ab65865b96f448266330c5179e9bae4f",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 7,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 128,
+      "seed": 9700129,
+      "positions": 100,
+      "npz_sha256": "f009a30fc35a6eeeba2bf84373355f63c99a95a4d18cd9827030ee5d483f3c5e",
+      "audit": {
+        "positions_replayed": 100,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 129,
+      "seed": 9700130,
+      "positions": 121,
+      "npz_sha256": "cd6152ba7025bce0ba6da536e67998495befb96144ba4fbee9bbe1d9512d3343",
+      "audit": {
+        "positions_replayed": 121,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 130,
+      "seed": 9700131,
+      "positions": 45,
+      "npz_sha256": "e5de74b6927c239af503ef83f258eada64f5086e1763704494ebe3fe6af0148e",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 131,
+      "seed": 9700132,
+      "positions": 33,
+      "npz_sha256": "6b5168085d1e371cacb04706e442ef9c2bd3a5cc8dff9faacc5d220fec2ba83f",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 132,
+      "seed": 9700133,
+      "positions": 28,
+      "npz_sha256": "711f15a569b5ae4869320237021ca001db4159ec93611210900610d160d08e8b",
+      "audit": {
+        "positions_replayed": 28,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 133,
+      "seed": 9700134,
+      "positions": 41,
+      "npz_sha256": "4048accd044143ebf6315c2083fe572e4e6d36590d0b0904ed4ee8840cc014f9",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 134,
+      "seed": 9700135,
+      "positions": 21,
+      "npz_sha256": "c70c500053cd7cf64b618c7a6f5d0a9e4bacbec86528c73a5047d404e21200e5",
+      "audit": {
+        "positions_replayed": 21,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 135,
+      "seed": 9700136,
+      "positions": 37,
+      "npz_sha256": "3003891267f6facb114947e9a9837f05fee3a1228ccca3413d22225e28ade7c5",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 136,
+      "seed": 9700137,
+      "positions": 66,
+      "npz_sha256": "96b790300a5fa595cf4af0e7db60245b20fbfabb9c12118bd036ccb503ba5ae7",
+      "audit": {
+        "positions_replayed": 66,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 137,
+      "seed": 9700138,
+      "positions": 33,
+      "npz_sha256": "8105579add7c514bc75d50cfae6bdc38e558fe1182a6233054e338fd2bf0c61f",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 138,
+      "seed": 9700139,
+      "positions": 101,
+      "npz_sha256": "6cf5765e5b38c74512c3ddc79814af984fcedd4e83f402be3a7caf3717795f03",
+      "audit": {
+        "positions_replayed": 101,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 139,
+      "seed": 9700140,
+      "positions": 89,
+      "npz_sha256": "4ffd08c3f697e5ac2f09b248f26b94045ee833119f0778fece9309bd47a90fa7",
+      "audit": {
+        "positions_replayed": 89,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 140,
+      "seed": 9700141,
+      "positions": 52,
+      "npz_sha256": "9a7937b59893c7083a6807c34f5db410ccce2082b042ff75e9e8c46b3a8c0a8c",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 141,
+      "seed": 9700142,
+      "positions": 52,
+      "npz_sha256": "991cbb556b905efeb5820a6d8f0b4e14f1a0915b3b7a3663c3af08b13c059143",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 142,
+      "seed": 9700143,
+      "positions": 58,
+      "npz_sha256": "3037d7c7c1219402214b741a07575164e96d3dfa0659d33e04b8e4466cba0cfe",
+      "audit": {
+        "positions_replayed": 58,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 143,
+      "seed": 9700144,
+      "positions": 43,
+      "npz_sha256": "03bdc3d81ea936e386a9cb387110483028a76b06bd3d4c808f67356effa7b506",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 144,
+      "seed": 9700145,
+      "positions": 46,
+      "npz_sha256": "0e0a0fa0fbca056f281737591f83e4686b710437064a934d952d6d08e148b6c2",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 145,
+      "seed": 9700146,
+      "positions": 43,
+      "npz_sha256": "779fd77f05d95f27746b23a8f657045e9c89e0874a8c328a97be6ad980dd5372",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 146,
+      "seed": 9700147,
+      "positions": 51,
+      "npz_sha256": "c6586183b1ce0df8bc6576ddb809cc8a11c6ef03d1c1fa2e0b6d0f75fa8632fe",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 147,
+      "seed": 9700148,
+      "positions": 48,
+      "npz_sha256": "67968ef986c58bd464e08ecda517d458f657d823eec00a50368cef0802ab399c",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 148,
+      "seed": 9700149,
+      "positions": 37,
+      "npz_sha256": "fbd40487877e51a449592eb98737c30cf099603356a222ccb271ef063d557e7a",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 149,
+      "seed": 9700150,
+      "positions": 78,
+      "npz_sha256": "a0fea48268fef5d13237c1770fade8859ff56aba011c14e6f8e5ecb5c6340b20",
+      "audit": {
+        "positions_replayed": 78,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 150,
+      "seed": 9700151,
+      "positions": 56,
+      "npz_sha256": "8c5c6fcbae7b45d77e3ae54d8931e13f67c4ee9bb86d4c135aa5be78928e62a4",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 151,
+      "seed": 9700152,
+      "positions": 14,
+      "npz_sha256": "b2fcd41b8ed216ccbff3fa5f0f9b5524ee85fc99a41dfc713abed6d79ea32826",
+      "audit": {
+        "positions_replayed": 14,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 152,
+      "seed": 9700153,
+      "positions": 41,
+      "npz_sha256": "b96ba594736756947191db6cc2a8a7065238e570e0d3ffb011201b1e518e5f6e",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 153,
+      "seed": 9700154,
+      "positions": 42,
+      "npz_sha256": "71a0776ce9e4ef625a26b2c84459c9bafe0cc44347945618412eed7e7ec54c5e",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 154,
+      "seed": 9700155,
+      "positions": 52,
+      "npz_sha256": "3c2bbb286073c5e75a3a446bbc26d5a8cbbe50890e8350c70229f23f2abc2cae",
+      "audit": {
+        "positions_replayed": 52,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 155,
+      "seed": 9700156,
+      "positions": 46,
+      "npz_sha256": "6220536e1403e2b744220d9cf0c29beec325ea8ecbcf052eeb16f012f57e826a",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 156,
+      "seed": 9700157,
+      "positions": 81,
+      "npz_sha256": "3d68a0f367ab0b68419405f34a3efb226b7e7f0d39d6dcf36b9e9570908dca5e",
+      "audit": {
+        "positions_replayed": 81,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 157,
+      "seed": 9700158,
+      "positions": 32,
+      "npz_sha256": "8ba3588351b5e21575fc4c343173d81a410420e0b98c3dcb53d19d0703076d16",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 158,
+      "seed": 9700159,
+      "positions": 65,
+      "npz_sha256": "e0378e59fd6ff7065772b8c35b4162e113f86e7ac2c6bab3a3011c164496838b",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 159,
+      "seed": 9700160,
+      "positions": 37,
+      "npz_sha256": "cd1da6f0088be96662a390dd7b47468f294a2dd53458be8d20c838a8437ca328",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 160,
+      "seed": 9700161,
+      "positions": 161,
+      "npz_sha256": "fc4d92c48d118ac6415f4c184a04e61087832863bb6af6eda5c9a1bd615ec30f",
+      "audit": {
+        "positions_replayed": 161,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 161,
+      "seed": 9700162,
+      "positions": 48,
+      "npz_sha256": "1d2670b1e8926c776a8526d5a74323c54e8a26f90c7f0c1e468f3186e4e57125",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 162,
+      "seed": 9700163,
+      "positions": 54,
+      "npz_sha256": "77512c079b8f62aac1eaed22907ff45361c75948499a6a8176717c1276629a8d",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 163,
+      "seed": 9700164,
+      "positions": 55,
+      "npz_sha256": "e0b71261ce0556767a2f16934f42fcd85a3373c397d1f9da88c070e25210a175",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 164,
+      "seed": 9700165,
+      "positions": 100,
+      "npz_sha256": "52734181e71f6481bed56a1d588d1659d91dda2a27ea7861dde675c81e46646e",
+      "audit": {
+        "positions_replayed": 100,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 165,
+      "seed": 9700166,
+      "positions": 82,
+      "npz_sha256": "637dcbf0eedc741409e7ac7bfd35237221057890781c4fb5db3d60c3090842a7",
+      "audit": {
+        "positions_replayed": 82,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 166,
+      "seed": 9700167,
+      "positions": 60,
+      "npz_sha256": "b0e8148ebc1c4377bfa34a4ee883c31ef4797501f5160e2b7b1ee60ddf2bffac",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 167,
+      "seed": 9700168,
+      "positions": 45,
+      "npz_sha256": "7d324e02e25eb1eb474a1df6f22b72bf00e479b5e3e3cb9e715a48ede5c1cf4a",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 168,
+      "seed": 9700169,
+      "positions": 110,
+      "npz_sha256": "eb1153f88fb5322d02b3b492954aa7f3c45e98b74e3693b6651bd33bbb8ca54b",
+      "audit": {
+        "positions_replayed": 110,
+        "fully_public_positions": 45,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 169,
+      "seed": 9700170,
+      "positions": 32,
+      "npz_sha256": "d3525cac58d38480407f5275d51a21ca4ba48e9428e96f07352cf20bfa0ec5f1",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 170,
+      "seed": 9700171,
+      "positions": 36,
+      "npz_sha256": "3a481a598636f7298758a00a6d015c1a0165a0d8c997cb8fdbafdc024e2d2400",
+      "audit": {
+        "positions_replayed": 36,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 171,
+      "seed": 9700172,
+      "positions": 84,
+      "npz_sha256": "00b3e7a5f8ba84809ae3ce99b426b4c385c4347368ad5b4bccbed0c895c98d3b",
+      "audit": {
+        "positions_replayed": 84,
+        "fully_public_positions": 0,
+        "private_dark_captures": 8,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 172,
+      "seed": 9700173,
+      "positions": 13,
+      "npz_sha256": "39d677c48f725f377e58243b9a76f4baf7089040ed17cce26aa784141cb0ac7e",
+      "audit": {
+        "positions_replayed": 13,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 173,
+      "seed": 9700174,
+      "positions": 60,
+      "npz_sha256": "79767e92b6d455db8cacc98a2e04275785ac684f02ee276193766c3bd7480d7d",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 8,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 174,
+      "seed": 9700175,
+      "positions": 42,
+      "npz_sha256": "dc4dfa6988d79d808b31b579f259716d683b451926350fb2324c80816b6db19d",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 175,
+      "seed": 9700176,
+      "positions": 71,
+      "npz_sha256": "bc1e8c69d62a4ec1691e088f60cd9c7d96720a6a7e517fb8595ad1ae032995a7",
+      "audit": {
+        "positions_replayed": 71,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 176,
+      "seed": 9700177,
+      "positions": 35,
+      "npz_sha256": "a87b2be0774c14df74aba25cfcb8c2928e37ab62dc12b7400e1d6d5432360de7",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 177,
+      "seed": 9700178,
+      "positions": 44,
+      "npz_sha256": "0c962301db9b9a2919afd72a7ab57dc38a3d2822286ace2c907233aebedae741",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 178,
+      "seed": 9700179,
+      "positions": 19,
+      "npz_sha256": "8c28976133e9e89be6e94f31db4ca2540b67b98fd8aedd687144ae74db192326",
+      "audit": {
+        "positions_replayed": 19,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 179,
+      "seed": 9700180,
+      "positions": 53,
+      "npz_sha256": "e695609d4f03bfa0a0cddb1c108bd26f7fd7814325ae7a0fbfa994dcca246b66",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 180,
+      "seed": 9700181,
+      "positions": 33,
+      "npz_sha256": "6571886031ae42c1f4c9e0137d106bf4a198d46c7c7058605542f6a5d286e945",
+      "audit": {
+        "positions_replayed": 33,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 181,
+      "seed": 9700182,
+      "positions": 57,
+      "npz_sha256": "75b12d01528436d40cc90748afae567119cb11bfc245582153eeaadef6249fac",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 182,
+      "seed": 9700183,
+      "positions": 18,
+      "npz_sha256": "b3f8728eb15e280eea8e025bc81b4bda3f7b0eef395abc3fac3c5d9637e22cbf",
+      "audit": {
+        "positions_replayed": 18,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 183,
+      "seed": 9700184,
+      "positions": 37,
+      "npz_sha256": "d6a114b878ff655688986d8e37690878eec8b670bc22ab25d2c3493920e240a9",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 184,
+      "seed": 9700185,
+      "positions": 41,
+      "npz_sha256": "ccdb224d0131cf669432b3ff46e8433a78e04859ce20d8e02cec13eef32ad718",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 185,
+      "seed": 9700186,
+      "positions": 17,
+      "npz_sha256": "5debe719158e76fe3845acfa490e3882b69e3c1f0d7d24caa11bf5acd3d07dfc",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 186,
+      "seed": 9700187,
+      "positions": 34,
+      "npz_sha256": "bba6a8105f3f41f2795ac7fe5034f0c0a4f70f566a7482b39753966888ed2e66",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 187,
+      "seed": 9700188,
+      "positions": 124,
+      "npz_sha256": "f11f3142fbcadd828221c068421828af41649e88a111590b961e9bb148511dbe",
+      "audit": {
+        "positions_replayed": 124,
+        "fully_public_positions": 31,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 188,
+      "seed": 9700189,
+      "positions": 146,
+      "npz_sha256": "1d7c8e8d2394a88254037e1dd890401d65d9696ecb9f3b8663b3965d0825425a",
+      "audit": {
+        "positions_replayed": 146,
+        "fully_public_positions": 37,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 189,
+      "seed": 9700190,
+      "positions": 79,
+      "npz_sha256": "ea2f114367f6a66321246036ea7b866c92d885304b215f61a5ba773652246a70",
+      "audit": {
+        "positions_replayed": 79,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 190,
+      "seed": 9700191,
+      "positions": 12,
+      "npz_sha256": "35c44ede58c98990713e79f977662ace6614549556ce53484d477de3c27bf61f",
+      "audit": {
+        "positions_replayed": 12,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 191,
+      "seed": 9700192,
+      "positions": 51,
+      "npz_sha256": "c6b10f085ea498c7de28a38bd5e4d7c795601d602fb88407e4e6435c442eb2e0",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 192,
+      "seed": 9700193,
+      "positions": 57,
+      "npz_sha256": "ea5a2c0ebb4ee4edd3d22e89541edad9cfbe40900bcd0622d8661cde6a0d1645",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 193,
+      "seed": 9700194,
+      "positions": 54,
+      "npz_sha256": "3e5ae73249d3a5ddfdc4d99def34bbdfc64ecee9313c57a0815cb9a3136277bb",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 194,
+      "seed": 9700195,
+      "positions": 84,
+      "npz_sha256": "f48125fe27ed08047bbccfe37c637716fa395d593368d49b1cd27fa6bc00d866",
+      "audit": {
+        "positions_replayed": 84,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 195,
+      "seed": 9700196,
+      "positions": 59,
+      "npz_sha256": "60c6396e5aa073141f706a12b9d6a65426e0169feead0790db96b89d9ad8b67a",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 196,
+      "seed": 9700197,
+      "positions": 35,
+      "npz_sha256": "949e9ffb28dbbc54d63a63a6c67188900945d00bf3967d8156218fe0edf141c8",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 197,
+      "seed": 9700198,
+      "positions": 62,
+      "npz_sha256": "3f72f01f06a6f2d8f9cb4d7ce96907cbb37bea877f1171319028f00faa131137",
+      "audit": {
+        "positions_replayed": 62,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 198,
+      "seed": 9700199,
+      "positions": 44,
+      "npz_sha256": "e9660ef73557e18d3865ee4c174e936c5c3a39779b40e7e34b9d3da8d8e95077",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 199,
+      "seed": 9700200,
+      "positions": 68,
+      "npz_sha256": "7d1f0075d0f455fc130d560fe3c6e9a1cff439badff653d48e421dd4550a5fd9",
+      "audit": {
+        "positions_replayed": 68,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 200,
+      "seed": 9700201,
+      "positions": 70,
+      "npz_sha256": "2317854d511e5164088022b7667359032bce59178c3ae8792e23668a29c41086",
+      "audit": {
+        "positions_replayed": 70,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 201,
+      "seed": 9700202,
+      "positions": 55,
+      "npz_sha256": "42937d2543b9e39c87bebaf23d5bd94e095a9d92186d1da9a988f7d92006c87f",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 202,
+      "seed": 9700203,
+      "positions": 57,
+      "npz_sha256": "ec0b5304da30564b102d3bad746407eef9f8b6fa40b8ed416a16f52699ad1eb8",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 203,
+      "seed": 9700204,
+      "positions": 43,
+      "npz_sha256": "b30b2430a7df562730dc0d7aa413b184b925633bf8a38e047951328d3cf0f6e0",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 204,
+      "seed": 9700205,
+      "positions": 40,
+      "npz_sha256": "3fd445a537cd7f59a84651563362c1dc7755303d34f1edc75d3c6ff39ce88c80",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 205,
+      "seed": 9700206,
+      "positions": 59,
+      "npz_sha256": "1240be7f4a15fbc0f21290983858398f7f5df8dba30c6713d16917bb10d09a76",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 206,
+      "seed": 9700207,
+      "positions": 61,
+      "npz_sha256": "4bedb779b90d850913abd4c122b9bcddb684439c858ae59340f566e0e1fe3cbf",
+      "audit": {
+        "positions_replayed": 61,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 207,
+      "seed": 9700208,
+      "positions": 44,
+      "npz_sha256": "c7d40c03a5fe6e3d87109836b4b04e77a34e4e2ac1049ca1157cebca8bb127ca",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 208,
+      "seed": 9700209,
+      "positions": 41,
+      "npz_sha256": "4f4456f3830e0a63bffba8f7af3535bbed470bfe9bfe797ad398a849c99cfecd",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 209,
+      "seed": 9700210,
+      "positions": 73,
+      "npz_sha256": "2d06bdc6e6137b2de2b28ec53cae7e4ae79ab63f6b4143b04d549ccf44b34929",
+      "audit": {
+        "positions_replayed": 73,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 210,
+      "seed": 9700211,
+      "positions": 46,
+      "npz_sha256": "d885573df10423385b6cfa10f2794e71b710507e2a1899afd14d9bf15698fd20",
+      "audit": {
+        "positions_replayed": 46,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 211,
+      "seed": 9700212,
+      "positions": 98,
+      "npz_sha256": "f70b3884794138b334f6dae570bd6e7ea6f84e92a982208432b43d378bd7dbe2",
+      "audit": {
+        "positions_replayed": 98,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 212,
+      "seed": 9700213,
+      "positions": 44,
+      "npz_sha256": "788943c43ed5f84ef7e267ae23b56f5806d5969b8ef11c4448db52b7327be145",
+      "audit": {
+        "positions_replayed": 44,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 213,
+      "seed": 9700214,
+      "positions": 64,
+      "npz_sha256": "3345ca27eefd9714f9c609999c9cf1213f632bf91aba623ac0d5c073b90aaf80",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 214,
+      "seed": 9700215,
+      "positions": 88,
+      "npz_sha256": "f2dcb564064de816fc33b40472c00668ff373778c85e7bb23d08fe7e912d063f",
+      "audit": {
+        "positions_replayed": 88,
+        "fully_public_positions": 1,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 215,
+      "seed": 9700216,
+      "positions": 64,
+      "npz_sha256": "1eef97e6ab0331ce34d7cbc8beb26690c36c1e60b21d8a6142764ceddfe12ba0",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 216,
+      "seed": 9700217,
+      "positions": 75,
+      "npz_sha256": "7864e13d3b8fc90a9c07f01927edbefefb6bfdc09031b528739223216291e049",
+      "audit": {
+        "positions_replayed": 75,
+        "fully_public_positions": 4,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 217,
+      "seed": 9700218,
+      "positions": 29,
+      "npz_sha256": "a06e7163f9230cd14e178649896385446f3f8eb571a222c4e73b8c9f869c0a1d",
+      "audit": {
+        "positions_replayed": 29,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 218,
+      "seed": 9700219,
+      "positions": 64,
+      "npz_sha256": "00060999cf7f841241d7c7fd7b56d84f3e764dff5f18e333797a3e7ec4acc79b",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 219,
+      "seed": 9700220,
+      "positions": 35,
+      "npz_sha256": "9d2267bc96f75c7f80fb70e2fc30c4ac40e83c3ef15093966f6f3d7c6c010dd7",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 220,
+      "seed": 9700221,
+      "positions": 75,
+      "npz_sha256": "7d1c74068488a11d61242219c4386f93da79135ef2a4d585f957056f5a142c86",
+      "audit": {
+        "positions_replayed": 75,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 221,
+      "seed": 9700222,
+      "positions": 51,
+      "npz_sha256": "ec485057b38123f61a8043d6071b0ffaca13422e076233896fd58aa9d40a8a49",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 222,
+      "seed": 9700223,
+      "positions": 51,
+      "npz_sha256": "a7f94fc910d4c1ae0f7642ee9293e815480ad12084eaeeb8ad4b8a7f043d171a",
+      "audit": {
+        "positions_replayed": 51,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 223,
+      "seed": 9700224,
+      "positions": 55,
+      "npz_sha256": "09b538e1f9647de1ea27469c31c67604f0c1d05bdd576a5767670051bf071456",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 224,
+      "seed": 9700225,
+      "positions": 34,
+      "npz_sha256": "d0e7b42266c098e3fa94df1cd0b10e3b12d21d1a8d6f920df139e01b11d31264",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 225,
+      "seed": 9700226,
+      "positions": 32,
+      "npz_sha256": "235b18184687148e9cfe8bd7cfc91e7dab55bbe955b2d7962061bad62092ccb6",
+      "audit": {
+        "positions_replayed": 32,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 226,
+      "seed": 9700227,
+      "positions": 37,
+      "npz_sha256": "007ea78f2d22192ac0cf277459d432adb386b15d264af60bbcffda1b1376b2e0",
+      "audit": {
+        "positions_replayed": 37,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 227,
+      "seed": 9700228,
+      "positions": 101,
+      "npz_sha256": "bb438d011d8b61850eddabcd2e2a33bb6226d035e07b90c51741142aab270a66",
+      "audit": {
+        "positions_replayed": 101,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 228,
+      "seed": 9700229,
+      "positions": 35,
+      "npz_sha256": "18437edb84bd5d0ec4f9a682df343789f34b90a725c218e15d39fb70ecc0a393",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 229,
+      "seed": 9700230,
+      "positions": 43,
+      "npz_sha256": "8b4b52468ec7317db6c415e364818642163a7257897bebbb456c5ffb5215493e",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 230,
+      "seed": 9700231,
+      "positions": 43,
+      "npz_sha256": "f2d28658d0566aaf0e2c93160af755e728168d11fc2c4f0e97c2b6ff0d50a421",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 231,
+      "seed": 9700232,
+      "positions": 53,
+      "npz_sha256": "bba42d383d5234f2e8de5414ebb6025a4bfc54aa458acaee3523f0f2a3fbbbf4",
+      "audit": {
+        "positions_replayed": 53,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 232,
+      "seed": 9700233,
+      "positions": 64,
+      "npz_sha256": "1fc637c6e9963466018f15c98d46add01582dca7e78975d5ed9427b35da3c3f3",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 233,
+      "seed": 9700234,
+      "positions": 40,
+      "npz_sha256": "fdf8a533189cc6b163c068f64addea6afcb8cb9da3c1a95ccea03c5646dd8387",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 234,
+      "seed": 9700235,
+      "positions": 119,
+      "npz_sha256": "683e550a570dde9d577605d27b9732212fc1a5e8916dd17df45fd097b8d93b4c",
+      "audit": {
+        "positions_replayed": 119,
+        "fully_public_positions": 30,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 235,
+      "seed": 9700236,
+      "positions": 65,
+      "npz_sha256": "b25c2b3abe5baebc1611f5f998896e9f83593678fe12d05d048ead5d920cc4aa",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 236,
+      "seed": 9700237,
+      "positions": 30,
+      "npz_sha256": "328b8e6ff26e973890bf1c3fceda98aef4b24f0a83e23066187e9634caa74303",
+      "audit": {
+        "positions_replayed": 30,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 237,
+      "seed": 9700238,
+      "positions": 65,
+      "npz_sha256": "59009dd750f48c6d87f93f7ef16bc423aa7d6786378f1e3cfbde64e6aaab3a6c",
+      "audit": {
+        "positions_replayed": 65,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 238,
+      "seed": 9700239,
+      "positions": 56,
+      "npz_sha256": "6cabd326eadfce778a3f92d680835be04b8457ca175f608f197ad18ad6db7d9c",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 239,
+      "seed": 9700240,
+      "positions": 49,
+      "npz_sha256": "b5ee9bb2d7386f9178626e949f853da2039acc9ec86cbb660b133d6cf64cc287",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 240,
+      "seed": 9700241,
+      "positions": 40,
+      "npz_sha256": "a4cee023dd040f21ef58cea6bbf2c3f3715d2b6ee223cb342db1e84fb0b6a1b0",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 241,
+      "seed": 9700242,
+      "positions": 63,
+      "npz_sha256": "ea65361659bbf52dafe17e512290c440bfa5b7d01965e782ac0a7541698b3d09",
+      "audit": {
+        "positions_replayed": 63,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 242,
+      "seed": 9700243,
+      "positions": 73,
+      "npz_sha256": "ec8bc7c69f800f2d2933a8ac57d146ce092032c039365256395bc760b6efa07e",
+      "audit": {
+        "positions_replayed": 73,
+        "fully_public_positions": 11,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 243,
+      "seed": 9700244,
+      "positions": 34,
+      "npz_sha256": "dfea4d91e048929651f0493a2ebc13f6fe286e61e55c3de64e345cbdd4bdfc03",
+      "audit": {
+        "positions_replayed": 34,
+        "fully_public_positions": 0,
+        "private_dark_captures": 5,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 244,
+      "seed": 9700245,
+      "positions": 50,
+      "npz_sha256": "d70bc705864125e2fd3b861c8bb4e05e2b1f2036592a594f90eb349650a2f0cc",
+      "audit": {
+        "positions_replayed": 50,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 245,
+      "seed": 9700246,
+      "positions": 81,
+      "npz_sha256": "8ecd00382e2d279e62fc105fc985748a2d46f89d5daebd665494e42fbf2add6c",
+      "audit": {
+        "positions_replayed": 81,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 246,
+      "seed": 9700247,
+      "positions": 67,
+      "npz_sha256": "66a86c9200b036b54ade9bbabdb0005918709341ef1bae3639495a6bca7a9857",
+      "audit": {
+        "positions_replayed": 67,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 247,
+      "seed": 9700248,
+      "positions": 49,
+      "npz_sha256": "59b2160b632e042e55a65b0944a9268eca77ebcc8cbbbf77c8b714eb7a726c96",
+      "audit": {
+        "positions_replayed": 49,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 248,
+      "seed": 9700249,
+      "positions": 59,
+      "npz_sha256": "c8fc389dabfbd517c19dc5be249269cde001d962622f4ea5d11776df98ab1b1b",
+      "audit": {
+        "positions_replayed": 59,
+        "fully_public_positions": 0,
+        "private_dark_captures": 8,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 249,
+      "seed": 9700250,
+      "positions": 54,
+      "npz_sha256": "a790ab693a6f0904c533e729e5b4f0961adc7bb7b3c9b3f201c443747c971d1e",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 250,
+      "seed": 9700251,
+      "positions": 60,
+      "npz_sha256": "6a2e06f61f7e6cdf05064b51bbf8752376543c7ff5de2f11834353b199e1dbfd",
+      "audit": {
+        "positions_replayed": 60,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 251,
+      "seed": 9700252,
+      "positions": 118,
+      "npz_sha256": "badc9fd56d6ae9da11d971c46fb0cc9080b1c1930b4d0f59e4d9eb1897a3e8df",
+      "audit": {
+        "positions_replayed": 118,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 252,
+      "seed": 9700253,
+      "positions": 35,
+      "npz_sha256": "af070307d0f6420c68d7b0f6c1d3d3123954ff3c3015a1d5ea0cd4cc42b78c70",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 253,
+      "seed": 9700254,
+      "positions": 40,
+      "npz_sha256": "2ec1fda00fc9a3a703b736874027b84de7109f9110a38b8d381fa21885b54bc4",
+      "audit": {
+        "positions_replayed": 40,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 254,
+      "seed": 9700255,
+      "positions": 57,
+      "npz_sha256": "1c47f53aa023ebbbb49ef1eef395047c3372594831018c94ab11958a00878c75",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 255,
+      "seed": 9700256,
+      "positions": 26,
+      "npz_sha256": "dfb3de7e8b6b47693e07889326f7724f59f2a89252924683ee01f779974002d0",
+      "audit": {
+        "positions_replayed": 26,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 256,
+      "seed": 9700257,
+      "positions": 48,
+      "npz_sha256": "ad075ee0abcd704979c260aa060d91fd23a3996d058a39f69856d64a13d0812e",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 257,
+      "seed": 9700258,
+      "positions": 47,
+      "npz_sha256": "79cad2ee7a055da0e2e2b2325735c853772505a3cce94ae844415ade2046977d",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 258,
+      "seed": 9700259,
+      "positions": 47,
+      "npz_sha256": "c04052b8e7e5c7f55a79af63c550220762e6a9cc04c769a50144d37a7667290f",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 259,
+      "seed": 9700260,
+      "positions": 38,
+      "npz_sha256": "22b4001376edf2be9f35c1330d04334ac15a5ce9150c9fe8d7f04f6e6ef757ae",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 260,
+      "seed": 9700261,
+      "positions": 47,
+      "npz_sha256": "4300b0acc40bdfbb4feee15332e686cef8b16cabe5ccae77812cd2172e99bcb1",
+      "audit": {
+        "positions_replayed": 47,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 261,
+      "seed": 9700262,
+      "positions": 94,
+      "npz_sha256": "8036062ece4b163c0d3caf720547c1054113468e1e10d1eade41f3a79d08739a",
+      "audit": {
+        "positions_replayed": 94,
+        "fully_public_positions": 7,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 262,
+      "seed": 9700263,
+      "positions": 56,
+      "npz_sha256": "cf5d2c0b4d8b2895e6afcb12661ddaf15b73f57de7d624bb13efb7188867cd32",
+      "audit": {
+        "positions_replayed": 56,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 263,
+      "seed": 9700264,
+      "positions": 119,
+      "npz_sha256": "4111b7cc38c6f2626dac2b9ee4875c41cd8f8f39b003b4115248efccec19f4d5",
+      "audit": {
+        "positions_replayed": 119,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 264,
+      "seed": 9700265,
+      "positions": 45,
+      "npz_sha256": "321921a9c0423e8e570b28edb76c210069c9361773c9d5b2bb360ff17ee740c3",
+      "audit": {
+        "positions_replayed": 45,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 265,
+      "seed": 9700266,
+      "positions": 62,
+      "npz_sha256": "83b61e409c0c3498314d67d74b52177e84ef9916735e45e5a40f57f8c0879736",
+      "audit": {
+        "positions_replayed": 62,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 266,
+      "seed": 9700267,
+      "positions": 77,
+      "npz_sha256": "cd349874c69ed6611be582ad776a1139b919d681d52e1107a0e6308e2a63086b",
+      "audit": {
+        "positions_replayed": 77,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 267,
+      "seed": 9700268,
+      "positions": 57,
+      "npz_sha256": "e6322aad5d56ddd1dd5c9f33e36724b1fa97abfd7ccbfc5a33693c968f396574",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 268,
+      "seed": 9700269,
+      "positions": 42,
+      "npz_sha256": "c22c015f1a99b363ecb86afbc38438b1f569d085dd068156f6a189e7fe958981",
+      "audit": {
+        "positions_replayed": 42,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 269,
+      "seed": 9700270,
+      "positions": 64,
+      "npz_sha256": "39529caa4a756a3ee8e73e539877b9f939996c44ee04d61267080d5c3afbc4a1",
+      "audit": {
+        "positions_replayed": 64,
+        "fully_public_positions": 0,
+        "private_dark_captures": 0,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 270,
+      "seed": 9700271,
+      "positions": 87,
+      "npz_sha256": "8b3ce7a3a8fdd8bd897cdf77a9d4623643ae155419c165d925cd930e6e6c65d7",
+      "audit": {
+        "positions_replayed": 87,
+        "fully_public_positions": 15,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 271,
+      "seed": 9700272,
+      "positions": 48,
+      "npz_sha256": "343b0c7afc5a871a0cb66f10f4c9798bc741a63def95b549024ecd9866f8395d",
+      "audit": {
+        "positions_replayed": 48,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 272,
+      "seed": 9700273,
+      "positions": 17,
+      "npz_sha256": "655599ae8da13c99f2df5255f90aa87e9884165b26f8fd5e0ab1dfc6480457fe",
+      "audit": {
+        "positions_replayed": 17,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 273,
+      "seed": 9700274,
+      "positions": 54,
+      "npz_sha256": "62097d9544d9c2c2c937cee91cbadfc59b0012dbde9cd9083dac33096621e6c0",
+      "audit": {
+        "positions_replayed": 54,
+        "fully_public_positions": 0,
+        "private_dark_captures": 2,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 274,
+      "seed": 9700275,
+      "positions": 69,
+      "npz_sha256": "d029a4551c84070d5e4cf4f4ae7afa87abdc85b6ee1361cfdf6c8e40cdb1524d",
+      "audit": {
+        "positions_replayed": 69,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 275,
+      "seed": 9700276,
+      "positions": 35,
+      "npz_sha256": "be59acd0c1cad26184ca9fb3024f75d1a713f04deeb9bf65ed2d3706da158744",
+      "audit": {
+        "positions_replayed": 35,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 276,
+      "seed": 9700277,
+      "positions": 41,
+      "npz_sha256": "e3d8a1fe578bcc608a7a0ce1a996393730aba4dcfb9fdcaec1f3c44f13794d4d",
+      "audit": {
+        "positions_replayed": 41,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 277,
+      "seed": 9700278,
+      "positions": 57,
+      "npz_sha256": "e5fbb369e24927a8500c274b2edc75acc64518cd012c5b7ede9f26a41a357d45",
+      "audit": {
+        "positions_replayed": 57,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 278,
+      "seed": 9700279,
+      "positions": 71,
+      "npz_sha256": "8626263f3affdfefe2e07378356d45b5061e0f85490bc3c9e4387d368267b7e3",
+      "audit": {
+        "positions_replayed": 71,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 279,
+      "seed": 9700280,
+      "positions": 55,
+      "npz_sha256": "06d2c247a8e4b6202ad00b7c04826cfc568dc1d97c97eabf398683f052792677",
+      "audit": {
+        "positions_replayed": 55,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 280,
+      "seed": 9700281,
+      "positions": 85,
+      "npz_sha256": "d08be22609679cb0703479fa402c1287aac5a5fb9e60eb4334207eb6a80178b9",
+      "audit": {
+        "positions_replayed": 85,
+        "fully_public_positions": 0,
+        "private_dark_captures": 4,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 281,
+      "seed": 9700282,
+      "positions": 18,
+      "npz_sha256": "9d9a88f5bbba4ff5c35eb6b601c51de2b3d0bde5deb207d3f29254a787e0b66d",
+      "audit": {
+        "positions_replayed": 18,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 282,
+      "seed": 9700283,
+      "positions": 74,
+      "npz_sha256": "d571f4e34e693e7a70da8b5bbb52b7ebde94195b45c1bd9f6e84d9d7d89fd5db",
+      "audit": {
+        "positions_replayed": 74,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 283,
+      "seed": 9700284,
+      "positions": 71,
+      "npz_sha256": "14e6436396fb412aa7d8c43de37805c5669b3b206076a34518b58812c3211192",
+      "audit": {
+        "positions_replayed": 71,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 284,
+      "seed": 9700285,
+      "positions": 43,
+      "npz_sha256": "05641fdfd5e00da96659b67734e07d91e5532b9ed1c75b647606628e9dec632b",
+      "audit": {
+        "positions_replayed": 43,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 285,
+      "seed": 9700286,
+      "positions": 38,
+      "npz_sha256": "4950f608856ed05d1fdf74ecdaf0d2d0f2168923eb785a982342df271ef7d331",
+      "audit": {
+        "positions_replayed": 38,
+        "fully_public_positions": 0,
+        "private_dark_captures": 6,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 286,
+      "seed": 9700287,
+      "positions": 39,
+      "npz_sha256": "d468683862cc2c1fd50eeeac683866a122d85ff0d17b63eb87e1b1c122da74c9",
+      "audit": {
+        "positions_replayed": 39,
+        "fully_public_positions": 0,
+        "private_dark_captures": 3,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    },
+    {
+      "index": 287,
+      "seed": 9700288,
+      "positions": 9,
+      "npz_sha256": "0cc38b1d4a264bab00f6591a481eca12f3cdc34a14c72fd1795709eddb8ed193",
+      "audit": {
+        "positions_replayed": 9,
+        "fully_public_positions": 0,
+        "private_dark_captures": 1,
+        "legal_policy_support": true,
+        "root_visit_counts_match": true,
+        "observer_records_match": true,
+        "terminal_values_match": true
+      }
+    }
+  ],
+  "raw_episodes": {
+    "path": "results/raw/spatial-relative-rl-episodes.tar.gz",
+    "sha256": "e032b21125954b1bd1ac90771eb5249c08e46a9525030fc63706617c3cd9950c"
+  },
+  "matches": [
+    {
+      "opponent": "parent",
+      "report": "results/20261027-spatial-relative-rl-vs-parent.json",
+      "report_sha256": "d75801c4570fe06f7e2bca694ed540a7be7cfd8207a43dfcd208e86e4e753b35",
+      "audit": "results/20261027-spatial-relative-rl-vs-parent-audit.json",
+      "audit_sha256": "4821442ed68ac32a8b0cd88d9ea8c75075a3a70d444f3aff2b141ebed7216ef0",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1527,
+            "mean_ms": 346.3775651015062,
+            "p95_ms": 509.653926,
+            "max_ms": 640.593942
+          },
+          "baseline": {
+            "moves": 1535,
+            "mean_ms": 345.09469254592835,
+            "p95_ms": 504.812491,
+            "max_ms": 633.303208
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 20,
+        "draws": 2,
+        "losses": 42,
+        "score": 0.328125,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.21875,
+          0.4375
+        ],
+        "paired_hoeffding_95": [
+          0.08804430217001982,
+          0.5682056978299802
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "independent_audit": {
+        "schema": 1,
+        "run": "vs-previous",
+        "games": 64,
+        "complete_pairs": 32,
+        "moves_replayed": 3062,
+        "wins_draws_losses": [
+          20,
+          2,
+          42
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 3062,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 1149.5,
+        "raw_games_sha256": "1afe16e19aabd049d8bacc42bf38d32fdfed797ac2668c885f1e9e17cebb37c4",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      }
+    },
+    {
+      "opponent": "teacher",
+      "report": "results/20261027-spatial-relative-rl-vs-teacher.json",
+      "report_sha256": "d7ba98a7ad1a181f398d54ad46ae06cb30f0fe082e858c18bfc62c15a5e71cd6",
+      "audit": "results/20261027-spatial-relative-rl-vs-teacher-audit.json",
+      "audit_sha256": "52c9db818a7204e92ec696275518dc5acb6876988f7d23016b7f83c763a9acfb",
+      "result": {
+        "timing": {
+          "candidate": {
+            "moves": 1425,
+            "mean_ms": 352.2896637515789,
+            "p95_ms": 482.341682,
+            "max_ms": 602.162438
+          },
+          "baseline": {
+            "moves": 1454,
+            "mean_ms": 354.9180069154058,
+            "p95_ms": 902.379387,
+            "max_ms": 1789.917099
+          }
+        },
+        "game_clock": "10+0.1",
+        "games": 64,
+        "expected_games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "score": 0.0,
+        "complete_pairs": 32,
+        "paired_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "paired_hoeffding_95": [
+          0.0,
+          0.24008069782998018
+        ],
+        "void_attempts": 0,
+        "technical_results": [],
+        "valid_technical_run": true,
+        "single_match_superiority_gate": false,
+        "promotion_supported": false,
+        "warning": "A single development match is not a promotion or an all-engine superiority claim."
+      },
+      "independent_audit": {
+        "schema": 1,
+        "run": "vs-teacher",
+        "games": 64,
+        "complete_pairs": 32,
+        "moves_replayed": 2879,
+        "wins_draws_losses": [
+          0,
+          0,
+          64
+        ],
+        "seeded_identities_match": true,
+        "all_recorded_moves_legal": true,
+        "nontechnical_terminal_results_match": true,
+        "technical_games": 0,
+        "actual_clock_moves_checked": 2879,
+        "clock_ambiguous_moves_from_rounding": 0,
+        "minimum_clock_lower_margin_ms": 1213.0,
+        "raw_games_sha256": "c1b1aee9c8ebd226c1463d495a86eef47b5df9bda2ec3f863a4dedba9efcf37d",
+        "replay_referee_library_sha256": "4c3ff591f0ecfe4cf959ad5999fea594ff90f8cba0dfaeca308d0576881a6c2e",
+        "scope": "Post-match replay using pinned native referee; t fields are measured wall times rounded to milliseconds. Each clock check allows +/-0.5ms measurement rounding; ambiguous margins are reported, never silently certified. This verifies records, not statistical superiority or all-engine coverage."
+      }
+    }
+  ],
+  "limitations": [
+    "Source self-play is pinned Yuan tiantian-v5 with full histories; native-jqe strength rules differ and this archive does not prove equivalence.",
+    "One training seed and one small current-policy replay batch; no equilibrium/PG guarantee or final independent multi-set70%win result.",
+    "Technical results and clock ambiguity remain explicit; safe artifact/replay validation is not a strength gain.",
+    "Pretraining architecture matches use the unchanged parent checkpoints and remain a separate experiment."
+  ]
+}

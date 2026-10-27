@@ -62,7 +62,7 @@ All episode replays pass the listed source-rule/observer/visit/terminal audits.
 Evidence, training curves and raw episode archive:
 `results/20261027-spatial-selfplay-integration.json`.
 
-## One separate full-size RL iteration started
+## One separate full-size RL iteration completed: regression
 
 The completed relative parent `e43ff2aa` now starts one prespecified research
 iteration:288new self-play games at256completed simulations/LeafBatch32,
@@ -112,5 +112,26 @@ Selection search-policy CE changes5.735707→3.330671and source terminal-return
 MSE0.944537→0.890993. These targets/data differ from teacher-replay pretraining;
 their magnitudes are not directly comparable with its CE/mixed-value MSE. Lower
 self-play selection loss does not prove policy improvement or native strength.
-The parent screen has started with this frozen updated artifact, followed by
-the unchanged teacher; no outcome is yet used to promote or retune the model.
+Both fixed native strength screens are complete with independent identity,
+legality, terminal and actual-clock audits:
+
+| Opponent | W/D/L | Score | Paired score bootstrap95% | Audited moves |
+| --- | --- | ---: | --- | ---: |
+| Frozen pretrained parent | 20/2/42 | 32.8125% | [21.875%,43.75%] | 3062 |
+| Unchanged native teacher | 0/0/64 | 0% | [0%,0%] | 2879 |
+
+There are zero technical games or clock ambiguities in these128games. This
+particular update regresses against its parent despite lower selection losses.
+The all-zero teacher bootstrap interval reflects the observed sample and is
+not a claim that the true score is exactly zero. The branch is closed without
+another unchanged iteration or promotion. Complete source episodes, both
+training curves and match/audit digests are retained in
+`results/20261027-spatial-relative-rl-training.json`.
+
+A separate training-only public-native replay audit subsequently quantifies the
+known rule-profile mismatch:19of256TRAIN games end earlier under native rules,
+12have a different terminal return, and609source positions occur after the
+native terminal. This diagnostic is not proof that the mismatch caused the
+observed regression. A new matched prefix/return-label study tests that distinct
+hypothesis without altering this completed experiment or its original labels;
+see [native-terminal reanalysis](NATIVE_TERMINAL_REANALYSIS.md).

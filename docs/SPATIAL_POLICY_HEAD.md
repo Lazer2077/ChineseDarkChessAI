@@ -119,7 +119,7 @@ selection losses. This verifies scheduling boundaries, not playing strength.
 Evidence: `results/spatial-policy-evaluation-queue-recipe.json` and
 `results/20261027-spatial-policy-evaluation-queue-integration.json`.
 
-## Completed full-budget fitting; all five contrasts dispatched
+## Completed full-budget fitting and five fixed contrasts
 
 Both128x15arms finish all12epochs and56,652updates. The prescribed common
 selection CE+MSE rule chooses dense epoch8and relative epoch10, before the
@@ -147,17 +147,30 @@ curves: `results/20261027-spatial-policy-{dense2550,relative50}-training.json`,
 `results/spatial-policy-{dense2550,relative50}-evaluation-plan.json` and
 `results/figures/spatial_policy_pretraining_20261027.{pdf,json}`.
 
-The first two fixed screens complete with technically clean native/clock audits:
+All five fixed screens complete with technically clean native/clock audits:
 
 | Contrast | W/D/L | Score | Paired score bootstrap95% | Audited moves |
 | --- | --- | ---: | --- | ---: |
 | Dense128vs old warm64 | 40/1/23 | 63.28125% | [50%,76.5625%] | 3482 |
 | Relative128vs matched dense128 | 38/1/25 | 60.15625% | [48.4375%,71.875%] | 3120 |
+| Relative128vs old warm64 | 52/1/11 | 82.03125% | [71.875%,90.625%] | 3224 |
+| Relative128vs native teacher | 0/2/62 | 1.5625% | [0%,3.90625%] | 3008 |
+| Dense128vs native teacher | 1/0/63 | 1.5625% | [0%,4.6875%] | 2994 |
 
-Both have zero technical games and rounding ambiguities. Neither interval has
-a lower bound strictly above50%, so these favorable point estimates do not yet
-establish superiority. The direct relative-versus-warm and both native-teacher
-contrasts continue unchanged; do not infer the former transitively from this
-table. Evidence uses
-`results/20261027-spatial-policy-dense2550-vs-old-warm64x15{,-audit}.json` and
-`results/20261027-spatial-policy-relative50-vs-matched-dense128x15{,-audit}.json`.
+All320games/15,828moves have zero technical games and clock-rounding
+ambiguities. The relative model establishes a development-set gain over the
+old warm neural reference; its paired score interval is entirely above50%.
+Its direct comparison against the matched dense128control remains inconclusive,
+so this study cannot isolate a playing-strength benefit of the decoder alone.
+Neither model approaches the unchanged native teacher. These score intervals
+include half a point per draw and are not the final gate's strict win fractions.
+
+A fixed200-game/100-pair fresh-layout confirmation at seed9740001now tests
+the unchanged relative checkpoint against old warm, with the same actual
+10+0.1/LeafBatch32settings. No retraining, checkpoint choice or early stopping
+is permitted. This is an internal reference comparison; even a successful
+confirmation cannot satisfy the strong-suite/report gate. Recipe:
+`results/spatial-relative-warm-confirmation-plan.json`.
+
+Full five-contrast evidence, audit and raw-data digests:
+`results/20261027-spatial-policy-completed-study.json`.

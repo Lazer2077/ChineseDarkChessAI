@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "completed",
+  "roles": [
+    {
+      "role": "training_games",
+      "games": 256,
+      "positions": 13646,
+      "observations_sha256": "5d884215282ef14e511c2200b4e3aba73da2dadf37ed1c28fc76bf7175dcce42",
+      "normalized_visits_sha256": "f5043d86e775202571dd0cc6247b3c401f60b6904bb391e4a8aac3ab65c1c739",
+      "source_returns_sha256": "fad8cb1c39d853bcee3d9de78078398375e02f6a3c338be0349d27b33363dd37",
+      "native_returns_sha256": "1c65ff5bce47680a5dcd145f38080443cf49af68da1173aad0245112ed422b12",
+      "changed_return_positions": 805,
+      "bitwise_matched_observations_and_visits": true,
+      "native_returns_match_independent_turn_parity": true
+    },
+    {
+      "role": "selection_validation_games",
+      "games": 32,
+      "positions": 1685,
+      "observations_sha256": "0897c51b7a1f21e829533bd92c650db1f77c300cfa86e5bd37b73692f89eb087",
+      "normalized_visits_sha256": "b3c451aed29c9c046404be10f4cb9648ad2ee1b61849df6abda2588f41367e86",
+      "source_returns_sha256": "e229ea3312b75a9d9f754b5f86615344de43c4fe50a2d52437e26a9f1c6f508d",
+      "native_returns_sha256": "c54c6e65b3386405ebd781e68a49cea7c57564f59076f7014423270e6164ef24",
+      "changed_return_positions": 56,
+      "bitwise_matched_observations_and_visits": true,
+      "native_returns_match_independent_turn_parity": true
+    }
+  ],
+  "source_plan_sha256": "15140944dfe196ec0212ce3754437eae7af017f2148cfb474008030cdfa07bbe",
+  "native_plan_sha256": "28378de1be3a12257cc433a761d65c19fda392b86243ae71a586c73dbc6fad73",
+  "script_sha256": "e7ed1093c717884cdf876213d49e75590538d755f4ba89237f50cb4ba31708dc",
+  "scope": "Real-data target/control boundary checks on identical native-terminal prefixes. No fit, model selection, new strength games or promotion."
+}

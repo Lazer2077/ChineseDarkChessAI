@@ -15,6 +15,33 @@ teacher more hidden information is not sufficient justification. Direct
 imitation of a clairvoyant move selector remains an unsuitable default target.
 No privileged evaluator or actual hidden assignment enters a deployed actor.
 
+## Decision on an information advantage versus an RL advantage
+
+An information advantage means extra training inputs, such as true dark-piece
+identities. An RL advantage means an action's excess expected return relative
+to a baseline. The former does not automatically provide a correct estimate of
+the latter. A defensible training critic would estimate
+`Q_pi(h,s,a) - V_pi(h,s)` for the specified observer-limited continuation
+policies, with the necessary history/state augmentation. It would not substitute
+the value of a continuation policy that knows all dark identities.
+
+For an on-policy score-function update, a pre-action baseline `b(h,s)` has zero
+expected gradient contribution conditional on `h,s` when the actor's sampled
+action depends only on `h`: summing `pi(a|h) * grad log pi(a|h)` over actions
+gives zero. This supports using privileged information in a baseline under those
+conditions. It does not establish that a learned bootstrapped critic is unbiased,
+that its variance is lower, or that search-selected actions are on-policy samples
+from the neural policy. Our current search-visit learner therefore cannot claim
+this policy-gradient guarantee.
+
+Research decision: retain privileged history-state value/advantage estimation
+as an academically valid, conditional option. Do not expand the completed
+live-dark conditional-value predictor after its negative held-out result, and
+do not begin clairvoyant action imitation. Reopening requires a distinct
+frozen hypothesis and a lawful actor-update comparison, followed by independent
+observer-only strength tests. The completed study below supplies no such
+playing-strength evidence.
+
 ## Academic basis and qualifications
 
 Asymmetric actor-critic permits different training inputs for actor and critic;
